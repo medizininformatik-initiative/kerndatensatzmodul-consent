@@ -1,0 +1,11 @@
+{
+  "name": "consent",
+  "version": "0.1.0",
+  "description": "Put a description here",
+  "dependencies": {
+    "de.einwilligungsmanagement": "1.0.0"
+  },
+  "fhirVersions": [
+    "4.0.1"
+  ]
+}
