@@ -21,9 +21,10 @@ TODO
 
 Leitung des Moduls:
 
-* TODO
+* Martin Bialke
+* Sebastian Stäubert
 
 Technische Umsetzung:
 
 * Stefan Lang (Technische Umsetzung FHIR Profile und ImplemenationGuides)
-* TODO
+* Martin Bialke (ImplemenationGuides)
