@@ -14,7 +14,7 @@ Das **Erweiterungsmodul Consent** beschreibt, wie die Einwilligungsinformationen
 Alle veröffentlichen FHIR Artefakte innerhalb des Projektes verfügen über einen Status durch welchen der jeweilige Reifegrad abgeleitet werden kann.
 Profile mit dem Status 'Draft' wurden noch nicht ballotiert und können noch diversen und substantiellen Änderungen unterliegen. Verpflichtende und ballotierte Ergebnisse sind unter dem Tab 'Packages' zu finden.
 
-### Kurzusammenfassung
+### Kurzzusammenfassung
 
 Das **Erweiterungsmodul Consent** beschreibt, wie die Einwilligungsinformationen in Form von FHIR Ressourcen für die Verarbeitung in einer lokalen Treuhandstelle und/oder einem DIZ einheitlich abgebildet werden können. Dabei basiert das Erweiterungsmodul Consent auf dem [Implementierungsleitfaden bzw. den FHIR Profilen zum Einwilligungsmanagement](https://ig.fhir.de/einwilligungsmanagement/stable/), die vom **HL7-DE/IHE-DE Interop-Forum (AG Einwilliungungsmanagement)** unter Mitwirkung der **MII Taskforce Consent Umsetzung** erstellt und im September 2021 ballotiert wurden. Das Erweiterungsmodul Consent präzisiert diese bewusst flexibel spezifizierten FHIR Profile (insbesondere das FHIR-Profil "Consent"), sodass sie 
 1. den **Anforderungen der MII** genügen und 
