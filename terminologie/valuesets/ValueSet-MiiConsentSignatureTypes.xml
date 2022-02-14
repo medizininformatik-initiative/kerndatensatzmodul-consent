@@ -14,12 +14,12 @@
     <title value="MII Consent: Signature Types"/>
     <status value="draft"/>
     <experimental value="false"/>
-    <publisher value="Konsortium DIFUTURE"/>
+   <publisher value="MII Task Force Consent Umsetzung"/>
     <contact>
-        <name value="Konsortium DIFUTURE"/>
+        <name value="MII Task Force Consent Umsetzung"/>
         <telecom>
-            <system value="url"/>
-            <value value="https://difuture.de"/>
+            <system value="email"/>
+            <value value="office@medizininformatik-initiative.de"/>
         </telecom>
     </contact>
     <description value="Dieses ValueSet enthält die zulässigen Werte für den Signaturtyp im Kontext des MI-I Consent."/>
