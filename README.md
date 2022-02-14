@@ -26,6 +26,8 @@ Unter anderem werden MII-spezifische ValueSets festgelegt und die IG-seitigen Vo
 * [Beschreibung des MII-Kerndatensatzes in der Version 1.0 vom 10.3.2017 (PDF)](https://www.medizininformatik-initiative.de/sites/default/files/inline-files/MII_04_Kerndatensatz_1-0.pdf)
 * [Datenmodellbeschreibung des MII-Kerndatensatzes in ART-DECOR](https://art-decor.org/art-decor/decor-project--mide-)
 * [Implementierungsleitfaden und FHIR Profilen der AG Einwilligungsmanagement](https://ig.fhir.de/einwilligungsmanagement/stable/)
+* [Simplifier-Projekt MII KDS Modul Consent](https://simplifier.net/medizininformatikinitiative-modulconsent)
+* [IG MII KDS Modul Consent](https://simplifier.net/guide/MedizininformatikInitiative-ModulConsent-ImplementationGuide/IGMIIKDSModulConsent)
 
 ### Autoren und Ansprechpartner
 
