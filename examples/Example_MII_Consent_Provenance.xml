@@ -1,0 +1,63 @@
+<Provenance xmlns="http://hl7.org/fhir">
+	<id value="55219d12-6245-4de4-8b50-ddf6f16a789b"/>
+	<meta>
+		<lastUpdated value="2021-02-08T14:21:07.5320994+00:00"/>
+		<profile value="http://fhir.de/ConsentManagement/StructureDefinition/Provenance"/>
+	</meta>
+	<!--
+		Diese Provenance gilt für den ausgefüllten Fragebogen (QuestionnaireResponse).
+
+		Sofern in der jeweiligen konkreten Implementierung keine Einwände bestehen
+		(z.B. Datenschutz- oder anderes Recht) können auch aus dem QuestionnaireResponse
+		abgeleitete Consent-Ressourcen hier als target referenziert werden.
+		Dies würde bedeuten, dass alle Signaturen (signature-Elemeent) auch für
+		diese Consent-Ressourcen gelten.
+	-->
+	<target>
+		<reference value="Consent/34150a23-b1c8-404f-874f-e042a30435d2"/>
+	</target>
+	<!-- Zeitpunkt der Erfassung der Provenance (bzw. hier auch der bezogenen Ressourcen) -->
+	<recorded value="2020-12-11T09:39:07+00:00"/>
+	<!-- Software, die zur Verarbeitung verwendet wurde -->
+	<agent>
+		<who>
+			<display value="Snakeoil Soft Consent Manager 2021"/>
+		</who>
+	</agent>
+	<!-- Verweis auf die originale Informationsquelle, z.B. (gescanntes) Papierdokument -->
+	<entity>
+		<role value="source"/>
+		<what>
+			<reference value="DocumentReference/8a3d1799-2463-405e-b49c-6a16c8692b01"/>
+		</what>
+	</entity>
+	<!-- Unterschrift des Patienten -->
+	<signature>
+		<type>
+			<system value="urn:iso-astm:E1762-95:2013"/>
+			<code value="1.2.840.10065.1.12.1.7"/>
+			<display value="Consent Signature"/>
+		</type>
+		<when value="2020-12-11T09:39:07+00:00"/>
+		<who>
+			<reference value="Patient/9b4a702d-162c-428a-8c5d-8b98af21b693"/>
+		</who>
+		<data value="iVBORw0KGgoAAAANSUhEUgAAAJYAAABZCAYCCCDcv92DAAAABGdBTUEAAKKkxq/Z1wAAACBjSFJNAACHEAAAjBIAAQW.....[base64-codiert, z.B. Scan der Unterschrift]"/>
+	</signature>
+	<!-- Unterschrift des aufklärenden Arztes -->
+	<signature>
+		<type>
+			<system value="urn:iso-astm:E1762-95:2013"/>
+			<code value="1.2.840.10065.1.12.1.11"/>
+			<display value="Consent Witness Signature"/>
+		</type>
+		<when value="2020-12-11T09:39:07+00:00"/>
+		<who>
+			<display value="Dr. F. Müller"/>
+		</who>
+		<onBehalfOf>
+			<display value="Krankenhaus Musterstadt"/>
+		</onBehalfOf>
+		<data value="QUcgRVdFIEZISVIgcm9ja3M="/>
+	</signature>
+</Provenance>
