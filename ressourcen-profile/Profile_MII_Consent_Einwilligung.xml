@@ -5,6 +5,7 @@
   <name value="Profile_MII_Consent_Einwilligung" />
   <title value="Profile - MI-I - Consent - Einwilligung" />
   <status value="draft" />
+  <date value="2022-02-21" />
   <description value="Dieses Profil beschreibt eine Einwilligung in der Medizininformatik-Initiative." />
   <fhirVersion value="4.0.1" />
   <mapping>
