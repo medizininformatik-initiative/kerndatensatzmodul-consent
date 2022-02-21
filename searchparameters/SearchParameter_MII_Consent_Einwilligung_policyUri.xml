@@ -8,7 +8,7 @@
   <description value="Suche in der Policy URI (versionsspezifische Policy / Broad Consent)" />
   <code value="policyUri" />
   <base value="Consent" />
-  <type value="string" />
+  <type value="uri" />
   <expression value="policy.uri" />
   <multipleOr value="true" />
   <multipleAnd value="true" />
