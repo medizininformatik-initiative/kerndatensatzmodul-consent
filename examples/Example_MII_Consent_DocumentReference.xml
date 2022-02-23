@@ -2,7 +2,7 @@
 	<id value="8a3d1799-2463-405e-b49c-6a16c8692b01"/>
 	<meta>
 		<lastUpdated value="2020-12-11T09:09:07.5320994+00:00"/>
-		<profile value="https://www.medizininformatik-initiative.de/fhir/core/modul-consent/StructureDefinition/DocumentReference"/>
+		<profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-consent/StructureDefinition/DocumentReference"/>
 	</meta>
 	<!-- FHIR will es -->
 	<status value="current"/>

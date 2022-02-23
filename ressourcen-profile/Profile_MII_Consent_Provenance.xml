@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="f675b1e8-9f3f-44e8-bb59-9681f78eb464" />
-  <url value="https://www.medizininformatik-initiative.de/fhir/core/modul-consent/StructureDefinition/Provenance" />
+  <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-consent/StructureDefinition/Provenance" />
   <name value="Profile_MII_Consent_Provenance" />
   <title value="Profile - MI-I - Consent - Provenance" />
   <status value="draft" />
@@ -1837,7 +1837,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <targetProfile value="https://www.medizininformatik-initiative.de/fhir/core/modul-consent/StructureDefinition/DocumentReference" />
+        <targetProfile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-consent/StructureDefinition/DocumentReference" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -2912,7 +2912,7 @@
       <path value="Provenance.entity.what" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://www.medizininformatik-initiative.de/fhir/core/modul-consent/StructureDefinition/DocumentReference" />
+        <targetProfile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-consent/StructureDefinition/DocumentReference" />
       </type>
     </element>
     <element id="Provenance.signature.type">

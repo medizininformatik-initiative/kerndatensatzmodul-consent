@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="56375452-bfa1-4111-af7c-5b5ba9a1857c" />
-  <url value="https://www.medizininformatik-initiative.de/fhir/core/modul-consent/StructureDefinition/DocumentReference" />
+  <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-consent/StructureDefinition/DocumentReference" />
   <name value="Profile_MII_Consent_DocumentReference" />
   <title value="Profile - MI-I - Consent - DocumentReference" />
   <status value="draft" />
