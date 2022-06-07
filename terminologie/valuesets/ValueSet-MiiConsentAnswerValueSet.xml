@@ -1,0 +1,112 @@
+<ValueSet xmlns="http://hl7.org/fhir">
+    <id value="2.16.840.1.113883.3.1937.777.24.11.30--20210323234509"/>
+    <meta>
+        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/><!--<profile value="http://hl7.org/fhir/4.0/StructureDefinition/ValueSet"/>-->
+    </meta>
+    <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
+        <valuePeriod>
+            <start value="2021-03-23T23:45:09+01:00"/>
+        </valuePeriod>
+    </extension>
+    <url value="https://www.medizininformatik-initiative.de/fhir/ValueSet/MiiConsentAnswerValueSet"/>
+    <identifier>
+        <use value="official"/>
+        <system value="urn:ietf:rfc:3986"/>
+        <value value="urn:oid:2.16.840.1.113883.3.1937.777.24.11.30"/>
+    </identifier>
+    <version value="1.6.0"/>
+    <name value="MiiConsentAnswerValueSet"/>
+    <title value="MII Consent: Answer ValueSet"/>
+    <status value="active"/>
+    <experimental value="false"/>
+    <publisher value="Konsortium DIFUTURE"/>
+    <contact>
+        <name value="Konsortium DIFUTURE"/>
+        <telecom>
+            <system value="url"/>
+            <value value="https://difuture.de"/>
+        </telecom>
+    </contact>
+    <description value="This ValueSet contains the possible answers to the questions of the MII Consent.&#xD;&#xA;"/>
+    <immutable value="false"/>
+    <compose>
+        <include>
+            <system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.2"/>
+            <concept>
+                <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+                    <valueString value="unknown"/>
+                </extension>
+                <code value="2.16.840.1.113883.3.1937.777.24.5.2.3"/>
+                <display value="unbekannt"/>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="unbekannt"/>
+                </designation>
+                <designation>
+                    <language value="en-US"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="unknown"/>
+                </designation>
+            </concept>
+            <concept>
+                <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+                    <valueString value="not valid"/>
+                </extension>
+                <code value="2.16.840.1.113883.3.1937.777.24.5.2.2"/>
+                <display value="nicht gültig"/>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="nicht gültig"/>
+                </designation>
+                <designation>
+                    <language value="en-US"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="not valid"/>
+                </designation>
+            </concept>
+            <concept>
+                <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+                    <valueString value="valid"/>
+                </extension>
+                <code value="2.16.840.1.113883.3.1937.777.24.5.2.1"/>
+                <display value="gültig"/>
+                <designation>
+                    <language value="de-DE"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="gültig"/>
+                </designation>
+                <designation>
+                    <language value="en-US"/>
+                    <use>
+                        <system value="http://snomed.info/sct"/>
+                        <code value="900000000000013009"/>
+                        <display value="Synonym"/>
+                    </use>
+                    <value value="valid"/>
+                </designation>
+            </concept>
+        </include>
+    </compose>
+</ValueSet>

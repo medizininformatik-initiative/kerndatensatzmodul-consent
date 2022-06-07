@@ -1,0 +1,171 @@
+<Consent xmlns="http://hl7.org/fhir">
+	<id value="34150a23-b1c8-404f-874f-e042a30435d2"/>
+	<meta>
+		<lastUpdated value="2020-12-11T09:39:07+00:00"/>
+		<profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-consent/StructureDefinition/Consent"/>
+	</meta>
+	<!-- Verweis auf die zugehörige Domain (hier: Studie) -->
+	<extension url="http://fhir.de/ConsentManagement/StructureDefinition/DomainReference">
+		<extension url="domain">
+			<valueReference>
+				<reference value="ResearchStudy/d7a65ce8-2810-401a-b0db-70782a7b19a6"/>
+			</valueReference>
+		</extension>
+		<extension url="status">
+			<valueCoding>
+				<system value="http://hl7.org/fhir/publication-status"/>
+				<code value="active"/>
+			</valueCoding>
+		</extension>
+	</extension>
+	<!-- Finalisierungsstatus -->
+	<status value="active"/>
+	<!-- Einwilligung zur Verwendung, hier: in der Forschung -->
+	<scope>
+		<coding>
+			<system value="http://terminology.hl7.org/CodeSystem/consentscope"/>
+			<code value="research"/>
+		</coding>
+	</scope>
+	<!-- Consent-Kategorie, hier: Einwilligung -->
+	<category>
+		<coding>
+			<system value="http://loinc.org"/>
+			<code value="59284-0"/>
+		</coding>
+	</category>
+	<!-- MII Broad Consent -->
+	<category>
+		<coding>
+			<code value="2.16.840.1.113883.3.1937.777.24.2.184"/>
+		</coding>
+	</category>
+	<!-- Patient, für den die Einwilligungserklärung gilt -->
+	<patient>
+		<reference value="Patient/9b4a702d-162c-428a-8c5d-8b98af21b693"/>
+	</patient>
+	<!-- Zeitpunkt der Einwilligung -->
+	<dateTime value="2020-09-01"/>
+	<organization>
+		<!-- hier kann bei Bedarf auch auf beliebige Organization-Ressourcen referenziert werden -->
+		<display value="Klinikum Musterstadt"/>
+	</organization>
+	<!-- durch diesen Consent geltende Policy/Policies bzw Module-->
+	<policy>
+		<!-- z.B. MII Broad Consent Version 1.6f -->
+		<uri value="urn:oid:2.16.840.1.113883.3.1937.777.24.2.1791"/>
+	</policy>
+	<!-- XacML-Repräsentation -->
+	<policyRule>
+		<extension url="http://fhir.de/ConsentManagement/StructureDefinition/Xacml">
+			<valueBase64Binary value="TUlJIEJDIEV4YW1wbGUgWEFDTUw="/>
+		</extension>
+		<text value="siehe eingebettetes XACML"/>
+	</policyRule>
+	<!-- In diesem Beispiel repräsentiert jede Provision eine Frage/Antwort bzw. Teilaussage einer Frage/Antwort in der Einwilligungserklärung eines Patienten. -->
+	<provision>
+		<!-- per default ist alles verweigert. was nicht in den Unterelementen erlaubt ist -->
+		<type value="deny"/>
+		<!-- längster Zeitraum der Gültigkeit -->
+		<period>
+			<start value="2020-09-01"/>
+			<end value="2050-08-31"/>
+		</period>
+		<provision>
+			<!-- ergibt sich aus der Antwort "PATDAT_erheben_speichern_nutzen=gültig" (Teil 1) -->
+			<type value="permit"/>
+			<!-- Medizinische Daten erheben: 5 Jahre gültig -->
+			<period>
+				<start value="2020-09-01"/>
+				<end value="2025-08-31"/>
+			</period>
+			<code>
+				<coding>
+					<system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
+					<code value="2.16.840.1.113883.3.1937.777.24.5.3.6"/>
+					<display value="MDAT_erheben"/>
+				</coding>
+			</code>
+		</provision>
+		<provision>
+			<!-- ergibt sich aus der Antwort "PATDAT_erheben_speichern_nutzen=gültig" (Teil 2) -->
+			<type value="permit"/>
+			<!-- Medizinische Daten speichern: 30 Jahre gültig -->
+			<period>
+				<start value="2020-09-01"/>
+				<end value="2050-08-31"/>
+			</period>
+			<code>
+				<coding>
+					<system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
+					<code value="2.16.840.1.113883.3.1937.777.24.5.3.7"/>
+					<display value="MDAT_speichern_verarbeiten"/>
+				</coding>
+			</code>
+		</provision>
+		<provision>
+			<!-- ergibt sich aus der Antwort "PATDAT_erheben_speichern_nutzen=gültig" (Teil 3) -->
+			<type value="permit"/>
+			<!-- Medizinische Daten nutzen: 30 Jahre gültig -->
+			<period>
+				<start value="2020-09-01"/>
+				<end value="2050-08-31"/>
+			</period>
+			<code>
+				<coding>
+					<system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
+					<code value="2.16.840.1.113883.3.1937.777.24.5.3.8"/>
+					<display value="MDAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU"/>
+				</coding>
+			</code>
+		</provision>
+		<provision>
+			<!-- ergibt sich aus der Antwort "BIOMAT_gewinnen_lagern_nutzen=gültig" (Teil 1) -->
+			<type value="permit"/>
+			<!-- Biomaterial gewinnen: 5 Jahre gültig -->
+			<period>
+				<start value="2020-09-01"/>
+				<end value="2025-08-31"/>
+			</period>
+			<code>
+				<coding>
+					<system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
+					<code value="2.16.840.1.113883.3.1937.777.24.5.3.19"/>
+					<display value="BIOMAT_erheben"/>
+				</coding>
+			</code>
+		</provision>
+		<provision>
+			<!-- ergibt sich aus der Antwort "BIOMAT_gewinnen_lagern_nutzen=gültig" (Teil 2) -->
+			<type value="permit"/>
+			<!-- Biomaterial lagern: 30 Jahre gültig -->
+			<period>
+				<start value="2020-09-01"/>
+				<end value="2050-08-31"/>
+			</period>
+			<code>
+				<coding>
+					<system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
+					<code value="2.16.840.1.113883.3.1937.777.24.5.3.20"/>
+					<display value="BIOMAT_lagern_verarbeiten"/>
+				</coding>
+			</code>
+		</provision>
+		<provision>
+			<!-- ergibt sich aus der Antwort "BIOMAT_gewinnen_lagern_nutzen=gültig" (Teil 3) -->
+			<type value="permit"/>
+			<!-- Biomaterial nutzen: 30 Jahre gültig -->
+			<period>
+				<start value="2020-09-01"/>
+				<end value="2050-08-31"/>
+			</period>
+			<code>
+				<coding>
+					<system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
+					<code value="2.16.840.1.113883.3.1937.777.24.5.3.22"/>
+					<display value="BIOMAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU"/>
+				</coding>
+			</code>
+		</provision>
+	</provision>
+</Consent>
