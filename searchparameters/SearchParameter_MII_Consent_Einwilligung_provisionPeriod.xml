@@ -5,7 +5,7 @@
   <name value="MII_SP_Consent_ProvisionPeriod" />
   <status value="active" />
   <date value="2022-10-07" />
-  <description value="Suche im Zeitraum der Provison" />
+  <description value="Suche im Zeitraum der Provision. Dieser Suchparameter bezieht sich explizit auf die zweite Verschachtelungsebene von provison." />
   <code value="provisionPeriod" />
   <base value="Consent" />
   <type value="date" />
