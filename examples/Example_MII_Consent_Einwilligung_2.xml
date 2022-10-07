@@ -31,12 +31,13 @@
 	<category>
 		<coding>
 			<system value="http://loinc.org"/>
-			<code value="59284-0"/>
+			<code value="57016-8"/>
 		</coding>
 	</category>
 	<!-- MII Broad Consent -->
 	<category>
 		<coding>
+      <system value="https://www.medizininformatik-initiative.de/fhir/modul-consent/CodeSystem/mii-cs-consent-consent_category"/>
 			<code value="2.16.840.1.113883.3.1937.777.24.2.184"/>
 		</coding>
 	</category>
