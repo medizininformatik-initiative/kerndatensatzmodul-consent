@@ -4716,8 +4716,8 @@
         <valueCode value="4.0.0" />
       </extension>
       <path value="Consent.dateTime" />
-      <short value="Gültigkeitsbeginn der Einwilligung" />
-      <definition value="Ab diesem Zeitpunkt gilt die hier dokumentierte Einwilligungserklärung" />
+      <short value="Erstellungszeitpunkt der Einwilligung" />
+      <definition value="Dieser Zeitpunkt sollte in der Praxis, zumindest bei vollelektronischer Verarbeitung, identisch mit dem Unterschriftsdatum des Fragebogens sein (Provenance.signature.when des Patienten)" />
       <comment value="Dieser Zeitpunkt sollte in der Praxis, zumindest bei vollelektronischer Verarbeitung, identisch mit dem Unterschriftsdatum des Fragebogens sein (Provenance.signature.when des Patienten)" />
       <min value="1" />
       <max value="1" />
@@ -9279,8 +9279,8 @@
         <valueCode value="4.0.0" />
       </extension>
       <path value="Consent.dateTime" />
-      <short value="Gültigkeitsbeginn der Einwilligung" />
-      <definition value="Ab diesem Zeitpunkt gilt die hier dokumentierte Einwilligungserklärung" />
+      <short value="Erstellungszeitpunkt der Einwilligung" />
+      <definition value="Dieser Zeitpunkt sollte in der Praxis, zumindest bei vollelektronischer Verarbeitung, identisch mit dem Unterschriftsdatum des Fragebogens sein (Provenance.signature.when des Patienten)" />
       <comment value="Dieser Zeitpunkt sollte in der Praxis, zumindest bei vollelektronischer Verarbeitung, identisch mit dem Unterschriftsdatum des Fragebogens sein (Provenance.signature.when des Patienten)" />
       <min value="1" />
       <mustSupport value="true" />
