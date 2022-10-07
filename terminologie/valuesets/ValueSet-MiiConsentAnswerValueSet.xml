@@ -8,14 +8,14 @@
             <start value="2021-03-23T23:45:09+01:00"/>
         </valuePeriod>
     </extension>
-    <url value="https://www.medizininformatik-initiative.de/fhir/ValueSet/MiiConsentAnswerValueSet"/>
+    <url value="https://www.medizininformatik-initiative.de/fhir/modul-consent/ValueSet/mii-vs-consent-answer"/>
     <identifier>
         <use value="official"/>
         <system value="urn:ietf:rfc:3986"/>
         <value value="urn:oid:2.16.840.1.113883.3.1937.777.24.11.30"/>
     </identifier>
     <version value="1.6.0"/>
-    <name value="MiiConsentAnswerValueSet"/>
+    <name value="MII_VS_Consent_Answer"/>
     <title value="MII Consent: Answer ValueSet"/>
     <status value="active"/>
     <experimental value="false"/>

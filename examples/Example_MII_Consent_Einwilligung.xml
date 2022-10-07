@@ -2,7 +2,7 @@
 	<id value="34150a23-b1c8-404f-874f-e042a30435d2"/>
 	<meta>
 		<lastUpdated value="2020-12-11T09:39:07+00:00"/>
-		<profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-consent/StructureDefinition/Consent"/>
+		<profile value="https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-einwilligung"/>
 	</meta>
 	<!-- Verweis auf die zugehörige Domain (hier: Studie) -->
 	<extension url="http://fhir.de/ConsentManagement/StructureDefinition/DomainReference">

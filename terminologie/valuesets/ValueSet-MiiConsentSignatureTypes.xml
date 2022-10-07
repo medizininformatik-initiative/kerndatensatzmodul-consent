@@ -7,13 +7,13 @@
 			<start value="2022-02-11T10:27:00+01:00"/>
 		</valuePeriod>
 	</extension>
-	<url value="https://www.medizininformatik-initiative.de/fhir/ValueSet/MiiConsentSignatureTypes"/>
-	<version value="1.0.0-rc1"/>
-	<name value="MiiConsentSignatureTypes"/>
+	<url value="https://www.medizininformatik-initiative.de/fhir/modul-consent/ValueSet/mii-vs-consent-signaturetypes"/>
+	<version value="1.0.0"/>
+	<name value="MII_VS_Consent_SignatureTypes"/>
 	<title value="MII Consent: Signature Types"/>
-	<status value="draft"/>
+	<status value="active"/>
 	<experimental value="false"/>
-	<date value="2022-02-21"/>
+	<date value="2022-10-07" />
 	<publisher value="MII Task Force Consent Umsetzung"/>
 	<contact>
 		<name value="MII Task Force Consent Umsetzung"/>

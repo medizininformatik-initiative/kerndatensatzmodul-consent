@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="e0e166b4-0f77-478d-9062-de0034d98ce0" />
-  <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-consent/StructureDefinition/Consent" />
-  <name value="Profile_MII_Consent_Einwilligung" />
+  <url value="https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-einwilligung" />
+  <version value="1.0.0" />
+  <name value="MII_PR_Consent_Einwilligung" />
   <title value="Profile - MI-I - Consent - Einwilligung" />
-  <status value="draft" />
-  <date value="2022-02-21" />
+  <status value="active"/>
+  <date value="2022-10-07" />
   <description value="Dieses Profil beschreibt eine Einwilligung in der Medizininformatik-Initiative." />
   <fhirVersion value="4.0.1" />
   <mapping>
@@ -8261,7 +8262,7 @@
         </extension>
         <strength value="required" />
         <description value="If this code is found in an instance, then the exception applies." />
-        <valueSet value="https://www.medizininformatik-initiative.de/fhir/ValueSet/MiiConsentPolicyValueSet" />
+        <valueSet value="https://www.medizininformatik-initiative.de/fhir/modul-consent/ValueSet/mii-vs-consent-policy" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -9430,7 +9431,7 @@
       <mustSupport value="true" />
       <binding>
         <strength value="required" />
-        <valueSet value="https://www.medizininformatik-initiative.de/fhir/ValueSet/MiiConsentPolicyValueSet" />
+        <valueSet value="https://www.medizininformatik-initiative.de/fhir/modul-consent/ValueSet/mii-vs-consent-policy" />
       </binding>
     </element>
     <element id="Consent.provision.provision.code.coding">

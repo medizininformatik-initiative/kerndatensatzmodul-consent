@@ -1,11 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="f675b1e8-9f3f-44e8-bb59-9681f78eb464" />
-  <url value="https://www.medizininformatik-initiative.de/fhir/ext/modul-consent/StructureDefinition/Provenance" />
-  <name value="Profile_MII_Consent_Provenance" />
+  <url value="https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-provenance" />
+  <version value="1.0.0" />
+  <name value="MII_PR_Consent_Provenance" />
   <title value="Profile - MI-I - Consent - Provenance" />
-  <status value="draft" />
-  <date value="2022-02-21" />
+  <status value="active"/>
+  <date value="2022-10-07" />
   <description value="Dieses Profil beschreibt Herkunftsinformationen zu Einwilligungen in der Medizininformatik-Initiative." />
   <fhirVersion value="4.0.1" />
   <mapping>
@@ -1837,7 +1838,7 @@
       </base>
       <type>
         <code value="Reference" />
-        <targetProfile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-consent/StructureDefinition/DocumentReference" />
+        <targetProfile value="https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-documentreference" />
       </type>
       <condition value="ele-1" />
       <constraint>
@@ -2312,7 +2313,7 @@
         </extension>
         <strength value="required" />
         <description value="An indication of the reason that an entity signed the object." />
-        <valueSet value="https://www.medizininformatik-initiative.de/fhir/ValueSet/MiiConsentSignatureTypes" />
+        <valueSet value="https://www.medizininformatik-initiative.de/fhir/modul-consent/ValueSet/mii-vs-consent-signaturetypes" />
       </binding>
       <mapping>
         <identity value="rim" />
@@ -2912,14 +2913,14 @@
       <path value="Provenance.entity.what" />
       <type>
         <code value="Reference" />
-        <targetProfile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-consent/StructureDefinition/DocumentReference" />
+        <targetProfile value="https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-documentreference" />
       </type>
     </element>
     <element id="Provenance.signature.type">
       <path value="Provenance.signature.type" />
       <binding>
         <strength value="required" />
-        <valueSet value="https://www.medizininformatik-initiative.de/fhir/ValueSet/MiiConsentSignatureTypes" />
+        <valueSet value="https://www.medizininformatik-initiative.de/fhir/modul-consent/ValueSet/mii-vs-consent-signaturetypes" />
       </binding>
     </element>
   </differential>

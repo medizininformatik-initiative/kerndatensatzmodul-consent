@@ -2,7 +2,7 @@
 	<id value="55219d12-6245-4de4-8b50-ddf6f16a789b"/>
 	<meta>
 		<lastUpdated value="2021-02-08T14:21:07.5320994+00:00"/>
-		<profile value="https://www.medizininformatik-initiative.de/fhir/ext/modul-consent/StructureDefinition/Provenance"/>
+		<profile value="https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-provenance"/>
 	</meta>
 	<!--
 		Diese Provenance gilt für den ausgefüllten Fragebogen (QuestionnaireResponse).
