@@ -1,11 +1,11 @@
 <ValueSet xmlns="http://hl7.org/fhir">
     <id value="2.16.840.1.113883.3.1937.777.24.11.36--20210423105554"/>
     <meta>
-        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/><!--<profile value="http://hl7.org/fhir/4.0/StructureDefinition/ValueSet"/>-->
+        <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
     </meta>
     <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
         <valuePeriod>
-            <start value="2021-04-23T10:55:54+01:00"/>
+            <start value="2023-01-18T13:08:49+01:00"/>
         </valuePeriod>
     </extension>
     <url value="https://www.medizininformatik-initiative.de/fhir/modul-consent/ValueSet/mii-vs-consent-policy"/>
@@ -14,12 +14,12 @@
         <system value="urn:ietf:rfc:3986"/>
         <value value="urn:oid:2.16.840.1.113883.3.1937.777.24.11.36"/>
     </identifier>
-    <version value="1.0.0"/>
+    <version value="1.0.1"/>
     <name value="MII_VS_Consent_Policy"/>
     <title value="MII Consent: Policy ValueSet"/>
     <status value="active"/>
     <experimental value="false"/>
-	  <date value="2022-10-07" />
+    <date value="2023-01-18" />
     <publisher value="MII Task Force Consent Umsetzung"/>
     <contact>
         <name value="MII Task Force Consent Umsetzung"/>
@@ -31,6 +31,7 @@
     <description value="Valueset mit Consent-Policy-Codes zur interoperablen Operationalisierung bzw. Durchsetzung (Enforcement) von Consent Informationen des MII Broad Consent"/>
     <immutable value="false"/>
     <compose>
+        <inactive value="true"/>
         <include>
             <system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
             <concept>
@@ -46,7 +47,7 @@
             </concept>
             <concept>
                 <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
-                    <valueString value="Speicherung und Verarbeitung identifizierender Daten (IDAT)&#160;zu Zwecken med. Forschung in der verantwortlichen Stelle"/>
+                    <valueString value="Speicherung und Verarbeitung identifizierender Daten (IDAT) zu Zwecken med. Forschung in der verantwortlichen Stelle"/>
                 </extension>
                 <code value="2.16.840.1.113883.3.1937.777.24.5.3.3"/>
                 <display value="IDAT_speichern_verarbeiten"/>
@@ -74,7 +75,7 @@
             </concept>
             <concept>
                 <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
-                    <valueString value="Speicherung und Verarbeitung von medizinischen codierten Daten zu Zwecken med.&#xA;Forschung innerhalb der verantwortlichen Stelle (MDAT)"/>
+                    <valueString value="Speicherung und Verarbeitung von medizinischen codierten Daten zu Zwecken med. Forschung innerhalb der verantwortlichen Stelle (MDAT)"/>
                 </extension>
                 <code value="2.16.840.1.113883.3.1937.777.24.5.3.7"/>
                 <display value="MDAT_speichern_verarbeiten"/>
@@ -113,7 +114,7 @@
             </concept>
             <concept>
                 <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
-                    <valueString value="Retrospektive Bereitstellung medizinischer Daten (MDAT)&#160;für wissenschaftliche Nutzung (DSGVO konform)"/>
+                    <valueString value="Retrospektive Bereitstellung medizinischer Daten (MDAT) für wissenschaftliche Nutzung (DSGVO konform)"/>
                 </extension>
                 <code value="2.16.840.1.113883.3.1937.777.24.5.3.46"/>
                 <display value="MDAT_retro_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU"/>
@@ -227,7 +228,7 @@
             </concept>
             <concept>
                 <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
-                    <valueString value="Bereitstellung umcodierter Biomaterialien (BIOMAT)&#160;&#160;für wissenschaftliche Nutzung  und Analysen zu Zwecken med. Forschung an ext. Forscher"/>
+                    <valueString value="Bereitstellung umcodierter Biomaterialien (BIOMAT)  für wissenschaftliche Nutzung und Analysen zu Zwecken med. Forschung an ext. Forscher"/>
                 </extension>
                 <code value="2.16.840.1.113883.3.1937.777.24.5.3.22"/>
                 <display value="BIOMAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU"/>
@@ -245,7 +246,7 @@
             </concept>
             <concept>
                 <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
-                    <valueString value="Entnahme zusätzlicher Mengen von Biomaterialien (BIOMAT) in den in der Einwilligung&#xA;beschriebenen Grenzen"/>
+                    <valueString value="Entnahme zusätzlicher Mengen von Biomaterialien (BIOMAT) in den in der Einwilligung beschriebenen Grenzen"/>
                 </extension>
                 <code value="2.16.840.1.113883.3.1937.777.24.5.3.25"/>
                 <display value="BIOMAT_Zusatzmengen_entnehmen"/>
@@ -256,14 +257,14 @@
             </concept>
             <concept>
                 <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
-                    <valueString value="Lagerung und codierte Verarbeitung von retrospektiven Biomaterialien zu Zwecken der med. Forschung innerhalb der verantwortlichen Stelle (BIOMAT)&#160;"/>
+                    <valueString value="Lagerung und codierte Verarbeitung von retrospektiven Biomaterialien zu Zwecken der med. Forschung innerhalb der verantwortlichen Stelle (BIOMAT) "/>
                 </extension>
                 <code value="2.16.840.1.113883.3.1937.777.24.5.3.51"/>
                 <display value="BIOMAT_retro_lagern_verarbeiten"/>
             </concept>
             <concept>
                 <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
-                    <valueString value="Bereitstellung retrospektiver umcodierter Biomaterialien (BIOMAT)&#160;&#160;für wissenschaftliche Nutzung  und Analysen"/>
+                    <valueString value="Bereitstellung retrospektiver umcodierter Biomaterialien (BIOMAT)  für wissenschaftliche Nutzung und Analysen"/>
                 </extension>
                 <code value="2.16.840.1.113883.3.1937.777.24.5.3.52"/>
                 <display value="BIOMAT_retro_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU"/>
@@ -317,7 +318,7 @@
             </concept>
             <concept>
                 <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
-                    <valueString value="Rekontaktierung bezüglich Zusatzbefund&#160;im Rahmen der am Standort dafür entwickelten Prozesse und der im Nutzungsantrag angegebenen Bedingungen"/>
+                    <valueString value="Rekontaktierung bezüglich Zusatzbefund im Rahmen der am Standort dafür entwickelten Prozesse und der im Nutzungsantrag angegebenen Bedingungen"/>
                 </extension>
                 <code value="2.16.840.1.113883.3.1937.777.24.5.3.31"/>
                 <display value="Rekontaktierung_Zusatzbefund"/>
@@ -338,7 +339,7 @@
                     <valueString value="GECCO83-Datensatz lokal codiert speichern und wie die sonstigen Patientendaten verarbeiten und nutzen"/>
                 </extension>
                 <code value="2.16.840.1.113883.3.1937.777.24.5.3.43"/>
-                <display value="MDAT_GECC083_erheben"/>
+                <display value="MDAT_GECCO83_erheben"/>
             </concept>
             <concept>
                 <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
@@ -353,6 +354,26 @@
                 </extension>
                 <code value="2.16.840.1.113883.3.1937.777.24.5.3.34"/>
                 <display value="MDAT_GECCO83_speichern_verarbeiten_NUM_CODEX"/>
+            </concept>
+            <concept>
+                <extension url="http://hl7.org/fhir/StructureDefinition/valueset-deprecated">
+                    <valueBoolean value="true"/>
+                </extension>
+                <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+                    <valueString value="Nutzung des umcodierten Covid-19-Datensatzes auf der im Rahmen des Projekts NUM-CODEX aufgebauten zentralen Datenplattform zu Zwecken der COVID-19-Forschung"/>
+                </extension>
+                <code value="2.16.840.1.113883.3.1937.777.24.5.3.41"/>
+                <display value="MDAT_GECCO83_wissenschaftlich_nutzen_COVID_19_Forschung_EU_DSGVO_konform"/>
+            </concept>
+            <concept>
+                <extension url="http://hl7.org/fhir/StructureDefinition/valueset-deprecated">
+                    <valueBoolean value="true"/>
+                </extension>
+                <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">
+                    <valueString value="Nutzung des umcodierten Covid-19-Datensatzes auf der im Rahmen des Projekts NUM-CODEX aufgebauten zentralen Datenplattform zu Zwecken der Pandemie-Forschung"/>
+                </extension>
+                <code value="2.16.840.1.113883.3.1937.777.24.5.3.42"/>
+                <display value="MDAT_GECCO83_wissenschaftlich_nutzen_Pandemie_Forschung_EU_DSGVO_konform"/>
             </concept>
             <concept>
                 <extension url="http://hl7.org/fhir/StructureDefinition/valueset-concept-comments">

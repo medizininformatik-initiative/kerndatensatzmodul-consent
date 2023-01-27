@@ -27,7 +27,7 @@
             <value value="https://difuture.de"/>
         </telecom>
     </contact>
-    <description value="This ValueSet contains the possible answers to the questions of the MII Consent.&#xD;&#xA;"/>
+    <description value="This ValueSet contains the possible answers to the questions of the MII Consent."/>
     <immutable value="false"/>
     <compose>
         <include>
