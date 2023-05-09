@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="f675b1e8-9f3f-44e8-bb59-9681f78eb464" />
   <url value="https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-provenance" />
-  <version value="1.0.2" />
+  <version value="1.0.3" />
   <name value="MII_PR_Consent_Provenance" />
   <title value="Profile - MI-I - Consent - Provenance" />
   <status value="active" />
-  <date value="2023-01-27" />
+  <date value="2023-05-09" />
   <description value="Dieses Profil beschreibt Herkunftsinformationen zu Einwilligungen in der Medizininformatik-Initiative." />
   <fhirVersion value="4.0.1" />
   <mapping>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<SearchParameter xmlns="http://hl7.org/fhir">
+  <url value="https://www.medizininformatik-initiative.de/fhir/modul-consent/SearchParameter/mii-sp-consent-provisioncodeperiod" />
+  <version value="1.0.3"/>
+  <name value="MII_SP_Consent_ProvisionCodePeriod" />
+  <status value="active"/>
+  <date value="2023-05-09" />
+  <description value="Composite-Suche nach Zeitraum (period) einer bestimmten, durch einen Code definierten, Provision." />
+  <code value="mii-provision-provision-code-period" />
+  <base value="Consent" />
+  <type value="composite" />
+  <expression value="Consent.provision.provision" />
+  <component>
+    <definition value="https://www.medizininformatik-initiative.de/fhir/modul-consent/SearchParameter/mii-sp-consent-provisioncode"/>
+    <expression value="code"/>
+  </component>
+  <component>
+    <definition value="https://www.medizininformatik-initiative.de/fhir/modul-consent/SearchParameter/mii-sp-consent-provisionperiod"/>
+    <expression value="period"/>
+  </component>
+</SearchParameter>
