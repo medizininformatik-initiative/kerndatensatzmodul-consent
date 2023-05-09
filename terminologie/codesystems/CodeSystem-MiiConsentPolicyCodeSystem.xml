@@ -4,12 +4,12 @@
     <profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem"/>
   </meta>
   <url value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
-  <version value="1.0.1"/>
-  <name value="MII_CS_Consent_Policy"/>
+  <version value="1.0.2"/>
+  <name value="MII CS Consent Policy"/>
   <title value="MII Consent: Policy CodeSystem"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2023-01-18"/>
+  <date value="2023-03-31"/>
   <publisher value="MII Task Force Consent Umsetzung"/>
   <contact>
     <name value="MII Task Force Consent Umsetzung"/>
@@ -26,226 +26,226 @@
   <count value="56"/>
   <concept>
     <code value="2.16.840.1.113883.3.1937.777.24.5.3.1"/>
-    <display value="PATDAT_erheben_speichern_nutzen"/>
-  </concept>
-  <concept>
-    <code value="2.16.840.1.113883.3.1937.777.24.5.3.2"/>
-    <display value="IDAT_erheben"/>
-  </concept>
-  <concept>
-    <code value="2.16.840.1.113883.3.1937.777.24.5.3.3"/>
-    <display value="IDAT_speichern_verarbeiten"/>
-  </concept>
-  <concept>
-    <code value="2.16.840.1.113883.3.1937.777.24.5.3.4"/>
-    <display value="IDAT_zusammenfuehren_Dritte"/>
-  </concept>
-  <concept>
-    <code value="2.16.840.1.113883.3.1937.777.24.5.3.5"/>
-    <display value="IDAT_bereitstellen_EU_DSGVO_NIVEAU"/>
-  </concept>
-  <concept>
-    <code value="2.16.840.1.113883.3.1937.777.24.5.3.6"/>
-    <display value="MDAT_erheben"/>
-  </concept>
-  <concept>
-    <code value="2.16.840.1.113883.3.1937.777.24.5.3.7"/>
-    <display value="MDAT_speichern_verarbeiten"/>
-  </concept>
-  <concept>
-    <code value="2.16.840.1.113883.3.1937.777.24.5.3.8"/>
-    <display value="MDAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU"/>
-  </concept>
-  <concept>
-    <code value="2.16.840.1.113883.3.1937.777.24.5.3.9"/>
-    <display value="MDAT_zusammenfuehren_Dritte"/>
-  </concept>
-  <concept>
-    <code value="2.16.840.1.113883.3.1937.777.24.5.3.37"/>
-    <display value="Rekontaktierung_Ergebnisse_erheblicher_Bedeutung"/>
+    <display value="Patientendaten erheben, speichern, nutzen"/>
+    <concept>
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.2"/>
+      <display value="IDAT erheben"/>
+    </concept>
+    <concept>
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.3"/>
+      <display value="IDAT speichern, verarbeiten"/>
+    </concept>
+    <concept>
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.4"/>
+      <display value="IDAT zusammenfuehren Dritte"/>
+    </concept>
+    <concept>
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.5"/>
+      <display value="IDAT bereitstellen EU DSGVO NIVEAU"/>
+    </concept>
+    <concept>
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.6"/>
+      <display value="MDAT erheben"/>
+    </concept>
+    <concept>
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.7"/>
+      <display value="MDAT speichern, verarbeiten"/>
+    </concept>
+    <concept>
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.8"/>
+      <display value="MDAT wissenschaftlich nutzen EU DSGVO NIVEAU"/>
+    </concept>
+    <concept>
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.9"/>
+      <display value="MDAT zusammenfuehren Dritte"/>
+    </concept>
+    <concept>
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.37"/>
+      <display value="Rekontaktierung Ergebnisse erheblicher Bedeutung"/>
+    </concept>
   </concept>
   <concept>
     <code value="2.16.840.1.113883.3.1937.777.24.5.3.44"/>
-    <display value="PATDAT_retrospektiv_verarbeiten_nutzen"/>
-  </concept>
-  <concept>
-    <code value="2.16.840.1.113883.3.1937.777.24.5.3.45"/>
-    <display value="MDAT_retro_speichern_verarbeiten"/>
-  </concept>
-  <concept>
-    <code value="2.16.840.1.113883.3.1937.777.24.5.3.46"/>
-    <display value="MDAT_retro_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU"/>
-  </concept>
-  <concept>
-    <code value="2.16.840.1.113883.3.1937.777.24.5.3.47"/>
-    <display value="MDAT_retro_zusammenfuehren_Dritte"/>
+    <display value="Patientendaten retrospektiv verarbeiten, nutzen"/>
+    <concept>
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.45"/>
+      <display value="MDAT retrospektiv speichern verarbeiten"/>
+    </concept>
+    <concept>
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.46"/>
+      <display value="MDAT retrospektiv wissenschaftlich nutzen EU DSGVO NIVEAU"/>
+    </concept>
+    <concept>
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.47"/>
+      <display value="MDAT retrospektiv zusammenfuehren Dritte"/>
+    </concept>
   </concept>
   <concept>
     <code value="2.16.840.1.113883.3.1937.777.24.5.3.48"/>
-    <display value="PATDAT_Weitergabe_non_DSGVO_NIVEAU"/>
-  </concept>
-  <concept>
-    <code value="2.16.840.1.113883.3.1937.777.24.5.3.49"/>
-    <display value="MDAT_bereitstellen_non_EU_DSGVO_NIVEAU"/>
+    <display value="Patientendaten Weitergabe non DSGVO NIVEAU"/>
+    <concept>
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.49"/>
+      <display value="MDAT bereitstellen non EU DSGVO NIVEAU"/>
+    </concept>
   </concept>
   <concept>
     <code value="2.16.840.1.113883.3.1937.777.24.5.3.10"/>
-    <display value="KKDAT_retrospektiv_uebertragen_speichern_nutzen"/>
-  </concept>
-  <concept>
-    <code value="2.16.840.1.113883.3.1937.777.24.5.3.11"/>
-    <display value="KKDAT_5J_retro_uebertragen"/>
-  </concept>
-  <concept>
-    <code value="2.16.840.1.113883.3.1937.777.24.5.3.12"/>
-    <display value="KKDAT_5J_retro_speichern_verarbeiten"/>
-  </concept>
-  <concept>
-    <code value="2.16.840.1.113883.3.1937.777.24.5.3.13"/>
-    <display value="KKDAT_5J_retro_wissenschaftlich_nutzen"/>
-  </concept>
-  <concept>
-    <code value="2.16.840.1.113883.3.1937.777.24.5.3.38"/>
-    <display value="KKDAT_5J_retro_uebertragen_KVNR"/>
+    <display value="Krankenkassendaten retrospektiv uebertragen, speichern, nutzen"/>
+    <concept>
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.11"/>
+      <display value="KKDAT 5J retrospektiv uebertragen"/>
+    </concept>
+    <concept>
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.12"/>
+      <display value="KKDAT 5J retrospektiv speichern verarbeiten"/>
+    </concept>
+    <concept>
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.13"/>
+      <display value="KKDAT 5J retrospektiv wissenschaftlich nutzen"/>
+    </concept>
+    <concept>
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.38"/>
+      <display value="KKDAT 5J retrospektiv uebertragen KVNR"/>
+    </concept>
   </concept>
   <concept>
     <code value="2.16.840.1.113883.3.1937.777.24.5.3.14"/>
-    <display value="KKDAT_prospektiv_uebertragen_speichern_nutzen"/>
-  </concept>
-  <concept>
-    <code value="2.16.840.1.113883.3.1937.777.24.5.3.15"/>
-    <display value="KKDAT_5J_pro_uebertragen"/>
-  </concept>
-  <concept>
-    <code value="2.16.840.1.113883.3.1937.777.24.5.3.16"/>
-    <display value="KKDAT_5J_pro_speichern_verarbeiten"/>
-  </concept>
-  <concept>
-    <code value="2.16.840.1.113883.3.1937.777.24.5.3.17"/>
-    <display value="KKDAT_5J_pro_wissenschaftlich_nutzen"/>
-  </concept>
-  <concept>
-    <code value="2.16.840.1.113883.3.1937.777.24.5.3.39"/>
-    <display value="KKDAT_5J_pro_uebertragen_KVNR"/>
+    <display value="KKDAT prospektiv uebertragen speichern nutzen"/>
+    <concept>
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.15"/>
+      <display value="KKDAT 5J prospektiv uebertragen"/>
+    </concept>
+    <concept>
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.16"/>
+      <display value="KKDAT 5J prospektiv speichern verarbeiten"/>
+    </concept>
+    <concept>
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.17"/>
+      <display value="KKDAT 5J prospektiv wissenschaftlich nutzen"/>
+    </concept>
+    <concept>
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.39"/>
+      <display value="KKDAT 5J prospektiv uebertragen KVNR"/>
+    </concept>
   </concept>
   <concept>
     <code value="2.16.840.1.113883.3.1937.777.24.5.3.18"/>
-    <display value="BIOMAT_erheben_lagern_nutzen"/>
-  </concept>
-  <concept>
-    <code value="2.16.840.1.113883.3.1937.777.24.5.3.19"/>
-    <display value="BIOMAT_erheben"/>
-  </concept>
-  <concept>
-    <code value="2.16.840.1.113883.3.1937.777.24.5.3.20"/>
-    <display value="BIOMAT_lagern_verarbeiten"/>
-  </concept>
-  <concept>
-    <code value="2.16.840.1.113883.3.1937.777.24.5.3.21"/>
-    <display value="BIOMAT_Eigentum_uebertragen"/>
-  </concept>
-  <concept>
-    <code value="2.16.840.1.113883.3.1937.777.24.5.3.22"/>
-    <display value="BIOMAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU"/>
-  </concept>
-  <concept>
-    <code value="2.16.840.1.113883.3.1937.777.24.5.3.23"/>
-    <display value="BIOMAT_Analysedaten_zusammenfuehren_Dritte"/>
+    <display value="Biomaterial erheben, lagern, nutzen"/>
+    <concept>
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.19"/>
+      <display value="BIOMAT erheben"/>
+    </concept>
+    <concept>
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.20"/>
+      <display value="BIOMAT lagern verarbeiten"/>
+    </concept>
+    <concept>
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.21"/>
+      <display value="BIOMAT Eigentum übertragen"/>
+    </concept>
+    <concept>
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.22"/>
+      <display value="BIOMAT wissenschaftlich nutzen EU DSGVO NIVEAU"/>
+    </concept>
+    <concept>
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.23"/>
+      <display value="BIOMAT Analysedaten zusammenfuehren Dritte"/>
+    </concept>
   </concept>
   <concept>
     <code value="2.16.840.1.113883.3.1937.777.24.5.3.24"/>
-    <display value="BIOMAT_Zusatzentnahme"/>
-  </concept>
-  <concept>
-    <code value="2.16.840.1.113883.3.1937.777.24.5.3.25"/>
-    <display value="BIOMAT_Zusatzmengen_entnehmen"/>
+    <display value="Biomaterial Zusatzentnahme"/>
+    <concept>
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.25"/>
+      <display value="BIOMAT Zusatzmengen entnehmen"/>
+    </concept>
   </concept>
   <concept>
     <code value="2.16.840.1.113883.3.1937.777.24.5.3.50"/>
-    <display value="BIOMAT_retrospektiv_speichern_nutzen"/>
-  </concept>
-  <concept>
-    <code value="2.16.840.1.113883.3.1937.777.24.5.3.51"/>
-    <display value="BIOMAT_retro_lagern_verarbeiten"/>
-  </concept>
-  <concept>
-    <code value="2.16.840.1.113883.3.1937.777.24.5.3.52"/>
-    <display value="BIOMAT_retro_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU"/>
-  </concept>
-  <concept>
-    <code value="2.16.840.1.113883.3.1937.777.24.5.3.53"/>
-    <display value="BIOMAT_retro_Analysedaten_zusammenfuehren_Dritte"/>
+    <display value="Biomaterial retrospektiv speichern, nutzen"/>
+    <concept>
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.51"/>
+      <display value="BIOMAT retrospektiv lagern verarbeiten"/>
+    </concept>
+    <concept>
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.52"/>
+      <display value="BIOMAT retrospektiv wissenschaftlich nutzen EU DSGVO NIVEAU"/>
+    </concept>
+    <concept>
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.53"/>
+      <display value="BIOMAT retrospektiv Analysedaten zusammenfuehren Dritte"/>
+    </concept>
   </concept>
   <concept>
     <code value="2.16.840.1.113883.3.1937.777.24.5.3.54"/>
-    <display value="BIOMAT_Weitergabe_non_EU_DSGVO_NIVEAU"/>
-  </concept>
-  <concept>
-    <code value="2.16.840.1.113883.3.1937.777.24.5.3.55"/>
-    <display value="BIOMAT_bereitstellen_non_EU_DSGVO_NIVEAU"/>
+    <display value="Biomaterial Weitergabe non EU DSGVO NIVEAU"/>
+    <concept>
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.55"/>
+      <display value="BIOMAT bereitstellen ohne EU DSGVO NIVEAU"/>
+    </concept>
   </concept>
   <concept>
     <code value="2.16.840.1.113883.3.1937.777.24.5.3.26"/>
-    <display value="Rekontaktierung_Ergaenzungen"/>
-  </concept>
-  <concept>
-    <code value="2.16.840.1.113883.3.1937.777.24.5.3.27"/>
-    <display value="Rekontaktierung_Verknuepfung_Datenbanken"/>
-  </concept>
-  <concept>
-    <code value="2.16.840.1.113883.3.1937.777.24.5.3.28"/>
-    <display value="Rekontaktierung_weitere_Erhebung"/>
-  </concept>
-  <concept>
-    <code value="2.16.840.1.113883.3.1937.777.24.5.3.29"/>
-    <display value="Rekontaktierung_weitere_Studien"/>
+    <display value="Rekontaktierung Ergänzungen"/>
+    <concept>
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.27"/>
+      <display value="Rekontaktierung Verknüpfung Datenbanken"/>
+    </concept>
+    <concept>
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.28"/>
+      <display value="Rekontaktierung weitere Erhebung"/>
+    </concept>
+    <concept>
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.29"/>
+      <display value="Rekontaktierung weitere Studien"/>
+    </concept>
   </concept>
   <concept>
     <code value="2.16.840.1.113883.3.1937.777.24.5.3.30"/>
-    <display value="Rekontaktierung_Zusatzbefund"/>
-  </concept>
-  <concept>
-    <code value="2.16.840.1.113883.3.1937.777.24.5.3.31"/>
-    <display value="Rekontaktierung_Zusatzbefund"/>
+    <display value="Rekontaktierung Zusatzbefund"/>
+    <concept>
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.31"/>
+      <display value="Rekontaktierung Zusatzbefund"/>
+    </concept>
   </concept>
   <concept>
     <code value="2.16.840.1.113883.3.1937.777.24.5.3.32"/>
-    <display value="Z1_GECCO83_Nutzung_NUM_CODEX"/>
-  </concept>
-  <concept>
-    <code value="2.16.840.1.113883.3.1937.777.24.5.3.40"/>
-    <display value="MDAT_GECCO83_komplettieren_einmalig"/>
-  </concept>
-  <concept>
-    <code value="2.16.840.1.113883.3.1937.777.24.5.3.43"/>
-    <display value="MDAT_GECCO83_erheben"/>
-  </concept>
-  <concept>
-    <code value="2.16.840.1.113883.3.1937.777.24.5.3.33"/>
-    <display value="MDAT_GECCO83_bereitstellen_NUM_CODEX"/>
-  </concept>
-  <concept>
-    <code value="2.16.840.1.113883.3.1937.777.24.5.3.34"/>
-    <display value="MDAT_GECCO83_speichern_verarbeiten_NUM_CODEX"/>
-  </concept>
-  <concept>
-    <code value="2.16.840.1.113883.3.1937.777.24.5.3.41"/>
-    <display value="MDAT_GECCO83_wissenschaftlich_nutzen_COVID_19_Forschung_EU_DSGVO_konform"/>
-  </concept>
-  <concept>
-    <code value="2.16.840.1.113883.3.1937.777.24.5.3.42"/>
-    <display value="MDAT_GECCO83_wissenschaftlich_nutzen_Pandemie_Forschung_EU_DSGVO_konform"/>
-  </concept>
-  <concept>
-    <code value="2.16.840.1.113883.3.1937.777.24.5.3.56"/>
-    <display value="MDAT_GECCO83_wissenschaftlich_nutzen_NUM_CODEX_EU_DSGVO_NIVEAU"/>
+    <display value="Z1 GECCO83 Nutzung NUM/CODEX"/>
+    <concept>
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.40"/>
+      <display value="MDAT GECCO83 komplettieren einmalig"/>
+    </concept>
+    <concept>
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.43"/>
+      <display value="MDAT GECCO83 erheben"/>
+    </concept>
+    <concept>
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.33"/>
+      <display value="MDAT GECCO83 bereitstellen NUM/CODEX"/>
+    </concept>
+    <concept>
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.34"/>
+      <display value="MDAT GECCO83 speichern verarbeiten NUM/CODEX"/>
+    </concept>
+    <concept>
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.41"/>
+      <display value="MDAT GECCO83 wissenschaftlich nutzen COVID 19 Forschung EU DSGVO konform"/>
+    </concept>
+    <concept>
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.42"/>
+      <display value="MDAT GECCO83 wissenschaftlich nutzen Pandemie Forschung EU DSGVO konform"/>
+    </concept>
+    <concept>
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.56"/>
+      <display value="MDAT GECCO83 wissenschaftlich nutzen NUM/CODEX EU DSGVO NIVEAU"/>
+    </concept>
   </concept>
   <concept>
     <code value="2.16.840.1.113883.3.1937.777.24.5.3.35"/>
-    <display value="Z1_GECCO83_Weitergabe_NUM_CODEX_non_EU_DSGVO_NIVEAU"/>
-  </concept>
-  <concept>
-    <code value="2.16.840.1.113883.3.1937.777.24.5.3.36"/>
-    <display value="MDAT_GECCO83_bereitstellen_NUM_CODEX_non_EU_DSGVO_NIVEAU"/>
+    <display value="Z1 GECCO83 Weitergabe NUM/CODEX non EU DSGVO NIVEAU"/>
+    <concept>
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.36"/>
+      <display value="MDAT GECCO83 bereitstellen NUM/CODEX ohne EU DSGVO NIVEAU"/>
+    </concept>
   </concept>
 </CodeSystem>
