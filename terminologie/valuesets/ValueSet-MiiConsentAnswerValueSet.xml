@@ -19,12 +19,12 @@
     <title value="MII Consent: Answer ValueSet"/>
     <status value="active"/>
     <experimental value="false"/>
-    <publisher value="Konsortium DIFUTURE"/>
+    <publisher value="MII Task Force Consent Umsetzung"/>
     <contact>
-        <name value="Konsortium DIFUTURE"/>
+        <name value="MII Task Force Consent Umsetzung"/>
         <telecom>
-            <system value="url"/>
-            <value value="https://difuture.de"/>
+            <system value="email"/>
+            <value value="office@medizininformatik-initiative.de"/>
         </telecom>
     </contact>
     <description value="This ValueSet contains the possible answers to the questions of the MII Consent."/>
