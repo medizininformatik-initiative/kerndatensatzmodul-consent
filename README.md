@@ -28,6 +28,7 @@ Unter anderem werden MII-spezifische ValueSets festgelegt und die IG-seitigen Vo
 * [Implementierungsleitfaden und FHIR Profilen der AG Einwilligungsmanagement](https://ig.fhir.de/einwilligungsmanagement/stable/)
 * [Simplifier-Projekt MII KDS Modul Consent](https://simplifier.net/medizininformatikinitiative-modulconsent)
 * [IG MII KDS Modul Consent](https://simplifier.net/guide/MedizininformatikInitiative-ModulConsent-ImplementationGuide/IGMIIKDSModulConsent)
+* [Übersicht der KDS Module (Wiki github/kerndatensatz-meta](https://github.com/medizininformatik-initiative/kerndatensatz-meta/wiki)
 
 ### Autoren und Ansprechpartner
 
