@@ -42,7 +42,8 @@
 		<who>
 			<reference value="Patient/9b4a702d-162c-428a-8c5d-8b98af21b693"/>
 		</who>
-		<data value="iVBORw0KGgoAAAANSUhEUgAAAJYAAABZCAYCCCDcv92DAAAABGdBTUEAAKKkxq/Z1wAAACBjSFJNAACHEAAAjBIAAQW.....[base64-codiert, z.B. Scan der Unterschrift]"/>
+		<!-- [base64-codiert, z.B. Scan der Unterschrift] -->
+		<data value="RGllcyBpc3QgZWluIFBsYXR6aGFsdGVyIGbDvHIgZWluZSBnZXNjYW5udCB1bmQgQmFzZTY0LWVuY29kaWVydGUgVW50ZXJzY2hyaWZ0Lg=="/>
 	</signature>
 	<!-- Unterschrift des aufklärenden Arztes -->
 	<signature>
@@ -58,6 +59,7 @@
 		<onBehalfOf>
 			<display value="Krankenhaus Musterstadt"/>
 		</onBehalfOf>
+		<!-- [base64-codiert, z.B. Scan der Unterschrift] -->
 		<data value="QUcgRVdFIEZISVIgcm9ja3M="/>
 	</signature>
 </Provenance>
