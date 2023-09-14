@@ -21,7 +21,7 @@
   <description value="This CodeSystem contains the possible answers to the questions of the MII Consent."/>
   <caseSensitive value="true"/>
   <valueSet value="https://www.medizininformatik-initiative.de/fhir/modul-consent/ValueSet/mii-vs-consent-answer"/>
-  <hierarchyMeaning value="is-a"/>
+  <hierarchyMeaning value="part-of"/>
   <content value="complete"/>
   <count value="3"/>
   <concept>
