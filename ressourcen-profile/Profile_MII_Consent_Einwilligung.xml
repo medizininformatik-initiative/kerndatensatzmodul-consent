@@ -2,7 +2,7 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="e0e166b4-0f77-478d-9062-de0034d98ce0" />
   <url value="https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-einwilligung" />
-  <version value="1.0.3" />
+  <version value="1.0.7" />
   <name value="MII_PR_Consent_Einwilligung" />
   <title value="Profile - MI-I - Consent - Einwilligung" />
   <status value="active" />

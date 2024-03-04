@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <SearchParameter xmlns="http://hl7.org/fhir">
   <url value="https://www.medizininformatik-initiative.de/fhir/modul-consent/SearchParameter/mii-sp-consent-provisionperiod" />
-  <version value="1.0.3"/>
+  <version value="1.0.7"/>
   <name value="MII_SP_Consent_ProvisionPeriod" />
   <status value="active" />
   <date value="2023-05-09" />
