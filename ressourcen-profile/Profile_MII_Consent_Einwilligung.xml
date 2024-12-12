@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="e0e166b4-0f77-478d-9062-de0034d98ce0" />
   <url value="https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-einwilligung" />
-  <version value="1.0.7" />
+  <version value="1.0.8" />
   <name value="MII_PR_Consent_Einwilligung" />
   <title value="Profile - MI-I - Consent - Einwilligung" />
   <status value="active" />
-  <date value="2023-05-09" />
+  <date value="2024-12-12" />
   <description value="Dieses Profil beschreibt eine Einwilligung in der Medizininformatik-Initiative." />
   <fhirVersion value="4.0.1" />
   <mapping>
@@ -124,7 +124,7 @@
         <rules value="closed" />
       </slicing>
       <min value="2" />
-      <max value="2" />
+      <max value="*" />
       <mustSupport value="true" />
     </element>
     <element id="Consent.category:loinc">
@@ -306,7 +306,6 @@
     <element id="Consent.provision.type">
       <path value="Consent.provision.type" />
       <min value="1" />
-      <fixedCode value="deny" />
       <mustSupport value="true" />
     </element>
     <element id="Consent.provision.period">
@@ -339,7 +338,6 @@
     <element id="Consent.provision.provision.type">
       <path value="Consent.provision.provision.type" />
       <min value="1" />
-      <fixedCode value="permit" />
       <mustSupport value="true" />
     </element>
     <element id="Consent.provision.provision.period">
