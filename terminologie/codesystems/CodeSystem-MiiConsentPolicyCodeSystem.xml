@@ -265,42 +265,42 @@
     </concept>
   </concept>
   <concept>
-    <code value="57" />
+    <code value="2.16.840.1.113883.3.1937.777.24.5.3.57" />
     <display value="Z2 Patientendaten erheben, nutzen, Kontaktierung im acribis-Projekt" />
     <concept>
-      <code value="58" />
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.58" />
       <display value="PATDAT erheben, nutzen, Kontaktierung im acribis-Projekt" />
     </concept>
   </concept>
   <concept>
-    <code value="59" />
+    <code value="2.16.840.1.113883.3.1937.777.24.5.3.59" />
     <display value="Z2 IDAT Melderegister abfragen, speichern, verarbeiten im acribis-Projekt" />
     <concept>
-      <code value="60" />
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.60" />
       <display value="Anschrift und Vitalstatus Melderegister abfragen, speichern, verarbeiten im acribis-Projekt" />
     </concept>
   </concept>
   <concept>
-    <code value="61" />
+    <code value="2.16.840.1.113883.3.1937.777.24.5.3.61" />
     <display value="Z2 MDAT Hausarzt erheben, speichern, verarbeiten, nutzen im acribis-Projekt" />
     <concept>
-      <code value="62" />
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.62" />
       <display value="MDAT Hausarzt erheben, speichern, verarbeiten, nutzen im acribis-Projekt" />
     </concept>
   </concept>
   <concept>
-    <code value="63" />
+    <code value="2.16.840.1.113883.3.1937.777.24.5.3.63" />
     <display value="Z3 PROMDAT Patientenbefragung" />
     <concept>
-      <code value="64" />
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.64" />
       <display value="PROMDAT Patientenbefragung erheben" />
     </concept>
     <concept>
-      <code value="65" />
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.65" />
       <display value="PROMDAT wissenschaftlich nutzen auf EU DSGVO NIVEAU" />
     </concept>
     <concept>
-      <code value="66" />
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.66" />
       <display value="Rekontaktierung PROM Studien" />
     </concept>
   </concept>
