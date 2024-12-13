@@ -4,12 +4,12 @@
     <profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem"/>
   </meta>
   <url value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
-  <version value="1.0.2"/>
+  <version value="1.0.4"/>
   <name value="MII CS Consent Policy"/>
   <title value="MII Consent: Policy CodeSystem"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2023-03-31"/>
+  <date value="2024-12-13"/>
   <publisher value="MII Task Force Consent Umsetzung"/>
   <contact>
     <name value="MII Task Force Consent Umsetzung"/>
@@ -23,7 +23,7 @@
   <valueSet value="https://www.medizininformatik-initiative.de/fhir/modul-consent/ValueSet/mii-vs-consent-policy"/>
   <hierarchyMeaning value="part-of"/>
   <content value="complete"/>
-  <count value="56"/>
+  <count value="66"/>
   <concept>
     <code value="2.16.840.1.113883.3.1937.777.24.5.3.1"/>
     <display value="Patientendaten erheben, speichern, nutzen"/>
@@ -230,10 +230,26 @@
     <concept>
       <code value="2.16.840.1.113883.3.1937.777.24.5.3.41"/>
       <display value="MDAT GECCO83 wissenschaftlich nutzen COVID 19 Forschung EU DSGVO konform"/>
+      <property>
+        <code value="status" />
+        <valueCode value="deprecated" />
+      </property>
+      <property>
+        <code value="inactive" />
+        <valueBoolean value="true" />
+      </property>
     </concept>
     <concept>
       <code value="2.16.840.1.113883.3.1937.777.24.5.3.42"/>
       <display value="MDAT GECCO83 wissenschaftlich nutzen Pandemie Forschung EU DSGVO konform"/>
+      <property>
+        <code value="status" />
+        <valueCode value="deprecated" />
+      </property>
+      <property>
+        <code value="inactive" />
+        <valueBoolean value="true" />
+      </property>
     </concept>
     <concept>
       <code value="2.16.840.1.113883.3.1937.777.24.5.3.56"/>
@@ -246,6 +262,46 @@
     <concept>
       <code value="2.16.840.1.113883.3.1937.777.24.5.3.36"/>
       <display value="MDAT GECCO83 bereitstellen NUM/CODEX ohne EU DSGVO NIVEAU"/>
+    </concept>
+  </concept>
+  <concept>
+    <code value="57" />
+    <display value="Z2 Patientendaten erheben, nutzen, Kontaktierung im acribis-Projekt" />
+    <concept>
+      <code value="58" />
+      <display value="PATDAT erheben, nutzen, Kontaktierung im acribis-Projekt" />
+    </concept>
+  </concept>
+  <concept>
+    <code value="59" />
+    <display value="Z2 IDAT Melderegister abfragen, speichern, verarbeiten im acribis-Projekt" />
+    <concept>
+      <code value="60" />
+      <display value="Anschrift und Vitalstatus Melderegister abfragen, speichern, verarbeiten im acribis-Projekt" />
+    </concept>
+  </concept>
+  <concept>
+    <code value="61" />
+    <display value="Z2 MDAT Hausarzt erheben, speichern, verarbeiten, nutzen im acribis-Projekt" />
+    <concept>
+      <code value="62" />
+      <display value="MDAT Hausarzt erheben, speichern, verarbeiten, nutzen im acribis-Projekt" />
+    </concept>
+  </concept>
+  <concept>
+    <code value="63" />
+    <display value="Z3 PROMDAT Patientenbefragung" />
+    <concept>
+      <code value="64" />
+      <display value="PROMDAT Patientenbefragung erheben" />
+    </concept>
+    <concept>
+      <code value="65" />
+      <display value="PROMDAT wissenschaftlich nutzen auf EU DSGVO NIVEAU" />
+    </concept>
+    <concept>
+      <code value="66" />
+      <display value="Rekontaktierung PROM Studien" />
     </concept>
   </concept>
 </CodeSystem>
