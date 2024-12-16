@@ -121,7 +121,7 @@
           <type value="pattern" />
           <path value="$this" />
         </discriminator>
-        <rules value="closed" />
+        <rules value="open" />
       </slicing>
       <min value="2" />
       <max value="*" />
