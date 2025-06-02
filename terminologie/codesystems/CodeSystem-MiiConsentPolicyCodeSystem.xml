@@ -4,12 +4,12 @@
     <profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem"/>
   </meta>
   <url value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
-  <version value="1.0.5"/>
+  <version value="1.0.6"/>
   <name value="MII CS Consent Policy"/>
   <title value="MII Consent: Policy CodeSystem"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2024-12-13"/>
+  <date value="2025-06-02"/>
   <publisher value="MII Task Force Consent Umsetzung"/>
   <contact>
     <name value="MII Task Force Consent Umsetzung"/>
@@ -302,6 +302,146 @@
     <concept>
       <code value="2.16.840.1.113883.3.1937.777.24.5.3.66" />
       <display value="Rekontaktierung PROM Studien" />
+    </concept>
+  </concept>
+  <concept>
+    <code value="2.16.840.1.113883.3.1937.777.24.5.3.67" />
+    <display value="Z4 Datenschutzerklärung (SNID)" />
+    <concept>
+        <code value="2.16.840.1.113883.3.1937.777.24.5.3.68" />
+        <display value="IDAT speichern, verabeiten (SNID)" />
+    </concept>
+    <concept>
+        <code value="2.16.840.1.113883.3.1937.777.24.5.3.69" />
+        <display value="CONSENT speichern, verarbeiten (SNID)" />
+    </concept>
+    <concept>
+        <code value="2.16.840.1.113883.3.1937.777.24.5.3.70" />
+        <display value="IDAT Einsicht Monitoring (SNID)" />
+    </concept>
+    <concept>
+        <code value="2.16.840.1.113883.3.1937.777.24.5.3.71" />
+        <display value="MDAT erheben (SNID)" />
+    </concept>
+    <concept>
+        <code value="2.16.840.1.113883.3.1937.777.24.5.3.72" />
+        <display value="MDAT speichern, verarbeiten (SNID)" />
+    </concept>
+    <concept>
+        <code value="2.16.840.1.113883.3.1937.777.24.5.3.73" />
+        <display value="MDAT bereitstellen EU DSGVO NIVEAU (SNID)" />
+    </concept>
+    <concept>
+        <code value="2.16.840.1.113883.3.1937.777.24.5.3.74" />
+        <display value="MDAT Einsicht Monitoring (SNID)" />
+    </concept>
+    <concept>
+        <code value="2.16.840.1.113883.3.1937.777.24.5.3.75" />
+        <display value="BIOMAT Eigentum übertragen_NUM (SNID)" />
+    </concept>
+    <concept>
+        <code value="2.16.840.1.113883.3.1937.777.24.5.3.76" />
+        <display value="CONSENT BC bereitstellen (SNID)" />
+    </concept>
+    <concept>
+        <code value="2.16.840.1.113883.3.1937.777.24.5.3.77" />
+        <display value="CONSENT BC speichern, verarbeiten (SNID)" />
+    </concept>
+  </concept>
+  <concept>
+    <code value="2.16.840.1.113883.3.1937.777.24.5.3.78" />
+    <display value="Z4 Einsicht ePa (SNID)" />
+    <concept>
+        <code value="2.16.840.1.113883.3.1937.777.24.5.3.79" />
+        <display value="IDAT ePA bereitstellen (SNID)" />
+    </concept>
+    <concept>
+        <code value="2.16.840.1.113883.3.1937.777.24.5.3.80" />
+        <display value="MDAT ePA erheben (SNID)" />
+    </concept>
+  </concept>
+    <concept>
+        <code value="2.16.840.1.113883.3.1937.777.24.5.3.81" />
+        <display value="MDAT ePA speichern, verarbeiten (SNID)" />
+    </concept>
+  </concept>
+  <concept>
+    <code value="2.16.840.1.113883.3.1937.777.24.5.3.82" />
+    <display value="Z4 Krebsregister (SNID)" />
+    <concept>
+        <code value="2.16.840.1.113883.3.1937.777.24.5.3.83" />
+        <display value="MDAT KReg speichern, verarbeiten (SNID)" />
+    </concept>
+    <concept>
+        <code value="2.16.840.1.113883.3.1937.777.24.5.3.84" />
+        <display value="IDAT KReg KVNR speichern, verarbeiten (SNID)" />
+    </concept>
+  </concept>
+  <concept>
+    <code value="2.16.840.1.113883.3.1937.777.24.5.3.85" />
+    <display value="Z4 KRegDAT retrospektiv (SNID)" />
+    <concept>
+        <code value="2.16.840.1.113883.3.1937.777.24.5.3.86" />
+        <display value="IDAT KVNR KReg bereitstellen retrospektiv (SNID)" />
+    </concept>
+    <concept>
+        <code value="2.16.840.1.113883.3.1937.777.24.5.3.87" />
+        <display value="MDAT KReg erheben retrospektiv (SNID)" />
+    </concept>
+  </concept>
+  <concept>
+    <code value="2.16.840.1.113883.3.1937.777.24.5.3.88" />
+    <display value="Z4 KRegDAT (SNID)" />
+    <concept>
+        <code value="2.16.840.1.113883.3.1937.777.24.5.3.89" />
+        <display value="IDAT KVNR KReg bereitstellen prospektiv (SNID)" />
+    </concept>
+    <concept>
+        <code value="2.16.840.1.113883.3.1937.777.24.5.3.90" />
+        <display value="MDAT KReg erheben prospektiv (SNID)" />
+    </concept>
+  </concept>
+  <concept>
+    <code value="2.16.840.1.113883.3.1937.777.24.5.3.91" />
+    <display value="Z4 Weitergabe Dritte (SNID)" />
+    <concept>
+        <code value="2.16.840.1.113883.3.1937.777.24.5.3.92" />
+        <display value="MDAT SNID bereitstellen Dritte" />
+    </concept>
+    <concept>
+        <code value="2.16.840.1.113883.3.1937.777.24.5.3.93" />
+        <display value="BIOMAT SNID bereitstellen Dritte" />
+    </concept>
+  </concept>
+  <concept>
+    <code value="2.16.840.1.113883.3.1937.777.24.5.3.94" />
+    <display value="Z4 Rekontaktierung Patient (SNID)" />
+    <concept>
+        <code value="2.16.840.1.113883.3.1937.777.24.5.3.95" />
+        <display value="Rekontaktierung Gesundheitszustand nach Studienabschluss (SNID)" />
+    </concept>
+  <concept>
+    <code value="2.16.840.1.113883.3.1937.777.24.5.3.96" />
+    <display value="Z4_Rekontaktierung_FU" />
+    <concept>
+        <code value="2.16.840.1.113883.3.1937.777.24.5.3.97" />
+        <display value="Rekontaktierung weitere Studien (SNID)" />
+    </concept>
+    <concept>
+        <code value="2.16.840.1.113883.3.1937.777.24.5.3.98" />
+        <display value="IDAT SNID bereitstellen OE" />
+    </concept>
+  </concept>
+  <concept>
+    <code value="2.16.840.1.113883.3.1937.777.24.5.3.99" />
+    <display value="Z4 Erhebung Hausarzt (SNID)" />
+    <concept>
+        <code value="2.16.840.1.113883.3.1937.777.24.5.3.100" />
+        <display value="MDAT Hausarzt erheben, speichern, verarbeiten, nutzen (SNID)" />
+    </concept>
+    <concept>
+        <code value="2.16.840.1.113883.3.1937.777.24.5.3.101" />
+        <display value="IDAT bereitstellen Hausarzt (SNID)" />
     </concept>
   </concept>
 </CodeSystem>
