@@ -23,7 +23,7 @@
   <valueSet value="https://www.medizininformatik-initiative.de/fhir/modul-consent/ValueSet/mii-vs-consent-policy"/>
   <hierarchyMeaning value="part-of"/>
   <content value="complete"/>
-  <count value="66"/>
+  <count value="101"/>
   <concept>
     <code value="2.16.840.1.113883.3.1937.777.24.5.3.1"/>
     <display value="Patientendaten erheben, speichern, nutzen"/>
@@ -359,7 +359,6 @@
         <code value="2.16.840.1.113883.3.1937.777.24.5.3.80" />
         <display value="MDAT ePA erheben (SNID)" />
     </concept>
-  </concept>
     <concept>
         <code value="2.16.840.1.113883.3.1937.777.24.5.3.81" />
         <display value="MDAT ePA speichern, verarbeiten (SNID)" />
@@ -420,6 +419,7 @@
         <code value="2.16.840.1.113883.3.1937.777.24.5.3.95" />
         <display value="Rekontaktierung Gesundheitszustand nach Studienabschluss (SNID)" />
     </concept>
+  </concept>
   <concept>
     <code value="2.16.840.1.113883.3.1937.777.24.5.3.96" />
     <display value="Z4_Rekontaktierung_FU" />
