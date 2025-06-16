@@ -446,94 +446,94 @@
   </concept>
   <concept>
     <code value="2.16.840.1.113883.3.1937.777.24.5.3.102" />
-    <display value="Z5_PATDAT_BIOMAT_PHENO_erheben_speichern_gewinnen_lagern_zusaetzlich_nutzen_dzpg" />
+    <display value="Z5 PATDAT, BIOMAT, PHENO erheben, speichern, gewinnen, lagern, zusätzlich nutzen (DZPG)" />
     <concept>
         <code value="2.16.840.1.113883.3.1937.777.24.5.3.103" />
-        <display value="MDAT_Zusatzdaten_PHAENO_erheben_dzpg" />
+        <display value="MDAT Zusatzdaten PHAENO erheben (DZPG)" />
     </concept>
     <concept>
         <code value="2.16.840.1.113883.3.1937.777.24.5.3.104" />
-        <display value="MDAT_speichern_verarbeiten_dzpg" />
+        <display value="MDAT speichern verarbeiten (DZPG)" />
     </concept>
     <concept>
         <code value="2.16.840.1.113883.3.1937.777.24.5.3.105" />
-        <display value="MDAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU_dzpg" />
+        <display value="MDAT wissenschaftlich nutzen EU DSGVO NIVEAU (DZPG)" />
     </concept>
     <concept>
         <code value="2.16.840.1.113883.3.1937.777.24.5.3.106" />
-        <display value="MDAT_zusammenführen_mit_Dritten_dzpg" />
+        <display value="MDAT zusammenführen mit Dritten (DZPG)" />
     </concept>
     <concept>
         <code value="2.16.840.1.113883.3.1937.777.24.5.3.107" />
-        <display value="BIOMAT_Zusatzmaterial_entnehmen_dzpg" />
+        <display value="BIOMAT Zusatzmaterial entnehmen (DZPG)" />
     </concept>
     <concept>
         <code value="2.16.840.1.113883.3.1937.777.24.5.3.108" />
-        <display value="BIOMAT_Zusatzmaterial_lagern_verarbeiten_dzpg" />
+        <display value="BIOMAT Zusatzmaterial lagern verarbeiten (DZPG)" />
     </concept>
     <concept>
         <code value="2.16.840.1.113883.3.1937.777.24.5.3.109" />
-        <display value="BIOMAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU_dzpg" />
+        <display value="BIOMAT wissenschaftlich nutzen EU DSGVO NIVEAU (DZPG)" />
     </concept>
     <concept>
         <code value="2.16.840.1.113883.3.1937.777.24.5.3.110" />
-        <display value="BIOMAT_zusammenfuehren_mit_Dritten_dzpg" />
+        <display value="BIOMAT zusammenführen mit Dritten (DZPG)" />
     </concept>
   </concept>
   <concept>
     <code value="2.16.840.1.113883.3.1937.777.24.5.3.111" />
-    <display value="Z5_NEURODAT_IMGDAT_erheben_speichern_zusaetzlich_nutzen_dzpg" />
+    <display value="Z5 NEURODAT, IMGDAT erheben, speichern, zusätzlich nutzen (DZPG)" />
     <concept>
         <code value="2.16.840.1.113883.3.1937.777.24.5.3.112" />
-        <display value="IMGDAT_erheben_dzpg" />
+        <display value="IMGDAT erheben (DZPG)" />
     </concept>
     <concept>
         <code value="2.16.840.1.113883.3.1937.777.24.5.3.113" />
-        <display value="IMGDAT_speichern_verarbeiten_dzpg" />
+        <display value="IMGDAT speichern, verarbeiten (DZPG)" />
     </concept>
     <concept>
         <code value="2.16.840.1.113883.3.1937.777.24.5.3.114" />
-        <display value="IMGDAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU_dzpg" />
+        <display value="IMGDAT wissenschaftlich nutzen EU DSGVO NIVEAU (DZPG)" />
     </concept>
     <concept>
         <code value="2.16.840.1.113883.3.1937.777.24.5.3.115" />
-        <display value="IMGDAT_zusammenfuehren_mit_Dritten_dzpg" />
+        <display value="IMGDAT zusammenführen mit Dritten (DZPG)" />
     </concept>
     <concept>
         <code value="2.16.840.1.113883.3.1937.777.24.5.3.116" />
-        <display value="NEURODAT_erheben_dzpg" />
+        <display value="NEURODAT erheben (DZPG)" />
     </concept>
     <concept>
         <code value="2.16.840.1.113883.3.1937.777.24.5.3.117" />
-        <display value="NEURODAT_speichern_verarbeiten_dzpg" />
+        <display value="NEURODAT speichern, verarbeiten (DZPG)" />
     </concept>
     <concept>
         <code value="2.16.840.1.113883.3.1937.777.24.5.3.118" />
-        <display value="NEURODAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU_dzpg" />
+        <display value="NEURODAT wissenschaftlich nutzen EU DSGVO NIVEAU (DZPG)" />
     </concept>
     <concept>
         <code value="2.16.840.1.113883.3.1937.777.24.5.3.119" />
-        <display value="NEURODAT_zusammenfuehren_mit_Dritten_dzpg" />
+        <display value="NEURODAT zusammenführen mit Dritten (DZPG)" />
     </concept>
   </concept>
   <concept>
     <code value="2.16.840.1.113883.3.1937.777.24.5.3.120" />
-    <display value="Z5_IPSC_Verbunddaten_gewinnen_speichern_nutzen_dzpg" />
+    <display value="Z5 IPSC Verbunddaten gewinnen, speichern, nutzen (DZPG)" />
     <concept>
         <code value="2.16.840.1.113883.3.1937.777.24.5.3.121" />
-        <display value="IPSC_Verbunddaten_gewinnen_dzpg" />
+        <display value="IPSC Verbunddaten gewinnen (DZPG)" />
     </concept>
     <concept>
         <code value="2.16.840.1.113883.3.1937.777.24.5.3.122" />
-        <display value="IPSC_Verbunddaten_speichern_verarbeiten_dzpg" />
+        <display value="IPSC Verbunddaten speichern, verarbeiten (DZPG)" />
     </concept>
     <concept>
         <code value="2.16.840.1.113883.3.1937.777.24.5.3.123" />
-        <display value="IPSC_Verbunddaten_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU_dzpg" />
+        <display value="IPSC Verbunddaten wissenschaftlich nutzen EU DSGVO NIVEAU (DZPG)" />
     </concept>
     <concept>
         <code value="2.16.840.1.113883.3.1937.777.24.5.3.124" />
-        <display value="IPSC_Verbunddaten_zusammenfuehren_mit_Dritten_dzpg" />
+        <display value="IPSC Verbunddaten zusammenführen mit Dritten (DZPG)" />
     </concept>
   </concept>
 </CodeSystem>
