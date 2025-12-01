@@ -20,7 +20,12 @@
 	<recorded value="2020-12-11T09:39:07+00:00"/>
 	<!-- Software, die zur Verarbeitung verwendet wurde -->
 	<agent>
-		<type value="assembler"/>
+		<type>
+			<coding>
+				<system value="http://terminology.hl7.org/CodeSystem/provenance-participant-type"/>
+				<code value="assembler"/>
+			</coding>
+		</type>
 		<who>
 			<display value="Snakeoil Soft Consent Manager 2021"/>
 		</who>
