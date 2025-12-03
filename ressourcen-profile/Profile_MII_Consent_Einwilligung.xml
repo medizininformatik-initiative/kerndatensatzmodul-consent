@@ -352,7 +352,7 @@
     </element>
     <element id="Consent.provision.provision.period.end">
       <path value="Consent.provision.provision.period.end" />
-      <min value="1" />
+      <min value="0" />
       <mustSupport value="true" />
     </element>
     <element id="Consent.provision.provision.action">
