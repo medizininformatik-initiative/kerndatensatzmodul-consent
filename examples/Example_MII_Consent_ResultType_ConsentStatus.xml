@@ -1,0 +1,440 @@
+<Consent xmlns="http://hl7.org/fhir">
+	<id value="5143266b-8d60-4b28-8ee9-635140ffa5bb"/>
+	<meta>
+		<lastUpdated value="2025-12-04T15:34:40.067+01:00"/>
+		<profile value="https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-einwilligung"/>
+	</meta>
+	<extension url="http://fhir.de/ConsentManagement/StructureDefinition/DomainReference">
+		<extension url="domain">
+			<valueReference>
+				<reference value="ResearchStudy/c946ae17-e3e6-4178-b5ea-15f95aaeeeb4"/>
+			</valueReference>
+		</extension>
+		<extension url="status">
+			<valueCoding>
+				<system value="http://hl7.org/fhir/publication-status"/>
+				<code value="active"/>
+			</valueCoding>
+		</extension>
+	</extension>
+	<status value="active"/>
+	<scope>
+		<coding>
+			<system value="http://terminology.hl7.org/CodeSystem/consentscope"/>
+			<code value="research"/>
+		</coding>
+	</scope>
+	<category>
+		<coding>
+			<system value="http://loinc.org"/>
+			<code value="57016-8"/>
+		</coding>
+	</category>
+	<category>
+		<coding>
+			<system value="http://fhir.de/ConsentManagement/CodeSystem/ResultType"/>
+			<code value="consent-status"/>
+		</coding>
+	</category>
+	<category>
+		<coding>
+			<system value="https://www.medizininformatik-initiative.de/fhir/modul-consent/CodeSystem/mii-cs-consent-consent_category"/>
+			<code value="2.16.840.1.113883.3.1937.777.24.2.184"/>
+		</coding>
+	</category>
+	<patient>
+		<reference value="Patient/531cef77-2a30-4283-944d-affaf9ae234e"/>
+	</patient>
+	<dateTime value="2025-12-04T15:34:40+01:00"/>
+	<organization>
+		<display value="MII"/>
+	</organization>
+	<policy>
+		<uri value="2.16.840.1.113883.3.1937.777.24.2.184"/>
+	</policy>
+	<provision>
+		<type value="deny"/>
+		<period>
+			<start value="2022-01-31T23:00:00+01:00"/>
+			<end value="3000-01-01T00:00:00+01:00"/>
+		</period>
+		<provision>
+			<type value="deny"/>
+			<period>
+				<start value="2022-01-31T23:00:00+01:00"/>
+				<end value="3000-01-01T00:00:00+01:00"/>
+			</period>
+			<code>
+				<coding>
+					<system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
+					<code value="2.16.840.1.113883.3.1937.777.24.5.3.2"/>
+					<display value="IDAT erheben"/>
+				</coding>
+			</code>
+		</provision>
+		<provision>
+			<type value="deny"/>
+			<period>
+				<start value="2022-01-31T23:00:00+01:00"/>
+				<end value="3000-01-01T00:00:00+01:00"/>
+			</period>
+			<code>
+				<coding>
+					<system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
+					<code value="2.16.840.1.113883.3.1937.777.24.5.3.12"/>
+					<display value="KKDAT 5J retrospektiv speichern verarbeiten"/>
+				</coding>
+			</code>
+		</provision>
+		<provision>
+			<type value="deny"/>
+			<period>
+				<start value="2022-01-31T23:00:00+01:00"/>
+				<end value="3000-01-01T00:00:00+01:00"/>
+			</period>
+			<code>
+				<coding>
+					<system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
+					<code value="2.16.840.1.113883.3.1937.777.24.5.3.22"/>
+					<display value="BIOMAT wissenschaftlich nutzen EU DSGVO NIVEAU"/>
+				</coding>
+			</code>
+		</provision>
+		<provision>
+			<type value="deny"/>
+			<period>
+				<start value="2022-01-31T23:00:00+01:00"/>
+				<end value="3000-01-01T00:00:00+01:00"/>
+			</period>
+			<code>
+				<coding>
+					<system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
+					<code value="2.16.840.1.113883.3.1937.777.24.5.3.13"/>
+					<display value="KKDAT 5J retrospektiv wissenschaftlich nutzen"/>
+				</coding>
+			</code>
+		</provision>
+		<provision>
+			<type value="deny"/>
+			<period>
+				<start value="2022-01-31T23:00:00+01:00"/>
+				<end value="3000-01-01T00:00:00+01:00"/>
+			</period>
+			<code>
+				<coding>
+					<system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
+					<code value="2.16.840.1.113883.3.1937.777.24.5.3.23"/>
+					<display value="BIOMAT Analysedaten zusammenfuehren Dritte"/>
+				</coding>
+			</code>
+		</provision>
+		<provision>
+			<type value="deny"/>
+			<period>
+				<start value="2022-01-31T23:00:00+01:00"/>
+				<end value="3000-01-01T00:00:00+01:00"/>
+			</period>
+			<code>
+				<coding>
+					<system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
+					<code value="2.16.840.1.113883.3.1937.777.24.5.3.31"/>
+					<display value="Rekontaktierung Zusatzbefund"/>
+				</coding>
+			</code>
+		</provision>
+		<provision>
+			<type value="deny"/>
+			<period>
+				<start value="2022-01-31T23:00:00+01:00"/>
+				<end value="3000-01-01T00:00:00+01:00"/>
+			</period>
+			<code>
+				<coding>
+					<system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
+					<code value="2.16.840.1.113883.3.1937.777.24.5.3.17"/>
+					<display value="KKDAT 5J prospektiv wissenschaftlich nutzen"/>
+				</coding>
+			</code>
+		</provision>
+		<provision>
+			<type value="deny"/>
+			<period>
+				<start value="2022-01-31T23:00:00+01:00"/>
+				<end value="3000-01-01T00:00:00+01:00"/>
+			</period>
+			<code>
+				<coding>
+					<system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
+					<code value="2.16.840.1.113883.3.1937.777.24.5.3.20"/>
+					<display value="BIOMAT lagern verarbeiten"/>
+				</coding>
+			</code>
+		</provision>
+		<provision>
+			<type value="deny"/>
+			<period>
+				<start value="2022-01-31T23:00:00+01:00"/>
+				<end value="3000-01-01T00:00:00+01:00"/>
+			</period>
+			<code>
+				<coding>
+					<system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
+					<code value="2.16.840.1.113883.3.1937.777.24.5.3.11"/>
+					<display value="KKDAT 5J retrospektiv uebertragen"/>
+				</coding>
+			</code>
+		</provision>
+		<provision>
+			<type value="deny"/>
+			<period>
+				<start value="2022-01-31T23:00:00+01:00"/>
+				<end value="3000-01-01T00:00:00+01:00"/>
+			</period>
+			<code>
+				<coding>
+					<system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
+					<code value="2.16.840.1.113883.3.1937.777.24.5.3.38"/>
+					<display value="KKDAT 5J retrospektiv uebertragen KVNR"/>
+				</coding>
+			</code>
+		</provision>
+		<provision>
+			<type value="deny"/>
+			<period>
+				<start value="2022-01-31T23:00:00+01:00"/>
+				<end value="3000-01-01T00:00:00+01:00"/>
+			</period>
+			<code>
+				<coding>
+					<system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
+					<code value="2.16.840.1.113883.3.1937.777.24.5.3.6"/>
+					<display value="MDAT erheben"/>
+				</coding>
+			</code>
+		</provision>
+		<provision>
+			<type value="deny"/>
+			<period>
+				<start value="2022-01-31T23:00:00+01:00"/>
+				<end value="3000-01-01T00:00:00+01:00"/>
+			</period>
+			<code>
+				<coding>
+					<system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
+					<code value="2.16.840.1.113883.3.1937.777.24.5.3.16"/>
+					<display value="KKDAT 5J prospektiv speichern verarbeiten"/>
+				</coding>
+			</code>
+		</provision>
+		<provision>
+			<type value="deny"/>
+			<period>
+				<start value="2022-01-31T23:00:00+01:00"/>
+				<end value="3000-01-01T00:00:00+01:00"/>
+			</period>
+			<code>
+				<coding>
+					<system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
+					<code value="2.16.840.1.113883.3.1937.777.24.5.3.8"/>
+					<display value="MDAT wissenschaftlich nutzen EU DSGVO NIVEAU"/>
+				</coding>
+			</code>
+		</provision>
+		<provision>
+			<type value="deny"/>
+			<period>
+				<start value="2022-01-31T23:00:00+01:00"/>
+				<end value="3000-01-01T00:00:00+01:00"/>
+			</period>
+			<code>
+				<coding>
+					<system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
+					<code value="2.16.840.1.113883.3.1937.777.24.5.3.27"/>
+					<display value="Rekontaktierung Verknüpfung Datenbanken"/>
+				</coding>
+			</code>
+		</provision>
+		<provision>
+			<type value="deny"/>
+			<period>
+				<start value="2022-01-31T23:00:00+01:00"/>
+				<end value="3000-01-01T00:00:00+01:00"/>
+			</period>
+			<code>
+				<coding>
+					<system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
+					<code value="2.16.840.1.113883.3.1937.777.24.5.3.29"/>
+					<display value="Rekontaktierung weitere Studien"/>
+				</coding>
+			</code>
+		</provision>
+		<provision>
+			<type value="deny"/>
+			<period>
+				<start value="2022-01-31T23:00:00+01:00"/>
+				<end value="3000-01-01T00:00:00+01:00"/>
+			</period>
+			<code>
+				<coding>
+					<system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
+					<code value="2.16.840.1.113883.3.1937.777.24.5.3.5"/>
+					<display value="IDAT bereitstellen EU DSGVO NIVEAU"/>
+				</coding>
+			</code>
+		</provision>
+		<provision>
+			<type value="deny"/>
+			<period>
+				<start value="2022-01-31T23:00:00+01:00"/>
+				<end value="3000-01-01T00:00:00+01:00"/>
+			</period>
+			<code>
+				<coding>
+					<system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
+					<code value="2.16.840.1.113883.3.1937.777.24.5.3.21"/>
+					<display value="BIOMAT Eigentum übertragen"/>
+				</coding>
+			</code>
+		</provision>
+		<provision>
+			<type value="deny"/>
+			<period>
+				<start value="2022-01-31T23:00:00+01:00"/>
+				<end value="3000-01-01T00:00:00+01:00"/>
+			</period>
+			<code>
+				<coding>
+					<system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
+					<code value="2.16.840.1.113883.3.1937.777.24.5.3.3"/>
+					<display value="IDAT speichern, verarbeiten"/>
+				</coding>
+			</code>
+		</provision>
+		<provision>
+			<type value="deny"/>
+			<period>
+				<start value="2022-01-31T23:00:00+01:00"/>
+				<end value="3000-01-01T00:00:00+01:00"/>
+			</period>
+			<code>
+				<coding>
+					<system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
+					<code value="2.16.840.1.113883.3.1937.777.24.5.3.7"/>
+					<display value="MDAT speichern, verarbeiten"/>
+				</coding>
+			</code>
+		</provision>
+		<provision>
+			<type value="deny"/>
+			<period>
+				<start value="2022-01-31T23:00:00+01:00"/>
+				<end value="3000-01-01T00:00:00+01:00"/>
+			</period>
+			<code>
+				<coding>
+					<system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
+					<code value="2.16.840.1.113883.3.1937.777.24.5.3.19"/>
+					<display value="BIOMAT erheben"/>
+				</coding>
+			</code>
+		</provision>
+		<provision>
+			<type value="deny"/>
+			<period>
+				<start value="2022-01-31T23:00:00+01:00"/>
+				<end value="3000-01-01T00:00:00+01:00"/>
+			</period>
+			<code>
+				<coding>
+					<system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
+					<code value="2.16.840.1.113883.3.1937.777.24.5.3.37"/>
+					<display value="Rekontaktierung Ergebnisse erheblicher Bedeutung"/>
+				</coding>
+			</code>
+		</provision>
+		<provision>
+			<type value="deny"/>
+			<period>
+				<start value="2022-01-31T23:00:00+01:00"/>
+				<end value="3000-01-01T00:00:00+01:00"/>
+			</period>
+			<code>
+				<coding>
+					<system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
+					<code value="2.16.840.1.113883.3.1937.777.24.5.3.39"/>
+					<display value="KKDAT 5J prospektiv uebertragen KVNR"/>
+				</coding>
+			</code>
+		</provision>
+		<provision>
+			<type value="deny"/>
+			<period>
+				<start value="2022-01-31T23:00:00+01:00"/>
+				<end value="3000-01-01T00:00:00+01:00"/>
+			</period>
+			<code>
+				<coding>
+					<system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
+					<code value="2.16.840.1.113883.3.1937.777.24.5.3.25"/>
+					<display value="BIOMAT Zusatzmengen entnehmen"/>
+				</coding>
+			</code>
+		</provision>
+		<provision>
+			<type value="deny"/>
+			<period>
+				<start value="2022-01-31T23:00:00+01:00"/>
+				<end value="3000-01-01T00:00:00+01:00"/>
+			</period>
+			<code>
+				<coding>
+					<system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
+					<code value="2.16.840.1.113883.3.1937.777.24.5.3.28"/>
+					<display value="Rekontaktierung weitere Erhebung"/>
+				</coding>
+			</code>
+		</provision>
+		<provision>
+			<type value="deny"/>
+			<period>
+				<start value="2022-01-31T23:00:00+01:00"/>
+				<end value="3000-01-01T00:00:00+01:00"/>
+			</period>
+			<code>
+				<coding>
+					<system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
+					<code value="2.16.840.1.113883.3.1937.777.24.5.3.4"/>
+					<display value="IDAT zusammenfuehren Dritte"/>
+				</coding>
+			</code>
+		</provision>
+		<provision>
+			<type value="deny"/>
+			<period>
+				<start value="2022-01-31T23:00:00+01:00"/>
+				<end value="3000-01-01T00:00:00+01:00"/>
+			</period>
+			<code>
+				<coding>
+					<system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
+					<code value="2.16.840.1.113883.3.1937.777.24.5.3.9"/>
+					<display value="MDAT zusammenfuehren Dritte"/>
+				</coding>
+			</code>
+		</provision>
+		<provision>
+			<type value="deny"/>
+			<period>
+				<start value="2022-01-31T23:00:00+01:00"/>
+				<end value="3000-01-01T00:00:00+01:00"/>
+			</period>
+			<code>
+				<coding>
+					<system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
+					<code value="2.16.840.1.113883.3.1937.777.24.5.3.15"/>
+					<display value="KKDAT 5J prospektiv uebertragen"/>
+				</coding>
+			</code>
+		</provision>
+	</provision>
+</Consent>
