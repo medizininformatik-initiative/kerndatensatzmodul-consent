@@ -41,6 +41,20 @@
 			<code value="2.16.840.1.113883.3.1937.777.24.2.184"/>
 		</coding>
 	</category>
+	<!-- Consent-Kategorie resultType, hier: Dokument -->
+	<category>
+		<coding>
+			<system value="http://fhir.de/ConsentManagement/CodeSystem/ResultType" />
+			<code value="document" />
+		</coding>
+	</category>
+	<!-- Consent-Kategorie bezogen auf das ValueSet 'ConsentManagementTemplateType', hier: Einwilligung -->
+	<category>
+		<coding>
+			<system value="http://fhir.de/ConsentManagement/CodeSystem/TemplateType" />
+			<code value="CONSENT-OPT-IN" />
+		</coding>
+	</category>
 	<!-- Patient, für den die Einwilligungserklärung gilt -->
 	<patient>
 		<reference value="Patient/9b4a702d-162c-428a-8c5d-8b98af21b693"/>
