@@ -59,7 +59,7 @@
     </concept>
     <concept>
       <code value="2.16.840.1.113883.3.1937.777.24.5.3.5"/>
-      <display value="IDAT bereitstellen EU DSGVO NIVEAU"/>
+      <display value="IDAT bereitstellen "/>
       <property>
         <code value="period-of-validity" />
         <valueString value="P30Y" />
@@ -83,7 +83,7 @@
     </concept>
     <concept>
       <code value="2.16.840.1.113883.3.1937.777.24.5.3.8"/>
-      <display value="MDAT wissenschaftlich nutzen EU DSGVO NIVEAU"/>
+      <display value="MDAT wissenschaftlich nutzen"/>
       <property>
         <code value="period-of-validity" />
         <valueString value="P30Y" />
@@ -119,10 +119,18 @@
     </concept>
     <concept>
       <code value="2.16.840.1.113883.3.1937.777.24.5.3.46"/>
-      <display value="MDAT retrospektiv wissenschaftlich nutzen EU DSGVO NIVEAU"/>
+      <display value="MDAT retrospektiv wissenschaftlich nutzen"/>
       <property>
         <code value="period-of-validity" />
         <valueString value="P30Y" />
+      </property>
+      <property>
+        <code value="status" />
+        <valueCode value="deprecated" />
+      </property>
+      <property>
+        <code value="inactive" />
+        <valueBoolean value="true" />
       </property>
     </concept>
     <concept>
@@ -132,6 +140,14 @@
         <code value="period-of-validity" />
         <valueString value="P30Y" />
       </property>
+      <property>
+        <code value="status" />
+        <valueCode value="deprecated" />
+      </property>
+      <property>
+        <code value="inactive" />
+        <valueBoolean value="true" />
+      </property>
     </concept>
   </concept>
   <concept>
@@ -139,7 +155,7 @@
     <display value="Patientendaten Weitergabe non DSGVO NIVEAU"/>
     <concept>
       <code value="2.16.840.1.113883.3.1937.777.24.5.3.49"/>
-      <display value="MDAT bereitstellen non EU DSGVO NIVEAU"/>
+      <display value="MDAT bereitstellen ohne EU DSGVO NIVEAU"/>
       <property>
         <code value="period-of-validity" />
         <valueString value="P30Y" />
@@ -239,7 +255,7 @@
     </concept>
     <concept>
       <code value="2.16.840.1.113883.3.1937.777.24.5.3.22"/>
-      <display value="BIOMAT wissenschaftlich nutzen EU DSGVO NIVEAU"/>
+      <display value="BIOMAT wissenschaftlich nutzen"/>
       <property>
         <code value="period-of-validity" />
         <valueString value="P30Y" />
@@ -279,7 +295,7 @@
     </concept>
     <concept>
       <code value="2.16.840.1.113883.3.1937.777.24.5.3.52"/>
-      <display value="BIOMAT retrospektiv wissenschaftlich nutzen EU DSGVO NIVEAU"/>
+      <display value="BIOMAT retrospektiv wissenschaftlich nutzen"/>
       <property>
         <code value="period-of-validity" />
         <valueString value="P30Y" />
@@ -375,7 +391,7 @@
     </concept>
     <concept>
       <code value="2.16.840.1.113883.3.1937.777.24.5.3.41"/>
-      <display value="MDAT GECCO83 wissenschaftlich nutzen COVID 19 Forschung EU DSGVO konform"/>
+      <display value="MDAT GECCO83 wissenschaftlich nutzen COVID 19 Forschung"/>
       <property>
         <code value="period-of-validity" />
         <valueString value="P30Y" />
@@ -391,7 +407,7 @@
     </concept>
     <concept>
       <code value="2.16.840.1.113883.3.1937.777.24.5.3.42"/>
-      <display value="MDAT GECCO83 wissenschaftlich nutzen Pandemie Forschung EU DSGVO konform"/>
+      <display value="MDAT GECCO83 wissenschaftlich nutzen Pandemie Forschung"/>
       <property>
         <code value="period-of-validity" />
         <valueString value="P30Y" />
@@ -407,7 +423,7 @@
     </concept>
     <concept>
       <code value="2.16.840.1.113883.3.1937.777.24.5.3.56"/>
-      <display value="MDAT GECCO83 wissenschaftlich nutzen NUM/CODEX EU DSGVO NIVEAU"/>
+      <display value="MDAT GECCO83 wissenschaftlich nutzen NUM/CODEX"/>
       <property>
         <code value="period-of-validity" />
         <valueString value="P30Y" />
@@ -475,7 +491,7 @@
     </concept>
     <concept>
       <code value="2.16.840.1.113883.3.1937.777.24.5.3.65" />
-      <display value="PROMDAT wissenschaftlich nutzen auf EU DSGVO NIVEAU" />
+      <display value="PROMDAT wissenschaftlich nutzen" />
       <property>
         <code value="period-of-validity" />
         <valueString value="P30Y" />
@@ -535,7 +551,7 @@
     </concept>
     <concept>
       <code value="2.16.840.1.113883.3.1937.777.24.5.3.73" />
-      <display value="MDAT bereitstellen EU DSGVO NIVEAU (SNID)" />
+      <display value="MDAT bereitstellen (SNID)" />
       <property>
         <code value="period-of-validity" />
         <valueString value="P30Y" />
@@ -747,7 +763,7 @@
     </concept>
     <concept>
       <code value="2.16.840.1.113883.3.1937.777.24.5.3.105" />
-      <display value="MDAT wissenschaftlich nutzen EU DSGVO NIVEAU (DZPG)" />
+      <display value="MDAT wissenschaftlich nutzen (DZPG)" />
       <property>
           <code value="period-of-validity" />
           <valueString value="P30Y" />
@@ -779,7 +795,7 @@
     </concept>
     <concept>
       <code value="2.16.840.1.113883.3.1937.777.24.5.3.109" />
-      <display value="BIOMAT wissenschaftlich nutzen EU DSGVO NIVEAU (DZPG)" />
+      <display value="BIOMAT wissenschaftlich nutzen (DZPG)" />
       <property>
           <code value="period-of-validity" />
           <valueString value="P30Y" />
@@ -815,7 +831,7 @@
     </concept>
     <concept>
       <code value="2.16.840.1.113883.3.1937.777.24.5.3.114" />
-      <display value="IMGDAT wissenschaftlich nutzen EU DSGVO NIVEAU (DZPG)" />
+      <display value="IMGDAT wissenschaftlich nutzen (DZPG)" />
       <property>
           <code value="period-of-validity" />
           <valueString value="P30Y" />
@@ -847,7 +863,7 @@
     </concept>
     <concept>
       <code value="2.16.840.1.113883.3.1937.777.24.5.3.118" />
-      <display value="NEURODAT wissenschaftlich nutzen EU DSGVO NIVEAU (DZPG)" />
+      <display value="NEURODAT wissenschaftlich nutzen (DZPG)" />
       <property>
           <code value="period-of-validity" />
           <valueString value="P30Y" />
@@ -883,7 +899,7 @@
     </concept>
     <concept>
       <code value="2.16.840.1.113883.3.1937.777.24.5.3.123" />
-      <display value="IPSC Verbunddaten wissenschaftlich nutzen EU DSGVO NIVEAU (DZPG)" />
+      <display value="IPSC Verbunddaten wissenschaftlich nutzen (DZPG)" />
       <property>
           <code value="period-of-validity" />
           <valueString value="P30Y" />
