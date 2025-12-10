@@ -501,7 +501,7 @@
       <display value="Rekontaktierung PROM Studien" />
       <property>
         <code value="period-of-validity" />
-        <valueString value="P100Y" />
+        <valueString value="P30Y" />
       </property>
     </concept>
   </concept>
