@@ -4,7 +4,7 @@
     <profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem"/>
   </meta>
   <url value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
-  <version value="1.0.7"/>
+  <version value="1.0.8"/>
   <name value="MII CS Consent Policy"/>
   <title value="MII Consent: Policy CodeSystem"/>
   <status value="active"/>
@@ -26,8 +26,7 @@
   <count value="101"/>
   <property>
     <code value="period-of-validity" />
-    <uri value="http://hl7.org/fhir/iso-8601-date" />
-    <description value="A property that indicates the duration of validity of a concept. The containing duration is a ISO 8601:2004 string." />
+    <description value="A property that indicates the duration of validity of a concept. The string is a duration as ISO 8601:2004 string, ref. to http://hl7.org/fhir/iso-8601-date." />
     <type value="string" />
   </property>
   <concept>
