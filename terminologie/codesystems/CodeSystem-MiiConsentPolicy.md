@@ -24,8 +24,8 @@
 | 2   | Policy | KKDAT 5 Jahre retrospektiv übertragen KVNR                                       | 2.16.840.1.113883.3.1937.777.24.5.3.38  | EINMALIG   |            |
 | 1   | Modul  | Krankenkassendaten prospektiv übertragen, speichern, nutzen                      | 2.16.840.1.113883.3.1937.777.24.5.3.14  |            |            |
 | 2   | Policy | KKDAT 5 Jahre prospektiv übertragen                                              | 2.16.840.1.113883.3.1937.777.24.5.3.15  | 5          |            |
-| 2   | Policy | KKDAT 5 Jahre prospektiv speichern, verarbeiten                                  | 2.16.840.1.113883.3.1937.777.24.5.3.16  | 30         |            |
-| 2   | Policy | KKDAT 5 Jahre prospektiv wissenschaftlich nutzen                                 | 2.16.840.1.113883.3.1937.777.24.5.3.17  | 30         |            |
+| 2   | Policy | ~~KKDAT 5 Jahre prospektiv speichern, verarbeiten~~                              | 2.16.840.1.113883.3.1937.777.24.5.3.16  | 30         | inactive   |
+| 2   | Policy | ~~KKDAT 5 Jahre prospektiv wissenschaftlich nutzen~~                             | 2.16.840.1.113883.3.1937.777.24.5.3.17  | 30         | inactive   |
 | 2   | Policy | KKDAT 5 Jahre prospektiv übertragen KVNR                                         | 2.16.840.1.113883.3.1937.777.24.5.3.39  | 5          |            |
 | 1   | Modul  | Biomaterial erheben, lagern, nutzen                                              | 2.16.840.1.113883.3.1937.777.24.5.3.18  |            |            |
 | 2   | Policy | BIOMAT erheben                                                                   | 2.16.840.1.113883.3.1937.777.24.5.3.19  | 5          |            |

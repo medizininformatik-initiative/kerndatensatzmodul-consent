@@ -207,6 +207,14 @@
         <code value="period-of-validity" />
         <valueString value="P30Y" />
       </property>
+      <property>
+        <code value="status" />
+        <valueCode value="deprecated" />
+      </property>
+      <property>
+        <code value="inactive" />
+        <valueBoolean value="true" />
+      </property>
     </concept>
     <concept>
       <code value="2.16.840.1.113883.3.1937.777.24.5.3.17"/>
@@ -214,6 +222,14 @@
       <property>
         <code value="period-of-validity" />
         <valueString value="P30Y" />
+      </property>
+      <property>
+        <code value="status" />
+        <valueCode value="deprecated" />
+      </property>
+      <property>
+        <code value="inactive" />
+        <valueBoolean value="true" />
       </property>
     </concept>
     <concept>
