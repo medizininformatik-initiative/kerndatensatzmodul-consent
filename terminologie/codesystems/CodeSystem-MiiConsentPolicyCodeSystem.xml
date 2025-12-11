@@ -1,15 +1,15 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
-  <id value="2.16.840.1.113883.3.1937.777.24.5.3--20210423105554"/>
+  <id value="2.16.840.1.113883.3.1937.777.24.5.3--20251211153003"/>
   <meta>
     <profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem"/>
   </meta>
   <url value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
-  <version value="1.0.8"/>
+  <version value="1.1.0"/>
   <name value="MII CS Consent Policy"/>
   <title value="MII Consent: Policy CodeSystem"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2025-12-10"/>
+  <date value="2025-12-11"/>
   <publisher value="MII Task Force Consent Umsetzung"/>
   <contact>
     <name value="MII Task Force Consent Umsetzung"/>
