@@ -163,6 +163,7 @@
       <max value="1" />
       <patternCodeableConcept>
         <coding>
+          <system value="https://www.medizininformatik-initiative.de/fhir/modul-consent/CodeSystem/mii-cs-consent-version-modules" />
           <code value="2.16.840.1.113883.3.1937.777.24.2.184" />
         </coding>
       </patternCodeableConcept>
@@ -172,9 +173,6 @@
       <path value="Consent.category.coding" />
       <min value="1" />
       <max value="1" />
-      <patternCoding>
-        <system value="https://www.medizininformatik-initiative.de/fhir/modul-consent/CodeSystem/mii-cs-consent-consent_category" />
-      </patternCoding>
       <mustSupport value="true" />
     </element>
     <element id="Consent.category:mii.coding.system">
