@@ -11,7 +11,7 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod",
       "valuePeriod": {
-        "start": "2025-12-11T14:02:43+00:00"
+        "start": "2025-12-11T15:02:43+01:00"
       }
     }
   ],
@@ -23,12 +23,12 @@
       "value": "urn:oid:2.16.840.1.113883.3.1937.777.24.5.27"
     }
   ],
-  "version": "2025-12-11T15:02:43",
+  "version": "0.1.0",
   "name": "MIIConsentVersionModuleCodeSystem",
   "title": "MII Consent Version and Modules CodeSystem",
   "status": "draft",
   "experimental": false,
-  "date": "2025-12-12T09:16:32+00:00",
+  "date": "2025-12-12T11:46:46+01:00",
   "publisher": "MII Task Force Consent Umsetzung",
   "contact": [
     {
@@ -42,6 +42,7 @@
     }
   ],
   "description": "Dieses Code System enthält die OIDs der verschiedenen Versionen und Zusatzmodule des Broad Consent der Medizininformatik Initiative.",
+  "copyright": "© 2019+ TMF e. V., Charlottenstraße 42, 10117 Berlin CC BY 4.0 Diese Arbeit ist lizensiert unter der [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/). Zu den Nutzungsrechten der zugrunde liegenden FHIR-Technologie siehe die FHIR-Basis-Spezifikation. Einige verwendete Codesysteme werden von anderen Organisationen herausgegeben und gepflegt. Es gilt das Copyright der dort jeweils aufgeführten Herausgeber (Publisher). ",
   "caseSensitive": false,
   "content": "complete",
   "count": 18,
@@ -49,7 +50,7 @@
     {
       "code": "status",
       "uri": "http://hl7.org/fhir/concept-properties#status",
-      "description": "A code that indicates the status of the concept. Values found in this version of the code system are: draft",
+      "description": "A code that indicates the status of the concept. Values found in this version of the code system are: active, draft",
       "type": "code"
     },
     {
@@ -69,6 +70,7 @@
     {
       "code": "2.16.840.1.113883.3.1937.777.24.2.184",
       "display": "MII Broad Consent",
+      "definition": "Dieser Code (OID) kennzeichnet den Broad Consent der Medizininformatik Initiative (MII).",
       "designation": [
         {
           "language": "de-DE",
@@ -92,7 +94,7 @@
       "property": [
         {
           "code": "status",
-          "valueCode": "draft"
+          "valueCode": "active"
         },
         {
           "code": "child",
@@ -447,6 +449,7 @@
     {
       "code": "2.16.840.1.113883.3.1937.777.24.2.4052",
       "display": "Zusatzmodule des MII Broad Consent",
+      "definition": "Dieser Code (OID) gruppiert die Zusatzmodule des MII Broad Consent.",
       "designation": [
         {
           "language": "de-DE",
