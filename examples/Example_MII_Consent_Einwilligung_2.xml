@@ -1,5 +1,5 @@
 <Consent xmlns="http://hl7.org/fhir">
-	<id value="89f494a3-cd75-44f5-a78a-581dfdd47a94"/>
+	<id value="Example-MII-Consent-ResultType-document"/>
 	<meta>
 		<lastUpdated value="2020-12-11T09:39:07+00:00"/>
 		<profile value="https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-einwilligung"/>
