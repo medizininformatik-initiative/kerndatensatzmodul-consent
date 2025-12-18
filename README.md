@@ -35,7 +35,7 @@ Unter anderem werden MII-spezifische ValueSets festgelegt und die IG-seitigen Vo
 Leitung des Moduls:
 
 * Martin Bialke
-* Sebastian Stäubert
+* [Sebastian Stäubert](https://github.com/SebStaeubert)
 
 Technische Umsetzung:
 

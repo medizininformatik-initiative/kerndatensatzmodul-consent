@@ -41,6 +41,20 @@
 			<code value="2.16.840.1.113883.3.1937.777.24.2.184"/>
 		</coding>
 	</category>
+	<!-- Consent-Kategorie resultType, hier: Dokument -->
+	<category>
+		<coding>
+			<system value="http://fhir.de/ConsentManagement/CodeSystem/ResultType" />
+			<code value="document" />
+		</coding>
+	</category>
+	<!-- Consent-Kategorie bezogen auf das ValueSet 'ConsentManagementTemplateType', hier: Einwilligung -->
+	<category>
+		<coding>
+			<system value="http://fhir.de/ConsentManagement/CodeSystem/TemplateType" />
+			<code value="CONSENT-OPT-IN" />
+		</coding>
+	</category>
 	<!-- Patient, für den die Einwilligungserklärung gilt -->
 	<patient>
 		<reference value="Patient/9b4a702d-162c-428a-8c5d-8b98af21b693"/>
@@ -73,7 +87,7 @@
 			<end value="2050-08-31"/>
 		</period>
 		<provision>
-			<!-- ergibt sich aus der Antwort "PATDAT_erheben_speichern_nutzen=gültig" (Teil 1) -->
+			<!-- ergibt sich aus der Antwort "PATDAT erheben speichern nutzen=gültig" (Teil 1) -->
 			<type value="permit"/>
 			<!-- Medizinische Daten erheben: 5 Jahre gültig -->
 			<period>
@@ -84,12 +98,12 @@
 				<coding>
 					<system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
 					<code value="2.16.840.1.113883.3.1937.777.24.5.3.6"/>
-					<display value="MDAT_erheben"/>
+					<display value="MDAT erheben"/>
 				</coding>
 			</code>
 		</provision>
 		<provision>
-			<!-- ergibt sich aus der Antwort "PATDAT_erheben_speichern_nutzen=gültig" (Teil 2) -->
+			<!-- ergibt sich aus der Antwort "PATDAT erheben speichern nutzen=gültig" (Teil 2) -->
 			<type value="permit"/>
 			<!-- Medizinische Daten speichern: 30 Jahre gültig -->
 			<period>
@@ -100,12 +114,12 @@
 				<coding>
 					<system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
 					<code value="2.16.840.1.113883.3.1937.777.24.5.3.7"/>
-					<display value="MDAT_speichern_verarbeiten"/>
+					<display value="MDAT speichern verarbeiten"/>
 				</coding>
 			</code>
 		</provision>
 		<provision>
-			<!-- ergibt sich aus der Antwort "PATDAT_erheben_speichern_nutzen=gültig" (Teil 3) -->
+			<!-- ergibt sich aus der Antwort "PATDAT erheben speichern nutzen=gültig" (Teil 3) -->
 			<type value="permit"/>
 			<!-- Medizinische Daten nutzen: 30 Jahre gültig -->
 			<period>
@@ -116,12 +130,12 @@
 				<coding>
 					<system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
 					<code value="2.16.840.1.113883.3.1937.777.24.5.3.8"/>
-					<display value="MDAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU"/>
+					<display value="MDAT wissenschaftlich nutzen EU DSGVO NIVEAU"/>
 				</coding>
 			</code>
 		</provision>
 		<provision>
-			<!-- ergibt sich aus der Antwort "BIOMAT_gewinnen_lagern_nutzen=gültig" (Teil 1) -->
+			<!-- ergibt sich aus der Antwort "BIOMAT gewinnen lagern nutzen=gültig" (Teil 1) -->
 			<type value="permit"/>
 			<!-- Biomaterial gewinnen: 5 Jahre gültig -->
 			<period>
@@ -132,12 +146,12 @@
 				<coding>
 					<system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
 					<code value="2.16.840.1.113883.3.1937.777.24.5.3.19"/>
-					<display value="BIOMAT_erheben"/>
+					<display value="BIOMAT erheben"/>
 				</coding>
 			</code>
 		</provision>
 		<provision>
-			<!-- ergibt sich aus der Antwort "BIOMAT_gewinnen_lagern_nutzen=gültig" (Teil 2) -->
+			<!-- ergibt sich aus der Antwort "BIOMAT gewinnen lagern nutzen=gültig" (Teil 2) -->
 			<type value="permit"/>
 			<!-- Biomaterial lagern: 30 Jahre gültig -->
 			<period>
@@ -148,12 +162,12 @@
 				<coding>
 					<system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
 					<code value="2.16.840.1.113883.3.1937.777.24.5.3.20"/>
-					<display value="BIOMAT_lagern_verarbeiten"/>
+					<display value="BIOMAT lagern verarbeiten"/>
 				</coding>
 			</code>
 		</provision>
 		<provision>
-			<!-- ergibt sich aus der Antwort "BIOMAT_gewinnen_lagern_nutzen=gültig" (Teil 3) -->
+			<!-- ergibt sich aus der Antwort "BIOMAT gewinnen lagern nutzen=gültig" (Teil 3) -->
 			<type value="permit"/>
 			<!-- Biomaterial nutzen: 30 Jahre gültig -->
 			<period>
@@ -164,7 +178,7 @@
 				<coding>
 					<system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
 					<code value="2.16.840.1.113883.3.1937.777.24.5.3.22"/>
-					<display value="BIOMAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU"/>
+					<display value="BIOMAT wissenschaftlich nutzen EU DSGVO NIVEAU"/>
 				</coding>
 			</code>
 		</provision>

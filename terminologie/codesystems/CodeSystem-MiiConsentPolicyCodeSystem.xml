@@ -1,15 +1,15 @@
 <CodeSystem xmlns="http://hl7.org/fhir">
-  <id value="2.16.840.1.113883.3.1937.777.24.5.3--20210423105554"/>
+  <id value="2.16.840.1.113883.3.1937.777.24.5.3--20251211153003"/>
   <meta>
     <profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem"/>
   </meta>
   <url value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
-  <version value="1.0.7"/>
+  <version value="1.1.0"/>
   <name value="MII CS Consent Policy"/>
   <title value="MII Consent: Policy CodeSystem"/>
   <status value="active"/>
   <experimental value="false"/>
-  <date value="2025-06-12"/>
+  <date value="2025-12-11"/>
   <publisher value="MII Task Force Consent Umsetzung"/>
   <contact>
     <name value="MII Task Force Consent Umsetzung"/>
@@ -24,44 +24,85 @@
   <hierarchyMeaning value="part-of"/>
   <content value="complete"/>
   <count value="101"/>
+  <property>
+    <code value="period-of-validity" />
+    <description value="A property that indicates the duration of validity of a concept. The string is a duration as ISO 8601:2004 string, ref. to http://hl7.org/fhir/iso-8601-date." />
+    <type value="string" />
+  </property>
   <concept>
     <code value="2.16.840.1.113883.3.1937.777.24.5.3.1"/>
     <display value="Patientendaten erheben, speichern, nutzen"/>
     <concept>
       <code value="2.16.840.1.113883.3.1937.777.24.5.3.2"/>
       <display value="IDAT erheben"/>
+      <property>
+        <code value="period-of-validity" />
+        <valueString value="P30Y" />
+      </property>
     </concept>
     <concept>
       <code value="2.16.840.1.113883.3.1937.777.24.5.3.3"/>
       <display value="IDAT speichern, verarbeiten"/>
+      <property>
+        <code value="period-of-validity" />
+        <valueString value="P30Y" />
+      </property>
     </concept>
     <concept>
       <code value="2.16.840.1.113883.3.1937.777.24.5.3.4"/>
       <display value="IDAT zusammenfuehren Dritte"/>
+      <property>
+        <code value="period-of-validity" />
+        <valueString value="P30Y" />
+      </property>
     </concept>
     <concept>
       <code value="2.16.840.1.113883.3.1937.777.24.5.3.5"/>
-      <display value="IDAT bereitstellen EU DSGVO NIVEAU"/>
+      <display value="IDAT bereitstellen "/>
+      <property>
+        <code value="period-of-validity" />
+        <valueString value="P30Y" />
+      </property>
     </concept>
     <concept>
       <code value="2.16.840.1.113883.3.1937.777.24.5.3.6"/>
       <display value="MDAT erheben"/>
+      <property>
+        <code value="period-of-validity" />
+        <valueString value="P5Y" />
+      </property>
     </concept>
     <concept>
       <code value="2.16.840.1.113883.3.1937.777.24.5.3.7"/>
       <display value="MDAT speichern, verarbeiten"/>
+      <property>
+        <code value="period-of-validity" />
+        <valueString value="P30Y" />
+      </property>
     </concept>
     <concept>
       <code value="2.16.840.1.113883.3.1937.777.24.5.3.8"/>
-      <display value="MDAT wissenschaftlich nutzen EU DSGVO NIVEAU"/>
+      <display value="MDAT wissenschaftlich nutzen"/>
+      <property>
+        <code value="period-of-validity" />
+        <valueString value="P30Y" />
+      </property>
     </concept>
     <concept>
       <code value="2.16.840.1.113883.3.1937.777.24.5.3.9"/>
       <display value="MDAT zusammenfuehren Dritte"/>
+      <property>
+        <code value="period-of-validity" />
+        <valueString value="P30Y" />
+      </property>
     </concept>
     <concept>
       <code value="2.16.840.1.113883.3.1937.777.24.5.3.37"/>
       <display value="Rekontaktierung Ergebnisse erheblicher Bedeutung"/>
+      <property>
+        <code value="period-of-validity" />
+        <valueString value="P30Y" />
+      </property>
     </concept>
   </concept>
   <concept>
@@ -70,14 +111,42 @@
     <concept>
       <code value="2.16.840.1.113883.3.1937.777.24.5.3.45"/>
       <display value="MDAT retrospektiv speichern verarbeiten"/>
+      <property>
+        <code value="period-of-validity" />
+        <valueString value="P30Y" />
+      </property>
     </concept>
     <concept>
       <code value="2.16.840.1.113883.3.1937.777.24.5.3.46"/>
-      <display value="MDAT retrospektiv wissenschaftlich nutzen EU DSGVO NIVEAU"/>
+      <display value="MDAT retrospektiv wissenschaftlich nutzen"/>
+      <property>
+        <code value="period-of-validity" />
+        <valueString value="P30Y" />
+      </property>
+      <property>
+        <code value="status" />
+        <valueCode value="deprecated" />
+      </property>
+      <property>
+        <code value="inactive" />
+        <valueBoolean value="true" />
+      </property>
     </concept>
     <concept>
       <code value="2.16.840.1.113883.3.1937.777.24.5.3.47"/>
       <display value="MDAT retrospektiv zusammenfuehren Dritte"/>
+      <property>
+        <code value="period-of-validity" />
+        <valueString value="P30Y" />
+      </property>
+      <property>
+        <code value="status" />
+        <valueCode value="deprecated" />
+      </property>
+      <property>
+        <code value="inactive" />
+        <valueBoolean value="true" />
+      </property>
     </concept>
   </concept>
   <concept>
@@ -85,7 +154,11 @@
     <display value="Patientendaten Weitergabe non DSGVO NIVEAU"/>
     <concept>
       <code value="2.16.840.1.113883.3.1937.777.24.5.3.49"/>
-      <display value="MDAT bereitstellen non EU DSGVO NIVEAU"/>
+      <display value="MDAT wissenschaftlich nutzen ohne EU DSGVO NIVEAU"/>
+      <property>
+        <code value="period-of-validity" />
+        <valueString value="P30Y" />
+      </property>
     </concept>
   </concept>
   <concept>
@@ -98,10 +171,18 @@
     <concept>
       <code value="2.16.840.1.113883.3.1937.777.24.5.3.12"/>
       <display value="KKDAT 5J retrospektiv speichern verarbeiten"/>
+      <property>
+        <code value="period-of-validity" />
+        <valueString value="P30Y" />
+      </property>
     </concept>
     <concept>
       <code value="2.16.840.1.113883.3.1937.777.24.5.3.13"/>
       <display value="KKDAT 5J retrospektiv wissenschaftlich nutzen"/>
+      <property>
+        <code value="period-of-validity" />
+        <valueString value="P30Y" />
+      </property>
     </concept>
     <concept>
       <code value="2.16.840.1.113883.3.1937.777.24.5.3.38"/>
@@ -114,18 +195,50 @@
     <concept>
       <code value="2.16.840.1.113883.3.1937.777.24.5.3.15"/>
       <display value="KKDAT 5J prospektiv uebertragen"/>
+      <property>
+        <code value="period-of-validity" />
+        <valueString value="P5Y" />
+      </property>
     </concept>
     <concept>
       <code value="2.16.840.1.113883.3.1937.777.24.5.3.16"/>
       <display value="KKDAT 5J prospektiv speichern verarbeiten"/>
+      <property>
+        <code value="period-of-validity" />
+        <valueString value="P30Y" />
+      </property>
+      <property>
+        <code value="status" />
+        <valueCode value="deprecated" />
+      </property>
+      <property>
+        <code value="inactive" />
+        <valueBoolean value="true" />
+      </property>
     </concept>
     <concept>
       <code value="2.16.840.1.113883.3.1937.777.24.5.3.17"/>
       <display value="KKDAT 5J prospektiv wissenschaftlich nutzen"/>
+      <property>
+        <code value="period-of-validity" />
+        <valueString value="P30Y" />
+      </property>
+      <property>
+        <code value="status" />
+        <valueCode value="deprecated" />
+      </property>
+      <property>
+        <code value="inactive" />
+        <valueBoolean value="true" />
+      </property>
     </concept>
     <concept>
       <code value="2.16.840.1.113883.3.1937.777.24.5.3.39"/>
       <display value="KKDAT 5J prospektiv uebertragen KVNR"/>
+      <property>
+        <code value="period-of-validity" />
+        <valueString value="P5Y" />
+      </property>
     </concept>
   </concept>
   <concept>
@@ -134,22 +247,42 @@
     <concept>
       <code value="2.16.840.1.113883.3.1937.777.24.5.3.19"/>
       <display value="BIOMAT erheben"/>
+      <property>
+        <code value="period-of-validity" />
+        <valueString value="P5Y" />
+      </property>
     </concept>
     <concept>
       <code value="2.16.840.1.113883.3.1937.777.24.5.3.20"/>
       <display value="BIOMAT lagern verarbeiten"/>
+      <property>
+        <code value="period-of-validity" />
+        <valueString value="P30Y" />
+      </property>
     </concept>
     <concept>
       <code value="2.16.840.1.113883.3.1937.777.24.5.3.21"/>
       <display value="BIOMAT Eigentum übertragen"/>
+      <property>
+        <code value="period-of-validity" />
+        <valueString value="P5Y" />
+      </property>
     </concept>
     <concept>
       <code value="2.16.840.1.113883.3.1937.777.24.5.3.22"/>
-      <display value="BIOMAT wissenschaftlich nutzen EU DSGVO NIVEAU"/>
+      <display value="BIOMAT wissenschaftlich nutzen"/>
+      <property>
+        <code value="period-of-validity" />
+        <valueString value="P30Y" />
+      </property>
     </concept>
     <concept>
       <code value="2.16.840.1.113883.3.1937.777.24.5.3.23"/>
       <display value="BIOMAT Analysedaten zusammenfuehren Dritte"/>
+      <property>
+        <code value="period-of-validity" />
+        <valueString value="P30Y" />
+      </property>
     </concept>
   </concept>
   <concept>
@@ -158,6 +291,10 @@
     <concept>
       <code value="2.16.840.1.113883.3.1937.777.24.5.3.25"/>
       <display value="BIOMAT Zusatzmengen entnehmen"/>
+      <property>
+        <code value="period-of-validity" />
+        <valueString value="P5Y" />
+      </property>
     </concept>
   </concept>
   <concept>
@@ -166,14 +303,26 @@
     <concept>
       <code value="2.16.840.1.113883.3.1937.777.24.5.3.51"/>
       <display value="BIOMAT retrospektiv lagern verarbeiten"/>
+      <property>
+        <code value="period-of-validity" />
+        <valueString value="P30Y" />
+      </property>
     </concept>
     <concept>
       <code value="2.16.840.1.113883.3.1937.777.24.5.3.52"/>
-      <display value="BIOMAT retrospektiv wissenschaftlich nutzen EU DSGVO NIVEAU"/>
+      <display value="BIOMAT retrospektiv wissenschaftlich nutzen"/>
+      <property>
+        <code value="period-of-validity" />
+        <valueString value="P30Y" />
+      </property>
     </concept>
     <concept>
       <code value="2.16.840.1.113883.3.1937.777.24.5.3.53"/>
       <display value="BIOMAT retrospektiv Analysedaten zusammenfuehren Dritte"/>
+      <property>
+        <code value="period-of-validity" />
+        <valueString value="P30Y" />
+      </property>
     </concept>
   </concept>
   <concept>
@@ -182,6 +331,10 @@
     <concept>
       <code value="2.16.840.1.113883.3.1937.777.24.5.3.55"/>
       <display value="BIOMAT bereitstellen ohne EU DSGVO NIVEAU"/>
+      <property>
+        <code value="period-of-validity" />
+        <valueString value="P30Y" />
+      </property>
     </concept>
   </concept>
   <concept>
@@ -190,14 +343,26 @@
     <concept>
       <code value="2.16.840.1.113883.3.1937.777.24.5.3.27"/>
       <display value="Rekontaktierung Verknüpfung Datenbanken"/>
+      <property>
+        <code value="period-of-validity" />
+        <valueString value="P30Y" />
+      </property>
     </concept>
     <concept>
       <code value="2.16.840.1.113883.3.1937.777.24.5.3.28"/>
       <display value="Rekontaktierung weitere Erhebung"/>
+      <property>
+        <code value="period-of-validity" />
+        <valueString value="P30Y" />
+      </property>
     </concept>
     <concept>
       <code value="2.16.840.1.113883.3.1937.777.24.5.3.29"/>
       <display value="Rekontaktierung weitere Studien"/>
+      <property>
+        <code value="period-of-validity" />
+        <valueString value="P30Y" />
+      </property>
     </concept>
   </concept>
   <concept>
@@ -206,6 +371,10 @@
     <concept>
       <code value="2.16.840.1.113883.3.1937.777.24.5.3.31"/>
       <display value="Rekontaktierung Zusatzbefund"/>
+      <property>
+        <code value="period-of-validity" />
+        <valueString value="P30Y" />
+      </property>
     </concept>
   </concept>
   <concept>
@@ -218,6 +387,10 @@
     <concept>
       <code value="2.16.840.1.113883.3.1937.777.24.5.3.43"/>
       <display value="MDAT GECCO83 erheben"/>
+      <property>
+        <code value="period-of-validity" />
+        <valueString value="P30Y" />
+      </property>
     </concept>
     <concept>
       <code value="2.16.840.1.113883.3.1937.777.24.5.3.33"/>
@@ -226,10 +399,18 @@
     <concept>
       <code value="2.16.840.1.113883.3.1937.777.24.5.3.34"/>
       <display value="MDAT GECCO83 speichern verarbeiten NUM/CODEX"/>
+      <property>
+        <code value="period-of-validity" />
+        <valueString value="P30Y" />
+      </property>
     </concept>
     <concept>
       <code value="2.16.840.1.113883.3.1937.777.24.5.3.41"/>
-      <display value="MDAT GECCO83 wissenschaftlich nutzen COVID 19 Forschung EU DSGVO konform"/>
+      <display value="MDAT GECCO83 wissenschaftlich nutzen COVID 19 Forschung"/>
+      <property>
+        <code value="period-of-validity" />
+        <valueString value="P30Y" />
+      </property>
       <property>
         <code value="status" />
         <valueCode value="deprecated" />
@@ -241,7 +422,11 @@
     </concept>
     <concept>
       <code value="2.16.840.1.113883.3.1937.777.24.5.3.42"/>
-      <display value="MDAT GECCO83 wissenschaftlich nutzen Pandemie Forschung EU DSGVO konform"/>
+      <display value="MDAT GECCO83 wissenschaftlich nutzen Pandemie Forschung"/>
+      <property>
+        <code value="period-of-validity" />
+        <valueString value="P30Y" />
+      </property>
       <property>
         <code value="status" />
         <valueCode value="deprecated" />
@@ -253,7 +438,11 @@
     </concept>
     <concept>
       <code value="2.16.840.1.113883.3.1937.777.24.5.3.56"/>
-      <display value="MDAT GECCO83 wissenschaftlich nutzen NUM/CODEX EU DSGVO NIVEAU"/>
+      <display value="MDAT GECCO83 wissenschaftlich nutzen NUM/CODEX"/>
+      <property>
+        <code value="period-of-validity" />
+        <valueString value="P30Y" />
+      </property>
     </concept>
   </concept>
   <concept>
@@ -262,6 +451,10 @@
     <concept>
       <code value="2.16.840.1.113883.3.1937.777.24.5.3.36"/>
       <display value="MDAT GECCO83 bereitstellen NUM/CODEX ohne EU DSGVO NIVEAU"/>
+      <property>
+        <code value="period-of-validity" />
+        <valueString value="P30Y" />
+      </property>
     </concept>
   </concept>
   <concept>
@@ -270,6 +463,10 @@
     <concept>
       <code value="2.16.840.1.113883.3.1937.777.24.5.3.58" />
       <display value="PATDAT erheben, nutzen, Kontaktierung im acribis-Projekt" />
+      <property>
+        <code value="period-of-validity" />
+        <valueString value="P5Y" />
+      </property>
     </concept>
   </concept>
   <concept>
@@ -278,6 +475,10 @@
     <concept>
       <code value="2.16.840.1.113883.3.1937.777.24.5.3.60" />
       <display value="Anschrift und Vitalstatus Melderegister abfragen, speichern, verarbeiten im acribis-Projekt" />
+      <property>
+        <code value="period-of-validity" />
+        <valueString value="P5Y" />
+      </property>
     </concept>
   </concept>
   <concept>
@@ -286,6 +487,10 @@
     <concept>
       <code value="2.16.840.1.113883.3.1937.777.24.5.3.62" />
       <display value="MDAT Hausarzt erheben, speichern, verarbeiten, nutzen im acribis-Projekt" />
+      <property>
+        <code value="period-of-validity" />
+        <valueString value="P5Y" />
+      </property>
     </concept>
   </concept>
   <concept>
@@ -294,86 +499,158 @@
     <concept>
       <code value="2.16.840.1.113883.3.1937.777.24.5.3.64" />
       <display value="PROMDAT Patientenbefragung erheben" />
+      <property>
+        <code value="period-of-validity" />
+        <valueString value="P5Y" />
+      </property>
     </concept>
     <concept>
       <code value="2.16.840.1.113883.3.1937.777.24.5.3.65" />
-      <display value="PROMDAT wissenschaftlich nutzen auf EU DSGVO NIVEAU" />
+      <display value="PROMDAT wissenschaftlich nutzen" />
+      <property>
+        <code value="period-of-validity" />
+        <valueString value="P30Y" />
+      </property>
     </concept>
     <concept>
       <code value="2.16.840.1.113883.3.1937.777.24.5.3.66" />
       <display value="Rekontaktierung PROM Studien" />
+      <property>
+        <code value="period-of-validity" />
+        <valueString value="P30Y" />
+      </property>
     </concept>
   </concept>
   <concept>
     <code value="2.16.840.1.113883.3.1937.777.24.5.3.67" />
     <display value="Z4 Datenschutzerklärung (SNID)" />
     <concept>
-        <code value="2.16.840.1.113883.3.1937.777.24.5.3.68" />
-        <display value="IDAT speichern, verabeiten (SNID)" />
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.68" />
+      <display value="IDAT speichern, verabeiten (SNID)" />
+      <property>
+        <code value="period-of-validity" />
+        <valueString value="P30Y" />
+      </property>
     </concept>
     <concept>
-        <code value="2.16.840.1.113883.3.1937.777.24.5.3.69" />
-        <display value="CONSENT speichern, verarbeiten (SNID)" />
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.69" />
+      <display value="CONSENT speichern, verarbeiten (SNID)" />
+      <property>
+        <code value="period-of-validity" />
+        <valueString value="P30Y" />
+      </property>
     </concept>
     <concept>
-        <code value="2.16.840.1.113883.3.1937.777.24.5.3.70" />
-        <display value="IDAT Einsicht Monitoring (SNID)" />
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.70" />
+      <display value="IDAT Einsicht Monitoring (SNID)" />
+      <property>
+        <code value="period-of-validity" />
+        <valueString value="P30Y" />
+      </property>
     </concept>
     <concept>
-        <code value="2.16.840.1.113883.3.1937.777.24.5.3.71" />
-        <display value="MDAT erheben (SNID)" />
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.71" />
+      <display value="MDAT erheben (SNID)" />
+      <property>
+        <code value="period-of-validity" />
+        <valueString value="P5Y" />
+    </property>
     </concept>
     <concept>
-        <code value="2.16.840.1.113883.3.1937.777.24.5.3.72" />
-        <display value="MDAT speichern, verarbeiten (SNID)" />
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.72" />
+      <display value="MDAT speichern, verarbeiten (SNID)" />
+      <property>
+        <code value="period-of-validity" />
+        <valueString value="P30Y" />
+      </property>
     </concept>
     <concept>
-        <code value="2.16.840.1.113883.3.1937.777.24.5.3.73" />
-        <display value="MDAT bereitstellen EU DSGVO NIVEAU (SNID)" />
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.73" />
+      <display value="MDAT bereitstellen (SNID)" />
+      <property>
+        <code value="period-of-validity" />
+        <valueString value="P30Y" />
+      </property>
     </concept>
     <concept>
-        <code value="2.16.840.1.113883.3.1937.777.24.5.3.74" />
-        <display value="MDAT Einsicht Monitoring (SNID)" />
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.74" />
+      <display value="MDAT Einsicht Monitoring (SNID)" />
+      <property>
+        <code value="period-of-validity" />
+        <valueString value="P30Y" />
+      </property>
     </concept>
     <concept>
-        <code value="2.16.840.1.113883.3.1937.777.24.5.3.75" />
-        <display value="BIOMAT Eigentum übertragen_NUM (SNID)" />
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.75" />
+      <display value="BIOMAT Eigentum übertragen_NUM (SNID)" />
+      <property>
+          <code value="period-of-validity" />
+          <valueString value="P30Y" />
+      </property>
     </concept>
     <concept>
-        <code value="2.16.840.1.113883.3.1937.777.24.5.3.76" />
-        <display value="CONSENT BC bereitstellen (SNID)" />
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.76" />
+      <display value="CONSENT BC bereitstellen (SNID)" />
+      <property>
+          <code value="period-of-validity" />
+          <valueString value="P30Y" />
+      </property>
     </concept>
     <concept>
-        <code value="2.16.840.1.113883.3.1937.777.24.5.3.77" />
-        <display value="CONSENT BC speichern, verarbeiten (SNID)" />
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.77" />
+      <display value="CONSENT BC speichern, verarbeiten (SNID)" />
+      <property>
+          <code value="period-of-validity" />
+          <valueString value="P30Y" />
+      </property>
     </concept>
   </concept>
   <concept>
     <code value="2.16.840.1.113883.3.1937.777.24.5.3.78" />
     <display value="Z4 Einsicht ePa (SNID)" />
     <concept>
-        <code value="2.16.840.1.113883.3.1937.777.24.5.3.79" />
-        <display value="IDAT ePA bereitstellen (SNID)" />
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.79" />
+      <display value="IDAT ePA bereitstellen (SNID)" />
+      <property>
+        <code value="period-of-validity" />
+        <valueString value="P5Y" />
+      </property>
     </concept>
     <concept>
-        <code value="2.16.840.1.113883.3.1937.777.24.5.3.80" />
-        <display value="MDAT ePA erheben (SNID)" />
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.80" />
+      <display value="MDAT ePA erheben (SNID)" />
+      <property>
+          <code value="period-of-validity" />
+          <valueString value="P5Y" />
+      </property>
     </concept>
     <concept>
-        <code value="2.16.840.1.113883.3.1937.777.24.5.3.81" />
-        <display value="MDAT ePA speichern, verarbeiten (SNID)" />
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.81" />
+      <display value="MDAT ePA speichern, verarbeiten (SNID)" />
+      <property>
+          <code value="period-of-validity" />
+          <valueString value="P30Y" />
+      </property>
     </concept>
   </concept>
   <concept>
     <code value="2.16.840.1.113883.3.1937.777.24.5.3.82" />
     <display value="Z4 Krebsregister (SNID)" />
     <concept>
-        <code value="2.16.840.1.113883.3.1937.777.24.5.3.83" />
-        <display value="MDAT KReg speichern, verarbeiten (SNID)" />
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.83" />
+      <display value="MDAT KReg speichern, verarbeiten (SNID)" />
+      <property>
+          <code value="period-of-validity" />
+          <valueString value="P30Y" />
+      </property>
     </concept>
     <concept>
-        <code value="2.16.840.1.113883.3.1937.777.24.5.3.84" />
-        <display value="IDAT KReg KVNR speichern, verarbeiten (SNID)" />
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.84" />
+      <display value="IDAT KReg KVNR speichern, verarbeiten (SNID)" />
+      <property>
+          <code value="period-of-validity" />
+          <valueString value="P30Y" />
+      </property>
     </concept>
   </concept>
   <concept>
@@ -392,148 +669,264 @@
     <code value="2.16.840.1.113883.3.1937.777.24.5.3.88" />
     <display value="Z4 KRegDAT (SNID)" />
     <concept>
-        <code value="2.16.840.1.113883.3.1937.777.24.5.3.89" />
-        <display value="IDAT KVNR KReg bereitstellen prospektiv (SNID)" />
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.89" />
+      <display value="IDAT KVNR KReg bereitstellen prospektiv (SNID)" />
+      <property>
+        <code value="period-of-validity" />
+        <valueString value="P5Y" />
+      </property>
     </concept>
     <concept>
-        <code value="2.16.840.1.113883.3.1937.777.24.5.3.90" />
-        <display value="MDAT KReg erheben prospektiv (SNID)" />
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.90" />
+      <display value="MDAT KReg erheben prospektiv (SNID)" />
+      <property>
+          <code value="period-of-validity" />
+          <valueString value="P5Y" />
+      </property>
     </concept>
   </concept>
   <concept>
     <code value="2.16.840.1.113883.3.1937.777.24.5.3.91" />
     <display value="Z4 Weitergabe Dritte (SNID)" />
     <concept>
-        <code value="2.16.840.1.113883.3.1937.777.24.5.3.92" />
-        <display value="MDAT SNID bereitstellen Dritte" />
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.92" />
+      <display value="MDAT SNID bereitstellen Dritte" />
+      <property>
+          <code value="period-of-validity" />
+          <valueString value="P30Y" />
+      </property>
     </concept>
     <concept>
-        <code value="2.16.840.1.113883.3.1937.777.24.5.3.93" />
-        <display value="BIOMAT SNID bereitstellen Dritte" />
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.93" />
+      <display value="BIOMAT SNID bereitstellen Dritte" />
+      <property>
+          <code value="period-of-validity" />
+          <valueString value="P30Y" />
+      </property>
     </concept>
   </concept>
   <concept>
     <code value="2.16.840.1.113883.3.1937.777.24.5.3.94" />
     <display value="Z4 Rekontaktierung Patient (SNID)" />
     <concept>
-        <code value="2.16.840.1.113883.3.1937.777.24.5.3.95" />
-        <display value="Rekontaktierung Gesundheitszustand nach Studienabschluss (SNID)" />
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.95" />
+      <display value="Rekontaktierung Gesundheitszustand nach Studienabschluss (SNID)" />
+      <property>
+          <code value="period-of-validity" />
+          <valueString value="P30Y" />
+      </property>
     </concept>
   </concept>
   <concept>
     <code value="2.16.840.1.113883.3.1937.777.24.5.3.96" />
     <display value="Z4_Rekontaktierung_FU" />
     <concept>
-        <code value="2.16.840.1.113883.3.1937.777.24.5.3.97" />
-        <display value="Rekontaktierung weitere Studien (SNID)" />
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.97" />
+      <display value="Rekontaktierung weitere Studien (SNID)" />
+      <property>
+          <code value="period-of-validity" />
+          <valueString value="P30Y" />
+      </property>
     </concept>
     <concept>
-        <code value="2.16.840.1.113883.3.1937.777.24.5.3.98" />
-        <display value="IDAT SNID bereitstellen OE" />
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.98" />
+      <display value="IDAT SNID bereitstellen OE" />
+      <property>
+          <code value="period-of-validity" />
+          <valueString value="P30Y" />
+      </property>
     </concept>
   </concept>
   <concept>
     <code value="2.16.840.1.113883.3.1937.777.24.5.3.99" />
     <display value="Z4 Erhebung Hausarzt (SNID)" />
     <concept>
-        <code value="2.16.840.1.113883.3.1937.777.24.5.3.100" />
-        <display value="MDAT Hausarzt erheben, speichern, verarbeiten, nutzen (SNID)" />
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.100" />
+      <display value="MDAT Hausarzt erheben, speichern, verarbeiten, nutzen (SNID)" />
+      <property>
+          <code value="period-of-validity" />
+          <valueString value="P30Y" />
+      </property>
     </concept>
     <concept>
-        <code value="2.16.840.1.113883.3.1937.777.24.5.3.101" />
-        <display value="IDAT bereitstellen Hausarzt (SNID)" />
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.101" />
+      <display value="IDAT bereitstellen Hausarzt (SNID)" />
+      <property>
+          <code value="period-of-validity" />
+          <valueString value="P30Y" />
+      </property>
     </concept>
   </concept>
   <concept>
     <code value="2.16.840.1.113883.3.1937.777.24.5.3.102" />
     <display value="Z5 PATDAT, BIOMAT, PHENO erheben, speichern, gewinnen, lagern, zusätzlich nutzen (DZPG)" />
     <concept>
-        <code value="2.16.840.1.113883.3.1937.777.24.5.3.103" />
-        <display value="MDAT Zusatzdaten PHAENO erheben (DZPG)" />
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.103" />
+      <display value="MDAT Zusatzdaten PHAENO erheben (DZPG)" />
+      <property>
+          <code value="period-of-validity" />
+          <valueString value="P5Y" />
+      </property>
     </concept>
     <concept>
-        <code value="2.16.840.1.113883.3.1937.777.24.5.3.104" />
-        <display value="MDAT speichern verarbeiten (DZPG)" />
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.104" />
+      <display value="MDAT speichern verarbeiten (DZPG)" />
+      <property>
+          <code value="period-of-validity" />
+          <valueString value="P30Y" />
+      </property>
     </concept>
     <concept>
-        <code value="2.16.840.1.113883.3.1937.777.24.5.3.105" />
-        <display value="MDAT wissenschaftlich nutzen EU DSGVO NIVEAU (DZPG)" />
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.105" />
+      <display value="MDAT wissenschaftlich nutzen (DZPG)" />
+      <property>
+          <code value="period-of-validity" />
+          <valueString value="P30Y" />
+      </property>
     </concept>
     <concept>
-        <code value="2.16.840.1.113883.3.1937.777.24.5.3.106" />
-        <display value="MDAT zusammenführen mit Dritten (DZPG)" />
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.106" />
+      <display value="MDAT zusammenführen mit Dritten (DZPG)" />
+      <property>
+          <code value="period-of-validity" />
+          <valueString value="P30Y" />
+      </property>
     </concept>
     <concept>
-        <code value="2.16.840.1.113883.3.1937.777.24.5.3.107" />
-        <display value="BIOMAT Zusatzmaterial entnehmen (DZPG)" />
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.107" />
+      <display value="BIOMAT Zusatzmaterial entnehmen (DZPG)" />
+      <property>
+          <code value="period-of-validity" />
+          <valueString value="P5Y" />
+      </property>
     </concept>
     <concept>
-        <code value="2.16.840.1.113883.3.1937.777.24.5.3.108" />
-        <display value="BIOMAT Zusatzmaterial lagern verarbeiten (DZPG)" />
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.108" />
+      <display value="BIOMAT Zusatzmaterial lagern verarbeiten (DZPG)" />
+      <property>
+          <code value="period-of-validity" />
+          <valueString value="P30Y" />
+      </property>
     </concept>
     <concept>
-        <code value="2.16.840.1.113883.3.1937.777.24.5.3.109" />
-        <display value="BIOMAT wissenschaftlich nutzen EU DSGVO NIVEAU (DZPG)" />
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.109" />
+      <display value="BIOMAT wissenschaftlich nutzen (DZPG)" />
+      <property>
+          <code value="period-of-validity" />
+          <valueString value="P30Y" />
+      </property>
     </concept>
     <concept>
-        <code value="2.16.840.1.113883.3.1937.777.24.5.3.110" />
-        <display value="BIOMAT zusammenführen mit Dritten (DZPG)" />
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.110" />
+      <display value="BIOMAT zusammenführen mit Dritten (DZPG)" />
+      <property>
+          <code value="period-of-validity" />
+          <valueString value="P30Y" />
+      </property>
     </concept>
   </concept>
   <concept>
     <code value="2.16.840.1.113883.3.1937.777.24.5.3.111" />
     <display value="Z5 NEURODAT, IMGDAT erheben, speichern, zusätzlich nutzen (DZPG)" />
     <concept>
-        <code value="2.16.840.1.113883.3.1937.777.24.5.3.112" />
-        <display value="IMGDAT erheben (DZPG)" />
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.112" />
+      <display value="IMGDAT erheben (DZPG)" />
+      <property>
+          <code value="period-of-validity" />
+          <valueString value="P5Y" />
+      </property>
     </concept>
     <concept>
-        <code value="2.16.840.1.113883.3.1937.777.24.5.3.113" />
-        <display value="IMGDAT speichern, verarbeiten (DZPG)" />
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.113" />
+      <display value="IMGDAT speichern, verarbeiten (DZPG)" />
+      <property>
+          <code value="period-of-validity" />
+          <valueString value="P30Y" />
+      </property>
     </concept>
     <concept>
-        <code value="2.16.840.1.113883.3.1937.777.24.5.3.114" />
-        <display value="IMGDAT wissenschaftlich nutzen EU DSGVO NIVEAU (DZPG)" />
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.114" />
+      <display value="IMGDAT wissenschaftlich nutzen (DZPG)" />
+      <property>
+          <code value="period-of-validity" />
+          <valueString value="P30Y" />
+      </property>
     </concept>
     <concept>
-        <code value="2.16.840.1.113883.3.1937.777.24.5.3.115" />
-        <display value="IMGDAT zusammenführen mit Dritten (DZPG)" />
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.115" />
+      <display value="IMGDAT zusammenführen mit Dritten (DZPG)" />
+      <property>
+          <code value="period-of-validity" />
+          <valueString value="P30Y" />
+      </property>
     </concept>
     <concept>
-        <code value="2.16.840.1.113883.3.1937.777.24.5.3.116" />
-        <display value="NEURODAT erheben (DZPG)" />
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.116" />
+      <display value="NEURODAT erheben (DZPG)" />
+      <property>
+          <code value="period-of-validity" />
+          <valueString value="P5Y" />
+      </property>
     </concept>
     <concept>
-        <code value="2.16.840.1.113883.3.1937.777.24.5.3.117" />
-        <display value="NEURODAT speichern, verarbeiten (DZPG)" />
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.117" />
+      <display value="NEURODAT speichern, verarbeiten (DZPG)" />
+      <property>
+          <code value="period-of-validity" />
+          <valueString value="P30Y" />
+      </property>
     </concept>
     <concept>
-        <code value="2.16.840.1.113883.3.1937.777.24.5.3.118" />
-        <display value="NEURODAT wissenschaftlich nutzen EU DSGVO NIVEAU (DZPG)" />
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.118" />
+      <display value="NEURODAT wissenschaftlich nutzen (DZPG)" />
+      <property>
+          <code value="period-of-validity" />
+          <valueString value="P30Y" />
+      </property>
     </concept>
     <concept>
-        <code value="2.16.840.1.113883.3.1937.777.24.5.3.119" />
-        <display value="NEURODAT zusammenführen mit Dritten (DZPG)" />
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.119" />
+      <display value="NEURODAT zusammenführen mit Dritten (DZPG)" />
+      <property>
+          <code value="period-of-validity" />
+          <valueString value="P30Y" />
+      </property>
     </concept>
   </concept>
   <concept>
     <code value="2.16.840.1.113883.3.1937.777.24.5.3.120" />
     <display value="Z5 IPSC Verbunddaten gewinnen, speichern, nutzen (DZPG)" />
     <concept>
-        <code value="2.16.840.1.113883.3.1937.777.24.5.3.121" />
-        <display value="IPSC Verbunddaten gewinnen (DZPG)" />
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.121" />
+      <display value="IPSC Verbunddaten gewinnen (DZPG)" />
+      <property>
+          <code value="period-of-validity" />
+          <valueString value="P5Y" />
+      </property>
     </concept>
     <concept>
-        <code value="2.16.840.1.113883.3.1937.777.24.5.3.122" />
-        <display value="IPSC Verbunddaten speichern, verarbeiten (DZPG)" />
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.122" />
+      <display value="IPSC Verbunddaten speichern, verarbeiten (DZPG)" />
+      <property>
+          <code value="period-of-validity" />
+          <valueString value="P30Y" />
+      </property>
     </concept>
     <concept>
-        <code value="2.16.840.1.113883.3.1937.777.24.5.3.123" />
-        <display value="IPSC Verbunddaten wissenschaftlich nutzen EU DSGVO NIVEAU (DZPG)" />
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.123" />
+      <display value="IPSC Verbunddaten wissenschaftlich nutzen (DZPG)" />
+      <property>
+          <code value="period-of-validity" />
+          <valueString value="P30Y" />
+      </property>
     </concept>
     <concept>
-        <code value="2.16.840.1.113883.3.1937.777.24.5.3.124" />
-        <display value="IPSC Verbunddaten zusammenführen mit Dritten (DZPG)" />
+      <code value="2.16.840.1.113883.3.1937.777.24.5.3.124" />
+      <display value="IPSC Verbunddaten zusammenführen mit Dritten (DZPG)" />
+      <property>
+          <code value="period-of-validity" />
+          <valueString value="P30Y" />
+      </property>
     </concept>
   </concept>
 </CodeSystem>

@@ -8,12 +8,12 @@
 		</valuePeriod>
 	</extension>
 	<url value="https://www.medizininformatik-initiative.de/fhir/modul-consent/ValueSet/mii-vs-consent-signaturetypes"/>
-	<version value="1.0.0"/>
+	<version value="1.0.1"/>
 	<name value="MII_VS_Consent_SignatureTypes"/>
 	<title value="MII Consent: Signature Types"/>
 	<status value="active"/>
 	<experimental value="false"/>
-	<date value="2022-10-07" />
+	<date value="2025-12-03" />
 	<publisher value="MII Task Force Consent Umsetzung"/>
 	<contact>
 		<name value="MII Task Force Consent Umsetzung"/>
@@ -34,6 +34,10 @@
 			<concept>
 				<code value="1.2.840.10065.1.12.1.11"/>
 				<display value="Consent Witness Signature"/>
+			</concept>
+			<concept>
+				<code value="1.2.840.10065.1.12.1.5"/>
+				<display value="Verification Signature"/>
 			</concept>
 		</include>
 	</compose>
