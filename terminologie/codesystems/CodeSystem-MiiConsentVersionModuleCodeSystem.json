@@ -11,7 +11,7 @@
     {
       "url": "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod",
       "valuePeriod": {
-        "start": "2025-12-11T15:02:43+01:00"
+        "start": "2025-12-18T15:02:43+01:00"
       }
     }
   ],
@@ -23,17 +23,20 @@
       "value": "urn:oid:2.16.840.1.113883.3.1937.777.24.5.27"
     }
   ],
-  "version": "0.1.0",
+  "version": "0.2.0",
   "name": "MIIConsentVersionModuleCodeSystem",
   "title": "MII Consent Version and Modules CodeSystem",
   "status": "draft",
   "experimental": false,
-  "date": "2025-12-12T11:46:46+01:00",
-  "publisher": "MII Task Force Consent Umsetzung",
+  "publisher": "Medizininformatik-Initiative",
   "contact": [
     {
-      "name": "MII Task Force Consent Umsetzung",
+      "name": "Medizininformatik-Initiative",
       "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        },
         {
           "system": "email",
           "value": "office@medizininformatik-initiative.de"
@@ -42,15 +45,15 @@
     }
   ],
   "description": "Dieses Code System enthält die OIDs der verschiedenen Versionen und Zusatzmodule des Broad Consent der Medizininformatik Initiative.",
-  "copyright": "© 2019+ TMF e. V., Charlottenstraße 42, 10117 Berlin CC BY 4.0 Diese Arbeit ist lizensiert unter der [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/). Zu den Nutzungsrechten der zugrunde liegenden FHIR-Technologie siehe die FHIR-Basis-Spezifikation. Einige verwendete Codesysteme werden von anderen Organisationen herausgegeben und gepflegt. Es gilt das Copyright der dort jeweils aufgeführten Herausgeber (Publisher). ",
+  "copyright": "\n            © 2019+ TMF e. V., Charlottenstraße 42, 10117 Berlin \n            \n                \n                    CC BY 4.0\n                \n                 \n            \n            Diese Arbeit ist lizensiert unter der [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/). \n            Zu den Nutzungsrechten der zugrunde liegenden FHIR-Technologie siehe die FHIR-Basis-Spezifikation. \n            Einige verwendete Codesysteme werden von anderen Organisationen herausgegeben und gepflegt. Es gilt das Copyright der dort jeweils aufgeführten Herausgeber (Publisher). \n        ",
   "caseSensitive": false,
   "content": "complete",
-  "count": 18,
+  "count": 20,
   "property": [
     {
       "code": "status",
       "uri": "http://hl7.org/fhir/concept-properties#status",
-      "description": "A code that indicates the status of the concept. Values found in this version of the code system are: active, draft",
+      "description": "A code that indicates the status of the concept. Values found in this version of the code system are: draft",
       "type": "code"
     },
     {
@@ -70,23 +73,14 @@
     {
       "code": "2.16.840.1.113883.3.1937.777.24.2.184",
       "display": "MII Broad Consent",
-      "definition": "Dieser Code (OID) kennzeichnet den Broad Consent der Medizininformatik Initiative (MII).",
+      "definition": "\n                        Dieser Code (OID) kennzeichnet den Broad Consent der Medizininformatik Initiative (MII).",
       "designation": [
         {
           "language": "de-DE",
           "use": {
             "system": "http://snomed.info/sct",
-            "code": "900000000000013009",
-            "display": "Synonym"
-          },
-          "value": "MII Broad Consent"
-        },
-        {
-          "language": "en-US",
-          "use": {
-            "system": "http://snomed.info/sct",
-            "code": "900000000000013009",
-            "display": "Synonym"
+            "code": "900000000000003001",
+            "display": "Fully specified name"
           },
           "value": "MII Broad Consent"
         }
@@ -94,11 +88,15 @@
       "property": [
         {
           "code": "status",
-          "valueCode": "active"
+          "valueCode": "draft"
         },
         {
           "code": "child",
           "valueCode": "2.16.840.1.113883.3.1937.777.24.2.1790"
+        },
+        {
+          "code": "child",
+          "valueCode": "2.16.840.1.113883.3.1937.777.24.2.4053"
         },
         {
           "code": "child",
@@ -126,6 +124,10 @@
         },
         {
           "code": "child",
+          "valueCode": "2.16.840.1.113883.3.1937.777.24.2.4054"
+        },
+        {
+          "code": "child",
           "valueCode": "2.16.840.1.113883.3.1937.777.24.2.2722"
         },
         {
@@ -149,15 +151,41 @@
     {
       "code": "2.16.840.1.113883.3.1937.777.24.2.1790",
       "display": "Version 1.6d des MII Broad Consent",
+      "definition": "\n                        Version 1.6d des MII Broad Consent",
       "designation": [
         {
           "language": "de-DE",
           "use": {
             "system": "http://snomed.info/sct",
-            "code": "900000000000013009",
-            "display": "Synonym"
+            "code": "900000000000003001",
+            "display": "Fully specified name"
           },
           "value": "Version 1.6d des MII Broad Consent"
+        }
+      ],
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "draft"
+        },
+        {
+          "code": "parent",
+          "valueCode": "2.16.840.1.113883.3.1937.777.24.2.184"
+        }
+      ]
+    },
+    {
+      "code": "2.16.840.1.113883.3.1937.777.24.2.4053",
+      "display": "Version 1.6d Ablehnung",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000003001",
+            "display": "Fully specified name"
+          },
+          "value": "Version 1.6d Ablehnung"
         }
       ],
       "property": [
@@ -179,8 +207,8 @@
           "language": "de-DE",
           "use": {
             "system": "http://snomed.info/sct",
-            "code": "900000000000013009",
-            "display": "Synonym"
+            "code": "900000000000003001",
+            "display": "Fully specified name"
           },
           "value": "Version 1.6d Komplettwiderruf"
         }
@@ -204,8 +232,8 @@
           "language": "de-DE",
           "use": {
             "system": "http://snomed.info/sct",
-            "code": "900000000000013009",
-            "display": "Synonym"
+            "code": "900000000000003001",
+            "display": "Fully specified name"
           },
           "value": "Version 1.6d Teilwiderruf"
         }
@@ -229,8 +257,8 @@
           "language": "de-DE",
           "use": {
             "system": "http://snomed.info/sct",
-            "code": "900000000000013009",
-            "display": "Synonym"
+            "code": "900000000000003001",
+            "display": "Fully specified name"
           },
           "value": "Version 1.6f des MII Broad Consent"
         }
@@ -254,8 +282,8 @@
           "language": "de-DE",
           "use": {
             "system": "http://snomed.info/sct",
-            "code": "900000000000013009",
-            "display": "Synonym"
+            "code": "900000000000003001",
+            "display": "Fully specified name"
           },
           "value": "Version 1.6f Komplettwiderruf"
         }
@@ -279,8 +307,8 @@
           "language": "de-DE",
           "use": {
             "system": "http://snomed.info/sct",
-            "code": "900000000000013009",
-            "display": "Synonym"
+            "code": "900000000000003001",
+            "display": "Fully specified name"
           },
           "value": "Version 1.6f Teilwiderruf"
         }
@@ -304,10 +332,35 @@
           "language": "de-DE",
           "use": {
             "system": "http://snomed.info/sct",
-            "code": "900000000000013009",
-            "display": "Synonym"
+            "code": "900000000000003001",
+            "display": "Fully specified name"
           },
           "value": "Version 1.7.2 des MII Broad Consent"
+        }
+      ],
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "draft"
+        },
+        {
+          "code": "parent",
+          "valueCode": "2.16.840.1.113883.3.1937.777.24.2.184"
+        }
+      ]
+    },
+    {
+      "code": "2.16.840.1.113883.3.1937.777.24.2.4054",
+      "display": "Version 1.7.2 Ablehnung",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000003001",
+            "display": "Fully specified name"
+          },
+          "value": "Version 1.7.2 Ablehnung"
         }
       ],
       "property": [
@@ -329,8 +382,8 @@
           "language": "de-DE",
           "use": {
             "system": "http://snomed.info/sct",
-            "code": "900000000000013009",
-            "display": "Synonym"
+            "code": "900000000000003001",
+            "display": "Fully specified name"
           },
           "value": "Version 1.7.2 Komplettwiderruf"
         }
@@ -354,8 +407,8 @@
           "language": "de-DE",
           "use": {
             "system": "http://snomed.info/sct",
-            "code": "900000000000013009",
-            "display": "Synonym"
+            "code": "900000000000003001",
+            "display": "Fully specified name"
           },
           "value": "Version 1.7.2 Teilwiderruf"
         }
@@ -379,8 +432,8 @@
           "language": "de-DE",
           "use": {
             "system": "http://snomed.info/sct",
-            "code": "900000000000013009",
-            "display": "Synonym"
+            "code": "900000000000003001",
+            "display": "Fully specified name"
           },
           "value": "Version 1.7.2 Eltern und Sorgeberechtigte für Minderjährige v1.1"
         }
@@ -404,8 +457,8 @@
           "language": "de-DE",
           "use": {
             "system": "http://snomed.info/sct",
-            "code": "900000000000013009",
-            "display": "Synonym"
+            "code": "900000000000003001",
+            "display": "Fully specified name"
           },
           "value": "Version 1.7.2 7-11 Minderjährige v1.1"
         }
@@ -429,8 +482,8 @@
           "language": "de-DE",
           "use": {
             "system": "http://snomed.info/sct",
-            "code": "900000000000013009",
-            "display": "Synonym"
+            "code": "900000000000003001",
+            "display": "Fully specified name"
           },
           "value": "Version 1.7.2 12-17 Minderjährige v1.1"
         }
@@ -449,7 +502,7 @@
     {
       "code": "2.16.840.1.113883.3.1937.777.24.2.4052",
       "display": "Zusatzmodule des MII Broad Consent",
-      "definition": "Dieser Code (OID) gruppiert die Zusatzmodule des MII Broad Consent.",
+      "definition": "\n                        Dieser Code (OID) gruppiert die Zusatzmodule des MII Broad Consent.",
       "designation": [
         {
           "language": "de-DE",
@@ -459,15 +512,6 @@
             "display": "Fully specified name"
           },
           "value": "Zusatzmodule des MII Broad Consent"
-        },
-        {
-          "language": "en-US",
-          "use": {
-            "system": "http://snomed.info/sct",
-            "code": "900000000000013009",
-            "display": "Synonym"
-          },
-          "value": "Additional modules of the MII Broad Consent"
         }
       ],
       "property": [
@@ -501,8 +545,8 @@
           "language": "de-DE",
           "use": {
             "system": "http://snomed.info/sct",
-            "code": "900000000000013009",
-            "display": "Synonym"
+            "code": "900000000000003001",
+            "display": "Fully specified name"
           },
           "value": "Zusatzmodul ACRIBiS (Z2)"
         }
@@ -526,8 +570,8 @@
           "language": "de-DE",
           "use": {
             "system": "http://snomed.info/sct",
-            "code": "900000000000013009",
-            "display": "Synonym"
+            "code": "900000000000003001",
+            "display": "Fully specified name"
           },
           "value": "Zusatzmodul Patientenbefragung (Z3)"
         }
@@ -551,8 +595,8 @@
           "language": "de-DE",
           "use": {
             "system": "http://snomed.info/sct",
-            "code": "900000000000013009",
-            "display": "Synonym"
+            "code": "900000000000003001",
+            "display": "Fully specified name"
           },
           "value": "Zusatzmodul Fachnetzwerk Infektion - SNID (Z4)"
         }
@@ -576,8 +620,8 @@
           "language": "de-DE",
           "use": {
             "system": "http://snomed.info/sct",
-            "code": "900000000000013009",
-            "display": "Synonym"
+            "code": "900000000000003001",
+            "display": "Fully specified name"
           },
           "value": "Zusatzmodul Deutsche Zentrum für Psychische Gesundheit - DZPG (Z5)"
         }
