@@ -32,7 +32,7 @@
   <kind value="resource" />
   <abstract value="false" />
   <type value="Consent" />
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Consent" />
+  <baseDefinition value="http://fhir.de/ConsentManagement/StructureDefinition/Consent" />
   <derivation value="constraint" />
   <differential>
     <element id="Consent.id">
@@ -387,3 +387,4 @@
     </element>
   </differential>
 </StructureDefinition>
+
