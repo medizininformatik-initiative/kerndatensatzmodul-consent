@@ -96,7 +96,7 @@
 | 2   | Policy | BIOMAT SNID bereitstellen Dritte                                                 | 2.16.840.1.113883.3.1937.777.24.5.3.93      | 30         |            |
 | 1   | Modul  | Z4 Rekontaktierung Patient NU                                                    | 2.16.840.1.113883.3.1937.777.24.5.3.94      |            |            |
 | 2   | Policy | Rekontaktierung Gesundheitszustand nach Studienabschluss (SNID)                  | 2.16.840.1.113883.3.1937.777.24.5.3.95      | 30         |            |
-| 1   | Modul  | Z4 Rekontaktierung                                                               | 2.16.840.1.113883.3.1937.777.24.5.3.96      |            |            |
+| 1   | Modul  | Z4 Rekontaktierung Patient weitere Studien                                       | 2.16.840.1.113883.3.1937.777.24.5.3.96      |            |            |
 | 2   | Policy | Rekontaktierung Patient weitere Studien (SNID)                                   | 2.16.840.1.113883.3.1937.777.24.5.3.97      | 30         |            |
 | 2   | Policy | IDAT SNID bereitstellen OE                                                       | 2.16.840.1.113883.3.1937.777.24.5.3.98      | 30         |            |
 | 1   | Modul  | Z4 Erhebung Hausarzt                                                             | 2.16.840.1.113883.3.1937.777.24.5.3.99      |            |            |
