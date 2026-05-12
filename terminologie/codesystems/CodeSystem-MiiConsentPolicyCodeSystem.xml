@@ -707,7 +707,7 @@
   </concept>
   <concept>
     <code value="2.16.840.1.113883.3.1937.777.24.5.3.94" />
-    <display value="Z4 Rekontaktierung Patient (SNID)" />
+    <display value="Z4 Rekontaktierung Patient NU (SNID)" />
     <concept>
       <code value="2.16.840.1.113883.3.1937.777.24.5.3.95" />
       <display value="Rekontaktierung Gesundheitszustand nach Studienabschluss (SNID)" />
@@ -719,10 +719,10 @@
   </concept>
   <concept>
     <code value="2.16.840.1.113883.3.1937.777.24.5.3.96" />
-    <display value="Z4_Rekontaktierung_FU" />
+    <display value="Z4 Rekontaktierung" />
     <concept>
       <code value="2.16.840.1.113883.3.1937.777.24.5.3.97" />
-      <display value="Rekontaktierung weitere Studien (SNID)" />
+      <display value="Rekontaktierung Patient weitere Studien (SNID)" />
       <property>
           <code value="period-of-validity" />
           <valueString value="P30Y" />
