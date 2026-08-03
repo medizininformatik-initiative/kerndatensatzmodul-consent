@@ -127,7 +127,7 @@
       <max value="*" />
       <mustSupport value="true" />
     </element>
-    <element id="Consent.category:loinc">
+    <element id="Consent.category:consentCategory">
       <path value="Consent.category" />
       <sliceName value="loinc" />
       <min value="1" />
@@ -140,18 +140,18 @@
       </patternCodeableConcept>
       <mustSupport value="true" />
     </element>
-    <element id="Consent.category:loinc.coding">
+    <element id="Consent.category:consentCategory.coding">
       <path value="Consent.category.coding" />
       <min value="1" />
       <max value="1" />
       <mustSupport value="true" />
     </element>
-    <element id="Consent.category:loinc.coding.system">
+    <element id="Consent.category:consentCategory.coding.system">
       <path value="Consent.category.coding.system" />
       <min value="1" />
       <mustSupport value="true" />
     </element>
-    <element id="Consent.category:loinc.coding.code">
+    <element id="Consent.category:consentCategory.coding.code">
       <path value="Consent.category.coding.code" />
       <min value="1" />
       <mustSupport value="true" />
