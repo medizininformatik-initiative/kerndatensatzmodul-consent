@@ -459,10 +459,10 @@
   </concept>
   <concept>
     <code value="2.16.840.1.113883.3.1937.777.24.5.3.57" />
-    <display value="Z2 Patientendaten erheben, nutzen, Kontaktierung im acribis-Projekt" />
+    <display value="Z2 PATDAT erheben nutzen kontakt (ACRIBIS)" />
     <concept>
       <code value="2.16.840.1.113883.3.1937.777.24.5.3.58" />
-      <display value="PATDAT erheben, nutzen, Kontaktierung im acribis-Projekt" />
+      <display value="PATDAT erheben nutzen kontakt (ACRIBIS)" />
       <property>
         <code value="period-of-validity" />
         <valueString value="P5Y" />
@@ -471,10 +471,10 @@
   </concept>
   <concept>
     <code value="2.16.840.1.113883.3.1937.777.24.5.3.59" />
-    <display value="Z2 IDAT Melderegister abfragen, speichern, verarbeiten im acribis-Projekt" />
+    <display value="Z2 IDAT Melderegister abfragen speichern verarbeiten (ACRIBIS)" />
     <concept>
       <code value="2.16.840.1.113883.3.1937.777.24.5.3.60" />
-      <display value="Anschrift und Vitalstatus Melderegister abfragen, speichern, verarbeiten im acribis-Projekt" />
+      <display value="IDAT Melderegister abfragen speichern verarbeiten (ACRIBIS)" />
       <property>
         <code value="period-of-validity" />
         <valueString value="P5Y" />
@@ -483,10 +483,10 @@
   </concept>
   <concept>
     <code value="2.16.840.1.113883.3.1937.777.24.5.3.61" />
-    <display value="Z2 MDAT Hausarzt erheben, speichern, verarbeiten, nutzen im acribis-Projekt" />
+    <display value="Z2 MDAT Hausarzt erheben speichern verarbeiten nutzen (ACRIBIS)" />
     <concept>
       <code value="2.16.840.1.113883.3.1937.777.24.5.3.62" />
-      <display value="MDAT Hausarzt erheben, speichern, verarbeiten, nutzen im acribis-Projekt" />
+      <display value="MDAT Hausarzt erheben speichern verarbeiten nutzen (ACRIBIS)" />
       <property>
         <code value="period-of-validity" />
         <valueString value="P5Y" />
