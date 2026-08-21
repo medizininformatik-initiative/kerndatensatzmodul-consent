@@ -123,7 +123,7 @@
         </discriminator>
         <rules value="open" />
       </slicing>
-      <min value="2" />
+      <min value="0" />
       <max value="*" />
       <mustSupport value="true" />
     </element>
@@ -181,6 +181,50 @@
       <mustSupport value="true" />
     </element>
     <element id="Consent.category:mii.coding.code">
+      <path value="Consent.category.coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Consent.category:resultType">
+      <path value="Consent.category" />
+      <sliceName value="resultType" />
+      <mustSupport value="true" />
+      <binding>    <strength value="required" />
+        <valueSet value="http://fhir.de/ConsentManagement/ValueSet/ResultType" />
+      </binding></element>
+    <element id="Consent.category:resultType.coding">
+      <path value="Consent.category.coding" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Consent.category:resultType.coding.system">
+      <path value="Consent.category.coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Consent.category:resultType.coding.code">
+      <path value="Consent.category.coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Consent.category:templateType">
+      <path value="Consent.category" />
+      <sliceName value="templateType" />
+      <mustSupport value="true" />
+      <binding>    <strength value="extensible" />
+        <valueSet value="http://fhir.de/ConsentManagement/ValueSet/TemplateType" />
+      </binding></element>
+    <element id="Consent.category:templateType.coding">
+      <path value="Consent.category.coding" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Consent.category:templateType.coding.system">
+      <path value="Consent.category.coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Consent.category:templateType.coding.code">
       <path value="Consent.category.coding.code" />
       <min value="1" />
       <mustSupport value="true" />
