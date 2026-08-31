@@ -470,349 +470,160 @@ Profile - MI-I - Consent - Einwilligung
 <p><em>Only the differences from the base profile are explained below.</em></p>
 
 <table>
-  <tbody>
+  <thead>
     <tr>
-      <td><strong>FHIR element</strong></td>
-      <td><strong>Explanation</strong></td>
+      <th><strong>FHIR element</strong></th>
+      <th><strong>Explanation</strong></th>
     </tr>
-  </tbody>
-</table>
-
-<p>| — | — |</p>
-
-<table>
+  </thead>
   <tbody>
     <tr>
       <td>Consent.id</td>
       <td>Must-support, but optional</td>
     </tr>
-  </tbody>
-</table>
-
-<table>
-  <tbody>
     <tr>
       <td>Consent.meta</td>
       <td>Must-support, but optional</td>
     </tr>
-  </tbody>
-</table>
-
-<table>
-  <tbody>
     <tr>
       <td>Consent.meta.source</td>
       <td>Must-support, but optional</td>
     </tr>
-  </tbody>
-</table>
-
-<table>
-  <tbody>
     <tr>
       <td>Consent.meta.profile</td>
       <td>Must-support, but optional</td>
     </tr>
-  </tbody>
-</table>
-
-<table>
-  <tbody>
     <tr>
       <td>Consent.extension:domainReference</td>
       <td>Must-support per the specifications of the  <a href="https://ig.fhir.de/einwilligungsmanagement/stable/ResearchStudy.html">AG Einwilligungsmanagement</a> , but optional</td>
     </tr>
-  </tbody>
-</table>
-
-<table>
-  <tbody>
     <tr>
       <td>Consent.identifier</td>
       <td>Contains one or more external IDs of the consent from an external system. This can be, for example, the IHE ID of the CDA document or the ID of the document in an external trusted third party. The identifier should always be given as a value pair of "system" and "value". This information is optional.</td>
     </tr>
-  </tbody>
-</table>
-
-<table>
-  <tbody>
     <tr>
       <td>Consent.scope.coding.system</td>
       <td>Fixed value:  <code class="language-plaintext highlighter-rouge">http://terminology.hl7.org/CodeSystem/consentscope</code></td>
     </tr>
-  </tbody>
-</table>
-
-<table>
-  <tbody>
     <tr>
       <td>Consent.scope.coding.code</td>
       <td>The representation of the MII consent clearly places the context on research. Fixed value:  <code class="language-plaintext highlighter-rouge">research</code></td>
     </tr>
-  </tbody>
-</table>
-
-<table>
-  <tbody>
     <tr>
       <td>Consent.category.coding</td>
-      <td>Must-support. Mandatory specification of  <strong>at least two categories</strong>  with at least one coding each for the consent categories, to enable searching for consents of type "MII consent":</td>
+      <td>Must-support. Mandatory specification of  <strong>at least two categories</strong>  with at least one coding each for the consent categories, to enable searching for consents of type "MII consent":<br /><strong>(1) per <a href="https://www.hl7.org/fhir/valueset-consent-category.html">https://www.hl7.org/fhir/valueset-consent-category.html</a> :</strong><br />Fixed system:  <code class="language-plaintext highlighter-rouge">http://loinc.org</code><br />Fixed code for 'Privacy policy acknowledgement Document':  <code class="language-plaintext highlighter-rouge">57016-8</code><br /><strong>(2) identification of the MII Broad Consent</strong> :<br />Fixed code:  <code class="language-plaintext highlighter-rouge">2.16.840.1.113883.3.1937.777.24.2.184</code><br />Further additional entries are not prevented.</td>
     </tr>
-  </tbody>
-</table>
-
-<p><strong>(1) per <a href="https://www.hl7.org/fhir/valueset-consent-category.html">https://www.hl7.org/fhir/valueset-consent-category.html</a> :</strong>   <br />
-  Fixed system:  <code class="language-plaintext highlighter-rouge">http://loinc.org</code>   <br />
-  Fixed code for 'Privacy policy acknowledgement Document':  <code class="language-plaintext highlighter-rouge">57016-8</code></p>
-
-<p><strong>(2) identification of the MII Broad Consent</strong> :  <br />
-  Fixed code:  <code class="language-plaintext highlighter-rouge">2.16.840.1.113883.3.1937.777.24.2.184</code></p>
-
-<table>
-  <tbody>
-    <tr>
-      <td>Further additional entries are not prevented.</td>
-    </tr>
-  </tbody>
-</table>
-
-<table>
-  <tbody>
     <tr>
       <td>Consent.category:templateType.coding</td>
       <td>ResultType per  <a href="https://ig.fhir.de/einwilligungsmanagement/stable/ResultType.html">ResultType</a> . At least  <code class="language-plaintext highlighter-rouge">document</code>  and  <code class="language-plaintext highlighter-rouge">consent-status</code>  should be supported. If  <code class="language-plaintext highlighter-rouge">document</code>  is given as the ResultType, the kind of (source) document must also be given in the templateType slice.</td>
     </tr>
-  </tbody>
-</table>
-
-<table>
-  <tbody>
     <tr>
       <td>Consent.category:templateType.coding</td>
       <td>Categorization per  <a href="https://ig.fhir.de/einwilligungsmanagement/stable/TemplateType.html">TemplateType</a> . Serves as an informal element for differentiating between consent, withdrawal, objection and refusal.</td>
     </tr>
-  </tbody>
-</table>
-
-<table>
-  <tbody>
     <tr>
       <td>Consent.patient.reference</td>
-      <td>Reference to the patient the Consent resource relates to, in the form of a literal reference, relative reference, internal reference or an absolute URL, must-support.</td>
+      <td>Reference to the patient the Consent resource relates to, in the form of a literal reference, relative reference, internal reference or an absolute URL, must-support.<br /><code class="language-plaintext highlighter-rouge">Consent.patient.reference</code>  should be filled where possible, i.e. when a corresponding Patient resource exists. If this is not the case, the patient relationship must be established via  <code class="language-plaintext highlighter-rouge">Consent.patient.identifier</code> .</td>
     </tr>
-    <tr>
-      <td><code class="language-plaintext highlighter-rouge">Consent.patient.reference</code>  should be filled where possible, i.e. when a corresponding Patient resource exists. If this is not the case, the patient relationship must be established via  <code class="language-plaintext highlighter-rouge">Consent.patient.identifier</code> .</td>
-      <td> </td>
-    </tr>
-  </tbody>
-</table>
-
-<table>
-  <tbody>
     <tr>
       <td>Consent.patient.identifier</td>
-      <td>Specification of the person relationship in the form of an identifier, must-support.</td>
+      <td>Specification of the person relationship in the form of an identifier, must-support.<br />See  <code class="language-plaintext highlighter-rouge">Consent.patient.reference</code> . The relationship to the patient should preferably be established via  <code class="language-plaintext highlighter-rouge">Consent.patient.reference</code> .  <code class="language-plaintext highlighter-rouge">Consent.patient.identifier</code>  can be used alternatively or additionally.</td>
     </tr>
-    <tr>
-      <td>See  <code class="language-plaintext highlighter-rouge">Consent.patient.reference</code> . The relationship to the patient should preferably be established via  <code class="language-plaintext highlighter-rouge">Consent.patient.reference</code> .  <code class="language-plaintext highlighter-rouge">Consent.patient.identifier</code>  can be used alternatively or additionally.</td>
-      <td> </td>
-    </tr>
-  </tbody>
-</table>
-
-<table>
-  <tbody>
     <tr>
       <td>Consent.patient.identifier.system</td>
       <td>If the person relationship is given via an identifier, the system entry as a URI is mandatory, must-support</td>
     </tr>
-  </tbody>
-</table>
-
-<table>
-  <tbody>
     <tr>
       <td>Consent.patient.identifier.value</td>
       <td>If the person relationship is given via an identifier, the value entry as a string is mandatory, must-support</td>
     </tr>
+    <tr>
+      <td>Consent.policy.uri</td>
+      <td>Reference to the version of the MII Broad Consent document version underlying the Consent resource per the overview below,<br />e.g.<br /><strong>MII Broad Consent version 1.7.2</strong>   <code class="language-plaintext highlighter-rouge">urn:oid:2.16.840.1.113883.3.1937.777.24.2.2079</code>  or<br /><strong>MII Broad Consent version 1.7.2 incl. additional module Acribis</strong>   <code class="language-plaintext highlighter-rouge">urn:oid:2.16.840.1.113883.3.1937.777.24.2.4031</code> , must-support</td>
+    </tr>
   </tbody>
 </table>
-
-<p>| Consent.policy.uri | Reference to the version of the MII Broad Consent document version underlying the Consent resource per the overview below,  <br />
- e.g.  <br />
- <strong>MII Broad Consent version 1.7.2</strong>   <code class="language-plaintext highlighter-rouge">urn:oid:2.16.840.1.113883.3.1937.777.24.2.2079</code>  or  <br />
- <strong>MII Broad Consent version 1.7.2 incl. additional module Acribis</strong>   <code class="language-plaintext highlighter-rouge">urn:oid:2.16.840.1.113883.3.1937.777.24.2.4031</code> , must-support |</p>
 
 <h4 id="unique-identification-of-the-mii-broad-consent"><strong>Unique identification of the MII Broad Consent</strong></h4>
 
 <p>To filter FHIR Consent resources for consents based on the MII Broad Consent, a mandatory URI is used for <code class="language-plaintext highlighter-rouge">Consent.policy.uri</code>. The TFCU has created representations of the different versions of the MII Broad Consent in ART-DECOR. These can be referenced via a unique OID (cf. the table below).</p>
 
 <table>
-  <tbody>
+  <thead>
     <tr>
-      <td>Version of the MII Broad Consent</td>
-      <td>Unique OID per the  <a href="https://art-decor.org/decor/services/RetrieveDataSet?conceptId=2.16.840.1.113883.3.1937.777.24.2.184">TFCU specification</a></td>
+      <th>Version of the MII Broad Consent</th>
+      <th>Unique OID per the  <a href="https://art-decor.org/decor/services/RetrieveDataSet?conceptId=2.16.840.1.113883.3.1937.777.24.2.184">TFCU specification</a></th>
     </tr>
-  </tbody>
-</table>
-
-<p>| — | — |</p>
-
-<table>
+  </thead>
   <tbody>
     <tr>
       <td>1.6d</td>
       <td>2.16.840.1.113883.3.1937.777.24.2.1790</td>
     </tr>
-  </tbody>
-</table>
-
-<table>
-  <tbody>
     <tr>
       <td>1.6d refusal</td>
       <td>2.16.840.1.113883.3.1937.777.24.2.4053</td>
     </tr>
-  </tbody>
-</table>
-
-<table>
-  <tbody>
     <tr>
       <td>1.6d complete withdrawal</td>
       <td>2.16.840.1.113883.3.1937.777.24.2.2718</td>
     </tr>
-  </tbody>
-</table>
-
-<table>
-  <tbody>
     <tr>
       <td>1.6d partial withdrawal</td>
       <td>2.16.840.1.113883.3.1937.777.24.2.2719</td>
     </tr>
-  </tbody>
-</table>
-
-<table>
-  <tbody>
     <tr>
       <td>1.6f</td>
       <td>2.16.840.1.113883.3.1937.777.24.2.1791</td>
     </tr>
-  </tbody>
-</table>
-
-<table>
-  <tbody>
     <tr>
       <td>1.6f complete withdrawal</td>
       <td>2.16.840.1.113883.3.1937.777.24.2.2720</td>
     </tr>
-  </tbody>
-</table>
-
-<table>
-  <tbody>
     <tr>
       <td>1.6f partial withdrawal</td>
       <td>2.16.840.1.113883.3.1937.777.24.2.2721</td>
     </tr>
-  </tbody>
-</table>
-
-<table>
-  <tbody>
     <tr>
       <td>1.7.2</td>
       <td>2.16.840.1.113883.3.1937.777.24.2.2079</td>
     </tr>
-  </tbody>
-</table>
-
-<table>
-  <tbody>
     <tr>
       <td>1.7.2 refusal</td>
       <td>2.16.840.1.113883.3.1937.777.24.2.4054</td>
     </tr>
-  </tbody>
-</table>
-
-<table>
-  <tbody>
     <tr>
       <td>1.7.2 complete withdrawal</td>
       <td>2.16.840.1.113883.3.1937.777.24.2.2722</td>
     </tr>
-  </tbody>
-</table>
-
-<table>
-  <tbody>
     <tr>
       <td>1.7.2 partial withdrawal</td>
       <td>2.16.840.1.113883.3.1937.777.24.2.2723</td>
     </tr>
-  </tbody>
-</table>
-
-<table>
-  <tbody>
     <tr>
       <td>1.7.2 (parents and legal guardians for minors v1.1)</td>
       <td>2.16.840.1.113883.3.1937.777.24.2.3542</td>
     </tr>
-  </tbody>
-</table>
-
-<table>
-  <tbody>
     <tr>
       <td>1.7.2 (7-11 minors v1.1)</td>
       <td>2.16.840.1.113883.3.1937.777.24.2.3543</td>
     </tr>
-  </tbody>
-</table>
-
-<table>
-  <tbody>
     <tr>
       <td>1.7.2 (12-17 minors v1.1)</td>
       <td>2.16.840.1.113883.3.1937.777.24.2.3544</td>
     </tr>
-  </tbody>
-</table>
-
-<table>
-  <tbody>
     <tr>
       <td>Additional module ACRIBiS (Z2)</td>
       <td>2.16.840.1.113883.3.1937.777.24.2.4031</td>
     </tr>
-  </tbody>
-</table>
-
-<table>
-  <tbody>
     <tr>
       <td>Additional module patient survey (Z3)</td>
       <td>2.16.840.1.113883.3.1937.777.24.2.4036</td>
     </tr>
-  </tbody>
-</table>
-
-<table>
-  <tbody>
     <tr>
       <td>Additional module Fachnetzwerk Infektion - SNID (Z4)</td>
       <td>2.16.840.1.113883.3.1937.777.24.2.4037</td>
     </tr>
-  </tbody>
-</table>
-
-<table>
-  <tbody>
     <tr>
       <td>Additional module Deutsches Zentrum für Psychische Gesundheit - DZPG (Z5)</td>
       <td>2.16.840.1.113883.3.1937.777.24.2.4048</td>
@@ -833,63 +644,33 @@ Profile - MI-I - Consent - Einwilligung
 <p><strong>Superordinate provision (Consent.Provision)</strong></p>
 
 <table>
-  <tbody>
+  <thead>
     <tr>
-      <td><strong>FHIR element</strong></td>
-      <td><strong>Explanation</strong></td>
+      <th><strong>FHIR element</strong></th>
+      <th><strong>Explanation</strong></th>
     </tr>
-  </tbody>
-</table>
-
-<p>| — | — |</p>
-
-<table>
+  </thead>
   <tbody>
     <tr>
       <td>Consent.provision.type</td>
       <td>value  <code class="language-plaintext highlighter-rouge">DENY</code>  or  <code class="language-plaintext highlighter-rouge">PERMIT</code> , must-support</td>
     </tr>
-  </tbody>
-</table>
-
-<table>
-  <tbody>
     <tr>
       <td>Consent.provision.period.start</td>
       <td>mandatory entry for the start of the consent's validity. Unless specified otherwise, this is typically the date of the affected person's signature of the consent, must-support</td>
     </tr>
-  </tbody>
-</table>
-
-<table>
-  <tbody>
     <tr>
       <td>Consent.provision.period.end</td>
       <td>mandatory entry for the end of the consent's validity. This is typically the point at which the consent duration defined for the MII expires (30 years, starting from the signature date), must-support</td>
     </tr>
-  </tbody>
-</table>
-
-<table>
-  <tbody>
     <tr>
       <td>Consent.provision.action</td>
       <td>Specifying actions is not permitted, not supported</td>
     </tr>
-  </tbody>
-</table>
-
-<table>
-  <tbody>
     <tr>
       <td>Consent.provision.code</td>
       <td>Specifying codes is not permitted in the superordinate provision, not supported</td>
     </tr>
-  </tbody>
-</table>
-
-<table>
-  <tbody>
     <tr>
       <td>Consent.provision.provision</td>
       <td>List of subordinate provision elements that explicitly permit (data-processing) activities, must-support</td>
@@ -902,90 +683,45 @@ Profile - MI-I - Consent - Einwilligung
 <p><em>Exactly one subordinate provision element should be used per consent policy.</em></p>
 
 <table>
-  <tbody>
+  <thead>
     <tr>
-      <td><strong>FHIR element</strong></td>
-      <td><strong>Explanation</strong></td>
+      <th><strong>FHIR element</strong></th>
+      <th><strong>Explanation</strong></th>
     </tr>
-  </tbody>
-</table>
-
-<p>| — | — |</p>
-
-<table>
+  </thead>
   <tbody>
     <tr>
       <td>Consent.provision.provision.type</td>
       <td>value  <code class="language-plaintext highlighter-rouge">PERMIT</code>  or  <code class="language-plaintext highlighter-rouge">DENY</code> , must-support</td>
     </tr>
-  </tbody>
-</table>
-
-<table>
-  <tbody>
     <tr>
       <td>Consent.provision.provision.period.start</td>
       <td>mandatory entry for the start of the consent policy's validity, must-support</td>
     </tr>
-  </tbody>
-</table>
-
-<table>
-  <tbody>
     <tr>
       <td>Consent.provision.provision.period.end</td>
       <td>mandatory entry for the end of the consent policy's validity, must-support</td>
     </tr>
-  </tbody>
-</table>
-
-<table>
-  <tbody>
     <tr>
       <td>Consent.provision.provision.code</td>
       <td>1-n entries on the semantics of the consent policy.  <strong>At minimum per the MII TFCU concept</strong>  (cf. MiiConsentPolicyValueSet in the section  <a href="code-systems.html">CodeSystems</a> ), must-support</td>
     </tr>
-  </tbody>
-</table>
-
-<table>
-  <tbody>
     <tr>
       <td>Consent.provision.provision.code.coding.system</td>
       <td>System entry, ideally per the  <strong>MII TFCU concept</strong>  (cf. MiiConsentPolicyValueSet in the section  <a href="code-systems.html">CodeSystems</a> ): <code class="language-plaintext highlighter-rouge">urn:oid:2.16.840.1.113883.3.1937.777.24.5.3</code> , must-support</td>
     </tr>
-  </tbody>
-</table>
-
-<table>
-  <tbody>
     <tr>
       <td>Consent.provision.provision.code.coding.code</td>
       <td>Code entry, ideally per the  <strong>MII TFCU concept</strong>  (cf. MiiConsentPolicyValueSet in the section  <a href="code-systems.html">CodeSystems</a> ) e.g.  <code class="language-plaintext highlighter-rouge">2.16.840.1.113883.3.1937.777.24.5.3.6</code> , must-support</td>
     </tr>
-  </tbody>
-</table>
-
-<table>
-  <tbody>
     <tr>
       <td>Consent.provision.provision.code.coding.display</td>
       <td>Optional display entry, ideally per the  <strong>MII TFCU concept</strong>  (cf. MiiConsentPolicyValueSet in the section  <a href="code-systems.html">CodeSystems</a> ) e.g.  <code class="language-plaintext highlighter-rouge">MDAT\_erheben</code></td>
     </tr>
-  </tbody>
-</table>
-
-<table>
-  <tbody>
     <tr>
       <td>Consent.provision.provision.action</td>
       <td>Specifying actions is not permitted, not supported</td>
     </tr>
-  </tbody>
-</table>
-
-<table>
-  <tbody>
     <tr>
       <td>Consent.provision.provision.provision</td>
       <td>Further nesting levels of provisions are not permitted, not supported</td>
@@ -1478,7 +1214,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Symbol in syntax defined by the system</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 842da50a-235a-485f-9a95-1c87d5b1d9bb
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 1d6f241c-a006-4ae7-b3f0-d0a2d5fac87e
 document.getElementById('cbe0e166b4-0f77-478d-9062-de0034d98ce0K-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('e0e166b4-0f77-478d-9062-de0034d98ce0K'), 'binding', document.getElementById('cbe0e166b4-0f77-478d-9062-de0034d98ce0K-binding').checked, document.getElementById('ppe0e166b4-0f77-478d-9062-de0034d98ce0K'));
 document.getElementById('cbe0e166b4-0f77-478d-9062-de0034d98ce0K-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -2100,7 +1836,7 @@ filterDesc(document.getElementById('e0e166b4-0f77-478d-9062-de0034d98ce0K'), 'ob
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="text-decoration:line-through"></span><span style="text-decoration:line-through">0</span><span style="text-decoration:line-through">..</span><span style="text-decoration:line-through">0</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-style: italic">Nested Exception Rules</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 842da50a-235a-485f-9a95-1c87d5b1d9bb
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 1d6f241c-a006-4ae7-b3f0-d0a2d5fac87e
 document.getElementById('cbe0e166b4-0f77-478d-9062-de0034d98ce0D-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('e0e166b4-0f77-478d-9062-de0034d98ce0D'), 'binding', document.getElementById('cbe0e166b4-0f77-478d-9062-de0034d98ce0D-binding').checked, document.getElementById('ppe0e166b4-0f77-478d-9062-de0034d98ce0D'));
 document.getElementById('cbe0e166b4-0f77-478d-9062-de0034d98ce0D-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -3117,7 +2853,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="http://hl7.org/fhir/R4/resource.html">Resource</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The actual data reference</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 842da50a-235a-485f-9a95-1c87d5b1d9bb
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 1d6f241c-a006-4ae7-b3f0-d0a2d5fac87e
 document.getElementById('cbe0e166b4-0f77-478d-9062-de0034d98ce0S-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('e0e166b4-0f77-478d-9062-de0034d98ce0S'), 'binding', document.getElementById('cbe0e166b4-0f77-478d-9062-de0034d98ce0S-binding').checked, document.getElementById('ppe0e166b4-0f77-478d-9062-de0034d98ce0S'));
 document.getElementById('cbe0e166b4-0f77-478d-9062-de0034d98ce0S-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -4381,7 +4117,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/datatypes.html#code">code</a></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">Symbol in syntax defined by the system</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 842da50a-235a-485f-9a95-1c87d5b1d9bb
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 1d6f241c-a006-4ae7-b3f0-d0a2d5fac87e
 document.getElementById('cbe0e166b4-0f77-478d-9062-de0034d98ce0KA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('e0e166b4-0f77-478d-9062-de0034d98ce0KA'), 'binding', document.getElementById('cbe0e166b4-0f77-478d-9062-de0034d98ce0KA-binding').checked, document.getElementById('ppe0e166b4-0f77-478d-9062-de0034d98ce0KA'));
 document.getElementById('cbe0e166b4-0f77-478d-9062-de0034d98ce0KA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -5002,7 +4738,7 @@ filterDesc(document.getElementById('e0e166b4-0f77-478d-9062-de0034d98ce0KA'), 'o
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="text-decoration:line-through"></span><span style="text-decoration:line-through">0</span><span style="text-decoration:line-through">..</span><span style="text-decoration:line-through">0</span></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"></td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: white; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><span style="font-style: italic">Nested Exception Rules</span></td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 842da50a-235a-485f-9a95-1c87d5b1d9bb
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 1d6f241c-a006-4ae7-b3f0-d0a2d5fac87e
 document.getElementById('cbe0e166b4-0f77-478d-9062-de0034d98ce0DA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('e0e166b4-0f77-478d-9062-de0034d98ce0DA'), 'binding', document.getElementById('cbe0e166b4-0f77-478d-9062-de0034d98ce0DA-binding').checked, document.getElementById('ppe0e166b4-0f77-478d-9062-de0034d98ce0DA'));
 document.getElementById('cbe0e166b4-0f77-478d-9062-de0034d98ce0DA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -6016,7 +5752,7 @@ Modifier extensions SHALL NOT change the meaning of any elements on Resource or 
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">1..1</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy"><a href="http://hl7.org/fhir/R4/references.html">Reference</a>(<a href="http://hl7.org/fhir/R4/resource.html">Resource</a>)</td>
 <td style="vertical-align: top; text-align : var(--ig-left,left); background-color: #F7F7F7; border: 0px #F0F0F0 solid; padding:0px 4px 0px 4px" class="hierarchy">The actual data reference</td></tr>
-<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 842da50a-235a-485f-9a95-1c87d5b1d9bb
+<tr fhir="generated-heirarchy" data-fhir="generated-heirarchy"><td colspan="5" class="hierarchy"><br/><a href="https://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#table-views" title="Legend for this format"><img src="https://hl7.org/fhir/R4/help16.png" alt="doco" style="background-color: inherit"/> Documentation for this format</a></td></tr><script type="text/javascript">  // 1d6f241c-a006-4ae7-b3f0-d0a2d5fac87e
 document.getElementById('cbe0e166b4-0f77-478d-9062-de0034d98ce0SA-binding').checked = 'false' != localStorage.getItem('ht-table-states-binding');
 filterDesc(document.getElementById('e0e166b4-0f77-478d-9062-de0034d98ce0SA'), 'binding', document.getElementById('cbe0e166b4-0f77-478d-9062-de0034d98ce0SA-binding').checked, document.getElementById('ppe0e166b4-0f77-478d-9062-de0034d98ce0SA'));
 document.getElementById('cbe0e166b4-0f77-478d-9062-de0034d98ce0SA-constraint').checked = 'false' != localStorage.getItem('ht-table-states-constraint');
@@ -6887,7 +6623,7 @@ Summary
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.netzwerk-universitaetsmedizin.de">NUM-DIZ</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.consent#2027.0.0-ballot.rc1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Mon, Aug 31, 2026 21:22+0000">2026-08-31</span>
+          Generated <span title="Mon, Aug 31, 2026 21:48+0000">2026-08-31</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

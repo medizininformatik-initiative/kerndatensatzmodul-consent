@@ -29,43 +29,16 @@ Support for the following profiles is mandatory when using this guide:
 
 | | |
 | :--- | :--- |
-| FHIR profile | For the representation of / used for |
-
-| — | — |
-
-| | |
-| :--- | :--- |
 | [Organization](https://ig.fhir.de/einwilligungsmanagement/stable/Organization.html) | Responsible organization |
-
-| | |
-| :--- | :--- |
 | [ResearchStudy](https://ig.fhir.de/einwilligungsmanagement/stable/ResearchStudy.html) | Research project |
-
-| | |
-| :--- | :--- |
 | [Patient](https://ig.fhir.de/einwilligungsmanagement/stable/Patient.html) | Affected person (pseudonymized) |
 
 If the Broad Consent is represented or captured by means of FHIR Questionnaires, the following profiles should additionally be used:
 
 | | |
 | :--- | :--- |
-| FHIR profile | For the representation of / used for |
-
-| — | — |
-
-| | |
-| :--- | :--- |
 | [QuestionnaireResponse](https://ig.fhir.de/einwilligungsmanagement/stable/QuestionnaireResponse.html) | Completed consent |
-
-| | |
-| :--- | :--- |
 | [QuestionnaireComposed](https://ig.fhir.de/einwilligungsmanagement/stable/QuestionnaireComposed.html) | Consent template (renderable) |
-
-| | |
-| :--- | :--- |
 | [TemplateFrame](https://ig.fhir.de/einwilligungsmanagement/stable/TemplateFrame.html) | Consent template (structure definition) |
-
-| | |
-| :--- | :--- |
 | [TemplateModule](https://ig.fhir.de/einwilligungsmanagement/stable/TemplateModule.html) | Consent module |
 

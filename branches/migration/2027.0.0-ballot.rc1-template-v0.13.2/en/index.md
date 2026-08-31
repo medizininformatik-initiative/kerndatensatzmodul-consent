@@ -14,24 +14,9 @@ This specification describes the FHIR representation of the Core Data Set module
 
 | | |
 | :--- | :--- |
-| Publication / Status |   |
-
-| — | — |
-
-| | |
-| :--- | :--- |
 | Date | 31.08.2026 |
-
-| | |
-| :--- | :--- |
 | Version | 2027.0.0-ballot.rc1 |
-
-| | |
-| :--- | :--- |
 | Status | active |
-
-| | |
-| :--- | :--- |
 | Realm | DE |
 
 ### Description of the Consent Module

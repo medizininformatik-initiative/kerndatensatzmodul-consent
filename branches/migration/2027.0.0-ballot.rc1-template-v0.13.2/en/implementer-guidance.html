@@ -399,32 +399,22 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>The consent management system <a href="https://ths-greifswald.de/gics">gICS</a> constitutes the current <a href="https://ebooks.iospress.nl/doi/10.3233/SHTI251389">reference implementation</a> of the HL7-D FHIR standard for consent management (version 2.0).</p>
 
-<p>All implementations should <strong>support at least the following variants</strong>. The cardinality of <code class="language-plaintext highlighter-rouge">Consent.category</code> is defined as <code class="language-plaintext highlighter-rouge">2..\*</code> and enables the necessary backwards compatibility.</p>
+<p>All implementations should <strong>support at least the following variants</strong>. The cardinality of <code class="language-plaintext highlighter-rouge">Consent.category</code> is defined as <code class="language-plaintext highlighter-rouge">2..*</code> and enables the necessary backwards compatibility.</p>
 
 <table>
-  <tbody>
+  <thead>
     <tr>
-      <td>ResultType</td>
-      <td>Meaning for the Consent resource</td>
-      <td>Aggregation of information</td>
+      <th>ResultType</th>
+      <th>Meaning for the Consent resource</th>
+      <th>Aggregation of information</th>
     </tr>
-  </tbody>
-</table>
-
-<p>| — | — | — |</p>
-
-<table>
+  </thead>
   <tbody>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">document</code></td>
       <td>The Consent resource refers to  <strong>one (!) completed document</strong>  (QuestionnaireResponse).  <em>This should be the default in an (MII) FHIR server.</em></td>
       <td>no</td>
     </tr>
-  </tbody>
-</table>
-
-<table>
-  <tbody>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">consent-status</code></td>
       <td>The Consent resource  <strong>takes into account all relevant consent and withdrawal documents</strong>  in the context of the MII  <strong>for one (!) patient</strong> . The Consent resource with ResultType  <code class="language-plaintext highlighter-rouge">consent-status</code>  always refers to one patient and contains the current consent status.  <em>This should ideally be supported by the (MII) FHIR server.</em></td>
@@ -468,7 +458,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.netzwerk-universitaetsmedizin.de">NUM-DIZ</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.consent#2027.0.0-ballot.rc1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Mon, Aug 31, 2026 21:22+0000">2026-08-31</span>
+          Generated <span title="Mon, Aug 31, 2026 21:48+0000">2026-08-31</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

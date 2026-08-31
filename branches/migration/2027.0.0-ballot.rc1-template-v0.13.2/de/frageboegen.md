@@ -24,20 +24,8 @@ Zur Abbildung der Antworten sollte das Value Set “[MII Consent: Answer ValueSe
 
 | | | |
 | :--- | :--- | :--- |
-| Checkbox | Code-Bezeichner | Code (OID) |
-
-| — | — | — |
-
-| | | |
-| :--- | :--- | :--- |
 | ‘Ja‘ angekreuzt | gültig | 2.16.840.1.113883.3.1937.777.24.5.2.1 |
-
-| | | |
-| :--- | :--- | :--- |
 | ‘Nein’ angekreuzt | nicht gültig | 2.16.840.1.113883.3.1937.777.24.5.2.2 |
-
-| | | |
-| :--- | :--- | :--- |
 | nicht angekreuzt | unbekannt | 2.16.840.1.113883.3.1937.777.24.5.2.3 |
 
 **Antworten (Checkbox), Code-Bezeichner und OIDs**

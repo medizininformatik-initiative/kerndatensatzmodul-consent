@@ -36,87 +36,22 @@ Um die Austauschbarkeit der operationalisierten Einwilligungsinhalte auch über 
 
 | | |
 | :--- | :--- |
-| **FHIR-Element** | **Erklärung** |
-
-| — | — |
-
-| | |
-| :--- | :--- |
 | Consent.id | Must-support, jedoch optional |
-
-| | |
-| :--- | :--- |
 | Consent.meta | Must-support, jedoch optional |
-
-| | |
-| :--- | :--- |
 | Consent.meta.source | Must-support, jedoch optional |
-
-| | |
-| :--- | :--- |
 | Consent.meta.profile | Must-support, jedoch optional |
-
-| | |
-| :--- | :--- |
 | Consent.extension:domainReference | Must-support gemäß Vorgaben[AG Einwilligungsmanagement](https://ig.fhir.de/einwilligungsmanagement/stable/ResearchStudy.html), jedoch optional |
-
-| | |
-| :--- | :--- |
 | Consent.identifier | Enthält eine oder mehrere externe IDs der Einwilligung eines externen Systems. Dies kann z.B. die IHE-ID des CDA Dokumentes sein oder die ID des Dokuments in einer externen Treuhandstelle. Der identifier sollte immer als Wertepaar "system" und "value" angegeben werden. Die Angabe ist optional. |
-
-| | |
-| :--- | :--- |
 | Consent.scope.coding.system | Fixed value:`http://terminology.hl7.org/CodeSystem/consentscope` |
-
-| | |
-| :--- | :--- |
 | Consent.scope.coding.code | Abbildung der MII Einwilligung legt Kontext klar auf Forschung. Fixed value:`research` |
-
-| | |
-| :--- | :--- |
-| Consent.category.coding | Must-support. Verpflichtende Angabe von**mindestens zwei Categories**mit je min. einem Coding für die Consent-Kategorien, um die Suche nach Einwilligungen vom Typ "MII Einwilligung" zu ermöglichen: |
-
-**(1) gemäß [https://www.hl7.org/fhir/valueset-consent-category.html](https://www.hl7.org/fhir/valueset-consent-category.html) :** 
- Fixed System: `http://loinc.org` 
- Fixed Code für 'Privacy policy acknowledgement Document': `57016-8`
-
-**(2) Identifikation MII Broad Consent** : 
- Fixed Code: `2.16.840.1.113883.3.1937.777.24.2.184`
-
-| |
-| :--- |
-| Weitere zusätzliche Angaben werden nicht verhindert. |
-
-| | |
-| :--- | :--- |
+| Consent.category.coding | Must-support. Verpflichtende Angabe von**mindestens zwei Categories**mit je min. einem Coding für die Consent-Kategorien, um die Suche nach Einwilligungen vom Typ "MII Einwilligung" zu ermöglichen:**(1) gemäß [https://www.hl7.org/fhir/valueset-consent-category.html](https://www.hl7.org/fhir/valueset-consent-category.html) :**Fixed System:`http://loinc.org`Fixed Code für 'Privacy policy acknowledgement Document':`57016-8`**(2) Identifikation MII Broad Consent**:Fixed Code:`2.16.840.1.113883.3.1937.777.24.2.184`Weitere zusätzliche Angaben werden nicht verhindert. |
 | Consent.category:templateType.coding | ResultType gemäß[ResultType](https://ig.fhir.de/einwilligungsmanagement/stable/ResultType.html). Es sollten mindestens`document`und`consent-status`unterstützt werden. Wenn als ResultType`document`angegeben ist, muss die Art des (Quell-)Dokuments im Slice templateType ebenfalls angegeben werden. |
-
-| | |
-| :--- | :--- |
 | Consent.category:templateType.coding | Kategorisierung gemäß[TemplateType](https://ig.fhir.de/einwilligungsmanagement/stable/TemplateType.html). Dient als informelles Element der Differenzierung zwischen Einwilligung, Widerruf, Widerspruch und Ablehnung. |
-
-| | |
-| :--- | :--- |
-| Consent.patient.reference | Verweis zum Patienten, auf den sich die Consent Ressource bezieht in der Form Literal reference, Relative reference, Internal reference oder als absolute URL, Must-support. |
-| `Consent.patient.reference`sollte ausgefüllt werden, wenn möglich, d.h. wenn eine entsprechende Patienten Ressource vorhanden ist. Ist dies nicht der Fall, muss der Patientenbezug über`Consent.patient.identifier`hergestellt werden. |   |
-
-| | |
-| :--- | :--- |
-| Consent.patient.identifier | Angabe des Personenbezugs in Form eines Identifiers, Must-support. |
-| Siehe`Consent.patient.reference`. Der Bezug zum Patienten sollte möglichst über`Consent.patient.reference`hergestellt werden.`Consent.patient.identifier`kann alternativ bzw. ergänzend verwendet werden. |   |
-
-| | |
-| :--- | :--- |
+| Consent.patient.reference | Verweis zum Patienten, auf den sich die Consent Ressource bezieht in der Form Literal reference, Relative reference, Internal reference oder als absolute URL, Must-support.`Consent.patient.reference`sollte ausgefüllt werden, wenn möglich, d.h. wenn eine entsprechende Patienten Ressource vorhanden ist. Ist dies nicht der Fall, muss der Patientenbezug über`Consent.patient.identifier`hergestellt werden. |
+| Consent.patient.identifier | Angabe des Personenbezugs in Form eines Identifiers, Must-support.Siehe`Consent.patient.reference`. Der Bezug zum Patienten sollte möglichst über`Consent.patient.reference`hergestellt werden.`Consent.patient.identifier`kann alternativ bzw. ergänzend verwendet werden. |
 | Consent.patient.identifier.system | Wird der Personenbezug per Identifier angegeben, ist die System-Angabe per Uri verpflichtend, Must-support |
-
-| | |
-| :--- | :--- |
 | Consent.patient.identifier.value | Wird der Personenbezug per Identifier angegeben, ist die Value-Angabe per String verpflichtend, Must-support |
-
-| Consent.policy.uri | Verweis auf die Version des der Consent-Ressource zugrundeliegende MII Broad Consent Dokument-Version gemäß untenstehender Übersicht, 
- z.B. 
- **MII Broad Consent Version 1.7.2** `urn:oid:2.16.840.1.113883.3.1937.777.24.2.2079` oder 
- **MII Broad Consent Version 1.7.2 inkl. Zusatzmodul Acribis** `urn:oid:2.16.840.1.113883.3.1937.777.24.2.4031` , Must-support |
+| Consent.policy.uri | Verweis auf die Version des der Consent-Ressource zugrundeliegende MII Broad Consent Dokument-Version gemäß untenstehender Übersicht,z.B.**MII Broad Consent Version 1.7.2**`urn:oid:2.16.840.1.113883.3.1937.777.24.2.2079`oder**MII Broad Consent Version 1.7.2 inkl. Zusatzmodul Acribis**`urn:oid:2.16.840.1.113883.3.1937.777.24.2.4031`, Must-support |
 
 #### Eindeutige Identifikation des MII-Broad Consent
 
@@ -124,80 +59,23 @@ Um FHIR-Consent Ressourcen nach Einwilligungen zu filtern, die auf dem MII Broad
 
 | | |
 | :--- | :--- |
-| Version des MII Broad Consent | Eindeutige OID gemäß[Vorgabe der TFCU](https://art-decor.org/decor/services/RetrieveDataSet?conceptId=2.16.840.1.113883.3.1937.777.24.2.184) |
-
-| — | — |
-
-| | |
-| :--- | :--- |
 | 1.6d | 2.16.840.1.113883.3.1937.777.24.2.1790 |
-
-| | |
-| :--- | :--- |
 | 1.6d Ablehnung | 2.16.840.1.113883.3.1937.777.24.2.4053 |
-
-| | |
-| :--- | :--- |
 | 1.6d Komplettwiderruf | 2.16.840.1.113883.3.1937.777.24.2.2718 |
-
-| | |
-| :--- | :--- |
 | 1.6d Teilwiderruf | 2.16.840.1.113883.3.1937.777.24.2.2719 |
-
-| | |
-| :--- | :--- |
 | 1.6f | 2.16.840.1.113883.3.1937.777.24.2.1791 |
-
-| | |
-| :--- | :--- |
 | 1.6f Komplettwiderruf | 2.16.840.1.113883.3.1937.777.24.2.2720 |
-
-| | |
-| :--- | :--- |
 | 1.6f Teilwiderruf | 2.16.840.1.113883.3.1937.777.24.2.2721 |
-
-| | |
-| :--- | :--- |
 | 1.7.2 | 2.16.840.1.113883.3.1937.777.24.2.2079 |
-
-| | |
-| :--- | :--- |
 | 1.7.2 Ablehnung | 2.16.840.1.113883.3.1937.777.24.2.4054 |
-
-| | |
-| :--- | :--- |
 | 1.7.2 Komplettwiderruf | 2.16.840.1.113883.3.1937.777.24.2.2722 |
-
-| | |
-| :--- | :--- |
 | 1.7.2 Teilwiderruf | 2.16.840.1.113883.3.1937.777.24.2.2723 |
-
-| | |
-| :--- | :--- |
 | 1.7.2 (Eltern und Sorgeberechtigte für Minderjährige v1.1) | 2.16.840.1.113883.3.1937.777.24.2.3542 |
-
-| | |
-| :--- | :--- |
 | 1.7.2 (7-11 Minderjährige v1.1) | 2.16.840.1.113883.3.1937.777.24.2.3543 |
-
-| | |
-| :--- | :--- |
 | 1.7.2 (12-17 Minderjährige v1.1) | 2.16.840.1.113883.3.1937.777.24.2.3544 |
-
-| | |
-| :--- | :--- |
 | Zusatzmodul ACRIBiS (Z2) | 2.16.840.1.113883.3.1937.777.24.2.4031 |
-
-| | |
-| :--- | :--- |
 | Zusatzmodul Patientenbefragung (Z3) | 2.16.840.1.113883.3.1937.777.24.2.4036 |
-
-| | |
-| :--- | :--- |
 | Zusatzmodul Fachnetzwerk Infektion - SNID (Z4) | 2.16.840.1.113883.3.1937.777.24.2.4037 |
-
-| | |
-| :--- | :--- |
 | Zusatzmodul Deutsche Zentrum für Psychische Gesundheit - DZPG (Z5) | 2.16.840.1.113883.3.1937.777.24.2.4048 |
 
 #### Verschachtelte Provision-Elemente
@@ -214,32 +92,11 @@ Sollten einzelne Bestandteile der Einwilligung jedoch bereits frühzeitig ablauf
 
 | | |
 | :--- | :--- |
-| **FHIR-Element** | **Erklärung** |
-
-| — | — |
-
-| | |
-| :--- | :--- |
 | Consent.provision.type | value`DENY`oder`PERMIT`, Must-support |
-
-| | |
-| :--- | :--- |
 | Consent.provision.period.start | verpflichtende Angabe zum Beginn der Gültigkeit der Einwilligung. Sofern nicht anders festgelegt ist dies typischerweise das Datum der Unterschrift der Einwilligung der betroffenen Person, Must-support |
-
-| | |
-| :--- | :--- |
 | Consent.provision.period.end | verpflichtende Angabe zum Ende der Gültigkeit der Einwilligung. Dies ist typischerweise der Zeitpunkt des Ablaufens der für die MII festlegte Einwilligungsdauer (30 Jahre, beginnend mit dem Unterschriftsdatum), Must-support |
-
-| | |
-| :--- | :--- |
 | Consent.provision.action | Die Angabe von Actions ist nicht zulässig, not supported |
-
-| | |
-| :--- | :--- |
 | Consent.provision.code | Die Angabe von Codes ist in der übergeordneten Provision nicht zulässig, not supported |
-
-| | |
-| :--- | :--- |
 | Consent.provision.provision | Liste von untergeordneten Provision-Elementen die explizit (Datenverarbeitungs-)Tätigkeiten erlauben, Must-support |
 
 **Untergeordnete Provision-Elemente (Consent.Provision.Provision)**
@@ -248,44 +105,14 @@ Sollten einzelne Bestandteile der Einwilligung jedoch bereits frühzeitig ablauf
 
 | | |
 | :--- | :--- |
-| **FHIR-Element** | **Erklärung** |
-
-| — | — |
-
-| | |
-| :--- | :--- |
 | Consent.provision.provision.type | value`PERMIT`oder`DENY`, Must-support |
-
-| | |
-| :--- | :--- |
 | Consent.provision.provision.period.start | verpflichtende Angabe zum Beginn der Gültigkeit der Consent-Policy, Must-support |
-
-| | |
-| :--- | :--- |
 | Consent.provision.provision.period.end | verpflichtende Angabe zum Ende der Gültigkeit der Consent-Policy, Must-support |
-
-| | |
-| :--- | :--- |
 | Consent.provision.provision.code | 1-n Angabe zur Semantik der Einwilligungspolicy.**Mindestens aber gemäß MII TFCU Konzept**(vgl. MiiConsentPolicyValueSet im Abschnitt[CodeSystems](code-systems.md)), Must-support |
-
-| | |
-| :--- | :--- |
 | Consent.provision.provision.code.coding.system | Systemangabe, idealerweise gemäß**MII TFCU Konzept**(vgl. MiiConsentPolicyValueSet im Abschnitt[CodeSystems](code-systems.md)):`urn:oid:2.16.840.1.113883.3.1937.777.24.5.3`, Must-support |
-
-| | |
-| :--- | :--- |
 | Consent.provision.provision.code.coding.code | Codeangabe, idealerweise gemäß**MII TFCU Konzept**(vgl. MiiConsentPolicyValueSet im Abschnitt[CodeSystems](code-systems.md)) z.B.`2.16.840.1.113883.3.1937.777.24.5.3.6`, Must-support |
-
-| | |
-| :--- | :--- |
 | Consent.provision.provision.code.coding.display | Optionale Displayangabe, idealerweise gemäß**MII TFCU Konzept**(vgl. MiiConsentPolicyValueSet im Abschnitt[CodeSystems](code-systems.md)) z.B.`MDAT\_erheben` |
-
-| | |
-| :--- | :--- |
 | Consent.provision.provision.action | Angabe von Actions sind nicht zulässig, not supported |
-
-| | |
-| :--- | :--- |
 | Consent.provision.provision.provision | Weitere Verschachtelungsebenen von Provisions sind nicht zulässig, not supported |
 
 ### Ende der Einwilligung und Consent-Ressourcen im Kontext von Widerruf, Ablehnung oder Widerspruch

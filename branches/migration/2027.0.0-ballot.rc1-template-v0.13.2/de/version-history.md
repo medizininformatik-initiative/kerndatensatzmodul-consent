@@ -21,7 +21,7 @@ Stabile Releases lassen sich vergleichen, indem die numerischen Bestandteile als
 
 #### Artefakt-Versionen
 
-Alle veröffentlichten FHIR-Artefakte im Paket tragen dieselbe Version wie der Leitfaden und sein Paket. Ein Artefakt kann daher beim Release eine neue Version erhalten, obwohl es selbst unverändert geblieben ist. Die maschinenlesbaren Metadaten, die Versionsalgorithmus, Versionierungs-Politik, Paketquelle und Manifest-Parameter deklarieren, beschreibt die Seite
+Alle veröffentlichten FHIR-Artefakte im Paket tragen dieselbe Version wie der Leitfaden und sein Paket. Ein Artefakt kann daher beim Release eine neue Version erhalten, obwohl es selbst unverändert geblieben ist. Die maschinenlesbaren Metadaten, die Versionsalgorithmus, Versionierungs-Politik, Paketquelle und Manifest-Parameter deklarieren, trägt die ImplementationGuide-Ressource — siehe die Seite [MII ImplementationGuide Ressource](ImplementationGuide-mii-ig-consent.md).
 
 #### Release-Prozess
 

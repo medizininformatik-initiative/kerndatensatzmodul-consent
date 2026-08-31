@@ -370,32 +370,22 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
 <p>Das Einwilligungsmanagement <a href="https://ths-greifswald.de/gics">gICS</a> stellt die aktuelle <a href="https://ebooks.iospress.nl/doi/10.3233/SHTI251389">Referenzimplementierung</a> des HL7-D FHIR Standards für Einwilligungsmanagement (Version 2.0) dar.</p>
 
-<p>Alle Implementierungen sollten <strong>mindestens folgende Varianten unterstützen</strong>. Die Kardinalität von <code class="language-plaintext highlighter-rouge">Consent.category</code> ist mit <code class="language-plaintext highlighter-rouge">2..\*</code> definiert und ermöglicht die notwendige Abwärtskompatibilität.</p>
+<p>Alle Implementierungen sollten <strong>mindestens folgende Varianten unterstützen</strong>. Die Kardinalität von <code class="language-plaintext highlighter-rouge">Consent.category</code> ist mit <code class="language-plaintext highlighter-rouge">2..*</code> definiert und ermöglicht die notwendige Abwärtskompatibilität.</p>
 
 <table>
-  <tbody>
+  <thead>
     <tr>
-      <td>ResultType</td>
-      <td>Bedeutung für die Consent-Ressource</td>
-      <td>Aggregation von Informationen</td>
+      <th>ResultType</th>
+      <th>Bedeutung für die Consent-Ressource</th>
+      <th>Aggregation von Informationen</th>
     </tr>
-  </tbody>
-</table>
-
-<p>| — | — | — |</p>
-
-<table>
+  </thead>
   <tbody>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">document</code></td>
       <td>Die Consent-Ressource bezieht sich auf  <strong>ein (!) ausgefülltes Dokument</strong>  (QuestionnaireResponse).  <em>Dies sollte der Default in einem (MII) FHIR-Server sein.</em></td>
       <td>nein</td>
     </tr>
-  </tbody>
-</table>
-
-<table>
-  <tbody>
     <tr>
       <td><code class="language-plaintext highlighter-rouge">consent-status</code></td>
       <td>Die Consent-Ressource  <strong>berücksichtigt alle relevanten Einwilligungs- und Widerrufsdokumente</strong>  im Kontext der MII  <strong>für einen (!) Patienten</strong> . Die Consent Ressource mit ResultType  <code class="language-plaintext highlighter-rouge">consent-status</code>  bezieht sich immer auf einen Patienten und enthält den aktuellen Einwilligungsstand.  <em>Dies sollte idealerweise durch den (MII) FHIR-Server unterstützt werden.</em></td>
@@ -439,7 +429,7 @@ h6:before{color:silver;counter-increment:more-detail;content:var(--heading-prefi
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.netzwerk-universitaetsmedizin.de">NUM-DIZ</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.consent#2027.0.0-ballot.rc1 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Mon, Aug 31, 2026 21:22+0000">2026-08-31</span>
+          Erstellt <span title="Mon, Aug 31, 2026 21:48+0000">2026-08-31</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

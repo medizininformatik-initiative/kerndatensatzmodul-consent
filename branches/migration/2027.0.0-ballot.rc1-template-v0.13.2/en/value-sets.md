@@ -23,20 +23,8 @@ In accordance with the recommendation of the HL7-D AG Einwilligungsmanagement
 
 | | | | |
 | :--- | :--- | :--- | :--- |
-| Type of signature | System | Code | Display |
-
-| — | — | — | — |
-
-| | | | |
-| :--- | :--- | :--- | :--- |
 | Signature of the consenting person | urn:iso-astm:E1762-95:2013 | 1.2.840.10065.1.12.1.7 | Consent Signature |
-
-| | | | |
-| :--- | :--- | :--- | :--- |
 | Signature of the (legally) representing person | urn:iso-astm:E1762-95:2013 | 1.2.840.10065.1.12.1.11 | Consent Witness Signature |
-
-| | | | |
-| :--- | :--- | :--- | :--- |
 | Signature of the informing person | urn:iso-astm:E1762-95:2013 | 1.2.840.10065.1.12.1.5 | Verification Signature |
 
 ### mii-vs-consent-answer

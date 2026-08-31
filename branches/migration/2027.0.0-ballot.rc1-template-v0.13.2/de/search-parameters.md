@@ -22,7 +22,13 @@ findet alle (gültige und nicht mehr gültige) Consent-Ressourcen zum Zeitpunkt 
 
 #### Provision-Code
 
-Invocations`\[base\]/Consent?mii-provision-provision-code=\[system\]|\[value\]`DetailsResourceConsentCodemii-provision-provision-codeType[token](https://hl7.org/fhir/r4/search.html#token)FhirPathConsent.provision.provision.code
+| | |
+| :--- | :--- |
+| Invocations | `[base]/Consent?mii-provision-provision-code=[system]\|[value]` |
+| Resource | Consent |
+| Code | `mii-provision-provision-code` |
+| Type | [token](https://hl7.org/fhir/r4/search.html#token) |
+| FhirPath | `Consent.provision.provision.code` |
 
 Beispiel:
 
@@ -33,7 +39,13 @@ GET [base]/Consent?mii-provision-provision-code=urn:oid:2.16.840.1.113883.3.1937
 
 #### Typ der Provision (permit, deny)
 
-Invocations`\[base\]/Consent?mii-provision-provision-type=\[system\]|\[value\]`DetailsResourceConsentCodemii-provision-provision-typeType[token](https://hl7.org/fhir/r4/search.html#token)FhirPathConsent.provision.provision.type
+| | |
+| :--- | :--- |
+| Invocations | `[base]/Consent?mii-provision-provision-type=[system]\|[value]` |
+| Resource | Consent |
+| Code | `mii-provision-provision-type` |
+| Type | [token](https://hl7.org/fhir/r4/search.html#token) |
+| FhirPath | `Consent.provision.provision.type` |
 
 Beispiel:
 
@@ -44,7 +56,13 @@ GET [base]/Consent?mii-provision-provision-type=permit
 
 #### Typ der Provision einer bestimmten, durch einen Code definierten, Provision
 
-Invocations`\[base\]/Consent?mii-provision-provision-code-type=(state$)\[value\],(state$)\[value\]`DetailsResourceConsentCodemii-provision-provision-code-typeType[composite](https://hl7.org/fhir/r4/search.html#composite)FhirPathConsent.provision.provision
+| | |
+| :--- | :--- |
+| Invocations | `[base]/Consent?mii-provision-provision-code-type=(state$)[value],(state$)[value]` |
+| Resource | Consent |
+| Code | `mii-provision-provision-code-type` |
+| Type | [composite](https://hl7.org/fhir/r4/search.html#composite) |
+| FhirPath | `Consent.provision.provision` |
 
 Beispiel:
 
@@ -55,7 +73,13 @@ GET [base]/Consent?mii-provision-provision-code-type=urn:oid:2.16.840.1.113883.3
 
 #### Provisions-Zeitraum
 
-Invocations`\[base\]/Consent?mii-provision-provision-period=(comparator)\[date\]`DetailsResourceConsentCodemii-provision-provision-periodType[date](https://hl7.org/fhir/r4/search.html#date)FhirPathConsent.provision.provision.period
+| | |
+| :--- | :--- |
+| Invocations | `[base]/Consent?mii-provision-provision-period=(comparator)[date]` |
+| Resource | Consent |
+| Code | `mii-provision-provision-period` |
+| Type | [date](https://hl7.org/fhir/r4/search.html#date) |
+| FhirPath | `Consent.provision.provision.period` |
 
 Beispiel:
 
@@ -66,7 +90,13 @@ GET [base]/Consent?mii-provision-provision-period=2020-12-15
 
 #### Provisions-Zeitraum einer bestimmten, durch einen Code definierten, Provision
 
-Invocations`\[base\]/Consent?mii-provision-provision-code-period=(state$)\[value\],(state$)\[value\]`DetailsResourceConsentCodemii-provision-provision-code-periodType[composite](https://hl7.org/fhir/r4/search.html#composite)FhirPathConsent.provision.provision
+| | |
+| :--- | :--- |
+| Invocations | `[base]/Consent?mii-provision-provision-code-period=(state$)[value],(state$)[value]` |
+| Resource | Consent |
+| Code | `mii-provision-provision-code-period` |
+| Type | [composite](https://hl7.org/fhir/r4/search.html#composite) |
+| FhirPath | `Consent.provision.provision` |
 
 Beispiel:
 
@@ -77,7 +107,13 @@ GET [base]/Consent?mii-provision-provision-code-period=urn:oid:2.16.840.1.113883
 
 #### Policy URI (versionsspezifischer MII Broad Consent)
 
-Invocations`\[base\]/Consent?mii-policy-uri=\[url\]`DetailsResourceConsentCodemii-policy-uriType[uri](https://hl7.org/fhir/r4/search.html#uri)FhirPathConsent.policy.uri
+| | |
+| :--- | :--- |
+| Invocations | `[base]/Consent?mii-policy-uri=[url]` |
+| Resource | Consent |
+| Code | `mii-policy-uri` |
+| Type | [uri](https://hl7.org/fhir/r4/search.html#uri) |
+| FhirPath | `Consent.policy.uri` |
 
 Beispiel:
 
@@ -92,21 +128,8 @@ Im Kontext der Suche nach Consent-Ressourcen sind nach [HL7-D Standard für Einw
 
 | | |
 | :--- | :--- |
-| **Suchparameter** | **Erläuterung** |
-
-| — | — |
-
-| | |
-| :--- | :--- |
 | domain | Einwilligungsdomäne. Insbesondere wird empfohlen, logische Referenzen (Reference by Identifier, im Suchparameter: modifier ":identifier") zu unterstützen. |
-
-| | |
-| :--- | :--- |
-| category | Art des Dokuments (Einwilligung, Widerruf,etc) |
-| ResultType (Dokument, Consent-Status, etc.) |   |
-
-| | |
-| :--- | :--- |
+| category | Art des Dokuments (Einwilligung, Widerruf,etc)ResultType (Dokument, Consent-Status, etc.) |
 | patient.identifier | Die betroffene Person identifiziert über Identifier |
 
 **Anmerkung: Da eine Dependency auf das Paket der HL7-D AG Einwilligungsmanagement besteht, existiert der Suchparameter `domain` automatisch und muss nicht explizit für das KDS-Modul definiert werden. Er wird technisch 'einfach übernommen'.**
