@@ -1,0 +1,38 @@
+{
+  "codeSystems" : [{
+    "url" : "urn:iso-astm:E1762-95:2013",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "SignatureTypeCodes",
+    "title" : "Signature Type Codes",
+    "description" : "The Digital Signature Purposes, an indication of the reason an entity signs a document. This is included in the signed information and can be used when determining accountability for various actions concerning the document. Examples include: author, transcriptionist/recorder, and witness.",
+    "oids" : ["2.16.840.1.113883.4.642.4.64"],
+    "uses" : {
+    },
+    "ValueSet-88464c5b-5338-4c2b-9c07-b42fef2ada64.html" : "MII Consent: Signature Types"
+  },
+  {
+    "url" : "urn:oid:2.16.840.1.113883.3.1937.777.24.5.2",
+    "version" : "2026.0.0",
+    "status" : "active",
+    "name" : "MII_CS_Consent_Answer",
+    "title" : "MII Consent: Answer CodeSystem",
+    "description" : "This CodeSystem contains the possible answers to the questions of the MII Consent.",
+    "oids" : ["2.16.840.1.113883.3.1937.777.24.5.2"],
+    "uses" : {
+    },
+    "ValueSet-2.16.840.1.113883.3.1937.777.24.11.30--20210323234509.html" : "MII Consent: Answer ValueSet"
+  },
+  {
+    "url" : "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3",
+    "version" : "2026.0.0",
+    "status" : "active",
+    "name" : "MII CS Consent Policy",
+    "title" : "MII Consent: Policy CodeSystem",
+    "description" : "Codesystem mit Consent-Policy-Codes zur interoperablen Operationalisierung bzw. Durchsetzung (Enforcement) von Consent Informationen des MII Broad Consent",
+    "oids" : ["2.16.840.1.113883.3.1937.777.24.5.3"],
+    "uses" : {
+    },
+    "ValueSet-2.16.840.1.113883.3.1937.777.24.11.36--20230331232804.html" : "MII Consent: Policy ValueSet"
+  }]
+}
