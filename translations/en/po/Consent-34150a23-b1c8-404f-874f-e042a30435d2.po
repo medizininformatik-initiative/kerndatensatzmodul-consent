@@ -16,12 +16,12 @@ msgstr ""
 
 # Coding.display
 #: Coding.display
-msgid "MDAT speichern verarbeiten"
+msgid "MDAT speichern, verarbeiten"
 msgstr ""
 
 # Coding.display
 #: Coding.display
-msgid "MDAT wissenschaftlich nutzen EU DSGVO NIVEAU"
+msgid "MDAT wissenschaftlich nutzen"
 msgstr ""
 
 # Coding.display
@@ -36,6 +36,6 @@ msgstr ""
 
 # Coding.display
 #: Coding.display
-msgid "BIOMAT wissenschaftlich nutzen EU DSGVO NIVEAU"
+msgid "BIOMAT wissenschaftlich nutzen"
 msgstr ""
 

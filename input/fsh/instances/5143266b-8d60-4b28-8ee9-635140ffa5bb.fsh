@@ -31,7 +31,7 @@ Usage: #example
 * provision.provision[+].type = #deny
 * provision.provision[=].period.start = "2022-01-31T23:00:00+01:00"
 * provision.provision[=].period.end = "3000-01-01T00:00:00+01:00"
-* provision.provision[=].code = MII_CS_Consent_Policy#2.16.840.1.113883.3.1937.777.24.5.3.22 "BIOMAT wissenschaftlich nutzen EU DSGVO NIVEAU"
+* provision.provision[=].code = MII_CS_Consent_Policy#2.16.840.1.113883.3.1937.777.24.5.3.22 "BIOMAT wissenschaftlich nutzen"
 * provision.provision[+].type = #deny
 * provision.provision[=].period.start = "2022-01-31T23:00:00+01:00"
 * provision.provision[=].period.end = "3000-01-01T00:00:00+01:00"
@@ -71,7 +71,7 @@ Usage: #example
 * provision.provision[+].type = #deny
 * provision.provision[=].period.start = "2022-01-31T23:00:00+01:00"
 * provision.provision[=].period.end = "3000-01-01T00:00:00+01:00"
-* provision.provision[=].code = MII_CS_Consent_Policy#2.16.840.1.113883.3.1937.777.24.5.3.8 "MDAT wissenschaftlich nutzen EU DSGVO NIVEAU"
+* provision.provision[=].code = MII_CS_Consent_Policy#2.16.840.1.113883.3.1937.777.24.5.3.8 "MDAT wissenschaftlich nutzen"
 * provision.provision[+].type = #deny
 * provision.provision[=].period.start = "2022-01-31T23:00:00+01:00"
 * provision.provision[=].period.end = "3000-01-01T00:00:00+01:00"
@@ -83,7 +83,7 @@ Usage: #example
 * provision.provision[+].type = #deny
 * provision.provision[=].period.start = "2022-01-31T23:00:00+01:00"
 * provision.provision[=].period.end = "3000-01-01T00:00:00+01:00"
-* provision.provision[=].code = MII_CS_Consent_Policy#2.16.840.1.113883.3.1937.777.24.5.3.5 "IDAT bereitstellen EU DSGVO NIVEAU"
+* provision.provision[=].code = MII_CS_Consent_Policy#2.16.840.1.113883.3.1937.777.24.5.3.5 "IDAT bereitstellen "
 * provision.provision[+].type = #deny
 * provision.provision[=].period.start = "2022-01-31T23:00:00+01:00"
 * provision.provision[=].period.end = "3000-01-01T00:00:00+01:00"
