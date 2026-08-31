@@ -1,4 +1,4 @@
-# mii-sp-consent-provisioncodetype - MII Implementation Guide Consent v2026.0.0
+# mii-sp-consent-provisioncodetype - MII Implementation Guide Consent v2027.0.0-ballot.rc1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/modul-consent/SearchParameter/mii-sp-consent-provisioncodetype | *Version*:2026.0.0 |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/modul-consent/SearchParameter/mii-sp-consent-provisioncodetype | *Version*:2027.0.0-ballot.rc1 |
 | Active as of 2023-05-09 | *Computable Name*:MII_SP_Consent_ProvisionCodeType |
 
  
@@ -23,7 +23,7 @@ Composite-Suche nach Typ (type) einer bestimmten, durch einen Code definierten, 
   "resourceType" : "SearchParameter",
   "id" : "mii-sp-consent-provisioncodetype",
   "url" : "https://www.medizininformatik-initiative.de/fhir/modul-consent/SearchParameter/mii-sp-consent-provisioncodetype",
-  "version" : "2026.0.0",
+  "version" : "2027.0.0-ballot.rc1",
   "name" : "MII_SP_Consent_ProvisionCodeType",
   "status" : "active",
   "date" : "2023-05-09",

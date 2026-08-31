@@ -1,4 +1,4 @@
-# Profile - MI-I - Consent - Provenance - MII Implementation Guide Consent v2026.0.0
+# Profile - MI-I - Consent - Provenance - MII Implementation Guide Consent v2027.0.0-ballot.rc1
 
 * [**Table of Contents**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-provenance | *Version*:2026.0.0 |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-provenance | *Version*:2027.0.0-ballot.rc1 |
 | Active Stand: 2023-05-09 | *Maschinenlesbarer Name*:MII_PR_Consent_Provenance |
 
  
@@ -96,7 +96,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-f675b1e8-9f3
   "resourceType" : "StructureDefinition",
   "id" : "f675b1e8-9f3f-44e8-bb59-9681f78eb464",
   "url" : "https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-provenance",
-  "version" : "2026.0.0",
+  "version" : "2027.0.0-ballot.rc1",
   "name" : "MII_PR_Consent_Provenance",
   "title" : "Profile - MI-I - Consent - Provenance",
   "status" : "active",

@@ -1,4 +1,4 @@
-# MII Consent: Policy CodeSystem - MII Implementation Guide Consent v2026.0.0
+# MII Consent: Policy CodeSystem - MII Implementation Guide Consent v2027.0.0-ballot.rc1
 
 * [**Table of Contents**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:urn:oid:2.16.840.1.113883.3.1937.777.24.5.3 | *Version*:2026.0.0 |
+| *Offizielle URL*:urn:oid:2.16.840.1.113883.3.1937.777.24.5.3 | *Version*:2027.0.0-ballot.rc1 |
 | Active Stand: 2025-12-11 | *Maschinenlesbarer Name*:MII CS Consent Policy |
 
  
@@ -34,7 +34,7 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
     "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablecodesystem"]
   },
   "url" : "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3",
-  "version" : "2026.0.0",
+  "version" : "2027.0.0-ballot.rc1",
   "name" : "MII CS Consent Policy",
   "title" : "MII Consent: Policy CodeSystem",
   "status" : "active",

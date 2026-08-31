@@ -1,4 +1,4 @@
-# Profile - MI-I - Consent - DocumentReference - MII Implementation Guide Consent v2026.0.0
+# Profile - MI-I - Consent - DocumentReference - MII Implementation Guide Consent v2027.0.0-ballot.rc1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-documentreference | *Version*:2026.0.0 |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-documentreference | *Version*:2027.0.0-ballot.rc1 |
 | Active as of 2023-05-09 | *Computable Name*:MII_PR_Consent_DocumentReference |
 
  
@@ -43,7 +43,7 @@ Other representations of profile: [CSV](../StructureDefinition-56375452-bfa1-411
   "resourceType" : "StructureDefinition",
   "id" : "56375452-bfa1-4111-af7c-5b5ba9a1857c",
   "url" : "https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-documentreference",
-  "version" : "2026.0.0",
+  "version" : "2027.0.0-ballot.rc1",
   "name" : "MII_PR_Consent_DocumentReference",
   "title" : "Profile - MI-I - Consent - DocumentReference",
   "status" : "active",

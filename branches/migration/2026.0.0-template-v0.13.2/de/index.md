@@ -1,4 +1,4 @@
-# Startseite - MII Implementation Guide Consent v2026.0.0
+# Startseite - MII Implementation Guide Consent v2027.0.0-ballot.rc1
 
 * [**Table of Contents**](toc.md)
 * **Startseite**
@@ -7,8 +7,8 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/modul-consent/ImplementationGuide/mii-ig-consent | *Version*:2026.0.0 |
-| Active Stand: 2025-12-18 | *Maschinenlesbarer Name*:MII_IG_Consent |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/modul-consent/ImplementationGuide/mii-ig-consent | *Version*:2027.0.0-ballot.rc1 |
+| Active Stand: 2026-08-31 | *Maschinenlesbarer Name*:MII_IG_Consent |
 
 Die vorliegende Spezifikation beschreibt die FHIR-Repräsentation des Kerndatensatz Moduls 'Consent' der Medizininformatik-Initiative. Im Folgenden werden die Use-Cases des Moduls sowie die dazugehörigen FHIR-Profile und Terminologie-Ressourcen in ihrer verbindlichen Form beschrieben.
 
@@ -20,11 +20,11 @@ Die vorliegende Spezifikation beschreibt die FHIR-Repräsentation des Kerndatens
 
 | | |
 | :--- | :--- |
-| Datum | 18.12.2025 |
+| Datum | 31.08.2026 |
 
 | | |
 | :--- | :--- |
-| Version | 2026.0.0 |
+| Version | 2027.0.0-ballot.rc1 |
 
 | | |
 | :--- | :--- |

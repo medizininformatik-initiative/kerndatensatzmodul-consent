@@ -1,4 +1,4 @@
-# 8a3d1799-2463-405e-b49c-6a16c8692b01 - MII Implementation Guide Consent v2026.0.0
+# 8a3d1799-2463-405e-b49c-6a16c8692b01 - MII Implementation Guide Consent v2027.0.0-ballot.rc1
 
 * [**Table of Contents**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)

@@ -1,4 +1,4 @@
-# MII Consent Version and Modules CodeSystem - MII Implementation Guide Consent v2026.0.0
+# MII Consent Version and Modules CodeSystem - MII Implementation Guide Consent v2027.0.0-ballot.rc1
 
 * [**Table of Contents**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/modul-consent/CodeSystem/mii-cs-consent-version-modules | *Version*:2026.0.0 |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/modul-consent/CodeSystem/mii-cs-consent-version-modules | *Version*:2027.0.0-ballot.rc1 |
 | Draft Stand: 2026-08-31 | *Maschinenlesbarer Name*:MIIConsentVersionModuleCodeSystem |
 | *Weitere Identifikatoren:*OID:2.16.840.1.113883.3.1937.777.24.5.27 (use: official, ) | |
 | **Copyright/Rechtliches**: © 2019+ TMF e. V., Charlottenstraße 42, 10117 Berlin```
@@ -58,12 +58,12 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
     "system" : "urn:ietf:rfc:3986",
     "value" : "urn:oid:2.16.840.1.113883.3.1937.777.24.5.27"
   }],
-  "version" : "2026.0.0",
+  "version" : "2027.0.0-ballot.rc1",
   "name" : "MIIConsentVersionModuleCodeSystem",
   "title" : "MII Consent Version and Modules CodeSystem",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-08-31T20:36:21+00:00",
+  "date" : "2026-08-31T20:57:36+00:00",
   "publisher" : "NUM-DIZ",
   "_publisher" : {
     "extension" : [{

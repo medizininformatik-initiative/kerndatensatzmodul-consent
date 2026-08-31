@@ -1,4 +1,4 @@
-# Profiles - MII Implementation Guide Consent v2026.0.0
+# Profiles - MII Implementation Guide Consent v2027.0.0-ballot.rc1
 
 * [**Table of Contents**](toc.md)
 * **Profiles**

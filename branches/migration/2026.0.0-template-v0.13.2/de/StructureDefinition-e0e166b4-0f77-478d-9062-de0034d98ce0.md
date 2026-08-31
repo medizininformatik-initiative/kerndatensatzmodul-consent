@@ -1,4 +1,4 @@
-# Profile - MI-I - Consent - Einwilligung - MII Implementation Guide Consent v2026.0.0
+# Profile - MI-I - Consent - Einwilligung - MII Implementation Guide Consent v2027.0.0-ballot.rc1
 
 * [**Table of Contents**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-einwilligung | *Version*:2026.0.0 |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-einwilligung | *Version*:2027.0.0-ballot.rc1 |
 | Active Stand: 2025-12-03 | *Maschinenlesbarer Name*:MII_PR_Consent_Einwilligung |
 
  
@@ -416,7 +416,7 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-e0e166b4-0f7
   "resourceType" : "StructureDefinition",
   "id" : "e0e166b4-0f77-478d-9062-de0034d98ce0",
   "url" : "https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-einwilligung",
-  "version" : "2026.0.0",
+  "version" : "2027.0.0-ballot.rc1",
   "name" : "MII_PR_Consent_Einwilligung",
   "title" : "Profile - MI-I - Consent - Einwilligung",
   "status" : "active",

@@ -128,8 +128,8 @@
     "description" : "One of the resource types defined as part of this version of FHIR.",
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-consent-content-class.html" : "Consent Content Class",
-    "http://hl7.org/fhir/R4/valueset-resource-types.html" : "ResourceType"
+    "http://hl7.org/fhir/R4/valueset-resource-types.html" : "ResourceType",
+    "http://hl7.org/fhir/R4/valueset-consent-content-class.html" : "Consent Content Class"
   },
   {
     "url" : "http://snomed.info/sct",
@@ -141,8 +141,8 @@
     "oids" : ["2.16.840.1.113883.6.96"],
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-c80-practice-codes.html" : "Practice Setting Code Value Set",
-    "http://hl7.org/fhir/R4/valueset-c80-facilitycodes.html" : "Facility Type Code Value Set"
+    "http://hl7.org/fhir/R4/valueset-c80-facilitycodes.html" : "Facility Type Code Value Set",
+    "http://hl7.org/fhir/R4/valueset-c80-practice-codes.html" : "Practice Setting Code Value Set"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/common-tags",
@@ -261,8 +261,8 @@
     "oids" : ["2.16.840.1.113883.5.4"],
     "uses" : {
     },
-    "http://terminology.hl7.org/7.3.0/ValueSet-v3-ActCode.html" : "v3 Code System ActCode",
-    "http://hl7.org/fhir/R4/valueset-provenance-activity-type.html" : "Provenance activity type"
+    "http://hl7.org/fhir/R4/valueset-provenance-activity-type.html" : "Provenance activity type",
+    "http://terminology.hl7.org/7.3.0/ValueSet-v3-ActCode.html" : "v3 Code System ActCode"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
@@ -322,8 +322,8 @@
     "oids" : ["2.16.840.1.113883.5.90"],
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType",
-    "http://hl7.org/fhir/R4/valueset-provenance-activity-type.html" : "Provenance activity type"
+    "http://hl7.org/fhir/R4/valueset-provenance-activity-type.html" : "Provenance activity type",
+    "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v3-RoleClass",
@@ -363,7 +363,7 @@
   },
   {
     "url" : "urn:oid:2.16.840.1.113883.3.1937.777.24.5.2",
-    "version" : "2026.0.0",
+    "version" : "2027.0.0-ballot.rc1",
     "status" : "active",
     "name" : "MII_CS_Consent_Answer",
     "title" : "MII Consent: Answer CodeSystem",
@@ -375,7 +375,7 @@
   },
   {
     "url" : "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3",
-    "version" : "2026.0.0",
+    "version" : "2027.0.0-ballot.rc1",
     "status" : "active",
     "name" : "MII CS Consent Policy",
     "title" : "MII Consent: Policy CodeSystem",

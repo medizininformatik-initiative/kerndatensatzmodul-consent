@@ -1,4 +1,4 @@
-# MII ImplementationGuide Resource - MII Implementation Guide Consent v2026.0.0
+# MII ImplementationGuide Resource - MII Implementation Guide Consent v2027.0.0-ballot.rc1
 
 * [**Table of Contents**](toc.md)
 * **MII ImplementationGuide Resource**
@@ -81,7 +81,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
   "language" : "de",
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/resource-approvalDate",
-    "valueDate" : "2025-12-18"
+    "valueDate" : "2026-08-31"
   },
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
@@ -108,7 +108,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
     },
     {
       "url" : "version",
-      "valueString" : "2026.0.0"
+      "valueString" : "2027.0.0-ballot.rc1"
     },
     {
       "url" : "uri",
@@ -119,7 +119,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
   {
     "url" : "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod",
     "valuePeriod" : {
-      "start" : "2026"
+      "start" : "2027"
     }
   },
   {
@@ -208,7 +208,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
     }
   }],
   "url" : "https://www.medizininformatik-initiative.de/fhir/modul-consent/ImplementationGuide/mii-ig-consent",
-  "version" : "2026.0.0",
+  "version" : "2027.0.0-ballot.rc1",
   "name" : "MII_IG_Consent",
   "title" : "MII Implementation Guide Consent",
   "_title" : {
@@ -226,7 +226,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
   },
   "status" : "active",
   "experimental" : false,
-  "date" : "2025-12-18",
+  "date" : "2026-08-31",
   "publisher" : "NUM-DIZ",
   "_publisher" : {
     "extension" : [{
@@ -302,7 +302,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
       },
       {
         "url" : "value",
-        "valueString" : "Release"
+        "valueString" : "ballot"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },
@@ -818,7 +818,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
       },
       {
         "url" : "value",
-        "valueString" : "Release"
+        "valueString" : "ballot"
       }],
       "url" : "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter"
     },

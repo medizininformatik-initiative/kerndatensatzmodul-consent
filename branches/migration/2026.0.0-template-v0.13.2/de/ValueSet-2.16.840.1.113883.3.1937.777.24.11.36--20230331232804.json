@@ -7,7 +7,7 @@
   "language" : "de",
   "text" : {
     "status" : "generated",
-    "div" : "<div xml:lang=\"de\" lang=\"de\"><hr/><p><b>German</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: ValueSet 2.16.840.1.113883.3.1937.777.24.11.36--20230331232804</b></p><a name=\"2.16.840.1.113883.3.1937.777.24.11.36--20230331232804\"> </a><a name=\"hc2.16.840.1.113883.3.1937.777.24.11.36--20230331232804\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablevalueset.html\">Shareable ValueSet</a></p></div><ul><li>Include all codes defined in <a href=\"CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003.html\"><code>urn:oid:2.16.840.1.113883.3.1937.777.24.5.3</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;2026.0.0</span></li></ul></div>"
+    "div" : "<div xml:lang=\"de\" lang=\"de\"><hr/><p><b>German</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: ValueSet 2.16.840.1.113883.3.1937.777.24.11.36--20230331232804</b></p><a name=\"2.16.840.1.113883.3.1937.777.24.11.36--20230331232804\"> </a><a name=\"hc2.16.840.1.113883.3.1937.777.24.11.36--20230331232804\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablevalueset.html\">Shareable ValueSet</a></p></div><ul><li>Include all codes defined in <a href=\"CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003.html\"><code>urn:oid:2.16.840.1.113883.3.1937.777.24.5.3</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;2027.0.0-ballot.rc1</span></li></ul></div>"
   },
   "extension" : [{
     "url" : "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod",
@@ -21,12 +21,12 @@
     "system" : "urn:ietf:rfc:3986",
     "value" : "urn:oid:2.16.840.1.113883.3.1937.777.24.11.36"
   }],
-  "version" : "2026.0.0",
+  "version" : "2027.0.0-ballot.rc1",
   "name" : "MiiConsentPolicyValueSet",
   "title" : "MII Consent: Policy ValueSet",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-31T20:36:21+00:00",
+  "date" : "2026-08-31T20:57:36+00:00",
   "publisher" : "NUM-DIZ",
   "contact" : [{
     "name" : "NUM-DIZ",

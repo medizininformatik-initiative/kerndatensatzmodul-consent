@@ -1,4 +1,4 @@
-# Changelog - MII Implementation Guide Consent v2026.0.0
+# Changelog - MII Implementation Guide Consent v2027.0.0-ballot.rc1
 
 * [**Table of Contents**](toc.md)
 * **Changelog**
@@ -41,6 +41,12 @@ A version section containing a breaking change is only complete once it explicit
 Mark such entries clearly (for example with the prefix **BREAKING:**) so they cannot be overlooked when skimming the section.
 
 -------
+
+#### Version 2027.0.0-ballot.rc1
+
+Date 31.08.2026
+
+* **Changed** — migration of the guide onto the [MII KDS module template](https://github.com/medizininformatik-initiative/mii-kds-module-template) v0.13.2 (IG Publisher toolchain, DE-first language model, template page structure); **content-identical to release 2026.0.0** (profiles, terminology and examples unchanged; evidence: `migration-log/` on this branch). All artefact versions harmonized to the package version 2027.0.0-ballot.rc1 (previously divergent per artefact, e.g. 1.0.9/1.6.0/1.1.0).
 
 #### Version 2026.0.0
 

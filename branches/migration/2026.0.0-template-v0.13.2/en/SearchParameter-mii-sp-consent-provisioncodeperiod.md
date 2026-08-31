@@ -1,4 +1,4 @@
-# mii-sp-consent-provisioncodeperiod - MII Implementation Guide Consent v2026.0.0
+# mii-sp-consent-provisioncodeperiod - MII Implementation Guide Consent v2027.0.0-ballot.rc1
 
 * [**Table of Contents**](toc.md)
 * [**Artifacts Summary**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Official URL*:https://www.medizininformatik-initiative.de/fhir/modul-consent/SearchParameter/mii-sp-consent-provisioncodeperiod | *Version*:2026.0.0 |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/modul-consent/SearchParameter/mii-sp-consent-provisioncodeperiod | *Version*:2027.0.0-ballot.rc1 |
 | Active as of 2023-05-09 | *Computable Name*:MII_SP_Consent_ProvisionCodePeriod |
 
  
@@ -23,7 +23,7 @@ Composite-Suche nach Zeitraum (period) einer bestimmten, durch einen Code defini
   "resourceType" : "SearchParameter",
   "id" : "mii-sp-consent-provisioncodeperiod",
   "url" : "https://www.medizininformatik-initiative.de/fhir/modul-consent/SearchParameter/mii-sp-consent-provisioncodeperiod",
-  "version" : "2026.0.0",
+  "version" : "2027.0.0-ballot.rc1",
   "name" : "MII_SP_Consent_ProvisionCodePeriod",
   "status" : "active",
   "date" : "2023-05-09",

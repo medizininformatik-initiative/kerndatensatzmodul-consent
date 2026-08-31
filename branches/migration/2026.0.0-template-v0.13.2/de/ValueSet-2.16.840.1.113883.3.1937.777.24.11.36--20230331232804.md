@@ -1,4 +1,4 @@
-# MII Consent: Policy ValueSet - MII Implementation Guide Consent v2026.0.0
+# MII Consent: Policy ValueSet - MII Implementation Guide Consent v2027.0.0-ballot.rc1
 
 * [**Table of Contents**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/modul-consent/ValueSet/mii-vs-consent-policy | *Version*:2026.0.0 |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/modul-consent/ValueSet/mii-vs-consent-policy | *Version*:2027.0.0-ballot.rc1 |
 | Active Stand: 2026-08-31 | *Maschinenlesbarer Name*:MiiConsentPolicyValueSet |
 | *Weitere Identifikatoren:*OID:2.16.840.1.113883.3.1937.777.24.11.36 (use: official, ) | |
 
@@ -65,12 +65,12 @@ Beispiel 2:
     "system" : "urn:ietf:rfc:3986",
     "value" : "urn:oid:2.16.840.1.113883.3.1937.777.24.11.36"
   }],
-  "version" : "2026.0.0",
+  "version" : "2027.0.0-ballot.rc1",
   "name" : "MiiConsentPolicyValueSet",
   "title" : "MII Consent: Policy ValueSet",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-31T20:36:21+00:00",
+  "date" : "2026-08-31T20:57:36+00:00",
   "publisher" : "NUM-DIZ",
   "_publisher" : {
     "extension" : [{

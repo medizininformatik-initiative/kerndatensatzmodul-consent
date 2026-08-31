@@ -1,4 +1,4 @@
-# MII KDS Modul Consent — CapabilityStatement (Migrationsvorschlag) - MII Implementation Guide Consent v2026.0.0
+# MII KDS Modul Consent — CapabilityStatement (Migrationsvorschlag) - MII Implementation Guide Consent v2027.0.0-ballot.rc1
 
 * [**Table of Contents**](toc.md)
 * [**Artefaktübersicht**](artifacts.md)
@@ -8,7 +8,7 @@
 
 | | |
 | :--- | :--- |
-| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/modul-consent/CapabilityStatement/mii-cap-consent-server | *Version*:2026.0.0 |
+| *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/modul-consent/CapabilityStatement/mii-cap-consent-server | *Version*:2027.0.0-ballot.rc1 |
 | Draft Stand: 2026-08-31 | *Maschinenlesbarer Name*:MII_CAP_Consent_Server |
 
  
@@ -25,7 +25,7 @@ MIGRATION-GENERATED PROPOSAL (not part of the published 2026.0.0 release): serve
   "resourceType" : "CapabilityStatement",
   "id" : "mii-cap-consent-server",
   "url" : "https://www.medizininformatik-initiative.de/fhir/modul-consent/CapabilityStatement/mii-cap-consent-server",
-  "version" : "2026.0.0",
+  "version" : "2027.0.0-ballot.rc1",
   "name" : "MII_CAP_Consent_Server",
   "title" : "MII KDS Modul Consent — CapabilityStatement (Migrationsvorschlag)",
   "status" : "draft",

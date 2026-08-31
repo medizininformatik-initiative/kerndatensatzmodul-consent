@@ -1,4 +1,4 @@
-# Änderungshistorie - MII Implementation Guide Consent v2026.0.0
+# Änderungshistorie - MII Implementation Guide Consent v2027.0.0-ballot.rc1
 
 * [**Table of Contents**](toc.md)
 * **Änderungshistorie**
@@ -37,6 +37,12 @@ Ein Versionsabschnitt mit einer Breaking Change ist erst vollständig, wenn er a
 Kennzeichnen Sie solche Einträge deutlich (zum Beispiel mit dem Präfix **BREAKING:**), damit sie beim Überfliegen des Abschnitts nicht übersehen werden können.
 
 -------
+
+#### Version 2027.0.0-ballot.rc1
+
+Datum 31.08.2026
+
+* **Geändert** — Migration des Leitfadens auf das [MII-KDS-Modul-Template](https://github.com/medizininformatik-initiative/mii-kds-module-template) v0.13.2 (IG-Publisher-Toolchain, DE-first-Sprachmodell, Template-Seitenstruktur); **inhaltlich identisch mit Release 2026.0.0** (Profile, Terminologien und Beispiele unverändert; Nachweis: `migration-log/` auf diesem Branch). Alle Artefakt-Versionen auf die Paketversion 2027.0.0-ballot.rc1 harmonisiert (zuvor je Artefakt abweichend, z. B. 1.0.9/1.6.0/1.1.0).
 
 #### Version 2026.0.0
 

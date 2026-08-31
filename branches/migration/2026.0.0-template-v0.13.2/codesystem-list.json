@@ -1,7 +1,7 @@
 {
   "codeSystems" : [{
     "url" : "https://www.medizininformatik-initiative.de/fhir/modul-consent/CodeSystem/mii-cs-consent-version-modules",
-    "version" : "2026.0.0",
+    "version" : "2027.0.0-ballot.rc1",
     "status" : "draft",
     "name" : "MIIConsentVersionModuleCodeSystem",
     "title" : "MII Consent Version and Modules CodeSystem",
@@ -10,7 +10,7 @@
   },
   {
     "url" : "urn:oid:2.16.840.1.113883.3.1937.777.24.5.2",
-    "version" : "2026.0.0",
+    "version" : "2027.0.0-ballot.rc1",
     "status" : "active",
     "name" : "MII_CS_Consent_Answer",
     "title" : "MII Consent: Answer CodeSystem",
@@ -22,7 +22,7 @@
   },
   {
     "url" : "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3",
-    "version" : "2026.0.0",
+    "version" : "2027.0.0-ballot.rc1",
     "status" : "active",
     "name" : "MII CS Consent Policy",
     "title" : "MII Consent: Policy CodeSystem",

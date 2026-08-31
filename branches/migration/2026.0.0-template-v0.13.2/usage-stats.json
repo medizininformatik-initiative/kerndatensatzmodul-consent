@@ -1,6 +1,6 @@
 {
   "package": "de.medizininformatikinitiative.kerndatensatz.consent",
-  "version": "2026.0.0",
+  "version": "2027.0.0-ballot.rc1",
   "fhirVersion": "4.0.1",
   "jurisdiction": "DE",
   "extensions": [],
