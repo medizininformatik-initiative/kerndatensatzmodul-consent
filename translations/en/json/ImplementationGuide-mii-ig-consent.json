@@ -192,7 +192,7 @@
     {
       "id" : "ImplementationGuide.definition.resource.name",
       "context" : "ImplementationGuide.definition.resource.name",
-      "source" : "MII-SP-Consent-PolicyUri",
+      "source" : "mii-sp-consent-policyuri",
       "target" : null
     },
     {
@@ -204,7 +204,7 @@
     {
       "id" : "ImplementationGuide.definition.resource.name",
       "context" : "ImplementationGuide.definition.resource.name",
-      "source" : "MII-SP-Consent-ProvisionCode",
+      "source" : "mii-sp-consent-provisioncode",
       "target" : null
     },
     {
@@ -216,7 +216,7 @@
     {
       "id" : "ImplementationGuide.definition.resource.name",
       "context" : "ImplementationGuide.definition.resource.name",
-      "source" : "MII-SP-Consent-ProvisionCodePeriod",
+      "source" : "mii-sp-consent-provisioncodeperiod",
       "target" : null
     },
     {
@@ -228,7 +228,7 @@
     {
       "id" : "ImplementationGuide.definition.resource.name",
       "context" : "ImplementationGuide.definition.resource.name",
-      "source" : "MII-SP-Consent-ProvisionCodeType",
+      "source" : "mii-sp-consent-provisioncodetype",
       "target" : null
     },
     {
@@ -240,7 +240,7 @@
     {
       "id" : "ImplementationGuide.definition.resource.name",
       "context" : "ImplementationGuide.definition.resource.name",
-      "source" : "MII-SP-Consent-ProvisionPeriod",
+      "source" : "mii-sp-consent-provisionperiod",
       "target" : null
     },
     {
@@ -252,7 +252,7 @@
     {
       "id" : "ImplementationGuide.definition.resource.name",
       "context" : "ImplementationGuide.definition.resource.name",
-      "source" : "MII-SP-Consent-ProvisionType",
+      "source" : "mii-sp-consent-provisiontype",
       "target" : null
     },
     {

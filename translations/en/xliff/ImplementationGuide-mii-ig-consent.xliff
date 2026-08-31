@@ -250,7 +250,7 @@ Um die in diesem ValueSet enthaltenen Codes in IHE BPPC verwenden zu können, is
              <notes>
                <note id="n1">ImplementationGuide.definition.resource.name</note>
              </notes>
-        <source>MII-SP-Consent-PolicyUri</source>
+        <source>mii-sp-consent-policyuri</source>
         <target></target>
       </trans-unit>
       <trans-unit id="ImplementationGuide-mii-ig-consent" resname="ImplementationGuide.definition.resource.description">
@@ -264,7 +264,7 @@ Um die in diesem ValueSet enthaltenen Codes in IHE BPPC verwenden zu können, is
              <notes>
                <note id="n1">ImplementationGuide.definition.resource.name</note>
              </notes>
-        <source>MII-SP-Consent-ProvisionCode</source>
+        <source>mii-sp-consent-provisioncode</source>
         <target></target>
       </trans-unit>
       <trans-unit id="ImplementationGuide-mii-ig-consent" resname="ImplementationGuide.definition.resource.description">
@@ -278,7 +278,7 @@ Um die in diesem ValueSet enthaltenen Codes in IHE BPPC verwenden zu können, is
              <notes>
                <note id="n1">ImplementationGuide.definition.resource.name</note>
              </notes>
-        <source>MII-SP-Consent-ProvisionCodePeriod</source>
+        <source>mii-sp-consent-provisioncodeperiod</source>
         <target></target>
       </trans-unit>
       <trans-unit id="ImplementationGuide-mii-ig-consent" resname="ImplementationGuide.definition.resource.description">
@@ -292,7 +292,7 @@ Um die in diesem ValueSet enthaltenen Codes in IHE BPPC verwenden zu können, is
              <notes>
                <note id="n1">ImplementationGuide.definition.resource.name</note>
              </notes>
-        <source>MII-SP-Consent-ProvisionCodeType</source>
+        <source>mii-sp-consent-provisioncodetype</source>
         <target></target>
       </trans-unit>
       <trans-unit id="ImplementationGuide-mii-ig-consent" resname="ImplementationGuide.definition.resource.description">
@@ -306,7 +306,7 @@ Um die in diesem ValueSet enthaltenen Codes in IHE BPPC verwenden zu können, is
              <notes>
                <note id="n1">ImplementationGuide.definition.resource.name</note>
              </notes>
-        <source>MII-SP-Consent-ProvisionPeriod</source>
+        <source>mii-sp-consent-provisionperiod</source>
         <target></target>
       </trans-unit>
       <trans-unit id="ImplementationGuide-mii-ig-consent" resname="ImplementationGuide.definition.resource.description">
@@ -320,7 +320,7 @@ Um die in diesem ValueSet enthaltenen Codes in IHE BPPC verwenden zu können, is
              <notes>
                <note id="n1">ImplementationGuide.definition.resource.name</note>
              </notes>
-        <source>MII-SP-Consent-ProvisionType</source>
+        <source>mii-sp-consent-provisiontype</source>
         <target></target>
       </trans-unit>
       <trans-unit id="ImplementationGuide-mii-ig-consent" resname="ImplementationGuide.definition.resource.description">

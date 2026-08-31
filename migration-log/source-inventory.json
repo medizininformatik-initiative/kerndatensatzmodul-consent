@@ -1,0 +1,162 @@
+{
+  "artefacts": [
+    {
+      "path": "searchparameters/SearchParameter_MII_Consent_Einwilligung_provisionProvisionCodeType.xml",
+      "resourceType": "SearchParameter"
+    },
+    {
+      "path": "searchparameters/SearchParameter_MII_Consent_Einwilligung_provisionType.xml",
+      "resourceType": "SearchParameter"
+    },
+    {
+      "path": "searchparameters/SearchParameter_MII_Consent_Einwilligung_provisionCode.xml",
+      "resourceType": "SearchParameter"
+    },
+    {
+      "path": "searchparameters/SearchParameter_MII_Consent_Einwilligung_policyUri.xml",
+      "resourceType": "SearchParameter"
+    },
+    {
+      "path": "searchparameters/SearchParameter_MII_Consent_Einwilligung_provisionProvisionCodePeriod.xml",
+      "resourceType": "SearchParameter"
+    },
+    {
+      "path": "searchparameters/SearchParameter_MII_Consent_Einwilligung_provisionPeriod.xml",
+      "resourceType": "SearchParameter"
+    },
+    {
+      "path": "examples/Example_MII_Consent_Einwilligung.xml",
+      "resourceType": "Consent"
+    },
+    {
+      "path": "examples/Example_MII_Consent_Einwilligung_2.xml",
+      "resourceType": "Consent"
+    },
+    {
+      "path": "examples/Example_MII_Consent_ResultType_ConsentStatus.xml",
+      "resourceType": "Consent"
+    },
+    {
+      "path": "examples/Example_MII_Consent_Provenance.xml",
+      "resourceType": "Provenance"
+    },
+    {
+      "path": "examples/Example_MII_Consent_DocumentReference.xml",
+      "resourceType": "DocumentReference"
+    },
+    {
+      "path": "terminologie/codesystems/CodeSystem-MiiConsentVersionModuleCodeSystem.json",
+      "resourceType": "CodeSystem"
+    },
+    {
+      "path": "terminologie/codesystems/CodeSystem-MiiConsentAnswerCodeSystem.xml",
+      "resourceType": "CodeSystem"
+    },
+    {
+      "path": "terminologie/codesystems/CodeSystem-MiiConsentPolicyCodeSystem.xml",
+      "resourceType": "CodeSystem"
+    },
+    {
+      "path": "terminologie/valuesets/ValueSet-MiiConsentSignatureTypes.xml",
+      "resourceType": "ValueSet"
+    },
+    {
+      "path": "terminologie/valuesets/ValueSet-MiiConsentAnswerValueSet.xml",
+      "resourceType": "ValueSet"
+    },
+    {
+      "path": "terminologie/valuesets/ValueSet-MiiConsentPolicyValueSet.xml",
+      "resourceType": "ValueSet"
+    },
+    {
+      "path": "ressourcen-profile/Profile_MII_Consent_Einwilligung.xml",
+      "resourceType": "StructureDefinition"
+    },
+    {
+      "path": "ressourcen-profile/Profile_MII_Consent_DocumentReference.xml",
+      "resourceType": "StructureDefinition"
+    },
+    {
+      "path": "ressourcen-profile/Profile_MII_Consent_Provenance.xml",
+      "resourceType": "StructureDefinition"
+    }
+  ],
+  "narrative": [
+    {
+      "page": "https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent?version=2026.0.0",
+      "class": "narrative"
+    },
+    {
+      "page": "https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/Release-Notes?version=2026.0.0",
+      "class": "narrative"
+    },
+    {
+      "page": "https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/Beschreibung-Modul-Consent?version=2026.0.0",
+      "class": "narrative"
+    },
+    {
+      "page": "https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/KontextimGesamtprojektBezgezuanderenModulen?version=2026.0.0",
+      "class": "narrative"
+    },
+    {
+      "page": "https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/Referenzen?version=2026.0.0",
+      "class": "narrative"
+    },
+    {
+      "page": "https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/AnwendungsflleInformationsmodell?version=2026.0.0",
+      "class": "narrative"
+    },
+    {
+      "page": "https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/AnwendungsflleInformationsmodell/BeschreibungvonSzenarienfrdieAnwendungdesModuls?version=2026.0.0",
+      "class": "narrative"
+    },
+    {
+      "page": "https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/AnwendungsflleInformationsmodell/Datenstzeinkl.Beschreibungen?version=2026.0.0",
+      "class": "narrative"
+    },
+    {
+      "page": "https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/AnwendungsflleInformationsmodell/UML?version=2026.0.0",
+      "class": "narrative"
+    },
+    {
+      "page": "https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/AnwendungsflleInformationsmodell/Fragebgen?version=2026.0.0",
+      "class": "narrative"
+    },
+    {
+      "page": "https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/TechnischeImplementierung?version=2026.0.0",
+      "class": "narrative"
+    },
+    {
+      "page": "https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/TechnischeImplementierung/FHIRProfile?version=2026.0.0",
+      "class": "narrative"
+    },
+    {
+      "page": "https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/TechnischeImplementierung/FHIRProfile/Consent?version=2026.0.0",
+      "class": "artefact-view"
+    },
+    {
+      "page": "https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/TechnischeImplementierung/FHIRProfile/Provenance?version=2026.0.0",
+      "class": "artefact-view"
+    },
+    {
+      "page": "https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/TechnischeImplementierung/FHIRProfile/DocumentReference?version=2026.0.0",
+      "class": "artefact-view"
+    },
+    {
+      "page": "https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/TechnischeImplementierung/FHIRProfile/WeitererelevanteProfile?version=2026.0.0",
+      "class": "narrative"
+    },
+    {
+      "page": "https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/TechnischeImplementierung/FHIRProfile/Empfehlungen-zur-praktischen-Anwendung?version=2026.0.0",
+      "class": "narrative"
+    },
+    {
+      "page": "https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/TechnischeImplementierung/Terminologien?version=2026.0.0",
+      "class": "artefact-view"
+    }
+  ],
+  "counts": {
+    "artefacts": 20,
+    "narrative_pages": 18
+  }
+}

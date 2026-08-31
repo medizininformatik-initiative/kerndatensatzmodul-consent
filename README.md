@@ -1,11 +1,12 @@
 # MII KDS Modul Consent — Migration auf das MII-KDS-Modul-Template
 
-> **⚠️ Sandbox-Demonstrator.** Dieses Repository ist eine **inoffizielle
-> Migrations-Sandbox** der Forschungsgruppe Digital Health (TU Dresden). Das
-> offizielle Modul-Repository ist
-> [medizininformatik-initiative/kerndatensatzmodul-consent](https://github.com/medizininformatik-initiative/kerndatensatzmodul-consent).
-> Nichts hier ist eine MII-Publikation; die Freigabe (Gate D) liegt bei
-> TF KDS / AG IOP / NSG.
+> **⚠️ Migrations-Branch — nicht freigegeben.** Dieser Branch trägt die
+> Migration des Moduls auf das MII-KDS-Modul-Template und ist **keine
+> MII-Publikation**; die Freigabe (Gate D) liegt bei TF KDS / AG IOP / NSG —
+> erst der Merge nach der Gate-Review macht diese Struktur zur offiziellen.
+> Vollständige Evidenz: [`migration-log/`](migration-log/); Plan, Recon und
+> Preservation-Harvest: Branch `evidence/2026-08-31-plan-recon` in der
+> [FGDH-Sandbox](https://github.com/forschungsgruppe-digital-health/mii-kds-consent-ig-inoffiziell).
 
 Migration des **KDS Modul Consent, Release 2026.0.0** (Quelle: Tag `2026.0.0`
 = `792f9f3e`) auf das

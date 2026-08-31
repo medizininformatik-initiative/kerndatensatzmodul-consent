@@ -1,20 +1,14 @@
-validation errors: target=94 baseline=67 (per-file sections; the baseline's 373 wrapper-chrome LINK errors in its n/a section are wrapper artefacts, excluded)
-element-path classes: shared=49 new-in-target=45 resolved=18
-
-== element paths NEW in target ==
-  12x  SearchParameter.where(url
+REBUILD after fidelity fixes: target=70 baseline=67 shared=49 new=21 resolved=18
+== NEW in target ==
   6x  Consent.provision.provision[N].code[N].coding[N].display:
   6x  Consent.provision.provision[N].code[N]:
-  6x  SearchParameter.url:
-  6x  /work/fsh-generated/resources/SearchParameter-MII-
   3x  /work/fsh-generated/resources/StructureDefinition-
   2x  /work/fsh-generated/resources/ValueSet-2.16.840.1.
   1x  Consent:
-  1x  Consent.extension[N].extension[N].value.ofType
+  1x  Consent.extension[N].extension[N].value.ofType(Reference):
   1x  Consent.patient:
   1x  /work/fsh-generated/resources/ValueSet-88464c5b-53
-
-== element paths only in baseline (resolved/changed) ==
+== only in baseline ==
   3x  CodeSystem:
   3x  ValueSet:
   2x  CodeSystem.where(url

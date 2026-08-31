@@ -11,7 +11,7 @@
 > present-tense sentence. (Same rule in the IG template's styleguide §6.)
 
 > **Repository links in pages.** Rendered pages link repository files through
-> the `forschungsgruppe-digital-health/mii-kds-consent-ig-inoffiziell` placeholders (a created module links its
+> the `medizininformatik-initiative/kerndatensatzmodul-consent` placeholders (a created module links its
 > own repository from day one; the template's own demo substitutes the
 > documented self-check values, which name the target organisation — those
 > links resolve only after the move, and the IG Publisher reports them under

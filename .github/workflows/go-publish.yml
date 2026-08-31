@@ -66,7 +66,7 @@
 #   publication-request.json has been deployed.
 #
 # Placeholders to replace when creating a module: consent,
-#   forschungsgruppe-digital-health, mii-kds-consent-ig-inoffiziell (see sushi-config.yaml for the full table).
+#   medizininformatik-initiative, kerndatensatzmodul-consent (see sushi-config.yaml for the full table).
 # =============================================================================
 name: Publish release with IG Publisher
 
@@ -102,7 +102,7 @@ env:
   EXPECTED_CANONICAL: "https://www.medizininformatik-initiative.de/fhir/modul-consent"
   # The publication website: GitHub Pages under the creating org. Deliberately
   # different from the canonical ("canonical-mismatch").
-  EXPECTED_PUBLICATION_BASE: "https://forschungsgruppe-digital-health.github.io/mii-kds-consent-ig-inoffiziell"
+  EXPECTED_PUBLICATION_BASE: "https://medizininformatik-initiative.github.io/kerndatensatzmodul-consent"
   EXPECTED_PACKAGE_ID: "de.medizininformatikinitiative.kerndatensatz.consent"
   # Pinned toolchain (bumped by the scheduled dependency check, never floating).
   # Must stay identical to ig-publisher.yml and module-release.yml —

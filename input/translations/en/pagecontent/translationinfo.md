@@ -12,7 +12,7 @@ translation. German is therefore both the base rendering of the guide and the
 Translated pages live under `input/translations/en/pagecontent/` (same file name
 as the German page); resource translations are `.po` files under
 `input/translations/en/`. Details:
-[`docs/recipes/add-translation.md`](https://github.com/forschungsgruppe-digital-health/mii-kds-consent-ig-inoffiziell/blob/main/docs/recipes/add-translation.md) in this repository.
+[`docs/recipes/add-translation.md`](https://github.com/medizininformatik-initiative/kerndatensatzmodul-consent/blob/main/docs/recipes/add-translation.md) in this repository.
 
 All guide pages of this module exist as **machine-translated English
 versions** of the German source pages (migration state 2026-08-31, review

@@ -47,7 +47,7 @@
 # │                           extension below AND by every profile via                 │
 # │                           `insert CRMIArtifactTopic(...)`. There is no sensible    │
 # │                           default: an unreplaced value ships a bogus code.         │
-# │   forschungsgruppe-digital-health / mii-kds-consent-ig-inoffiziell  (publication-request.json, go-publish.yml)       │
+# │   medizininformatik-initiative / kerndatensatzmodul-consent  (publication-request.json, go-publish.yml)       │
 # │                           the org/repo hosting this module; GitHub Pages under     │
 # │                           the creating org is the publication website.             │
 # │   KDS Modul Consent Release 2026.0.0 (sandbox migration demonstrator) (publication-request.json) one-line description of the   │

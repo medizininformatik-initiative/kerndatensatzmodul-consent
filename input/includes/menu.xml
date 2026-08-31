@@ -13,6 +13,7 @@
       <!-- Nur-Link-Eintrag: die Seite "Logische Modelle" (Begründung im Quell-Menü) -->
       <li><a href="logical-models.html">Datensätze und Beschreibungen</a></li>
       <li><a href="uml-diagrams.html">UML-Diagramme</a></li>
+      <li><a href="frageboegen.html">Fragebögen</a></li>
     </ul>
   </li>
   <li class="dropdown">

@@ -182,7 +182,7 @@ msgstr ""
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
-msgid "MII-SP-Consent-PolicyUri"
+msgid "mii-sp-consent-policyuri"
 msgstr ""
 
 # ImplementationGuide.definition.resource.description
@@ -192,7 +192,7 @@ msgstr ""
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
-msgid "MII-SP-Consent-ProvisionCode"
+msgid "mii-sp-consent-provisioncode"
 msgstr ""
 
 # ImplementationGuide.definition.resource.description
@@ -202,7 +202,7 @@ msgstr ""
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
-msgid "MII-SP-Consent-ProvisionCodePeriod"
+msgid "mii-sp-consent-provisioncodeperiod"
 msgstr ""
 
 # ImplementationGuide.definition.resource.description
@@ -212,7 +212,7 @@ msgstr ""
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
-msgid "MII-SP-Consent-ProvisionCodeType"
+msgid "mii-sp-consent-provisioncodetype"
 msgstr ""
 
 # ImplementationGuide.definition.resource.description
@@ -222,7 +222,7 @@ msgstr ""
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
-msgid "MII-SP-Consent-ProvisionPeriod"
+msgid "mii-sp-consent-provisionperiod"
 msgstr ""
 
 # ImplementationGuide.definition.resource.description
@@ -232,7 +232,7 @@ msgstr ""
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
-msgid "MII-SP-Consent-ProvisionType"
+msgid "mii-sp-consent-provisiontype"
 msgstr ""
 
 # ImplementationGuide.definition.resource.description

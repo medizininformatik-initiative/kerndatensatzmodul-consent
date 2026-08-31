@@ -1,5 +1,5 @@
 {
-  "id" : "SearchParameter-MII-SP-Consent-PolicyUri",
+  "id" : "SearchParameter-mii-sp-consent-policyuri",
   "baseLang" : "de",
   "languages" : [{
     "targetLang" : "en",
