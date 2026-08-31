@@ -19,8 +19,6 @@ This section collects the domain guidance for implementing and using the
 
 ### Audience-Specific Guidance
 
-* **[Guidance for Researchers](researcher-guidance.html)** — for researchers
-  using the module's data.
 * **[Guidance for Implementers](implementer-guidance.html)** — technical
   guidance for DIC implementers.
 

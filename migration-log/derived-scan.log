@@ -1,0 +1,13 @@
+2026-08-31T18:30:43Z  INFO   11  derived-scan  params  target=. out=./migration-log/derived-content.tsv markdown=no
+2026-08-31T18:30:43Z  ERROR  11  derived-scan  derived-marker-twin-missing: input/translations/en/pagecontent/capability-statements.md  subject=capability-statements [suggestion source=none]  marker present in lang=default (input/pagecontent/capability-statements.md:10) and absent from lang=en -- the mirror renders the same text WITHOUT the box, telling that reader it is sourced
+    action: add the same marker and box to input/translations/en/pagecontent/capability-statements.md, same kind and same source
+2026-08-31T18:30:43Z  ERROR  11  derived-scan  derived-marker-twin-missing: input/translations/en/pagecontent/examples.md  subject=examples [bridge source=technischeimplementierung-fhirprofile-consent.md]  marker present in lang=default (input/pagecontent/examples.md:15) and absent from lang=en -- the mirror renders the same text WITHOUT the box, telling that reader it is sourced
+    action: add the same marker and box to input/translations/en/pagecontent/examples.md, same kind and same source
+2026-08-31T18:30:43Z  ERROR  11  derived-scan  derived-marker-twin-missing: input/translations/en/pagecontent/guidance.md  subject=guidance [bridge source=anwendungsflleinformationsmodell-fragebgen.md]  marker present in lang=default (input/pagecontent/guidance.md:42) and absent from lang=en -- the mirror renders the same text WITHOUT the box, telling that reader it is sourced
+    action: add the same marker and box to input/translations/en/pagecontent/guidance.md, same kind and same source
+2026-08-31T18:30:43Z  ERROR  11  derived-scan  derived-marker-twin-missing: input/translations/en/pagecontent/implementer-guidance.md  subject=implementer-guidance [bridge source=technischeimplementierung.md]  marker present in lang=default (input/pagecontent/implementer-guidance.md:8) and absent from lang=en -- the mirror renders the same text WITHOUT the box, telling that reader it is sourced
+    action: add the same marker and box to input/translations/en/pagecontent/implementer-guidance.md, same kind and same source
+2026-08-31T18:30:43Z  INFO   11  derived-scan  result  files=38 markers=5 gates=A:1,B:4,C:0 kinds=bridge:4,suggestion:1 langs=default findings=4 (twin-missing=4) out=./migration-log/derived-content.tsv exit=1
+2026-08-31T18:30:43Z  WARN   11  derived-scan  derived-scan: 4 finding(s) -- a marker that does not parse, renders no box, or is missing from a language mirror is derived content that is NOT marked where it counts.
+    Every finding above names its file:line and its exact action.
+    The TSV was still written: it is the artefact, not the verdict.

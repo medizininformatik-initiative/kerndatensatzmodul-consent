@@ -9,7 +9,6 @@ starting point the template ships one minimal example profile,
 your module's profiles (naming convention `MII_PR_<Module>_<Name>`, see the
 [`docs/recipes/add-a-profile.md`](https://github.com/forschungsgruppe-digital-health/mii-kds-consent-ig-inoffiziell/blob/main/docs/recipes/add-a-profile.md) in this repository, and the MII naming
 conventions). The module's extensions are listed on the
-[Extensions](extensions.html) page.
 
 > [TODO: Describe your module's profiles and how they relate to each other. The
 > IG Publisher generates the technical detail pages automatically.]

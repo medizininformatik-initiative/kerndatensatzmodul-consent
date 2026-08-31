@@ -42,36 +42,15 @@ nicht dieser Leitfaden.
 
 #### 3. Modul-spezifische Aspekte
 
-Dies ist der eigene Beitrag des Moduls: die Sicherheits- und
-Datenschutz-Eigenschaften, die aus der *Art der Daten dieses Moduls* folgen.
-**Der Inhalt dieses Abschnitts ist optional** — nicht jedes Modul hat eigene
-Aspekte. Hat Ihres keine, besteht der gesamte Abschnitt aus dem folgenden
-Standardtext (löschen Sie die Beispiel- und TODO-Boxen unten und übernehmen
-Sie ihn wörtlich):
+<!-- Wortgetreu übertragen aus der Simplifier-Quellseite
+     https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/TechnischeImplementierung/FHIRProfile/Consent?version=2026.0.0
+     (Harvest 2026-08-31); Links umgeschrieben (page-map). -->
+<!-- SPLIT gemäß page-map: der Abschnitt "Datenschutz-Aspekte" der
+     Consent-Profilseite ist der modul-spezifische Beitrag dieser Seite
+     (M11-Entscheidung: Modul-Aspekte vorhanden — kein Standardtext). -->
 
-> Über den oben verlinkten übergreifenden Rahmen hinaus — das übergreifende
-> Datenschutzkonzept, den ihm zugrunde liegenden Broad Consent und DIMP —
-> führt dieses Modul keine Datenkategorie, die eigene Sicherheits- oder
-> Datenschutzaspekte aufwirft, und stellt keine modulspezifischen Sicherheits-
-> oder Datenschutzanforderungen an Implementierende.
+Da auch die FHIR Consent Ressource **keine personenidentifizierende Informationen** der einwilligenden Person enthält, sollte der [**pseudonyme Personenbezug**](https://ig.fhir.de/einwilligungsmanagement/stable/Patient.html) über entsprechende [**pseudonyme Identifier**](https://ig.fhir.de/einwilligungsmanagement/stable/ContextIdentifier.html) hergestellt werden. Etwaige personenidentifizierende Informationen (z.B. Geburtsdatum, Geschlecht,Anschrift) sowie Referenzen, z.B. auf (Klartext-) Patienten-Profile, sollten vor Ausleitung geeignet ersetzt werden.
 
-<!-- ILLUSTRATIVE-EXAMPLE — Abschnitt entscheiden und die Beispiel-Box unten
-     (in dieser Datei UND der englischen Quellseite) vor dem ersten Release
-     entfernen; der Konventions-Check (M11) lässt einen Release-Branch damit
-     fehlschlagen. -->
-> **Illustratives Beispiel — vor dem ersten Release entfernen.** So füllt ein
-> anderes KDS-Modul diesen Abschnitt (*Person*): die Patienten-Identifikatoren
-> sind Pseudonyme der Treuhandstelle; Systeme dürfen ein Record Linkage nicht
-> zur Re-Identifizierung führen lassen, und der Geltungsbereich eines
-> Pseudonyms (standortweit vs. projektspezifisch) ist beim Zusammenführen von
-> Daten zu respektieren.
-{: .ig-highlight .ig-highlight-orange}
+*Technisch gesehen können Patienten-Ressourcen und abgeleitete Profile, wie z.B. die Profile der [AG Einwilligungsmanagement](https://ig.fhir.de/einwilligungsmanagement/stable/Patient.html) oder der [MII](https://simplifier.net/medizininformatikinitiative-modulperson/sdmiipersonpatientpseudonymisiert) verwendet werden.* Um Pseudonyme, Fallnummern, etc. unterscheiden zu können, ist es unabhängig davon erforderlich eine Kategorisierung des verwendeten Identifiers mittels [patient.identifier.type](https://ig.fhir.de/einwilligungsmanagement/stable/ContextIdentifierType.html) vorzunehmen.
 
-> [TODO: Nennen Sie die spezifischen Aspekte Ihres Moduls — die geführten
-> Datenkategorien und ihre Sensibilität, Risiken, die eine Pseudonymisierung
-> auf Profilebene nicht abdeckt, sowie sicherheits- oder datenschutzbezogene
-> SHALL/SHOULD/MAY-Anforderungen dieses Moduls an Implementierende, jeweils mit
-> dem adressierten Risiko. Benennen Sie verbleibende Risiken, die im
-> Systemdesign, im Betrieb oder per Policy behandelt werden müssen — oder
-> übernehmen Sie den Standardtext oben, wenn es keine gibt.]
-{: .ig-highlight .ig-highlight-grey}
+Die FHIR Consent Ressource enthält **keine Dokumenten-Scans und/oder Unterschriften**. Ist eine Übermittlung je nach Anwendungsfall erforderlich, sind separate Ressourcen gemäß den [Vorgaben der AG Einwilligungsmanagement](https://ig.fhir.de/einwilligungsmanagement/stable/DocumentReference.html) zu erstellen (Consent Bundles).

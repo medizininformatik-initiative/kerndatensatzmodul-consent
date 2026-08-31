@@ -36,7 +36,7 @@ standardized secondary use of routine clinical data for medical research.
 <div class="ig-highlight ig-highlight-green">
 <h5>Researchers</h5>
 <p>Scientists using KDS data for medical research.<br/>
-→ see <a href="researcher-guidance.html">Guidance for Researchers</a>.</p>
+→ see <a href="guidance.html">Guidance for Researchers</a>.</p>
 </div>
 
 ### Contents

@@ -299,12 +299,12 @@ pages:
 
   guidance.md:
     title: Anleitung
-    researcher-guidance.md: # OPTIONAL (0..1) — see docs/optional-pages.md
-      title: Anleitung für Forschende
     implementer-guidance.md:
       title: Anleitung für Implementierende
     uml-diagrams.md:
       title: UML-Diagramme
+    frageboegen.md:
+      title: Fragebögen
 
   # The only Conformance-cluster PAGE of this guide; the MII-wide conformance
   # topics are menu links to the Meta module (see input/includes/menu.xml).
@@ -313,14 +313,10 @@ pages:
 
   profiles.md:
     title: Profile
-  extensions.md: # OPTIONAL (0..1) — see docs/optional-pages.md
-    title: Extensions
   capability-statements.md:
     title: CapabilityStatements
   search-parameters.md: # OPTIONAL (0..1) — see docs/optional-pages.md
     title: Suchparameter
-  operations.md: # OPTIONAL (0..1) — see docs/optional-pages.md
-    title: Operationen
   logical-models.md:
     title: Logische Modelle
   value-sets.md: # OPTIONAL (0..1) — see docs/optional-pages.md
@@ -336,8 +332,6 @@ pages:
   changes.md:
     title: Änderungshistorie
 
-  metadata.md: # OPTIONAL (0..1) — see docs/optional-pages.md
-    title: Metadaten-Übersicht
   version-history.md:
     title: Versionierung
 
