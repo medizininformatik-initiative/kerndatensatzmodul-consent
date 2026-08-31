@@ -656,3 +656,9 @@ ig-stats -> migration-log/preflight-analysis.json  (Artefakte 0, Direktiven 0, I
 2026-08-31T18:12:11Z  INFO   5.2  sushi-pin-note  sushi-skeleton runs the TARGET's pinned SUSHI 3.20.1 (read from .github/workflows/ig-publisher.yml env SUSHI_VERSION per skill step-7 doctrine), not the skill block's 3.20.0 literal (that pin governs the goFSH derivation, already done)
 2026-08-31T18:12:11Z  INFO   5.2  sushi-skeleton  start  cmd=`npx --yes fsh-sushi@3.20.1 .`  raw_log=migration-log/sushi-skeleton.log
 2026-08-31T18:12:16Z  INFO   5.2  sushi-skeleton  done  cmd=`npx --yes fsh-sushi@3.20.1 .`  exit=0 raw_log=migration-log/sushi-skeleton.log raw_log_lines=42
+2026-08-31T18:14:29Z  INFO   5.3  transfer-artefacts  goFSH-derived FSH transferred structure-preserving: 3 profiles + 3 codesystems + 3 valuesets + 11 instances (5 examples + 6 SearchParameters); IDs/URLs byte-unchanged; goFSH index.txt not transferred (tool index, not an artefact)
+    aliases.fsh merged per DEFINITION: module 8 kept verbatim (module wins), template-only names appended, colliding $sct (module unversioned vs template SNOMED-versioned) resolved FOR THE MODULE definition — template rulesets referencing $sct now see the module value (logged; rulesets are not inserted into module profiles)
+    D-14: registry-only 6th example Example_MII_Consent_Einwilligung_1 derived from the PINNED 2026.0.0 tarball via the same goFSH pin + postprocess, added as a recorded target-only addition with tarball provenance (Gate-A artefact-completeness item)
+    comm -3 acceptance: target additions = D-14 instance + scaffold rulesets/parameters (named); no source path missing
+2026-08-31T18:14:29Z  INFO   5.3  sushi-transfer  start  cmd=`npx --yes fsh-sushi@3.20.1 .`  raw_log=migration-log/sushi-transfer.log
+2026-08-31T18:14:36Z  INFO   5.3  sushi-transfer  done  cmd=`npx --yes fsh-sushi@3.20.1 .`  exit=0 raw_log=migration-log/sushi-transfer.log raw_log_lines=70
