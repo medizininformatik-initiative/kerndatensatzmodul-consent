@@ -14,9 +14,9 @@ Die vorliegende Spezifikation beschreibt die FHIR-Repräsentation des Kerndatens
 
 | --- | --- |
 
-| Datum | 18.12.2025 |
+| Datum | 31.08.2026 |
 
-| Version | 2026.0.0 |
+| Version | 2027.0.0-ballot.rc1 |
 
 | Status | active |
 

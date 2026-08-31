@@ -2,7 +2,7 @@ Instance: mii-sp-consent-provisioncodetype
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/modul-consent/SearchParameter/mii-sp-consent-provisioncodetype"
-* version = "1.0.7"
+* version = "2027.0.0-ballot.rc1"
 * name = "MII_SP_Consent_ProvisionCodeType"
 * status = #active
 * date = "2023-05-09"

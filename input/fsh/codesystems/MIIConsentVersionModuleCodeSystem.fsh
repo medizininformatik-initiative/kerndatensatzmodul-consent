@@ -9,7 +9,7 @@ Description: "Dieses Code System enthält die OIDs der verschiedenen Versionen u
 * ^identifier.use = #official
 * ^identifier.system = "urn:ietf:rfc:3986"
 * ^identifier.value = "urn:oid:2.16.840.1.113883.3.1937.777.24.5.27"
-* ^version = "0.2.0"
+* ^version = "2027.0.0-ballot.rc1"
 * ^status = #draft
 * ^experimental = false
 * ^publisher = "Medizininformatik-Initiative"

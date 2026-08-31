@@ -3,23 +3,23 @@
 //
 // One place to switch the version of every conformance resource in the module.
 // basis's literals are replaced by this repository's placeholders:
-//   2026.0.1                                    → 2026.0.0
+//   2026.0.1                                    → 2027.0.0-ballot.rc1
 //   de.medizininformatikinitiative.kerndatensatz.base → …kerndatensatz.consent
 //   …/fhir/modul-base                           → …/fhir/modul-consent
-//   "2026" (effectivePeriod.start)              → 2026
+//   "2027" (effectivePeriod.start)              → 2026
 // Keep the values identical to `version:` / `packageId:` / `canonical:` in
 // sushi-config.yaml — the IG Publisher does not reconcile them for you.
 // ─────────────────────────────────────────────────────────────────────────────
 
 // Instance-path flavour (Instance: … InstanceOf: …, e.g. CapabilityStatement).
 RuleSet: Version
-* version = "2026.0.0"
+* version = "2027.0.0-ballot.rc1"
 * extension[+].url = $artifact-versionAlgorithm
 * extension[=].valueCoding = $version-algorithm#semver "SemVer"
 
 // Caret-path flavour (Profile:, Extension:, Logical:, ValueSet:, CodeSystem:).
 RuleSet: PR_CS_VS_Version
-* ^version = "2026.0.0"
+* ^version = "2027.0.0-ballot.rc1"
 * ^extension[+].url = $artifact-versionAlgorithm
 * ^extension[=].valueCoding = $version-algorithm#semver "SemVer"
 
@@ -36,7 +36,7 @@ RuleSet: CRMIPackageSource
 * meta.extension[=].extension[+].url = "packageId"
 * meta.extension[=].extension[=].valueId = "de.medizininformatikinitiative.kerndatensatz.consent"
 * meta.extension[=].extension[+].url = "version"
-* meta.extension[=].extension[=].valueString = "2026.0.0"
+* meta.extension[=].extension[=].valueString = "2027.0.0-ballot.rc1"
 * meta.extension[=].extension[+].url = "uri"
 * meta.extension[=].extension[=].valueUri = "https://www.medizininformatik-initiative.de/fhir/modul-consent"
 
@@ -45,7 +45,7 @@ RuleSet: CRMIPackageSourceDefinitionalResource
 * ^meta.extension[=].extension[+].url = "packageId"
 * ^meta.extension[=].extension[=].valueId = "de.medizininformatikinitiative.kerndatensatz.consent"
 * ^meta.extension[=].extension[+].url = "version"
-* ^meta.extension[=].extension[=].valueString = "2026.0.0"
+* ^meta.extension[=].extension[=].valueString = "2027.0.0-ballot.rc1"
 * ^meta.extension[=].extension[+].url = "uri"
 * ^meta.extension[=].extension[=].valueUri = "https://www.medizininformatik-initiative.de/fhir/modul-consent"
 
@@ -55,8 +55,8 @@ RuleSet: CRMIPackageSourceDefinitionalResource
 // the applicability START — do not add an end date.
 RuleSet: CRMIResourceEffectivePeriod
 * ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod"
-* ^extension[=].valuePeriod.start = "2026"
+* ^extension[=].valuePeriod.start = "2027"
 
 RuleSet: CRMIResourceEffectivePeriodInstance
 * extension[+].url = "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod"
-* extension[=].valuePeriod.start = "2026"
+* extension[=].valuePeriod.start = "2027"

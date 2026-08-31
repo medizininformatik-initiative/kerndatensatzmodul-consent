@@ -32,14 +32,14 @@
 # │                           `Core Dataset Base` → title: MII Implementation          │
 # │                           Guide Core Dataset Base.                                 │
 # │   KDS Modul Consent der Medizininformatik-Initiative (MII)  one-sentence English description of the module.          │
-# │   2026.0.0      MII CalVer YYYY.n.n, e.g. 2026.0.1 (NOT SemVer;          │
+# │   2027.0.0-ballot.rc1      MII CalVer YYYY.n.n, e.g. 2026.0.1 (NOT SemVer;          │
 # │                           see the MII Module Release Workflow). Also pins the      │
 # │                           versioned canonicals in input/fsh/rulesets/.             │
-# │   2026         the release sequence year, e.g. 2026.                    │
-# │   2025-12-18        ISO date YYYY-MM-DD; go-publish.yml requires it to       │
+# │   2027         the release sequence year, e.g. 2026.                    │
+# │   2026-08-31        ISO date YYYY-MM-DD; go-publish.yml requires it to       │
 # │                           equal the publication date.                              │
 # │   2019  first copyright year, e.g. 2019.                       │
-# │   2025-12-18       ISO date this release was approved; see docs/release.md. │
+# │   2026-08-31       ISO date this release was approved; see docs/release.md. │
 # │   info@medizininformatik-initiative.de contact email of the module author.                      │
 # │   C16735      NCI Thesaurus code for the module's topic (basis        │
 # │                           declares seven: C15607, C154624, C25218, C16960,         │
@@ -50,9 +50,9 @@
 # │   medizininformatik-initiative / kerndatensatzmodul-consent  (publication-request.json, go-publish.yml)       │
 # │                           the org/repo hosting this module; GitHub Pages under     │
 # │                           the creating org is the publication website.             │
-# │   KDS Modul Consent Release 2026.0.0 (sandbox migration demonstrator) (publication-request.json) one-line description of the   │
+# │   KDS Modul Consent 2027.0.0-ballot.rc1 (publication-request.json) one-line description of the   │
 # │                           release being published.                                 │
-# │   Medizininformatik-Initiative - KDS Modul Consent (sandbox migration demonstrator)  (publication-request.json) the description shown in    │
+# │   Medizininformatik-Initiative - KDS Modul Consent  (publication-request.json) the description shown in    │
 # │                           the FHIR IG registry entry.                              │
 # │                                                                                    │
 # │ ── OPTIONAL (inside commented-out blocks — replace only if you enable them) ──     │
@@ -92,17 +92,17 @@ description: "KDS Modul Consent der Medizininformatik-Initiative (MII)"
 status: active # draft | active | retired | unknown
 # MII modules use CalVer YYYY.n.n (e.g. 2026.0.1) per the MII Module Release
 # Workflow — NOT SemVer. Only the template tooling repos use SemVer.
-version: "2026.0.0"
+version: "2027.0.0-ballot.rc1"
 # packageId pattern per the MII naming convention:
 # de.medizininformatikinitiative.kerndatensatz.<slug> (for example,
 # kerndatensatz-basis uses de.medizininformatikinitiative.kerndatensatz.base).
 packageId: de.medizininformatikinitiative.kerndatensatz.consent
 fhirVersion: 4.0.1 # https://www.hl7.org/fhir/valueset-FHIR-version.html
 copyrightYear: "2019+"
-releaseLabel: Release
+releaseLabel: ballot
 license: CC-BY-4.0 # https://www.hl7.org/fhir/valueset-spdx-license.html
 # Must equal the publication date; go-publish.yml validates this.
-date: "2025-12-18"
+date: "2026-08-31"
 jurisdiction: urn:iso:std:iso:3166#DE "Germany" # https://www.hl7.org/fhir/valueset-jurisdiction.html
 # NUM-DIZ takes over IG development and maintenance when MII funding ends
 # (end-2026), so NUM-DIZ is the publisher shown in the footer's
@@ -130,7 +130,7 @@ extension:
   # Date this release was approved by whoever governs the module
   # (for example, kerndatensatz-basis records 2024-03-07).
   - url: http://hl7.org/fhir/StructureDefinition/resource-approvalDate
-    valueDate: "2025-12-18"
+    valueDate: "2026-08-31"
   - url: http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability
     valueCode: shareable
   - url: http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability
@@ -147,14 +147,14 @@ extension:
       - url: packageId
         valueId: de.medizininformatikinitiative.kerndatensatz.consent
       - url: version
-        valueString: "2026.0.0"
+        valueString: "2027.0.0-ballot.rc1"
       - url: uri
         valueUri: https://www.medizininformatik-initiative.de/fhir/modul-consent
   # Year this release sequence became effective
   # (for example, kerndatensatz-basis records "2026").
   - url: http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod
     valuePeriod:
-      start: "2026"
+      start: "2027"
   - url: http://hl7.org/fhir/StructureDefinition/artifact-author
     valueContactDetail:
       telecom:

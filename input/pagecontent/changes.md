@@ -85,6 +85,18 @@ werden können.</p>
      Historische Abschnitte behalten das Format der Quelle (keine nachträgliche
      Keep-a-Changelog-Umgruppierung veröffentlichter Einträge). -->
 
+#### Version 2027.0.0-ballot.rc1
+
+Datum 31.08.2026
+
+* **Geändert** — Migration des Leitfadens auf das
+  [MII-KDS-Modul-Template](https://github.com/medizininformatik-initiative/mii-kds-module-template)
+  v0.13.2 (IG-Publisher-Toolchain, DE-first-Sprachmodell, Template-Seitenstruktur);
+  **inhaltlich identisch mit Release 2026.0.0** (Profile, Terminologien und
+  Beispiele unverändert; Nachweis: `migration-log/` auf diesem Branch). Alle
+  Artefakt-Versionen auf die Paketversion 2027.0.0-ballot.rc1 harmonisiert
+  (zuvor je Artefakt abweichend, z. B. 1.0.9/1.6.0/1.1.0).
+
 #### Version 2026.0.0
 
 Datum 18.12.2025

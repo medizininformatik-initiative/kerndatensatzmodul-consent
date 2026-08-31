@@ -6,7 +6,7 @@ Description: "Dieses ValueSet enthält die zulässigen Werte für den Signaturty
 * ^extension.url = "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod"
 * ^extension.valuePeriod.start = "2022-02-11T10:27:00+01:00"
 * ^url = "https://www.medizininformatik-initiative.de/fhir/modul-consent/ValueSet/mii-vs-consent-signaturetypes"
-* ^version = "1.0.1"
+* ^version = "2027.0.0-ballot.rc1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2025-12-03"

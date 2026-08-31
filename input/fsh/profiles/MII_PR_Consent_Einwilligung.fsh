@@ -4,7 +4,7 @@ Id: e0e166b4-0f77-478d-9062-de0034d98ce0
 Title: "Profile - MI-I - Consent - Einwilligung"
 Description: "Dieses Profil beschreibt eine Einwilligung in der Medizininformatik-Initiative."
 * ^url = "https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-einwilligung"
-* ^version = "1.0.9"
+* ^version = "2027.0.0-ballot.rc1"
 * ^status = #active
 * ^date = "2025-12-03"
 * id MS

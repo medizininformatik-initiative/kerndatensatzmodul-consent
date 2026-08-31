@@ -4,7 +4,7 @@ Title: "MII Consent: Answer CodeSystem"
 Description: "This CodeSystem contains the possible answers to the questions of the MII Consent."
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
 * ^url = "urn:oid:2.16.840.1.113883.3.1937.777.24.5.2"
-* ^version = "1.6.0"
+* ^version = "2027.0.0-ballot.rc1"
 * ^status = #active
 * ^experimental = false
 * ^date = "2021-03-23"

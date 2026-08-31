@@ -38,7 +38,7 @@ Um die in diesem ValueSet enthaltenen Codes in IHE BPPC verwenden zu können, is
 * ^identifier.use = #official
 * ^identifier.system = "urn:ietf:rfc:3986"
 * ^identifier.value = "urn:oid:2.16.840.1.113883.3.1937.777.24.11.36"
-* ^version = "1.0.3"
+* ^version = "2027.0.0-ballot.rc1"
 * ^status = #active
 * ^experimental = false
 * ^publisher = "MII Task Force Consent Umsetzung"

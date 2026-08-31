@@ -11,6 +11,14 @@ template structure for the module (Gate D: TF KDS / AG IOP / NSG).
 
 ## Summary — read this first (for everyone)
 
+* **Version: `2027.0.0-ballot.rc1`** (operator instruction, 2026-08-31 — after the equivalence
+  evidence below was produced AT the source version 2026.0.0, the branch was re-versioned as a
+  separate, content-neutral commit): package + IG + **every conformance resource** now carry the
+  package version (superseded per-resource drift recorded in the run log: SDs 1.0.9/1.0.8/1.0.8,
+  CS 1.1.0/0.2.0/1.6.0, VS 1.0.1/1.6.0/1.0.3, SPs 1.0.7), `releaseLabel: ballot`,
+  sequence 2027, date/approval stand-ins 2026-08-31; the changelog carries the new version
+  section in both languages. Content is **identical to release 2026.0.0**.
+
 * **Source:** tag `2026.0.0` = `792f9f3e` (== `master`; == registry `dist-tags.latest`; == the only
   Simplifier guide version). Shape **B**: 20 raw Forge XML/JSON resources, no build scaffolding, no CI;
   the whole narrative (18 pages) existed ONLY on Simplifier.
@@ -51,7 +59,7 @@ Everything is in `migration-log/` on this branch: `run.log` (the protocol below 
 |---|---|---|---|---|
 | ①-1 | **D-0 GO**: the VENUE half is decided — the branch sits on the official repository (operator instruction, 2026-08-31); the OWNER half stays open: review Gates A–D and decide the MERGE (merging adopts the template structure for the module) | Owners (Stäubert/Bialke, TF CU) | The branch stays an open draft PR; the module's published state is untouched | review · deleting the branch reverts everything |
 | ①-2 | **D-1 licence field**: `license: CC-BY-4.0` now machine-readable in sushi-config (the release never declared one; LICENSE file + guide prose agree) | Owners | Without sign-off, published metadata would gain a field the release lacked | 1 line · trivial |
-| ①-3 | **D-2 baseline**: migrated = tag 2026.0.0; the develop/rc-line (18 commits ahead, rc-1..rc-4, parent 2.0.3) was deliberately NOT migrated | Owners | The migration re-runs cheaply on a newer tag when cut | ~½ day re-run · n/a |
+| ①-3 | **D-2 baseline + version**: migrated CONTENT = tag 2026.0.0 (the develop/rc-line — 18 commits ahead, rc-1..rc-4, parent 2.0.3 — deliberately NOT migrated); target VERSION = **2027.0.0-ballot.rc1** (operator instruction; per-resource versions harmonized to it — confirm the ballot-RC versioning fits the TF-CU 2027 schedule) | Owners | The ballot-RC version ships; content stays 2026.0.0-identical | ~½ day re-run on a newer tag · version = 1 commit |
 | ①-4 | **D-4 parent snapshots**: `de.einwilligungsmanagement` ships 0 snapshots (2.0.2 AND 2.0.3) → CI prebuild (`scripts/generate-parent-snapshots.sh`, official HL7 generator, cache entry `2.0.2-snapshots`); 3 of 21 differentials REFUSED by the generator (TemplateFrame, TemplateModule, QuestionnaireComposed — none a parent here) | Operator chose; owners informed; **upstream escalation to the einwilligungsmanagement maintainers open** | Without the prebuild no build anywhere resolves the parent | shipped · revertible |
 | ①-5 | **D-5 ids**: profile UUID ids + ART-DECOR VS/CS ids kept verbatim (guardrail); the 6 id-LESS SearchParameters got minted ids = their canonical tails (`mii-sp-consent-*`) | Owners confirm minted ids | id/url-mismatch QA errors stay (they are source-inherent for SD/VS/CS) | n/a · minted ids trivially renameable |
 | ①-6 | **D-6 status**: `active` (guide index) over `draft` (Simplifier IG skeleton) — both readings in the ledger | Owners | — | 1 line |
