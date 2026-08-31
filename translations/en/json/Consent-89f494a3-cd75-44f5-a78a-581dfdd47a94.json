@@ -1,0 +1,55 @@
+{
+  "id" : "Consent-89f494a3-cd75-44f5-a78a-581dfdd47a94",
+  "baseLang" : "de",
+  "languages" : [{
+    "targetLang" : "en",
+    "entries" : [{
+      "id" : "Reference.display",
+      "context" : "Reference.display",
+      "source" : "Klinikum Musterstadt",
+      "target" : null
+    },
+    {
+      "id" : "CodeableConcept.text",
+      "context" : "CodeableConcept.text",
+      "source" : "siehe eingebettetes XACML",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "MDAT_erheben",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "MDAT_speichern_verarbeiten",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "BIOMAT_erheben",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "MDAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "BIOMAT_lagern_verarbeiten",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "BIOMAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU",
+      "target" : null
+    }]
+  }]
+}

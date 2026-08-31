@@ -1,6 +1,7 @@
 Instance: 5143266b-8d60-4b28-8ee9-635140ffa5bb
-InstanceOf: MII_PR_Consent_Einwilligung
+InstanceOf: Consent
 Usage: #example
+* meta.profile = "https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-einwilligung"
 * meta.lastUpdated = "2025-12-04T15:34:40.067+01:00"
 * extension.extension[0].url = "domain"
 * extension.extension[=].valueReference.reference = "ResearchStudy/c946ae17-e3e6-4178-b5ea-15f95aaeeeb4"

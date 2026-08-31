@@ -1,0 +1,651 @@
+
+# CodeSystem.name
+#: CodeSystem.name
+msgid "MII CS Consent Policy"
+msgstr ""
+
+# CodeSystem.title
+#: CodeSystem.title
+msgid "MII Consent: Policy CodeSystem"
+msgstr ""
+
+# CodeSystem.publisher
+#: CodeSystem.publisher
+msgid "NUM-DIZ"
+msgstr "NUM-DIZ"
+
+# ContactDetail.name
+#: ContactDetail.name
+msgid "NUM-DIZ"
+msgstr ""
+
+# CodeSystem.description
+#: CodeSystem.description
+msgid "Codesystem mit Consent-Policy-Codes zur interoperablen Operationalisierung bzw. Durchsetzung (Enforcement) von Consent Informationen des MII Broad Consent"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Germany"
+msgstr ""
+
+# CodeSystem.property.description
+#: CodeSystem.property.description
+msgid "A property that indicates the duration of validity of a concept. The string is a duration as ISO 8601:2004 string, ref. to http://hl7.org/fhir/iso-8601-date."
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "Patientendaten erheben, speichern, nutzen"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "IDAT erheben"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "IDAT speichern, verarbeiten"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "IDAT zusammenfuehren Dritte"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "IDAT bereitstellen "
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "MDAT erheben"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "MDAT speichern, verarbeiten"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "MDAT wissenschaftlich nutzen"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "MDAT zusammenfuehren Dritte"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "Rekontaktierung Ergebnisse erheblicher Bedeutung"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "Patientendaten retrospektiv verarbeiten, nutzen"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "MDAT retrospektiv speichern verarbeiten"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "MDAT retrospektiv wissenschaftlich nutzen"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "MDAT retrospektiv zusammenfuehren Dritte"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "Patientendaten Weitergabe non DSGVO NIVEAU"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "MDAT wissenschaftlich nutzen ohne EU DSGVO NIVEAU"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "Krankenkassendaten retrospektiv uebertragen, speichern, nutzen"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "KKDAT 5J retrospektiv uebertragen"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "KKDAT 5J retrospektiv speichern verarbeiten"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "KKDAT 5J retrospektiv wissenschaftlich nutzen"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "KKDAT 5J retrospektiv uebertragen KVNR"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "KKDAT prospektiv uebertragen speichern nutzen"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "KKDAT 5J prospektiv uebertragen"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "KKDAT 5J prospektiv speichern verarbeiten"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "KKDAT 5J prospektiv wissenschaftlich nutzen"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "KKDAT 5J prospektiv uebertragen KVNR"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "Biomaterial erheben, lagern, nutzen"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "BIOMAT erheben"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "BIOMAT lagern verarbeiten"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "BIOMAT Eigentum übertragen"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "BIOMAT wissenschaftlich nutzen"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "BIOMAT Analysedaten zusammenfuehren Dritte"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "Biomaterial Zusatzentnahme"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "BIOMAT Zusatzmengen entnehmen"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "Biomaterial retrospektiv speichern, nutzen"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "BIOMAT retrospektiv lagern verarbeiten"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "BIOMAT retrospektiv wissenschaftlich nutzen"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "BIOMAT retrospektiv Analysedaten zusammenfuehren Dritte"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "Biomaterial Weitergabe non EU DSGVO NIVEAU"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "BIOMAT bereitstellen ohne EU DSGVO NIVEAU"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "Rekontaktierung Ergänzungen"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "Rekontaktierung Verknüpfung Datenbanken"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "Rekontaktierung weitere Erhebung"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "Rekontaktierung weitere Studien"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "Rekontaktierung Zusatzbefund"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "Z1 GECCO83 Nutzung NUM/CODEX"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "MDAT GECCO83 komplettieren einmalig"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "MDAT GECCO83 erheben"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "MDAT GECCO83 bereitstellen NUM/CODEX"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "MDAT GECCO83 speichern verarbeiten NUM/CODEX"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "MDAT GECCO83 wissenschaftlich nutzen COVID 19 Forschung"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "MDAT GECCO83 wissenschaftlich nutzen Pandemie Forschung"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "MDAT GECCO83 wissenschaftlich nutzen NUM/CODEX"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "Z1 GECCO83 Weitergabe NUM/CODEX non EU DSGVO NIVEAU"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "MDAT GECCO83 bereitstellen NUM/CODEX ohne EU DSGVO NIVEAU"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "Z2 Patientendaten erheben, nutzen, Kontaktierung im acribis-Projekt"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "PATDAT erheben, nutzen, Kontaktierung im acribis-Projekt"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "Z2 IDAT Melderegister abfragen, speichern, verarbeiten im acribis-Projekt"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "Anschrift und Vitalstatus Melderegister abfragen, speichern, verarbeiten im acribis-Projekt"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "Z2 MDAT Hausarzt erheben, speichern, verarbeiten, nutzen im acribis-Projekt"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "MDAT Hausarzt erheben, speichern, verarbeiten, nutzen im acribis-Projekt"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "Z3 PROMDAT Patientenbefragung"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "PROMDAT Patientenbefragung erheben"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "PROMDAT wissenschaftlich nutzen"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "Rekontaktierung PROM Studien"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "Z4 Datenschutzerklärung (SNID)"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "IDAT speichern, verabeiten (SNID)"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "CONSENT speichern, verarbeiten (SNID)"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "IDAT Einsicht Monitoring (SNID)"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "MDAT erheben (SNID)"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "MDAT speichern, verarbeiten (SNID)"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "MDAT bereitstellen (SNID)"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "MDAT Einsicht Monitoring (SNID)"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "BIOMAT Eigentum übertragen_NUM (SNID)"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "CONSENT BC bereitstellen (SNID)"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "CONSENT BC speichern, verarbeiten (SNID)"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "Z4 Einsicht ePa (SNID)"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "IDAT ePA bereitstellen (SNID)"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "MDAT ePA erheben (SNID)"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "MDAT ePA speichern, verarbeiten (SNID)"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "Z4 Krebsregister (SNID)"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "MDAT KReg speichern, verarbeiten (SNID)"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "IDAT KReg KVNR speichern, verarbeiten (SNID)"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "Z4 KRegDAT retrospektiv (SNID)"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "IDAT KVNR KReg bereitstellen retrospektiv (SNID)"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "MDAT KReg erheben retrospektiv (SNID)"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "Z4 KRegDAT (SNID)"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "IDAT KVNR KReg bereitstellen prospektiv (SNID)"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "MDAT KReg erheben prospektiv (SNID)"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "Z4 Weitergabe Dritte (SNID)"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "MDAT SNID bereitstellen Dritte"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "BIOMAT SNID bereitstellen Dritte"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "Z4 Rekontaktierung Patient (SNID)"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "Rekontaktierung Gesundheitszustand nach Studienabschluss (SNID)"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "Z4_Rekontaktierung_FU"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "Rekontaktierung weitere Studien (SNID)"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "IDAT SNID bereitstellen OE"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "Z4 Erhebung Hausarzt (SNID)"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "MDAT Hausarzt erheben, speichern, verarbeiten, nutzen (SNID)"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "IDAT bereitstellen Hausarzt (SNID)"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "Z5 PATDAT, BIOMAT, PHENO erheben, speichern, gewinnen, lagern, zusätzlich nutzen (DZPG)"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "MDAT Zusatzdaten PHAENO erheben (DZPG)"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "MDAT speichern verarbeiten (DZPG)"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "MDAT wissenschaftlich nutzen (DZPG)"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "MDAT zusammenführen mit Dritten (DZPG)"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "BIOMAT Zusatzmaterial entnehmen (DZPG)"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "BIOMAT Zusatzmaterial lagern verarbeiten (DZPG)"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "BIOMAT wissenschaftlich nutzen (DZPG)"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "BIOMAT zusammenführen mit Dritten (DZPG)"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "Z5 NEURODAT, IMGDAT erheben, speichern, zusätzlich nutzen (DZPG)"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "IMGDAT erheben (DZPG)"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "IMGDAT speichern, verarbeiten (DZPG)"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "IMGDAT wissenschaftlich nutzen (DZPG)"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "IMGDAT zusammenführen mit Dritten (DZPG)"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "NEURODAT erheben (DZPG)"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "NEURODAT speichern, verarbeiten (DZPG)"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "NEURODAT wissenschaftlich nutzen (DZPG)"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "NEURODAT zusammenführen mit Dritten (DZPG)"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "Z5 IPSC Verbunddaten gewinnen, speichern, nutzen (DZPG)"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "IPSC Verbunddaten gewinnen (DZPG)"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "IPSC Verbunddaten speichern, verarbeiten (DZPG)"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "IPSC Verbunddaten wissenschaftlich nutzen (DZPG)"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "IPSC Verbunddaten zusammenführen mit Dritten (DZPG)"
+msgstr ""
+

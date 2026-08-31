@@ -1,0 +1,37 @@
+{
+  "id" : "Provenance-55219d12-6245-4de4-8b50-ddf6f16a789b",
+  "baseLang" : "de",
+  "languages" : [{
+    "targetLang" : "en",
+    "entries" : [{
+      "id" : "Reference.display",
+      "context" : "Reference.display",
+      "source" : "Snakeoil Soft Consent Manager 2021",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "Consent Signature",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "Consent Witness Signature",
+      "target" : null
+    },
+    {
+      "id" : "Reference.display",
+      "context" : "Reference.display",
+      "source" : "Dr. F. Müller",
+      "target" : null
+    },
+    {
+      "id" : "Reference.display",
+      "context" : "Reference.display",
+      "source" : "Krankenhaus Musterstadt",
+      "target" : null
+    }]
+  }]
+}

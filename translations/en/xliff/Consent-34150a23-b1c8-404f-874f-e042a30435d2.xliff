@@ -1,0 +1,64 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="de" target-language="en" id="Consent-34150a23-b1c8-404f-874f-e042a30435d2" original="Resource Consent-34150a23-b1c8-404f-874f-e042a30435d2" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="Consent-34150a23-b1c8-404f-874f-e042a30435d2" resname="Reference.display">
+             <notes>
+               <note id="n1">Reference.display</note>
+             </notes>
+        <source>Klinikum Musterstadt</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Consent-34150a23-b1c8-404f-874f-e042a30435d2" resname="CodeableConcept.text">
+             <notes>
+               <note id="n1">CodeableConcept.text</note>
+             </notes>
+        <source>siehe eingebettetes XACML</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Consent-34150a23-b1c8-404f-874f-e042a30435d2" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>MDAT erheben</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Consent-34150a23-b1c8-404f-874f-e042a30435d2" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>MDAT speichern verarbeiten</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Consent-34150a23-b1c8-404f-874f-e042a30435d2" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>MDAT wissenschaftlich nutzen EU DSGVO NIVEAU</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Consent-34150a23-b1c8-404f-874f-e042a30435d2" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>BIOMAT erheben</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Consent-34150a23-b1c8-404f-874f-e042a30435d2" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>BIOMAT lagern verarbeiten</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Consent-34150a23-b1c8-404f-874f-e042a30435d2" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>BIOMAT wissenschaftlich nutzen EU DSGVO NIVEAU</source>
+        <target></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

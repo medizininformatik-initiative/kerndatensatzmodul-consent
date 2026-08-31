@@ -1,0 +1,46 @@
+
+# ValueSet.name
+#: ValueSet.name
+msgid "MII_VS_Consent_SignatureTypes"
+msgstr ""
+
+# ValueSet.title
+#: ValueSet.title
+msgid "MII Consent: Signature Types"
+msgstr ""
+
+# ValueSet.publisher
+#: ValueSet.publisher
+msgid "NUM-DIZ"
+msgstr "NUM-DIZ"
+
+# ContactDetail.name
+#: ContactDetail.name
+msgid "NUM-DIZ"
+msgstr ""
+
+# ValueSet.description
+#: ValueSet.description
+msgid "Dieses ValueSet enthält die zulässigen Werte für den Signaturtyp im Kontext des MI-I Consent."
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Germany"
+msgstr ""
+
+# ValueSet.compose.include.concept.display
+#: ValueSet.compose.include.concept.display
+msgid "Consent Signature"
+msgstr ""
+
+# ValueSet.compose.include.concept.display
+#: ValueSet.compose.include.concept.display
+msgid "Consent Witness Signature"
+msgstr ""
+
+# ValueSet.compose.include.concept.display
+#: ValueSet.compose.include.concept.display
+msgid "Verification Signature"
+msgstr ""
+

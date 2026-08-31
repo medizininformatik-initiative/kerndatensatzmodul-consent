@@ -1,0 +1,103 @@
+{
+  "id" : "ValueSet-2.16.840.1.113883.3.1937.777.24.11.30--20210323234509",
+  "baseLang" : "de",
+  "languages" : [{
+    "targetLang" : "en",
+    "entries" : [{
+      "id" : "ValueSet.name",
+      "context" : "ValueSet.name",
+      "source" : "MII_VS_Consent_Answer",
+      "target" : null
+    },
+    {
+      "id" : "ValueSet.title",
+      "context" : "ValueSet.title",
+      "source" : "MII Consent: Answer ValueSet",
+      "target" : null
+    },
+    {
+      "id" : "ValueSet.publisher",
+      "context" : "ValueSet.publisher",
+      "source" : "NUM-DIZ",
+      "target" : "NUM-DIZ"
+    },
+    {
+      "id" : "ContactDetail.name",
+      "context" : "ContactDetail.name",
+      "source" : "NUM-DIZ",
+      "target" : null
+    },
+    {
+      "id" : "ValueSet.description",
+      "context" : "ValueSet.description",
+      "source" : "This ValueSet contains the possible answers to the questions of the MII Consent.",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "Germany",
+      "target" : null
+    },
+    {
+      "id" : "ValueSet.compose.include.concept.display",
+      "context" : "ValueSet.compose.include.concept.display",
+      "source" : "unbekannt",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "Synonym",
+      "target" : null
+    },
+    {
+      "id" : "ValueSet.compose.include.concept.designation.value",
+      "context" : "ValueSet.compose.include.concept.designation.value",
+      "source" : "unbekannt",
+      "target" : null
+    },
+    {
+      "id" : "ValueSet.compose.include.concept.designation.value",
+      "context" : "ValueSet.compose.include.concept.designation.value",
+      "source" : "unknown",
+      "target" : null
+    },
+    {
+      "id" : "ValueSet.compose.include.concept.display",
+      "context" : "ValueSet.compose.include.concept.display",
+      "source" : "nicht gültig",
+      "target" : null
+    },
+    {
+      "id" : "ValueSet.compose.include.concept.designation.value",
+      "context" : "ValueSet.compose.include.concept.designation.value",
+      "source" : "nicht gültig",
+      "target" : null
+    },
+    {
+      "id" : "ValueSet.compose.include.concept.designation.value",
+      "context" : "ValueSet.compose.include.concept.designation.value",
+      "source" : "not valid",
+      "target" : null
+    },
+    {
+      "id" : "ValueSet.compose.include.concept.display",
+      "context" : "ValueSet.compose.include.concept.display",
+      "source" : "gültig",
+      "target" : null
+    },
+    {
+      "id" : "ValueSet.compose.include.concept.designation.value",
+      "context" : "ValueSet.compose.include.concept.designation.value",
+      "source" : "gültig",
+      "target" : null
+    },
+    {
+      "id" : "ValueSet.compose.include.concept.designation.value",
+      "context" : "ValueSet.compose.include.concept.designation.value",
+      "source" : "valid",
+      "target" : null
+    }]
+  }]
+}

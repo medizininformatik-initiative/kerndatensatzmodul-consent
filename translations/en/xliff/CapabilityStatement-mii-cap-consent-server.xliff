@@ -1,0 +1,50 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="de" target-language="en" id="CapabilityStatement-mii-cap-consent-server" original="Resource CapabilityStatement-mii-cap-consent-server" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="CapabilityStatement-mii-cap-consent-server" resname="CapabilityStatement.name">
+             <notes>
+               <note id="n1">CapabilityStatement.name</note>
+             </notes>
+        <source>MII_CAP_Consent_Server</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CapabilityStatement-mii-cap-consent-server" resname="CapabilityStatement.title">
+             <notes>
+               <note id="n1">CapabilityStatement.title</note>
+             </notes>
+        <source>MII KDS Modul Consent — CapabilityStatement (Migrationsvorschlag)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CapabilityStatement-mii-cap-consent-server" resname="CapabilityStatement.publisher">
+             <notes>
+               <note id="n1">CapabilityStatement.publisher</note>
+             </notes>
+        <source>NUM-DIZ</source>
+        <target>NUM-DIZ</target>
+      </trans-unit>
+      <trans-unit id="CapabilityStatement-mii-cap-consent-server" resname="ContactDetail.name">
+             <notes>
+               <note id="n1">ContactDetail.name</note>
+             </notes>
+        <source>NUM-DIZ</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CapabilityStatement-mii-cap-consent-server" resname="CapabilityStatement.description">
+             <notes>
+               <note id="n1">CapabilityStatement.description</note>
+             </notes>
+        <source>MIGRATION-GENERATED PROPOSAL (not part of the published 2026.0.0 release): server capabilities derived from the module's profiles and search parameters during the migration onto the MII KDS module template. The module team confirms, amends or deletes this artefact at Gate A.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CapabilityStatement-mii-cap-consent-server" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Germany</source>
+        <target></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

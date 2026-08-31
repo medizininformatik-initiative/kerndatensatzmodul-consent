@@ -1,6 +1,7 @@
 Instance: 8a3d1799-2463-405e-b49c-6a16c8692b01
-InstanceOf: MII_PR_Consent_DocumentReference
+InstanceOf: DocumentReference
 Usage: #example
+* meta.profile = "https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-documentreference"
 * meta.lastUpdated = "2020-12-11T09:09:07.5320994+00:00"
 * status = #current
 // fhir_comments (source XML comment on status.fhir_comments): " FHIR will es "

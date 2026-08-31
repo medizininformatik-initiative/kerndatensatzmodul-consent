@@ -1,4 +1,4 @@
-Instance: MII-SP-Consent-ProvisionCodeType
+Instance: mii-sp-consent-provisioncodetype
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/modul-consent/SearchParameter/mii-sp-consent-provisioncodetype"

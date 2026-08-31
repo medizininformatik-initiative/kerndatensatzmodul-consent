@@ -1,4 +1,4 @@
-Instance: MII-SP-Consent-PolicyUri
+Instance: mii-sp-consent-policyuri
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/modul-consent/SearchParameter/mii-sp-consent-policyuri"

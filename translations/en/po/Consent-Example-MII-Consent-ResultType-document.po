@@ -1,0 +1,41 @@
+
+# Reference.display
+#: Reference.display
+msgid "Klinikum Musterstadt"
+msgstr ""
+
+# CodeableConcept.text
+#: CodeableConcept.text
+msgid "siehe eingebettetes XACML"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "MDAT_erheben"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "MDAT_speichern_verarbeiten"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "BIOMAT_erheben"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "MDAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "BIOMAT_lagern_verarbeiten"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "BIOMAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU"
+msgstr ""
+

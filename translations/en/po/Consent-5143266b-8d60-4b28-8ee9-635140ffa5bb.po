@@ -1,0 +1,141 @@
+
+# Reference.display
+#: Reference.display
+msgid "MII"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "IDAT erheben"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "KKDAT 5J retrospektiv speichern verarbeiten"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "BIOMAT wissenschaftlich nutzen EU DSGVO NIVEAU"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "KKDAT 5J retrospektiv wissenschaftlich nutzen"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "BIOMAT Analysedaten zusammenfuehren Dritte"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Rekontaktierung Zusatzbefund"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "KKDAT 5J prospektiv wissenschaftlich nutzen"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "BIOMAT lagern verarbeiten"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "KKDAT 5J retrospektiv uebertragen"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "KKDAT 5J retrospektiv uebertragen KVNR"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "MDAT erheben"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "KKDAT 5J prospektiv speichern verarbeiten"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "MDAT wissenschaftlich nutzen EU DSGVO NIVEAU"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Rekontaktierung Verknüpfung Datenbanken"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Rekontaktierung weitere Studien"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "IDAT bereitstellen EU DSGVO NIVEAU"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "BIOMAT Eigentum übertragen"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "IDAT speichern, verarbeiten"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "MDAT speichern, verarbeiten"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "BIOMAT erheben"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Rekontaktierung Ergebnisse erheblicher Bedeutung"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "KKDAT 5J prospektiv uebertragen KVNR"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "BIOMAT Zusatzmengen entnehmen"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Rekontaktierung weitere Erhebung"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "IDAT zusammenfuehren Dritte"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "MDAT zusammenfuehren Dritte"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "KKDAT 5J prospektiv uebertragen"
+msgstr ""
+

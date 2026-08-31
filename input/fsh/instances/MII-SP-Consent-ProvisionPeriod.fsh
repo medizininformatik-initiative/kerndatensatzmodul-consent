@@ -1,4 +1,4 @@
-Instance: MII-SP-Consent-ProvisionPeriod
+Instance: mii-sp-consent-provisionperiod
 InstanceOf: SearchParameter
 Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/modul-consent/SearchParameter/mii-sp-consent-provisionperiod"

@@ -1,0 +1,71 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="de" target-language="en" id="ValueSet-88464c5b-5338-4c2b-9c07-b42fef2ada64" original="Resource ValueSet-88464c5b-5338-4c2b-9c07-b42fef2ada64" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="ValueSet-88464c5b-5338-4c2b-9c07-b42fef2ada64" resname="ValueSet.name">
+             <notes>
+               <note id="n1">ValueSet.name</note>
+             </notes>
+        <source>MII_VS_Consent_SignatureTypes</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-88464c5b-5338-4c2b-9c07-b42fef2ada64" resname="ValueSet.title">
+             <notes>
+               <note id="n1">ValueSet.title</note>
+             </notes>
+        <source>MII Consent: Signature Types</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-88464c5b-5338-4c2b-9c07-b42fef2ada64" resname="ValueSet.publisher">
+             <notes>
+               <note id="n1">ValueSet.publisher</note>
+             </notes>
+        <source>NUM-DIZ</source>
+        <target>NUM-DIZ</target>
+      </trans-unit>
+      <trans-unit id="ValueSet-88464c5b-5338-4c2b-9c07-b42fef2ada64" resname="ContactDetail.name">
+             <notes>
+               <note id="n1">ContactDetail.name</note>
+             </notes>
+        <source>NUM-DIZ</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-88464c5b-5338-4c2b-9c07-b42fef2ada64" resname="ValueSet.description">
+             <notes>
+               <note id="n1">ValueSet.description</note>
+             </notes>
+        <source>Dieses ValueSet enthält die zulässigen Werte für den Signaturtyp im Kontext des MI-I Consent.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-88464c5b-5338-4c2b-9c07-b42fef2ada64" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Germany</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-88464c5b-5338-4c2b-9c07-b42fef2ada64" resname="ValueSet.compose.include.concept.display">
+             <notes>
+               <note id="n1">ValueSet.compose.include.concept.display</note>
+             </notes>
+        <source>Consent Signature</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-88464c5b-5338-4c2b-9c07-b42fef2ada64" resname="ValueSet.compose.include.concept.display">
+             <notes>
+               <note id="n1">ValueSet.compose.include.concept.display</note>
+             </notes>
+        <source>Consent Witness Signature</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-88464c5b-5338-4c2b-9c07-b42fef2ada64" resname="ValueSet.compose.include.concept.display">
+             <notes>
+               <note id="n1">ValueSet.compose.include.concept.display</note>
+             </notes>
+        <source>Verification Signature</source>
+        <target></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

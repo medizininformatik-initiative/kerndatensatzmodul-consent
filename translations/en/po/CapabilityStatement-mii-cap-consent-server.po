@@ -1,0 +1,31 @@
+
+# CapabilityStatement.name
+#: CapabilityStatement.name
+msgid "MII_CAP_Consent_Server"
+msgstr ""
+
+# CapabilityStatement.title
+#: CapabilityStatement.title
+msgid "MII KDS Modul Consent — CapabilityStatement (Migrationsvorschlag)"
+msgstr ""
+
+# CapabilityStatement.publisher
+#: CapabilityStatement.publisher
+msgid "NUM-DIZ"
+msgstr "NUM-DIZ"
+
+# ContactDetail.name
+#: ContactDetail.name
+msgid "NUM-DIZ"
+msgstr ""
+
+# CapabilityStatement.description
+#: CapabilityStatement.description
+msgid "MIGRATION-GENERATED PROPOSAL (not part of the published 2026.0.0 release): server capabilities derived from the module's profiles and search parameters during the migration onto the MII KDS module template. The module team confirms, amends or deletes this artefact at Gate A."
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Germany"
+msgstr ""
+

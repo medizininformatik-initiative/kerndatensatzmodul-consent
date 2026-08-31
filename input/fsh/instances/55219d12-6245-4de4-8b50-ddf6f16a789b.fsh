@@ -1,6 +1,7 @@
 Instance: 55219d12-6245-4de4-8b50-ddf6f16a789b
-InstanceOf: MII_PR_Consent_Provenance
+InstanceOf: Provenance
 Usage: #example
+* meta.profile = "https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-provenance"
 * meta.lastUpdated = "2021-02-08T14:21:07.5320994+00:00"
 * target.reference = "Consent/34150a23-b1c8-404f-874f-e042a30435d2"
 // fhir_comments (source XML comment on target.fhir_comments): "\n\t\tDiese Provenance gilt für den ausgefüllten Fragebogen (QuestionnaireResponse).\n\n\t\tSofern in der jeweiligen konkreten Implementierung keine Einwände bestehen\n\t\t(z.B. Datenschutz- oder anderes Recht) können auch aus dem QuestionnaireResponse\n\t\tabgeleitete Consent-Ressourcen hier als target referenziert werden.\n\t\tDies würde bedeuten, dass alle Signaturen (signature-Elemeent) auch für\n\t\tdiese Consent-Ressourcen gelten.\n\t"
