@@ -1,0 +1,246 @@
+2026-08-31T17:34:03Z  INFO   log  run-boundary  ===== run 1 starts  run=1 label=Consent 2026.0.0 -> mii-kds-module-template v0.13.2 — sandbox route, skill mii-ig-migration v0.25.0 cwd=/private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/target log=migration-log/run.log
+    Every line below belongs to run 1; the lines above are earlier invocations.
+    Per-step raw logs (migration-log/<ACTION>.log) hold THIS run only -- `run`
+    truncates each one and rolls the previous attempt over to <ACTION>.prev.log.
+2026-08-31T17:34:03Z  INFO   pre.1  human-inputs  guide-url=https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent?version=2026.0.0 repo-url=https://github.com/medizininformatik-initiative/kerndatensatzmodul-consent
+    both supplied by the user in the migration request; guide slug confirmed per plan D-7 (version-pinned, the skill's own reference key)
+2026-08-31T17:34:03Z  INFO   pre.2  classify-source-shape  shape=B src-commit=792f9f3e (tag 2026.0.0 == master)
+    evidence: no sushi-config.yaml, no ig.ini, no input/fsh, no .github/ at any depth <=3; 20 FHIR resources detected BY CONTENT across five German-named dirs (ressourcen-profile/ searchparameters/ terminologie/ examples/)
+    third-bucket narrative-bearing files + dispositions: README.md (43-line German, dead guide link -> rewritten at step 3), terminologie/codesystems/CodeSystem-MiiConsentPolicy.md (hand-synced CS mirror w/ Gueltigkeit columns not CS-representable -> Gate-A disposition per plan D-13)
+2026-08-31T17:34:03Z  INFO   pre.3  target-state  venue=sandbox forschungsgruppe-digital-health/mii-kds-consent-ig-inoffiziell re-migration-context=stale-run-present
+    stale branch migration/mii-kds-module-template (PR #3, 2026-08-06, template v0.6.0 vendored, EN-primary, skill ~v0.12) reported BEFORE any change; NOT continued - fresh branch migration/2026.0.0-template-v0.13.2 cut from 792f9f3e; PR #3 to be superseded with pointer at step 9
+    mirror branch develop ff'd 4d44dbe->744f7ba (source develop tip) prior to branch cut; evidence branch evidence/2026-08-31-plan-recon holds plan+recon+preservation-harvest
+2026-08-31T17:34:03Z  INFO   pre.3  venue-decision  decision: sandbox route — NO owner GO exists (plan D-0 pending); user ordered execution 2026-08-31; MII repo untouched (read-only policy); in-place route requires owner mechanics + explicit re-authorization per plan section 7
+2026-08-31T17:34:03Z  INFO   pre.4  placeholder-census  plan: census by EXCLUSION grep -rIl '{{' . --exclude-dir=.git, pre- and post-skeleton; --include lists forbidden (ig.ini killed a publisher run, PROs try-run)
+2026-08-31T17:34:03Z  INFO   pre.5  toolchain  node=v22.22.3(nvm) sushi=npx-fsh-sushi@3.20.0 gofsh=npx-gofsh@2.6.1 python3=3.14.4 java=openjdk-25.0.2 validator_cli=6.10.0(pinned,fetch-on-detect) publisher=2.3.2-in-docker-hl7fhir/ig-publisher-base jekyll=4.4.1(container)
+    macOS system ruby 2.6 < jekyll floor -> every local publisher build runs in the container with ~/.fhir mounted (operator practice, PROs try-run)
+2026-08-31T17:34:03Z  INFO   2  baseline-decision  decision: source baseline = tag 2026.0.0 (792f9f3e); target version 2026.0.0 (plan D-2) — the only state where git tag, registry dist-tags.latest and guide version agree; develop/rc line (18 ahead, rc-1..rc-4) surfaced to owners as drift evidence, not migrated
+2026-08-31T17:34:03Z  INFO   5.4  language-decision  decision: DE-first (i18n-default-lang=de) per MII wiki Release-2027 'IG Umbau - DE First' + Dokument PR #36 precedent (plan D-3) — conscious deviation from skill spec par.1/par.4.2 (EN-default); 3-file template-CI patch carried in skeleton commit
+2026-08-31T17:34:03Z  INFO   5.6a  sibling-skill-check  start  cmd=`bash /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/recon/agent-skills/skills/mii-ig-migration/scripts/sibling-skill-check.sh --skill-dir /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/recon/agent-skills/skills/mii-ig-migration`  raw_log=migration-log/sibling-skill-check.log
+2026-08-31T17:34:03Z  INFO   5.6a  sibling-skill-check  sibling-skill-present  skill=fhir-ig-analysis path=/private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/recon/agent-skills/skills/fhir-ig-analysis roots_examined=1 ref=<ref> ref_source=not recorded
+    Identified by its frontmatter name, not by its directory name. §5.6's
+    same-module verification can run; its IDENTISCH lines are the evidence, not
+    this line.
+2026-08-31T17:34:03Z  INFO   5.6a  sibling-skill-check  done  cmd=`bash /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/recon/agent-skills/skills/mii-ig-migration/scripts/sibling-skill-check.sh --skill-dir /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/recon/agent-skills/skills/mii-ig-migration`  exit=0 raw_log=migration-log/sibling-skill-check.log raw_log_lines=4
+2026-08-31T17:34:03Z  INFO   1  preflight-analysis  start  cmd=`python3 /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/recon/agent-skills/skills/fhir-ig-analysis/scripts/ig-stats.py analyze -o migration-log/preflight-analysis.json --label 'consent 2026.0.0 unmigrated source' .`  raw_log=migration-log/preflight-analysis.log
+ig-stats -> migration-log/preflight-analysis.json  (Artefakte 0, Direktiven 0, Inhalts-Seiten 0)
+2026-08-31T17:34:03Z  INFO   1  preflight-analysis  done  cmd=`python3 /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/recon/agent-skills/skills/fhir-ig-analysis/scripts/ig-stats.py analyze -o migration-log/preflight-analysis.json --label 'consent 2026.0.0 unmigrated source' .`  exit=0 raw_log=migration-log/preflight-analysis.log raw_log_lines=1
+2026-08-31T17:38:53Z  WARN   1  preflight-analysis  reduced-census-limitation: ig-stats mode=reduced classifies NO raw Forge XML artefacts (census 0) and reads no canonical space from XML — measured on this run, this shape
+    authoritative artifact counts for M9 therefore come from the PUBLISHED PACKAGE census (spec 9c generated_crosscheck doctrine: where generated resources exist, THEIR resourceType census is authoritative)
+    qa_baseline=None -> source QA baseline being built now (publisher-in-Docker wrapper, plan phase 1.2)
+2026-08-31T17:38:53Z  INFO   1  package-census  package=de.medizininformatikinitiative.kerndatensatz.consent@2026.0.0 census: StructureDefinition=3 SearchParameter=6 CodeSystem=3 ValueSet=3 ImplementationGuide=1(simplifier-skeleton,id-less) examples=6
+    M9 feed: extensions=0 operations=0 capabilitystatements=0 (-> spec 9b suggestion path); searchparameters=6 valuesets=3 codesystems=3 -> keep
+    special-url feed: 2 urn:oid CodeSystem canonicals (2.16.840.1.113883.3.1937.777.24.5.2/.5.3); 6 SearchParameters carry NO id; SD ids are UUIDs; 2 VS ids are ART-DECOR OID--timestamp
+2026-08-31T17:41:22Z  INFO   1  qa-baseline-wrapper  wrapper assembled at mig/qa-baseline (OUTSIDE the tree, throwaway): ig.ini(template=fhir.base.template) + hand-written IG resource listing all 20 tree resources + minimal index.md; dependsOn de.einwilligungsmanagement 2.0.2 (source pin)
+    publisher 2.3.2 (sha 07c576024df917cc1f879b6b5a64147cd0222d5b4129688e8f0ad9ccce58b1d5) in docker hl7fhir/ig-publisher-base, ~/.fhir mounted, tx=default tx.fhir.org
+    template choice fhir.base.template NOT the MII template: the wrapper measures the VALIDATOR error census; the MII template requires module page/menu scaffolding a wrapper must not fake; error classes compare at the validator layer
+2026-08-31T17:41:22Z  WARN   1  qa-baseline-wrapper  wrapper-adaptation: 6 id-less SearchParameters got ids minted from their canonical tails IN THE THROWAWAY COPIES ONLY (publisher cannot load an id-less resource); source files untouched; same ids goFSH will mint downstream (Gate-A item, plan D-5)
+2026-08-31T17:44:35Z  INFO   1  qa-baseline-build  start  cmd=`docker run --rm -v /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/qa-baseline:/work -v /Users/marcel/.fhir:/root/.fhir hl7fhir/ig-publisher-base java -Xmx4g -Dfile.encoding=UTF-8 -jar /work/publisher.jar -ig /work`  raw_log=migration-log/qa-baseline-build.log
+2026-08-31T17:45:01Z  INFO   2.1  package-identity  start  cmd=`bash /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/recon/agent-skills/skills/mii-ig-migration/scripts/package-identity.sh --package de.medizininformatikinitiative.kerndatensatz.consent --version 2026.0.0`  raw_log=migration-log/package-identity.log
+2026-08-31T17:45:01Z  INFO   2.1  package-identity  params  package=de.medizininformatikinitiative.kerndatensatz.consent version=2026.0.0 registry=https://packages.simplifier.net work=/var/folders/d6/s255vt4x5pq9fy738bv7cs0h0000gq/T/tmp.5ClZ9RB9Vu
+    Reporting only: no file in the module repository is read or written here.
+    Recovered values are Gate-A evidence, never applied to existing metadata.
+2026-08-31T17:45:01Z  INFO   2.1  package-identity  params  package=de.medizininformatikinitiative.kerndatensatz.consent version=2026.0.0 registry=https://packages.simplifier.net work=/var/folders/d6/s255vt4x5pq9fy738bv7cs0h0000gq/T/tmp.5ClZ9RB9Vu
+    Reporting only: no file in the module repository is read or written here.
+    Recovered values are Gate-A evidence, never applied to existing metadata.
+2026-08-31T17:45:01Z  INFO   2.1  package-identity  version supplied by the operator  version=2026.0.0 source=--version package=de.medizininformatikinitiative.kerndatensatz.consent
+2026-08-31T17:45:01Z  INFO   2.1  package-identity  version supplied by the operator  version=2026.0.0 source=--version package=de.medizininformatikinitiative.kerndatensatz.consent
+2026-08-31T17:45:01Z  INFO   2.1  package-identity  fetched  cmd=`curl -sfL https://packages.simplifier.net/de.medizininformatikinitiative.kerndatensatz.consent/2026.0.0 -o pkg.tgz && tar xzf pkg.tgz`  bytes=12053 json_files=22 manifest=package/package.json
+2026-08-31T17:45:01Z  INFO   2.1  package-identity  fetched  cmd=`curl -sfL https://packages.simplifier.net/de.medizininformatikinitiative.kerndatensatz.consent/2026.0.0 -o pkg.tgz && tar xzf pkg.tgz`  bytes=12053 json_files=22 manifest=package/package.json
+2026-08-31T17:45:01Z  INFO   2.1  package-identity  manifest field  name=de.medizininformatikinitiative.kerndatensatz.consent  -- = packageId (spec §2.1)
+2026-08-31T17:45:01Z  INFO   2.1  package-identity  manifest field  name=de.medizininformatikinitiative.kerndatensatz.consent  -- = packageId (spec §2.1)
+2026-08-31T17:45:01Z  INFO   2.1  package-identity  identity-claim  field=packageId value=de.medizininformatikinitiative.kerndatensatz.consent tier=P source=package/package.json
+2026-08-31T17:45:01Z  INFO   2.1  package-identity  identity-claim  field=packageId value=de.medizininformatikinitiative.kerndatensatz.consent tier=P source=package/package.json
+2026-08-31T17:45:01Z  INFO   2.1  package-identity  manifest field  version=2026.0.0  -- the module version -- authoritative for this RELEASE
+2026-08-31T17:45:01Z  INFO   2.1  package-identity  manifest field  version=2026.0.0  -- the module version -- authoritative for this RELEASE
+2026-08-31T17:45:01Z  INFO   2.1  package-identity  identity-claim  field=version value=2026.0.0 tier=P source=package/package.json
+2026-08-31T17:45:01Z  INFO   2.1  package-identity  identity-claim  field=version value=2026.0.0 tier=P source=package/package.json
+2026-08-31T17:45:01Z  INFO   2.1  package-identity  manifest field  description=KDS Modul Consent Release 2026.0.0
+2026-08-31T17:45:01Z  INFO   2.1  package-identity  manifest field  description=KDS Modul Consent Release 2026.0.0
+2026-08-31T17:45:01Z  INFO   2.1  package-identity  identity-claim  field=description value=KDS Modul Consent Release 2026.0.0 tier=P source=package/package.json
+2026-08-31T17:45:01Z  INFO   2.1  package-identity  identity-claim  field=description value=KDS Modul Consent Release 2026.0.0 tier=P source=package/package.json
+2026-08-31T17:45:01Z  INFO   2.1  package-identity  manifest field  fhirVersions=["4.0.1"]
+2026-08-31T17:45:01Z  INFO   2.1  package-identity  manifest field  fhirVersions=["4.0.1"]
+2026-08-31T17:45:01Z  INFO   2.1  package-identity  identity-claim  field=fhirVersions value=["4.0.1"] tier=P source=package/package.json
+2026-08-31T17:45:01Z  INFO   2.1  package-identity  identity-claim  field=fhirVersions value=["4.0.1"] tier=P source=package/package.json
+2026-08-31T17:45:01Z  INFO   2.1  package-identity  manifest field  jurisdiction=urn:iso:std:iso:3166#DE
+2026-08-31T17:45:01Z  INFO   2.1  package-identity  manifest field  jurisdiction=urn:iso:std:iso:3166#DE
+2026-08-31T17:45:01Z  INFO   2.1  package-identity  identity-claim  field=jurisdiction value=urn:iso:std:iso:3166#DE tier=P source=package/package.json
+2026-08-31T17:45:01Z  INFO   2.1  package-identity  identity-claim  field=jurisdiction value=urn:iso:std:iso:3166#DE tier=P source=package/package.json
+2026-08-31T17:45:01Z  INFO   2.1  package-identity  manifest field  author=sebastianstubert  -- a REGISTRY ACCOUNT, not `publisher`
+2026-08-31T17:45:01Z  INFO   2.1  package-identity  manifest field  author=sebastianstubert  -- a REGISTRY ACCOUNT, not `publisher`
+2026-08-31T17:45:01Z  INFO   2.1  package-identity  manifest read  package/package.json  recovered=6 absent=5 fields=name,version,description,fhirVersions,jurisdiction,author
+2026-08-31T17:45:01Z  INFO   2.1  package-identity  manifest read  package/package.json  recovered=6 absent=5 fields=name,version,description,fhirVersions,jurisdiction,author
+2026-08-31T17:45:01Z  WARN   2.1  package-identity  not-in-a-package-manifest: title, license, publisher
+    A FHIR package manifest has no field for these, so the published package
+    cannot supply them and no other field substitutes -- `author` is the
+    registry account that pushed the package, never a publishing organisation.
+    They stay Gate-A items: a human supplies them (spec §2.1).
+2026-08-31T17:45:01Z  WARN   2.1  package-identity  not-in-a-package-manifest: title, license, publisher
+    A FHIR package manifest has no field for these, so the published package
+    cannot supply them and no other field substitutes -- `author` is the
+    registry account that pushed the package, never a publishing organisation.
+    They stay Gate-A items: a human supplies them (spec §2.1).
+2026-08-31T17:45:01Z  INFO   2.1  package-identity  manifest fields absent (optional in this format)  canonical, homepage
+2026-08-31T17:45:01Z  INFO   2.1  package-identity  manifest fields absent (optional in this format)  canonical, homepage
+2026-08-31T17:45:02Z  INFO   2.1  package-identity  identity-claim  field=dependency:de.einwilligungsmanagement value=2.0.2 tier=P source=package/package.json (source pin)
+2026-08-31T17:45:02Z  INFO   2.1  package-identity  identity-claim  field=dependency:de.einwilligungsmanagement value=2.0.2 tier=P source=package/package.json (source pin)
+2026-08-31T17:45:02Z  INFO   2.1  package-identity  identity-claim  field=dependency:hl7.fhir.r4.core value=4.0.1 tier=P source=package/package.json (source pin)
+2026-08-31T17:45:02Z  INFO   2.1  package-identity  identity-claim  field=dependency:hl7.fhir.r4.core value=4.0.1 tier=P source=package/package.json (source pin)
+2026-08-31T17:45:02Z  INFO   2.1  package-identity  dependency pins from the SOURCE package  de.einwilligungsmanagement@2.0.2 hl7.fhir.r4.core@4.0.1
+    SOURCE EVIDENCE, and it outranks the registry's dist-tags.latest for the
+    same package (spec §2.1 floating-pin rule, §5.1b.2 step 1): this is what
+    the module was actually published against. Use these for goFSH's `-d` set
+    and record any divergence from a previously assumed pin in the report.
+2026-08-31T17:45:02Z  INFO   2.1  package-identity  dependency pins from the SOURCE package  de.einwilligungsmanagement@2.0.2 hl7.fhir.r4.core@4.0.1
+    SOURCE EVIDENCE, and it outranks the registry's dist-tags.latest for the
+    same package (spec §2.1 floating-pin rule, §5.1b.2 step 1): this is what
+    the module was actually published against. Use these for goFSH's `-d` set
+    and record any divergence from a previously assumed pin in the report.
+2026-08-31T17:45:02Z  INFO   2.1  package-identity  packaged ImplementationGuide  file=ImplementationGuide.json url=/guide/mii-ig-modul-consent-2026?version=current version=2026.0.0 name=MII IG Consent v2026 title=<absent> publisher=<absent> license=<absent>
+2026-08-31T17:45:02Z  INFO   2.1  package-identity  packaged ImplementationGuide  file=ImplementationGuide.json url=/guide/mii-ig-modul-consent-2026?version=current version=2026.0.0 name=MII IG Consent v2026 title=<absent> publisher=<absent> license=<absent>
+2026-08-31T17:45:02Z  WARN   2.1  package-identity  ig-url-not-canonical: the packaged ImplementationGuide's url is not an absolute http(s) URL  url=/guide/mii-ig-modul-consent-2026?version=current
+    A Simplifier-rendered guide carries its own relative guide path here.
+    It is a rendering address, not the module's canonical base, and it is
+    excluded from the derivation below.
+2026-08-31T17:45:02Z  WARN   2.1  package-identity  ig-url-not-canonical: the packaged ImplementationGuide's url is not an absolute http(s) URL  url=/guide/mii-ig-modul-consent-2026?version=current
+    A Simplifier-rendered guide carries its own relative guide path here.
+    It is a rendering address, not the module's canonical base, and it is
+    excluded from the derivation below.
+2026-08-31T17:45:02Z  INFO   2.1  package-identity  urls excluded from the canonical derivation  count=3
+      CodeSystem-MiiConsentAnswerCodeSystem.json -> urn:oid:2.16.840.1.113883.3.1937.777.24.5.2 (not an absolute http(s) URL)
+      CodeSystem-MiiConsentPolicyCodeSystem.json -> urn:oid:2.16.840.1.113883.3.1937.777.24.5.3 (not an absolute http(s) URL)
+      ImplementationGuide.json -> /guide/mii-ig-modul-consent-2026?version=current (not an absolute http(s) URL)
+2026-08-31T17:45:02Z  INFO   2.1  package-identity  urls excluded from the canonical derivation  count=3
+      CodeSystem-MiiConsentAnswerCodeSystem.json -> urn:oid:2.16.840.1.113883.3.1937.777.24.5.2 (not an absolute http(s) URL)
+      CodeSystem-MiiConsentPolicyCodeSystem.json -> urn:oid:2.16.840.1.113883.3.1937.777.24.5.3 (not an absolute http(s) URL)
+      ImplementationGuide.json -> /guide/mii-ig-modul-consent-2026?version=current (not an absolute http(s) URL)
+2026-08-31T17:45:02Z  INFO   2.1  package-identity  packaged resources carrying no url  count=6
+      examples/Example_MII_Consent_DocumentReference.json [DocumentReference]
+      examples/Example_MII_Consent_Einwilligung.json [Consent]
+      examples/Example_MII_Consent_Einwilligung_1.json [Consent]
+      examples/Example_MII_Consent_Einwilligung_2.json [Consent]
+      examples/Example_MII_Consent_Provenance.json [Provenance]
+      examples/Example_MII_Consent_ResultType_ConsentStatus.json [Consent]
+2026-08-31T17:45:02Z  INFO   2.1  package-identity  packaged resources carrying no url  count=6
+      examples/Example_MII_Consent_DocumentReference.json [DocumentReference]
+      examples/Example_MII_Consent_Einwilligung.json [Consent]
+      examples/Example_MII_Consent_Einwilligung_1.json [Consent]
+      examples/Example_MII_Consent_Einwilligung_2.json [Consent]
+      examples/Example_MII_Consent_Provenance.json [Provenance]
+      examples/Example_MII_Consent_ResultType_ConsentStatus.json [Consent]
+2026-08-31T17:45:02Z  INFO   2.1  package-identity  identity-claim  field=canonical value=https://www.medizininformatik-initiative.de/fhir/modul-consent tier=P source=packaged resource urls (13 of 13 agree)
+2026-08-31T17:45:02Z  INFO   2.1  package-identity  identity-claim  field=canonical value=https://www.medizininformatik-initiative.de/fhir/modul-consent tier=P source=packaged resource urls (13 of 13 agree)
+2026-08-31T17:45:02Z  INFO   2.1  package-identity  canonical derived by common prefix  canonical=https://www.medizininformatik-initiative.de/fhir/modul-consent agree=13 of 13
+    Unanimous: every packaged resource with an absolute canonical url shares
+    this base. Carried over UNCHANGED -- guardrail 1. It is not written
+    anywhere by this script; a human records it at Gate A.
+2026-08-31T17:45:02Z  INFO   2.1  package-identity  canonical derived by common prefix  canonical=https://www.medizininformatik-initiative.de/fhir/modul-consent agree=13 of 13
+    Unanimous: every packaged resource with an absolute canonical url shares
+    this base. Carried over UNCHANGED -- guardrail 1. It is not written
+    anywhere by this script; a human records it at Gate A.
+2026-08-31T17:45:02Z  INFO   2.1  package-identity  done  package=de.medizininformatikinitiative.kerndatensatz.consent version=2026.0.0  canonical=derived exit=0
+    Identity RECOVERED, not applied: record it at Gate A against the module's
+    own existing metadata, and change nothing that already carries a value.
+2026-08-31T17:45:02Z  INFO   2.1  package-identity  done  package=de.medizininformatikinitiative.kerndatensatz.consent version=2026.0.0  canonical=derived exit=0
+    Identity RECOVERED, not applied: record it at Gate A against the module's
+    own existing metadata, and change nothing that already carries a value.
+2026-08-31T17:45:02Z  INFO   2.1  package-identity  done  cmd=`bash /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/recon/agent-skills/skills/mii-ig-migration/scripts/package-identity.sh --package de.medizininformatikinitiative.kerndatensatz.consent --version 2026.0.0`  exit=0 raw_log=migration-log/package-identity.log raw_log_lines=54
+2026-08-31T17:45:02Z  INFO   2.1  repo-identity  start  cmd=`bash /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/recon/agent-skills/skills/mii-ig-migration/scripts/repo-identity.sh --dir . --repo medizininformatik-initiative/kerndatensatzmodul-consent --rendered 'https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent?version=2026.0.0'`  raw_log=migration-log/repo-identity.log
+2026-08-31T17:45:02Z  INFO   2.1  repo-identity  params  dir=. repo=medizininformatik-initiative/kerndatensatzmodul-consent rendered=https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent?version=2026.0.0
+    Tier R (the source repository) and tier H (the rendered guide), spec §2.1.
+    Reporting only: no file in the module repository is written by this script.
+2026-08-31T17:45:02Z  INFO   2.1  repo-identity  params  dir=. repo=medizininformatik-initiative/kerndatensatzmodul-consent rendered=https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent?version=2026.0.0
+    Tier R (the source repository) and tier H (the rendered guide), spec §2.1.
+    Reporting only: no file in the module repository is written by this script.
+2026-08-31T17:45:02Z  INFO   2.1  repo-identity  identity-claim  field=title value=Medizininformatik Initiative - Modul Consent tier=R source=README.md first heading
+    A CANDIDATE, confirmed at Gate A -- a README heading is written for human
+    readers, and a module's `title` is a conformance-artefact field.
+2026-08-31T17:45:02Z  INFO   2.1  repo-identity  identity-claim  field=title value=Medizininformatik Initiative - Modul Consent tier=R source=README.md first heading
+    A CANDIDATE, confirmed at Gate A -- a README heading is written for human
+    readers, and a module's `title` is a conformance-artefact field.
+2026-08-31T17:45:02Z  INFO   2.1  repo-identity  identity-claim  field=license value=CC-BY-4.0 tier=R source=LICENSE (text matched)
+    REAL licence evidence, and the field a migration must never let default:
+    the template ships `license: CC-BY-4.0` as a literal that no placeholder
+    check flags, and MII modules commonly declare CC0-1.0 (spec §2.2).
+2026-08-31T17:45:02Z  INFO   2.1  repo-identity  identity-claim  field=license value=CC-BY-4.0 tier=R source=LICENSE (text matched)
+    REAL licence evidence, and the field a migration must never let default:
+    the template ships `license: CC-BY-4.0` as a literal that no placeholder
+    check flags, and MII modules commonly declare CC0-1.0 (spec §2.2).
+2026-08-31T17:45:02Z  INFO   2.1  repo-identity  release tags in the local checkout (newest last)  tags=1.0.7 2025.0.0 2025.0.0-alpha 2025.0.3 2026.0.0
+    Tags are evidence for WHICH RELEASE a commit corresponds to; the module's
+    version still comes from the published package (§2.1.1).
+2026-08-31T17:45:02Z  INFO   2.1  repo-identity  release tags in the local checkout (newest last)  tags=1.0.7 2025.0.0 2025.0.0-alpha 2025.0.3 2026.0.0
+    Tags are evidence for WHICH RELEASE a commit corresponds to; the module's
+    version still comes from the published package (§2.1.1).
+2026-08-31T17:45:03Z  INFO   2.1  repo-identity  identity-claim  field=description value=Kerndatensatzmodul Consent tier=R source=GitHub repository description
+    A repository blurb, not the module's `description`; it is a candidate.
+2026-08-31T17:45:03Z  INFO   2.1  repo-identity  identity-claim  field=description value=Kerndatensatzmodul Consent tier=R source=GitHub repository description
+    A repository blurb, not the module's `description`; it is a candidate.
+2026-08-31T17:45:03Z  WARN   2.1  repo-identity  identity-contradiction: field=description  now=Kerndatensatzmodul Consent (tier R, GitHub repository description)  vs  description=KDS Modul Consent Release 2026.0.0 (tier P, package/package.json)
+    Two sources disagree about the same identity field. This is REPORTED, not
+    resolved: the tier ranking (spec §2.1) says which value a human should
+    probably adopt, and adopting one here would silently rename, re-license or
+    re-version a published module. Both readings stand in the ledger; Gate A
+    decides, and nothing in the repository is rewritten either way.
+2026-08-31T17:45:03Z  WARN   2.1  repo-identity  identity-contradiction: field=description  now=Kerndatensatzmodul Consent (tier R, GitHub repository description)  vs  description=KDS Modul Consent Release 2026.0.0 (tier P, package/package.json)
+    Two sources disagree about the same identity field. This is REPORTED, not
+    resolved: the tier ranking (spec §2.1) says which value a human should
+    probably adopt, and adopting one here would silently rename, re-license or
+    re-version a published module. Both readings stand in the ledger; Gate A
+    decides, and nothing in the repository is rewritten either way.
+2026-08-31T17:45:03Z  INFO   2.1  repo-identity  identity-claim  field=license value=CC-BY-4.0 tier=R source=GitHub license.spdx_id
+    GitHub's own detection of the same LICENSE file. Recorded separately so
+    that a disagreement with the text match becomes a visible contradiction.
+2026-08-31T17:45:03Z  INFO   2.1  repo-identity  identity-claim  field=license value=CC-BY-4.0 tier=R source=GitHub license.spdx_id
+    GitHub's own detection of the same LICENSE file. Recorded separately so
+    that a disagreement with the text match becomes a visible contradiction.
+2026-08-31T17:45:03Z  WARN   2.1  repo-identity  not-recoverable-from-a-repository: publisher  owner=medizininformatik-initiative
+    The GitHub owner is an ACCOUNT that hosts the repository, not the
+    publishing organisation of a conformance artefact -- the same reason the
+    registry `author` is not a publisher (§2.1.1). `publisher` stays a Gate-A
+    field: a human names the organisation.
+2026-08-31T17:45:03Z  WARN   2.1  repo-identity  not-recoverable-from-a-repository: publisher  owner=medizininformatik-initiative
+    The GitHub owner is an ACCOUNT that hosts the repository, not the
+    publishing organisation of a conformance artefact -- the same reason the
+    registry `author` is not a publisher (§2.1.1). `publisher` stays a Gate-A
+    field: a human names the organisation.
+2026-08-31T17:45:04Z  INFO   2.1  repo-identity  release tags on GitHub (newest first)  tags=2026.0.0 2025.0.3 2025.0.0 2025.0.0-alpha 1.0.7
+    Cross-check: the tag matching the published package's version is what
+    ties that RELEASE to the commit being migrated (§2.1.1, which version).
+2026-08-31T17:45:04Z  INFO   2.1  repo-identity  release tags on GitHub (newest first)  tags=2026.0.0 2025.0.3 2025.0.0 2025.0.0-alpha 1.0.7
+    Cross-check: the tag matching the published package's version is what
+    ties that RELEASE to the commit being migrated (§2.1.1, which version).
+2026-08-31T17:45:06Z  INFO   2.1  repo-identity  rendered page probed  cmd=`curl -sL https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent?version=2026.0.0`  http=200 bytes=24509 script_markers=5 identity_markers=0 guide_page_links=18
+2026-08-31T17:45:06Z  INFO   2.1  repo-identity  rendered page probed  cmd=`curl -sL https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent?version=2026.0.0`  http=200 bytes=24509 script_markers=5 identity_markers=0 guide_page_links=18
+2026-08-31T17:45:06Z  INFO   2.1  repo-identity  server-rendered-guide: this URL space DOES deliver content  http=200 bytes=24509 guide_page_links=18 url=https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent?version=2026.0.0
+    It still yields no IDENTITY -- that stays a Gate-A read by a human. What it
+    yields is the NARRATIVE: harvest it with scripts/guide-harvest.sh (spec 5.1d),
+    or supply the authenticated project download, which is the better source.
+    Do NOT read the project page's client-rendered finding onto this one.
+2026-08-31T17:45:06Z  INFO   2.1  repo-identity  server-rendered-guide: this URL space DOES deliver content  http=200 bytes=24509 guide_page_links=18 url=https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent?version=2026.0.0
+    It still yields no IDENTITY -- that stays a Gate-A read by a human. What it
+    yields is the NARRATIVE: harvest it with scripts/guide-harvest.sh (spec 5.1d),
+    or supply the authenticated project download, which is the better source.
+    Do NOT read the project page's client-rendered finding onto this one.
+2026-08-31T17:45:06Z  INFO   2.1  repo-identity  done  fields_recovered=4 exit=0
+    Recovered, not applied: every value above is Gate-A evidence, recorded in
+    the identity ledger beside the other tiers' readings (spec §2.1).
+2026-08-31T17:45:06Z  INFO   2.1  repo-identity  done  fields_recovered=4 exit=0
+    Recovered, not applied: every value above is Gate-A evidence, recorded in
+    the identity ledger beside the other tiers' readings (spec §2.1).
+2026-08-31T17:45:06Z  INFO   2.1  repo-identity  done  cmd=`bash /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/recon/agent-skills/skills/mii-ig-migration/scripts/repo-identity.sh --dir . --repo medizininformatik-initiative/kerndatensatzmodul-consent --rendered 'https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent?version=2026.0.0'`  exit=0 raw_log=migration-log/repo-identity.log raw_log_lines=41
+2026-08-31T17:45:54Z  INFO   2.1  read-identity  identity-claim  field=status value=draft tier=P source=packaged ImplementationGuide.json (Simplifier skeleton)
+2026-08-31T17:45:54Z  INFO   2.1  read-identity  identity-claim  field=status value=active tier=H source=guide index table Status column (recon/guide.md g.1; human-read at Gate A)
+2026-08-31T17:45:54Z  WARN   2.1  read-identity  identity-contradiction: field=status  now=active (tier H, guide index table Status column (recon/guide.md g.1; human-read at Gate A))  vs  status=draft (tier P, packaged ImplementationGuide.json (Simplifier skeleton))
+    Two sources disagree about the same identity field. This is REPORTED, not
+    resolved: the tier ranking (spec §2.1) says which value a human should
+    probably adopt, and adopting one here would silently rename, re-license or
+    re-version a published module. Both readings stand in the ledger; Gate A
+    decides, and nothing in the repository is rewritten either way.
+2026-08-31T17:45:54Z  INFO   2.1  read-identity  carried identity (unchanged, guardrail 1): packageId=de.medizininformatikinitiative.kerndatensatz.consent version=2026.0.0 canonical=https://www.medizininformatik-initiative.de/fhir/modul-consent (13/13 unanimous) fhirVersion=4.0.1 deps=de.einwilligungsmanagement@2.0.2+hl7.fhir.r4.core@4.0.1 license=CC-BY-4.0(tier R text+spdx)
+    Gate-A remainder: title (R candidate 'Medizininformatik Initiative - Modul Consent'), publisher (no tier yields it), status (P draft vs H active), description (P vs R contradiction in ledger)
+2026-08-31T17:45:54Z  INFO   2.1  identity-decisions  decision: status=active (plan D-6 — the index table is what the release communicates; packaged IG is a null-ridden Simplifier skeleton). decision: description=tier P 'KDS Modul Consent Release 2026.0.0' adjusted to release-neutral at Gate A. decision: title=R candidate (matches guide branding)
+    decision: publisher=NUM-DIZ stays as TEMPLATE CHROME per spec 2.2 deliberate exception — recovered TFCU/MII strings recorded as content-attribution evidence ONLY, never carried into sushi-config publisher
+    decision: license CC-BY-4.0 added machine-readable to sushi-config (plan D-1) — tier evidence unanimous (LICENSE text + GitHub spdx + guide prose CC BY 4.0 + TMF copyright); F-01-class change ANNOUNCED, owner sign-off requested at Gate A
+    decision: dependency transfer per plan D-12 — source pins win verbatim; hl7.fhir.uv.crmi 2.0.0 added as recorded template-machinery addition (spec step 3); NO basisprofil/xver/meta parity pins imported

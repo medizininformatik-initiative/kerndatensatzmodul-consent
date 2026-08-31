@@ -1,0 +1,163 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "qa-baseline-wrapper",
+  "url": "https://www.medizininformatik-initiative.de/fhir/modul-consent/ImplementationGuide/qa-baseline-wrapper",
+  "version": "2026.0.0",
+  "name": "QABaselineWrapperConsent",
+  "title": "QA baseline wrapper - MII KDS Modul Consent 2026.0.0 (throwaway)",
+  "status": "draft",
+  "packageId": "de.medizininformatikinitiative.kerndatensatz.consent.qabaseline",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "dependsOn": [
+    {
+      "uri": "https://simplifier.net/packages/de.einwilligungsmanagement",
+      "packageId": "de.einwilligungsmanagement",
+      "version": "2.0.2"
+    }
+  ],
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "DocumentReference/8a3d1799-2463-405e-b49c-6a16c8692b01"
+        },
+        "name": "Example_MII_Consent_DocumentReference",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Consent/34150a23-b1c8-404f-874f-e042a30435d2"
+        },
+        "name": "Example_MII_Consent_Einwilligung",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Consent/Example-MII-Consent-ResultType-document"
+        },
+        "name": "Example_MII_Consent_Einwilligung_2",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Provenance/55219d12-6245-4de4-8b50-ddf6f16a789b"
+        },
+        "name": "Example_MII_Consent_Provenance",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Consent/5143266b-8d60-4b28-8ee9-635140ffa5bb"
+        },
+        "name": "Example_MII_Consent_ResultType_ConsentStatus",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/56375452-bfa1-4111-af7c-5b5ba9a1857c"
+        },
+        "name": "Profile_MII_Consent_DocumentReference"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/e0e166b4-0f77-478d-9062-de0034d98ce0"
+        },
+        "name": "Profile_MII_Consent_Einwilligung"
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/f675b1e8-9f3f-44e8-bb59-9681f78eb464"
+        },
+        "name": "Profile_MII_Consent_Provenance"
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-consent-policyuri"
+        },
+        "name": "SearchParameter_MII_Consent_Einwilligung_policyUri"
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-consent-provisioncode"
+        },
+        "name": "SearchParameter_MII_Consent_Einwilligung_provisionCode"
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-consent-provisionperiod"
+        },
+        "name": "SearchParameter_MII_Consent_Einwilligung_provisionPeriod"
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-consent-provisioncodeperiod"
+        },
+        "name": "SearchParameter_MII_Consent_Einwilligung_provisionProvisionCodePeriod"
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-consent-provisioncodetype"
+        },
+        "name": "SearchParameter_MII_Consent_Einwilligung_provisionProvisionCodeType"
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-consent-provisiontype"
+        },
+        "name": "SearchParameter_MII_Consent_Einwilligung_provisionType"
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/2.16.840.1.113883.3.1937.777.24.5.2--20210423105554"
+        },
+        "name": "CodeSystem-MiiConsentAnswerCodeSystem"
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/2.16.840.1.113883.3.1937.777.24.5.3--20251211153003"
+        },
+        "name": "CodeSystem-MiiConsentPolicyCodeSystem"
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/mii-cs-consent-version-modules"
+        },
+        "name": "CodeSystem-MiiConsentVersionModuleCodeSystem"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/2.16.840.1.113883.3.1937.777.24.11.30--20210323234509"
+        },
+        "name": "ValueSet-MiiConsentAnswerValueSet"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/2.16.840.1.113883.3.1937.777.24.11.36--20230331232804"
+        },
+        "name": "ValueSet-MiiConsentPolicyValueSet"
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/88464c5b-5338-4c2b-9c07-b42fef2ada64"
+        },
+        "name": "ValueSet-MiiConsentSignatureTypes"
+      }
+    ],
+    "parameter": [
+      {
+        "code": "copyrightyear",
+        "value": "2019+"
+      },
+      {
+        "code": "releaselabel",
+        "value": "qa-baseline"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/resources"
+      }
+    ]
+  }
+}

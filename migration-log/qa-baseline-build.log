@@ -1,0 +1,52 @@
+publisher ---> UID = 1001 / GID = 1001
+usermod: no changes
+Cloning into '/home/publisher/bin/ig-publisher-scripts'...
+npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
+npm warn deprecated rimraf@2.6.3: Rimraf versions prior to v4 are no longer supported
+npm warn deprecated glob@7.2.3: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+
+added 142 packages in 36s
+
+14 packages are looking for funding
+  run `npm fund` for details
+npm notice
+npm notice New major version of npm available! 10.9.7 -> 12.0.2
+npm notice Changelog: https://github.com/npm/cli/releases/tag/v12.0.2
+npm notice To update run: npm install -g npm@12.0.2
+npm notice
+FHIR IG Publisher Version 2.3.2 (Git# 04466d0486ed). Built 2026-08-13T02:20:51.957Z (18 days old)   
+Detected Java version: 21.0.10 from /opt/java/openjdk on Linux/aarch64 (64bit). 4096MB available    
+dir = /home/publisher/ig, path = /home/publisher/bin:/home/publisher/bin/ig-publisher-scripts:/home/publisher/.node/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
+Parameters: -ig /work                                                                               
+Character encoding = UTF-8 / UTF-8                                                                  
+Start Clock @ Monday, August 31, 2026, 5:45:17 PM Coordinated Universal Time (2026-08-31T17:45:17Z) 
+                                                                                                    
+Build FHIR IG from /work                                                                             (00:00.017 / 00:00.017, 24Mb)
+No FHIR settings file at /home/publisher/.fhir/fhir-settings.json; using defaults (no API keys or npm path) (00:00.001 / 00:00.018, 24Mb)
+Package Cache: /home/publisher/.fhir/packages                                                        (00:00.003 / 00:00.021, 24Mb)
+Root directory: /work                                                                                (00:00.007 / 00:00.029, 25Mb)
+Unable to load IG as an r5 IG - try R4 (property code is a class com.google.gson.JsonPrimitive looking for an object) (00:00.437 / 00:00.467, 54Mb)
+Load Template from fhir.base.template                                                                (00:00.303 / 00:00.770, 21Mb)
+[33mThis content depends on fhir.base.template which is no longer considered secure to use
+[0;39m[33mSee Security notification at https://www.fhir.org/guides/security-notices/2026-03-npm-dependencies.html
+[0;39m[39mInstalling fhir.base.template#1.0.0 to the package cache
+[0;39m[39m  Fetching:
+[0;39m[39m
+[0;39m[39mInstalling fhir.base.template#1.0.0
+[0;39m[39m done.
+[0;39m[39m loaded @ /home/publisher/.fhir/packages/fhir.base.template#1.0.0
+[0;39mScanning directory: /work/template
+======================================================================
+Terminology Cache is at /work/input-cache/txcache. 0 files in cache                                  (00:09.753 / 00:10.523, 120Mb)
+Core Package hl7.fhir.r4.core#4.0.1                                                                  (00:00.000 / 00:10.525, 120Mb)
+[39mInstalling hl7.fhir.r4.core#4.0.1 to the package cache
+[0;39m[39m  Fetching:
+[0;39m[39m
+[0;39m[39mInstalling hl7.fhir.r4.core#4.0.1
+[0;39m[39m done.
+[0;39m[39m loaded @ /home/publisher/.fhir/packages/hl7.fhir.r4.core#4.0.1
+[0;39mRunning Terminology Log: /tmp/ohfu-fhir-ig-4771279182613621754.html
+Connect to Terminology Server at https://tx.fhir.org                                                 (00:21.596 / 00:32.120, 329Mb)
+[39mInstalling hl7.fhir.pubpack#0.2.5 to the package cache
+[0;39m[39m  Fetching:
+[0;39m

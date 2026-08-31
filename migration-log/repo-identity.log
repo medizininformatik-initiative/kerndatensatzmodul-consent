@@ -1,0 +1,41 @@
+2026-08-31T17:45:02Z  INFO   2.1  repo-identity  params  dir=. repo=medizininformatik-initiative/kerndatensatzmodul-consent rendered=https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent?version=2026.0.0
+    Tier R (the source repository) and tier H (the rendered guide), spec §2.1.
+    Reporting only: no file in the module repository is written by this script.
+2026-08-31T17:45:02Z  INFO   2.1  repo-identity  identity-claim  field=title value=Medizininformatik Initiative - Modul Consent tier=R source=README.md first heading
+    A CANDIDATE, confirmed at Gate A -- a README heading is written for human
+    readers, and a module's `title` is a conformance-artefact field.
+2026-08-31T17:45:02Z  INFO   2.1  repo-identity  identity-claim  field=license value=CC-BY-4.0 tier=R source=LICENSE (text matched)
+    REAL licence evidence, and the field a migration must never let default:
+    the template ships `license: CC-BY-4.0` as a literal that no placeholder
+    check flags, and MII modules commonly declare CC0-1.0 (spec §2.2).
+2026-08-31T17:45:02Z  INFO   2.1  repo-identity  release tags in the local checkout (newest last)  tags=1.0.7 2025.0.0 2025.0.0-alpha 2025.0.3 2026.0.0
+    Tags are evidence for WHICH RELEASE a commit corresponds to; the module's
+    version still comes from the published package (§2.1.1).
+2026-08-31T17:45:03Z  INFO   2.1  repo-identity  identity-claim  field=description value=Kerndatensatzmodul Consent tier=R source=GitHub repository description
+    A repository blurb, not the module's `description`; it is a candidate.
+2026-08-31T17:45:03Z  WARN   2.1  repo-identity  identity-contradiction: field=description  now=Kerndatensatzmodul Consent (tier R, GitHub repository description)  vs  description=KDS Modul Consent Release 2026.0.0 (tier P, package/package.json)
+    Two sources disagree about the same identity field. This is REPORTED, not
+    resolved: the tier ranking (spec §2.1) says which value a human should
+    probably adopt, and adopting one here would silently rename, re-license or
+    re-version a published module. Both readings stand in the ledger; Gate A
+    decides, and nothing in the repository is rewritten either way.
+2026-08-31T17:45:03Z  INFO   2.1  repo-identity  identity-claim  field=license value=CC-BY-4.0 tier=R source=GitHub license.spdx_id
+    GitHub's own detection of the same LICENSE file. Recorded separately so
+    that a disagreement with the text match becomes a visible contradiction.
+2026-08-31T17:45:03Z  WARN   2.1  repo-identity  not-recoverable-from-a-repository: publisher  owner=medizininformatik-initiative
+    The GitHub owner is an ACCOUNT that hosts the repository, not the
+    publishing organisation of a conformance artefact -- the same reason the
+    registry `author` is not a publisher (§2.1.1). `publisher` stays a Gate-A
+    field: a human names the organisation.
+2026-08-31T17:45:04Z  INFO   2.1  repo-identity  release tags on GitHub (newest first)  tags=2026.0.0 2025.0.3 2025.0.0 2025.0.0-alpha 1.0.7
+    Cross-check: the tag matching the published package's version is what
+    ties that RELEASE to the commit being migrated (§2.1.1, which version).
+2026-08-31T17:45:06Z  INFO   2.1  repo-identity  rendered page probed  cmd=`curl -sL https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent?version=2026.0.0`  http=200 bytes=24509 script_markers=5 identity_markers=0 guide_page_links=18
+2026-08-31T17:45:06Z  INFO   2.1  repo-identity  server-rendered-guide: this URL space DOES deliver content  http=200 bytes=24509 guide_page_links=18 url=https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent?version=2026.0.0
+    It still yields no IDENTITY -- that stays a Gate-A read by a human. What it
+    yields is the NARRATIVE: harvest it with scripts/guide-harvest.sh (spec 5.1d),
+    or supply the authenticated project download, which is the better source.
+    Do NOT read the project page's client-rendered finding onto this one.
+2026-08-31T17:45:06Z  INFO   2.1  repo-identity  done  fields_recovered=4 exit=0
+    Recovered, not applied: every value above is Gate-A evidence, recorded in
+    the identity ledger beside the other tiers' readings (spec §2.1).
