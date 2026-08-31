@@ -1,7 +1,7 @@
 {
   "version" : "2026.0.0",
   "fhirVersion" : ["4.0.1"],
-  "date" : "20260831201652",
+  "date" : "20260831203621",
   "name" : "de.medizininformatikinitiative.kerndatensatz.consent",
   "jurisdiction" : "urn:iso:std:iso:3166#DE"
 }
