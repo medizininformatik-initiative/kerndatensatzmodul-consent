@@ -73,7 +73,7 @@ This Code system is referenced in the definition of the following value sets:
   "valueSet" : "https://www.medizininformatik-initiative.de/fhir/modul-consent/ValueSet/mii-vs-consent-policy",
   "hierarchyMeaning" : "part-of",
   "content" : "complete",
-  "count" : 101,
+  "count" : 124,
   "property" : [{
     "code" : "period-of-validity",
     "description" : "A property that indicates the duration of validity of a concept. The string is a duration as ISO 8601:2004 string, ref. to http://hl7.org/fhir/iso-8601-date.",
