@@ -1,0 +1,105 @@
+2026-08-31T17:47:04Z  INFO   5.1b.3  postprocess-gofsh  params  fsh_dir=/private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/gofsh-out/input/fsh dry_run=False drop_comments=False
+2026-08-31T17:47:04Z  INFO   5.1b.3  postprocess-gofsh  scan  files=21 entities_declared=28 gofsh_log=migration-log/gofsh.log renames_reported=1
+    goFSH reported: 'MII CS Consent Policy' -> 'MII_CS_Consent_Policy'
+2026-08-31T17:47:04Z  INFO   5.1b.3  postprocess-gofsh  /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/gofsh-out/input/fsh/instances/34150a23-b1c8-404f-874f-e042a30435d2.fsh  changes=34
+    line 10: fhir_comments rule on extension.fhir_comments -> FSH comment
+    line 12: fhir_comments rule on status.fhir_comments -> FSH comment
+    line 14: fhir_comments rule on scope.fhir_comments -> FSH comment
+    line 16: fhir_comments rule on category[=].fhir_comments -> FSH comment
+    line 18: fhir_comments rule on category[=].fhir_comments -> FSH comment
+    line 20: fhir_comments rule on category[=].fhir_comments -> FSH comment
+    line 22: fhir_comments rule on category[=].fhir_comments -> FSH comment
+    line 24: fhir_comments rule on patient.fhir_comments -> FSH comment
+    line 26: fhir_comments rule on dateTime.fhir_comments -> FSH comment
+    line 28: fhir_comments rule on organization.display.fhir_comments -> FSH comment
+    line 30: fhir_comments rule on policy.uri.fhir_comments -> FSH comment
+    line 31: fhir_comments rule on policy.fhir_comments -> FSH comment
+    line 35: fhir_comments rule on policyRule.fhir_comments -> FSH comment
+    line 37: fhir_comments rule on provision.type.fhir_comments -> FSH comment
+    line 40: fhir_comments rule on provision.period.fhir_comments -> FSH comment
+    line 42: fhir_comments rule on provision.provision[=].type.fhir_comments -> FSH comment
+    line 45: fhir_comments rule on provision.provision[=].period.fhir_comments -> FSH comment
+    line 46: code reference 'MII CS Consent Policy' -> 'MII_CS_Consent_Policy'
+    line 48: fhir_comments rule on provision.provision[=].type.fhir_comments -> FSH comment
+    line 51: fhir_comments rule on provision.provision[=].period.fhir_comments -> FSH comment
+    line 52: code reference 'MII CS Consent Policy' -> 'MII_CS_Consent_Policy'
+    line 54: fhir_comments rule on provision.provision[=].type.fhir_comments -> FSH comment
+    line 57: fhir_comments rule on provision.provision[=].period.fhir_comments -> FSH comment
+    line 58: code reference 'MII CS Consent Policy' -> 'MII_CS_Consent_Policy'
+    line 60: fhir_comments rule on provision.provision[=].type.fhir_comments -> FSH comment
+    line 63: fhir_comments rule on provision.provision[=].period.fhir_comments -> FSH comment
+    line 64: code reference 'MII CS Consent Policy' -> 'MII_CS_Consent_Policy'
+    line 66: fhir_comments rule on provision.provision[=].type.fhir_comments -> FSH comment
+    line 69: fhir_comments rule on provision.provision[=].period.fhir_comments -> FSH comment
+    line 70: code reference 'MII CS Consent Policy' -> 'MII_CS_Consent_Policy'
+    line 72: fhir_comments rule on provision.provision[=].type.fhir_comments -> FSH comment
+    line 75: fhir_comments rule on provision.provision[=].period.fhir_comments -> FSH comment
+    line 76: code reference 'MII CS Consent Policy' -> 'MII_CS_Consent_Policy'
+    line 77: fhir_comments rule on provision.fhir_comments -> FSH comment
+2026-08-31T17:47:04Z  INFO   5.1b.3  postprocess-gofsh  /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/gofsh-out/input/fsh/instances/5143266b-8d60-4b28-8ee9-635140ffa5bb.fsh  changes=27
+    line 25: code reference 'MII CS Consent Policy' -> 'MII_CS_Consent_Policy'
+    line 29: code reference 'MII CS Consent Policy' -> 'MII_CS_Consent_Policy'
+    line 33: code reference 'MII CS Consent Policy' -> 'MII_CS_Consent_Policy'
+    line 37: code reference 'MII CS Consent Policy' -> 'MII_CS_Consent_Policy'
+    line 41: code reference 'MII CS Consent Policy' -> 'MII_CS_Consent_Policy'
+    line 45: code reference 'MII CS Consent Policy' -> 'MII_CS_Consent_Policy'
+    line 49: code reference 'MII CS Consent Policy' -> 'MII_CS_Consent_Policy'
+    line 53: code reference 'MII CS Consent Policy' -> 'MII_CS_Consent_Policy'
+    line 57: code reference 'MII CS Consent Policy' -> 'MII_CS_Consent_Policy'
+    line 61: code reference 'MII CS Consent Policy' -> 'MII_CS_Consent_Policy'
+    line 65: code reference 'MII CS Consent Policy' -> 'MII_CS_Consent_Policy'
+    line 69: code reference 'MII CS Consent Policy' -> 'MII_CS_Consent_Policy'
+    line 73: code reference 'MII CS Consent Policy' -> 'MII_CS_Consent_Policy'
+    line 77: code reference 'MII CS Consent Policy' -> 'MII_CS_Consent_Policy'
+    line 81: code reference 'MII CS Consent Policy' -> 'MII_CS_Consent_Policy'
+    line 85: code reference 'MII CS Consent Policy' -> 'MII_CS_Consent_Policy'
+    line 89: code reference 'MII CS Consent Policy' -> 'MII_CS_Consent_Policy'
+    line 93: code reference 'MII CS Consent Policy' -> 'MII_CS_Consent_Policy'
+    line 97: code reference 'MII CS Consent Policy' -> 'MII_CS_Consent_Policy'
+    line 101: code reference 'MII CS Consent Policy' -> 'MII_CS_Consent_Policy'
+    line 105: code reference 'MII CS Consent Policy' -> 'MII_CS_Consent_Policy'
+    line 109: code reference 'MII CS Consent Policy' -> 'MII_CS_Consent_Policy'
+    line 113: code reference 'MII CS Consent Policy' -> 'MII_CS_Consent_Policy'
+    line 117: code reference 'MII CS Consent Policy' -> 'MII_CS_Consent_Policy'
+    line 121: code reference 'MII CS Consent Policy' -> 'MII_CS_Consent_Policy'
+    line 125: code reference 'MII CS Consent Policy' -> 'MII_CS_Consent_Policy'
+    line 129: code reference 'MII CS Consent Policy' -> 'MII_CS_Consent_Policy'
+2026-08-31T17:47:04Z  INFO   5.1b.3  postprocess-gofsh  /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/gofsh-out/input/fsh/instances/55219d12-6245-4de4-8b50-ddf6f16a789b.fsh  changes=8
+    line 6: fhir_comments rule on target.fhir_comments -> FSH comment
+    line 8: fhir_comments rule on recorded.fhir_comments -> FSH comment
+    line 11: fhir_comments rule on agent.fhir_comments -> FSH comment
+    line 14: fhir_comments rule on entity.fhir_comments -> FSH comment
+    line 19: fhir_comments rule on signature[=].data.fhir_comments -> FSH comment
+    line 20: fhir_comments rule on signature[=].fhir_comments -> FSH comment
+    line 26: fhir_comments rule on signature[=].data.fhir_comments -> FSH comment
+    line 27: fhir_comments rule on signature[=].fhir_comments -> FSH comment
+2026-08-31T17:47:04Z  INFO   5.1b.3  postprocess-gofsh  /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/gofsh-out/input/fsh/instances/8a3d1799-2463-405e-b49c-6a16c8692b01.fsh  changes=3
+    line 6: fhir_comments rule on status.fhir_comments -> FSH comment
+    line 8: fhir_comments rule on subject.reference.fhir_comments -> FSH comment
+    line 9: fhir_comments rule on subject.fhir_comments -> FSH comment
+2026-08-31T17:47:04Z  INFO   5.1b.3  postprocess-gofsh  /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/gofsh-out/input/fsh/instances/Example-MII-Consent-ResultType-document.fsh  changes=20
+    line 10: fhir_comments rule on extension.fhir_comments -> FSH comment
+    line 12: fhir_comments rule on status.fhir_comments -> FSH comment
+    line 14: fhir_comments rule on scope.fhir_comments -> FSH comment
+    line 16: fhir_comments rule on category[=].fhir_comments -> FSH comment
+    line 18: fhir_comments rule on category[=].fhir_comments -> FSH comment
+    line 20: fhir_comments rule on category[=].fhir_comments -> FSH comment
+    line 22: fhir_comments rule on category[=].fhir_comments -> FSH comment
+    line 24: fhir_comments rule on patient.fhir_comments -> FSH comment
+    line 26: fhir_comments rule on dateTime.fhir_comments -> FSH comment
+    line 28: fhir_comments rule on organization.display.fhir_comments -> FSH comment
+    line 30: fhir_comments rule on policy.uri.fhir_comments -> FSH comment
+    line 31: fhir_comments rule on policy.fhir_comments -> FSH comment
+    line 35: fhir_comments rule on policyRule.fhir_comments -> FSH comment
+    line 42: code reference 'MII CS Consent Policy' -> 'MII_CS_Consent_Policy'
+    line 43: code reference 'MII CS Consent Policy' -> 'MII_CS_Consent_Policy'
+    line 44: code reference 'MII CS Consent Policy' -> 'MII_CS_Consent_Policy'
+    line 48: code reference 'MII CS Consent Policy' -> 'MII_CS_Consent_Policy'
+    line 52: code reference 'MII CS Consent Policy' -> 'MII_CS_Consent_Policy'
+    line 53: code reference 'MII CS Consent Policy' -> 'MII_CS_Consent_Policy'
+    line 54: fhir_comments rule on provision.fhir_comments -> FSH comment
+2026-08-31T17:47:04Z  INFO   5.1b.3  postprocess-gofsh  result  fhir_comments=53 (preserved as FSH comments) code_references=39 changed=5 of 21 file(s)  exit=0
+2026-08-31T17:47:04Z  INFO   5.1b.3  postprocess-gofsh  next: run `npx --yes fsh-sushi@3.20.0 .`; remaining errors are NOT mechanical
+    A foreign parent IG that ships no snapshots cannot be imported at all,
+    and that is a Gate-A escalation (obtain a snapshot-bearing package build,
+    or record the affected profiles as blocked). Never invent a parent.

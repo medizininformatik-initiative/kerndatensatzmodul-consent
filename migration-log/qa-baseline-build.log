@@ -2,10 +2,10 @@ publisher ---> UID = 1001 / GID = 1001
 usermod: no changes
 Cloning into '/home/publisher/bin/ig-publisher-scripts'...
 npm warn deprecated inflight@1.0.6: This module is not supported, and leaks memory. Do not use it. Check out lru-cache if you want a good and tested way to coalesce async requests by a key value, which is much more comprehensive and powerful.
-npm warn deprecated rimraf@2.6.3: Rimraf versions prior to v4 are no longer supported
 npm warn deprecated glob@7.2.3: Old versions of glob are not supported, and contain widely publicized security vulnerabilities, which have been fixed in the current version. Please update. Support for old versions may be purchased (at exorbitant rates) by contacting i@izs.me
+npm warn deprecated rimraf@2.6.3: Rimraf versions prior to v4 are no longer supported
 
-added 142 packages in 36s
+added 142 packages in 26s
 
 14 packages are looking for funding
   run `npm fund` for details
@@ -19,14 +19,14 @@ Detected Java version: 21.0.10 from /opt/java/openjdk on Linux/aarch64 (64bit). 
 dir = /home/publisher/ig, path = /home/publisher/bin:/home/publisher/bin/ig-publisher-scripts:/home/publisher/.node/bin:/opt/java/openjdk/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin
 Parameters: -ig /work                                                                               
 Character encoding = UTF-8 / UTF-8                                                                  
-Start Clock @ Monday, August 31, 2026, 5:45:17 PM Coordinated Universal Time (2026-08-31T17:45:17Z) 
+Start Clock @ Monday, August 31, 2026, 5:53:40 PM Coordinated Universal Time (2026-08-31T17:53:40Z) 
                                                                                                     
-Build FHIR IG from /work                                                                             (00:00.017 / 00:00.017, 24Mb)
-No FHIR settings file at /home/publisher/.fhir/fhir-settings.json; using defaults (no API keys or npm path) (00:00.001 / 00:00.018, 24Mb)
-Package Cache: /home/publisher/.fhir/packages                                                        (00:00.003 / 00:00.021, 24Mb)
-Root directory: /work                                                                                (00:00.007 / 00:00.029, 25Mb)
-Unable to load IG as an r5 IG - try R4 (property code is a class com.google.gson.JsonPrimitive looking for an object) (00:00.437 / 00:00.467, 54Mb)
-Load Template from fhir.base.template                                                                (00:00.303 / 00:00.770, 21Mb)
+Build FHIR IG from /work                                                                             (00:00.015 / 00:00.016, 24Mb)
+No FHIR settings file at /home/publisher/.fhir/fhir-settings.json; using defaults (no API keys or npm path) (00:00.002 / 00:00.018, 24Mb)
+Package Cache: /home/publisher/.fhir/packages                                                        (00:00.004 / 00:00.022, 24Mb)
+Root directory: /work                                                                                (00:00.005 / 00:00.028, 24Mb)
+Unable to load IG as an r5 IG - try R4 (property code is a class com.google.gson.JsonPrimitive looking for an object) (00:00.616 / 00:00.644, 54Mb)
+Load Template from fhir.base.template                                                                (00:00.833 / 00:01.478, 32Mb)
 [33mThis content depends on fhir.base.template which is no longer considered secure to use
 [0;39m[33mSee Security notification at https://www.fhir.org/guides/security-notices/2026-03-npm-dependencies.html
 [0;39m[39mInstalling fhir.base.template#1.0.0 to the package cache
@@ -37,16 +37,161 @@ Load Template from fhir.base.template                                           
 [0;39m[39m loaded @ /home/publisher/.fhir/packages/fhir.base.template#1.0.0
 [0;39mScanning directory: /work/template
 ======================================================================
-Terminology Cache is at /work/input-cache/txcache. 0 files in cache                                  (00:09.753 / 00:10.523, 120Mb)
-Core Package hl7.fhir.r4.core#4.0.1                                                                  (00:00.000 / 00:10.525, 120Mb)
+Terminology Cache is at /work/input-cache/txcache. 9 files in cache                                  (00:16.445 / 00:17.923, 129Mb)
+Core Package hl7.fhir.r4.core#4.0.1                                                                  (00:00.001 / 00:17.924, 129Mb)
 [39mInstalling hl7.fhir.r4.core#4.0.1 to the package cache
 [0;39m[39m  Fetching:
 [0;39m[39m
 [0;39m[39mInstalling hl7.fhir.r4.core#4.0.1
 [0;39m[39m done.
 [0;39m[39m loaded @ /home/publisher/.fhir/packages/hl7.fhir.r4.core#4.0.1
-[0;39mRunning Terminology Log: /tmp/ohfu-fhir-ig-4771279182613621754.html
-Connect to Terminology Server at https://tx.fhir.org                                                 (00:21.596 / 00:32.120, 329Mb)
+[0;39mRunning Terminology Log: /tmp/ohfu-fhir-ig-8580075471185082451.html
+Connect to Terminology Server at https://tx.fhir.org                                                 (00:26.842 / 00:44.767, 325Mb)
 [39mInstalling hl7.fhir.pubpack#0.2.5 to the package cache
 [0;39m[39m  Fetching:
-[0;39m
+[0;39m[39m
+[0;39m[39mInstalling hl7.fhir.pubpack#0.2.5
+[0;39m[39m done.
+[0;39m[39m loaded @ /home/publisher/.fhir/packages/hl7.fhir.pubpack#0.2.5
+[0;39m[39mLoad Package hl7.fhir.pubpack#0.2.5
+[0;39m[39mInstalling hl7.fhir.xver-extensions#0.1.0 to the package cache
+[0;39m[39m  Fetching:
+[0;39m[39m
+[0;39m[39mInstalling hl7.fhir.xver-extensions#0.1.0
+[0;39m[39m done.
+[0;39m[39m loaded @ /home/publisher/.fhir/packages/hl7.fhir.xver-extensions#0.1.0
+[0;39m[39mLoad Package hl7.fhir.xver-extensions#0.1.0
+[0;39m[39mInstalling hl7.terminology.r4#7.3.0 to the package cache
+[0;39m[39m  Fetching:
+[0;39m[39m
+[0;39m[39mInstalling hl7.terminology.r4#7.3.0
+[0;39m[39m done.
+[0;39m[39m loaded @ /home/publisher/.fhir/packages/hl7.terminology.r4#7.3.0
+[0;39m[39mLoad Package hl7.terminology.r4#7.3.0
+[0;39m[39mInstalling hl7.fhir.uv.extensions.r4#5.3.0 to the package cache
+[0;39m[39m  Fetching:
+[0;39m[39m
+[0;39m[39mInstalling hl7.fhir.uv.extensions.r4#5.3.0
+[0;39m[39m done.
+[0;39m[39m loaded @ /home/publisher/.fhir/packages/hl7.fhir.uv.extensions.r4#5.3.0
+[0;39m[39mLoad Package hl7.fhir.uv.extensions.r4#5.3.0
+[0;39mDependency 'de.einwilligungsmanagement' has no id, so can't be referred to in markdown in the IG     (00:39.519 / 01:24.298, 303Mb)
+[39mInstalling de.einwilligungsmanagement#2.0.2 to the package cache
+[0;39m[39m  Fetching:
+[0;39m[39m
+[0;39m[39mInstalling de.einwilligungsmanagement#2.0.2
+[0;39m[39m done.
+[0;39m[39m loaded @ /home/publisher/.fhir/packages/de.einwilligungsmanagement#2.0.2
+[0;39m[39mLoad Package de.einwilligungsmanagement#2.0.2
+[0;39m[39mInstalling hl7.fhir.uv.tools.r4#1.1.2 to the package cache
+[0;39m[39m  Fetching:
+[0;39m[39m
+[0;39m[39mInstalling hl7.fhir.uv.tools.r4#1.1.2
+[0;39m[39m done.
+[0;39m[39m loaded @ /home/publisher/.fhir/packages/hl7.fhir.uv.tools.r4#1.1.2
+[0;39m[39mLoad Package hl7.fhir.uv.tools.r4#1.1.2
+[0;39mLoad R5 Specials
+[39mInstalling hl7.fhir.r5.core#5.0.0 to the package cache
+[0;39m[39m  Fetching:
+[0;39m[39m
+[0;39m[39mInstalling hl7.fhir.r5.core#5.0.0
+[0;39m[39m done.
+[0;39m[39m loaded @ /home/publisher/.fhir/packages/hl7.fhir.r5.core#5.0.0
+[0;39m[1;31mThe slice definition for Extension.extension has a minimum of 0 but the slices add up to a minimum of 1
+[0;39m[1;31mThe slice definition for Extension.extension has a minimum of 0 but the slices add up to a minimum of 1
+[0;39m[1;31mThe slice definition for Extension.extension has a minimum of 0 but the slices add up to a minimum of 1
+[0;39m[1;31mThe slice definition for Organization.extension:contextIdentifier.extension has a minimum of 0 but the slices add up to a minimum of 1
+[0;39m[1;31mThe slice definition for Organization.extension has a minimum of 0 but the slices add up to a minimum of 1
+[0;39m[1;31mThe slice definition for ResearchStudy.extension:contextIdentifier.extension has a minimum of 0 but the slices add up to a minimum of 1
+[0;39m[1;31mThe slice definition for ResearchStudy.extension has a minimum of 0 but the slices add up to a minimum of 1
+[0;39m[1;31mThe element Questionnaire.item.text.extension:renderingMarkdown.value[x]:valueMarkdown launches straight into slicing without the slicing being set up properly first
+[0;39m[1;31mThe element Questionnaire.item.text.extension:renderingXhtml.value[x]:valueString launches straight into slicing without the slicing being set up properly first
+[0;39m[1;31mThe element Questionnaire.item.text.extension:renderingMarkdown.value[x]:valueMarkdown launches straight into slicing without the slicing being set up properly first
+[0;39m[1;31mThe element Questionnaire.item.text.extension:renderingXhtml.value[x]:valueString launches straight into slicing without the slicing being set up properly first
+[0;39m[1;31mThe slice definition for Consent.extension:domainReference.extension has a minimum of 0 but the slices add up to a minimum of 1
+[0;39m[1;31mThe slice definition for Questionnaire.item.extension:xacmlTemplate.extension has a minimum of 0 but the slices add up to a minimum of 1
+[0;39m[1;31mThe element Questionnaire.item.text.extension:renderingMarkdown.value[x]:valueMarkdown launches straight into slicing without the slicing being set up properly first
+[0;39m[1;31mThe element Questionnaire.item.text.extension:renderingXhtml.value[x]:valueString launches straight into slicing without the slicing being set up properly first
+[0;39mInitialization complete                                                                              (00:34.951 / 01:59.237, 408Mb)
+Load IG                                                                                              (00:00.002 / 01:59.240, 408Mb)
+Load Content                                                                                         (00:00.055 / 01:59.296, 409Mb)
+Using en-US as the default narrative language. (no language information in Implementation Guide)     (00:00.112 / 01:59.408, 413Mb)
+Process Loaded Resources                                                                             (00:00.537 / 01:59.946, 498Mb)
+Generating Snapshots                                                                                 (00:00.173 / 02:00.119, 526Mb)
+
+Signing Certificate: RSA key for Subject: OU=IG Publisher, L=Ann Arbor, CN=hl7.org, O=HL7, ST=Missouri, C=us from: OU=IG Publisher, L=Ann Arbor, CN=hl7.org, O=HL7, ST=Missouri, C=us
+Fetch https://www.medizininformatik-initiative.de/fhir/modul-consent/package-list.json for version check (00:00.357 / 02:00.477, 321Mb)
+Checking Language                                                                                    (00:02.666 / 02:03.144, 328Mb)
+Load Dependency Info                                                                                 (00:00.006 / 02:03.149, 328Mb)
+Load Info                                                                                            (00:00.006 / 02:03.156, 328Mb)
+Load Paths                                                                                           (00:00.002 / 02:03.158, 329Mb)
+Check R4 / R4B                                                                                       (00:00.000 / 02:03.159, 329Mb)
+Assign Comparison Ids                                                                                (00:00.037 / 02:03.197, 336Mb)
+Propagating status                                                                                   (00:00.001 / 02:03.198, 336Mb)
+Generating Narratives                                                                                (00:00.000 / 02:03.199, 336Mb)
+Validating Conformance Resources                                                                     (00:00.754 / 02:03.953, 452Mb)
+Check profiles & code systems                                                                        (00:19.711 / 02:23.665, 493Mb)
+Check realm rules                                                                                    (00:00.022 / 02:23.687, 494Mb)
+Previous Version Comparison                                                                          (00:00.000 / 02:23.688, 494Mb)
+.. loaded. Process                                                                                   (00:00.000 / 02:23.689, 494Mb)
+finish previous version comparison                                                                   (00:00.001 / 02:23.690, 494Mb)
+finish ipa version                                                                                   (00:00.000 / 02:23.690, 494Mb)
+finish ips version                                                                                   (00:00.000 / 02:23.691, 494Mb)
+comparisons done                                                                                     (00:00.000 / 02:23.691, 494Mb)
+Checking for Bundles to sign                                                                         (00:00.042 / 02:23.733, 496Mb)
+Validating Resources                                                                                 (00:00.000 / 02:23.734, 496Mb)
+Processing Provenance Records                                                                        (00:01.177 / 02:24.913, 329Mb)
+Generating Outputs in /work/output                                                                   (00:00.005 / 02:24.918, 329Mb)
+Warning @ Unable to read the git branch: not a git repository (or any parent up to mount point /)Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+Warning @ Unable to read the git source: not a git repository (or any parent up to mount point /)Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+Generate Native Outputs                                                                              (00:00.932 / 02:25.851, 345Mb)
+Run Template                                                                                         (00:25.184 / 02:51.035, 334Mb)
+Generate HTML Outputs                                                                                (00:05.523 / 02:56.558, 378Mb)
+Generate Spreadsheets                                                                                (00:04.880 / 03:01.439, 568Mb)
+Generate Summaries                                                                                   (00:01.700 / 03:03.142, 430Mb)
+Generating Summary Outputs                                                                           (00:00.015 / 03:03.155, 430Mb)
+DB Cumulative Time invested: 00:00:00.255
+Sending Usage Stats to Server                                                                        (00:06.544 / 03:09.700, 521Mb)
+## Memory (MB): Use = 522, Free = 209, Total = 732, Max = 4096                                       (00:00.004 / 03:09.704, 522Mb)
+Reclaiming memory...                                                                                 (00:00.000 / 03:09.705, 522Mb)
+Generating combined package                                                                          (00:00.005 / 03:09.710, 523Mb)
+Error generating combined package: /work/output/package.tgz (No such file or directory)              (00:00.009 / 03:09.720, 523Mb)
+## Memory (MB): Use = 298, Free = 433, Total = 732, Max = 4096                                       (00:00.284 / 03:10.005, 299Mb)
+Run jekyll: jekyll build --destination "/work/output" (in folder /work/temp/pages)                   (00:00.009 / 03:10.014, 300Mb)
+Troubleshooting Note: usual cases for Jekyll to fail are:                                            (00:00.000 / 03:10.014, 300Mb)
+* A failure to produce a fragment that is already logged in the output above                         (00:00.002 / 03:10.016, 300Mb)
+* A reference to a manually edited file that hasn't been provided                                    (00:00.000 / 03:10.017, 300Mb)
+Jekyll: Source: /work/temp/pages                                                                     (00:00.381 / 03:10.398, 303Mb)
+Jekyll: Generating...                                                                                (00:00.001 / 03:10.399, 303Mb)
+Jekyll: done in 2.163 seconds.                                                                       (00:02.162 / 03:12.563, 303Mb)
+[39m
+[0;39m[39mInstalling de.medizininformatikinitiative.kerndatensatz.consent.qabaseline#dev
+[0;39m[39m done.
+[0;39m[39m loaded @ /home/publisher/.fhir/packages/de.medizininformatikinitiative.kerndatensatz.consent.qabaseline#dev
+[0;39mChecking Output HTML                                                                                 (00:02.271 / 03:14.835, 590Mb)
+Processed /work/output - % reduction = 99 (18141541 ==> 211874)
+found 831 files                                                                                      (00:01.141 / 03:15.976, 363Mb)
+.........................................
+.........................................
+  ... 831 html files, 0 pages invalid xhtml (0%)                                                     (00:15.090 / 03:31.066, 1Gb)
+  ... 76924 links, 373 broken links (0%)                                                             (00:00.001 / 03:31.067, 1Gb)
+Generate fragment-usage-analysis.csv                                                                 (00:00.000 / 03:31.068, 1Gb)
+Build final .zip                                                                                     (00:00.015 / 03:31.083, 1Gb)
+Final .zip built                                                                                     (00:00.843 / 03:31.926, 1Gb)
+[39mInstalling hl7.terminology.r4#7.1.0 to the package cache
+[0;39m[39m  Fetching:
+[0;39m[39m
+[0;39m[39mInstalling hl7.terminology.r4#7.1.0
+[0;39m[39m done.
+[0;39m[39m loaded @ /home/publisher/.fhir/packages/hl7.terminology.r4#7.1.0
+[0;39m[39mInstalling hl7.fhir.uv.extensions.r4#5.2.0 to the package cache
+[0;39m[39m  Fetching:
+[0;39m[39m
+[0;39m[39mInstalling hl7.fhir.uv.extensions.r4#5.2.0
+[0;39m[39m done.
+[0;39m[39m loaded @ /home/publisher/.fhir/packages/hl7.fhir.uv.extensions.r4#5.2.0
+[0;39mBuilt. Times: loading: 00:03.857, generate: 01:58.403, narrative generation: 00:00.753, realm-rules: 00:00.000, previous-version: 00:00.003, jekyll: 00:02.600, validation: 00:20.881 (#21), template: 00:05.574 (#3) (00:29.621 / 04:01.548, 783Mb)
+Generating QA                                                                                        (00:00.000 / 04:01.549, 783Mb)
+Validation output in /work/output/qa.html
+Errors: 68, Warnings: 88, Info: 49, Broken Links: 373     (00:00.460 / 04:02.010, 878Mb)
+Finished @ 8/31/26, 5:57 PM. Max Memory Used = 1Gb. Log file saved in /tmp/fhir-ig-publisher-tmp.log (00:00.037 / 04:02.048, 878Mb)

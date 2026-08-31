@@ -244,3 +244,415 @@ ig-stats -> migration-log/preflight-analysis.json  (Artefakte 0, Direktiven 0, I
     decision: publisher=NUM-DIZ stays as TEMPLATE CHROME per spec 2.2 deliberate exception — recovered TFCU/MII strings recorded as content-attribution evidence ONLY, never carried into sushi-config publisher
     decision: license CC-BY-4.0 added machine-readable to sushi-config (plan D-1) — tier evidence unanimous (LICENSE text + GitHub spdx + guide prose CC BY 4.0 + TMF copyright); F-01-class change ANNOUNCED, owner sign-off requested at Gate A
     decision: dependency transfer per plan D-12 — source pins win verbatim; hl7.fhir.uv.crmi 2.0.0 added as recorded template-machinery addition (spec step 3); NO basisprofil/xver/meta parity pins imported
+2026-08-31T17:46:47Z  INFO   log  run-boundary  ===== run 2 starts  run=2 label=step 2b — Path B on /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/recon/source-tag cwd=/private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/target log=migration-log/run.log
+    Every line below belongs to run 2; the lines above are earlier invocations.
+    Per-step raw logs (migration-log/<ACTION>.log) hold THIS run only -- `run`
+    truncates each one and rolls the previous attempt over to <ACTION>.prev.log.
+2026-08-31T17:46:47Z  INFO   5.1b.2  gofsh-staging  decision: goFSH input = pristine tag worktree /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/recon/source-tag (HEAD=792f9f3e, byte-identical to branch baseline) NOT the working tree — recorded reason: working tree now carries migration-log/ incl. a FHIR-parseable wrapper IG that would pollute the by-content input census
+2026-08-31T17:46:47Z  INFO   5.1b.2  gofsh-input  inputs=20 src=/private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/recon/source-tag
+2026-08-31T17:46:47Z  INFO   5.1b.2  gofsh-convert  start  cmd=`npx --yes gofsh@2.6.1 /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/recon/source-tag -o /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/gofsh-out -s file-per-definition -t json-and-xml -d de.einwilligungsmanagement@2.0.2 -d hl7.fhir.r4.core@4.0.1`  raw_log=migration-log/gofsh.log
+2026-08-31T17:46:56Z  INFO   5.1b.2  gofsh-convert  done  cmd=`npx --yes gofsh@2.6.1 /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/recon/source-tag -o /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/gofsh-out -s file-per-definition -t json-and-xml -d de.einwilligungsmanagement@2.0.2 -d hl7.fhir.r4.core@4.0.1`  exit=0 raw_log=migration-log/gofsh.log raw_log_lines=101
+2026-08-31T17:46:56Z  INFO   5.1b.2  gofsh-convert  goFSH RESULTS table (of 1 in the log, the last) profiles=3 extensions=0 logicals=0 resources=0 valuesets=3 codesystems=3 instances=11 invariants=0 mappings=0 aliases=8  converted=20 counted=profiles+extensions+logicals+resources+valuesets+codesystems+instances not_counted=invariants,mappings,aliases  gofsh_log=migration-log/gofsh.log
+2026-08-31T17:46:56Z  INFO   5.1b.2  gofsh-convert  converted 20 of 20 inputs  expected=20 actual=20 exit=0
+    goFSH warnings: 2, none of them bearing on completeness.
+2026-08-31T17:46:56Z  INFO   5.1b.3  sushi-before  start  cmd=`bash -c 'cd '\''/private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/gofsh-out'\'' && npx --yes fsh-sushi@3.20.0 .'`  raw_log=migration-log/sushi-before.log
+2026-08-31T17:47:04Z  ERROR  5.1b.3  sushi-before  failed  cmd=`bash -c 'cd '\''/private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/gofsh-out'\'' && npx --yes fsh-sushi@3.20.0 .'`  exit=41 raw_log=migration-log/sushi-before.log raw_log_lines=177
+    The exit status is preserved and returned -- this step did NOT meet its
+    acceptance criterion. Read migration-log/sushi-before.log, then either fix and re-run or take it
+    to the report's decision queue (spec §10.3).
+2026-08-31T17:47:04Z  INFO   5.1b.3  sushi-before  errors=41
+2026-08-31T17:47:04Z  INFO   5.1b.3  postprocess-gofsh  start  cmd=`python3 /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/recon/agent-skills/skills/mii-ig-migration/scripts/postprocess-gofsh.py /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/gofsh-out/input/fsh --gofsh-log migration-log/gofsh.log`  raw_log=migration-log/postprocess-gofsh.log
+2026-08-31T17:47:04Z  INFO   5.1b.3  postprocess-gofsh  params  fsh_dir=/private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/gofsh-out/input/fsh dry_run=False drop_comments=False
+2026-08-31T17:47:04Z  INFO   5.1b.3  postprocess-gofsh  scan  files=21 entities_declared=28 gofsh_log=migration-log/gofsh.log renames_reported=1
+    goFSH reported: 'MII CS Consent Policy' -> 'MII_CS_Consent_Policy'
+2026-08-31T17:47:04Z  INFO   5.1b.3  postprocess-gofsh  /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/gofsh-out/input/fsh/instances/34150a23-b1c8-404f-874f-e042a30435d2.fsh  changes=34
+    line 10: fhir_comments rule on extension.fhir_comments -> FSH comment
+    line 12: fhir_comments rule on status.fhir_comments -> FSH comment
+    line 14: fhir_comments rule on scope.fhir_comments -> FSH comment
+    line 16: fhir_comments rule on category[=].fhir_comments -> FSH comment
+    line 18: fhir_comments rule on category[=].fhir_comments -> FSH comment
+    line 20: fhir_comments rule on category[=].fhir_comments -> FSH comment
+    line 22: fhir_comments rule on category[=].fhir_comments -> FSH comment
+    line 24: fhir_comments rule on patient.fhir_comments -> FSH comment
+    line 26: fhir_comments rule on dateTime.fhir_comments -> FSH comment
+    line 28: fhir_comments rule on organization.display.fhir_comments -> FSH comment
+    line 30: fhir_comments rule on policy.uri.fhir_comments -> FSH comment
+    line 31: fhir_comments rule on policy.fhir_comments -> FSH comment
+    line 35: fhir_comments rule on policyRule.fhir_comments -> FSH comment
+    line 37: fhir_comments rule on provision.type.fhir_comments -> FSH comment
+    line 40: fhir_comments rule on provision.period.fhir_comments -> FSH comment
+    line 42: fhir_comments rule on provision.provision[=].type.fhir_comments -> FSH comment
+    line 45: fhir_comments rule on provision.provision[=].period.fhir_comments -> FSH comment
+    line 46: code reference 'MII CS Consent Policy' -> 'MII_CS_Consent_Policy'
+    line 48: fhir_comments rule on provision.provision[=].type.fhir_comments -> FSH comment
+    line 51: fhir_comments rule on provision.provision[=].period.fhir_comments -> FSH comment
+    line 52: code reference 'MII CS Consent Policy' -> 'MII_CS_Consent_Policy'
+    line 54: fhir_comments rule on provision.provision[=].type.fhir_comments -> FSH comment
+    line 57: fhir_comments rule on provision.provision[=].period.fhir_comments -> FSH comment
+    line 58: code reference 'MII CS Consent Policy' -> 'MII_CS_Consent_Policy'
+    line 60: fhir_comments rule on provision.provision[=].type.fhir_comments -> FSH comment
+    line 63: fhir_comments rule on provision.provision[=].period.fhir_comments -> FSH comment
+    line 64: code reference 'MII CS Consent Policy' -> 'MII_CS_Consent_Policy'
+    line 66: fhir_comments rule on provision.provision[=].type.fhir_comments -> FSH comment
+    line 69: fhir_comments rule on provision.provision[=].period.fhir_comments -> FSH comment
+    line 70: code reference 'MII CS Consent Policy' -> 'MII_CS_Consent_Policy'
+    line 72: fhir_comments rule on provision.provision[=].type.fhir_comments -> FSH comment
+    line 75: fhir_comments rule on provision.provision[=].period.fhir_comments -> FSH comment
+    line 76: code reference 'MII CS Consent Policy' -> 'MII_CS_Consent_Policy'
+    line 77: fhir_comments rule on provision.fhir_comments -> FSH comment
+2026-08-31T17:47:04Z  INFO   5.1b.3  postprocess-gofsh  /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/gofsh-out/input/fsh/instances/5143266b-8d60-4b28-8ee9-635140ffa5bb.fsh  changes=27
+    line 25: code reference 'MII CS Consent Policy' -> 'MII_CS_Consent_Policy'
+    line 29: code reference 'MII CS Consent Policy' -> 'MII_CS_Consent_Policy'
+    line 33: code reference 'MII CS Consent Policy' -> 'MII_CS_Consent_Policy'
+    line 37: code reference 'MII CS Consent Policy' -> 'MII_CS_Consent_Policy'
+    line 41: code reference 'MII CS Consent Policy' -> 'MII_CS_Consent_Policy'
+    line 45: code reference 'MII CS Consent Policy' -> 'MII_CS_Consent_Policy'
+    line 49: code reference 'MII CS Consent Policy' -> 'MII_CS_Consent_Policy'
+    line 53: code reference 'MII CS Consent Policy' -> 'MII_CS_Consent_Policy'
+    line 57: code reference 'MII CS Consent Policy' -> 'MII_CS_Consent_Policy'
+    line 61: code reference 'MII CS Consent Policy' -> 'MII_CS_Consent_Policy'
+    line 65: code reference 'MII CS Consent Policy' -> 'MII_CS_Consent_Policy'
+    line 69: code reference 'MII CS Consent Policy' -> 'MII_CS_Consent_Policy'
+    line 73: code reference 'MII CS Consent Policy' -> 'MII_CS_Consent_Policy'
+    line 77: code reference 'MII CS Consent Policy' -> 'MII_CS_Consent_Policy'
+    line 81: code reference 'MII CS Consent Policy' -> 'MII_CS_Consent_Policy'
+    line 85: code reference 'MII CS Consent Policy' -> 'MII_CS_Consent_Policy'
+    line 89: code reference 'MII CS Consent Policy' -> 'MII_CS_Consent_Policy'
+    line 93: code reference 'MII CS Consent Policy' -> 'MII_CS_Consent_Policy'
+    line 97: code reference 'MII CS Consent Policy' -> 'MII_CS_Consent_Policy'
+    line 101: code reference 'MII CS Consent Policy' -> 'MII_CS_Consent_Policy'
+    line 105: code reference 'MII CS Consent Policy' -> 'MII_CS_Consent_Policy'
+    line 109: code reference 'MII CS Consent Policy' -> 'MII_CS_Consent_Policy'
+    line 113: code reference 'MII CS Consent Policy' -> 'MII_CS_Consent_Policy'
+    line 117: code reference 'MII CS Consent Policy' -> 'MII_CS_Consent_Policy'
+    line 121: code reference 'MII CS Consent Policy' -> 'MII_CS_Consent_Policy'
+    line 125: code reference 'MII CS Consent Policy' -> 'MII_CS_Consent_Policy'
+    line 129: code reference 'MII CS Consent Policy' -> 'MII_CS_Consent_Policy'
+2026-08-31T17:47:04Z  INFO   5.1b.3  postprocess-gofsh  /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/gofsh-out/input/fsh/instances/55219d12-6245-4de4-8b50-ddf6f16a789b.fsh  changes=8
+    line 6: fhir_comments rule on target.fhir_comments -> FSH comment
+    line 8: fhir_comments rule on recorded.fhir_comments -> FSH comment
+    line 11: fhir_comments rule on agent.fhir_comments -> FSH comment
+    line 14: fhir_comments rule on entity.fhir_comments -> FSH comment
+    line 19: fhir_comments rule on signature[=].data.fhir_comments -> FSH comment
+    line 20: fhir_comments rule on signature[=].fhir_comments -> FSH comment
+    line 26: fhir_comments rule on signature[=].data.fhir_comments -> FSH comment
+    line 27: fhir_comments rule on signature[=].fhir_comments -> FSH comment
+2026-08-31T17:47:04Z  INFO   5.1b.3  postprocess-gofsh  /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/gofsh-out/input/fsh/instances/8a3d1799-2463-405e-b49c-6a16c8692b01.fsh  changes=3
+    line 6: fhir_comments rule on status.fhir_comments -> FSH comment
+    line 8: fhir_comments rule on subject.reference.fhir_comments -> FSH comment
+    line 9: fhir_comments rule on subject.fhir_comments -> FSH comment
+2026-08-31T17:47:04Z  INFO   5.1b.3  postprocess-gofsh  /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/gofsh-out/input/fsh/instances/Example-MII-Consent-ResultType-document.fsh  changes=20
+    line 10: fhir_comments rule on extension.fhir_comments -> FSH comment
+    line 12: fhir_comments rule on status.fhir_comments -> FSH comment
+    line 14: fhir_comments rule on scope.fhir_comments -> FSH comment
+    line 16: fhir_comments rule on category[=].fhir_comments -> FSH comment
+    line 18: fhir_comments rule on category[=].fhir_comments -> FSH comment
+    line 20: fhir_comments rule on category[=].fhir_comments -> FSH comment
+    line 22: fhir_comments rule on category[=].fhir_comments -> FSH comment
+    line 24: fhir_comments rule on patient.fhir_comments -> FSH comment
+    line 26: fhir_comments rule on dateTime.fhir_comments -> FSH comment
+    line 28: fhir_comments rule on organization.display.fhir_comments -> FSH comment
+    line 30: fhir_comments rule on policy.uri.fhir_comments -> FSH comment
+    line 31: fhir_comments rule on policy.fhir_comments -> FSH comment
+    line 35: fhir_comments rule on policyRule.fhir_comments -> FSH comment
+    line 42: code reference 'MII CS Consent Policy' -> 'MII_CS_Consent_Policy'
+    line 43: code reference 'MII CS Consent Policy' -> 'MII_CS_Consent_Policy'
+    line 44: code reference 'MII CS Consent Policy' -> 'MII_CS_Consent_Policy'
+    line 48: code reference 'MII CS Consent Policy' -> 'MII_CS_Consent_Policy'
+    line 52: code reference 'MII CS Consent Policy' -> 'MII_CS_Consent_Policy'
+    line 53: code reference 'MII CS Consent Policy' -> 'MII_CS_Consent_Policy'
+    line 54: fhir_comments rule on provision.fhir_comments -> FSH comment
+2026-08-31T17:47:04Z  INFO   5.1b.3  postprocess-gofsh  result  fhir_comments=53 (preserved as FSH comments) code_references=39 changed=5 of 21 file(s)  exit=0
+2026-08-31T17:47:04Z  INFO   5.1b.3  postprocess-gofsh  next: run `npx --yes fsh-sushi@3.20.0 .`; remaining errors are NOT mechanical
+    A foreign parent IG that ships no snapshots cannot be imported at all,
+    and that is a Gate-A escalation (obtain a snapshot-bearing package build,
+    or record the affected profiles as blocked). Never invent a parent.
+2026-08-31T17:47:04Z  INFO   5.1b.3  postprocess-gofsh  done  cmd=`python3 /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/recon/agent-skills/skills/mii-ig-migration/scripts/postprocess-gofsh.py /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/gofsh-out/input/fsh --gofsh-log migration-log/gofsh.log`  exit=0 raw_log=migration-log/postprocess-gofsh.log raw_log_lines=105
+2026-08-31T17:47:04Z  INFO   5.1b.3  sushi-after  start  cmd=`bash -c 'cd '\''/private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/gofsh-out'\'' && npx --yes fsh-sushi@3.20.0 .'`  raw_log=migration-log/sushi-after.log
+2026-08-31T17:47:13Z  WARN   5.1b.3  sushi-after  anticipated-nonzero-exit: shape B: unresolvable parents are a Gate-A escalation (§5.1b.4)  cmd=`bash -c 'cd '\''/private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/gofsh-out'\'' && npx --yes fsh-sushi@3.20.0 .'`  exit=5 raw_log=migration-log/sushi-after.log raw_log_lines=69
+    This non-zero status is this step's ANTICIPATED, documented outcome, not a
+    failure to fix -- the acceptance criterion is met AS QUALIFIED (spec
+    §5.1b.4). Escalated, not ignored: every item behind it belongs in the
+    report's ① decision queue, named individually (spec §10.3, §10.6).
+2026-08-31T17:47:13Z  INFO   5.1b.3  sushi-after  errors=5 resolved=36  before=41
+2026-08-31T17:48:11Z  ERROR  1  qa-baseline-build  failed  cmd=`docker run --rm -v /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/qa-baseline:/work -v /Users/marcel/.fhir:/root/.fhir hl7fhir/ig-publisher-base java -Xmx4g -Dfile.encoding=UTF-8 -jar /work/publisher.jar -ig /work`  exit=1 raw_log=migration-log/qa-baseline-build.log raw_log_lines=181
+    The exit status is preserved and returned -- this step did NOT meet its
+    acceptance criterion. Read migration-log/qa-baseline-build.log, then either fix and re-run or take it
+    to the report's decision queue (spec §10.3).
+2026-08-31T17:53:11Z  INFO   1  qa-baseline-wrapper  wrapper iteration 2: first build's validator phase ran but jekyll failed on missing menu include (fhir.base.template requires input/includes/menu.xml) and qa report was not serialized (qa.json=exception stub) — minimal menu stub added (recorded in migration-log/qa-baseline-wrapper/), rebuilding
+2026-08-31T17:53:11Z  INFO   1  qa-baseline-build  start  cmd=`docker run --rm -v /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/qa-baseline:/work -v /Users/marcel/.fhir:/root/.fhir hl7fhir/ig-publisher-base java -Xmx4g -Dfile.encoding=UTF-8 -jar /work/publisher.jar -ig /work`  raw_log=migration-log/qa-baseline-build.log prev_raw_log=migration-log/qa-baseline-build.prev.log
+2026-08-31T17:53:17Z  INFO   5.1b.5  parent-snapshots  start  cmd=`bash /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/recon/agent-skills/skills/mii-ig-migration/scripts/parent-snapshots.sh detect --package de.einwilligungsmanagement --version 2.0.2 --dir /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/parent/package`  raw_log=migration-log/parent-snapshots.log
+2026-08-31T17:53:17Z  INFO   5.1b.5  parent-snapshots  params  mode=detect dir=/private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/parent/package (no fetch) fhir_version=4.0.1
+2026-08-31T17:53:17Z  INFO   5.1b.5  parent-snapshots  params  mode=detect dir=/private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/parent/package (no fetch) fhir_version=4.0.1
+2026-08-31T17:53:17Z  INFO   5.1b.5  parent-snapshots  surveyed  structure_definitions=21 with_snapshot=0 without_snapshot=21
+2026-08-31T17:53:17Z  INFO   5.1b.5  parent-snapshots  surveyed  structure_definitions=21 with_snapshot=0 without_snapshot=21
+2026-08-31T17:53:17Z  WARN   5.1b.5  parent-snapshots  parent-without-snapshots: 21 of 21 StructureDefinitions carry NO snapshot
+    This is the condition behind SUSHI's `is missing a snapshot. Snapshot is
+    required for import.` Every profile deriving from one of these, and every
+    instance declaring InstanceOf such a profile, fails to export. Another
+    version of the same package usually does NOT help -- measured, two
+    consecutive releases of the reference parent both ship 0 snapshots.
+    Next: `parent-snapshots.sh build …` (spec §5.1b.5). Never hand-roll one.
+2026-08-31T17:53:17Z  WARN   5.1b.5  parent-snapshots  parent-without-snapshots: 21 of 21 StructureDefinitions carry NO snapshot
+    This is the condition behind SUSHI's `is missing a snapshot. Snapshot is
+    required for import.` Every profile deriving from one of these, and every
+    instance declaring InstanceOf such a profile, fails to export. Another
+    version of the same package usually does NOT help -- measured, two
+    consecutive releases of the reference parent both ship 0 snapshots.
+    Next: `parent-snapshots.sh build …` (spec §5.1b.5). Never hand-roll one.
+2026-08-31T17:53:17Z  INFO   5.1b.5  parent-snapshots  derivation chain is flat: every SD derives directly from outside this package  count=21
+    So each can be snapshotted independently, in any order.
+2026-08-31T17:53:17Z  INFO   5.1b.5  parent-snapshots  derivation chain is flat: every SD derives directly from outside this package  count=21
+    So each can be snapshotted independently, in any order.
+2026-08-31T17:53:17Z  INFO   5.1b.5  parent-snapshots  done  mode=detect missing_snapshots=21 of 21 exit=1
+    The condition IS present. It is not a post-processing task and not a
+    reason to invent a parent: generate the snapshots with `build` (spec
+    §5.1b.5), or record the dependent profiles as blocked and migrate the rest.
+2026-08-31T17:53:17Z  INFO   5.1b.5  parent-snapshots  done  mode=detect missing_snapshots=21 of 21 exit=1
+    The condition IS present. It is not a post-processing task and not a
+    reason to invent a parent: generate the snapshots with `build` (spec
+    §5.1b.5), or record the dependent profiles as blocked and migrate the rest.
+2026-08-31T17:53:17Z  ERROR  5.1b.5  parent-snapshots  failed  cmd=`bash /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/recon/agent-skills/skills/mii-ig-migration/scripts/parent-snapshots.sh detect --package de.einwilligungsmanagement --version 2.0.2 --dir /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/parent/package`  exit=1 raw_log=migration-log/parent-snapshots.log raw_log_lines=15
+    The exit status is preserved and returned -- this step did NOT meet its
+    acceptance criterion. Read migration-log/parent-snapshots.log, then either fix and re-run or take it
+    to the report's decision queue (spec §10.3).
+2026-08-31T17:53:17Z  INFO   5.1b.5  parent-snapshots  start  cmd=`bash /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/recon/agent-skills/skills/mii-ig-migration/scripts/parent-snapshots.sh build --package de.einwilligungsmanagement --version 2.0.2 --dir /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/parent/package --validator /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/validator_cli.jar --fhir-version 4.0.1 --install --require http://fhir.de/ConsentManagement/StructureDefinition/DocumentReference --require http://fhir.de/ConsentManagement/StructureDefinition/DomainReference --require http://fhir.de/ConsentManagement/StructureDefinition/Provenance --require http://fhir.de/ConsentManagement/StructureDefinition/Consent`  raw_log=migration-log/parent-snapshots-build.log
+2026-08-31T17:53:17Z  INFO   5.1b.5  parent-snapshots  params  mode=build dir=/private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/parent/package (no fetch) fhir_version=4.0.1
+2026-08-31T17:53:17Z  INFO   5.1b.5  parent-snapshots  params  mode=build dir=/private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/parent/package (no fetch) fhir_version=4.0.1
+2026-08-31T17:53:17Z  INFO   5.1b.5  parent-snapshots  surveyed  structure_definitions=21 with_snapshot=0 without_snapshot=21
+2026-08-31T17:53:17Z  INFO   5.1b.5  parent-snapshots  surveyed  structure_definitions=21 with_snapshot=0 without_snapshot=21
+2026-08-31T17:53:17Z  WARN   5.1b.5  parent-snapshots  parent-without-snapshots: 21 of 21 StructureDefinitions carry NO snapshot
+    This is the condition behind SUSHI's `is missing a snapshot. Snapshot is
+    required for import.` Every profile deriving from one of these, and every
+    instance declaring InstanceOf such a profile, fails to export. Another
+    version of the same package usually does NOT help -- measured, two
+    consecutive releases of the reference parent both ship 0 snapshots.
+    Next: `parent-snapshots.sh build …` (spec §5.1b.5). Never hand-roll one.
+2026-08-31T17:53:17Z  WARN   5.1b.5  parent-snapshots  parent-without-snapshots: 21 of 21 StructureDefinitions carry NO snapshot
+    This is the condition behind SUSHI's `is missing a snapshot. Snapshot is
+    required for import.` Every profile deriving from one of these, and every
+    instance declaring InstanceOf such a profile, fails to export. Another
+    version of the same package usually does NOT help -- measured, two
+    consecutive releases of the reference parent both ship 0 snapshots.
+    Next: `parent-snapshots.sh build …` (spec §5.1b.5). Never hand-roll one.
+2026-08-31T17:53:17Z  INFO   5.1b.5  parent-snapshots  derivation chain is flat: every SD derives directly from outside this package  count=21
+    So each can be snapshotted independently, in any order.
+2026-08-31T17:53:17Z  INFO   5.1b.5  parent-snapshots  derivation chain is flat: every SD derives directly from outside this package  count=21
+    So each can be snapshotted independently, in any order.
+2026-08-31T17:53:17Z  INFO   5.1b.5  parent-snapshots  base package for the element-count floor  base_dir=/Users/marcel/.fhir/packages/hl7.fhir.r4.core#4.0.1/package
+2026-08-31T17:53:17Z  INFO   5.1b.5  parent-snapshots  base package for the element-count floor  base_dir=/Users/marcel/.fhir/packages/hl7.fhir.r4.core#4.0.1/package
+2026-08-31T17:53:20Z  INFO   5.1b.5  parent-snapshots  generating with the OFFICIAL HL7 generator  validator=/private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/validator_cli.jar java="openjdk version "25.0.2" 2026-01-20" fhir_version=4.0.1
+    cmd=`java -jar /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/validator_cli.jar snapshot <sd.json> -version 4.0.1 -tx n/a -ig /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/parent/package -output <out.json>`
+    One invocation PER FILE: a batch run aborts at the first failure and silently
+    skips the rest. Nothing here merges a differential by hand (script header).
+2026-08-31T17:53:20Z  INFO   5.1b.5  parent-snapshots  generating with the OFFICIAL HL7 generator  validator=/private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/validator_cli.jar java="openjdk version "25.0.2" 2026-01-20" fhir_version=4.0.1
+    cmd=`java -jar /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/validator_cli.jar snapshot <sd.json> -version 4.0.1 -tx n/a -ig /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/parent/package -output <out.json>`
+    One invocation PER FILE: a batch run aborts at the first failure and silently
+    skips the rest. Nothing here merges a differential by hand (script header).
+2026-08-31T17:53:42Z  INFO   5.1d  harvest-route  decision: route 2 guide-harvest (anonymous rendering) per plan D-8 — no authenticated project download available in this run (project-download-unavailable: no credentialed human in the loop; the D-0 ask stands); preservation copy from phase 0.0 kept on the evidence branch as backstop + diff reference; THIS run is the pinned run-of-record
+2026-08-31T17:53:43Z  INFO   5.1d  guide-harvest  guide root fetched  cmd=`curl -sL https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent?version=2026.0.0`  http=200 bytes=24509
+2026-08-31T17:53:43Z  INFO   5.1d  guide-harvest  page tree discovered from the root's own hrefs  discovered=18 region_id=preview-content
+    Slugs are read from href values, never constructed from page titles.
+2026-08-31T17:53:44Z  INFO   5.1d  guide-harvest  page harvested  url=https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent?version=2026.0.0  file=migration-log/guide-harvest/pagecontent/index.md  region=found kind=narrative src_text_chars=2806 md_text_chars=4667 missing_runs=0 internal_links=13 images=1 artefact_markers=0 title=Kerndatensatz-Modul Consent
+2026-08-31T17:53:45Z  INFO   5.1d  guide-harvest  page harvested  url=https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/Release-Notes?version=2026.0.0  file=migration-log/guide-harvest/pagecontent/release-notes.md  region=found kind=narrative src_text_chars=3662 md_text_chars=4124 missing_runs=0 internal_links=0 images=0 artefact_markers=0 title=Release Notes
+2026-08-31T17:53:47Z  INFO   5.1d  guide-harvest  page harvested  url=https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/Beschreibung-Modul-Consent?version=2026.0.0  file=migration-log/guide-harvest/pagecontent/beschreibung-modul-consent.md  region=found kind=narrative src_text_chars=680 md_text_chars=1168 missing_runs=0 internal_links=0 images=1 artefact_markers=0 title=Beschreibung Modul Consent
+2026-08-31T17:53:50Z  INFO   5.1d  guide-harvest  page harvested  url=https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/KontextimGesamtprojektBezgezuanderenModulen?version=2026.0.0  file=migration-log/guide-harvest/pagecontent/kontextimgesamtprojektbezgezuanderenmodulen.md  region=found kind=narrative src_text_chars=858 md_text_chars=1094 missing_runs=0 internal_links=0 images=0 artefact_markers=0 title=Kontext im Gesamtprojekt / Bezüge zu anderen Modulen
+2026-08-31T17:53:53Z  INFO   5.1d  guide-harvest  page harvested  url=https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/Referenzen?version=2026.0.0  file=migration-log/guide-harvest/pagecontent/referenzen.md  region=found kind=narrative src_text_chars=613 md_text_chars=1083 missing_runs=0 internal_links=0 images=0 artefact_markers=0 title=Referenzen
+2026-08-31T17:53:55Z  INFO   5.1d  guide-harvest  page harvested  url=https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/AnwendungsflleInformationsmodell?version=2026.0.0  file=migration-log/guide-harvest/pagecontent/anwendungsflleinformationsmodell.md  region=found kind=narrative src_text_chars=81 md_text_chars=84 missing_runs=0 internal_links=0 images=0 artefact_markers=0 title=Anwendungsfälle / Informationsmodell
+2026-08-31T17:53:56Z  INFO   5.1d  guide-harvest  page harvested  url=https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/AnwendungsflleInformationsmodell/BeschreibungvonSzenarienfrdieAnwendungdesModuls?version=2026.0.0  file=migration-log/guide-harvest/pagecontent/anwendungsflleinformationsmodell-beschreibungvonszenarienfrdieanwendungdesmoduls.md  region=found kind=narrative src_text_chars=1407 md_text_chars=1640 missing_runs=0 internal_links=0 images=0 artefact_markers=0 title=Beschreibung von Szenarien für die Anwendung des Moduls
+2026-08-31T17:53:58Z  INFO   5.1d  guide-harvest  page harvested  url=https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/AnwendungsflleInformationsmodell/Datenstzeinkl.Beschreibungen?version=2026.0.0  file=migration-log/guide-harvest/pagecontent/anwendungsflleinformationsmodell-datenstzeinkl.beschreibungen.md  region=found kind=narrative src_text_chars=384 md_text_chars=604 missing_runs=0 internal_links=0 images=0 artefact_markers=0 title=Datensätze inkl. Beschreibungen
+2026-08-31T17:53:59Z  INFO   5.1d  guide-harvest  page harvested  url=https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/AnwendungsflleInformationsmodell/UML?version=2026.0.0  file=migration-log/guide-harvest/pagecontent/anwendungsflleinformationsmodell-uml.md  region=found kind=narrative src_text_chars=1861 md_text_chars=2913 missing_runs=0 internal_links=5 images=1 artefact_markers=0 title=UML
+2026-08-31T17:54:01Z  INFO   5.1d  guide-harvest  page harvested  url=https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/AnwendungsflleInformationsmodell/Fragebgen?version=2026.0.0  file=migration-log/guide-harvest/pagecontent/anwendungsflleinformationsmodell-fragebgen.md  region=found kind=narrative src_text_chars=2094 md_text_chars=3293 missing_runs=0 internal_links=1 images=0 artefact_markers=0 title=Fragebögen
+2026-08-31T17:54:07Z  INFO   5.1d  guide-harvest  page harvested  url=https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/TechnischeImplementierung?version=2026.0.0  file=migration-log/guide-harvest/pagecontent/technischeimplementierung.md  region=found kind=narrative src_text_chars=731 md_text_chars=773 missing_runs=0 internal_links=0 images=0 artefact_markers=0 title=Technische Implementierung
+2026-08-31T17:54:14Z  INFO   5.1d  guide-harvest  page harvested  url=https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/TechnischeImplementierung/FHIRProfile?version=2026.0.0  file=migration-log/guide-harvest/pagecontent/technischeimplementierung-fhirprofile.md  region=found kind=narrative src_text_chars=760 md_text_chars=895 missing_runs=0 internal_links=0 images=0 artefact_markers=0 title=FHIR Profile
+2026-08-31T17:54:26Z  INFO   5.1d  guide-harvest  page harvested  url=https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/TechnischeImplementierung/FHIRProfile/Consent?version=2026.0.0  file=migration-log/guide-harvest/pagecontent/technischeimplementierung-fhirprofile-consent.md  region=found kind=artefact-view src_text_chars=239875 md_text_chars=423755 missing_runs=8 internal_links=0 images=0 artefact_markers=2171 title=Consent
+2026-08-31T17:54:26Z  INFO   5.1d  guide-harvest  rendered-artefact-view: this page is a RENDERING of a conformance resource, not narrative  url=https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/TechnischeImplementierung/FHIRProfile/Consent?version=2026.0.0 file=migration-log/guide-harvest/pagecontent/technischeimplementierung-fhirprofile-consent.md src_text_chars=239875
+    The IG Publisher regenerates the element tree from the module's own
+    StructureDefinition. Take the prose above the tree; do not paste the tree
+    into pagecontent as hand-maintained content (spec 9).
+2026-08-31T17:54:26Z  WARN   5.1d  guide-harvest  generated-view-lossy: 8 text run(s) of a RENDERED ARTEFACT VIEW did not survive the conversion  url=https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/TechnischeImplementierung/FHIRProfile/Consent?version=2026.0.0 file=migration-log/guide-harvest/pagecontent/technischeimplementierung-fhirprofile-consent.md src_text_chars=239875 md_text_chars=423755
+    Not counted as a narrative loss, because the tree is regenerated from
+    the resource. It is still in the manifest and still reviewed at Gate B.
+2026-08-31T17:54:29Z  INFO   5.1d  guide-harvest  page harvested  url=https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/TechnischeImplementierung/FHIRProfile/Provenance?version=2026.0.0  file=migration-log/guide-harvest/pagecontent/technischeimplementierung-fhirprofile-provenance.md  region=found kind=artefact-view src_text_chars=73477 md_text_chars=102418 missing_runs=4 internal_links=1 images=0 artefact_markers=397 title=Provenance
+2026-08-31T17:54:29Z  INFO   5.1d  guide-harvest  rendered-artefact-view: this page is a RENDERING of a conformance resource, not narrative  url=https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/TechnischeImplementierung/FHIRProfile/Provenance?version=2026.0.0 file=migration-log/guide-harvest/pagecontent/technischeimplementierung-fhirprofile-provenance.md src_text_chars=73477
+    The IG Publisher regenerates the element tree from the module's own
+    StructureDefinition. Take the prose above the tree; do not paste the tree
+    into pagecontent as hand-maintained content (spec 9).
+2026-08-31T17:54:29Z  WARN   5.1d  guide-harvest  generated-view-lossy: 4 text run(s) of a RENDERED ARTEFACT VIEW did not survive the conversion  url=https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/TechnischeImplementierung/FHIRProfile/Provenance?version=2026.0.0 file=migration-log/guide-harvest/pagecontent/technischeimplementierung-fhirprofile-provenance.md src_text_chars=73477 md_text_chars=102418
+    Not counted as a narrative loss, because the tree is regenerated from
+    the resource. It is still in the manifest and still reviewed at Gate B.
+2026-08-31T17:54:32Z  INFO   5.1d  guide-harvest  page harvested  url=https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/TechnischeImplementierung/FHIRProfile/DocumentReference?version=2026.0.0  file=migration-log/guide-harvest/pagecontent/technischeimplementierung-fhirprofile-documentreference.md  region=found kind=artefact-view src_text_chars=74149 md_text_chars=101637 missing_runs=2 internal_links=0 images=0 artefact_markers=359 title=DocumentReference
+2026-08-31T17:54:32Z  INFO   5.1d  guide-harvest  rendered-artefact-view: this page is a RENDERING of a conformance resource, not narrative  url=https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/TechnischeImplementierung/FHIRProfile/DocumentReference?version=2026.0.0 file=migration-log/guide-harvest/pagecontent/technischeimplementierung-fhirprofile-documentreference.md src_text_chars=74149
+    The IG Publisher regenerates the element tree from the module's own
+    StructureDefinition. Take the prose above the tree; do not paste the tree
+    into pagecontent as hand-maintained content (spec 9).
+2026-08-31T17:54:32Z  WARN   5.1d  guide-harvest  generated-view-lossy: 2 text run(s) of a RENDERED ARTEFACT VIEW did not survive the conversion  url=https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/TechnischeImplementierung/FHIRProfile/DocumentReference?version=2026.0.0 file=migration-log/guide-harvest/pagecontent/technischeimplementierung-fhirprofile-documentreference.md src_text_chars=74149 md_text_chars=101637
+    Not counted as a narrative loss, because the tree is regenerated from
+    the resource. It is still in the manifest and still reviewed at Gate B.
+2026-08-31T17:54:34Z  INFO   5.1d  guide-harvest  page harvested  url=https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/TechnischeImplementierung/FHIRProfile/WeitererelevanteProfile?version=2026.0.0  file=migration-log/guide-harvest/pagecontent/technischeimplementierung-fhirprofile-weitererelevanteprofile.md  region=found kind=narrative src_text_chars=892 md_text_chars=1959 missing_runs=0 internal_links=3 images=0 artefact_markers=0 title=Weitere relevante Profile
+2026-08-31T17:54:37Z  INFO   5.1d  guide-harvest  page harvested  url=https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/TechnischeImplementierung/FHIRProfile/Empfehlungen-zur-praktischen-Anwendung?version=2026.0.0  file=migration-log/guide-harvest/pagecontent/technischeimplementierung-fhirprofile-empfehlungen-zur-praktischen-anwendung.md  region=found kind=narrative src_text_chars=2960 md_text_chars=3440 missing_runs=0 internal_links=0 images=0 artefact_markers=0 title=Empfehlungen zur praktischen Anwendung
+2026-08-31T17:54:38Z  INFO   5.1d  guide-harvest  page harvested  url=https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/TechnischeImplementierung/Terminologien?version=2026.0.0  file=migration-log/guide-harvest/pagecontent/technischeimplementierung-terminologien.md  region=found kind=artefact-view src_text_chars=30045 md_text_chars=22255 missing_runs=8 internal_links=0 images=0 artefact_markers=5 title=Terminologien
+2026-08-31T17:54:38Z  INFO   5.1d  guide-harvest  rendered-artefact-view: this page is a RENDERING of a conformance resource, not narrative  url=https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/TechnischeImplementierung/Terminologien?version=2026.0.0 file=migration-log/guide-harvest/pagecontent/technischeimplementierung-terminologien.md src_text_chars=30045
+    The IG Publisher regenerates the element tree from the module's own
+    StructureDefinition. Take the prose above the tree; do not paste the tree
+    into pagecontent as hand-maintained content (spec 9).
+2026-08-31T17:54:38Z  WARN   5.1d  guide-harvest  generated-view-lossy: 8 text run(s) of a RENDERED ARTEFACT VIEW did not survive the conversion  url=https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/TechnischeImplementierung/Terminologien?version=2026.0.0 file=migration-log/guide-harvest/pagecontent/technischeimplementierung-terminologien.md src_text_chars=30045 md_text_chars=22255
+    Not counted as a narrative loss, because the tree is regenerated from
+    the resource. It is still in the manifest and still reviewed at Gate B.
+2026-08-31T17:54:39Z  INFO   5.1d  guide-harvest  harvested 18 of 18 pages  expected=18 actual=18
+    Every discovered page is in migration-log/guide-harvest.tsv as 'harvested' or as 'skipped' with a reason.
+    assets referenced by the harvested pages: migration-log/guide-harvest-assets.tsv  short_pages=0
+2026-08-31T17:54:39Z  INFO   5.1d  guide-harvest  harvest complete  discovered=18 harvested=18 skipped=0 short=0 artefact_views=4 assets=3 out=migration-log/guide-harvest/pagecontent
+    Next: verify the harvested set against the published package's artefact list
+    (package-identity.sh, spec 2.1.1), then let the 5.4c advice run GENERATE the
+    map rows from this manifest (page-structure-advice.py --map; step 5 consumes
+    only the reviewed map, spec 9/9f) -- never one new page per harvested page.
+    Links and images are still absolute to simplifier.net: retargeting them is
+    part of that mapping, and the assets in migration-log/guide-harvest-assets.tsv still have to be transferred.
+2026-08-31T17:57:44Z  INFO   1  qa-baseline-build  done  cmd=`docker run --rm -v /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/qa-baseline:/work -v /Users/marcel/.fhir:/root/.fhir hl7fhir/ig-publisher-base java -Xmx4g -Dfile.encoding=UTF-8 -jar /work/publisher.jar -ig /work`  exit=0 raw_log=migration-log/qa-baseline-build.log raw_log_lines=197
+2026-08-31T17:58:05Z  WARN   5.1b.5  parent-snapshots  generator-refused: profile-ConsentManagement-TemplateFrame.json  url=http://fhir.de/ConsentManagement/StructureDefinition/TemplateFrame reason=Exception generating snapshot for http://fhir.de/ConsentManagement/StructureDefinition/TemplateFrame|2.0.2: The element Questionnaire.item.text.extension:renderingMarkdown.value[x]:valueMarkdown launches straight into slicing without the slicing being set up properly first
+    The generator declining a differential is EVIDENCE ABOUT THE PARENT, not a
+    gap to work around: an upstream differential the official merge cannot
+    process is malformed. Do not hand-finish it. Check whether the module's FSH
+    names this profile as a Parent or InstanceOf; if it does, this is a Gate-A
+    escalation for the upstream package's maintainers (spec §5.1b.4).
+2026-08-31T17:58:05Z  WARN   5.1b.5  parent-snapshots  generator-refused: profile-ConsentManagement-TemplateFrame.json  url=http://fhir.de/ConsentManagement/StructureDefinition/TemplateFrame reason=Exception generating snapshot for http://fhir.de/ConsentManagement/StructureDefinition/TemplateFrame|2.0.2: The element Questionnaire.item.text.extension:renderingMarkdown.value[x]:valueMarkdown launches straight into slicing without the slicing being set up properly first
+    The generator declining a differential is EVIDENCE ABOUT THE PARENT, not a
+    gap to work around: an upstream differential the official merge cannot
+    process is malformed. Do not hand-finish it. Check whether the module's FSH
+    names this profile as a Parent or InstanceOf; if it does, this is a Gate-A
+    escalation for the upstream package's maintainers (spec §5.1b.4).
+2026-08-31T17:58:17Z  WARN   5.1b.5  parent-snapshots  generator-refused: profile-ConsentManagement-TemplateModule.json  url=http://fhir.de/ConsentManagement/StructureDefinition/TemplateModule reason=Exception generating snapshot for http://fhir.de/ConsentManagement/StructureDefinition/TemplateModule|2.0.2: The element Questionnaire.item.text.extension:renderingMarkdown.value[x]:valueMarkdown launches straight into slicing without the slicing being set up properly first
+    The generator declining a differential is EVIDENCE ABOUT THE PARENT, not a
+    gap to work around: an upstream differential the official merge cannot
+    process is malformed. Do not hand-finish it. Check whether the module's FSH
+    names this profile as a Parent or InstanceOf; if it does, this is a Gate-A
+    escalation for the upstream package's maintainers (spec §5.1b.4).
+2026-08-31T17:58:17Z  WARN   5.1b.5  parent-snapshots  generator-refused: profile-ConsentManagement-TemplateModule.json  url=http://fhir.de/ConsentManagement/StructureDefinition/TemplateModule reason=Exception generating snapshot for http://fhir.de/ConsentManagement/StructureDefinition/TemplateModule|2.0.2: The element Questionnaire.item.text.extension:renderingMarkdown.value[x]:valueMarkdown launches straight into slicing without the slicing being set up properly first
+    The generator declining a differential is EVIDENCE ABOUT THE PARENT, not a
+    gap to work around: an upstream differential the official merge cannot
+    process is malformed. Do not hand-finish it. Check whether the module's FSH
+    names this profile as a Parent or InstanceOf; if it does, this is a Gate-A
+    escalation for the upstream package's maintainers (spec §5.1b.4).
+2026-08-31T17:58:28Z  WARN   5.1b.5  parent-snapshots  generator-refused: profile-ConsentManagementQuestionnaireComposed.json  url=http://fhir.de/ConsentManagement/StructureDefinition/QuestionnaireComposed reason=Exception generating snapshot for http://fhir.de/ConsentManagement/StructureDefinition/QuestionnaireComposed|2.0.2: The element Questionnaire.item.text.extension:renderingMarkdown.value[x]:valueMarkdown launches straight into slicing without the slicing being set up properly first
+    The generator declining a differential is EVIDENCE ABOUT THE PARENT, not a
+    gap to work around: an upstream differential the official merge cannot
+    process is malformed. Do not hand-finish it. Check whether the module's FSH
+    names this profile as a Parent or InstanceOf; if it does, this is a Gate-A
+    escalation for the upstream package's maintainers (spec §5.1b.4).
+2026-08-31T17:58:28Z  WARN   5.1b.5  parent-snapshots  generator-refused: profile-ConsentManagementQuestionnaireComposed.json  url=http://fhir.de/ConsentManagement/StructureDefinition/QuestionnaireComposed reason=Exception generating snapshot for http://fhir.de/ConsentManagement/StructureDefinition/QuestionnaireComposed|2.0.2: The element Questionnaire.item.text.extension:renderingMarkdown.value[x]:valueMarkdown launches straight into slicing without the slicing being set up properly first
+    The generator declining a differential is EVIDENCE ABOUT THE PARENT, not a
+    gap to work around: an upstream differential the official merge cannot
+    process is malformed. Do not hand-finish it. Check whether the module's FSH
+    names this profile as a Parent or InstanceOf; if it does, this is a Gate-A
+    escalation for the upstream package's maintainers (spec §5.1b.4).
+2026-08-31T17:58:40Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=extension-ConsentManagement-ConsentMode.json snapshot=12 differential=5 base=5
+2026-08-31T17:58:40Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=extension-ConsentManagement-ConsentMode.json snapshot=12 differential=5 base=5
+2026-08-31T17:58:40Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=extension-ConsentManagement-ContextIdentifier.json snapshot=20 differential=12 base=5
+2026-08-31T17:58:40Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=extension-ConsentManagement-ContextIdentifier.json snapshot=20 differential=12 base=5
+2026-08-31T17:58:40Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=extension-ConsentManagement-DomainReference.json snapshot=22 differential=11 base=5
+2026-08-31T17:58:40Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=extension-ConsentManagement-DomainReference.json snapshot=22 differential=11 base=5
+2026-08-31T17:58:40Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=extension-ConsentManagement-Logo.json snapshot=5 differential=2 base=5
+2026-08-31T17:58:40Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=extension-ConsentManagement-Logo.json snapshot=5 differential=2 base=5
+2026-08-31T17:58:40Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=extension-ConsentManagement-OrganizationDescription.json snapshot=5 differential=2 base=5
+2026-08-31T17:58:40Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=extension-ConsentManagement-OrganizationDescription.json snapshot=5 differential=2 base=5
+2026-08-31T17:58:40Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=extension-ConsentManagement-SignatureLocation.json snapshot=5 differential=2 base=5
+2026-08-31T17:58:40Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=extension-ConsentManagement-SignatureLocation.json snapshot=5 differential=2 base=5
+2026-08-31T17:58:40Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=extension-ConsentManagement-SourceDocument.json snapshot=15 differential=4 base=5
+2026-08-31T17:58:40Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=extension-ConsentManagement-SourceDocument.json snapshot=15 differential=4 base=5
+2026-08-31T17:58:40Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=extension-ConsentManagement-SubQuestionnaire.json snapshot=11 differential=6 base=5
+2026-08-31T17:58:40Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=extension-ConsentManagement-SubQuestionnaire.json snapshot=11 differential=6 base=5
+2026-08-31T17:58:40Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=extension-ConsentManagement-VersionFormat.json snapshot=15 differential=10 base=5
+2026-08-31T17:58:40Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=extension-ConsentManagement-VersionFormat.json snapshot=15 differential=10 base=5
+2026-08-31T17:58:40Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=extension-ConsentManagement-Xacml.json snapshot=5 differential=2 base=5
+2026-08-31T17:58:40Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=extension-ConsentManagement-Xacml.json snapshot=5 differential=2 base=5
+2026-08-31T17:58:40Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=extension-ConsentManagement-XacmlTemplate.json snapshot=15 differential=9 base=5
+2026-08-31T17:58:40Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=extension-ConsentManagement-XacmlTemplate.json snapshot=15 differential=9 base=5
+2026-08-31T17:58:40Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=profile-ConsentManagement-Consent.json snapshot=132 differential=32 base=57
+2026-08-31T17:58:40Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=profile-ConsentManagement-Consent.json snapshot=132 differential=32 base=57
+2026-08-31T17:58:40Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=profile-ConsentManagement-DocumentReference.json snapshot=61 differential=8 base=45
+2026-08-31T17:58:40Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=profile-ConsentManagement-DocumentReference.json snapshot=61 differential=8 base=45
+2026-08-31T17:58:40Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=profile-ConsentManagement-Domain-Organization.json snapshot=91 differential=23 base=26
+2026-08-31T17:58:40Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=profile-ConsentManagement-Domain-Organization.json snapshot=91 differential=23 base=26
+2026-08-31T17:58:40Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=profile-ConsentManagement-Domain-ResearchStudy.json snapshot=104 differential=23 base=44
+2026-08-31T17:58:40Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=profile-ConsentManagement-Domain-ResearchStudy.json snapshot=104 differential=23 base=44
+2026-08-31T17:58:40Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=profile-ConsentManagement-Patient.json snapshot=64 differential=7 base=45
+2026-08-31T17:58:40Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=profile-ConsentManagement-Patient.json snapshot=64 differential=7 base=45
+2026-08-31T17:58:40Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=profile-ConsentManagement-Provenance.json snapshot=65 differential=20 base=32
+2026-08-31T17:58:40Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=profile-ConsentManagement-Provenance.json snapshot=65 differential=20 base=32
+2026-08-31T17:58:40Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=profile-ConsentManagementQuestionnaireResponse.json snapshot=39 differential=14 base=33
+2026-08-31T17:58:40Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=profile-ConsentManagementQuestionnaireResponse.json snapshot=39 differential=14 base=33
+2026-08-31T17:58:40Z  INFO   5.1b.5  parent-snapshots  rebuild written  dir=/var/folders/d6/s255vt4x5pq9fy738bv7cs0h0000gq/T/tmp.84cFWoL9ek/rebuilt/package merged=18 refused=0
+    Only the `snapshot` property was added; every other field is the upstream
+    bytes re-serialized. Do not diff this against upstream expecting byte
+    equality -- key order and indentation are the serializer's.
+2026-08-31T17:58:40Z  INFO   5.1b.5  parent-snapshots  rebuild written  dir=/var/folders/d6/s255vt4x5pq9fy738bv7cs0h0000gq/T/tmp.84cFWoL9ek/rebuilt/package merged=18 refused=0
+    Only the `snapshot` property was added; every other field is the upstream
+    bytes re-serialized. Do not diff this against upstream expecting byte
+    equality -- key order and indentation are the serializer's.
+2026-08-31T17:58:40Z  INFO   5.1b.5  parent-snapshots  generated 18 of 21 snapshots  expected=21 actual=18
+2026-08-31T17:58:40Z  INFO   5.1b.5  parent-snapshots  generated 18 of 21 snapshots  expected=21 actual=18
+2026-08-31T17:58:40Z  WARN   5.1b.5  parent-snapshots  silent-partial-success: generated 18 of 21 snapshots
+    Exit status is not evidence of completeness; these two counts are.
+    Reconcile against the step-1 inventory before continuing.
+2026-08-31T17:58:40Z  WARN   5.1b.5  parent-snapshots  silent-partial-success: generated 18 of 21 snapshots
+    Exit status is not evidence of completeness; these two counts are.
+    Reconcile against the step-1 inventory before continuing.
+2026-08-31T17:58:40Z  INFO   5.1b.5  parent-snapshots  required parent snapshotted  require=http://fhir.de/ConsentManagement/StructureDefinition/DocumentReference file=profile-ConsentManagement-DocumentReference.json
+2026-08-31T17:58:40Z  INFO   5.1b.5  parent-snapshots  required parent snapshotted  require=http://fhir.de/ConsentManagement/StructureDefinition/DocumentReference file=profile-ConsentManagement-DocumentReference.json
+2026-08-31T17:58:40Z  INFO   5.1b.5  parent-snapshots  required parent snapshotted  require=http://fhir.de/ConsentManagement/StructureDefinition/DomainReference file=extension-ConsentManagement-DomainReference.json
+2026-08-31T17:58:40Z  INFO   5.1b.5  parent-snapshots  required parent snapshotted  require=http://fhir.de/ConsentManagement/StructureDefinition/DomainReference file=extension-ConsentManagement-DomainReference.json
+2026-08-31T17:58:40Z  INFO   5.1b.5  parent-snapshots  required parent snapshotted  require=http://fhir.de/ConsentManagement/StructureDefinition/Provenance file=profile-ConsentManagement-Provenance.json
+2026-08-31T17:58:40Z  INFO   5.1b.5  parent-snapshots  required parent snapshotted  require=http://fhir.de/ConsentManagement/StructureDefinition/Provenance file=profile-ConsentManagement-Provenance.json
+2026-08-31T17:58:40Z  INFO   5.1b.5  parent-snapshots  required parent snapshotted  require=http://fhir.de/ConsentManagement/StructureDefinition/Consent file=profile-ConsentManagement-Consent.json
+2026-08-31T17:58:40Z  INFO   5.1b.5  parent-snapshots  required parent snapshotted  require=http://fhir.de/ConsentManagement/StructureDefinition/Consent file=profile-ConsentManagement-Consent.json
+2026-08-31T17:58:40Z  INFO   5.1b.5  parent-snapshots  installed as a NEW cache entry  dest=/Users/marcel/.fhir/packages/de.einwilligungsmanagement#2.0.2-snapshots version=2.0.2-snapshots
+    Upstream de.einwilligungsmanagement#2.0.2 is untouched. Depend on it by pinning
+    `de.einwilligungsmanagement: 2.0.2-snapshots` in sushi-config.yaml -- and note that this entry is
+    LOCAL: CI and every other machine need this same build step, or the pin
+    fails to resolve there (spec §5.1b.5, 'carrying it upstream').
+2026-08-31T17:58:40Z  INFO   5.1b.5  parent-snapshots  installed as a NEW cache entry  dest=/Users/marcel/.fhir/packages/de.einwilligungsmanagement#2.0.2-snapshots version=2.0.2-snapshots
+    Upstream de.einwilligungsmanagement#2.0.2 is untouched. Depend on it by pinning
+    `de.einwilligungsmanagement: 2.0.2-snapshots` in sushi-config.yaml -- and note that this entry is
+    LOCAL: CI and every other machine need this same build step, or the pin
+    fails to resolve there (spec §5.1b.5, 'carrying it upstream').
+2026-08-31T17:58:40Z  WARN   5.1b.5  parent-snapshots  rebuild-incomplete: the generator refused 3 of 21 StructureDefinition(s)  files=profile-ConsentManagement-TemplateFrame.json profile-ConsentManagement-TemplateModule.json profile-ConsentManagementQuestionnaireComposed.json
+    Each refusal is named above with the generator's own reason. Decide per file
+    whether the module's FSH depends on it; those that it does are Gate-A
+    escalations for the upstream maintainers.
+2026-08-31T17:58:40Z  WARN   5.1b.5  parent-snapshots  rebuild-incomplete: the generator refused 3 of 21 StructureDefinition(s)  files=profile-ConsentManagement-TemplateFrame.json profile-ConsentManagement-TemplateModule.json profile-ConsentManagementQuestionnaireComposed.json
+    Each refusal is named above with the generator's own reason. Decide per file
+    whether the module's FSH depends on it; those that it does are Gate-A
+    escalations for the upstream maintainers.
+2026-08-31T17:58:40Z  INFO   5.1b.5  parent-snapshots  done  mode=build generated=18 of 21 required=all-snapshotted exit=0
+    Re-run SUSHI now and compare the error count against the run BEFORE this
+    step; that difference is the evidence, not this script's exit status.
+2026-08-31T17:58:40Z  INFO   5.1b.5  parent-snapshots  done  mode=build generated=18 of 21 required=all-snapshotted exit=0
+    Re-run SUSHI now and compare the error count against the run BEFORE this
+    step; that difference is the evidence, not this script's exit status.
+2026-08-31T17:58:40Z  INFO   5.1b.5  parent-snapshots  done  cmd=`bash /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/recon/agent-skills/skills/mii-ig-migration/scripts/parent-snapshots.sh build --package de.einwilligungsmanagement --version 2.0.2 --dir /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/parent/package --validator /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/validator_cli.jar --fhir-version 4.0.1 --install --require http://fhir.de/ConsentManagement/StructureDefinition/DocumentReference --require http://fhir.de/ConsentManagement/StructureDefinition/DomainReference --require http://fhir.de/ConsentManagement/StructureDefinition/Provenance --require http://fhir.de/ConsentManagement/StructureDefinition/Consent`  exit=0 raw_log=migration-log/parent-snapshots-build.log raw_log_lines=76
+    A non-zero exit was anticipated here (detect found the condition; build exit reflects required-set completeness (Gate-A item either way)) and did not occur.
+    Confirm the anticipation still holds before reusing it as documentation.
+2026-08-31T17:59:01Z  INFO   5.2  skeleton-vendored  ref=v0.13.2 commit=a2390dea3eacf8139b2231713510f38fa558dad5
+2026-08-31T17:59:01Z  INFO   5.2  template-reference  url=https://github.com/medizininformatik-initiative/ig-template-mii-kds release=v1.3.4
+2026-08-31T17:59:01Z  INFO   5.2  no-vendor  ig-template/ NOT copied; deleted sync machinery: sync-ig-template.yml sync-ig-template.sh resolve-ig-template-source.sh; ig.ini keeps the repository-URL template line (v0.25.0 doctrine)
+2026-08-31T18:00:04Z  INFO   5.1b.5  parent-snapshots  repin: gofsh-out sushi-config de.einwilligungsmanagement 2.0.2 -> 2.0.2-snapshots (suffixes the SOURCE pin per spec 5.1b.5; F2 DIVERGIERT vs source pin expected + pre-triaged as the recorded Gate-A carry decision, plan D-4)
+2026-08-31T18:00:04Z  INFO   5.1b.5  sushi-after-snapshots  start  cmd=`bash -c 'cd '\''/private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/gofsh-out'\'' && npx --yes fsh-sushi@3.20.0 .'`  raw_log=migration-log/sushi-after-snapshots.log
+2026-08-31T18:00:12Z  INFO   5.1b.5  sushi-after-snapshots  done  cmd=`bash -c 'cd '\''/private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/gofsh-out'\'' && npx --yes fsh-sushi@3.20.0 .'`  exit=0 raw_log=migration-log/sushi-after-snapshots.log raw_log_lines=72
+2026-08-31T18:00:12Z  INFO   5.1b.5  sushi-after-snapshots  errors=0 (was 5 before snapshots, 41 before postprocess) — measured 41 -> 5 -> 0
+2026-08-31T18:00:12Z  INFO   1  qa-baseline-build  SOURCE QA BASELINE MEASURED: err=68 warn=88 info=49 (publisher 2.3.2, fhir.base.template wrapper, tx.fhir.org) — full qa.txt at migration-log/qa-baseline-source.txt, census tsv at migration-log/qa-baseline-census.tsv; wrapper config at migration-log/qa-baseline-wrapper/; acceptance basis for phase 9: target qa errors form a subset of these classes (compare by element path)
+2026-08-31T18:02:40Z  INFO   5.2  first-run-bootstrap  decision: scripts/first-run-bootstrap.sh run in its default DRY-RUN mode only; the 6-item removal list applied BY HAND (release-please.yml notify-zulip.yml release-demo.yml release-please-config.json .release-please-manifest.json CHANGELOG.md); --apply NOT used — its branch-setup/branch-protection side effects are out of scope on a migration branch (spec 5.2)
+2026-08-31T18:02:40Z  INFO   5.2  demo-removal  M8 demo set deleted: rendering-artifacts.md x2, demo/, gen-rendering-demo.py, demo-de.md, demo-en.md, rendering-demo-codes.json (pages:/menu entries removed in the config surgery)
+2026-08-31T18:02:40Z  INFO   5.2  example-removal  template example artefacts deleted BEFORE transfer (guardrail 5): example-patient.fsh, example-patient-instance.fsh, tests fixture example-patient-valid.json (paths verified against the v0.13.2 checkout)
+2026-08-31T18:02:58Z  INFO   5.2  de-first-flip  DE-first tree swap done: template German mirror pages -> input/pagecontent (default), template English pages -> input/translations/en/pagecontent; menu.xml swapped (DE default, EN mirror); IG-level .po moved to translations/en/ (content regenerated at step 6)
+2026-08-31T18:04:40Z  INFO   5.2  config-surgery  sushi-config merged: DE-first i18n (de default, en translation-sources), pages titles germanized from the template's own .po catalogue, demo page entry removed (M8), dependencies = source pin einwilligungsmanagement 2.0.2-snapshots (D-4) + 3 recorded target-only additions (crmi, THO, extensions — D-12), special-url regenerated with the 2 urn:oid CS canonicals; basisprofil/meta/xver template parity pins NOT imported (source never had them)
+2026-08-31T18:06:39Z  INFO   5.2  de-first-ci-patch  3-file DE-first CI patch applied (one logical change, same commit as the flip): language-model-check.sh fully inverted (guards German-default now; docs/ + translations/en excluded with recorded reason), convention-check.mjs translation-tree paths de->en (+header note), convention-check.test.mjs fixtures de->en; sushi-config comment prose updated to the DE-first model
+2026-08-31T18:11:38Z  INFO   5.2  license-align  start  cmd=`python3 /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/recon/agent-skills/skills/mii-ig-migration/scripts/license-align.py --source /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/recon/source-tag --target .`  raw_log=migration-log/license-align.log
+2026-08-31T18:11:38Z  INFO   5.2  license-align  params  source=/private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/recon/source-tag target=/private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/target
+2026-08-31T18:11:38Z  INFO   5.2  license-align  license-replaced: from=CC-BY-4.0 to=CC-BY-4.0 mode=source-file file=LICENSE
+2026-08-31T18:11:38Z  INFO   5.2  license-align  result  REPLACED the target LICENSE: CC-BY-4.0 (template scaffold) -> CC-BY-4.0 (copied byte-faithfully from the source's LICENSE)  exit=0
+2026-08-31T18:11:38Z  INFO   5.2  license-align  done  cmd=`python3 /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/recon/agent-skills/skills/mii-ig-migration/scripts/license-align.py --source /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/recon/source-tag --target .`  exit=0 raw_log=migration-log/license-align.log raw_log_lines=3
+2026-08-31T18:12:11Z  INFO   pre.4  placeholder-census  post-skeleton census by exclusion: 0 ACTIVE placeholders in build inputs (input/**, sushi-config non-comment, ig.ini, publication-request, qc) — every surviving {{...}} accounted: Actions ${{ }} (.github), commented-out OPTIONAL blocks (CITATION_*, SPECIAL_URL_1 in the sushi-config comment table), instructional prose (docs/, AGENTS.md, tests/README, input READMEs), self-test fixtures + template machinery (scripts/*.mjs, self-check-substitute.sh, skills/wiki-consistency-check), and run.log quoting the census plan
+2026-08-31T18:12:11Z  INFO   5.2  sushi-pin-note  sushi-skeleton runs the TARGET's pinned SUSHI 3.20.1 (read from .github/workflows/ig-publisher.yml env SUSHI_VERSION per skill step-7 doctrine), not the skill block's 3.20.0 literal (that pin governs the goFSH derivation, already done)
+2026-08-31T18:12:11Z  INFO   5.2  sushi-skeleton  start  cmd=`npx --yes fsh-sushi@3.20.1 .`  raw_log=migration-log/sushi-skeleton.log
+2026-08-31T18:12:16Z  INFO   5.2  sushi-skeleton  done  cmd=`npx --yes fsh-sushi@3.20.1 .`  exit=0 raw_log=migration-log/sushi-skeleton.log raw_log_lines=42
