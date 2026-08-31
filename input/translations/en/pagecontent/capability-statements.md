@@ -12,4 +12,4 @@ deletes it at Gate A.
 > **Written during migration - review before release.** The following CapabilityStatement was generated during the migration from the module's profiles and search parameters (each element references a package artifact); the source contained none.
 {: .ig-highlight .ig-highlight-blue}
 
-{% lang-fragment CapabilityStatement-mii-cap-consent-server-html.xhtml %}
+{% include CapabilityStatement-mii-cap-consent-server-html-en.xhtml %}

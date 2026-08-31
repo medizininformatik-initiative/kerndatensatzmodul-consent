@@ -41,6 +41,21 @@ template structure for the module (Gate D: TF KDS / AG IOP / NSG).
   resource rendered + listed in both language variants; C3 **18/18 harvested pages** consumed by the
   reviewed page map.
 
+## Rendered-page review (full-surface, 2026-08-31)
+
+A dedicated review of the **rendered** IG ran after the re-version: a mechanical sweep over all
+**420 HTML files** plus an 8-inspector semantic review of **50 content/artifact pages** in both
+languages — 51 findings, every one dispositioned in
+[`rendered-review-disposition.md`](rendered-review-disposition.md) (FIXED vs RECORDED, with
+owners). Headline fix: the harvest emitted markdown tables with blank lines between rows, which
+shattered every transferred table into per-row fragments with visible `|---|` separators — all 18
+affected files normalized, and the re-verified rebuild shows **zero separator leaks, zero fragment
+tables** (policy table = one 125-row table), QA unchanged at 70/137/498. The re-run mechanical
+sweep reports **0 unrecorded findings** (residuals: 14 dead `.ttl.html` links on Instance pages +
+publisher-own artifacts — recorded upstream findings). Re-run verifier census: 98 IDENTISCH /
+33 DIVERGIERT (all adjudicated classes) / 16 NICHT PRÜFBAR (the version row now reads
+"target 2027.0.0-ballot.rc1 vs source 2026.0.0 — the target version is a human decision").
+
 ## Where the evidence lives
 
 Everything is in `migration-log/` on this branch: `run.log` (the protocol below is generated from it),

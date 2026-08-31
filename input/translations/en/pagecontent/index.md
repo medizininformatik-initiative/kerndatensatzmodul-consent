@@ -12,16 +12,12 @@
 This specification describes the FHIR representation of the Core Data Set module 'Consent' of the Medical Informatics Initiative. The following sections describe the module's use cases as well as the associated FHIR profiles and terminology resources in their binding form.
 
 | Publication / Status |  |
-
 | --- | --- |
-
 | Date | 31.08.2026 |
-
 | Version | 2027.0.0-ballot.rc1 |
-
 | Status | active |
-
 | Realm | DE |
+
 
 ### Description of the Consent Module
 

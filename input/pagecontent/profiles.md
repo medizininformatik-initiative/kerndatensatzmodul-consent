@@ -28,25 +28,18 @@ Neben [Consent](StructureDefinition-e0e166b4-0f77-478d-9062-de0034d98ce0.html), 
 Die folgenden Profile sind dabei für die Nutzung dieses Leitfadens zwingend zu unterstützen:
 
 | FHIR-Profil | Zur Abbildung von / Verwendung für |
-
 | --- | --- |
-
 | [Organization](https://ig.fhir.de/einwilligungsmanagement/stable/Organization.html) | Verantwortliche Einrichtung |
-
 | [ResearchStudy](https://ig.fhir.de/einwilligungsmanagement/stable/ResearchStudy.html) | Forschungsprojekt |
-
 | [Patient](https://ig.fhir.de/einwilligungsmanagement/stable/Patient.html) | Betroffene Person (pseudonymisiert) |
+
 
 Wird der Broad Consent mittels FHIR Questionnaires abgebildet bzw. abgefragt, sollten außerdem die folgenden Profile verwendet werden:
 
 | FHIR-Profil | Zur Abbildung von / Verwendung für |
-
 | --- | --- |
-
 | [QuestionnaireResponse](https://ig.fhir.de/einwilligungsmanagement/stable/QuestionnaireResponse.html) | Ausgefüllte Einwilligung |
-
 | [QuestionnaireComposed](https://ig.fhir.de/einwilligungsmanagement/stable/QuestionnaireComposed.html) | Einwilligungsvorlage (render-fähig) |
-
 | [TemplateFrame](https://ig.fhir.de/einwilligungsmanagement/stable/TemplateFrame.html) | Einwilligungsvorlage (Strukturdefinition) |
-
 | [TemplateModule](https://ig.fhir.de/einwilligungsmanagement/stable/TemplateModule.html) | Einwilligungsmodul |
+

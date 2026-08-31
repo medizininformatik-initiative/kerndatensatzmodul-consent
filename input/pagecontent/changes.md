@@ -147,7 +147,7 @@ Datum 21.01.2025
 
 Datum 17.12.2024
 
-- Consent-Ressource   - Consent.category -> max value="\*"   - Consent.provision.type ->fixedCode deny entfernt   - Consent.provision.provision.type ->fixedCode permit entfernt￼   - IG/Consent entspr. angepasst
+- Consent-Ressource   - Consent.category -> max value="\*"   - Consent.provision.type ->fixedCode deny entfernt   - Consent.provision.provision.type ->fixedCode permit entfernt   - IG/Consent entspr. angepasst
 
 - IG/Consent   - Liste der verfügbaren MII Consents zur Verwendung in Consent.policy.uri aktualisiert (Widerrufe und Minderjährige)
 

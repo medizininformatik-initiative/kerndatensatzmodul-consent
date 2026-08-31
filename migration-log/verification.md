@@ -1,6 +1,6 @@
 ## Verification (generated — do not retype)
 
-Produced by `verify-migration.py` from the target tree AND `migration-log/run.log`, the two oracles. **99 IDENTISCH · 33 DIVERGIERT · 15 NICHT PRÜFBAR.**
+Produced by `verify-migration.py` from the target tree AND `migration-log/run.log`, the two oracles. **98 IDENTISCH · 33 DIVERGIERT · 16 NICHT PRÜFBAR.**
 
 Verdicts: **IDENTISCH** = matches the source · **DIVERGIERT** = differs, named below · **NICHT PRÜFBAR** = could not be checked, which is **not** a pass and owes a named human an action.
 
@@ -13,7 +13,7 @@ Verdicts: **IDENTISCH** = matches the source · **DIVERGIERT** = differs, named 
 | conservation | C5 | menus lead somewhere, and every page is in a menu | 4 | 0 | 0 |
 | conservation | C6 | each text passage landed on the page the page map promised | 16 | 0 | 0 |
 | conservation | C7 | content the migration wrote is marked as such in the guide | 0 | 10 | 3 |
-| fidelity | F1 | module identity is unchanged (id, canonical, version, licence, ...) | 4 | 1 | 4 |
+| fidelity | F1 | module identity is unchanged (id, canonical, version, licence, ...) | 3 | 1 | 5 |
 | fidelity | F2 | dependency versions are pinned exactly as the source pinned them | 1 | 1 | 3 |
 | fidelity | F3 | the licence is asserted from evidence, never defaulted | 2 | 0 | 0 |
 | fidelity | F4 | no mechanical FSH conversion residue is left | 1 | 0 | 0 |
@@ -75,13 +75,14 @@ Verdicts: **IDENTISCH** = matches the source · **DIVERGIERT** = differs, named 
 
 | id | Check | What it asks | Subject | Why not mechanisable | Who does what |
 |---|---|---|---|---|---|
-| `C4-b8093b` | C4 | the source's narrative text is present somewhere in the target | technischeimplementierung-fhirprofile-consent.md | the source page embeds an element-tree rendering (174 occurrences of the renderer's marker); 1039 of 1093 runs are in no target page, but prose and rendered view cannot be told apart in it | read the page against its target: migration replaces the VIEW with the artefact page (R1), so only its prose has to be conserved -- and only a human can say which is which here |
+| `C4-b8093b` | C4 | the source's narrative text is present somewhere in the target | technischeimplementierung-fhirprofile-consent.md | the source page embeds an element-tree rendering (174 occurrences of the renderer's marker); 1042 of 1093 runs are in no target page, but prose and rendered view cannot be told apart in it | read the page against its target: migration replaces the VIEW with the artefact page (R1), so only its prose has to be conserved -- and only a human can say which is which here |
 | `C4-7926aa` | C4 | the source's narrative text is present somewhere in the target | technischeimplementierung-fhirprofile-documentreference.md | the source page embeds an element-tree rendering (60 occurrences of the renderer's marker); 363 of 364 runs are in no target page, but prose and rendered view cannot be told apart in it | read the page against its target: migration replaces the VIEW with the artefact page (R1), so only its prose has to be conserved -- and only a human can say which is which here |
 | `C4-a4c8ef` | C4 | the source's narrative text is present somewhere in the target | technischeimplementierung-fhirprofile-provenance.md | the source page embeds an element-tree rendering (66 occurrences of the renderer's marker); 380 of 380 runs are in no target page, but prose and rendered view cannot be told apart in it | read the page against its target: migration replaces the VIEW with the artefact page (R1), so only its prose has to be conserved -- and only a human can say which is which here |
 | `C7-40e18f` | C7 | content the migration wrote is marked as such in the guide | technischeimplementierung-fhirprofile-consent.md | C4 could not tell this page's prose from its embedded element-tree rendering, so whether anything was rewritten here is not measured | read the page against its target (the same human action C4 asks for) and mark whatever the migration wrote per spec section 9d |
 | `C7-42473f` | C7 | content the migration wrote is marked as such in the guide | technischeimplementierung-fhirprofile-documentreference.md | C4 could not tell this page's prose from its embedded element-tree rendering, so whether anything was rewritten here is not measured | read the page against its target (the same human action C4 asks for) and mark whatever the migration wrote per spec section 9d |
 | `C7-059fd9` | C7 | content the migration wrote is marked as such in the guide | technischeimplementierung-fhirprofile-provenance.md | C4 could not tell this page's prose from its embedded element-tree rendering, so whether anything was rewritten here is not measured | read the page against its target (the same human action C4 asks for) and mark whatever the migration wrote per spec section 9d |
 | `F1-093008` | F1 | module identity is unchanged (id, canonical, version, licence, ...) | id | no source value (neither the source tree nor the claims ledger yields one) | supply it at Gate A -- an identity field nobody can compare is not a field that matches |
+| `F1-6cbfea` | F1 | module identity is unchanged (id, canonical, version, licence, ...) | version | target 2027.0.0-ballot.rc1 vs source 2026.0.0 -- the target version is a human decision (spec 2.1) | confirm the target version at Gate A and record it |
 | `F1-8a3995` | F1 | module identity is unchanged (id, canonical, version, licence, ...) | status | the claims ledger holds 2 contradicting readings (active, draft) | decide the field at Gate A (check L3), then re-run verification |
 | `F1-5451f2` | F1 | module identity is unchanged (id, canonical, version, licence, ...) | publisher | no source value (neither the source tree nor the claims ledger yields one) | supply it at Gate A -- an identity field nobody can compare is not a field that matches |
 | `F1-f60f40` | F1 | module identity is unchanged (id, canonical, version, licence, ...) | fhirVersion | no source value (neither the source tree nor the claims ledger yields one) | supply it at Gate A -- an identity field nobody can compare is not a field that matches |

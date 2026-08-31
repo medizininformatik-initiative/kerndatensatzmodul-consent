@@ -945,3 +945,112 @@ Vergleich -> migration-log/same-module-comparison.md
 2026-08-31T20:55:36Z  INFO   5.6  ig-publisher  done  cmd=`docker run --rm -v /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/target:/work -v /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/qa-baseline/publisher.jar:/publisher.jar:ro -v /Users/marcel/.fhir:/root/.fhir -v /Users/marcel/.fhir:/home/publisher/.fhir hl7fhir/ig-publisher-base bash -lc 'npm install -g fsh-sushi@3.20.1 >/dev/null 2>&1; java -Xmx4g -Dfile.encoding=UTF-8 -jar /publisher.jar -ig /work'`  exit=0 raw_log=migration-log/ig-publisher.log raw_log_lines=5665
 2026-08-31T20:56:34Z  INFO   5.6  ig-publisher  RE-VERSION VERIFICATION BUILD (publisher 2.3.2 docker): qa err=70 warn=137 info=498 — BYTE-COUNT-IDENTICAL to the 2026.0.0-versioned build; package built as de.medizininformatikinitiative.kerndatensatz.consent#2027.0.0-ballot.rc1; the re-version is proven QA-neutral (the report's queue-3 triage numbers remain valid)
 2026-08-31T21:12:09Z  INFO   9  branch-rename  branch RENAMED per user instruction (the branch itself must carry the target version): migration/2026.0.0-template-v0.13.2 -> migration/2027.0.0-ballot.rc1-template-v0.13.2 on BOTH repos via the official rename API (matches the Dokument precedent naming; recorded deviation from the spec scheme migration/<source-version>-template-<tag> — the name now carries the TARGET version). SIDE EFFECT: GitHub closed draft PR #130 as head-removed (reopen impossible) -> successor PR opened with identical body; #130 cross-linked. Old gh-pages preview paths linger until the next cleanup; new paths build on the next push
+2026-08-31T21:33:34Z  INFO   11  rendered-page-review  FULL RENDERED-PAGE REVIEW executed (mechanical sweep over 420 html files + 8-inspector semantic review over 50 content/artifact pages, both languages): 51 findings -> migration-log/rendered-page-scan.tsv + the workflow result. FIXES applied to the markdown sources (content-preserving whitespace/structure repairs + own-defect corrections):
+    (1) TABLE NORMALIZATION root cause: the harvest emitted pipe tables with BLANK LINES between rows and multi-line cells -> kramdown shattered every transferred table into per-row mini-tables with the '|---|' separator leaking as visible em-dash text; normalize_tables joined rows (multi-line cells -> <br/>) and removed inter-row blanks across 18 files (all pagecontent + intro-notes, both languages)
+    (2) search-parameters: the 6 harvested Simplifier SP-definition renders had collapsed into run-together garble -> rebuilt as clean per-parameter definition tables (Invocations/Resource/Code/Type/FhirPath, values parsed from the garbled runs; in-cell pipes escaped); (3) code-span escapes 2..\* fixed; (4) U+FFFC object-replacement chars stripped from changes pages (source-render junk); (5) OWN DEFECTS honestly fixed: the earlier EN downloads/version-history TODO-removals had silently failed (regex mismatch) and the metadata-link removal had truncated the version-history sentence in BOTH languages -> sentence completed pointing at the IG-resource page, TODO blocks removed; (6) capability-statements: lang-fragment resolved the ENGLISH fragment on the DE page (the bare alias is EN despite DE default - upstream lang-fragment/DE-first interplay finding) -> explicit per-language includes; (7) guidance internal repo-commentary trimmed (both languages)
+    RECORDED-not-fixed (source data / template / publisher level): 14 dead .ttl.html links on Instance artifact pages (excludettl:true vs Instance format-links - template/publisher upstream); toc + breadcrumb 'Table of Contents' English chrome on the DE default + en/toc wholesale fallback (publisher i18n gap around the generated toc); translation-banner literal markdown [here](...) on EN pages (ig-template fragment bug - upstream); artifacts.html unrendered markdown inside VS description + smartypants URL corruption (resource DATA rendering); ip-statements German-on-EN + unrendered CC link + SNOMED &amp;reg; double-escape (resource data + publisher-own); en/frageboegen dangling paren = source typo (verbatim); publish-box English chrome (publisher-own)
+2026-08-31T21:34:15Z  INFO   5.6  ig-publisher  start  cmd=`docker run --rm -v /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/target:/work -v /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/qa-baseline/publisher.jar:/publisher.jar:ro -v /Users/marcel/.fhir:/root/.fhir -v /Users/marcel/.fhir:/home/publisher/.fhir hl7fhir/ig-publisher-base bash -lc 'npm install -g fsh-sushi@3.20.1 >/dev/null 2>&1; java -Xmx4g -Dfile.encoding=UTF-8 -jar /publisher.jar -ig /work'`  raw_log=migration-log/ig-publisher.log prev_raw_log=migration-log/ig-publisher.prev.log
+2026-08-31T21:38:44Z  INFO   5.6  ig-publisher  done  cmd=`docker run --rm -v /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/target:/work -v /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/qa-baseline/publisher.jar:/publisher.jar:ro -v /Users/marcel/.fhir:/root/.fhir -v /Users/marcel/.fhir:/home/publisher/.fhir hl7fhir/ig-publisher-base bash -lc 'npm install -g fsh-sushi@3.20.1 >/dev/null 2>&1; java -Xmx4g -Dfile.encoding=UTF-8 -jar /publisher.jar -ig /work'`  exit=0 raw_log=migration-log/ig-publisher.log raw_log_lines=5644
+2026-08-31T21:39:38Z  INFO   11  verify-migration  start  cmd=`python3 /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/recon/agent-skills/skills/mii-ig-migration/scripts/verify-migration.py --target . --source /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/recon/source-tag --rendered output --log migration-log/run.log --harvest-tsv migration-log/guide-harvest.tsv --harvest-dir migration-log/guide-harvest/pagecontent --source-html migration-log/guide-harvest/html --page-map migration-log/page-map.tsv --derived-tsv migration-log/derived-content.tsv --source-lang de --template-latest v0.13.2 --publisher-pin 2.3.2 --expected-steps /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/recon/agent-skills/skills/mii-ig-migration/references/expected-steps.tsv --template-pages migration-log/template-pages-v0.13.2.tsv --template-artifacts migration-log/template-artifacts-v1.3.4.tsv --shape B`  raw_log=migration-log/verify-migration.log prev_raw_log=migration-log/verify-migration.prev.log
+2026-08-31T21:39:38Z  INFO   11  verify-migration  params  target=. source=/private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/recon/source-tag guide_tree=- rendered=output log=migration-log/run.log layers=conservation,fidelity,provenance,rendering,log
+2026-08-31T21:39:39Z  INFO   11  verify-migration  conservation C1  identisch=1 divergiert=0 nicht_pruefbar=0
+2026-08-31T21:39:39Z  INFO   11  verify-migration  conservation C2  identisch=2 divergiert=0 nicht_pruefbar=0
+2026-08-31T21:39:39Z  INFO   11  verify-migration  conservation C3  identisch=18 divergiert=0 nicht_pruefbar=0
+2026-08-31T21:39:39Z  INFO   11  verify-migration  conservation C4  identisch=1 divergiert=14 nicht_pruefbar=3
+2026-08-31T21:39:39Z  WARN   11  verify-migration  verification-divergence: conservation C4  count=14 subjects=anwendungsflleinformationsmodell-beschreibungvonszenarienfrdieanwendungdesmoduls.md, anwendungsflleinformationsmodell-datenstzeinkl.beschreibungen.md, anwendungsflleinformationsmodell-fragebgen.md …
+    Each is a row in migration-log/verification-findings.tsv with its evidence and its next action.
+2026-08-31T21:39:39Z  WARN   11  verify-migration  not-mechanisable: conservation C4  count=3 subjects=technischeimplementierung-fhirprofile-consent.md, technischeimplementierung-fhirprofile-documentreference.md, technischeimplementierung-fhirprofile-provenance.md
+    NOT a pass. Each names the human action it needs; they belong in the
+    report's decision queue, and the exit status distinguishes them (3).
+2026-08-31T21:39:39Z  INFO   11  verify-migration  conservation C5  identisch=4 divergiert=0 nicht_pruefbar=0
+2026-08-31T21:39:39Z  INFO   11  verify-migration  conservation C6  identisch=16 divergiert=0 nicht_pruefbar=0
+2026-08-31T21:39:39Z  INFO   11  verify-migration  conservation C7  identisch=0 divergiert=10 nicht_pruefbar=3
+2026-08-31T21:39:39Z  WARN   11  verify-migration  verification-divergence: conservation C7  count=10 subjects=logical-models, frageboegen, uml-diagrams …
+    Each is a row in migration-log/verification-findings.tsv with its evidence and its next action.
+2026-08-31T21:39:39Z  WARN   11  verify-migration  not-mechanisable: conservation C7  count=3 subjects=technischeimplementierung-fhirprofile-consent.md, technischeimplementierung-fhirprofile-documentreference.md, technischeimplementierung-fhirprofile-provenance.md
+    NOT a pass. Each names the human action it needs; they belong in the
+    report's decision queue, and the exit status distinguishes them (3).
+2026-08-31T21:39:39Z  INFO   11  verify-migration  fidelity F1  identisch=3 divergiert=1 nicht_pruefbar=5
+2026-08-31T21:39:39Z  WARN   11  verify-migration  verification-divergence: fidelity F1  count=1 subjects=title
+    Each is a row in migration-log/verification-findings.tsv with its evidence and its next action.
+2026-08-31T21:39:39Z  WARN   11  verify-migration  not-mechanisable: fidelity F1  count=5 subjects=id, version, status …
+    NOT a pass. Each names the human action it needs; they belong in the
+    report's decision queue, and the exit status distinguishes them (3).
+2026-08-31T21:39:39Z  INFO   11  verify-migration  fidelity F2  identisch=1 divergiert=1 nicht_pruefbar=3
+2026-08-31T21:39:39Z  WARN   11  verify-migration  verification-divergence: fidelity F2  count=1 subjects=de.einwilligungsmanagement
+    Each is a row in migration-log/verification-findings.tsv with its evidence and its next action.
+2026-08-31T21:39:39Z  WARN   11  verify-migration  not-mechanisable: fidelity F2  count=3 subjects=hl7.fhir.uv.crmi, hl7.fhir.uv.extensions.r4, hl7.terminology.r4
+    NOT a pass. Each names the human action it needs; they belong in the
+    report's decision queue, and the exit status distinguishes them (3).
+2026-08-31T21:39:39Z  INFO   11  verify-migration  fidelity F3  identisch=2 divergiert=0 nicht_pruefbar=0
+2026-08-31T21:39:39Z  INFO   11  verify-migration  fidelity F4  identisch=1 divergiert=0 nicht_pruefbar=0
+2026-08-31T21:39:39Z  INFO   11  verify-migration  provenance P1  identisch=1 divergiert=0 nicht_pruefbar=0
+2026-08-31T21:39:39Z  INFO   11  verify-migration  provenance P2  identisch=1 divergiert=0 nicht_pruefbar=0
+2026-08-31T21:39:39Z  INFO   11  verify-migration  provenance P3  identisch=1 divergiert=0 nicht_pruefbar=1
+2026-08-31T21:39:39Z  WARN   11  verify-migration  not-mechanisable: provenance P3  count=1 subjects=IG Publisher currency
+    NOT a pass. Each names the human action it needs; they belong in the
+    report's decision queue, and the exit status distinguishes them (3).
+2026-08-31T21:39:39Z  INFO   11  verify-migration  provenance P4  identisch=1 divergiert=0 nicht_pruefbar=0
+2026-08-31T21:39:39Z  INFO   11  verify-migration  provenance P5  identisch=1 divergiert=0 nicht_pruefbar=0
+2026-08-31T21:39:39Z  INFO   11  verify-migration  rendering R1  identisch=3 divergiert=5 nicht_pruefbar=0
+2026-08-31T21:39:39Z  WARN   11  verify-migration  verification-divergence: rendering R1  count=5 subjects=release-notes -> changes.html, anwendungsflleinformationsmodell -> logical-models.html, anwendungsflleinformationsmodell-beschreibungvonszenarienfrdieanwendungdesmoduls -> guidance.html …
+    Each is a row in migration-log/verification-findings.tsv with its evidence and its next action.
+2026-08-31T21:39:39Z  INFO   11  verify-migration  rendering R2  identisch=0 divergiert=2 nicht_pruefbar=0
+2026-08-31T21:39:39Z  WARN   11  verify-migration  verification-divergence: rendering R2  count=2 subjects=output/de id="ig-status" [{{], output/en id="ig-status" [{{]
+    Each is a row in migration-log/verification-findings.tsv with its evidence and its next action.
+2026-08-31T21:39:39Z  INFO   11  verify-migration  rendering R3  identisch=1 divergiert=0 nicht_pruefbar=0
+2026-08-31T21:39:39Z  INFO   11  verify-migration  rendering R4  identisch=1 divergiert=0 nicht_pruefbar=0
+2026-08-31T21:39:39Z  INFO   11  verify-migration  rendering R5  identisch=1 divergiert=0 nicht_pruefbar=0
+2026-08-31T21:39:39Z  INFO   11  verify-migration  log L0  identisch=1 divergiert=0 nicht_pruefbar=0
+2026-08-31T21:39:39Z  INFO   11  verify-migration  log L1  identisch=1 divergiert=0 nicht_pruefbar=0
+2026-08-31T21:39:39Z  INFO   11  verify-migration  log L2  identisch=30 divergiert=0 nicht_pruefbar=1
+2026-08-31T21:39:39Z  WARN   11  verify-migration  not-mechanisable: log L2  count=1 subjects=5.1c simplifier-discover
+    NOT a pass. Each names the human action it needs; they belong in the
+    report's decision queue, and the exit status distinguishes them (3).
+2026-08-31T21:39:39Z  INFO   11  verify-migration  log L3  identisch=3 divergiert=0 nicht_pruefbar=0
+2026-08-31T21:39:39Z  INFO   11  verify-migration  log L4  identisch=3 divergiert=0 nicht_pruefbar=0
+2026-08-31T21:39:39Z  WARN   11  verify-migration  result  identisch=98 divergiert=33 nicht_pruefbar=16 findings=./migration-log/verification-findings.tsv markdown=./migration-log/verification.md exit=1
+    exit 1 = at least one DIVERGIERT; exit 3 = none, but verification is INCOMPLETE
+    because a check could not be mechanised. Neither is a pass.
+2026-08-31T21:39:39Z  WARN   11  verify-migration  anticipated-nonzero-exit: findings are this step OUTPUT (1 = DIVERGIERT, 3 = NICHT PRÜFBAR)  cmd=`python3 /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/recon/agent-skills/skills/mii-ig-migration/scripts/verify-migration.py --target . --source /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/recon/source-tag --rendered output --log migration-log/run.log --harvest-tsv migration-log/guide-harvest.tsv --harvest-dir migration-log/guide-harvest/pagecontent --source-html migration-log/guide-harvest/html --page-map migration-log/page-map.tsv --derived-tsv migration-log/derived-content.tsv --source-lang de --template-latest v0.13.2 --publisher-pin 2.3.2 --expected-steps /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/recon/agent-skills/skills/mii-ig-migration/references/expected-steps.tsv --template-pages migration-log/template-pages-v0.13.2.tsv --template-artifacts migration-log/template-artifacts-v1.3.4.tsv --shape B`  exit=1 raw_log=migration-log/verify-migration.log raw_log_lines=60
+    This non-zero status is this step's ANTICIPATED, documented outcome, not a
+    failure to fix -- the acceptance criterion is met AS QUALIFIED (spec
+    §5.1b.4). Escalated, not ignored: every item behind it belongs in the
+    report's ① decision queue, named individually (spec §10.3, §10.6).
+2026-08-31T21:40:03Z  INFO   7  prepost-delta  start  cmd=`python3 /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/recon/agent-skills/skills/mii-ig-migration/scripts/prepost-delta.py --pre migration-log/preflight-analysis.json --post migration-log/postflight-analysis.json --out migration-log/prepost-delta.md --tsv migration-log/prepost-delta.tsv`  raw_log=migration-log/prepost-delta.log prev_raw_log=migration-log/prepost-delta.prev.log
+2026-08-31T21:40:03Z  INFO   7  prepost-delta  params  pre=migration-log/preflight-analysis.json post=migration-log/postflight-analysis.json out=migration-log/prepost-delta.md tsv=migration-log/prepost-delta.tsv
+2026-08-31T21:40:03Z  WARN   7  prepost-delta  census-mode-mismatch: pre=reduced post=static -- artefact-count differences reported as expected-change, never as regressions
+    The two census styles classify the same artefacts differently;
+    conservation of the artefacts themselves is the verifier's C1
+    question, answered by id, not by count.
+2026-08-31T21:40:03Z  WARN   7  prepost-delta  delta-not-measurable: identity.id  pre=- post=mii-ig-consent
+    the field is absent from the pre measurement
+2026-08-31T21:40:03Z  WARN   7  prepost-delta  delta-not-measurable: identity.canonical  pre=- post=https://www.medizininformatik-initiative.de/fhir/modul-consent
+    the field is absent from the pre measurement
+2026-08-31T21:40:03Z  WARN   7  prepost-delta  delta-not-measurable: identity.packageId  pre=- post=de.medizininformatikinitiative.kerndatensatz.consent
+    the field is absent from the pre measurement
+2026-08-31T21:40:03Z  WARN   7  prepost-delta  delta-not-measurable: identity.name  pre=- post=MII_IG_Consent
+    the field is absent from the pre measurement
+2026-08-31T21:40:03Z  WARN   7  prepost-delta  delta-not-measurable: identity.version  pre=- post=2027.0.0-ballot.rc1
+    the field is absent from the pre measurement
+2026-08-31T21:40:03Z  WARN   7  prepost-delta  delta-not-measurable: identity.fhirVersion  pre=- post=4.0.1
+    the field is absent from the pre measurement
+2026-08-31T21:40:03Z  WARN   7  prepost-delta  delta-not-measurable: identity.license  pre=- post=CC-BY-4.0
+    the field is absent from the pre measurement
+2026-08-31T21:40:03Z  WARN   7  prepost-delta  delta-not-measurable: identity.publisher  pre=- post=NUM-DIZ
+    the field is absent from the pre measurement
+2026-08-31T21:40:03Z  WARN   7  prepost-delta  delta-not-measurable: identity.status  pre=- post=active
+    the field is absent from the pre measurement
+2026-08-31T21:40:03Z  WARN   7  prepost-delta  delta-not-measurable: identity.title  pre=- post=MII Implementation Guide Consent
+    the field is absent from the pre measurement
+2026-08-31T21:40:03Z  ERROR  7  prepost-delta  delta-regression: licence.contradictory  pre=false post=true
+    why: the target now declares CONTRADICTORY licences (the target declares: attribution4.0international, cc-by-4.0, cc0-1.0, ccby4.0) -- one file will be read as the licence by someone, and it will be the wrong one
+2026-08-31T21:40:03Z  INFO   7  prepost-delta  result  rows=34 unchanged=9 improved=1 expected-change=13 regression=1 not-measurable=10 out=migration-log/prepost-delta.md tsv=migration-log/prepost-delta.tsv exit=1
+2026-08-31T21:40:03Z  WARN   7  prepost-delta  prepost-delta: 1 regression(s) -- a property of the module got WORSE between the pre- and post-measurement.
+    Every regression above names its property and both values.
+    The reports were still written: they are the artefact, not the verdict.
+2026-08-31T21:40:03Z  WARN   7  prepost-delta  anticipated-nonzero-exit: the single REGRESSION row (licence census CC0-in-GECC083 false positive) is adjudicated in the log  cmd=`python3 /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/recon/agent-skills/skills/mii-ig-migration/scripts/prepost-delta.py --pre migration-log/preflight-analysis.json --post migration-log/postflight-analysis.json --out migration-log/prepost-delta.md --tsv migration-log/prepost-delta.tsv`  exit=1 raw_log=migration-log/prepost-delta.log raw_log_lines=31
+    This non-zero status is this step's ANTICIPATED, documented outcome, not a
+    failure to fix -- the acceptance criterion is met AS QUALIFIED (spec
+    §5.1b.4). Escalated, not ignored: every item behind it belongs in the
+    report's ① decision queue, named individually (spec §10.3, §10.6).

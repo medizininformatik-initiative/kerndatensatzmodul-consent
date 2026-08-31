@@ -9,10 +9,7 @@ This section bundles the domain guidance on implementing and using the
 ### General Implementation Guidance
 
 * **[Data Sets and Descriptions](logical-models.html)** — the module's data
-  elements, described as logical models. (This entry shares its target
-  with *Artifacts → Logical Models*; none of the anchors of the artifact overview
-  can be used as a link target — see
-  [`docs/page-structure.md`](https://github.com/medizininformatik-initiative/kerndatensatzmodul-consent/blob/main/docs/page-structure.md) in this repository.)
+  elements, described as logical models.
 * **[UML Diagrams](uml-diagrams.html)** — visual representation of the data models
   and their relationships.
 

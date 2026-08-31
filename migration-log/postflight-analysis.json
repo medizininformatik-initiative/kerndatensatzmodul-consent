@@ -4,11 +4,11 @@
   "mode": "static",
   "analyzed": {
     "path": "/private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/target",
-    "label": "consent 2026.0.0 migrated tree",
+    "label": "consent 2027.0.0-ballot.rc1 migrated tree",
     "project_root_nested": null,
     "project_root_candidates": null,
-    "git_commit": "b921456",
-    "timestamp": "2026-08-31T19:33:36Z"
+    "git_commit": "5d025ff",
+    "timestamp": "2026-08-31T21:40:03Z"
   },
   "identity": {
     "id": "mii-ig-consent",
@@ -16,7 +16,7 @@
     "packageId": "de.medizininformatikinitiative.kerndatensatz.consent",
     "name": "MII_IG_Consent",
     "title": "MII Implementation Guide Consent",
-    "version": "2026.0.0",
+    "version": "2027.0.0-ballot.rc1",
     "calver": true,
     "status": "active",
     "fhirVersion": "4.0.1",
@@ -776,14 +776,14 @@
       "intro_notes": true,
       "implementation_guides_tree": false,
       "dual_source": false,
-      "pagecontent_last_commit": "2026-08-31T21:19:11+02:00",
+      "pagecontent_last_commit": "2026-08-31T22:50:41+02:00",
       "implementation_guides_last_commit": null
     },
     "qa_baseline": {
       "source": "output/qa.json",
-      "errs": 94,
+      "errs": 70,
       "warnings": 137,
-      "date": "Mon, 31 Aug, 2026 19:21:37 +0000"
+      "date": "Mon, 31 Aug, 2026 21:34:42 +0000"
     },
     "_comment": "migration Gate-0 aspects; None = not measurable from this tree (obtain it, never assume it)"
   },
@@ -806,11 +806,11 @@
     "pages": 18,
     "pages_all": 18,
     "translation_pages": 18,
-    "translation_words": 9207,
+    "translation_words": 9261,
     "intro_note_pages": 3,
-    "intro_note_words": 1551,
-    "words": 8124,
-    "words_all_incl_stubs": 18882,
+    "intro_note_words": 1540,
+    "words": 8320,
+    "words_all_incl_stubs": 19121,
     "images": 2,
     "mandatory_present": [
       "index",
@@ -843,7 +843,7 @@
       },
       {
         "path": "input/pagecontent/changes.md",
-        "words": 948,
+        "words": 995,
         "kind": "target",
         "stub": false
       },
@@ -873,7 +873,7 @@
       },
       {
         "path": "input/pagecontent/guidance.md",
-        "words": 325,
+        "words": 300,
         "kind": "target",
         "stub": false
       },
@@ -903,7 +903,7 @@
       },
       {
         "path": "input/pagecontent/search-parameters.md",
-        "words": 475,
+        "words": 642,
         "kind": "target",
         "stub": false
       },
@@ -933,7 +933,7 @@
       },
       {
         "path": "input/pagecontent/version-history.md",
-        "words": 504,
+        "words": 511,
         "kind": "target",
         "stub": false
       },
@@ -945,7 +945,7 @@
       },
       {
         "path": "input/intro-notes/StructureDefinition-e0e166b4-0f77-478d-9062-de0034d98ce0-intro.md",
-        "words": 1433,
+        "words": 1422,
         "kind": "intro",
         "stub": false
       },
@@ -969,7 +969,7 @@
       },
       {
         "path": "input/translations/en/pagecontent/changes.md",
-        "words": 1015,
+        "words": 1072,
         "kind": "translation",
         "stub": false
       },
@@ -981,7 +981,7 @@
       },
       {
         "path": "input/translations/en/pagecontent/downloads.md",
-        "words": 440,
+        "words": 330,
         "kind": "translation",
         "stub": false
       },
@@ -999,7 +999,7 @@
       },
       {
         "path": "input/translations/en/pagecontent/guidance.md",
-        "words": 396,
+        "words": 365,
         "kind": "translation",
         "stub": false
       },
@@ -1029,7 +1029,7 @@
       },
       {
         "path": "input/translations/en/pagecontent/search-parameters.md",
-        "words": 563,
+        "words": 730,
         "kind": "translation",
         "stub": false
       },
@@ -1059,7 +1059,7 @@
       },
       {
         "path": "input/translations/en/pagecontent/version-history.md",
-        "words": 587,
+        "words": 558,
         "kind": "translation",
         "stub": false
       }
@@ -1067,9 +1067,9 @@
   },
   "linguistics": {
     "content_pages": 18,
-    "words_total": 8124,
-    "words_avg": 451.3,
-    "words_median": 314,
+    "words_total": 8320,
+    "words_avg": 462.2,
+    "words_median": 302,
     "words_min": 88,
     "words_max": 2201,
     "longest_page": "input/pagecontent/code-systems.md",
@@ -1081,19 +1081,19 @@
       },
       {
         "path": "input/pagecontent/changes.md",
-        "words": 948
+        "words": 995
       },
       {
         "path": "input/pagecontent/implementer-guidance.md",
         "words": 709
       },
       {
-        "path": "input/pagecontent/version-history.md",
-        "words": 504
+        "path": "input/pagecontent/search-parameters.md",
+        "words": 642
       },
       {
-        "path": "input/pagecontent/search-parameters.md",
-        "words": 475
+        "path": "input/pagecontent/version-history.md",
+        "words": 511
       },
       {
         "path": "input/pagecontent/index.md",
@@ -1108,12 +1108,12 @@
         "words": 344
       },
       {
-        "path": "input/pagecontent/guidance.md",
-        "words": 325
-      },
-      {
         "path": "input/pagecontent/downloads.md",
         "words": 303
+      },
+      {
+        "path": "input/pagecontent/guidance.md",
+        "words": 300
       },
       {
         "path": "input/pagecontent/frageboegen.md",
@@ -1317,7 +1317,7 @@
     "dependency_stale_count": 0,
     "dependency_stale": [],
     "dependency_staleness_note": "Heuristik aus CalVer-Jahr; exakt nur via Package-Registry (extern).",
-    "release_cadence_per_year": 22.6,
+    "release_cadence_per_year": 23.7,
     "days_since_last_commit": 0,
     "tags": 5
   },
@@ -1343,18 +1343,18 @@
     "privacy_page_words": 0,
     "privacy_page_substantial": false,
     "examples_contain_pii_like": false,
-    "bus_factor_top_author_pct": 33,
+    "bus_factor_top_author_pct": 31,
     "bus_factor_authors": 7,
     "bus_factor_risk": "gering",
     "breaking_change_risk": null,
     "breaking_change_note": "Erfordert Diff gegen die publizierte Vorversion (Build/extern) — statisch nicht erhoben."
   },
   "git": {
-    "commits": 104,
+    "commits": 109,
     "authors": 7,
-    "top_author_share": 33,
+    "top_author_share": 31,
     "days_since_last": 0,
-    "commits_per_year": 22.6,
+    "commits_per_year": 23.7,
     "tags": 5,
     "first": "2022-01-28",
     "last": "2026-08-31",

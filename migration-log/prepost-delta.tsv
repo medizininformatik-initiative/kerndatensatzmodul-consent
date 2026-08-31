@@ -3,7 +3,7 @@ identity.id	-	mii-ig-consent	not-measurable
 identity.canonical	-	https://www.medizininformatik-initiative.de/fhir/modul-consent	not-measurable
 identity.packageId	-	de.medizininformatikinitiative.kerndatensatz.consent	not-measurable
 identity.name	-	MII_IG_Consent	not-measurable
-identity.version	-	2026.0.0	not-measurable
+identity.version	-	2027.0.0-ballot.rc1	not-measurable
 identity.fhirVersion	-	4.0.1	not-measurable
 identity.license	-	CC-BY-4.0	not-measurable
 identity.calver	false	true	expected-change

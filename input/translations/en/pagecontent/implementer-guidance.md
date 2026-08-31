@@ -54,15 +54,13 @@ In practice, concrete mandatory project requirements for the use of the ResultTy
 
 The consent management system [gICS](https://ths-greifswald.de/gics) constitutes the current [reference implementation](https://ebooks.iospress.nl/doi/10.3233/SHTI251389) of the HL7-D FHIR standard for consent management (version 2.0).
 
-All implementations should **support at least the following variants**. The cardinality of `Consent.category` is defined as `2..\*` and enables the necessary backwards compatibility.
+All implementations should **support at least the following variants**. The cardinality of `Consent.category` is defined as `2..*` and enables the necessary backwards compatibility.
 
 | ResultType | Meaning for the Consent resource | Aggregation of information |
-
 | --- | --- | --- |
-
 | `document` | The Consent resource refers to  **one (!) completed document**  (QuestionnaireResponse).  *This should be the default in an (MII) FHIR server.* | no |
-
 | `consent-status` | The Consent resource  **takes into account all relevant consent and withdrawal documents**  in the context of the MII  **for one (!) patient** . The Consent resource with ResultType  `consent-status`  always refers to one patient and contains the current consent status.  *This should ideally be supported by the (MII) FHIR server.* | Yes, computed by appropriate business logic at the time of the query or for a specific period. |
+
 
 Ideally, the FHIR server should always hold only one Consent resource per patient containing the current aggregated consent information (ResultType `consent-status`).
 

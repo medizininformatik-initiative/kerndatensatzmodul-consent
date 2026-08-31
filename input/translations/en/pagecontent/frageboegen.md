@@ -22,14 +22,11 @@ The profile [QuestionnaireResponse](https://ig.fhir.de/einwilligungsmanagement/s
 To represent the answers, the value set "[MII Consent: Answer ValueSet](https://art-decor.org/art-decor/decor-valuesets--mide-?id=2.16.840.1.113883.3.1937.777.24.11.30)" should be used:
 
 | Checkbox | Code designator | Code (OID) |
-
 | --- | --- | --- |
-
 | 'Yes' checked | gültig | 2.16.840.1.113883.3.1937.777.24.5.2.1 |
-
 | 'No' checked | nicht gültig | 2.16.840.1.113883.3.1937.777.24.5.2.2 |
-
 | not checked | unbekannt | 2.16.840.1.113883.3.1937.777.24.5.2.3 |
+
 
 *Answers (checkbox), code designators and OIDs*
 

@@ -11,4 +11,4 @@ an Gate A.
 > **Written during migration - review before release.** Das folgende CapabilityStatement wurde während der Migration aus den Profilen und Suchparametern des Moduls erzeugt (jedes Element referenziert ein Paket-Artefakt); die Quelle enthielt keines.
 {: .ig-highlight .ig-highlight-blue}
 
-{% lang-fragment CapabilityStatement-mii-cap-consent-server-html.xhtml %}
+{% include CapabilityStatement-mii-cap-consent-server-html-de.xhtml %}

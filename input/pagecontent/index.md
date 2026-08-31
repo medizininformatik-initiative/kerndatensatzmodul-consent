@@ -11,16 +11,12 @@
 Die vorliegende Spezifikation beschreibt die FHIR-Repräsentation des Kerndatensatz Moduls 'Consent' der Medizininformatik-Initiative. Im Folgenden werden die Use-Cases des Moduls sowie die dazugehörigen FHIR-Profile und Terminologie-Ressourcen in ihrer verbindlichen Form beschrieben.
 
 | Veröffentlichung / Status |  |
-
 | --- | --- |
-
 | Datum | 31.08.2026 |
-
 | Version | 2027.0.0-ballot.rc1 |
-
 | Status | active |
-
 | Realm | DE |
+
 
 ### Beschreibung Modul Consent
 

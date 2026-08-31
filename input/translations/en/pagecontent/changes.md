@@ -149,7 +149,7 @@ Date 21.01.2025
 
 Date 17.12.2024
 
-- Consent resource   - Consent.category -> max value="\*"   - Consent.provision.type ->fixedCode deny removed   - Consent.provision.provision.type ->fixedCode permit removed￼   - IG/Consent adjusted accordingly
+- Consent resource   - Consent.category -> max value="\*"   - Consent.provision.type ->fixedCode deny removed   - Consent.provision.provision.type ->fixedCode permit removed   - IG/Consent adjusted accordingly
 
 - IG/Consent   - list of the available MII Consents for use in Consent.policy.uri updated (withdrawals and minors)
 

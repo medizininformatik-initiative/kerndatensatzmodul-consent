@@ -53,15 +53,13 @@ Konkrete verpflichtende Projektvorgaben zur Verwendung des Suchparameters Result
 
 Das Einwilligungsmanagement [gICS](https://ths-greifswald.de/gics) stellt die aktuelle [Referenzimplementierung](https://ebooks.iospress.nl/doi/10.3233/SHTI251389) des HL7-D FHIR Standards für Einwilligungsmanagement (Version 2.0) dar.
 
-Alle Implementierungen sollten **mindestens folgende Varianten unterstützen**. Die Kardinalität von `Consent.category` ist mit `2..\*` definiert und ermöglicht die notwendige Abwärtskompatibilität.
+Alle Implementierungen sollten **mindestens folgende Varianten unterstützen**. Die Kardinalität von `Consent.category` ist mit `2..*` definiert und ermöglicht die notwendige Abwärtskompatibilität.
 
 | ResultType | Bedeutung für die Consent-Ressource | Aggregation von Informationen |
-
 | --- | --- | --- |
-
 | `document` | Die Consent-Ressource bezieht sich auf  **ein (!) ausgefülltes Dokument**  (QuestionnaireResponse).  *Dies sollte der Default in einem (MII) FHIR-Server sein.* | nein |
-
 | `consent-status` | Die Consent-Ressource  **berücksichtigt alle relevanten Einwilligungs- und Widerrufsdokumente**  im Kontext der MII  **für einen (!) Patienten** . Die Consent Ressource mit ResultType  `consent-status`  bezieht sich immer auf einen Patienten und enthält den aktuellen Einwilligungsstand.  *Dies sollte idealerweise durch den (MII) FHIR-Server unterstützt werden.* | Ja, berechnet durch entsprechende Business-Logik zum Zeitpunkt der Abfrage oder für einen bestimmten Zeitraum. |
+
 
 Idealerweise sollte der FHIR-Server je Patient stets nur eine Consent-Ressource mit den aktuellen aggregierten Einwilligungsinformationen (ResultType `consent-status`) vorhalten.
 

@@ -3,7 +3,7 @@
 | Side | Measurement |
 |---|---|
 | pre | preflight-analysis.json (consent 2026.0.0 unmigrated source, 792f9f3, 2026-08-31T17:34:03Z) |
-| post | postflight-analysis.json (consent 2026.0.0 migrated tree, b921456, 2026-08-31T19:33:36Z) |
+| post | postflight-analysis.json (consent 2027.0.0-ballot.rc1 migrated tree, 5d025ff, 2026-08-31T21:40:03Z) |
 
 Verdicts: **unchanged** 9 · **improved** 1 · **expected-change** 13 · **REGRESSION** 1 · **not-measurable** 10.
 
@@ -21,7 +21,7 @@ Each one blocks the migration until it is fixed or explained; an explanation bel
 | `identity.canonical` | - | https://www.medizininformatik-initiative.de/fhir/modul-consent | not-measurable | the field is absent from the pre measurement |
 | `identity.packageId` | - | de.medizininformatikinitiative.kerndatensatz.consent | not-measurable | the field is absent from the pre measurement |
 | `identity.name` | - | MII_IG_Consent | not-measurable | the field is absent from the pre measurement |
-| `identity.version` | - | 2026.0.0 | not-measurable | the field is absent from the pre measurement |
+| `identity.version` | - | 2027.0.0-ballot.rc1 | not-measurable | the field is absent from the pre measurement |
 | `identity.fhirVersion` | - | 4.0.1 | not-measurable | the field is absent from the pre measurement |
 | `identity.license` | - | CC-BY-4.0 | not-measurable | the field is absent from the pre measurement |
 | `identity.calver` | false | true | expected-change | descriptive metadata, not machine identity -- confirm the change is deliberate in the report |

@@ -8,10 +8,7 @@ Moduls **Consent**.
 ### Allgemeine Umsetzungshinweise
 
 * **[Datensätze und Beschreibungen](logical-models.html)** — die Datenelemente
-  des Moduls, beschrieben als logische Modelle. (Dieser Eintrag teilt sein Ziel
-  mit *Artefakte → Logische Modelle*; keiner der Anker der Artefakt-Übersicht
-  ist als Linkziel nutzbar — siehe
-  [`docs/page-structure.md`](https://github.com/medizininformatik-initiative/kerndatensatzmodul-consent/blob/main/docs/page-structure.md) in diesem Repository.)
+  des Moduls, beschrieben als logische Modelle.
 * **[UML-Diagramme](uml-diagrams.html)** — visuelle Darstellung der Datenmodelle
   und ihrer Beziehungen.
 
