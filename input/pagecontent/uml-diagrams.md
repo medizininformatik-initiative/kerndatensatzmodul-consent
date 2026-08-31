@@ -6,7 +6,6 @@
 <!-- Die UML-Grafik wird lokal aus input/images/ ausgeliefert (Quelle: figures/
      des Quell-Repositories; der Simplifier-Leitfaden verlinkte sie hot auf den
      master-Branch). Die .graphml-Quelle liegt unter figures/. -->
-### UML-Diagramme
 
 ### [Consent](StructureDefinition-e0e166b4-0f77-478d-9062-de0034d98ce0.html)
 

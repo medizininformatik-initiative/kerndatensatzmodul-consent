@@ -50,7 +50,8 @@ PATTERNS=(
 # Reviewed exceptions: "<path>|<substring of the offending line>", one per line.
 # A module author writing their own prose can record a legitimate hit here
 # without blanking a whole file from the scan.
-ALLOW='scripts/publication-url-consistency.template-test.mjs|is English-default with German translation supplements
+ALLOW='input/translations/README.md|stock model (English-default, as in
+scripts/publication-url-consistency.template-test.mjs|is English-default with German translation supplements
 scripts/publication-url-consistency.template-test.mjs|i18n-lang:
 scripts/self-check-substitute.sh|input/translations/de/ImplementationGuide-mii-ig-
 skills/wiki-consistency-check/references/check-matrix.md|i18n-default-lang: en'

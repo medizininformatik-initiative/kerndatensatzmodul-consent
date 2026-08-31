@@ -14,6 +14,8 @@ Dateiname wie die deutsche Seite); Ressourcen-Übersetzungen als `.po`-Dateien
 unter `input/translations/en/`. Details:
 [`docs/recipes/add-translation.md`](https://github.com/forschungsgruppe-digital-health/mii-kds-consent-ig-inoffiziell/blob/main/docs/recipes/add-translation.md) in diesem Repository.
 
-> [TODO: Vermerken Sie, welche Teile des Moduls bereits ins Englische übersetzt
-> sind.]
-{: .ig-highlight .ig-highlight-grey}
+Alle Leitfaden-Seiten dieses Moduls liegen als **maschinelle englische
+Übersetzungen** der deutschen Quellseiten vor (Migrationsstand 2026-08-31,
+Review an Gate C offen — jede Seite trägt einen entsprechenden
+TODO:REVIEW-Vermerk). Die Ressourcen-Titel übersetzt der IG-Level-Katalog
+`input/translations/en/ImplementationGuide-mii-ig-consent.po`.

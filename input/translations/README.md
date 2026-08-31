@@ -48,7 +48,7 @@ input/
    §4 before you invest in a supplement.
 3. **Pages:** create the German page under
    `input/translations/en/pagecontent/<same-filename>.md`; the publisher
-   matches it to the English source by file name.
+   matches it to the German source by file name.
 4. **Menu:** maintain the translated `menu.xml` under
    `input/translations/en/includes/`.
 5. **Page titles, breadcrumbs and the table of contents:** these come from the

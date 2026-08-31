@@ -1,25 +1,136 @@
 <!-- markdownlint-disable MD041 -->
-<!-- Split from the former combined search-parameters-and-operations.md per the
-     TF-KDS-agreed menu structure (one page per artifact type).
-     German mirror: input/translations/de/pagecontent/search-parameters.md. -->
-<!-- OPTIONAL-PAGE (0..1) — remove this marker when you KEEP the page; remove
-     the page per docs/optional-pages.md when you don't. The convention check
-     (M9) fails a release while this marker is present. -->
-
-> **Optional page (0..1).** The KDS module menu lists this page as *optional*.
-> Decide for your module: **keep** it — fill it in and delete this banner and
-> the `OPTIONAL-PAGE` marker comment (in this file AND the German mirror) — or
-> **remove** it, following the per-entry procedure in [`docs/optional-pages.md`](https://github.com/forschungsgruppe-digital-health/mii-kds-consent-ig-inoffiziell/blob/main/docs/optional-pages.md)
-> of this repository. A release must not ship with this banner (convention
-> check M9).
-{: .ig-highlight .ig-highlight-grey}
-
+<!-- machine translation of source page search-parameters.md (de). TODO:REVIEW — Gate C. -->
+<!-- Wortgetreu übertragen aus der Simplifier-Quellseite
+     https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/TechnischeImplementierung/FHIRProfile/Consent?version=2026.0.0
+     (Harvest 2026-08-31); Links umgeschrieben (page-map). -->
+<!-- SPLIT gemäß page-map: die Abschnitte "Suchparameter" und "Komplexere
+     Beispiele (Suchanfragen)" der Consent-Profilseite stehen hier; die
+     Profil-Erläuterungen stehen als Intro-Note auf der Profilseite. -->
 ### Search Parameters
 
-This page lists the module-specific FHIR search parameters of the
-**Consent** module (naming convention `MII_SP_<Module>_<Name>`), where
-defined. Cross-module search parameters are defined by the Meta module.
+#### Category
 
-> [TODO: List the search parameters — or remove this page if your module
-> defines none.]
-{: .ig-highlight .ig-highlight-grey}
+In the context of this guide, the standard search parameter **Consent.category** must be supported (cf. [https://www.hl7.org/fhir/consent.html#search](https://www.hl7.org/fhir/consent.html#search))
+
+An example:
+
+```
+GET [base]/Consent?category=2.16.840.1.113883.3.1937.777.24.2.184
+```
+
+finds all Consent resources (valid and no longer valid) at the time of the request that correspond to any version of the MII Broad Consent (e.g. 1.6d, 1.7.2, etc.).
+
+#### Provision Code
+
+Invocations`\[base\]/Consent?mii-provision-provision-code=\[system\]|\[value\]`DetailsResourceConsentCodemii-provision-provision-codeType[token](https://hl7.org/fhir/r4/search.html#token)FhirPathConsent.provision.provision.code
+
+Example:
+
+```
+GET [base]/Consent?mii-provision-provision-code=urn:oid:2.16.840.1.113883.3.1937.777.24.5.3|2.16.840.1.113883.3.1937.777.24.5.3.8
+```
+
+#### Type of the Provision (permit, deny)
+
+Invocations`\[base\]/Consent?mii-provision-provision-type=\[system\]|\[value\]`DetailsResourceConsentCodemii-provision-provision-typeType[token](https://hl7.org/fhir/r4/search.html#token)FhirPathConsent.provision.provision.type
+
+Example:
+
+```
+GET [base]/Consent?mii-provision-provision-type=permit
+```
+
+#### Type of the Provision of a Specific Provision Defined by a Code
+
+Invocations`\[base\]/Consent?mii-provision-provision-code-type=(state$)\[value\],(state$)\[value\]`DetailsResourceConsentCodemii-provision-provision-code-typeType[composite](https://hl7.org/fhir/r4/search.html#composite)FhirPathConsent.provision.provision
+
+Example:
+
+```
+GET [base]/Consent?mii-provision-provision-code-type=urn:oid:2.16.840.1.113883.3.1937.777.24.5.3|2.16.840.1.113883.3.1937.777.24.5.3.8$permit
+```
+
+#### Provision Period
+
+Invocations`\[base\]/Consent?mii-provision-provision-period=(comparator)\[date\]`DetailsResourceConsentCodemii-provision-provision-periodType[date](https://hl7.org/fhir/r4/search.html#date)FhirPathConsent.provision.provision.period
+
+Example:
+
+```
+GET [base]/Consent?mii-provision-provision-period=2020-12-15
+```
+
+#### Provision Period of a Specific Provision Defined by a Code
+
+Invocations`\[base\]/Consent?mii-provision-provision-code-period=(state$)\[value\],(state$)\[value\]`DetailsResourceConsentCodemii-provision-provision-code-periodType[composite](https://hl7.org/fhir/r4/search.html#composite)FhirPathConsent.provision.provision
+
+Example:
+
+```
+GET [base]/Consent?mii-provision-provision-code-period=urn:oid:2.16.840.1.113883.3.1937.777.24.5.3|2.16.840.1.113883.3.1937.777.24.5.3.8$2020-12-15
+```
+
+#### Policy URI (Version-Specific MII Broad Consent)
+
+Invocations`\[base\]/Consent?mii-policy-uri=\[url\]`DetailsResourceConsentCodemii-policy-uriType[uri](https://hl7.org/fhir/r4/search.html#uri)FhirPathConsent.policy.uri
+
+Example:
+
+```
+GET [base]/Consent?mii-policy-uri=urn:oid:2.16.840.1.113883.3.1937.777.24.2.1791
+```
+
+#### Additionally Applicable Search Parameters According to the HL7-D Standard for Consent Management
+
+In the context of searching for Consent resources, the following search parameters for filtering Consent resources are defined by the [HL7-D Standard for Consent Management](https://ig.fhir.de/einwilligungsmanagement/stable/Consent.html) (version 2.0). These are likewise supported by the MII KDS Consent. Concrete examples are documented in the IG of the HL7-D working group.
+
+| **Search parameter** | **Explanation** |
+
+| --- | --- |
+
+| domain | Consent domain. In particular, it is recommended to support logical references (Reference by Identifier, in the search parameter: modifier ":identifier"). |
+
+| category | Type of the document (consent, withdrawal, etc.)    
+ ResultType (document, consent status, etc.) |
+
+| patient.identifier | The affected person, identified via an identifier |
+
+*Note: Since there is a dependency on the package of the HL7-D working group on consent management, the search parameter `domain` exists automatically and does not need to be defined explicitly for the KDS module. Technically, it is 'simply taken over'.*
+
+#### More Complex Examples (Search Queries)
+
+```
+GET [base]/Consent?mii-provision-provision-type=permit&mii-provision-provision-code=urn:oid:2.16.840.1.113883.3.1937.777.24.5.3|2.16.840.1.113883.3.1937.777.24.5.3.8&mii-provision-provision-code=urn:oid:2.16.840.1.113883.3.1937.777.24.5.3|2.16.840.1.113883.3.1937.777.24.5.3.9
+```
+
+finds all Consent resources with a permit provision in which both the provision code 2.16.840.1.113883.3.1937.777.24.5.3.8 and the provision code 2.16.840.1.113883.3.1937.777.24.5.3.9 are set.
+
+```
+GET [base]/Consent?mii-provision-provision-type=permit&mii-provision-provision-code=urn:oid:2.16.840.1.113883.3.1937.777.24.5.3|2.16.840.1.113883.3.1937.777.24.5.3.8,mii-provision-provision-code=urn:oid:2.16.840.1.113883.3.1937.777.24.5.3|2.16.840.1.113883.3.1937.777.24.5.3.9
+```
+
+finds all Consent resources with a permit provision in which either the provision code 2.16.840.1.113883.3.1937.777.24.5.3.8 or the provision code 2.16.840.1.113883.3.1937.777.24.5.3.9 is set.
+
+```
+GET [base]/Consent?domain:identifier=MII&category=http://fhir.de/ConsentManagement/CodeSystem/TemplateType|CONSENT-OPT-IN&category=http://fhir.de/ConsentManagement/CodeSystem/ResultType|document
+```
+
+finds all Consent resources of type "consent" in a domain `mii`. One Consent resource per consent document. The Bundle.Total indicates the number of consents.
+
+```
+GET [base]/Consent?category=http://fhir.de/ConsentManagement/CodeSystem/TemplateType|WITHDRAWAL&category=http://fhir.de/ConsentManagement/CodeSystem/ResultType|document
+```
+
+finds all Consent resources of type "withdrawal". One Consent resource per withdrawal document. The Bundle.Total indicates the number of withdrawals.
+
+```
+GET [base]/Consent?category=http://fhir.de/ConsentManagement/CodeSystem/TemplateType|REFUSAL&category=http://fhir.de/ConsentManagement/CodeSystem/ResultType|document
+```
+
+finds all Consent resources of type "refusal". One Consent resource per refusal document. The Bundle.Total indicates the number of refusals.
+
+```
+GET [base]/Consent?domain:identifier=MII&category=http://fhir.de/ConsentManagement/CodeSystem/ResultType|consent-status
+```
+
+finds all Consent resources in the domain `mii`. Each Consent resource **takes into account all relevant consent, withdrawal, and refusal documents for one (!) patient**. The Consent resource with ResultType `consent-status` aggregates consent information, refers to exactly one patient, and represents the patient's current consent status. \*\*At the same time, the Bundle.Total corresponds to the number of patients for whom at least one document with consent information (consent, withdrawal, refusal) exists.

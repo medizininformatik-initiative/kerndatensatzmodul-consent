@@ -692,3 +692,46 @@ ig-stats -> migration-log/preflight-analysis.json  (Artefakte 0, Direktiven 0, I
     The exit status is preserved and returned -- this step did NOT meet its
     acceptance criterion. Read migration-log/derived-scan.log, then either fix and re-run or take it
     to the report's decision queue (spec §10.3).
+2026-08-31T18:35:06Z  INFO   5.5  gen-page-title-po  start  cmd=`python3 /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/recon/agent-skills/skills/mii-ig-migration/scripts/gen-page-title-po.py fsh-generated/resources/ImplementationGuide-mii-ig-consent.json migration-log/menu-titles-en.txt en input/translations/en/ImplementationGuide-mii-ig-consent.po`  raw_log=migration-log/gen-page-title-po.log
+2026-08-31T18:35:06Z  INFO   5.5  gen-page-title-po  params  ig=fsh-generated/resources/ImplementationGuide-mii-ig-consent.json seed=migration-log/menu-titles-en.txt lang=en out=input/translations/en/ImplementationGuide-mii-ig-consent.po
+2026-08-31T18:35:06Z  INFO   5.5  gen-page-title-po  seed  path=migration-log/menu-titles-en.txt  lines=26 entries=26 matched=18 applied=17 unused=8
+2026-08-31T18:35:06Z  WARN   5.5  gen-page-title-po  seed entry unused (no such page title)  title='Anleitung für Forschende'
+2026-08-31T18:35:06Z  WARN   5.5  gen-page-title-po  seed entry unused (no such page title)  title='Artefakt-Rendering (Demo)'
+2026-08-31T18:35:06Z  WARN   5.5  gen-page-title-po  seed entry unused (no such page title)  title='Extensions'
+2026-08-31T18:35:06Z  WARN   5.5  gen-page-title-po  seed entry unused (no such page title)  title='Inhaltsverzeichnis'
+2026-08-31T18:35:06Z  WARN   5.5  gen-page-title-po  seed entry unused (no such page title)  title='MII Implementierungsleitfaden Consent'
+2026-08-31T18:35:06Z  WARN   5.5  gen-page-title-po  seed entry unused (no such page title)  title='Metadaten-Übersicht'
+2026-08-31T18:35:06Z  WARN   5.5  gen-page-title-po  seed entry unused (no such page title)  title='NUM-DIZ'
+2026-08-31T18:35:06Z  WARN   5.5  gen-page-title-po  seed entry unused (no such page title)  title='Operationen'
+2026-08-31T18:35:06Z  INFO   5.5  gen-page-title-po  written  out=input/translations/en/ImplementationGuide-mii-ig-consent.po pages=19 units=19 translated=19 untranslated=0 carried_over=2 preserved_foreign=2 header_preserved=False
+2026-08-31T18:35:06Z  WARN   5.5  gen-page-title-po  unit dropped (no longer in the pages: tree)  title='Capability Statements'
+2026-08-31T18:35:06Z  WARN   5.5  gen-page-title-po  unit dropped (no longer in the pages: tree)  title='Changelog'
+2026-08-31T18:35:06Z  WARN   5.5  gen-page-title-po  unit dropped (no longer in the pages: tree)  title='Code Systems'
+2026-08-31T18:35:06Z  WARN   5.5  gen-page-title-po  unit dropped (no longer in the pages: tree)  title='Examples'
+2026-08-31T18:35:06Z  WARN   5.5  gen-page-title-po  unit dropped (no longer in the pages: tree)  title='Extensions'
+2026-08-31T18:35:06Z  WARN   5.5  gen-page-title-po  unit dropped (no longer in the pages: tree)  title='Guidance'
+2026-08-31T18:35:06Z  WARN   5.5  gen-page-title-po  unit dropped (no longer in the pages: tree)  title='Guidance for Implementers'
+2026-08-31T18:35:06Z  WARN   5.5  gen-page-title-po  unit dropped (no longer in the pages: tree)  title='Guidance for Researchers'
+2026-08-31T18:35:06Z  WARN   5.5  gen-page-title-po  unit dropped (no longer in the pages: tree)  title='Home'
+2026-08-31T18:35:06Z  WARN   5.5  gen-page-title-po  unit dropped (no longer in the pages: tree)  title='Logical Models'
+2026-08-31T18:35:06Z  WARN   5.5  gen-page-title-po  unit dropped (no longer in the pages: tree)  title='MII ImplementationGuide Resource'
+2026-08-31T18:35:06Z  WARN   5.5  gen-page-title-po  unit dropped (no longer in the pages: tree)  title='Metadata Overview'
+2026-08-31T18:35:06Z  WARN   5.5  gen-page-title-po  unit dropped (no longer in the pages: tree)  title='Operations'
+2026-08-31T18:35:06Z  WARN   5.5  gen-page-title-po  unit dropped (no longer in the pages: tree)  title='Profiles'
+2026-08-31T18:35:06Z  WARN   5.5  gen-page-title-po  unit dropped (no longer in the pages: tree)  title='Rendering Artifacts (demo)'
+2026-08-31T18:35:06Z  WARN   5.5  gen-page-title-po  unit dropped (no longer in the pages: tree)  title='Search Parameters'
+2026-08-31T18:35:06Z  WARN   5.5  gen-page-title-po  unit dropped (no longer in the pages: tree)  title='Security and Privacy'
+2026-08-31T18:35:06Z  WARN   5.5  gen-page-title-po  unit dropped (no longer in the pages: tree)  title='Translation Information'
+2026-08-31T18:35:06Z  WARN   5.5  gen-page-title-po  unit dropped (no longer in the pages: tree)  title='UML Diagrams'
+2026-08-31T18:35:06Z  WARN   5.5  gen-page-title-po  unit dropped (no longer in the pages: tree)  title='Value Sets'
+2026-08-31T18:35:06Z  WARN   5.5  gen-page-title-po  unit dropped (no longer in the pages: tree)  title='Versioning'
+2026-08-31T18:35:06Z  INFO   5.5  gen-page-title-po  result  exit=0  every page title translated
+2026-08-31T18:35:06Z  INFO   5.5  gen-page-title-po  done  cmd=`python3 /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/recon/agent-skills/skills/mii-ig-migration/scripts/gen-page-title-po.py fsh-generated/resources/ImplementationGuide-mii-ig-consent.json migration-log/menu-titles-en.txt en input/translations/en/ImplementationGuide-mii-ig-consent.po`  exit=0 raw_log=migration-log/gen-page-title-po.log raw_log_lines=33
+2026-08-31T18:36:50Z  INFO   5.5  gen-page-title-po  hand-fix per spec 5.5/2.2: the two units carried over from the RETIRED template de-catalogue had inverted directions for the en catalogue (msgstr German) — set msgstr to the English values ('Table of Contents' identity; IG title 'MII Implementation Guide Consent' identity); publisher unit NUM-DIZ correct chrome (language-neutral, spec 2.2)
+2026-08-31T19:14:01Z  WARN   5.4  narrative-transfer  source-render-defect repaired: the SOURCE guide's Consent page contained 4 broken 'pagelink' directives (rendered as "Command 'pagelink' could not render: Page not found.") pointing at the MiiConsentPolicyValueSet section of the Terminologien page — replaced by links to code-systems.html in the intro-note (Gate-B item; the defect itself is upstream evidence, recorded here + in the report)
+2026-08-31T19:17:08Z  INFO   5.4d  derived-scan  start  cmd=`python3 /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/recon/agent-skills/skills/mii-ig-migration/scripts/derived-scan.py --target .`  raw_log=migration-log/derived-scan.log prev_raw_log=migration-log/derived-scan.prev.log
+2026-08-31T19:17:08Z  INFO   11  derived-scan  params  target=. out=./migration-log/derived-content.tsv markdown=no
+2026-08-31T19:17:08Z  INFO   11  derived-scan  result  files=42 markers=10 gates=A:2,B:8,C:0 kinds=bridge:8,suggestion:2 langs=default,en findings=0 (none) out=./migration-log/derived-content.tsv exit=0
+2026-08-31T19:17:08Z  INFO   5.4d  derived-scan  done  cmd=`python3 /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/recon/agent-skills/skills/mii-ig-migration/scripts/derived-scan.py --target .`  exit=0 raw_log=migration-log/derived-scan.log raw_log_lines=2
+2026-08-31T19:17:13Z  INFO   7  sushi-verify  start  cmd=`npx --yes fsh-sushi@3.20.1 .`  raw_log=migration-log/sushi-verify.log
+2026-08-31T19:17:53Z  INFO   7  sushi-verify  done  cmd=`npx --yes fsh-sushi@3.20.1 .`  exit=0 raw_log=migration-log/sushi-verify.log raw_log_lines=72

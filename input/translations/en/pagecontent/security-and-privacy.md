@@ -1,75 +1,57 @@
 <!-- markdownlint-disable MD041 -->
-<!-- English rendering of input/pagecontent/security-and-privacy.md.
-     Structured in the TF-KDS-agreed THREE stages: (1) the overarching data
-     protection concept, (2) DIMP in the data portal, (3) the
-     module-specific aspects. Stages 1 and 2 are static overarching content —
-     keep them; stage 3 is where your module writes. Stage 3's CONTENT is
-     optional: a module with no aspects of its own adopts the default text in
-     the section. The Person example box is illustrative only and MUST be
-     removed before the first release (ILLUSTRATIVE-EXAMPLE marker, convention
-     check M11).
-     German mirror: input/translations/de/pagecontent/security-and-privacy.md —
-     both files must say the same thing. -->
+<!-- machine translation of source page security-and-privacy.md (de). TODO:REVIEW — Gate C. -->
+<!-- Deutsche Übersetzung von input/pagecontent/security-and-privacy.md.
+     Aufgebaut in den abgestimmten DREI Stufen: (1) das übergreifende
+     übergreifende Datenschutzkonzept, (2) DIMP im Datenportal, (3) die
+     modul-spezifischen Aspekte. Stufen 1 und 2 sind statischer übergreifender
+     Inhalt — behalten; Stufe 3 füllt Ihr Modul aus. Beide Sprachfassungen
+     müssen dasselbe aussagen. -->
 
 
-This section addresses security and privacy experts. General requirements are in
-the FHIR core specification —
-[Security & Privacy Module](https://build.fhir.org/secpriv-module.html) and the
-[security checklist](https://build.fhir.org/security.html). This page does not
-repeat them; it links the overarching data protection framework and states what is
-**specific to this module**.
+This section is addressed to security and privacy professionals.
+General requirements are covered in the FHIR core specification —
+the [Security & Privacy Module](https://build.fhir.org/secpriv-module.html) and the
+[security checklist](https://build.fhir.org/security.html). This page
+does not repeat them; it links the overarching data protection framework and states
+what is **specific to this module**.
 
 #### 1. The overarching data protection concept
 
 The
-[overarching data protection concept of the Medical Informatics Initiative](https://www.medizininformatik-initiative.de/en/data-protection-concept)
-governs how patient data may be processed for research across the network of
-Data Integration Centers: it
-covers the legal basis (the MII Broad Consent), the roles of the Data
-Integration Centers and Use & Access Committees, and the cross-site application
-scenarios (feasibility queries, distributed analyses, data and biosample
-provision). Everything this module specifies operates inside that framework —
-this guide adds no processing purpose of its own.
+[overarching data protection concept of the Medical Informatics Initiative](https://www.medizininformatik-initiative.de/de/datenschutzkonzept)
+governs how patient data may be processed for research
+across the network of Data Integration Centers:
+the legal basis (the MII Broad Consent), the roles of the
+Data Integration Centers and the Use & Access Committees, as well as the
+cross-site application scenarios (feasibility queries, distributed
+analyses, provision of data and biosamples). Everything this module
+specifies stays within this framework — this guide adds
+no processing purpose of its own.
 
-#### 2. De-identification, minimisation and pseudonymisation (DIMP)
+#### 2. De-Identification, Minimisation, and Pseudonymisation (DIMP)
 
-How data leaving a Data Integration Center is de-identified in practice is
-specified by
+How data leaving a Data Integration Center is de-identified
+in practice is specified by
 [DIMP (De-Identification — Minimisation — Pseudonymisation)](https://medizininformatik-initiative.github.io/dataportal/data-node/DIMP.html)
-in the data portal documentation: direct identifiers are removed,
-data elements not needed by the approved project are dropped, and identifying
-values are replaced by project-specific pseudonyms (FHIR Pseudonymizer
-configuration). The profiles of this module describe data *before* DIMP is
-applied; which elements survive a concrete data release is decided per project
-by the DIMP configuration, not by this guide.
+in the Data Portal documentation: direct identifiers are
+removed, data elements not needed by the approved project are dropped, and
+identifying values are replaced with project-specific pseudonyms
+(FHIR Pseudonymizer configuration). The profiles of this module describe the
+data *before* DIMP is applied; which elements reach a concrete
+data delivery is decided per project by the DIMP configuration,
+not by this guide.
 
 #### 3. Module-specific aspects
 
-This is the module's own contribution: the security and privacy properties
-that follow from the *kind of data this module carries*. **Its content is
-optional** — not every module has aspects of its own. If yours does not, the
-whole section body becomes the following default text (delete the example and
-TODO boxes below and adopt it verbatim):
+<!-- Wortgetreu übertragen aus der Simplifier-Quellseite
+     https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/TechnischeImplementierung/FHIRProfile/Consent?version=2026.0.0
+     (Harvest 2026-08-31); Links umgeschrieben (page-map). -->
+<!-- SPLIT gemäß page-map: der Abschnitt "Datenschutz-Aspekte" der
+     Consent-Profilseite ist der modul-spezifische Beitrag dieser Seite
+     (M11-Entscheidung: Modul-Aspekte vorhanden — kein Standardtext). -->
 
-> Beyond the overarching framework above — the overarching data protection
-> concept, the Broad Consent it rests on, and DIMP — this module carries no
-> data category that raises security or privacy aspects of its own, and it
-> places no module-specific security or privacy requirements on implementers.
+Since the FHIR Consent resource likewise contains **no person-identifying information** about the consenting person, the [**pseudonymous person reference**](https://ig.fhir.de/einwilligungsmanagement/stable/Patient.html) should be established via appropriate [**pseudonymous identifiers**](https://ig.fhir.de/einwilligungsmanagement/stable/ContextIdentifier.html). Any person-identifying information (e.g. date of birth, gender, address) as well as references, e.g. to (clear-text) patient profiles, should be suitably replaced before data are exported.
 
-<!-- ILLUSTRATIVE-EXAMPLE — decide this section and remove the example box
-     below (in this file AND the German mirror) before the first release;
-     the convention check (M11) fails a release branch while it is present. -->
-> **Illustrative example — remove before the first release.** How another KDS
-> module fills this section (*Person*): the patient identifiers are pseudonyms
-> from the trusted third party; systems must not let record linkage
-> re-identify a person, and the pseudonym's scope (site-wide vs
-> project-specific) must be respected when data is combined.
-{: .ig-highlight .ig-highlight-orange}
+*Technically, Patient resources and derived profiles can be used, such as the profiles of the [AG Einwilligungsmanagement](https://ig.fhir.de/einwilligungsmanagement/stable/Patient.html) or the [MII](https://simplifier.net/medizininformatikinitiative-modulperson/sdmiipersonpatientpseudonymisiert).* Independently of this, in order to be able to distinguish pseudonyms, case numbers, etc., a categorisation of the identifier used is required via [patient.identifier.type](https://ig.fhir.de/einwilligungsmanagement/stable/ContextIdentifierType.html).
 
-> [TODO: State your module's specific aspects — the data categories it carries
-> and their sensitivity, risks that profile-level pseudonymisation does not
-> cover, and any security- or privacy-related SHALL/SHOULD/MAY requirements
-> this module places on implementers, each with the risk it addresses. Name
-> residual risks that must be handled in system design, deployment or policy —
-> or adopt the default text above if there are none.]
-{: .ig-highlight .ig-highlight-grey}
+The FHIR Consent resource contains **no document scans and/or signatures**. If transmission is required for a given use case, separate resources must be created in accordance with the [specifications of the AG Einwilligungsmanagement](https://ig.fhir.de/einwilligungsmanagement/stable/DocumentReference.html) (Consent Bundles).

@@ -1,35 +1,39 @@
 <!-- markdownlint-disable MD041 -->
-<!-- Split from the former terminology.md per the TF-KDS-agreed menu structure (one
-     page per artifact type); SNOMED CT version policy from the meta wiki page
-     "Terminology Version Policy". The IG Publisher lists the ValueSets on the
-     artifact pages automatically; this page carries the MII notes on them.
-     German mirror: input/translations/de/pagecontent/value-sets.md. -->
-<!-- OPTIONAL-PAGE (0..1) — remove this marker when you KEEP the page; remove
-     the page per docs/optional-pages.md when you don't. The convention check
-     (M9) fails a release while this marker is present. -->
+<!-- machine translation of source page value-sets.md (de). TODO:REVIEW — Gate C. -->
+<!-- Quellseite (page-map SPLIT): Terminologien — Abschnitt "ValueSets". Die
+     gerenderten Kompositions-/Expansionszeilen der Quellseite erzeugt der IG
+     Publisher auf den Artefaktseiten neu. -->
+### ValueSets
 
-> **Optional page (0..1).** The KDS module menu lists this page as *optional*.
-> Decide for your module: **keep** it — fill it in and delete this banner and
-> the `OPTIONAL-PAGE` marker comment (in this file AND the German mirror) — or
-> **remove** it, following the per-entry procedure in [`docs/optional-pages.md`](https://github.com/forschungsgruppe-digital-health/mii-kds-consent-ig-inoffiziell/blob/main/docs/optional-pages.md)
-> of this repository. A release must not ship with this banner (convention
-> check M9).
-{: .ig-highlight .ig-highlight-grey}
+This page describes the ValueSets of the **Consent** module; the underlying
+CodeSystems are described on the [CodeSystems](code-systems.html) page.
 
-### Value Sets
+### MII_VS_Consent_Policy
 
-This page describes the ValueSets of the **Consent** module (naming
-convention `MII_VS_<Module>_<Name>`). For general guidance on using codes, see
-[FHIR Terminology](http://hl7.org/fhir/R4/terminologies.html); the code systems
-the sets draw from are described on the [Code Systems](code-systems.html) page.
+Extensions of the Policy ValueSet in ART-DECOR are incorporated into this IG by the TFCU in a timely manner. A renewed ballot is not required.
 
-{:.bg-info}
-**Expansions:** ValueSet expansions in this guide are produced by a FHIR
-terminology server — SU-TermServ if the client certificate is configured,
-otherwise the public HL7 server `tx.fhir.org` (in which case some KDS-specific
-ValueSets may not expand completely).
+See the artifact page
+[MII_VS_Consent_Policy](ValueSet-2.16.840.1.113883.3.1937.777.24.11.36--20230331232804.html).
 
-> [TODO: If your module uses SNOMED CT, state the edition/version used. List
-> the module's own ValueSets, or refer to the automatically generated artifact
-> list — or remove this page if your module defines none.]
-{: .ig-highlight .ig-highlight-grey}
+### mii-vs-consent-signaturetypes
+
+In accordance with the recommendation of the HL7-D AG Einwilligungsmanagement
+
+[https://www.medizininformatik-initiative.de/fhir/modul-consent/ValueSet/mii-vs-consent-signaturetypes](https://www.medizininformatik-initiative.de/fhir/modul-consent/ValueSet/mii-vs-consent-signaturetypes)
+
+| Type of signature | System | Code | Display |
+
+| --- | --- | --- | --- |
+
+| Signature of the consenting person | urn:iso-astm:E1762-95:2013 | 1.2.840.10065.1.12.1.7 | Consent Signature |
+
+| Signature of the (legally) representing person | urn:iso-astm:E1762-95:2013 | 1.2.840.10065.1.12.1.11 | Consent Witness Signature |
+
+| Signature of the informing person | urn:iso-astm:E1762-95:2013 | 1.2.840.10065.1.12.1.5 | Verification Signature |
+
+### mii-vs-consent-answer
+
+This ValueSet is used exclusively in the context of Questionnaires.
+
+See the artifact page
+[mii-vs-consent-answer](ValueSet-2.16.840.1.113883.3.1937.777.24.11.30--20210323234509.html).

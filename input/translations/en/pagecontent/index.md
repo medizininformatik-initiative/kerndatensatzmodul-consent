@@ -1,115 +1,84 @@
 <!-- markdownlint-disable MD041 -->
-<!--
-  HOME PAGE — ENGLISH TRANSLATION of the source page
-  input/pagecontent/index.md (German is the IG's default language — DE-first,
-  migration decision D-3). Structure follows the standard MII module IG page
-  set. Keep this file in step with the German source.
--->
+<!-- machine translation of source page index.md (de). TODO:REVIEW — Gate C. -->
+<!-- Wortgetreu übertragen aus der Simplifier-Quellseite
+     https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent?version=2026.0.0
+     (Harvest 2026-08-31, migration-log/guide-harvest/); interne Links auf die
+     Zielseiten dieser IG-Struktur umgeschrieben (migration-log/page-map.tsv). -->
+<!-- Zweite Quellseite dieser Seite (merge gemäß page-map):
+     https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/Beschreibung-Modul-Consent?version=2026.0.0
+     Das Simplifier-Inhaltsverzeichnis der Quellseite wurde NICHT übertragen —
+     der IG Publisher erzeugt das Inhaltsverzeichnis (toc.html) selbst. -->
 
-### Introduction
+This specification describes the FHIR representation of the Core Data Set module 'Consent' of the Medical Informatics Initiative. The following sections describe the module's use cases as well as the associated FHIR profiles and terminology resources in their binding form.
 
-This specification describes the FHIR representation of the Core Dataset (CDS)
-module **Consent** of the Medical Informatics Initiative (MII). It
-covers the module's use cases and the associated FHIR profiles, extensions and
-terminology resources in their normative form. The MII Core Dataset enables the
-standardized secondary use of routine clinical data for medical research.
+| Publication / Status |  |
 
-> [TODO: In one or two sentences, describe what your module covers and what the
-> data is used for.]
-{: .ig-highlight .ig-highlight-grey}
+| --- | --- |
 
-| Publication |               |
-|-------------|---------------|
-| Date        | 2025-12-18 |
-| Version     | 2026.0.0 (CalVer `YYYY.n.n`) |
-| Status      | active        |
-| Realm       | DE            |
+| Date | 18.12.2025 |
 
-### Target audience
+| Version | 2026.0.0 |
 
-<div class="ig-highlight ig-highlight-blue">
-<h5>Implementers</h5>
-<p>Data Integration Centers (DIC), software developers and system architects building FHIR-based solutions.<br/>
-→ see <a href="profiles.html">Profiles</a> and <a href="logical-models.html">Logical Models</a>.</p>
-</div>
+| Status | active |
 
-<div class="ig-highlight ig-highlight-green">
-<h5>Researchers</h5>
-<p>Scientists using KDS data for medical research.<br/>
-→ see <a href="guidance.html">Guidance for Researchers</a>.</p>
-</div>
+| Realm | DE |
 
-### Contents
+### Description of the Consent Module
 
-- **[Guidance](guidance.html)** — getting started and domain notes.
-- **Conformance** — the KDS-wide conformance rules (requirements language,
-  Must Support, handling missing data) are maintained centrally by the
-  [Meta module](https://github.com/medizininformatik-initiative/kerndatensatz-meta/wiki/Conformance);
-  the module-specific [Security and Privacy](security-and-privacy.html)
-  considerations are part of this guide.
-- **[Profiles](profiles.html)** and the further
-  **[artifact pages](artifacts.html)** — the technical artifacts.
-- **[Examples](examples.html)** — example instances.
-- **[Dependencies](ImplementationGuide-mii-ig-consent.html)** — the
-  ImplementationGuide resource with the dependency table, cross-version
-  analysis and copyright statements.
+![](MII-KDS_de_Consent.jpg)
 
-### Related guides
+The MII KDS module Consent is a base module of the Core Data Set (KDS) of the Medical Informatics Initiative (MII). It builds on the [published preliminary work of the MII Taskforce Consent Umsetzung](https://bmcmedinformdecismak.biomedcentral.com/articles/10.1186/s12911-020-01138-6).
 
-This module is part of the MII Core Dataset; the other KDS modules and their
-dependencies are described at
-[medizininformatik-initiative.de](https://www.medizininformatik-initiative.de/).
+For the representation of the [MII Broad Consent](https://www.medizininformatik-initiative.de/de/mustertext-zur-patienteneinwilligung), the Consent module follows the **[FHIR R4 profiles](https://ig.fhir.de/einwilligungsmanagement/stable) of the [AG Einwilligungsmanagement](https://wiki.hl7.de/index.php?title=Einwilligungsmanagement_(Projekt)) of the [Interop Forum](https://wiki.hl7.de/index.php?title=Hauptseite)** for representing form data (Questionnaire, QuestionnaireResponse) and consents (Consent).
 
-> [TODO: Name your module's formal dependencies (see `dependencies` in
-> `sushi-config.yaml`) and any related guides.]
-{: .ig-highlight .ig-highlight-grey}
-
-More FHIR implementation guides can be found in the official
-**[FHIR IG Registry](https://fhir.org/guides/registry/)** (source:
-[`FHIR/ig-registry`](https://github.com/FHIR/ig-registry)).
+The focus of the Consent module is on the implementation (enforcement) of the consent completed by the patient, based on the consent policies (consolidated with the MII AG Consent in December 2021).
 
 ### Imprint
 
-This guide was created within the Medical Informatics Initiative and is subject,
-by its governance process, to the coordination procedure of the Interoperability
-Forum and the technical committees of HL7 Germany.
+This guide was created within the framework of the Medical Informatics Initiative and, through its governance process, is subject to the ballot procedure of the Interoperability Forum and the technical committees of HL7 Deutschland e. V.
 
-### Contact
+### Authors and Contacts
 
-Questions about this publication can be asked on the HL7 FHIR Zulip
-[chat.fhir.org](https://chat.fhir.org) in the `german/mi-initiative` stream, or
-on the MII Zulip [mii.zulipchat.com](https://mii.zulipchat.com/) in the
-`MII-Kerndatensatz` stream.
-Comments and issues are welcome as *Issues* on
-[GitHub](https://github.com/forschungsgruppe-digital-health/mii-kds-consent-ig-inoffiziell/issues).
+The **MII Taskforce Consent Umsetzung** is responsible for the content of the module presented here.
 
-> [TODO: Name your module's domain contacts.]
-{: .ig-highlight .ig-highlight-grey}
+The Consent module was created with contributions from Martin Bialke, Sebastian Stäubert, Angela Merzweiler, Lars Geidel, Jörg Römhild, Raffael Bild, Fabian Prasser, and Stefan Lang (HL7 Deutschland, technical committee FHIR, Gefyra GmbH, Lang Health IT Consulting).
 
-### Authors (in alphabetical order)
+Module leads:
 
-> [TODO: List the module's authors with their institution.]
-{: .ig-highlight .ig-highlight-grey}
+- Sebastian Stäubert
 
-### Copyright and License
+- Martin Bialke
+
+Technical implementation:
+
+- Stefan Lang (technical implementation of the FHIR profiles and ImplemenationGuides)
+
+- Martin Bialke (support for the ImplementationGuides)
+
+Contact at the TMF:
+
+- Karoline Buckow
+
+Comments can be created as an issue on GitHub (after free registration) or sent informally by email to office@medizininformatik-initiative.de.
+
+- GitHub: [https://github.com/medizininformatik-initiative/kerndatensatzmodul-consent/issues](https://github.com/medizininformatik-initiative/kerndatensatzmodul-consent/issues)
+
+If you have any questions, please feel free to contact us at office@medizininformatik-initiative.de.
+
+### Copyright Notice, Usage Notes
 
 © 2019+ TMF e. V., Charlottenstraße 42, 10117 Berlin
 
-This work is licensed under the
-[Creative Commons Attribution 4.0 International License (CC BY 4.0)](https://creativecommons.org/licenses/by/4.0/).
+[![CC BY 4.0 Logo](https://licensebuttons.net/l/by/4.0/88x31.png)](https://creativecommons.org/licenses/by/4.0/)
 
-For the usage rights of the underlying FHIR technology, see the FHIR base
-specification.
+This work is licensed under the [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).
 
-Some of the code systems used are published and maintained by other
-organizations; the copyright of the respective publishers applies.
+For the usage rights of the underlying FHIR technology, see the FHIR base specification.
+
+Some of the code systems used are issued and maintained by other organizations. The copyright of the respective publishers listed there applies.
 
 ### Disclaimer
 
-The content of this document is public. Please note that parts of this
-document are based on FHIR version R4, which is copyrighted by
-HL7 International.
+The content of this document is public. Note that parts of this document are based on FHIR version R4, for which the copyright of HL7 International applies.
 
-Although this publication was prepared with the greatest care, the authors
-cannot accept any liability for direct or indirect damage that may arise from
-the content of this specification.
+Although this publication was prepared with the greatest care, the authors cannot accept any liability for direct or indirect damage that might arise from the content of this specification.

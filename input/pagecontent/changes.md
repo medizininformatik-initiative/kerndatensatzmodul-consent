@@ -11,7 +11,6 @@
      Release-Pull-Requests. Einen veröffentlichten Abschnitt danach nicht mehr
      ändern. -->
 
-### Änderungshistorie
 
 Diese Seite hält die Änderungen zwischen den veröffentlichten Versionen des
 Moduls **Consent** fest, die neueste Version zuerst. Sie folgt

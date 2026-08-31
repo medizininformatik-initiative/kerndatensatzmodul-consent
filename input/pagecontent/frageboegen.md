@@ -3,7 +3,6 @@
      https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/AnwendungsflleInformationsmodell/Fragebgen?version=2026.0.0
      (Harvest 2026-08-31, migration-log/guide-harvest/); interne Links auf die
      Zielseiten dieser IG-Struktur umgeschrieben (migration-log/page-map.tsv). -->
-### Fragebögen
 
 Die [AG Einwilligungsmanagement](https://ig.fhir.de/einwilligungsmanagement/stable/) hat sich umfassend mit der Modellierung von Einwilligungen und Einwilligungsvorlagen befasst.
 
