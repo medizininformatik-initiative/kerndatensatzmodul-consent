@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/modul-consent/ValueSet/mii-vs-consent-answer | *Version*:2027.0.0-ballot.rc1 |
-| Active as of 2026-08-31 | *Computable Name*:MII_VS_Consent_Answer |
+| Active as of 2026-09-01 | *Computable Name*:MII_VS_Consent_Answer |
 | *Other Identifiers:*OID:2.16.840.1.113883.3.1937.777.24.11.30 (use: official, ) | |
 
  
@@ -57,7 +57,7 @@ This value set is not used here; it may be used elsewhere (e.g. specifications a
   "title" : "MII Consent: Answer ValueSet",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-08-31T22:00:30+00:00",
+  "date" : "2026-09-01T09:07:35+00:00",
   "publisher" : "NUM-DIZ",
   "_publisher" : {
     "extension" : [{

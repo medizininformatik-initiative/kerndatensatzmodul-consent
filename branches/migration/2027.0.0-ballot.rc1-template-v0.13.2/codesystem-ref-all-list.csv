@@ -1,5 +1,7 @@
 URL,Version,Status,OIDs,Name,Title,Description,Used
 http://dicom.nema.org/resources/ontology/DCM,01,active,"1.2.840.10008.2.16.4",DICOM Controlled Terminology Definitions,,"DICOM Code Definitions (Coding Scheme Designator ""DCM"" Coding Scheme Version ""01"")","ValueSet/security-role-type"
+http://fhir.de/ConsentManagement/CodeSystem/ResultType,2.0.3,active,,ResultType,,"Ergebnistypen des Einwilligungsdokuments","ValueSet/valueset-consent-management-result-type"
+http://fhir.de/ConsentManagement/CodeSystem/TemplateType,2.0.3,active,,TemplateType,,"Typen des Einwilligungsdokuments","ValueSet/valueset-consent-management-template-type"
 http://hl7.org/fhir/composition-status,4.0.1,draft,"2.16.840.1.113883.4.642.4.242",CompositionStatus,CompositionStatus,"The workflow/clinical status of the composition.","ValueSet/composition-status"
 http://hl7.org/fhir/consent-data-meaning,4.0.1,draft,"2.16.840.1.113883.4.642.4.760",ConsentDataMeaning,ConsentDataMeaning,"How a resource reference is interpreted when testing consent restrictions.","ValueSet/consent-data-meaning"
 http://hl7.org/fhir/consent-provision-type,4.0.1,draft,"2.16.840.1.113883.4.642.4.758",ConsentProvisionType,ConsentProvisionType,"How a rule statement is applied, such as adding additional consent or removing consent.","ValueSet/consent-provision-type"

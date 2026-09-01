@@ -335,6 +335,7 @@ zentralen KDS-Terminologieserver (SU-TermServ) bezogen:
 Artefaktseite
 <a href="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.2--20210423105554.html">MII_CS_Consent_Answer</a>.</p>
 
+<!-- Policy-Tabelle aktualisiert aus terminologie/codesystems/CodeSystem-MiiConsentPolicy.md @ develop 744f7ba (develop-Inkorporation 2026-09-01; durchgestrichen = deprecated). -->
 <h3 id="mii-cs-consent-policy">MII CS Consent Policy</h3>
 
 <p><strong>Hinweis</strong>: Das Konzept der <strong>Verschachtelte Provision-Elemente</strong> im MII-Kontext arbeite mit zwei Level. Das übergeordnete Provision-Element, die Level1-Provision, repräsentiert eine Frage in der Einwilligung und legt über den Provision.Type=DENY (Out-In-Modell) fest, dass alles verboten ist, außer es ist in Form von untergeordneten Provision-Elementen, die Level2-Provision, explizit erlaubt. D.h. für die Interpretation, ob ein Erlaubnis für eine bestimmte Nutzung (erheben, speichern, nutzen) von spetifischen Daten (IDAT, MADT, BIOMAT, …) vorliegt, müssen die Elemete der Level2-Provisions ausgewertet werden.</p>
@@ -458,17 +459,17 @@ Artefaktseite
     <tr>
       <td>2</td>
       <td>Policy</td>
-      <td>MDAT retrospektiv wissenschaftlich nutzen</td>
-      <td>2.16.840.1.113883.3.1937.777.24.5.3.46</td>
-      <td>30</td>
+      <td><s>MDAT retrospektiv wissenschaftlich nutzen</s></td>
+      <td><s>2.16.840.1.113883.3.1937.777.24.5.3.46</s></td>
+      <td><s>30</s></td>
       <td>inactive</td>
     </tr>
     <tr>
       <td>2</td>
       <td>Policy</td>
-      <td>MDAT retrospektiv zusammenführen mit Dritten</td>
-      <td>2.16.840.1.113883.3.1937.777.24.5.3.47</td>
-      <td>30</td>
+      <td><s>MDAT retrospektiv zusammenführen mit Dritten</s></td>
+      <td><s>2.16.840.1.113883.3.1937.777.24.5.3.47</s></td>
+      <td><s>30</s></td>
       <td>inactive</td>
     </tr>
     <tr>
@@ -546,17 +547,17 @@ Artefaktseite
     <tr>
       <td>2</td>
       <td>Policy</td>
-      <td>KKDAT 5 Jahre prospektiv speichern, verarbeiten</td>
-      <td>2.16.840.1.113883.3.1937.777.24.5.3.16</td>
-      <td>30</td>
+      <td><s>KKDAT 5 Jahre prospektiv speichern, verarbeiten</s></td>
+      <td><s>2.16.840.1.113883.3.1937.777.24.5.3.16</s></td>
+      <td><s>30</s></td>
       <td>inactive</td>
     </tr>
     <tr>
       <td>2</td>
       <td>Policy</td>
-      <td>KKDAT 5 Jahre prospektiv wissenschaftlich nutzen</td>
-      <td>2.16.840.1.113883.3.1937.777.24.5.3.17</td>
-      <td>30</td>
+      <td><s>KKDAT 5 Jahre prospektiv wissenschaftlich nutzen</s></td>
+      <td><s>2.16.840.1.113883.3.1937.777.24.5.3.17</s></td>
+      <td><s>30</s></td>
       <td>inactive</td>
     </tr>
     <tr>
@@ -770,17 +771,17 @@ Artefaktseite
     <tr>
       <td>2</td>
       <td>Policy</td>
-      <td>MDAT GECCO83 wissenschaftlich nutzen zur COVID-19 Forschung EU DSGVO konform</td>
-      <td>2.16.840.1.113883.3.1937.777.24.5.3.41</td>
-      <td>30</td>
+      <td><s>MDAT GECCO83 wissenschaftlich nutzen zur COVID-19 Forschung EU DSGVO konform</s></td>
+      <td><s>2.16.840.1.113883.3.1937.777.24.5.3.41</s></td>
+      <td><s>30</s></td>
       <td>inactive</td>
     </tr>
     <tr>
       <td>2</td>
       <td>Policy</td>
-      <td>MDAT GECCO83 wissenschaftlich nutzen zur Pandemie-Forschung EU DSGVO konform</td>
-      <td>2.16.840.1.113883.3.1937.777.24.5.3.42</td>
-      <td>30</td>
+      <td><s>MDAT GECCO83 wissenschaftlich nutzen zur Pandemie-Forschung EU DSGVO konform</s></td>
+      <td><s>2.16.840.1.113883.3.1937.777.24.5.3.42</s></td>
+      <td><s>30</s></td>
       <td>inactive</td>
     </tr>
     <tr>
@@ -858,7 +859,7 @@ Artefaktseite
     <tr>
       <td>1</td>
       <td>Modul</td>
-      <td>Z3 PROMDAT Patientenbefragung</td>
+      <td>Z3 PROMDAT Patientenbefragung (PROM)</td>
       <td>2.16.840.1.113883.3.1937.777.24.5.3.63</td>
       <td> </td>
       <td> </td>
@@ -866,7 +867,7 @@ Artefaktseite
     <tr>
       <td>2</td>
       <td>Policy</td>
-      <td>PROMDAT erheben</td>
+      <td>PROMDAT erheben (PROM)</td>
       <td>2.16.840.1.113883.3.1937.777.24.5.3.64</td>
       <td>5</td>
       <td> </td>
@@ -874,7 +875,7 @@ Artefaktseite
     <tr>
       <td>2</td>
       <td>Policy</td>
-      <td>PROMDAT wissenschaftlich nutzen</td>
+      <td>PROMDAT wissenschaftlich nutzen (PROM)</td>
       <td>2.16.840.1.113883.3.1937.777.24.5.3.65</td>
       <td>30</td>
       <td> </td>
@@ -882,7 +883,7 @@ Artefaktseite
     <tr>
       <td>2</td>
       <td>Policy</td>
-      <td>Rekontaktierung PROM Studien</td>
+      <td>Rekontaktierung PROM Studien (PROM)</td>
       <td>2.16.840.1.113883.3.1937.777.24.5.3.66</td>
       <td>30</td>
       <td> </td>
@@ -890,7 +891,7 @@ Artefaktseite
     <tr>
       <td>1</td>
       <td>Modul</td>
-      <td>Z4 Datenschutzerklärung</td>
+      <td>Z4 Datenschutzerklärung  (SNID)</td>
       <td>2.16.840.1.113883.3.1937.777.24.5.3.67</td>
       <td> </td>
       <td> </td>
@@ -898,7 +899,7 @@ Artefaktseite
     <tr>
       <td>2</td>
       <td>Policy</td>
-      <td>IDAT speichern verabeiten (SNID)</td>
+      <td>IDAT speichern verarbeiten (SNID)</td>
       <td>2.16.840.1.113883.3.1937.777.24.5.3.68</td>
       <td>30</td>
       <td> </td>
@@ -978,7 +979,7 @@ Artefaktseite
     <tr>
       <td>1</td>
       <td>Modul</td>
-      <td>Z4 Einsicht ePa</td>
+      <td>Z4 Einsicht ePa (SNID)</td>
       <td>2.16.840.1.113883.3.1937.777.24.5.3.78</td>
       <td> </td>
       <td> </td>
@@ -1010,7 +1011,7 @@ Artefaktseite
     <tr>
       <td>1</td>
       <td>Modul</td>
-      <td>Z4 Krebsregister</td>
+      <td>Z4 Krebsregister (SNID)</td>
       <td>2.16.840.1.113883.3.1937.777.24.5.3.82</td>
       <td> </td>
       <td> </td>
@@ -1034,7 +1035,7 @@ Artefaktseite
     <tr>
       <td>1</td>
       <td>Modul</td>
-      <td>Z4 KRegDAT retrospektiv</td>
+      <td>Z4 KRegDAT retrospektiv (SNID)</td>
       <td>2.16.840.1.113883.3.1937.777.24.5.3.85</td>
       <td> </td>
       <td> </td>
@@ -1058,7 +1059,7 @@ Artefaktseite
     <tr>
       <td>1</td>
       <td>Modul</td>
-      <td>Z4 KRegDAT</td>
+      <td>Z4 KRegDAT (SNID)</td>
       <td>2.16.840.1.113883.3.1937.777.24.5.3.88</td>
       <td> </td>
       <td> </td>
@@ -1082,7 +1083,7 @@ Artefaktseite
     <tr>
       <td>1</td>
       <td>Modul</td>
-      <td>Z4 Weitergabe Dritte</td>
+      <td>Z4 Weitergabe Dritte (SNID)</td>
       <td>2.16.840.1.113883.3.1937.777.24.5.3.91</td>
       <td> </td>
       <td> </td>
@@ -1090,7 +1091,7 @@ Artefaktseite
     <tr>
       <td>2</td>
       <td>Policy</td>
-      <td>MDAT SNID bereitstellen Dritte</td>
+      <td>MDAT SNID bereitstellen Dritte (SNID)</td>
       <td>2.16.840.1.113883.3.1937.777.24.5.3.92</td>
       <td>30</td>
       <td> </td>
@@ -1098,7 +1099,7 @@ Artefaktseite
     <tr>
       <td>2</td>
       <td>Policy</td>
-      <td>BIOMAT SNID bereitstellen Dritte</td>
+      <td>BIOMAT SNID bereitstellen Dritte (SNID)</td>
       <td>2.16.840.1.113883.3.1937.777.24.5.3.93</td>
       <td>30</td>
       <td> </td>
@@ -1106,7 +1107,7 @@ Artefaktseite
     <tr>
       <td>1</td>
       <td>Modul</td>
-      <td>Z4 Rekontaktierung Patient</td>
+      <td>Z4 Rekontaktierung Patient NU (SNID)</td>
       <td>2.16.840.1.113883.3.1937.777.24.5.3.94</td>
       <td> </td>
       <td> </td>
@@ -1122,7 +1123,7 @@ Artefaktseite
     <tr>
       <td>1</td>
       <td>Modul</td>
-      <td>Z4 Rekontaktierung FU</td>
+      <td>Z4 Rekontaktierung Patient weitere Studien (SNID)</td>
       <td>2.16.840.1.113883.3.1937.777.24.5.3.96</td>
       <td> </td>
       <td> </td>
@@ -1130,7 +1131,7 @@ Artefaktseite
     <tr>
       <td>2</td>
       <td>Policy</td>
-      <td>Rekontaktierung weitere Studien (SNID)</td>
+      <td>Rekontaktierung Patient weitere Studien (SNID)</td>
       <td>2.16.840.1.113883.3.1937.777.24.5.3.97</td>
       <td>30</td>
       <td> </td>
@@ -1138,7 +1139,7 @@ Artefaktseite
     <tr>
       <td>2</td>
       <td>Policy</td>
-      <td>IDAT SNID bereitstellen OE</td>
+      <td>IDAT SNID bereitstellen OE (SNID)</td>
       <td>2.16.840.1.113883.3.1937.777.24.5.3.98</td>
       <td>30</td>
       <td> </td>
@@ -1146,7 +1147,7 @@ Artefaktseite
     <tr>
       <td>1</td>
       <td>Modul</td>
-      <td>Z4 Erhebung Hausarzt</td>
+      <td>Z4 Erhebung Hausarzt (SNID)</td>
       <td>2.16.840.1.113883.3.1937.777.24.5.3.99</td>
       <td> </td>
       <td> </td>
@@ -1162,7 +1163,7 @@ Artefaktseite
     <tr>
       <td>2</td>
       <td>Policy</td>
-      <td>IDAT bereitstellen Hausarzt</td>
+      <td>IDAT bereitstellen Hausarzt (SNID)</td>
       <td>2.16.840.1.113883.3.1937.777.24.5.3.101</td>
       <td>30</td>
       <td> </td>
@@ -1379,7 +1380,7 @@ Artefaktseite
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.netzwerk-universitaetsmedizin.de">NUM-DIZ</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.consent#2027.0.0-ballot.rc1 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Mon, Aug 31, 2026 22:00+0000">2026-08-31</span>
+          Erstellt <span title="Tue, Sep 1, 2026 09:07+0000">2026-09-01</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

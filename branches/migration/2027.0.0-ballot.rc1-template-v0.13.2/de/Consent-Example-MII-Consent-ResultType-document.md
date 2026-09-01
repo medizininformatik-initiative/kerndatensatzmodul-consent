@@ -19,7 +19,7 @@ Profile: [Profile - MI-I - Consent - Einwilligung](StructureDefinition-e0e166b4-
 ## Participants
 
 * **Role**: Patient
-  * **Details**: [Patient/9b4a702d-162c-428a-8c5d-8b98af21b693](https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.2-snapshots&canonical=http://fhir.org/packages/de.einwilligungsmanagement/Patient/9b4a702d-162c-428a-8c5d-8b98af21b693)
+  * **Details**: [Patient/9b4a702d-162c-428a-8c5d-8b98af21b693](https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.3-snapshots&canonical=http://fhir.org/packages/de.einwilligungsmanagement/Patient/9b4a702d-162c-428a-8c5d-8b98af21b693)
 * **Role**: Manager
   * **Details**: Klinikum Musterstadt
 
@@ -100,7 +100,7 @@ This consent is made under the regulation siehe eingebettetes XACML and the poli
   },
   {
     "coding" : [{
-      "system" : "https://www.medizininformatik-initiative.de/fhir/modul-consent/CodeSystem/mii-cs-consent-consent_category",
+      "system" : "https://www.medizininformatik-initiative.de/fhir/modul-consent/CodeSystem/mii-cs-consent-version-modules",
       "code" : "2.16.840.1.113883.3.1937.777.24.2.184"
     }]
   },

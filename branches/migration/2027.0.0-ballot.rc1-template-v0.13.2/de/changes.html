@@ -389,6 +389,27 @@ werden können.</p>
      Historische Abschnitte behalten das Format der Quelle (keine nachträgliche
      Keep-a-Changelog-Umgruppierung veröffentlichter Einträge). -->
 
+<h4 id="develop-inkorporation-stand-744f7ba-2026-08-21--teil-von-202700-ballotrc1">develop-Inkorporation (Stand 744f7ba, 2026-08-21) — Teil von 2027.0.0-ballot.rc1</h4>
+
+<p>Datum 01.09.2026</p>
+
+<ul>
+  <li><strong>BREAKING: Geändert</strong> — Profil <code class="language-plaintext highlighter-rouge">MII PR Consent Einwilligung</code>: Ableitung jetzt
+vom HL7-D-Profil <code class="language-plaintext highlighter-rouge">ConsentManagement/Consent</code>; Category-Slices umbenannt/ergänzt
+(<code class="language-plaintext highlighter-rouge">loinc</code> → <code class="language-plaintext highlighter-rouge">consentCategory</code>; neu <code class="language-plaintext highlighter-rouge">resultType</code> (required Binding) und
+<code class="language-plaintext highlighter-rouge">templateType</code> (extensible Binding)); die im develop-Differential deklarierte
+Kardinalität <code class="language-plaintext highlighter-rouge">category 0..*</code> ist gegen das Eltern-Profil (1..<em>) unwirksam und
+wird als 1..</em> geerbt (Upstream-Befund). Bestehende Instanzen ohne
+resultType-Category validieren nicht mehr.</li>
+  <li><strong>Behoben</strong> — Beispiele: Category-System auf das definierte CodeSystem
+<code class="language-plaintext highlighter-rouge">mii-cs-consent-version-modules</code> umgestellt (zuvor referenzierten sie das
+nirgends definierte <code class="language-plaintext highlighter-rouge">mii-cs-consent-consent_category</code>).</li>
+  <li><strong>Geändert</strong> — Policy-CodeSystem: ~19 Display-Korrekturen (ACRIBIS-, PROM- und
+SNID-Bezeichner); Version-Modules-CodeSystem: neues Konzept
+<code class="language-plaintext highlighter-rouge">…24.2.4055</code> "Version 1.7.2 Vertretende". Eltern-Paket-Pin auf
+<code class="language-plaintext highlighter-rouge">de.einwilligungsmanagement</code> 2.0.3 (develop/rc-Linie) angehoben.</li>
+</ul>
+
 <h4 id="version-202700-ballotrc1">Version 2027.0.0-ballot.rc1</h4>
 
 <p>Datum 31.08.2026</p>
@@ -515,7 +536,7 @@ Artefakt-Versionen auf die Paketversion 2027.0.0-ballot.rc1 harmonisiert
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.netzwerk-universitaetsmedizin.de">NUM-DIZ</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.consent#2027.0.0-ballot.rc1 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Mon, Aug 31, 2026 22:00+0000">2026-08-31</span>
+          Erstellt <span title="Tue, Sep 1, 2026 09:07+0000">2026-09-01</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

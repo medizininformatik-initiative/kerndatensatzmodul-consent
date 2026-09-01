@@ -95,7 +95,7 @@
   },
   {
     "name" : "default-canonical-version",
-    "valueCanonical" : "http://fhir.de/ConsentManagement/StructureDefinition/DocumentReference|2.0.2"
+    "valueCanonical" : "http://fhir.de/ConsentManagement/StructureDefinition/DocumentReference|2.0.3"
   },
   {
     "name" : "default-canonical-version",
@@ -115,7 +115,7 @@
   },
   {
     "name" : "default-canonical-version",
-    "valueCanonical" : "http://fhir.de/ConsentManagement/StructureDefinition/Patient|2.0.2"
+    "valueCanonical" : "http://fhir.de/ConsentManagement/StructureDefinition/Patient|2.0.3"
   },
   {
     "name" : "default-valueset-version",
@@ -123,31 +123,43 @@
   },
   {
     "name" : "default-canonical-version",
+    "valueCanonical" : "http://fhir.de/ConsentManagement/StructureDefinition/Consent|2.0.3"
+  },
+  {
+    "name" : "default-canonical-version",
     "valueCanonical" : "http://hl7.org/fhir/StructureDefinition/Consent|4.0.1"
   },
   {
     "name" : "default-canonical-version",
-    "valueCanonical" : "http://fhir.de/ConsentManagement/StructureDefinition/DomainReference|2.0.2"
+    "valueCanonical" : "http://fhir.de/ConsentManagement/StructureDefinition/DomainReference|2.0.3"
   },
   {
     "name" : "default-canonical-version",
-    "valueCanonical" : "http://fhir.de/ConsentManagement/StructureDefinition/Domain/Organization|2.0.2"
+    "valueCanonical" : "http://fhir.de/ConsentManagement/StructureDefinition/Domain/Organization|2.0.3"
   },
   {
     "name" : "default-canonical-version",
-    "valueCanonical" : "http://fhir.de/ConsentManagement/StructureDefinition/Domain/ResearchStudy|2.0.2"
+    "valueCanonical" : "http://fhir.de/ConsentManagement/StructureDefinition/Domain/ResearchStudy|2.0.3"
   },
   {
     "name" : "default-valueset-version",
     "valueCanonical" : "http://hl7.org/fhir/ValueSet/publication-status|4.0.1"
   },
   {
-    "name" : "default-canonical-version",
-    "valueCanonical" : "http://fhir.de/ConsentManagement/StructureDefinition/QuestionnaireResponse|2.0.2"
+    "name" : "default-valueset-version",
+    "valueCanonical" : "http://fhir.de/ConsentManagement/ValueSet/ResultType|2.0.3"
+  },
+  {
+    "name" : "default-valueset-version",
+    "valueCanonical" : "http://fhir.de/ConsentManagement/ValueSet/TemplateType|2.0.3"
   },
   {
     "name" : "default-canonical-version",
-    "valueCanonical" : "http://fhir.de/ConsentManagement/StructureDefinition/Xacml|2.0.2"
+    "valueCanonical" : "http://fhir.de/ConsentManagement/StructureDefinition/QuestionnaireResponse|2.0.3"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueCanonical" : "http://fhir.de/ConsentManagement/StructureDefinition/Xacml|2.0.3"
   },
   {
     "name" : "default-valueset-version",
@@ -159,15 +171,11 @@
   },
   {
     "name" : "default-canonical-version",
-    "valueCanonical" : "http://fhir.de/ConsentManagement/StructureDefinition/Provenance|2.0.2"
+    "valueCanonical" : "http://fhir.de/ConsentManagement/StructureDefinition/Provenance|2.0.3"
   },
   {
     "name" : "default-canonical-version",
-    "valueCanonical" : "http://fhir.de/ConsentManagement/StructureDefinition/Consent|2.0.2"
-  },
-  {
-    "name" : "default-canonical-version",
-    "valueCanonical" : "http://fhir.de/ConsentManagement/StructureDefinition/SignatureLocation|2.0.2"
+    "valueCanonical" : "http://fhir.de/ConsentManagement/StructureDefinition/SignatureLocation|2.0.3"
   },
   {
     "name" : "default-valueset-version",

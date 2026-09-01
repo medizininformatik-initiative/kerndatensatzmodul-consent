@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/modul-consent/CodeSystem/mii-cs-consent-version-modules | *Version*:2027.0.0-ballot.rc1 |
-| Draft as of 2026-08-31 | *Computable Name*:MIIConsentVersionModuleCodeSystem |
+| Draft as of 2026-09-01 | *Computable Name*:MIIConsentVersionModuleCodeSystem |
 | *Other Identifiers:*OID:2.16.840.1.113883.3.1937.777.24.5.27 (use: official, ) | |
 | **Copyright/Legal**: © 2019+ TMF e. V., Charlottenstraße 42, 10117 Berlin```
                 CC BY 4.0
@@ -63,7 +63,7 @@ This Code system is referenced in the definition of the following value sets:
   "title" : "MII Consent Version and Modules CodeSystem",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-08-31T22:00:30+00:00",
+  "date" : "2026-09-01T09:07:35+00:00",
   "publisher" : "NUM-DIZ",
   "_publisher" : {
     "extension" : [{
@@ -96,7 +96,7 @@ This Code system is referenced in the definition of the following value sets:
   "copyright" : "\n            © 2019+ TMF e. V., Charlottenstraße 42, 10117 Berlin \n            \n                \n                    CC BY 4.0\n                \n                 \n            \n            Diese Arbeit ist lizensiert unter der [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/). \n            Zu den Nutzungsrechten der zugrunde liegenden FHIR-Technologie siehe die FHIR-Basis-Spezifikation. \n            Einige verwendete Codesysteme werden von anderen Organisationen herausgegeben und gepflegt. Es gilt das Copyright der dort jeweils aufgeführten Herausgeber (Publisher). \n        ",
   "caseSensitive" : false,
   "content" : "complete",
-  "count" : 20,
+  "count" : 21,
   "property" : [{
     "code" : "status",
     "uri" : "http://hl7.org/fhir/concept-properties#status",
@@ -167,6 +167,10 @@ This Code system is referenced in the definition of the following value sets:
     {
       "code" : "child",
       "valueCode" : "2.16.840.1.113883.3.1937.777.24.2.4054"
+    },
+    {
+      "code" : "child",
+      "valueCode" : "2.16.840.1.113883.3.1937.777.24.2.4055"
     },
     {
       "code" : "child",
@@ -369,6 +373,27 @@ This Code system is referenced in the definition of the following value sets:
         "display" : "Fully specified name"
       },
       "value" : "Version 1.7.2 Ablehnung"
+    }],
+    "property" : [{
+      "code" : "status",
+      "valueCode" : "draft"
+    },
+    {
+      "code" : "parent",
+      "valueCode" : "2.16.840.1.113883.3.1937.777.24.2.184"
+    }]
+  },
+  {
+    "code" : "2.16.840.1.113883.3.1937.777.24.2.4055",
+    "display" : "Version 1.7.2 Vertretende",
+    "designation" : [{
+      "language" : "de-DE",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000003001",
+        "display" : "Fully specified name"
+      },
+      "value" : "Version 1.7.2 Vertretende"
     }],
     "property" : [{
       "code" : "status",

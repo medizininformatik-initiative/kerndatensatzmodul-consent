@@ -12,6 +12,28 @@
     "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
   },
   {
+    "url" : "http://fhir.de/ConsentManagement/CodeSystem/ResultType",
+    "version" : "2.0.3",
+    "status" : "active",
+    "name" : "ResultType",
+    "title" : null,
+    "description" : "Ergebnistypen des Einwilligungsdokuments",
+    "uses" : {
+    },
+    "https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.3-snapshots&canonical=http://fhir.de/ConsentManagement/ValueSet/ResultType" : "ConsentManagementResultType"
+  },
+  {
+    "url" : "http://fhir.de/ConsentManagement/CodeSystem/TemplateType",
+    "version" : "2.0.3",
+    "status" : "active",
+    "name" : "TemplateType",
+    "title" : null,
+    "description" : "Typen des Einwilligungsdokuments",
+    "uses" : {
+    },
+    "https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.3-snapshots&canonical=http://fhir.de/ConsentManagement/ValueSet/TemplateType" : "ConsentManagementTemplateType"
+  },
+  {
     "url" : "http://hl7.org/fhir/composition-status",
     "version" : "4.0.1",
     "status" : "draft",
@@ -128,8 +150,8 @@
     "description" : "One of the resource types defined as part of this version of FHIR.",
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-consent-content-class.html" : "Consent Content Class",
-    "http://hl7.org/fhir/R4/valueset-resource-types.html" : "ResourceType"
+    "http://hl7.org/fhir/R4/valueset-resource-types.html" : "ResourceType",
+    "http://hl7.org/fhir/R4/valueset-consent-content-class.html" : "Consent Content Class"
   },
   {
     "url" : "http://snomed.info/sct",
@@ -261,8 +283,8 @@
     "oids" : ["2.16.840.1.113883.5.4"],
     "uses" : {
     },
-    "http://terminology.hl7.org/7.3.0/ValueSet-v3-ActCode.html" : "v3 Code System ActCode",
-    "http://hl7.org/fhir/R4/valueset-provenance-activity-type.html" : "Provenance activity type"
+    "http://hl7.org/fhir/R4/valueset-provenance-activity-type.html" : "Provenance activity type",
+    "http://terminology.hl7.org/7.3.0/ValueSet-v3-ActCode.html" : "v3 Code System ActCode"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v3-ActReason",
@@ -322,8 +344,8 @@
     "oids" : ["2.16.840.1.113883.5.90"],
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-provenance-activity-type.html" : "Provenance activity type",
-    "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType"
+    "http://hl7.org/fhir/R4/valueset-security-role-type.html" : "SecurityRoleType",
+    "http://hl7.org/fhir/R4/valueset-provenance-activity-type.html" : "Provenance activity type"
   },
   {
     "url" : "http://terminology.hl7.org/CodeSystem/v3-RoleClass",

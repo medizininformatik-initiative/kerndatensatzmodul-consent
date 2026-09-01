@@ -509,10 +509,10 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
   },
   {
     "code" : "2.16.840.1.113883.3.1937.777.24.5.3.57",
-    "display" : "Z2 Patientendaten erheben, nutzen, Kontaktierung im acribis-Projekt",
+    "display" : "Z2 PATDAT erheben nutzen kontakt (ACRIBIS)",
     "concept" : [{
       "code" : "2.16.840.1.113883.3.1937.777.24.5.3.58",
-      "display" : "PATDAT erheben, nutzen, Kontaktierung im acribis-Projekt",
+      "display" : "PATDAT erheben nutzen kontakt (ACRIBIS)",
       "property" : [{
         "code" : "period-of-validity",
         "valueString" : "P5Y"
@@ -521,10 +521,10 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
   },
   {
     "code" : "2.16.840.1.113883.3.1937.777.24.5.3.59",
-    "display" : "Z2 IDAT Melderegister abfragen, speichern, verarbeiten im acribis-Projekt",
+    "display" : "Z2 IDAT Melderegister abfragen speichern verarbeiten (ACRIBIS)",
     "concept" : [{
       "code" : "2.16.840.1.113883.3.1937.777.24.5.3.60",
-      "display" : "Anschrift und Vitalstatus Melderegister abfragen, speichern, verarbeiten im acribis-Projekt",
+      "display" : "IDAT Melderegister abfragen speichern verarbeiten (ACRIBIS)",
       "property" : [{
         "code" : "period-of-validity",
         "valueString" : "P5Y"
@@ -533,10 +533,10 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
   },
   {
     "code" : "2.16.840.1.113883.3.1937.777.24.5.3.61",
-    "display" : "Z2 MDAT Hausarzt erheben, speichern, verarbeiten, nutzen im acribis-Projekt",
+    "display" : "Z2 MDAT Hausarzt erheben speichern verarbeiten nutzen (ACRIBIS)",
     "concept" : [{
       "code" : "2.16.840.1.113883.3.1937.777.24.5.3.62",
-      "display" : "MDAT Hausarzt erheben, speichern, verarbeiten, nutzen im acribis-Projekt",
+      "display" : "MDAT Hausarzt erheben speichern verarbeiten nutzen (ACRIBIS)",
       "property" : [{
         "code" : "period-of-validity",
         "valueString" : "P5Y"
@@ -545,10 +545,10 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
   },
   {
     "code" : "2.16.840.1.113883.3.1937.777.24.5.3.63",
-    "display" : "Z3 PROMDAT Patientenbefragung",
+    "display" : "Z3 PROMDAT Patientenbefragung (PROM)",
     "concept" : [{
       "code" : "2.16.840.1.113883.3.1937.777.24.5.3.64",
-      "display" : "PROMDAT Patientenbefragung erheben",
+      "display" : "PROMDAT Patientenbefragung erheben (PROM)",
       "property" : [{
         "code" : "period-of-validity",
         "valueString" : "P5Y"
@@ -556,7 +556,7 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
     },
     {
       "code" : "2.16.840.1.113883.3.1937.777.24.5.3.65",
-      "display" : "PROMDAT wissenschaftlich nutzen",
+      "display" : "PROMDAT wissenschaftlich nutzen (PROM)",
       "property" : [{
         "code" : "period-of-validity",
         "valueString" : "P30Y"
@@ -564,7 +564,7 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
     },
     {
       "code" : "2.16.840.1.113883.3.1937.777.24.5.3.66",
-      "display" : "Rekontaktierung PROM Studien",
+      "display" : "Rekontaktierung PROM Studien (PROM)",
       "property" : [{
         "code" : "period-of-validity",
         "valueString" : "P30Y"
@@ -576,7 +576,7 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
     "display" : "Z4 Datenschutzerklärung (SNID)",
     "concept" : [{
       "code" : "2.16.840.1.113883.3.1937.777.24.5.3.68",
-      "display" : "IDAT speichern, verabeiten (SNID)",
+      "display" : "IDAT speichern, verarbeiten (SNID)",
       "property" : [{
         "code" : "period-of-validity",
         "valueString" : "P30Y"
@@ -632,7 +632,7 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
     },
     {
       "code" : "2.16.840.1.113883.3.1937.777.24.5.3.75",
-      "display" : "BIOMAT Eigentum übertragen_NUM (SNID)",
+      "display" : "BIOMAT Eigentum übertragen NUM (SNID)",
       "property" : [{
         "code" : "period-of-validity",
         "valueString" : "P30Y"
@@ -740,7 +740,7 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
     "display" : "Z4 Weitergabe Dritte (SNID)",
     "concept" : [{
       "code" : "2.16.840.1.113883.3.1937.777.24.5.3.92",
-      "display" : "MDAT SNID bereitstellen Dritte",
+      "display" : "MDAT SNID bereitstellen Dritte (SNID)",
       "property" : [{
         "code" : "period-of-validity",
         "valueString" : "P30Y"
@@ -748,7 +748,7 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
     },
     {
       "code" : "2.16.840.1.113883.3.1937.777.24.5.3.93",
-      "display" : "BIOMAT SNID bereitstellen Dritte",
+      "display" : "BIOMAT SNID bereitstellen Dritte (SNID)",
       "property" : [{
         "code" : "period-of-validity",
         "valueString" : "P30Y"
@@ -757,7 +757,7 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
   },
   {
     "code" : "2.16.840.1.113883.3.1937.777.24.5.3.94",
-    "display" : "Z4 Rekontaktierung Patient (SNID)",
+    "display" : "Z4 Rekontaktierung Patient NU (SNID)",
     "concept" : [{
       "code" : "2.16.840.1.113883.3.1937.777.24.5.3.95",
       "display" : "Rekontaktierung Gesundheitszustand nach Studienabschluss (SNID)",
@@ -769,10 +769,10 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
   },
   {
     "code" : "2.16.840.1.113883.3.1937.777.24.5.3.96",
-    "display" : "Z4_Rekontaktierung_FU",
+    "display" : "Z4 Rekontaktierung Patient weitere Studien (SNID)",
     "concept" : [{
       "code" : "2.16.840.1.113883.3.1937.777.24.5.3.97",
-      "display" : "Rekontaktierung weitere Studien (SNID)",
+      "display" : "Rekontaktierung Patient weitere Studien (SNID)",
       "property" : [{
         "code" : "period-of-validity",
         "valueString" : "P30Y"
@@ -780,7 +780,7 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
     },
     {
       "code" : "2.16.840.1.113883.3.1937.777.24.5.3.98",
-      "display" : "IDAT SNID bereitstellen OE",
+      "display" : "IDAT SNID bereitstellen OE (SNID)",
       "property" : [{
         "code" : "period-of-validity",
         "valueString" : "P30Y"

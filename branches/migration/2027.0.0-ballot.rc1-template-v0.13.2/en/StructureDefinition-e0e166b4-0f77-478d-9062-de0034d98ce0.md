@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-einwilligung | *Version*:2027.0.0-ballot.rc1 |
-| Active as of 2025-12-03 | *Computable Name*:MII_PR_Consent_Einwilligung |
+| Active as of 2026-08-21 | *Computable Name*:MII_PR_Consent_Einwilligung |
 
  
 Dieses Profil beschreibt eine Einwilligung in der Medizininformatik-Initiative. 
@@ -52,6 +52,8 @@ To ensure the exchangeability of the operationalized consent contents beyond FHI
 | Consent.patient.identifier.system | If the person relationship is given via an identifier, the system entry as a URI is mandatory, must-support |
 | Consent.patient.identifier.value | If the person relationship is given via an identifier, the value entry as a string is mandatory, must-support |
 | Consent.policy.uri | Reference to the version of the MII Broad Consent document version underlying the Consent resource per the overview below,e.g.**MII Broad Consent version 1.7.2**`urn:oid:2.16.840.1.113883.3.1937.777.24.2.2079`or**MII Broad Consent version 1.7.2 incl. additional module Acribis**`urn:oid:2.16.840.1.113883.3.1937.777.24.2.4031`, must-support |
+
+> **Written during migration - review before release.** The table above describes the state of release 2026.0.0. With the incorporation of the `develop` state (744f7ba, 2026-08-21) three changes apply: (1) the profile now derives from the HL7-D profile `ConsentManagement/Consent`; (2) the category slices are named `consentCategory` (LOINC 57016-8), `mii` (Version-Modules CodeSystem), `resultType` (required) and `templateType` (extensible); (3) the examples use the CodeSystem `mii-cs-consent-version-modules` for the MII category. The rows on `Consent.category.coding` ("at least two categories") are superseded accordingly.
 
 #### Unique identification of the MII Broad Consent
 
@@ -153,7 +155,7 @@ Other representations of profile: [CSV](../StructureDefinition-e0e166b4-0f77-478
   "name" : "MII_PR_Consent_Einwilligung",
   "title" : "Profile - MI-I - Consent - Einwilligung",
   "status" : "active",
-  "date" : "2025-12-03",
+  "date" : "2026-08-21",
   "publisher" : "NUM-DIZ",
   "_publisher" : {
     "extension" : [{
@@ -202,7 +204,7 @@ Other representations of profile: [CSV](../StructureDefinition-e0e166b4-0f77-478
   "kind" : "resource",
   "abstract" : false,
   "type" : "Consent",
-  "baseDefinition" : "http://hl7.org/fhir/StructureDefinition/Consent",
+  "baseDefinition" : "http://fhir.de/ConsentManagement/StructureDefinition/Consent",
   "derivation" : "constraint",
   "differential" : {
     "element" : [{
@@ -230,35 +232,6 @@ Other representations of profile: [CSV](../StructureDefinition-e0e166b4-0f77-478
       "mustSupport" : true
     },
     {
-      "id" : "Consent.extension",
-      "path" : "Consent.extension",
-      "slicing" : {
-        "discriminator" : [{
-          "type" : "value",
-          "path" : "url"
-        }],
-        "rules" : "open"
-      }
-    },
-    {
-      "id" : "Consent.extension:domainReference",
-      "path" : "Consent.extension",
-      "sliceName" : "domainReference",
-      "min" : 0,
-      "max" : "*",
-      "type" : [{
-        "code" : "Extension",
-        "profile" : ["http://fhir.de/ConsentManagement/StructureDefinition/DomainReference"]
-      }],
-      "mustSupport" : true
-    },
-    {
-      "id" : "Consent.extension:domainReference.extension:domain",
-      "path" : "Consent.extension.extension",
-      "sliceName" : "domain",
-      "mustSupport" : true
-    },
-    {
       "id" : "Consent.status",
       "extension" : [{
         "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status",
@@ -268,13 +241,7 @@ Other representations of profile: [CSV](../StructureDefinition-e0e166b4-0f77-478
         "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
         "valueCode" : "4.0.0"
       }],
-      "path" : "Consent.status",
-      "mustSupport" : true
-    },
-    {
-      "id" : "Consent.scope",
-      "path" : "Consent.scope",
-      "comment" : "Wird im Kontext des Einwilligungsmanagment-Leitfadens nicht näher definiert.\r\nBei Bedarf kann das ValueSet erweitert oder ggf. ein NullFlavor-Code eingetragen werden."
+      "path" : "Consent.status"
     },
     {
       "id" : "Consent.scope.coding",
@@ -297,48 +264,24 @@ Other representations of profile: [CSV](../StructureDefinition-e0e166b4-0f77-478
     {
       "id" : "Consent.category",
       "path" : "Consent.category",
-      "slicing" : {
-        "discriminator" : [{
-          "type" : "pattern",
-          "path" : "$this"
-        }],
-        "rules" : "open"
-      },
-      "min" : 2,
-      "mustSupport" : true
+      "min" : 2
     },
     {
-      "id" : "Consent.category:loinc",
+      "id" : "Consent.category:consentCategory",
       "path" : "Consent.category",
-      "sliceName" : "loinc",
-      "min" : 1,
+      "sliceName" : "consentCategory",
       "max" : "1",
       "patternCodeableConcept" : {
         "coding" : [{
           "system" : "http://loinc.org",
           "code" : "57016-8"
         }]
-      },
-      "mustSupport" : true
+      }
     },
     {
-      "id" : "Consent.category:loinc.coding",
+      "id" : "Consent.category:consentCategory.coding",
       "path" : "Consent.category.coding",
-      "min" : 1,
-      "max" : "1",
-      "mustSupport" : true
-    },
-    {
-      "id" : "Consent.category:loinc.coding.system",
-      "path" : "Consent.category.coding.system",
-      "min" : 1,
-      "mustSupport" : true
-    },
-    {
-      "id" : "Consent.category:loinc.coding.code",
-      "path" : "Consent.category.coding.code",
-      "min" : 1,
-      "mustSupport" : true
+      "max" : "1"
     },
     {
       "id" : "Consent.category:mii",
@@ -371,16 +314,6 @@ Other representations of profile: [CSV](../StructureDefinition-e0e166b4-0f77-478
       "id" : "Consent.category:mii.coding.code",
       "path" : "Consent.category.coding.code",
       "min" : 1,
-      "mustSupport" : true
-    },
-    {
-      "id" : "Consent.patient",
-      "path" : "Consent.patient",
-      "min" : 1,
-      "type" : [{
-        "code" : "Reference",
-        "targetProfile" : ["http://fhir.de/ConsentManagement/StructureDefinition/Patient"]
-      }],
       "mustSupport" : true
     },
     {
@@ -425,26 +358,7 @@ Other representations of profile: [CSV](../StructureDefinition-e0e166b4-0f77-478
       }],
       "path" : "Consent.dateTime",
       "short" : "Erstellungszeitpunkt der Einwilligung",
-      "definition" : "Dieser Zeitpunkt sollte in der Praxis, zumindest bei vollelektronischer Verarbeitung, identisch mit dem Unterschriftsdatum des Fragebogens sein (Provenance.signature.when des Patienten)",
-      "comment" : "Dieser Zeitpunkt sollte in der Praxis, zumindest bei vollelektronischer Verarbeitung, identisch mit dem Unterschriftsdatum des Fragebogens sein (Provenance.signature.when des Patienten)",
-      "min" : 1,
-      "mustSupport" : true
-    },
-    {
-      "id" : "Consent.organization",
-      "path" : "Consent.organization",
-      "short" : "Organisation, in der die Einwilligung erfasst wurde.",
-      "definition" : "Dies ist die Organisation, die den Consent erfasst hat.",
-      "mustSupport" : true
-    },
-    {
-      "id" : "Consent.source[x]",
-      "path" : "Consent.source[x]",
-      "type" : [{
-        "code" : "Reference",
-        "targetProfile" : ["http://fhir.de/ConsentManagement/StructureDefinition/QuestionnaireResponse"]
-      }],
-      "mustSupport" : true
+      "definition" : "Dieser Zeitpunkt sollte in der Praxis, zumindest bei vollelektronischer Verarbeitung, identisch mit dem Unterschriftsdatum des Fragebogens sein (Provenance.signature.when des Patienten)"
     },
     {
       "id" : "Consent.source[x].reference",
@@ -456,15 +370,12 @@ Other representations of profile: [CSV](../StructureDefinition-e0e166b4-0f77-478
         "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
         "valueCode" : "4.0.0"
       }],
-      "path" : "Consent.source[x].reference",
-      "min" : 1,
-      "mustSupport" : true
+      "path" : "Consent.source[x].reference"
     },
     {
       "id" : "Consent.policy",
       "path" : "Consent.policy",
-      "min" : 1,
-      "mustSupport" : true
+      "min" : 1
     },
     {
       "id" : "Consent.policy.uri",
@@ -476,31 +387,7 @@ Other representations of profile: [CSV](../StructureDefinition-e0e166b4-0f77-478
         "url" : "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version",
         "valueCode" : "4.0.0"
       }],
-      "path" : "Consent.policy.uri",
-      "min" : 1,
-      "mustSupport" : true
-    },
-    {
-      "id" : "Consent.policyRule",
-      "path" : "Consent.policyRule",
-      "mustSupport" : true
-    },
-    {
-      "id" : "Consent.policyRule.extension:xacml",
-      "path" : "Consent.policyRule.extension",
-      "sliceName" : "xacml",
-      "min" : 0,
-      "max" : "1",
-      "type" : [{
-        "code" : "Extension",
-        "profile" : ["http://fhir.de/ConsentManagement/StructureDefinition/Xacml"]
-      }],
-      "mustSupport" : true
-    },
-    {
-      "id" : "Consent.provision",
-      "path" : "Consent.provision",
-      "mustSupport" : true
+      "path" : "Consent.policy.uri"
     },
     {
       "id" : "Consent.provision.type",
@@ -511,8 +398,7 @@ Other representations of profile: [CSV](../StructureDefinition-e0e166b4-0f77-478
     {
       "id" : "Consent.provision.period",
       "path" : "Consent.provision.period",
-      "min" : 1,
-      "mustSupport" : true
+      "min" : 1
     },
     {
       "id" : "Consent.provision.period.start",

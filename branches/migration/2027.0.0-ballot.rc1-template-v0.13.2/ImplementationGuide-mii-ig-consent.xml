@@ -168,7 +168,7 @@
   <dependsOn id="de_einwilligungsmanagement">
     <uri value="http://fhir.org/packages/de.einwilligungsmanagement/ImplementationGuide/de.einwilligungsmanagement"/>
     <packageId value="de.einwilligungsmanagement"/>
-    <version value="2.0.2-snapshots"/>
+    <version value="2.0.3-snapshots"/>
   </dependsOn>
   <dependsOn id="hl7_fhir_uv_crmi">
     <uri value="http://hl7.org/fhir/uv/crmi/ImplementationGuide/hl7.fhir.uv.crmi"/>
