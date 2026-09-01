@@ -311,52 +311,52 @@ msgstr ""
 
 # CodeSystem.concept.display
 #: CodeSystem.concept.display
-msgid "Z2 Patientendaten erheben, nutzen, Kontaktierung im acribis-Projekt"
+msgid "Z2 PATDAT erheben nutzen kontakt (ACRIBIS)"
 msgstr ""
 
 # CodeSystem.concept.display
 #: CodeSystem.concept.display
-msgid "PATDAT erheben, nutzen, Kontaktierung im acribis-Projekt"
+msgid "PATDAT erheben nutzen kontakt (ACRIBIS)"
 msgstr ""
 
 # CodeSystem.concept.display
 #: CodeSystem.concept.display
-msgid "Z2 IDAT Melderegister abfragen, speichern, verarbeiten im acribis-Projekt"
+msgid "Z2 IDAT Melderegister abfragen speichern verarbeiten (ACRIBIS)"
 msgstr ""
 
 # CodeSystem.concept.display
 #: CodeSystem.concept.display
-msgid "Anschrift und Vitalstatus Melderegister abfragen, speichern, verarbeiten im acribis-Projekt"
+msgid "IDAT Melderegister abfragen speichern verarbeiten (ACRIBIS)"
 msgstr ""
 
 # CodeSystem.concept.display
 #: CodeSystem.concept.display
-msgid "Z2 MDAT Hausarzt erheben, speichern, verarbeiten, nutzen im acribis-Projekt"
+msgid "Z2 MDAT Hausarzt erheben speichern verarbeiten nutzen (ACRIBIS)"
 msgstr ""
 
 # CodeSystem.concept.display
 #: CodeSystem.concept.display
-msgid "MDAT Hausarzt erheben, speichern, verarbeiten, nutzen im acribis-Projekt"
+msgid "MDAT Hausarzt erheben speichern verarbeiten nutzen (ACRIBIS)"
 msgstr ""
 
 # CodeSystem.concept.display
 #: CodeSystem.concept.display
-msgid "Z3 PROMDAT Patientenbefragung"
+msgid "Z3 PROMDAT Patientenbefragung (PROM)"
 msgstr ""
 
 # CodeSystem.concept.display
 #: CodeSystem.concept.display
-msgid "PROMDAT Patientenbefragung erheben"
+msgid "PROMDAT Patientenbefragung erheben (PROM)"
 msgstr ""
 
 # CodeSystem.concept.display
 #: CodeSystem.concept.display
-msgid "PROMDAT wissenschaftlich nutzen"
+msgid "PROMDAT wissenschaftlich nutzen (PROM)"
 msgstr ""
 
 # CodeSystem.concept.display
 #: CodeSystem.concept.display
-msgid "Rekontaktierung PROM Studien"
+msgid "Rekontaktierung PROM Studien (PROM)"
 msgstr ""
 
 # CodeSystem.concept.display
@@ -366,7 +366,7 @@ msgstr ""
 
 # CodeSystem.concept.display
 #: CodeSystem.concept.display
-msgid "IDAT speichern, verabeiten (SNID)"
+msgid "IDAT speichern, verarbeiten (SNID)"
 msgstr ""
 
 # CodeSystem.concept.display
@@ -401,7 +401,7 @@ msgstr ""
 
 # CodeSystem.concept.display
 #: CodeSystem.concept.display
-msgid "BIOMAT Eigentum übertragen_NUM (SNID)"
+msgid "BIOMAT Eigentum übertragen NUM (SNID)"
 msgstr ""
 
 # CodeSystem.concept.display
@@ -486,17 +486,17 @@ msgstr ""
 
 # CodeSystem.concept.display
 #: CodeSystem.concept.display
-msgid "MDAT SNID bereitstellen Dritte"
+msgid "MDAT SNID bereitstellen Dritte (SNID)"
 msgstr ""
 
 # CodeSystem.concept.display
 #: CodeSystem.concept.display
-msgid "BIOMAT SNID bereitstellen Dritte"
+msgid "BIOMAT SNID bereitstellen Dritte (SNID)"
 msgstr ""
 
 # CodeSystem.concept.display
 #: CodeSystem.concept.display
-msgid "Z4 Rekontaktierung Patient (SNID)"
+msgid "Z4 Rekontaktierung Patient NU (SNID)"
 msgstr ""
 
 # CodeSystem.concept.display
@@ -506,17 +506,17 @@ msgstr ""
 
 # CodeSystem.concept.display
 #: CodeSystem.concept.display
-msgid "Z4_Rekontaktierung_FU"
+msgid "Z4 Rekontaktierung Patient weitere Studien (SNID)"
 msgstr ""
 
 # CodeSystem.concept.display
 #: CodeSystem.concept.display
-msgid "Rekontaktierung weitere Studien (SNID)"
+msgid "Rekontaktierung Patient weitere Studien (SNID)"
 msgstr ""
 
 # CodeSystem.concept.display
 #: CodeSystem.concept.display
-msgid "IDAT SNID bereitstellen OE"
+msgid "IDAT SNID bereitstellen OE (SNID)"
 msgstr ""
 
 # CodeSystem.concept.display

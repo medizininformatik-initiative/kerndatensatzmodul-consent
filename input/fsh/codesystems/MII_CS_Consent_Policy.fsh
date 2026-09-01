@@ -179,30 +179,30 @@ Description: "Codesystem mit Consent-Policy-Codes zur interoperablen Operational
 * #2.16.840.1.113883.3.1937.777.24.5.3.35 #2.16.840.1.113883.3.1937.777.24.5.3.36 "MDAT GECCO83 bereitstellen NUM/CODEX ohne EU DSGVO NIVEAU"
 * #2.16.840.1.113883.3.1937.777.24.5.3.35 #2.16.840.1.113883.3.1937.777.24.5.3.36 ^property[0].code = #period-of-validity
 * #2.16.840.1.113883.3.1937.777.24.5.3.35 #2.16.840.1.113883.3.1937.777.24.5.3.36 ^property[=].valueString = "P30Y"
-* #2.16.840.1.113883.3.1937.777.24.5.3.57 "Z2 Patientendaten erheben, nutzen, Kontaktierung im acribis-Projekt"
-* #2.16.840.1.113883.3.1937.777.24.5.3.57 #2.16.840.1.113883.3.1937.777.24.5.3.58 "PATDAT erheben, nutzen, Kontaktierung im acribis-Projekt"
+* #2.16.840.1.113883.3.1937.777.24.5.3.57 "Z2 PATDAT erheben nutzen kontakt (ACRIBIS)"
+* #2.16.840.1.113883.3.1937.777.24.5.3.57 #2.16.840.1.113883.3.1937.777.24.5.3.58 "PATDAT erheben nutzen kontakt (ACRIBIS)"
 * #2.16.840.1.113883.3.1937.777.24.5.3.57 #2.16.840.1.113883.3.1937.777.24.5.3.58 ^property[0].code = #period-of-validity
 * #2.16.840.1.113883.3.1937.777.24.5.3.57 #2.16.840.1.113883.3.1937.777.24.5.3.58 ^property[=].valueString = "P5Y"
-* #2.16.840.1.113883.3.1937.777.24.5.3.59 "Z2 IDAT Melderegister abfragen, speichern, verarbeiten im acribis-Projekt"
-* #2.16.840.1.113883.3.1937.777.24.5.3.59 #2.16.840.1.113883.3.1937.777.24.5.3.60 "Anschrift und Vitalstatus Melderegister abfragen, speichern, verarbeiten im acribis-Projekt"
+* #2.16.840.1.113883.3.1937.777.24.5.3.59 "Z2 IDAT Melderegister abfragen speichern verarbeiten (ACRIBIS)"
+* #2.16.840.1.113883.3.1937.777.24.5.3.59 #2.16.840.1.113883.3.1937.777.24.5.3.60 "IDAT Melderegister abfragen speichern verarbeiten (ACRIBIS)"
 * #2.16.840.1.113883.3.1937.777.24.5.3.59 #2.16.840.1.113883.3.1937.777.24.5.3.60 ^property[0].code = #period-of-validity
 * #2.16.840.1.113883.3.1937.777.24.5.3.59 #2.16.840.1.113883.3.1937.777.24.5.3.60 ^property[=].valueString = "P5Y"
-* #2.16.840.1.113883.3.1937.777.24.5.3.61 "Z2 MDAT Hausarzt erheben, speichern, verarbeiten, nutzen im acribis-Projekt"
-* #2.16.840.1.113883.3.1937.777.24.5.3.61 #2.16.840.1.113883.3.1937.777.24.5.3.62 "MDAT Hausarzt erheben, speichern, verarbeiten, nutzen im acribis-Projekt"
+* #2.16.840.1.113883.3.1937.777.24.5.3.61 "Z2 MDAT Hausarzt erheben speichern verarbeiten nutzen (ACRIBIS)"
+* #2.16.840.1.113883.3.1937.777.24.5.3.61 #2.16.840.1.113883.3.1937.777.24.5.3.62 "MDAT Hausarzt erheben speichern verarbeiten nutzen (ACRIBIS)"
 * #2.16.840.1.113883.3.1937.777.24.5.3.61 #2.16.840.1.113883.3.1937.777.24.5.3.62 ^property[0].code = #period-of-validity
 * #2.16.840.1.113883.3.1937.777.24.5.3.61 #2.16.840.1.113883.3.1937.777.24.5.3.62 ^property[=].valueString = "P5Y"
-* #2.16.840.1.113883.3.1937.777.24.5.3.63 "Z3 PROMDAT Patientenbefragung"
-* #2.16.840.1.113883.3.1937.777.24.5.3.63 #2.16.840.1.113883.3.1937.777.24.5.3.64 "PROMDAT Patientenbefragung erheben"
+* #2.16.840.1.113883.3.1937.777.24.5.3.63 "Z3 PROMDAT Patientenbefragung (PROM)"
+* #2.16.840.1.113883.3.1937.777.24.5.3.63 #2.16.840.1.113883.3.1937.777.24.5.3.64 "PROMDAT Patientenbefragung erheben (PROM)"
 * #2.16.840.1.113883.3.1937.777.24.5.3.63 #2.16.840.1.113883.3.1937.777.24.5.3.64 ^property[0].code = #period-of-validity
 * #2.16.840.1.113883.3.1937.777.24.5.3.63 #2.16.840.1.113883.3.1937.777.24.5.3.64 ^property[=].valueString = "P5Y"
-* #2.16.840.1.113883.3.1937.777.24.5.3.63 #2.16.840.1.113883.3.1937.777.24.5.3.65 "PROMDAT wissenschaftlich nutzen"
+* #2.16.840.1.113883.3.1937.777.24.5.3.63 #2.16.840.1.113883.3.1937.777.24.5.3.65 "PROMDAT wissenschaftlich nutzen (PROM)"
 * #2.16.840.1.113883.3.1937.777.24.5.3.63 #2.16.840.1.113883.3.1937.777.24.5.3.65 ^property[0].code = #period-of-validity
 * #2.16.840.1.113883.3.1937.777.24.5.3.63 #2.16.840.1.113883.3.1937.777.24.5.3.65 ^property[=].valueString = "P30Y"
-* #2.16.840.1.113883.3.1937.777.24.5.3.63 #2.16.840.1.113883.3.1937.777.24.5.3.66 "Rekontaktierung PROM Studien"
+* #2.16.840.1.113883.3.1937.777.24.5.3.63 #2.16.840.1.113883.3.1937.777.24.5.3.66 "Rekontaktierung PROM Studien (PROM)"
 * #2.16.840.1.113883.3.1937.777.24.5.3.63 #2.16.840.1.113883.3.1937.777.24.5.3.66 ^property[0].code = #period-of-validity
 * #2.16.840.1.113883.3.1937.777.24.5.3.63 #2.16.840.1.113883.3.1937.777.24.5.3.66 ^property[=].valueString = "P30Y"
 * #2.16.840.1.113883.3.1937.777.24.5.3.67 "Z4 Datenschutzerklärung (SNID)"
-* #2.16.840.1.113883.3.1937.777.24.5.3.67 #2.16.840.1.113883.3.1937.777.24.5.3.68 "IDAT speichern, verabeiten (SNID)"
+* #2.16.840.1.113883.3.1937.777.24.5.3.67 #2.16.840.1.113883.3.1937.777.24.5.3.68 "IDAT speichern, verarbeiten (SNID)"
 * #2.16.840.1.113883.3.1937.777.24.5.3.67 #2.16.840.1.113883.3.1937.777.24.5.3.68 ^property[0].code = #period-of-validity
 * #2.16.840.1.113883.3.1937.777.24.5.3.67 #2.16.840.1.113883.3.1937.777.24.5.3.68 ^property[=].valueString = "P30Y"
 * #2.16.840.1.113883.3.1937.777.24.5.3.67 #2.16.840.1.113883.3.1937.777.24.5.3.69 "CONSENT speichern, verarbeiten (SNID)"
@@ -223,7 +223,7 @@ Description: "Codesystem mit Consent-Policy-Codes zur interoperablen Operational
 * #2.16.840.1.113883.3.1937.777.24.5.3.67 #2.16.840.1.113883.3.1937.777.24.5.3.74 "MDAT Einsicht Monitoring (SNID)"
 * #2.16.840.1.113883.3.1937.777.24.5.3.67 #2.16.840.1.113883.3.1937.777.24.5.3.74 ^property[0].code = #period-of-validity
 * #2.16.840.1.113883.3.1937.777.24.5.3.67 #2.16.840.1.113883.3.1937.777.24.5.3.74 ^property[=].valueString = "P30Y"
-* #2.16.840.1.113883.3.1937.777.24.5.3.67 #2.16.840.1.113883.3.1937.777.24.5.3.75 "BIOMAT Eigentum übertragen_NUM (SNID)"
+* #2.16.840.1.113883.3.1937.777.24.5.3.67 #2.16.840.1.113883.3.1937.777.24.5.3.75 "BIOMAT Eigentum übertragen NUM (SNID)"
 * #2.16.840.1.113883.3.1937.777.24.5.3.67 #2.16.840.1.113883.3.1937.777.24.5.3.75 ^property[0].code = #period-of-validity
 * #2.16.840.1.113883.3.1937.777.24.5.3.67 #2.16.840.1.113883.3.1937.777.24.5.3.75 ^property[=].valueString = "P30Y"
 * #2.16.840.1.113883.3.1937.777.24.5.3.67 #2.16.840.1.113883.3.1937.777.24.5.3.76 "CONSENT BC bereitstellen (SNID)"
@@ -260,21 +260,21 @@ Description: "Codesystem mit Consent-Policy-Codes zur interoperablen Operational
 * #2.16.840.1.113883.3.1937.777.24.5.3.88 #2.16.840.1.113883.3.1937.777.24.5.3.90 ^property[0].code = #period-of-validity
 * #2.16.840.1.113883.3.1937.777.24.5.3.88 #2.16.840.1.113883.3.1937.777.24.5.3.90 ^property[=].valueString = "P5Y"
 * #2.16.840.1.113883.3.1937.777.24.5.3.91 "Z4 Weitergabe Dritte (SNID)"
-* #2.16.840.1.113883.3.1937.777.24.5.3.91 #2.16.840.1.113883.3.1937.777.24.5.3.92 "MDAT SNID bereitstellen Dritte"
+* #2.16.840.1.113883.3.1937.777.24.5.3.91 #2.16.840.1.113883.3.1937.777.24.5.3.92 "MDAT SNID bereitstellen Dritte (SNID)"
 * #2.16.840.1.113883.3.1937.777.24.5.3.91 #2.16.840.1.113883.3.1937.777.24.5.3.92 ^property[0].code = #period-of-validity
 * #2.16.840.1.113883.3.1937.777.24.5.3.91 #2.16.840.1.113883.3.1937.777.24.5.3.92 ^property[=].valueString = "P30Y"
-* #2.16.840.1.113883.3.1937.777.24.5.3.91 #2.16.840.1.113883.3.1937.777.24.5.3.93 "BIOMAT SNID bereitstellen Dritte"
+* #2.16.840.1.113883.3.1937.777.24.5.3.91 #2.16.840.1.113883.3.1937.777.24.5.3.93 "BIOMAT SNID bereitstellen Dritte (SNID)"
 * #2.16.840.1.113883.3.1937.777.24.5.3.91 #2.16.840.1.113883.3.1937.777.24.5.3.93 ^property[0].code = #period-of-validity
 * #2.16.840.1.113883.3.1937.777.24.5.3.91 #2.16.840.1.113883.3.1937.777.24.5.3.93 ^property[=].valueString = "P30Y"
-* #2.16.840.1.113883.3.1937.777.24.5.3.94 "Z4 Rekontaktierung Patient (SNID)"
+* #2.16.840.1.113883.3.1937.777.24.5.3.94 "Z4 Rekontaktierung Patient NU (SNID)"
 * #2.16.840.1.113883.3.1937.777.24.5.3.94 #2.16.840.1.113883.3.1937.777.24.5.3.95 "Rekontaktierung Gesundheitszustand nach Studienabschluss (SNID)"
 * #2.16.840.1.113883.3.1937.777.24.5.3.94 #2.16.840.1.113883.3.1937.777.24.5.3.95 ^property[0].code = #period-of-validity
 * #2.16.840.1.113883.3.1937.777.24.5.3.94 #2.16.840.1.113883.3.1937.777.24.5.3.95 ^property[=].valueString = "P30Y"
-* #2.16.840.1.113883.3.1937.777.24.5.3.96 "Z4_Rekontaktierung_FU"
-* #2.16.840.1.113883.3.1937.777.24.5.3.96 #2.16.840.1.113883.3.1937.777.24.5.3.97 "Rekontaktierung weitere Studien (SNID)"
+* #2.16.840.1.113883.3.1937.777.24.5.3.96 "Z4 Rekontaktierung Patient weitere Studien (SNID)"
+* #2.16.840.1.113883.3.1937.777.24.5.3.96 #2.16.840.1.113883.3.1937.777.24.5.3.97 "Rekontaktierung Patient weitere Studien (SNID)"
 * #2.16.840.1.113883.3.1937.777.24.5.3.96 #2.16.840.1.113883.3.1937.777.24.5.3.97 ^property[0].code = #period-of-validity
 * #2.16.840.1.113883.3.1937.777.24.5.3.96 #2.16.840.1.113883.3.1937.777.24.5.3.97 ^property[=].valueString = "P30Y"
-* #2.16.840.1.113883.3.1937.777.24.5.3.96 #2.16.840.1.113883.3.1937.777.24.5.3.98 "IDAT SNID bereitstellen OE"
+* #2.16.840.1.113883.3.1937.777.24.5.3.96 #2.16.840.1.113883.3.1937.777.24.5.3.98 "IDAT SNID bereitstellen OE (SNID)"
 * #2.16.840.1.113883.3.1937.777.24.5.3.96 #2.16.840.1.113883.3.1937.777.24.5.3.98 ^property[0].code = #period-of-validity
 * #2.16.840.1.113883.3.1937.777.24.5.3.96 #2.16.840.1.113883.3.1937.777.24.5.3.98 ^property[=].valueString = "P30Y"
 * #2.16.840.1.113883.3.1937.777.24.5.3.99 "Z4 Erhebung Hausarzt (SNID)"

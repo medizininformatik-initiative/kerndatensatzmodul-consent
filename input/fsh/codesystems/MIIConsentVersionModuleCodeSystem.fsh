@@ -21,7 +21,7 @@ Description: "Dieses Code System enthält die OIDs der verschiedenen Versionen u
 * ^copyright = "\n            © 2019+ TMF e. V., Charlottenstraße 42, 10117 Berlin \n            \n                \n                    CC BY 4.0\n                \n                 \n            \n            Diese Arbeit ist lizensiert unter der [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/). \n            Zu den Nutzungsrechten der zugrunde liegenden FHIR-Technologie siehe die FHIR-Basis-Spezifikation. \n            Einige verwendete Codesysteme werden von anderen Organisationen herausgegeben und gepflegt. Es gilt das Copyright der dort jeweils aufgeführten Herausgeber (Publisher). \n        "
 * ^caseSensitive = false
 * ^content = #complete
-* ^count = 20
+* ^count = 21
 * ^property[0].code = #status
 * ^property[=].uri = "http://hl7.org/fhir/concept-properties#status"
 * ^property[=].description = "A code that indicates the status of the concept. Values found in this version of the code system are: draft"
@@ -60,6 +60,8 @@ Description: "Dieses Code System enthält die OIDs der verschiedenen Versionen u
 * #2.16.840.1.113883.3.1937.777.24.2.184 ^property[=].valueCode = #2.16.840.1.113883.3.1937.777.24.2.2079
 * #2.16.840.1.113883.3.1937.777.24.2.184 ^property[+].code = #child
 * #2.16.840.1.113883.3.1937.777.24.2.184 ^property[=].valueCode = #2.16.840.1.113883.3.1937.777.24.2.4054
+* #2.16.840.1.113883.3.1937.777.24.2.184 ^property[+].code = #child
+* #2.16.840.1.113883.3.1937.777.24.2.184 ^property[=].valueCode = #2.16.840.1.113883.3.1937.777.24.2.4055
 * #2.16.840.1.113883.3.1937.777.24.2.184 ^property[+].code = #child
 * #2.16.840.1.113883.3.1937.777.24.2.184 ^property[=].valueCode = #2.16.840.1.113883.3.1937.777.24.2.2722
 * #2.16.840.1.113883.3.1937.777.24.2.184 ^property[+].code = #child
@@ -160,6 +162,16 @@ Description: "Dieses Code System enthält die OIDs der verschiedenen Versionen u
 * #2.16.840.1.113883.3.1937.777.24.2.4054 ^property[=].valueCode = #draft
 * #2.16.840.1.113883.3.1937.777.24.2.4054 ^property[+].code = #parent
 * #2.16.840.1.113883.3.1937.777.24.2.4054 ^property[=].valueCode = #2.16.840.1.113883.3.1937.777.24.2.184
+* #2.16.840.1.113883.3.1937.777.24.2.4055 "Version 1.7.2 Vertretende"
+* #2.16.840.1.113883.3.1937.777.24.2.4055 ^designation.language = #de-DE
+* #2.16.840.1.113883.3.1937.777.24.2.4055 ^designation.use.system = "http://snomed.info/sct"
+* #2.16.840.1.113883.3.1937.777.24.2.4055 ^designation.use = $sct#900000000000003001 "Fully specified name"
+* #2.16.840.1.113883.3.1937.777.24.2.4055 ^designation.use.display = "Fully specified name"
+* #2.16.840.1.113883.3.1937.777.24.2.4055 ^designation.value = "Version 1.7.2 Vertretende"
+* #2.16.840.1.113883.3.1937.777.24.2.4055 ^property[0].code = #status
+* #2.16.840.1.113883.3.1937.777.24.2.4055 ^property[=].valueCode = #draft
+* #2.16.840.1.113883.3.1937.777.24.2.4055 ^property[+].code = #parent
+* #2.16.840.1.113883.3.1937.777.24.2.4055 ^property[=].valueCode = #2.16.840.1.113883.3.1937.777.24.2.184
 * #2.16.840.1.113883.3.1937.777.24.2.2722 "Version 1.7.2 Komplettwiderruf"
 * #2.16.840.1.113883.3.1937.777.24.2.2722 ^designation.language = #de-DE
 * #2.16.840.1.113883.3.1937.777.24.2.2722 ^designation.use.system = "http://snomed.info/sct"

@@ -20,7 +20,7 @@
 set -euo pipefail
 
 PARENT_PACKAGE="de.einwilligungsmanagement"
-PARENT_VERSION="2.0.2"                       # THE SOURCE PIN — keep in sync with sushi-config.yaml
+PARENT_VERSION="2.0.3"                       # THE SOURCE PIN — keep in sync with sushi-config.yaml
 VALIDATOR_VERSION="6.10.0"
 VALIDATOR_SHA256="fc663ae55dd31bbfde19788dddfb49cacbeebc3c64498fa7b7779df90000434b"
 

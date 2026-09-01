@@ -1,11 +1,13 @@
 page	lang	kind	source	gate	line	excerpt
 StructureDefinition-e0e166b4-0f77-478d-9062-de0034d98ce0-intro	default	bridge	technischeimplementierung-fhirprofile-consent.md	B	17	**Written during migration - review before release.** Die Datenschutz-Aspekte dieses Profils beschreibt die Seite [Siche
+StructureDefinition-e0e166b4-0f77-478d-9062-de0034d98ce0-intro	default	summary	technischeimplementierung-fhirprofile-consent.md	B	51	**Written during migration - review before release.** Die obenstehende Tabelle beschreibt den Stand des Release 2026.0.0
 StructureDefinition-e0e166b4-0f77-478d-9062-de0034d98ce0-intro	en	bridge	technischeimplementierung-fhirprofile-consent.md	B	18	**Written during migration - review before release.** The security and privacy aspects of this profile are described on 
+StructureDefinition-e0e166b4-0f77-478d-9062-de0034d98ce0-intro	en	summary	technischeimplementierung-fhirprofile-consent.md	B	52	**Written during migration - review before release.** The table above describes the state of release 2026.0.0. With the 
 capability-statements	default	suggestion	none	A	10	**Written during migration - review before release.** Das folgende CapabilityStatement wurde während der Migration aus d
 capability-statements	en	suggestion	none	A	11	**Written during migration - review before release.** The following CapabilityStatement was generated during the migrati
 examples	default	bridge	technischeimplementierung-fhirprofile-consent.md	B	15	**Written during migration - review before release.** Die Beispiel-Render der Quellseiten sind durch Links auf die vom I
 examples	en	bridge	technischeimplementierung-fhirprofile-consent.md	B	16	**Written during migration - review before release.** The example renders of the source pages have been replaced with li
-guidance	default	bridge	anwendungsflleinformationsmodell-fragebgen.md	B	42	**Written during migration - review before release.** Die Abbildung der Einwilligungs-Fragebögen (Questionnaire-basierte
-guidance	en	bridge	anwendungsflleinformationsmodell-fragebgen.md	B	43	**Written during migration - review before release.** The representation of the consent questionnaires (Questionnaire-ba
+guidance	default	bridge	anwendungsflleinformationsmodell-fragebgen.md	B	39	**Written during migration - review before release.** Die Abbildung der Einwilligungs-Fragebögen (Questionnaire-basierte
+guidance	en	bridge	anwendungsflleinformationsmodell-fragebgen.md	B	40	**Written during migration - review before release.** The representation of the consent questionnaires (Questionnaire-ba
 implementer-guidance	default	bridge	technischeimplementierung.md	B	8	**Written during migration - review before release.** Diese Seite bündelt die implementierungsbezogenen Abschnitte des u
 implementer-guidance	en	bridge	technischeimplementierung.md	B	9	**Written during migration - review before release.** This page bundles the implementation-related sections of the origi

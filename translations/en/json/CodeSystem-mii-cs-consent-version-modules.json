@@ -204,6 +204,18 @@
     {
       "id" : "CodeSystem.concept.display",
       "context" : "CodeSystem.concept.display",
+      "source" : "Version 1.7.2 Vertretende",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Version 1.7.2 Vertretende",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.display",
+      "context" : "CodeSystem.concept.display",
       "source" : "Version 1.7.2 Komplettwiderruf",
       "target" : null
     },

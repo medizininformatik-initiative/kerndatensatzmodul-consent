@@ -251,6 +251,20 @@
              <notes>
                <note id="n1">CodeSystem.concept.display</note>
              </notes>
+        <source>Version 1.7.2 Vertretende</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-consent-version-modules" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Version 1.7.2 Vertretende</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-mii-cs-consent-version-modules" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">CodeSystem.concept.display</note>
+             </notes>
         <source>Version 1.7.2 Komplettwiderruf</source>
         <target></target>
       </trans-unit>

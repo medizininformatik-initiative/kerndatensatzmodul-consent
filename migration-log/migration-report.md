@@ -17,7 +17,22 @@ template structure for the module (Gate D: TF KDS / AG IOP / NSG).
   package version (superseded per-resource drift recorded in the run log: SDs 1.0.9/1.0.8/1.0.8,
   CS 1.1.0/0.2.0/1.6.0, VS 1.0.1/1.6.0/1.0.3, SPs 1.0.7), `releaseLabel: ballot`,
   sequence 2027, date/approval stand-ins 2026-08-31; the changelog carries the new version
-  section in both languages. Content is **identical to release 2026.0.0**.
+  section in both languages. Content was identical to release 2026.0.0 **until the
+  develop incorporation below**.
+
+* **Develop incorporation (2026-09-01, user GO):** the `develop` delta up to **`744f7ba`**
+  (2026-08-21; the unreleased 2026.0.1-rc line) is incorporated: the Einwilligung profile now
+  derives from the HL7-D `ConsentManagement/Consent` profile with renamed/new category slices
+  (`consentCategory`, `mii`, `resultType` required, `templateType` extensible); the examples'
+  MII category uses the DEFINED `mii-cs-consent-version-modules` CodeSystem (**resolves D-9** —
+  the dangling-CS error class disappears); ~19 Policy-CS display corrections + the new
+  Version-Modules concept 4055; parent pin raised to `de.einwilligungsmanagement`
+  **2.0.3-snapshots** (21/21 snapshots generate — better than 2.0.2's 18/21). Two findings for
+  upstream: develop's `category min=0` is void against its own new parent (1..*; inherited as
+  1..*, recorded deviation from the literal XML), and the rc-4 packaging drops the
+  Version-Modules CS that develop's examples now REQUIRE. Plan of record:
+  `plan/develop-incorporation-plan.md` on the sandbox evidence branch; per-commit adjudications
+  in the run log (`12 develop-delta`).
 
 * **Source:** tag `2026.0.0` = `792f9f3e` (== `master`; == registry `dist-tags.latest`; == the only
   Simplifier guide version). Shape **B**: 20 raw Forge XML/JSON resources, no build scaffolding, no CI;
@@ -28,7 +43,9 @@ template structure for the module (Gate D: TF KDS / AG IOP / NSG).
   and canonicals **byte-unchanged**, bilingual EN mirror (machine-translated, Gate C), full IG-Publisher
   2.3.2 render with **0 broken links**.
 * **QA vs source:** the source had NO QA baseline — one was built (publisher-in-Docker wrapper around
-  the unmigrated resources): **source 67 validation errors, migrated 70**, with the +3 fully attributed:
+  the unmigrated resources): **source 67 validation errors; migrated currently 44** (70 at the
+  faithful migration → 33 after the recorded QA-fix pass → 44 after the develop incorporation,
+  whose +15 slicing-evaluation errors are develop-inherent design findings). The original +3 was fully attributed:
   the added registry-only 6th example (D-14, 15 errors of the same classes as its siblings) against
   resolved wrapper-artefacts. **Zero migration-introduced error classes** (two first-build regressions —
   24 SearchParameter id-mismatches, category slice-append duplication — were fixed, not triaged;
@@ -74,7 +91,7 @@ Everything is in `migration-log/` on this branch: `run.log` (the protocol below 
 |---|---|---|---|---|
 | ①-1 | **D-0 GO**: the VENUE half is decided — the branch sits on the official repository (operator instruction, 2026-08-31); the OWNER half stays open: review Gates A–D and decide the MERGE (merging adopts the template structure for the module) | Owners (Stäubert/Bialke, TF CU) | The branch stays an open draft PR; the module's published state is untouched | review · deleting the branch reverts everything |
 | ①-2 | **D-1 licence field**: `license: CC-BY-4.0` now machine-readable in sushi-config (the release never declared one; LICENSE file + guide prose agree) | Owners | Without sign-off, published metadata would gain a field the release lacked | 1 line · trivial |
-| ①-3 | **D-2 baseline + version**: migrated CONTENT = tag 2026.0.0 (the develop/rc-line — 18 commits ahead, rc-1..rc-4, parent 2.0.3 — deliberately NOT migrated); target VERSION = **2027.0.0-ballot.rc1** (operator instruction; per-resource versions harmonized to it — confirm the ballot-RC versioning fits the TF-CU 2027 schedule) | Owners | The ballot-RC version ships; content stays 2026.0.0-identical | ~½ day re-run on a newer tag · version = 1 commit |
+| ①-3 | **D-2 baseline + version**: migrated content = tag 2026.0.0 **+ the develop delta to 744f7ba** (operator instruction 2026-09-01); target VERSION = **2027.0.0-ballot.rc1** (per-resource versions harmonized) — confirm develop@744f7ba is the intended ballot-RC content basis and the versioning fits the TF-CU 2027 schedule | Owners | The ballot RC carries the develop content | delta re-runs cheaply on a newer develop tip |
 | ①-4 | **D-4 parent snapshots**: `de.einwilligungsmanagement` ships 0 snapshots (2.0.2 AND 2.0.3) → CI prebuild (`scripts/generate-parent-snapshots.sh`, official HL7 generator, cache entry `2.0.2-snapshots`); 3 of 21 differentials REFUSED by the generator (TemplateFrame, TemplateModule, QuestionnaireComposed — none a parent here) | Operator chose; owners informed; **upstream escalation to the einwilligungsmanagement maintainers open** | Without the prebuild no build anywhere resolves the parent | shipped · revertible |
 | ①-5 | **D-5 ids**: profile UUID ids + ART-DECOR VS/CS ids kept verbatim (guardrail); the 6 id-LESS SearchParameters got minted ids = their canonical tails (`mii-sp-consent-*`) | Owners confirm minted ids | id/url-mismatch QA errors stay (they are source-inherent for SD/VS/CS) | n/a · minted ids trivially renameable |
 | ①-6 | **D-6 status**: `active` (guide index) over `draft` (Simplifier IG skeleton) — both readings in the ledger | Owners | — | 1 line |

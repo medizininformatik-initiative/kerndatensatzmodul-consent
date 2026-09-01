@@ -15,7 +15,7 @@ Usage: #example
 // fhir_comments (source XML comment on scope.fhir_comments): " Einwilligung zur Verwendung, hier: in der Forschung "
 * category[0] = $loinc#57016-8
 // fhir_comments (source XML comment on category[=].fhir_comments): " Consent-Kategorie, hier: Einwilligung "
-* category[+] = $mii-cs-consent-consent_category#2.16.840.1.113883.3.1937.777.24.2.184
+* category[+] = $mii-cs-consent-version-modules#2.16.840.1.113883.3.1937.777.24.2.184
 // fhir_comments (source XML comment on category[=].fhir_comments): " MII Broad Consent "
 * category[+] = $ResultType#document
 // fhir_comments (source XML comment on category[=].fhir_comments): " Consent-Kategorie resultType, hier: Dokument "

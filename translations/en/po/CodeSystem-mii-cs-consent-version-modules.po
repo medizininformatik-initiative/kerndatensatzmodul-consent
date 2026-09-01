@@ -179,6 +179,16 @@ msgstr ""
 
 # CodeSystem.concept.display
 #: CodeSystem.concept.display
+msgid "Version 1.7.2 Vertretende"
+msgstr ""
+
+# CodeSystem.concept.designation.value
+#: CodeSystem.concept.designation.value
+msgid "Version 1.7.2 Vertretende"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
 msgid "Version 1.7.2 Komplettwiderruf"
 msgstr ""
 

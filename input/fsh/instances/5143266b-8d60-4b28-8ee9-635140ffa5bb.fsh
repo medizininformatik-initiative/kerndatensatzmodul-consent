@@ -12,7 +12,7 @@ Usage: #example
 * scope = $consentscope#research
 * category[0] = $loinc#57016-8
 * category[+] = $ResultType#consent-status
-* category[+] = $mii-cs-consent-consent_category#2.16.840.1.113883.3.1937.777.24.2.184
+* category[+] = $mii-cs-consent-version-modules#2.16.840.1.113883.3.1937.777.24.2.184
 * patient.reference = "Patient/531cef77-2a30-4283-944d-affaf9ae234e"
 * dateTime = "2025-12-04T15:34:40+01:00"
 * organization.display = "MII"

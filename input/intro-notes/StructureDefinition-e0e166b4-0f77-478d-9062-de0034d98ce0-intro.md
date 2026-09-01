@@ -48,6 +48,10 @@ Um die Austauschbarkeit der operationalisierten Einwilligungsinhalte auch über 
 | Consent.policy.uri | Verweis auf die Version des der Consent-Ressource zugrundeliegende MII Broad Consent Dokument-Version gemäß untenstehender Übersicht,<br/>z.B.<br/>**MII Broad Consent Version 1.7.2**   `urn:oid:2.16.840.1.113883.3.1937.777.24.2.2079`  oder<br/>**MII Broad Consent Version 1.7.2 inkl. Zusatzmodul Acribis**   `urn:oid:2.16.840.1.113883.3.1937.777.24.2.4031` , Must-support |
 
 
+<!-- DERIVED:summary source=technischeimplementierung-fhirprofile-consent.md gate=B -->
+> **Written during migration - review before release.** Die obenstehende Tabelle beschreibt den Stand des Release 2026.0.0. Mit der Inkorporation des `develop`-Standes (744f7ba, 2026-08-21) gelten drei Änderungen: (1) das Profil leitet jetzt vom HL7-D-Profil `ConsentManagement/Consent` ab; (2) die Category-Slices heißen `consentCategory` (LOINC 57016-8), `mii` (Version-Modules-CodeSystem), `resultType` (required) und `templateType` (extensible); (3) die Beispiele verwenden für die MII-Kategorie das CodeSystem `mii-cs-consent-version-modules`. Die Zeilen zu `Consent.category.coding` ("mindestens zwei Categories") sind entsprechend überholt.
+{: .ig-highlight .ig-highlight-blue}
+
 #### **Eindeutige Identifikation des MII-Broad Consent**
 
 Um FHIR-Consent Ressourcen nach Einwilligungen zu filtern, die auf dem MII Broad Consent basieren, wird ein verpflichtendes Uri für die `Consent.policy.uri` verwendet. Die TFCU hat im ART-DECOR Repräsentationen für die unterschiedlichen Versionen des MII Broad Consent angelegt. Diese können über eine eindeutige OID (vgl. nachstehende Tabelle) referenziert werden.

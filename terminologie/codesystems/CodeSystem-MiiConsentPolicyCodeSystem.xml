@@ -459,10 +459,10 @@
   </concept>
   <concept>
     <code value="2.16.840.1.113883.3.1937.777.24.5.3.57" />
-    <display value="Z2 Patientendaten erheben, nutzen, Kontaktierung im acribis-Projekt" />
+    <display value="Z2 PATDAT erheben nutzen kontakt (ACRIBIS)" />
     <concept>
       <code value="2.16.840.1.113883.3.1937.777.24.5.3.58" />
-      <display value="PATDAT erheben, nutzen, Kontaktierung im acribis-Projekt" />
+      <display value="PATDAT erheben nutzen kontakt (ACRIBIS)" />
       <property>
         <code value="period-of-validity" />
         <valueString value="P5Y" />
@@ -471,10 +471,10 @@
   </concept>
   <concept>
     <code value="2.16.840.1.113883.3.1937.777.24.5.3.59" />
-    <display value="Z2 IDAT Melderegister abfragen, speichern, verarbeiten im acribis-Projekt" />
+    <display value="Z2 IDAT Melderegister abfragen speichern verarbeiten (ACRIBIS)" />
     <concept>
       <code value="2.16.840.1.113883.3.1937.777.24.5.3.60" />
-      <display value="Anschrift und Vitalstatus Melderegister abfragen, speichern, verarbeiten im acribis-Projekt" />
+      <display value="IDAT Melderegister abfragen speichern verarbeiten (ACRIBIS)" />
       <property>
         <code value="period-of-validity" />
         <valueString value="P5Y" />
@@ -483,10 +483,10 @@
   </concept>
   <concept>
     <code value="2.16.840.1.113883.3.1937.777.24.5.3.61" />
-    <display value="Z2 MDAT Hausarzt erheben, speichern, verarbeiten, nutzen im acribis-Projekt" />
+    <display value="Z2 MDAT Hausarzt erheben speichern verarbeiten nutzen (ACRIBIS)" />
     <concept>
       <code value="2.16.840.1.113883.3.1937.777.24.5.3.62" />
-      <display value="MDAT Hausarzt erheben, speichern, verarbeiten, nutzen im acribis-Projekt" />
+      <display value="MDAT Hausarzt erheben speichern verarbeiten nutzen (ACRIBIS)" />
       <property>
         <code value="period-of-validity" />
         <valueString value="P5Y" />
@@ -495,10 +495,10 @@
   </concept>
   <concept>
     <code value="2.16.840.1.113883.3.1937.777.24.5.3.63" />
-    <display value="Z3 PROMDAT Patientenbefragung" />
+    <display value="Z3 PROMDAT Patientenbefragung (PROM)" />
     <concept>
       <code value="2.16.840.1.113883.3.1937.777.24.5.3.64" />
-      <display value="PROMDAT Patientenbefragung erheben" />
+      <display value="PROMDAT Patientenbefragung erheben (PROM)" />
       <property>
         <code value="period-of-validity" />
         <valueString value="P5Y" />
@@ -506,7 +506,7 @@
     </concept>
     <concept>
       <code value="2.16.840.1.113883.3.1937.777.24.5.3.65" />
-      <display value="PROMDAT wissenschaftlich nutzen" />
+      <display value="PROMDAT wissenschaftlich nutzen (PROM)" />
       <property>
         <code value="period-of-validity" />
         <valueString value="P30Y" />
@@ -514,7 +514,7 @@
     </concept>
     <concept>
       <code value="2.16.840.1.113883.3.1937.777.24.5.3.66" />
-      <display value="Rekontaktierung PROM Studien" />
+      <display value="Rekontaktierung PROM Studien (PROM)" />
       <property>
         <code value="period-of-validity" />
         <valueString value="P30Y" />
@@ -526,7 +526,7 @@
     <display value="Z4 Datenschutzerklärung (SNID)" />
     <concept>
       <code value="2.16.840.1.113883.3.1937.777.24.5.3.68" />
-      <display value="IDAT speichern, verabeiten (SNID)" />
+      <display value="IDAT speichern, verarbeiten (SNID)" />
       <property>
         <code value="period-of-validity" />
         <valueString value="P30Y" />
@@ -582,7 +582,7 @@
     </concept>
     <concept>
       <code value="2.16.840.1.113883.3.1937.777.24.5.3.75" />
-      <display value="BIOMAT Eigentum übertragen_NUM (SNID)" />
+      <display value="BIOMAT Eigentum übertragen NUM (SNID)" />
       <property>
           <code value="period-of-validity" />
           <valueString value="P30Y" />
@@ -690,7 +690,7 @@
     <display value="Z4 Weitergabe Dritte (SNID)" />
     <concept>
       <code value="2.16.840.1.113883.3.1937.777.24.5.3.92" />
-      <display value="MDAT SNID bereitstellen Dritte" />
+      <display value="MDAT SNID bereitstellen Dritte (SNID)" />
       <property>
           <code value="period-of-validity" />
           <valueString value="P30Y" />
@@ -698,7 +698,7 @@
     </concept>
     <concept>
       <code value="2.16.840.1.113883.3.1937.777.24.5.3.93" />
-      <display value="BIOMAT SNID bereitstellen Dritte" />
+      <display value="BIOMAT SNID bereitstellen Dritte (SNID)" />
       <property>
           <code value="period-of-validity" />
           <valueString value="P30Y" />
@@ -707,7 +707,7 @@
   </concept>
   <concept>
     <code value="2.16.840.1.113883.3.1937.777.24.5.3.94" />
-    <display value="Z4 Rekontaktierung Patient (SNID)" />
+    <display value="Z4 Rekontaktierung Patient NU (SNID)" />
     <concept>
       <code value="2.16.840.1.113883.3.1937.777.24.5.3.95" />
       <display value="Rekontaktierung Gesundheitszustand nach Studienabschluss (SNID)" />
@@ -719,10 +719,10 @@
   </concept>
   <concept>
     <code value="2.16.840.1.113883.3.1937.777.24.5.3.96" />
-    <display value="Z4_Rekontaktierung_FU" />
+    <display value="Z4 Rekontaktierung Patient weitere Studien (SNID)" />
     <concept>
       <code value="2.16.840.1.113883.3.1937.777.24.5.3.97" />
-      <display value="Rekontaktierung weitere Studien (SNID)" />
+      <display value="Rekontaktierung Patient weitere Studien (SNID)" />
       <property>
           <code value="period-of-validity" />
           <valueString value="P30Y" />
@@ -730,7 +730,7 @@
     </concept>
     <concept>
       <code value="2.16.840.1.113883.3.1937.777.24.5.3.98" />
-      <display value="IDAT SNID bereitstellen OE" />
+      <display value="IDAT SNID bereitstellen OE (SNID)" />
       <property>
           <code value="period-of-validity" />
           <valueString value="P30Y" />

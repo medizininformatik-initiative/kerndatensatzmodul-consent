@@ -87,6 +87,25 @@ section.</p>
      Historische Abschnitte behalten das Format der Quelle (keine nachträgliche
      Keep-a-Changelog-Umgruppierung veröffentlichter Einträge). -->
 
+#### develop incorporation (state 744f7ba, 2026-08-21) — part of 2027.0.0-ballot.rc1
+
+Date 01.09.2026
+
+* **BREAKING: Changed** — profile `MII PR Consent Einwilligung`: now derives
+  from the HL7-D profile `ConsentManagement/Consent`; category slices
+  renamed/added (`loinc` → `consentCategory`; new `resultType` (required
+  binding) and `templateType` (extensible binding)); the `category 0..*`
+  cardinality declared in the develop differential is void against the parent
+  profile (1..*) and is inherited as 1..* (upstream finding). Existing
+  instances without a resultType category no longer validate.
+* **Fixed** — examples: category system switched to the defined CodeSystem
+  `mii-cs-consent-version-modules` (they previously referenced the nowhere-
+  defined `mii-cs-consent-consent_category`).
+* **Changed** — Policy CodeSystem: ~19 display corrections (ACRIBIS, PROM and
+  SNID labels); Version-Modules CodeSystem: new concept `…24.2.4055`
+  "Version 1.7.2 Vertretende". Parent package pin raised to
+  `de.einwilligungsmanagement` 2.0.3 (develop/rc line).
+
 #### Version 2027.0.0-ballot.rc1
 
 Date 31.08.2026

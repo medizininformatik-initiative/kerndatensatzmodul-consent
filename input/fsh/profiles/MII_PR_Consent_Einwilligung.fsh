@@ -1,12 +1,11 @@
 Profile: MII_PR_Consent_Einwilligung
-Parent: Consent
+Parent: ConsentManagementConsent
 Id: e0e166b4-0f77-478d-9062-de0034d98ce0
 Title: "Profile - MI-I - Consent - Einwilligung"
 Description: "Dieses Profil beschreibt eine Einwilligung in der Medizininformatik-Initiative."
 * ^url = "https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-einwilligung"
 * ^version = "2027.0.0-ballot.rc1"
-* ^status = #active
-* ^date = "2025-12-03"
+* ^date = "2026-08-21"
 * id MS
 * meta MS
 * meta.source MS
@@ -14,12 +13,12 @@ Description: "Dieses Profil beschreibt eine Einwilligung in der Medizininformati
 * extension ^slicing.discriminator.type = #value
 * extension ^slicing.discriminator.path = "url"
 * extension ^slicing.rules = #open
-* extension contains ConsentManagementDomainReference named domainReference 0..* MS
+* extension[domainReference] only ConsentManagementDomainReference
+* extension[domainReference] MS
 * extension[domainReference].extension ^slicing.discriminator.type = #value
 * extension[domainReference].extension ^slicing.discriminator.path = "url"
 * extension[domainReference].extension ^slicing.rules = #open
-* extension[domainReference].extension[domain] ^sliceName = "domain"
-* extension[domainReference].extension[domain] ^mustSupport = true
+* extension[domainReference].extension[domain] MS
 * status MS N
 * status ^extension[1].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version"
 * status ^extension[=].valueCode = #4.0.0
@@ -29,21 +28,30 @@ Description: "Dieses Profil beschreibt eine Einwilligung in der Medizininformati
 * scope.coding.system = "http://terminology.hl7.org/CodeSystem/consentscope" (exactly)
 * scope.coding.code 1..
 * scope.coding.code = #research (exactly)
-* category ..* MS
+* category MS
 * category ^slicing.discriminator.type = #pattern
 * category ^slicing.discriminator.path = "$this"
 * category ^slicing.rules = #open
-* category contains
-    loinc 1..1 MS and
-    mii 1..1 MS
-* category[loinc] = $loinc#57016-8
-* category[loinc].coding 1..1 MS
-* category[loinc].coding.system 1.. MS
-* category[loinc].coding.code 1.. MS
+* category[consentCategory] 1..1 MS
+* category[consentCategory] = $loinc#57016-8
+* category[consentCategory].coding 1..1 MS
+* category[consentCategory].coding.system 1.. MS
+* category[consentCategory].coding.code 1.. MS
+* category contains mii 1..1 MS
 * category[mii] = MIIConsentVersionModuleCodeSystem#2.16.840.1.113883.3.1937.777.24.2.184
 * category[mii].coding 1..1 MS
 * category[mii].coding.system 1.. MS
 * category[mii].coding.code 1.. MS
+* category[resultType] MS
+* category[resultType] from ConsentManagementResultType (required)
+* category[resultType].coding 1.. MS
+* category[resultType].coding.system 1.. MS
+* category[resultType].coding.code 1.. MS
+* category[templateType] MS
+* category[templateType] from ConsentManagementTemplateType (extensible)
+* category[templateType].coding 1.. MS
+* category[templateType].coding.system 1.. MS
+* category[templateType].coding.code 1.. MS
 * patient 1.. MS
 * patient only Reference(ConsentManagementPatient)
 * patient.reference MS N
@@ -74,7 +82,8 @@ Description: "Dieses Profil beschreibt eine Einwilligung in der Medizininformati
 * policyRule.extension ^slicing.discriminator.type = #value
 * policyRule.extension ^slicing.discriminator.path = "url"
 * policyRule.extension ^slicing.rules = #open
-* policyRule.extension contains ConsentManagementXacml named xacml 0..1 MS
+* policyRule.extension[xacml] ..1 MS
+* policyRule.extension[xacml] only ConsentManagementXacml
 * provision MS
 * provision.type 1.. MS
 * provision.period 1.. MS

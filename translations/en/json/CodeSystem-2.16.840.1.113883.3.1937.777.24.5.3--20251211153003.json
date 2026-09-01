@@ -378,61 +378,61 @@
     {
       "id" : "CodeSystem.concept.display",
       "context" : "CodeSystem.concept.display",
-      "source" : "Z2 Patientendaten erheben, nutzen, Kontaktierung im acribis-Projekt",
+      "source" : "Z2 PATDAT erheben nutzen kontakt (ACRIBIS)",
       "target" : null
     },
     {
       "id" : "CodeSystem.concept.display",
       "context" : "CodeSystem.concept.display",
-      "source" : "PATDAT erheben, nutzen, Kontaktierung im acribis-Projekt",
+      "source" : "PATDAT erheben nutzen kontakt (ACRIBIS)",
       "target" : null
     },
     {
       "id" : "CodeSystem.concept.display",
       "context" : "CodeSystem.concept.display",
-      "source" : "Z2 IDAT Melderegister abfragen, speichern, verarbeiten im acribis-Projekt",
+      "source" : "Z2 IDAT Melderegister abfragen speichern verarbeiten (ACRIBIS)",
       "target" : null
     },
     {
       "id" : "CodeSystem.concept.display",
       "context" : "CodeSystem.concept.display",
-      "source" : "Anschrift und Vitalstatus Melderegister abfragen, speichern, verarbeiten im acribis-Projekt",
+      "source" : "IDAT Melderegister abfragen speichern verarbeiten (ACRIBIS)",
       "target" : null
     },
     {
       "id" : "CodeSystem.concept.display",
       "context" : "CodeSystem.concept.display",
-      "source" : "Z2 MDAT Hausarzt erheben, speichern, verarbeiten, nutzen im acribis-Projekt",
+      "source" : "Z2 MDAT Hausarzt erheben speichern verarbeiten nutzen (ACRIBIS)",
       "target" : null
     },
     {
       "id" : "CodeSystem.concept.display",
       "context" : "CodeSystem.concept.display",
-      "source" : "MDAT Hausarzt erheben, speichern, verarbeiten, nutzen im acribis-Projekt",
+      "source" : "MDAT Hausarzt erheben speichern verarbeiten nutzen (ACRIBIS)",
       "target" : null
     },
     {
       "id" : "CodeSystem.concept.display",
       "context" : "CodeSystem.concept.display",
-      "source" : "Z3 PROMDAT Patientenbefragung",
+      "source" : "Z3 PROMDAT Patientenbefragung (PROM)",
       "target" : null
     },
     {
       "id" : "CodeSystem.concept.display",
       "context" : "CodeSystem.concept.display",
-      "source" : "PROMDAT Patientenbefragung erheben",
+      "source" : "PROMDAT Patientenbefragung erheben (PROM)",
       "target" : null
     },
     {
       "id" : "CodeSystem.concept.display",
       "context" : "CodeSystem.concept.display",
-      "source" : "PROMDAT wissenschaftlich nutzen",
+      "source" : "PROMDAT wissenschaftlich nutzen (PROM)",
       "target" : null
     },
     {
       "id" : "CodeSystem.concept.display",
       "context" : "CodeSystem.concept.display",
-      "source" : "Rekontaktierung PROM Studien",
+      "source" : "Rekontaktierung PROM Studien (PROM)",
       "target" : null
     },
     {
@@ -444,7 +444,7 @@
     {
       "id" : "CodeSystem.concept.display",
       "context" : "CodeSystem.concept.display",
-      "source" : "IDAT speichern, verabeiten (SNID)",
+      "source" : "IDAT speichern, verarbeiten (SNID)",
       "target" : null
     },
     {
@@ -486,7 +486,7 @@
     {
       "id" : "CodeSystem.concept.display",
       "context" : "CodeSystem.concept.display",
-      "source" : "BIOMAT Eigentum übertragen_NUM (SNID)",
+      "source" : "BIOMAT Eigentum übertragen NUM (SNID)",
       "target" : null
     },
     {
@@ -588,19 +588,19 @@
     {
       "id" : "CodeSystem.concept.display",
       "context" : "CodeSystem.concept.display",
-      "source" : "MDAT SNID bereitstellen Dritte",
+      "source" : "MDAT SNID bereitstellen Dritte (SNID)",
       "target" : null
     },
     {
       "id" : "CodeSystem.concept.display",
       "context" : "CodeSystem.concept.display",
-      "source" : "BIOMAT SNID bereitstellen Dritte",
+      "source" : "BIOMAT SNID bereitstellen Dritte (SNID)",
       "target" : null
     },
     {
       "id" : "CodeSystem.concept.display",
       "context" : "CodeSystem.concept.display",
-      "source" : "Z4 Rekontaktierung Patient (SNID)",
+      "source" : "Z4 Rekontaktierung Patient NU (SNID)",
       "target" : null
     },
     {
@@ -612,19 +612,19 @@
     {
       "id" : "CodeSystem.concept.display",
       "context" : "CodeSystem.concept.display",
-      "source" : "Z4_Rekontaktierung_FU",
+      "source" : "Z4 Rekontaktierung Patient weitere Studien (SNID)",
       "target" : null
     },
     {
       "id" : "CodeSystem.concept.display",
       "context" : "CodeSystem.concept.display",
-      "source" : "Rekontaktierung weitere Studien (SNID)",
+      "source" : "Rekontaktierung Patient weitere Studien (SNID)",
       "target" : null
     },
     {
       "id" : "CodeSystem.concept.display",
       "context" : "CodeSystem.concept.display",
-      "source" : "IDAT SNID bereitstellen OE",
+      "source" : "IDAT SNID bereitstellen OE (SNID)",
       "target" : null
     },
     {

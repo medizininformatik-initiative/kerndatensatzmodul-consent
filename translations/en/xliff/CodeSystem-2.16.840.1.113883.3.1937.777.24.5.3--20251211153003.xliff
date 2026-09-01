@@ -441,70 +441,70 @@
              <notes>
                <note id="n1">CodeSystem.concept.display</note>
              </notes>
-        <source>Z2 Patientendaten erheben, nutzen, Kontaktierung im acribis-Projekt</source>
+        <source>Z2 PATDAT erheben nutzen kontakt (ACRIBIS)</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
              <notes>
                <note id="n1">CodeSystem.concept.display</note>
              </notes>
-        <source>PATDAT erheben, nutzen, Kontaktierung im acribis-Projekt</source>
+        <source>PATDAT erheben nutzen kontakt (ACRIBIS)</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
              <notes>
                <note id="n1">CodeSystem.concept.display</note>
              </notes>
-        <source>Z2 IDAT Melderegister abfragen, speichern, verarbeiten im acribis-Projekt</source>
+        <source>Z2 IDAT Melderegister abfragen speichern verarbeiten (ACRIBIS)</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
              <notes>
                <note id="n1">CodeSystem.concept.display</note>
              </notes>
-        <source>Anschrift und Vitalstatus Melderegister abfragen, speichern, verarbeiten im acribis-Projekt</source>
+        <source>IDAT Melderegister abfragen speichern verarbeiten (ACRIBIS)</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
              <notes>
                <note id="n1">CodeSystem.concept.display</note>
              </notes>
-        <source>Z2 MDAT Hausarzt erheben, speichern, verarbeiten, nutzen im acribis-Projekt</source>
+        <source>Z2 MDAT Hausarzt erheben speichern verarbeiten nutzen (ACRIBIS)</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
              <notes>
                <note id="n1">CodeSystem.concept.display</note>
              </notes>
-        <source>MDAT Hausarzt erheben, speichern, verarbeiten, nutzen im acribis-Projekt</source>
+        <source>MDAT Hausarzt erheben speichern verarbeiten nutzen (ACRIBIS)</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
              <notes>
                <note id="n1">CodeSystem.concept.display</note>
              </notes>
-        <source>Z3 PROMDAT Patientenbefragung</source>
+        <source>Z3 PROMDAT Patientenbefragung (PROM)</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
              <notes>
                <note id="n1">CodeSystem.concept.display</note>
              </notes>
-        <source>PROMDAT Patientenbefragung erheben</source>
+        <source>PROMDAT Patientenbefragung erheben (PROM)</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
              <notes>
                <note id="n1">CodeSystem.concept.display</note>
              </notes>
-        <source>PROMDAT wissenschaftlich nutzen</source>
+        <source>PROMDAT wissenschaftlich nutzen (PROM)</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
              <notes>
                <note id="n1">CodeSystem.concept.display</note>
              </notes>
-        <source>Rekontaktierung PROM Studien</source>
+        <source>Rekontaktierung PROM Studien (PROM)</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
@@ -518,7 +518,7 @@
              <notes>
                <note id="n1">CodeSystem.concept.display</note>
              </notes>
-        <source>IDAT speichern, verabeiten (SNID)</source>
+        <source>IDAT speichern, verarbeiten (SNID)</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
@@ -567,7 +567,7 @@
              <notes>
                <note id="n1">CodeSystem.concept.display</note>
              </notes>
-        <source>BIOMAT Eigentum übertragen_NUM (SNID)</source>
+        <source>BIOMAT Eigentum übertragen NUM (SNID)</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
@@ -686,21 +686,21 @@
              <notes>
                <note id="n1">CodeSystem.concept.display</note>
              </notes>
-        <source>MDAT SNID bereitstellen Dritte</source>
+        <source>MDAT SNID bereitstellen Dritte (SNID)</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
              <notes>
                <note id="n1">CodeSystem.concept.display</note>
              </notes>
-        <source>BIOMAT SNID bereitstellen Dritte</source>
+        <source>BIOMAT SNID bereitstellen Dritte (SNID)</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
              <notes>
                <note id="n1">CodeSystem.concept.display</note>
              </notes>
-        <source>Z4 Rekontaktierung Patient (SNID)</source>
+        <source>Z4 Rekontaktierung Patient NU (SNID)</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
@@ -714,21 +714,21 @@
              <notes>
                <note id="n1">CodeSystem.concept.display</note>
              </notes>
-        <source>Z4_Rekontaktierung_FU</source>
+        <source>Z4 Rekontaktierung Patient weitere Studien (SNID)</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
              <notes>
                <note id="n1">CodeSystem.concept.display</note>
              </notes>
-        <source>Rekontaktierung weitere Studien (SNID)</source>
+        <source>Rekontaktierung Patient weitere Studien (SNID)</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
              <notes>
                <note id="n1">CodeSystem.concept.display</note>
              </notes>
-        <source>IDAT SNID bereitstellen OE</source>
+        <source>IDAT SNID bereitstellen OE (SNID)</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">

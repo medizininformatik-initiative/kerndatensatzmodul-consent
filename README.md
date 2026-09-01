@@ -9,7 +9,7 @@
 > [FGDH-Sandbox](https://github.com/forschungsgruppe-digital-health/mii-kds-consent-ig-inoffiziell).
 
 Migration des **KDS Modul Consent** (Quelle: Release 2026.0.0, Tag `2026.0.0`
-= `792f9f3e`) auf das
+= `792f9f3e`, plus inkorporiertes develop-Delta bis `744f7ba`) auf das
 [mii-kds-module-template](https://github.com/medizininformatik-initiative/mii-kds-module-template)
 **v0.13.2**, durchgeführt mit dem Skill `mii-ig-migration` v0.25.0
 ([agent-skills](https://github.com/forschungsgruppe-digital-health/agent-skills)).
@@ -19,7 +19,7 @@ Identitäts-Ledger, Harvest-Manifest, QA-Baseline, Migrationsbericht).
 | Koordinate | Wert |
 | --- | --- |
 | Canonical | `https://www.medizininformatik-initiative.de/fhir/modul-consent` |
-| Package | `de.medizininformatikinitiative.kerndatensatz.consent` 2027.0.0-ballot.rc1 (Ballot-Kandidat; inhaltlich = Release 2026.0.0) |
+| Package | `de.medizininformatikinitiative.kerndatensatz.consent` 2027.0.0-ballot.rc1 (Ballot-Kandidat; Inhalt = Release 2026.0.0 + develop-Delta bis `744f7ba`) |
 | FHIR | R4 (4.0.1) |
 | Quell-IG (Simplifier, gepinnt) | [MII IG Modul Consent 2026.0.0](https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent?version=2026.0.0) |
 | Sprache | **DE-first**: Deutsch = Standardsprache, Englisch = Übersetzung unter `input/translations/en/` (Entscheidung D-3) |

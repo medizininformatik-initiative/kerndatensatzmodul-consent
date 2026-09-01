@@ -2,11 +2,11 @@
 <StructureDefinition xmlns="http://hl7.org/fhir">
   <id value="e0e166b4-0f77-478d-9062-de0034d98ce0" />
   <url value="https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-einwilligung" />
-  <version value="1.0.9" />
+  <version value="1.1.0" />
   <name value="MII_PR_Consent_Einwilligung" />
   <title value="Profile - MI-I - Consent - Einwilligung" />
   <status value="active" />
-  <date value="2025-12-03" />
+  <date value="2026-08-21" />
   <description value="Dieses Profil beschreibt eine Einwilligung in der Medizininformatik-Initiative." />
   <fhirVersion value="4.0.1" />
   <mapping>
@@ -32,7 +32,7 @@
   <kind value="resource" />
   <abstract value="false" />
   <type value="Consent" />
-  <baseDefinition value="http://hl7.org/fhir/StructureDefinition/Consent" />
+  <baseDefinition value="http://fhir.de/ConsentManagement/StructureDefinition/Consent" />
   <derivation value="constraint" />
   <differential>
     <element id="Consent.id">
@@ -123,11 +123,11 @@
         </discriminator>
         <rules value="open" />
       </slicing>
-      <min value="2" />
+      <min value="0" />
       <max value="*" />
       <mustSupport value="true" />
     </element>
-    <element id="Consent.category:loinc">
+    <element id="Consent.category:consentCategory">
       <path value="Consent.category" />
       <sliceName value="loinc" />
       <min value="1" />
@@ -140,18 +140,18 @@
       </patternCodeableConcept>
       <mustSupport value="true" />
     </element>
-    <element id="Consent.category:loinc.coding">
+    <element id="Consent.category:consentCategory.coding">
       <path value="Consent.category.coding" />
       <min value="1" />
       <max value="1" />
       <mustSupport value="true" />
     </element>
-    <element id="Consent.category:loinc.coding.system">
+    <element id="Consent.category:consentCategory.coding.system">
       <path value="Consent.category.coding.system" />
       <min value="1" />
       <mustSupport value="true" />
     </element>
-    <element id="Consent.category:loinc.coding.code">
+    <element id="Consent.category:consentCategory.coding.code">
       <path value="Consent.category.coding.code" />
       <min value="1" />
       <mustSupport value="true" />
@@ -181,6 +181,50 @@
       <mustSupport value="true" />
     </element>
     <element id="Consent.category:mii.coding.code">
+      <path value="Consent.category.coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Consent.category:resultType">
+      <path value="Consent.category" />
+      <sliceName value="resultType" />
+      <mustSupport value="true" />
+      <binding>    <strength value="required" />
+        <valueSet value="http://fhir.de/ConsentManagement/ValueSet/ResultType" />
+      </binding></element>
+    <element id="Consent.category:resultType.coding">
+      <path value="Consent.category.coding" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Consent.category:resultType.coding.system">
+      <path value="Consent.category.coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Consent.category:resultType.coding.code">
+      <path value="Consent.category.coding.code" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Consent.category:templateType">
+      <path value="Consent.category" />
+      <sliceName value="templateType" />
+      <mustSupport value="true" />
+      <binding>    <strength value="extensible" />
+        <valueSet value="http://fhir.de/ConsentManagement/ValueSet/TemplateType" />
+      </binding></element>
+    <element id="Consent.category:templateType.coding">
+      <path value="Consent.category.coding" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Consent.category:templateType.coding.system">
+      <path value="Consent.category.coding.system" />
+      <min value="1" />
+      <mustSupport value="true" />
+    </element>
+    <element id="Consent.category:templateType.coding.code">
       <path value="Consent.category.coding.code" />
       <min value="1" />
       <mustSupport value="true" />
@@ -387,3 +431,4 @@
     </element>
   </differential>
 </StructureDefinition>
+
