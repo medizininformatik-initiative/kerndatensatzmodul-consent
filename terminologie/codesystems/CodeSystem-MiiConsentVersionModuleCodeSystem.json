@@ -128,6 +128,10 @@
         },
         {
           "code": "child",
+          "valueCode": "2.16.840.1.113883.3.1937.777.24.2.4055"
+        },
+        {
+          "code": "child",
           "valueCode": "2.16.840.1.113883.3.1937.777.24.2.2722"
         },
         {
@@ -361,6 +365,31 @@
             "display": "Fully specified name"
           },
           "value": "Version 1.7.2 Ablehnung"
+        }
+      ],
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "draft"
+        },
+        {
+          "code": "parent",
+          "valueCode": "2.16.840.1.113883.3.1937.777.24.2.184"
+        }
+      ]
+    },
+    {
+      "code": "2.16.840.1.113883.3.1937.777.24.2.4055",
+      "display": "Version 1.7.2 Vertretende",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000003001",
+            "display": "Fully specified name"
+          },
+          "value": "Version 1.7.2 Vertretende"
         }
       ],
       "property": [
