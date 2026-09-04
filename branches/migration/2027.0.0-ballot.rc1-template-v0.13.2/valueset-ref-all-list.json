@@ -320,9 +320,9 @@
     "sources" : ["2.16.840.1.113883.4.642.3.20"],
     "uses" : {
     },
-    "StructureDefinition-56375452-bfa1-4111-af7c-5b5ba9a1857c.html" : "Profile - MI-I - Consent - DocumentReference",
+    "StructureDefinition-e0e166b4-0f77-478d-9062-de0034d98ce0.html" : "Profile - MI-I - Consent - Einwilligung",
     "StructureDefinition-f675b1e8-9f3f-44e8-bb59-9681f78eb464.html" : "Profile - MI-I - Consent - Provenance",
-    "StructureDefinition-e0e166b4-0f77-478d-9062-de0034d98ce0.html" : "Profile - MI-I - Consent - Einwilligung"
+    "StructureDefinition-56375452-bfa1-4111-af7c-5b5ba9a1857c.html" : "Profile - MI-I - Consent - DocumentReference"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/mimetypes",
@@ -336,8 +336,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.1024"],
     "uses" : {
     },
-    "StructureDefinition-56375452-bfa1-4111-af7c-5b5ba9a1857c.html" : "Profile - MI-I - Consent - DocumentReference",
-    "StructureDefinition-f675b1e8-9f3f-44e8-bb59-9681f78eb464.html" : "Profile - MI-I - Consent - Provenance"
+    "StructureDefinition-f675b1e8-9f3f-44e8-bb59-9681f78eb464.html" : "Profile - MI-I - Consent - Provenance",
+    "StructureDefinition-56375452-bfa1-4111-af7c-5b5ba9a1857c.html" : "Profile - MI-I - Consent - DocumentReference"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/provenance-activity-type",
@@ -410,9 +410,9 @@
     "sources" : ["2.16.840.1.113883.4.642.3.27"],
     "uses" : {
     },
-    "StructureDefinition-56375452-bfa1-4111-af7c-5b5ba9a1857c.html" : "Profile - MI-I - Consent - DocumentReference",
+    "StructureDefinition-e0e166b4-0f77-478d-9062-de0034d98ce0.html" : "Profile - MI-I - Consent - Einwilligung",
     "StructureDefinition-f675b1e8-9f3f-44e8-bb59-9681f78eb464.html" : "Profile - MI-I - Consent - Provenance",
-    "StructureDefinition-e0e166b4-0f77-478d-9062-de0034d98ce0.html" : "Profile - MI-I - Consent - Einwilligung"
+    "StructureDefinition-56375452-bfa1-4111-af7c-5b5ba9a1857c.html" : "Profile - MI-I - Consent - DocumentReference"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/security-labels",
@@ -430,8 +430,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.47"],
     "uses" : {
     },
-    "StructureDefinition-56375452-bfa1-4111-af7c-5b5ba9a1857c.html" : "Profile - MI-I - Consent - DocumentReference",
-    "StructureDefinition-e0e166b4-0f77-478d-9062-de0034d98ce0.html" : "Profile - MI-I - Consent - Einwilligung"
+    "StructureDefinition-e0e166b4-0f77-478d-9062-de0034d98ce0.html" : "Profile - MI-I - Consent - Einwilligung",
+    "StructureDefinition-56375452-bfa1-4111-af7c-5b5ba9a1857c.html" : "Profile - MI-I - Consent - DocumentReference"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/security-role-type",
@@ -451,8 +451,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.978"],
     "uses" : {
     },
-    "StructureDefinition-f675b1e8-9f3f-44e8-bb59-9681f78eb464.html" : "Profile - MI-I - Consent - Provenance",
-    "StructureDefinition-e0e166b4-0f77-478d-9062-de0034d98ce0.html" : "Profile - MI-I - Consent - Einwilligung"
+    "StructureDefinition-e0e166b4-0f77-478d-9062-de0034d98ce0.html" : "Profile - MI-I - Consent - Einwilligung",
+    "StructureDefinition-f675b1e8-9f3f-44e8-bb59-9681f78eb464.html" : "Profile - MI-I - Consent - Provenance"
   },
   {
     "url" : "http://terminology.hl7.org/ValueSet/v3-ActCode",
@@ -478,8 +478,8 @@
     "sources" : ["2.16.840.1.113883.1.11.20448"],
     "uses" : {
     },
-    "StructureDefinition-f675b1e8-9f3f-44e8-bb59-9681f78eb464.html" : "Profile - MI-I - Consent - Provenance",
-    "StructureDefinition-e0e166b4-0f77-478d-9062-de0034d98ce0.html" : "Profile - MI-I - Consent - Einwilligung"
+    "StructureDefinition-e0e166b4-0f77-478d-9062-de0034d98ce0.html" : "Profile - MI-I - Consent - Einwilligung",
+    "StructureDefinition-f675b1e8-9f3f-44e8-bb59-9681f78eb464.html" : "Profile - MI-I - Consent - Provenance"
   },
   {
     "url" : "https://www.medizininformatik-initiative.de/fhir/modul-consent/ValueSet/mii-vs-consent-answer",
