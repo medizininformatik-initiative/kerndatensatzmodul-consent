@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="2.16.840.1.113883.3.1937.777.24.11.30--20210323234509"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+  </meta>
+  <text>
+    <status value="generated"/><div xmlns="http://www.w3.org/1999/xhtml"><div xml:lang="de" lang="de"><hr/><p><b>German</b></p><hr/><p class="res-header-id"><b>Generated Narrative: ValueSet 2.16.840.1.113883.3.1937.777.24.11.30--20210323234509</b></p><a name="2.16.840.1.113883.3.1937.777.24.11.30--20210323234509"> </a><a name="hc2.16.840.1.113883.3.1937.777.24.11.30--20210323234509"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablevalueset.html">Shareable ValueSet</a></p></div><ul><li>Include all codes defined in <a href="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.2--20210423105554.html"><code>urn:oid:2.16.840.1.113883.3.1937.777.24.5.2</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;2027.0.0-ballot.rc1</span></li></ul></div><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: ValueSet 2.16.840.1.113883.3.1937.777.24.11.30--20210323234509</b></p><a name="en-2.16.840.1.113883.3.1937.777.24.11.30--20210323234509"> </a><a name="en-hc2.16.840.1.113883.3.1937.777.24.11.30--20210323234509"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablevalueset.html">Shareable ValueSet</a></p></div><ul><li>Include all codes defined in <a href="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.2--20210423105554.html"><code>urn:oid:2.16.840.1.113883.3.1937.777.24.5.2</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;2027.0.0-ballot.rc1</span></li></ul></div></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
+    <valuePeriod>
+      <start value="2021-03-23T23:45:09+01:00"/>
+    </valuePeriod>
+  </extension>
+  <url value="https://www.medizininformatik-initiative.de/fhir/modul-consent/ValueSet/mii-vs-consent-answer"/>
+  <identifier>
+    <use value="official"/>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113883.3.1937.777.24.11.30"/>
+  </identifier>
+  <version value="2027.0.0-ballot.rc1"/>
+  <name value="MII_VS_Consent_Answer"/>
+  <title value="MII Consent: Answer ValueSet"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-09-04T14:07:38+00:00"/>
+  <publisher value="NUM-DIZ">
+    <extension url="http://hl7.org/fhir/StructureDefinition/translation">
+      <extension url="lang">
+        <valueCode value="en"/>
+      </extension>
+      <extension url="content">
+        <valueString value="NUM-DIZ"/>
+      </extension>
+    </extension>
+  </publisher>
+  <contact>
+    <name value="NUM-DIZ"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.netzwerk-universitaetsmedizin.de"/>
+    </telecom>
+  </contact>
+  <description value="This ValueSet contains the possible answers to the questions of the MII Consent."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DE"/>
+      <display value="Germany"/>
+    </coding>
+  </jurisdiction>
+  <immutable value="false"/>
+  <compose>
+    <include>
+      <system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.2"/>
+    </include>
+  </compose>
+</ValueSet>
