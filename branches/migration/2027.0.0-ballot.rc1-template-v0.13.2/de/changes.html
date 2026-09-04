@@ -389,6 +389,35 @@ werden können.</p>
      Historische Abschnitte behalten das Format der Quelle (keine nachträgliche
      Keep-a-Changelog-Umgruppierung veröffentlichter Einträge). -->
 
+<h4 id="frische-migration-auf-das-offizielle-release-202700-ballotrc1-2026-09-04">Frische Migration auf das offizielle Release 2027.0.0-ballot.rc1 (2026-09-04)</h4>
+
+<p>Datum 04.09.2026</p>
+
+<ul>
+  <li><strong>Geändert</strong> — Inhaltsbasis dieses Branches ist jetzt das <strong>offizielle Release
+<a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-consent/releases/tag/2027.0.0-ballot.rc1">2027.0.0-ballot.rc1</a></strong>
+(Tag <code class="language-plaintext highlighter-rouge">508a666</code>, veröffentlicht 03.09.2026; Repo-Baum byte-identisch mit dem
+zuvor inkorporierten develop-Stand <code class="language-plaintext highlighter-rouge">744f7ba</code> — die inhaltlichen Aussagen des
+develop-Abschnitts unten gelten unverändert). Vollständige Re-Derivation aller
+Ressourcen aus dem Release-Paket (goFSH; Nachweis:
+<code class="language-plaintext highlighter-rouge">migration-log/rederivation-diff-release-2027.txt</code>) und Delta-Übernahme des
+Leitfadens in Version 2027.0.0-ballot.rc1 (18/18 Seiten; u. a. neu
+strukturierte Policy-Erläuterungen auf der CodeSystem-Seite).</li>
+  <li><strong>Geändert</strong> — Eltern-Paket-Pin auf <code class="language-plaintext highlighter-rouge">de.einwilligungsmanagement</code>
+<strong>2.0.4-rc1</strong> (Pin des Release-Pakets). Das Eltern-Profil hat sein eigenes
+<code class="language-plaintext highlighter-rouge">Consent.category</code>-Slicing in 2.0.4 entfernt; dieses Profil deklariert die
+vier Slices (consentCategory/mii/resultType/templateType) jetzt selbst —
+Validierungssemantik unverändert.</li>
+  <li><strong>Behoben</strong> — die in der 2026er-Migration mit dem "Darstellung"-Abschnitt
+entfallenen "Unterschiede zum Basis-Profil"-Tabellen der Provenance- und
+DocumentReference-Seiten sind in den Profil-Einleitungen ergänzt.</li>
+  <li>Bewusste, protokollierte Abweichungen vom ausgelieferten Release-Paket
+(Details: <code class="language-plaintext highlighter-rouge">migration-log/run.log</code>, Eintrag 5.2): harmonisierte
+Artefakt-Versionen, kanonische SearchParameter-IDs (das Paket liefert keine),
+korrigierte Beispiel-Displays und CodeSystem-Zählungen, <code class="language-plaintext highlighter-rouge">publisher</code>-Metadaten
+sowie das im Paket fehlende Version-Modules-CodeSystem.</li>
+</ul>
+
 <h4 id="develop-inkorporation-stand-744f7ba-2026-08-21--teil-von-202700-ballotrc1">develop-Inkorporation (Stand 744f7ba, 2026-08-21) — Teil von 2027.0.0-ballot.rc1</h4>
 
 <p>Datum 01.09.2026</p>
@@ -423,6 +452,40 @@ Beispiele unverändert; Nachweis: <code class="language-plaintext highlighter-ro
 Artefakt-Versionen auf die Paketversion 2027.0.0-ballot.rc1 harmonisiert
 (zuvor je Artefakt abweichend, z. B. 1.0.9/1.6.0/1.1.0).</li>
 </ul>
+
+<!-- Upstream-Release-Notes zur Version 2027.0.0-ballot.rc1, wortgetreu aus der
+     Quelle (https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/Release-Notes?version=2027.0.0-ballot.rc1,
+     Harvest 2026-09-04). Beschreibt dieselben inhaltlichen Änderungen wie der
+     Abschnitt "develop-Inkorporation" oben, aus Upstream-Sicht mit
+     Issue-Nummern; Überschrift zur Unterscheidung vom Migrations-Abschnitt
+     gleicher Version ergänzt um "(Release Notes der Quelle)". -->
+
+<h4 id="version-202700-ballotrc1-release-notes-der-quelle">Version 2027.0.0-ballot.rc1 (Release Notes der Quelle)</h4>
+
+<p>Datum 03.09.2026</p>
+
+<ul>
+  <li>
+    <p>Policies SNID korrigiert #121</p>
+  </li>
+  <li>
+    <p>Policy Labels ACRIBIS korrigiert #129</p>
+  </li>
+  <li>
+    <p>MIIConsentVersionModuleCodeSystem: BC Varianten für Vertretende hinzugefügt #127</p>
+  </li>
+  <li>
+    <p>Validierungs- und Abhängigkeits-Probleme ( <code class="language-plaintext highlighter-rouge">consent.category</code> Slices) behoben #124, #119</p>
+  </li>
+  <li>
+    <p>CodeSystem in Beispielen korrigiert #113</p>
+  </li>
+  <li>
+    <p>sprachliche Verbesserung zur Beschreibung der Level #112</p>
+  </li>
+</ul>
+
+<p><strong>Full Changelog</strong>: <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-consent/compare/2026.0.0...2027.0.0-ballot.rc1">https://github.com/medizininformatik-initiative/kerndatensatzmodul-consent/compare/2026.0.0…2027.0.0-ballot.rc1</a></p>
 
 <h4 id="version-202600">Version 2026.0.0</h4>
 
@@ -536,7 +599,7 @@ Artefakt-Versionen auf die Paketversion 2027.0.0-ballot.rc1 harmonisiert
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.netzwerk-universitaetsmedizin.de">NUM-DIZ</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.consent#2027.0.0-ballot.rc1 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Tue, Sep 1, 2026 09:07+0000">2026-09-01</span>
+          Erstellt <span title="Fri, Sep 4, 2026 10:28+0000">2026-09-04</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

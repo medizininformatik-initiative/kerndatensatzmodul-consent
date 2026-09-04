@@ -44,8 +44,8 @@ Um die Austauschbarkeit der operationalisierten Einwilligungsinhalte auch über 
 | Consent.identifier | Enthält eine oder mehrere externe IDs der Einwilligung eines externen Systems. Dies kann z.B. die IHE-ID des CDA Dokumentes sein oder die ID des Dokuments in einer externen Treuhandstelle. Der identifier sollte immer als Wertepaar "system" und "value" angegeben werden. Die Angabe ist optional. |
 | Consent.scope.coding.system | Fixed value:`http://terminology.hl7.org/CodeSystem/consentscope` |
 | Consent.scope.coding.code | Abbildung der MII Einwilligung legt Kontext klar auf Forschung. Fixed value:`research` |
-| Consent.category.coding | Must-support. Verpflichtende Angabe von**mindestens zwei Categories**mit je min. einem Coding für die Consent-Kategorien, um die Suche nach Einwilligungen vom Typ "MII Einwilligung" zu ermöglichen:**(1) gemäß [https://www.hl7.org/fhir/valueset-consent-category.html](https://www.hl7.org/fhir/valueset-consent-category.html) :**Fixed System:`http://loinc.org`Fixed Code für 'Privacy policy acknowledgement Document':`57016-8`**(2) Identifikation MII Broad Consent**:Fixed Code:`2.16.840.1.113883.3.1937.777.24.2.184`Weitere zusätzliche Angaben werden nicht verhindert. |
-| Consent.category:templateType.coding | ResultType gemäß[ResultType](https://ig.fhir.de/einwilligungsmanagement/stable/ResultType.html). Es sollten mindestens`document`und`consent-status`unterstützt werden. Wenn als ResultType`document`angegeben ist, muss die Art des (Quell-)Dokuments im Slice templateType ebenfalls angegeben werden. |
+| Consent.category | Must-support. Verpflichtende Angabe von**mindestens zwei Categories**mit je min. einem Coding für die Consent-Kategorien, um die Suche nach Einwilligungen vom Typ "MII Einwilligung" zu ermöglichen:**(1) gemäß [https://www.hl7.org/fhir/valueset-consent-category.html](https://www.hl7.org/fhir/valueset-consent-category.html) :**Fixed System:`http://loinc.org`Fixed Code für 'Privacy policy acknowledgement Document':`57016-8`**(2) Identifikation MII Broad Consent**:Fixed Code:`2.16.840.1.113883.3.1937.777.24.2.184`Weitere zusätzliche Angaben werden nicht verhindert. |
+| Consent.category:resultType.coding | ResultType gemäß[ResultType](https://ig.fhir.de/einwilligungsmanagement/stable/ResultType.html). Es sollten mindestens`document`und`consent-status`unterstützt werden. Wenn als ResultType`document`angegeben ist, muss die Art des (Quell-)Dokuments im Slice templateType ebenfalls angegeben werden. |
 | Consent.category:templateType.coding | Kategorisierung gemäß[TemplateType](https://ig.fhir.de/einwilligungsmanagement/stable/TemplateType.html). Dient als informelles Element der Differenzierung zwischen Einwilligung, Widerruf, Widerspruch und Ablehnung. |
 | Consent.patient.reference | Verweis zum Patienten, auf den sich die Consent Ressource bezieht in der Form Literal reference, Relative reference, Internal reference oder als absolute URL, Must-support.`Consent.patient.reference`sollte ausgefüllt werden, wenn möglich, d.h. wenn eine entsprechende Patienten Ressource vorhanden ist. Ist dies nicht der Fall, muss der Patientenbezug über`Consent.patient.identifier`hergestellt werden. |
 | Consent.patient.identifier | Angabe des Personenbezugs in Form eines Identifiers, Must-support.Siehe`Consent.patient.reference`. Der Bezug zum Patienten sollte möglichst über`Consent.patient.reference`hergestellt werden.`Consent.patient.identifier`kann alternativ bzw. ergänzend verwendet werden. |
@@ -53,7 +53,7 @@ Um die Austauschbarkeit der operationalisierten Einwilligungsinhalte auch über 
 | Consent.patient.identifier.value | Wird der Personenbezug per Identifier angegeben, ist die Value-Angabe per String verpflichtend, Must-support |
 | Consent.policy.uri | Verweis auf die Version des der Consent-Ressource zugrundeliegende MII Broad Consent Dokument-Version gemäß untenstehender Übersicht,z.B.**MII Broad Consent Version 1.7.2**`urn:oid:2.16.840.1.113883.3.1937.777.24.2.2079`oder**MII Broad Consent Version 1.7.2 inkl. Zusatzmodul Acribis**`urn:oid:2.16.840.1.113883.3.1937.777.24.2.4031`, Must-support |
 
-> **Written during migration - review before release.** Die obenstehende Tabelle beschreibt den Stand des Release 2026.0.0. Mit der Inkorporation des `develop`-Standes (744f7ba, 2026-08-21) gelten drei Änderungen: (1) das Profil leitet jetzt vom HL7-D-Profil `ConsentManagement/Consent` ab; (2) die Category-Slices heißen `consentCategory` (LOINC 57016-8), `mii` (Version-Modules-CodeSystem), `resultType` (required) und `templateType` (extensible); (3) die Beispiele verwenden für die MII-Kategorie das CodeSystem `mii-cs-consent-version-modules`. Die Zeilen zu `Consent.category.coding` ("mindestens zwei Categories") sind entsprechend überholt.
+> **Written during migration - review before release.** Die obenstehende Tabelle beschreibt den Stand des Release 2026.0.0. Mit der Inkorporation des `develop`-Standes (744f7ba, 2026-08-21) gelten drei Änderungen: (1) das Profil leitet jetzt vom HL7-D-Profil `ConsentManagement/Consent` ab; (2) die Category-Slices heißen `consentCategory` (LOINC 57016-8), `mii` (Version-Modules-CodeSystem), `resultType` (required) und `templateType` (extensible); (3) die Beispiele verwenden für die MII-Kategorie das CodeSystem `mii-cs-consent-version-modules`. Die Zeilen zu `Consent.category` ("mindestens zwei Categories") sind entsprechend überholt.
 
 #### Eindeutige Identifikation des MII-Broad Consent
 
@@ -148,7 +148,7 @@ You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir
 
 #### Constraints
 
-Diese Struktur ist abgeleitet von [ConsentManagementConsent](https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.3-snapshots&canonical=http://fhir.de/ConsentManagement/StructureDefinition/Consent) 
+Diese Struktur ist abgeleitet von [ConsentManagementConsent](https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.4-rc1-snapshots&canonical=http://fhir.de/ConsentManagement/StructureDefinition/Consent) 
 
 #### Terminology Bindings (Differential)
 
@@ -156,14 +156,20 @@ Diese Struktur ist abgeleitet von [ConsentManagementConsent](https://simplifier.
 
 #### Constraints
 
-Diese Struktur ist abgeleitet von [ConsentManagementConsent](https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.3-snapshots&canonical=http://fhir.de/ConsentManagement/StructureDefinition/Consent) 
+Diese Struktur ist abgeleitet von [ConsentManagementConsent](https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.4-rc1-snapshots&canonical=http://fhir.de/ConsentManagement/StructureDefinition/Consent) 
 
 ** Summary **
 
-Mandatory: 8 elements(12 nested mandatory elements)
- Must-Support: 24 elements
+Mandatory: 12 elements(18 nested mandatory elements)
+ Must-Support: 36 elements
  Fixed: 2 elements
  Prohibited: 4 elements
+
+**Slices**
+
+This structure defines the following [Slices](http://hl7.org/fhir/R4/profiling.html#slices):
+
+* The element 1 is sliced based on the value of Consent.category
 
  **Schlüsselelemente-Ansicht** 
 
@@ -173,7 +179,7 @@ Mandatory: 8 elements(12 nested mandatory elements)
 
  **Differential-Ansicht** 
 
-Diese Struktur ist abgeleitet von [ConsentManagementConsent](https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.3-snapshots&canonical=http://fhir.de/ConsentManagement/StructureDefinition/Consent) 
+Diese Struktur ist abgeleitet von [ConsentManagementConsent](https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.4-rc1-snapshots&canonical=http://fhir.de/ConsentManagement/StructureDefinition/Consent) 
 
 #### Terminology Bindings (Differential)
 
@@ -183,14 +189,20 @@ Diese Struktur ist abgeleitet von [ConsentManagementConsent](https://simplifier.
 
 #### Constraints
 
-Diese Struktur ist abgeleitet von [ConsentManagementConsent](https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.3-snapshots&canonical=http://fhir.de/ConsentManagement/StructureDefinition/Consent) 
+Diese Struktur ist abgeleitet von [ConsentManagementConsent](https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.4-rc1-snapshots&canonical=http://fhir.de/ConsentManagement/StructureDefinition/Consent) 
 
 ** Summary **
 
-Mandatory: 8 elements(12 nested mandatory elements)
- Must-Support: 24 elements
+Mandatory: 12 elements(18 nested mandatory elements)
+ Must-Support: 36 elements
  Fixed: 2 elements
  Prohibited: 4 elements
+
+**Slices**
+
+This structure defines the following [Slices](http://hl7.org/fhir/R4/profiling.html#slices):
+
+* The element 1 is sliced based on the value of Consent.category
 
  
 
@@ -318,24 +330,47 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-e0e166b4-0f7
     {
       "id" : "Consent.category",
       "path" : "Consent.category",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "pattern",
+          "path" : "$this"
+        }],
+        "rules" : "open"
+      },
       "min" : 2
     },
     {
       "id" : "Consent.category:consentCategory",
       "path" : "Consent.category",
       "sliceName" : "consentCategory",
+      "min" : 1,
       "max" : "1",
       "patternCodeableConcept" : {
         "coding" : [{
           "system" : "http://loinc.org",
           "code" : "57016-8"
         }]
-      }
+      },
+      "mustSupport" : true
     },
     {
       "id" : "Consent.category:consentCategory.coding",
       "path" : "Consent.category.coding",
-      "max" : "1"
+      "min" : 1,
+      "max" : "1",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Consent.category:consentCategory.coding.system",
+      "path" : "Consent.category.coding.system",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Consent.category:consentCategory.coding.code",
+      "path" : "Consent.category.coding.code",
+      "min" : 1,
+      "mustSupport" : true
     },
     {
       "id" : "Consent.category:mii",
@@ -366,6 +401,66 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-e0e166b4-0f7
     },
     {
       "id" : "Consent.category:mii.coding.code",
+      "path" : "Consent.category.coding.code",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Consent.category:resultType",
+      "path" : "Consent.category",
+      "sliceName" : "resultType",
+      "min" : 0,
+      "max" : "*",
+      "mustSupport" : true,
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "http://fhir.de/ConsentManagement/ValueSet/ResultType"
+      }
+    },
+    {
+      "id" : "Consent.category:resultType.coding",
+      "path" : "Consent.category.coding",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Consent.category:resultType.coding.system",
+      "path" : "Consent.category.coding.system",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Consent.category:resultType.coding.code",
+      "path" : "Consent.category.coding.code",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Consent.category:templateType",
+      "path" : "Consent.category",
+      "sliceName" : "templateType",
+      "min" : 0,
+      "max" : "*",
+      "mustSupport" : true,
+      "binding" : {
+        "strength" : "extensible",
+        "valueSet" : "http://fhir.de/ConsentManagement/ValueSet/TemplateType"
+      }
+    },
+    {
+      "id" : "Consent.category:templateType.coding",
+      "path" : "Consent.category.coding",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Consent.category:templateType.coding.system",
+      "path" : "Consent.category.coding.system",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Consent.category:templateType.coding.code",
       "path" : "Consent.category.coding.code",
       "min" : 1,
       "mustSupport" : true

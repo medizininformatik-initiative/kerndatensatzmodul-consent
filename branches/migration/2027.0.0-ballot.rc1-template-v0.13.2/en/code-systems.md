@@ -21,13 +21,64 @@ Answer codes (`urn:oid:2.16.840.1.113883.3.1937.777.24.5.2`): see the artifact p
 
 ### MII CS Consent Policy
 
-**Note**: The concept of **nested provision elements** in the MII context works with two levels. The superordinate provision element, the level 1 provision, represents a question in the consent and specifies via Provision.Type=DENY (out-in model) that everything is prohibited unless it is explicitly permitted in the form of subordinate provision elements, the level 2 provisions. This means that to interpret whether permission exists for a specific use (collect, store, use) of specific data (IDAT, MADT, BIOMAT, …), the elements of the level 2 provisions must be evaluated.
+#### Consent resource and provision levels
 
-Partial withdrawals can likewise cause changes to the level 2 provisions. For example, collection can be prohibited while storage and use remain unaffected ("MDAT erheben"="deny", but "MDAT wissenschaftlich nutzen EU DSGVO NIVEAU"="permit").
+The **Consent resource** allows a refinement of `consent.provision`, in that `consent.provision` can itself again contain a `provision`. In this IG, this refinement in Consent resources is restricted to 2 levels. Level 1 (`consent.provision`) is set to DENY in accordance with the opt-out model (`consent.provision.type=DENY`). This specifies that initially EVERYTHING is prohibited (per the opt-in approach). Level 2 of the Consent resource, `consent.provision.provision`, is the refinement of the level 1 provisions and can now add permissions in a targeted way. For **level 2 provisions** within the Consent resource, the **policies** from the following CodeSystem **MII CS Consent Policy** are used.
 
-**Caution: Only policy codes are intended for use in level 2 provisions. (See the table below, column Lvl with value 2)**
+Example:
 
-Policies with the status "deprecated/inactive" shall no longer be added to newly created Consent resources in the future. These policies should also no longer be evaluated in the future (enforcement).
+```
+<provision> <!-- Level 1 Provision steht auf 'deny' -->
+  <type value="deny" />
+  <period>
+    <start value="2020-09-01" />
+    <end value="2050-08-31" />
+  </period>
+  <provision> <!-- Level 2 Provision steht auf 'permit' -->
+    <type value="permit" />
+    <period>
+      <start value="2020-09-01" />
+      <end value="2025-08-31" />
+    </period>
+    <code>
+      <coding>
+        <system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3" />
+        <code value="2.16.840.1.113883.3.1937.777.24.5.3.6" />
+        <display value="MDAT_erheben" />
+      </coding>
+    </code>
+  </provision>
+</provision>
+
+```
+
+#### Policy CodeSystem and its level entries ("Lvl") for modules and policies
+
+As can be seen in the following **table**, the **CodeSystem **MII CS Consent Policy**** is likewise structured in 2 levels: **CodeSystem level 1** (Lvl=1) represents the **modules** and thus the questions in the Broad Consent.
+
+Example:
+
+| | | | | | |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| 1 | Modul | PATDAT erheben, speichern, nutzen | 2.16.840.1.113883.3.1937.777.24.5.3.1 |   |   |
+
+**CodeSystem level 2** (Lvl=2) represents the semantic policies of the MII Broad Consent. Policies allow a fine-grained differentiation of permissions within a module.
+
+Example:
+
+| | | | | | |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| 2 | Policy | MDAT wissenschaftlich nutzen | 2.16.840.1.113883.3.1937.777.24.5.3.8 | 30 |   |
+
+**In the Consent resource, only the policy entries (Lvl=2) may be used in `consent.provision.provision` (level 2 provisions)**!
+
+#### Notes on use in withdrawals and partial withdrawals
+
+To implement withdrawals or partial withdrawals, the corresponding policies must be set to DENY by means of the level 2 provisions (`consent.provision.provision`). For example, collection (.6) can be prohibited while storage and use (.8) remain unaffected ("MDAT erheben"="DENY", but "MDAT wissenschaftlich nutzen"="PERMIT").
+
+#### Notes on policies with _status "deprecated/inactive"
+
+Policies that have the status "deprecated/inactive" in the following table shall no longer be added to newly created Consent resources in the future. These policies should also no longer be evaluated in the future (enforcement).
 
 This code system `urn:oid:2.16.840.1.113883.3.1937.777.24.5.3` contains the following codes:
 

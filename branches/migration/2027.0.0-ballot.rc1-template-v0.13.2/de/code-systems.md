@@ -21,13 +21,64 @@ Antwort-Codes (`urn:oid:2.16.840.1.113883.3.1937.777.24.5.2`): siehe die Artefak
 
 ### MII CS Consent Policy
 
-**Hinweis**: Das Konzept der **Verschachtelte Provision-Elemente** im MII-Kontext arbeite mit zwei Level. Das übergeordnete Provision-Element, die Level1-Provision, repräsentiert eine Frage in der Einwilligung und legt über den Provision.Type=DENY (Out-In-Modell) fest, dass alles verboten ist, außer es ist in Form von untergeordneten Provision-Elementen, die Level2-Provision, explizit erlaubt. D.h. für die Interpretation, ob ein Erlaubnis für eine bestimmte Nutzung (erheben, speichern, nutzen) von spetifischen Daten (IDAT, MADT, BIOMAT, …) vorliegt, müssen die Elemete der Level2-Provisions ausgewertet werden.
+#### Consent-Ressource und Provision-Level
 
-Teilwiderrufe können ebenfalls auf den Level2-Provisions Änderungen hervor rufen. Z.B. kann die Erhebung untersagt werden, aber die Speicherung und Nutzung kann davon unbetroffen bleiben ("MDAT erheben"="deny", aber "MDAT wissenschaftlich nutzen EU DSGVO NIVEAU"="permit").
+Die **Consent-Ressource** erlaubt eine Verfeinerung von `consent.provision`, in dem `consent.provision` selbst erneut ein `provision` enthalten kann. In diesem IG ist diese Verfeinerung in Consent-Ressourcen auf 2 Level (Ebenen) beschränkt. Dabei ist Level 1 (`consent.provision`) entspr. des Opt-Out Modells auf DENY gesetzt (`consent.provision.type=DENY`). Dies legt fest, dass zunächst ALLES verboten ist (gemäß Opt-In-Ansatz). Level 2 der Consent-Resource `consent.provision.provision` die Verfeinerung der Level 1 Provisions und kann nun gezielt Erlaubnisse hinzufügen. Für **Level 2 - Provisions** innerhalb der Consent-Ressource werden die **Policies** aus dem nachfolgenden CodeSystem **MII CS Consent Policy** genutzt.
 
-**Achtung: Für die Nutzung in Level2-Provisions sind ausschließlich Policy-Codes vorgesehen. (Siehe nachstehende Tabelle, Spalte Lvl mit Wert 2)**
+Beispiel:
 
-Policies, die den Status "deprecated/inactive" haben, sollen zukünftig nicht mehr neu erzeugten Consent-Ressourcen hinzugefügt werden. Diese Policies sollten zukünftig auch nicht mehr ausgewertet werden (Enforcement).
+```
+<provision> <!-- Level 1 Provision steht auf 'deny' -->
+  <type value="deny" />
+  <period>
+    <start value="2020-09-01" />
+    <end value="2050-08-31" />
+  </period>
+  <provision> <!-- Level 2 Provision steht auf 'permit' -->
+    <type value="permit" />
+    <period>
+      <start value="2020-09-01" />
+      <end value="2025-08-31" />
+    </period>
+    <code>
+      <coding>
+        <system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3" />
+        <code value="2.16.840.1.113883.3.1937.777.24.5.3.6" />
+        <display value="MDAT_erheben" />
+      </coding>
+    </code>
+  </provision>
+</provision>
+
+```
+
+#### Policy-Codesystem und dortige Level-Angaben ("Lvl") für Module und Policies
+
+Wie in der nachfolgenden **Tabelle** zu erkennen, ist das **CodeSystem **MII CS Consent Policy**** ebenfalls in 2 Level strukturiert: **CodeSystem Level 1** (Lvl=1) bildet die **Module** und somit die Fragen im Broad Consent ab.
+
+Beispiel:
+
+| | | | | | |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| 1 | Modul | PATDAT erheben, speichern, nutzen | 2.16.840.1.113883.3.1937.777.24.5.3.1 |   |   |
+
+**CodeSystem-Level 2** (Lvl=2) bildet die semantischen Policies des MII Broad Consent ab. Policies erlauben eine feingranulare Unterscheidung von Erlaubnissen innerhalb eines Moduls.
+
+Beispiel:
+
+| | | | | | |
+| :--- | :--- | :--- | :--- | :--- | :--- |
+| 2 | Policy | MDAT wissenschaftlich nutzen | 2.16.840.1.113883.3.1937.777.24.5.3.8 | 30 |   |
+
+**In der Consent-Ressource dürfen in `consent.provision.provision` (Level 2 Provisions) nur die Policy-Angaben (Lvl=2) verwendet werden**!
+
+#### Hinweise zur Verwendung in Widerrufen und Teilwiderrufen
+
+Um Widerrufe oder Teilwiderrufe umzusetzen, müssen die entspr. Policies mittels der Level-2 Provisions (`consent.provision.provision`) auf DENY gesetzt werden. Z.B. kann die Erhebung (.6) untersagt werden, aber die Speicherung und Nutzung (.8) kann davon unbetroffen bleiben ("MDAT erheben"="DENY", aber "MDAT wissenschaftlich nutzen"="PERMIT").
+
+#### Hinweise zu Policies mit _Status "deprecated/inactive"
+
+Policies, die den Status "deprecated/inactive" in der nachfolgenden Tabelle haben, sollen zukünftig nicht mehr neu erzeugten Consent-Ressourcen hinzugefügt werden. Diese Policies sollten zukünftig auch nicht mehr ausgewertet werden (Enforcement).
 
 Dieses Code System `urn:oid:2.16.840.1.113883.3.1937.777.24.5.3` enthält die folgenden Codes:
 

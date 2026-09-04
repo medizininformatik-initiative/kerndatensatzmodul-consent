@@ -19,7 +19,7 @@ Profile: [Profile - MI-I - Consent - Einwilligung](StructureDefinition-e0e166b4-
 ## Participants
 
 * **Role**: Patient
-  * **Details**: [Patient/9b4a702d-162c-428a-8c5d-8b98af21b693](https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.3-snapshots&canonical=http://fhir.org/packages/de.einwilligungsmanagement/Patient/9b4a702d-162c-428a-8c5d-8b98af21b693)
+  * **Details**: [Anonymous Patient (no stated gender), DoB Unknown ( Anonymous identifier: MII-CONSENT-TESTPSN-0001)](Patient-9b4a702d-162c-428a-8c5d-8b98af21b693.md)
 * **Role**: Manager
   * **Details**: Klinikum Musterstadt
 

@@ -139,8 +139,7 @@ This material contains content that is copyright of SNOMED International. Implem
               <li>
                 <a href="http://hl7.org/fhir/R4/codesystem-snomedct.html">SNOMED Clinical Terms&amp;reg; (SNOMED CT&amp;reg;)</a>
 :                 <a href="CodeSystem-mii-cs-consent-version-modules.html">MIIConsentVersionModuleCodeSystem</a>
-,                 <a href="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.2--20210423105554.html">MII_CS_Consent_Answer</a>
- and                 <a href="ValueSet-2.16.840.1.113883.3.1937.777.24.11.30--20210323234509.html">MII_VS_Consent_Answer</a>
+ and                 <a href="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.2--20210423105554.html">MII_CS_Consent_Answer</a>
               </li>
 
 
@@ -172,6 +171,14 @@ This material derives from the HL7 Terminology (THO). THO is copyright &copy;198
 :                 <a href="Provenance-55219d12-6245-4de4-8b50-ddf6f16a789b.html">Provenance/55219d12-6245-4de4-8b50-ddf6f16a789b</a>
               </li>
 
+              <li>
+                <a href="http://terminology.hl7.org/7.3.0/CodeSystem-v2-0203.html">identifierType</a>
+:                 <a href="Patient-531cef77-2a30-4283-944d-affaf9ae234e.html">Patient/531cef77-2a30-4283-944d-affaf9ae234e</a>
+,                 <a href="Patient-9b4a702d-162c-428a-8c5d-8b98af21b693.html">Patient/9b4a702d-162c-428a-8c5d-8b98af21b693</a>
+,                 <a href="ResearchStudy-c946ae17-e3e6-4178-b5ea-15f95aaeeeb4.html">ResearchStudy/c946ae17-e3e6-4178-b5ea-15f95aaeeeb4</a>
+ and                 <a href="ResearchStudy-d7a65ce8-2810-401a-b0db-70782a7b19a6.html">ResearchStudy/d7a65ce8-2810-401a-b0db-70782a7b19a6</a>
+              </li>
+
 
             </ul>
 
@@ -193,7 +200,7 @@ This material derives from the HL7 Terminology (THO). THO is copyright &copy;198
 
           IG &copy; 2019+ NUM-DIZ.  
           Package de.medizininformatikinitiative.kerndatensatz.consent#2027.0.0-ballot.rc1 based on FHIR 4.0.1.
-          Generated 2026-09-01
+          Generated 2026-09-04
           
           
             
@@ -219,7 +226,7 @@ This material derives from the HL7 Terminology (THO). THO is copyright &copy;198
 
           IG &copy; 2019+ NUM-DIZ.  
           Package de.medizininformatikinitiative.kerndatensatz.consent#2027.0.0-ballot.rc1 basiert auf FHIR 4.0.1.
-          Erstellt 2026-09-01
+          Erstellt 2026-09-04
           
           
             
@@ -297,6 +304,8 @@ This material derives from the HL7 Terminology (THO). THO is copyright &copy;198
 * Consent Scope Codes: Consent/34150a23-b1c8-404f-874f-e042a30435d2, Consent/5143266b-8d60-4b28-8ee9-635140ffa5bb, Consent/89f494a3-cd75-44f5-a78a-581dfdd47a94 and Consent/Example-MII-Consent-ResultType-document
 
 * Provenance participant type: Provenance/55219d12-6245-4de4-8b50-ddf6f16a789b
+
+* identifierType: Patient/531cef77-2a30-4283-944d-affaf9ae234e, Patient/9b4a702d-162c-428a-8c5d-8b98af21b693, ResearchStudy/c946ae17-e3e6-4178-b5ea-15f95aaeeeb4 and ResearchStudy/d7a65ce8-2810-401a-b0db-70782a7b19a6
 
 
 
@@ -448,7 +457,7 @@ Konformität<b class="caret"> </b>          </a>
 .  
           Package de.medizininformatikinitiative.kerndatensatz.consent#2027.0.0-ballot.rc1 basiert auf           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
 .
-          Erstellt           <span title="Tue, Sep 1, 2026 09:07+0000">2026-09-01</span>
+          Erstellt           <span title="Fri, Sep 4, 2026 10:28+0000">2026-09-04</span>
 
                     <br/>
 
@@ -790,6 +799,18 @@ Basierend auf den           <a href="https://ig.fhir.de/einwilligungsmanagement/
       </tr>
       <tr>
         <td>
+          <a href="de/StructureDefinition-56375452-bfa1-4111-af7c-5b5ba9a1857c.html">web</a>
+        </td>
+        <td>
+          <a href="https://ig.fhir.de/einwilligungsmanagement/stable/DocumentReference.html">ig.fhir.de</a>
+        </td>
+        <td>
+Nachfolgend werden nur die Unterschiede zum           <a href="https://ig.fhir.de/einwilligungsmanagement/stable/DocumentReference.html">Basis-Profil</a>
+ erläutert.
+        </td>
+      </tr>
+      <tr>
+        <td>
           <a href="de/StructureDefinition-e0e166b4-0f77-478d-9062-de0034d98ce0.html">web</a>
         </td>
         <td>
@@ -931,6 +952,18 @@ Basierend auf den           <a href="https://ig.fhir.de/einwilligungsmanagement/
       </tr>
       <tr>
         <td>
+          <a href="de/StructureDefinition-f675b1e8-9f3f-44e8-bb59-9681f78eb464.html">web</a>
+        </td>
+        <td>
+          <a href="https://ig.fhir.de/einwilligungsmanagement/stable/Provenance.html">ig.fhir.de</a>
+        </td>
+        <td>
+Nachfolgend werden nur die Unterschiede zum           <a href="https://ig.fhir.de/einwilligungsmanagement/stable/Provenance.html">Basis-Profil</a>
+ erläutert.
+        </td>
+      </tr>
+      <tr>
+        <td>
           <a href="de/ValueSet-2.16.840.1.113883.3.1937.777.24.11.36--20230331232804.html">web</a>
         </td>
         <td>
@@ -965,6 +998,18 @@ beschreibt.
           <a href="de/changes.html">web</a>
         </td>
         <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-consent/releases/tag/2027.0.0-ballot.rc1">github.com</a>
+        </td>
+        <td>
+offizielle Release
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-consent/releases/tag/2027.0.0-ballot.rc1">2027.0.0-ballot.rc1</a>
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="de/changes.html">web</a>
+        </td>
+        <td>
           <a href="https://github.com/medizininformatik-initiative/mii-kds-module-template">github.com</a>
         </td>
         <td>
@@ -979,6 +1024,18 @@ Beispiele unverändert; Nachweis:           <code class="language-plaintext high
  auf diesem Branch). Alle
 Artefakt-Versionen auf die Paketversion 2027.0.0-ballot.rc1 harmonisiert
 (zuvor je Artefakt abweichend, z. B. 1.0.9/1.6.0/1.1.0).
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="de/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-consent/compare/2026.0.0...2027.0.0-ballot.rc1">github.com</a>
+        </td>
+        <td>
+          <strong>Full Changelog</strong>
+:           <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-consent/compare/2026.0.0...2027.0.0-ballot.rc1">https://github.com/medizininformatik-initiative/kerndatensatzmodul-consent/compare/2026.0.0…2027.0.0-ballot.rc1</a>
         </td>
       </tr>
       <tr>
@@ -1933,7 +1990,7 @@ Conformance<b class="caret"> </b>          </a>
 .  
           Package de.medizininformatikinitiative.kerndatensatz.consent#2027.0.0-ballot.rc1 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
 .
-          Generated           <span title="Tue, Sep 1, 2026 09:07+0000">2026-09-01</span>
+          Generated           <span title="Fri, Sep 4, 2026 10:28+0000">2026-09-04</span>
 
                     <br/>
 
@@ -2228,6 +2285,18 @@ Based on the           <a href="https://ig.fhir.de/einwilligungsmanagement/stabl
       </tr>
       <tr>
         <td>
+          <a href="en/StructureDefinition-56375452-bfa1-4111-af7c-5b5ba9a1857c.html">web</a>
+        </td>
+        <td>
+          <a href="https://ig.fhir.de/einwilligungsmanagement/stable/DocumentReference.html">ig.fhir.de</a>
+        </td>
+        <td>
+Only the differences to the           <a href="https://ig.fhir.de/einwilligungsmanagement/stable/DocumentReference.html">base profile</a>
+ are explained below.
+        </td>
+      </tr>
+      <tr>
+        <td>
           <a href="en/StructureDefinition-e0e166b4-0f77-478d-9062-de0034d98ce0.html">web</a>
         </td>
         <td>
@@ -2369,6 +2438,18 @@ Based on the           <a href="https://ig.fhir.de/einwilligungsmanagement/stabl
       </tr>
       <tr>
         <td>
+          <a href="en/StructureDefinition-f675b1e8-9f3f-44e8-bb59-9681f78eb464.html">web</a>
+        </td>
+        <td>
+          <a href="https://ig.fhir.de/einwilligungsmanagement/stable/Provenance.html">ig.fhir.de</a>
+        </td>
+        <td>
+Only the differences to the           <a href="https://ig.fhir.de/einwilligungsmanagement/stable/Provenance.html">base profile</a>
+ are explained below.
+        </td>
+      </tr>
+      <tr>
+        <td>
           <a href="en/changes.html">web</a>
         </td>
         <td>
@@ -2383,6 +2464,18 @@ This page records the changes between the published versions of the
 KDS CalVer scheme described on the
           <a href="version-history.html">Versioning</a>
  page.
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <a href="en/changes.html">web</a>
+        </td>
+        <td>
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-consent/releases/tag/2027.0.0-ballot.rc1">github.com</a>
+        </td>
+        <td>
+official release
+          <a href="https://github.com/medizininformatik-initiative/kerndatensatzmodul-consent/releases/tag/2027.0.0-ballot.rc1">2027.0.0-ballot.rc1</a>
         </td>
       </tr>
       <tr>

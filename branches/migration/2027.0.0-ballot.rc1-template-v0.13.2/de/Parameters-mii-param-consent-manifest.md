@@ -123,7 +123,7 @@
   },
   {
     "name" : "default-canonical-version",
-    "valueCanonical" : "http://fhir.de/ConsentManagement/StructureDefinition/Consent|2.0.3"
+    "valueCanonical" : "http://fhir.de/ConsentManagement/StructureDefinition/Consent|2.0.4"
   },
   {
     "name" : "default-canonical-version",

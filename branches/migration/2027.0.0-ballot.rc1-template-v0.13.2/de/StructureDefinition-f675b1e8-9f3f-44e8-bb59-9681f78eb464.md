@@ -16,6 +16,13 @@ Dieses Profil beschreibt Herkunftsinformationen zu Einwilligungen in der Medizin
 
 Basierend auf den [Empfehlungen](https://ig.fhir.de/einwilligungsmanagement/stable/Provenance.html) der AG Einwilligungsmanagement, beschreibt das Profile **MIIConsentProvenance** die Herkunfsinformationen eines Einwilligungsdokuments.
 
+**Nachfolgend werden nur die Unterschiede zum [Basis-Profil](https://ig.fhir.de/einwilligungsmanagement/stable/Provenance.html) erläutert.**
+
+| | |
+| :--- | :--- |
+| Provenance.entity.what | Soll ein Dokumenten-Scan angehangen werden, muss die referenzierte Resource vom Profiltyp[DocumentReference](StructureDefinition-56375452-bfa1-4111-af7c-5b5ba9a1857c.md)sein, Must-support |
+| Provenance.entity.signature.type | Soll eine base64-codierte Unterschrift angehangen werden, muss die Art der Unterschrift gemäß[MII_VS_Consent_SignatureTypes](ValueSet-88464c5b-5338-4c2b-9c07-b42fef2ada64.md)erfolgen, Must-support |
+
 **Usages:**
 
 * Examples for this Profile: [Provenance/55219d12-6245-4de4-8b50-ddf6f16a789b](Provenance-55219d12-6245-4de4-8b50-ddf6f16a789b.md)
@@ -37,7 +44,7 @@ You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir
 
 #### Constraints
 
-Diese Struktur ist abgeleitet von [ConsentManagementProvenance](https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.3-snapshots&canonical=http://fhir.de/ConsentManagement/StructureDefinition/Provenance) 
+Diese Struktur ist abgeleitet von [ConsentManagementProvenance](https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.4-rc1-snapshots&canonical=http://fhir.de/ConsentManagement/StructureDefinition/Provenance) 
 
 #### Terminology Bindings (Differential)
 
@@ -45,7 +52,7 @@ Diese Struktur ist abgeleitet von [ConsentManagementProvenance](https://simplifi
 
 #### Constraints
 
-Diese Struktur ist abgeleitet von [ConsentManagementProvenance](https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.3-snapshots&canonical=http://fhir.de/ConsentManagement/StructureDefinition/Provenance) 
+Diese Struktur ist abgeleitet von [ConsentManagementProvenance](https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.4-rc1-snapshots&canonical=http://fhir.de/ConsentManagement/StructureDefinition/Provenance) 
 
 ** Summary **
 
@@ -63,7 +70,7 @@ This structure refers to these other structures:
 
  **Differential-Ansicht** 
 
-Diese Struktur ist abgeleitet von [ConsentManagementProvenance](https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.3-snapshots&canonical=http://fhir.de/ConsentManagement/StructureDefinition/Provenance) 
+Diese Struktur ist abgeleitet von [ConsentManagementProvenance](https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.4-rc1-snapshots&canonical=http://fhir.de/ConsentManagement/StructureDefinition/Provenance) 
 
 #### Terminology Bindings (Differential)
 
@@ -73,7 +80,7 @@ Diese Struktur ist abgeleitet von [ConsentManagementProvenance](https://simplifi
 
 #### Constraints
 
-Diese Struktur ist abgeleitet von [ConsentManagementProvenance](https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.3-snapshots&canonical=http://fhir.de/ConsentManagement/StructureDefinition/Provenance) 
+Diese Struktur ist abgeleitet von [ConsentManagementProvenance](https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.4-rc1-snapshots&canonical=http://fhir.de/ConsentManagement/StructureDefinition/Provenance) 
 
 ** Summary **
 

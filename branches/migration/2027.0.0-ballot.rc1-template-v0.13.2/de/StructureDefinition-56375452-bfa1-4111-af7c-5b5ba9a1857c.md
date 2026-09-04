@@ -18,6 +18,12 @@ Basierend auf den [Empfehlungen](https://ig.fhir.de/einwilligungsmanagement/stab
 
 Jedoch beschränkt auf Scans von Einwilligungsdokumenten im PDF-Format.
 
+**Nachfolgend werden nur die Unterschiede zum [Basis-Profil](https://ig.fhir.de/einwilligungsmanagement/stable/DocumentReference.html) erläutert.**
+
+| | |
+| :--- | :--- |
+| DocumentReference.content.attachment.contentType | Fixed value 'application/pdf', Must-support |
+
 **Usages:**
 
 * Refer to this Profile: [Profile - MI-I - Consent - Provenance](StructureDefinition-f675b1e8-9f3f-44e8-bb59-9681f78eb464.md)
@@ -40,13 +46,13 @@ You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir
 
 #### Constraints
 
-Diese Struktur ist abgeleitet von [ConsentManagementDocumentReference](https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.3-snapshots&canonical=http://fhir.de/ConsentManagement/StructureDefinition/DocumentReference) 
+Diese Struktur ist abgeleitet von [ConsentManagementDocumentReference](https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.4-rc1-snapshots&canonical=http://fhir.de/ConsentManagement/StructureDefinition/DocumentReference) 
 
 #### Terminology Bindings
 
 #### Constraints
 
-Diese Struktur ist abgeleitet von [ConsentManagementDocumentReference](https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.3-snapshots&canonical=http://fhir.de/ConsentManagement/StructureDefinition/DocumentReference) 
+Diese Struktur ist abgeleitet von [ConsentManagementDocumentReference](https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.4-rc1-snapshots&canonical=http://fhir.de/ConsentManagement/StructureDefinition/DocumentReference) 
 
 ** Summary **
 
@@ -58,7 +64,7 @@ Diese Struktur ist abgeleitet von [ConsentManagementDocumentReference](https://s
 
  **Differential-Ansicht** 
 
-Diese Struktur ist abgeleitet von [ConsentManagementDocumentReference](https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.3-snapshots&canonical=http://fhir.de/ConsentManagement/StructureDefinition/DocumentReference) 
+Diese Struktur ist abgeleitet von [ConsentManagementDocumentReference](https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.4-rc1-snapshots&canonical=http://fhir.de/ConsentManagement/StructureDefinition/DocumentReference) 
 
  **Snapshot-AnsichtView** 
 
@@ -66,7 +72,7 @@ Diese Struktur ist abgeleitet von [ConsentManagementDocumentReference](https://s
 
 #### Constraints
 
-Diese Struktur ist abgeleitet von [ConsentManagementDocumentReference](https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.3-snapshots&canonical=http://fhir.de/ConsentManagement/StructureDefinition/DocumentReference) 
+Diese Struktur ist abgeleitet von [ConsentManagementDocumentReference](https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.4-rc1-snapshots&canonical=http://fhir.de/ConsentManagement/StructureDefinition/DocumentReference) 
 
 ** Summary **
 

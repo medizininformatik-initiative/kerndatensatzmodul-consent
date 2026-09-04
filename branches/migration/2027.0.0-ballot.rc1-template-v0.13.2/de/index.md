@@ -14,9 +14,9 @@ Die vorliegende Spezifikation beschreibt die FHIR-Repräsentation des Kerndatens
 
 | | |
 | :--- | :--- |
-| Datum | 31.08.2026 |
+| Datum | 03.09.2026 |
 | Version | 2027.0.0-ballot.rc1 |
-| Status | active |
+| Status | draft |
 | Realm | DE |
 
 ### Beschreibung Modul Consent

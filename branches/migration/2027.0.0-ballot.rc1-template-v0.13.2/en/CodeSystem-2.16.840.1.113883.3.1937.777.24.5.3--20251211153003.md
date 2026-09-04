@@ -108,7 +108,7 @@ This Code system is referenced in the definition of the following value sets:
     },
     {
       "code" : "2.16.840.1.113883.3.1937.777.24.5.3.5",
-      "display" : "IDAT bereitstellen ",
+      "display" : "IDAT bereitstellen",
       "property" : [{
         "code" : "period-of-validity",
         "valueString" : "P30Y"

@@ -44,8 +44,8 @@ To ensure the exchangeability of the operationalized consent contents beyond FHI
 | Consent.identifier | Contains one or more external IDs of the consent from an external system. This can be, for example, the IHE ID of the CDA document or the ID of the document in an external trusted third party. The identifier should always be given as a value pair of "system" and "value". This information is optional. |
 | Consent.scope.coding.system | Fixed value:`http://terminology.hl7.org/CodeSystem/consentscope` |
 | Consent.scope.coding.code | The representation of the MII consent clearly places the context on research. Fixed value:`research` |
-| Consent.category.coding | Must-support. Mandatory specification of**at least two categories**with at least one coding each for the consent categories, to enable searching for consents of type "MII consent":**(1) per [https://www.hl7.org/fhir/valueset-consent-category.html](https://www.hl7.org/fhir/valueset-consent-category.html) :**Fixed system:`http://loinc.org`Fixed code for 'Privacy policy acknowledgement Document':`57016-8`**(2) identification of the MII Broad Consent**:Fixed code:`2.16.840.1.113883.3.1937.777.24.2.184`Further additional entries are not prevented. |
-| Consent.category:templateType.coding | ResultType per[ResultType](https://ig.fhir.de/einwilligungsmanagement/stable/ResultType.html). At least`document`and`consent-status`should be supported. If`document`is given as the ResultType, the kind of (source) document must also be given in the templateType slice. |
+| Consent.category | Must-support. Mandatory specification of**at least two categories**with at least one coding each for the consent categories, to enable searching for consents of type "MII consent":**(1) per [https://www.hl7.org/fhir/valueset-consent-category.html](https://www.hl7.org/fhir/valueset-consent-category.html) :**Fixed system:`http://loinc.org`Fixed code for 'Privacy policy acknowledgement Document':`57016-8`**(2) identification of the MII Broad Consent**:Fixed code:`2.16.840.1.113883.3.1937.777.24.2.184`Further additional entries are not prevented. |
+| Consent.category:resultType.coding | ResultType per[ResultType](https://ig.fhir.de/einwilligungsmanagement/stable/ResultType.html). At least`document`and`consent-status`should be supported. If`document`is given as the ResultType, the kind of (source) document must also be given in the templateType slice. |
 | Consent.category:templateType.coding | Categorization per[TemplateType](https://ig.fhir.de/einwilligungsmanagement/stable/TemplateType.html). Serves as an informal element for differentiating between consent, withdrawal, objection and refusal. |
 | Consent.patient.reference | Reference to the patient the Consent resource relates to, in the form of a literal reference, relative reference, internal reference or an absolute URL, must-support.`Consent.patient.reference`should be filled where possible, i.e. when a corresponding Patient resource exists. If this is not the case, the patient relationship must be established via`Consent.patient.identifier`. |
 | Consent.patient.identifier | Specification of the person relationship in the form of an identifier, must-support.See`Consent.patient.reference`. The relationship to the patient should preferably be established via`Consent.patient.reference`.`Consent.patient.identifier`can be used alternatively or additionally. |
@@ -53,7 +53,7 @@ To ensure the exchangeability of the operationalized consent contents beyond FHI
 | Consent.patient.identifier.value | If the person relationship is given via an identifier, the value entry as a string is mandatory, must-support |
 | Consent.policy.uri | Reference to the version of the MII Broad Consent document version underlying the Consent resource per the overview below,e.g.**MII Broad Consent version 1.7.2**`urn:oid:2.16.840.1.113883.3.1937.777.24.2.2079`or**MII Broad Consent version 1.7.2 incl. additional module Acribis**`urn:oid:2.16.840.1.113883.3.1937.777.24.2.4031`, must-support |
 
-> **Written during migration - review before release.** The table above describes the state of release 2026.0.0. With the incorporation of the `develop` state (744f7ba, 2026-08-21) three changes apply: (1) the profile now derives from the HL7-D profile `ConsentManagement/Consent`; (2) the category slices are named `consentCategory` (LOINC 57016-8), `mii` (Version-Modules CodeSystem), `resultType` (required) and `templateType` (extensible); (3) the examples use the CodeSystem `mii-cs-consent-version-modules` for the MII category. The rows on `Consent.category.coding` ("at least two categories") are superseded accordingly.
+> **Written during migration - review before release.** The table above describes the state of release 2026.0.0. With the incorporation of the `develop` state (744f7ba, 2026-08-21) three changes apply: (1) the profile now derives from the HL7-D profile `ConsentManagement/Consent`; (2) the category slices are named `consentCategory` (LOINC 57016-8), `mii` (Version-Modules CodeSystem), `resultType` (required) and `templateType` (extensible); (3) the examples use the CodeSystem `mii-cs-consent-version-modules` for the MII category. The rows on `Consent.category` ("at least two categories") are superseded accordingly.
 
 #### Unique identification of the MII Broad Consent
 
@@ -264,24 +264,47 @@ Other representations of profile: [CSV](../StructureDefinition-e0e166b4-0f77-478
     {
       "id" : "Consent.category",
       "path" : "Consent.category",
+      "slicing" : {
+        "discriminator" : [{
+          "type" : "pattern",
+          "path" : "$this"
+        }],
+        "rules" : "open"
+      },
       "min" : 2
     },
     {
       "id" : "Consent.category:consentCategory",
       "path" : "Consent.category",
       "sliceName" : "consentCategory",
+      "min" : 1,
       "max" : "1",
       "patternCodeableConcept" : {
         "coding" : [{
           "system" : "http://loinc.org",
           "code" : "57016-8"
         }]
-      }
+      },
+      "mustSupport" : true
     },
     {
       "id" : "Consent.category:consentCategory.coding",
       "path" : "Consent.category.coding",
-      "max" : "1"
+      "min" : 1,
+      "max" : "1",
+      "mustSupport" : true
+    },
+    {
+      "id" : "Consent.category:consentCategory.coding.system",
+      "path" : "Consent.category.coding.system",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Consent.category:consentCategory.coding.code",
+      "path" : "Consent.category.coding.code",
+      "min" : 1,
+      "mustSupport" : true
     },
     {
       "id" : "Consent.category:mii",
@@ -312,6 +335,66 @@ Other representations of profile: [CSV](../StructureDefinition-e0e166b4-0f77-478
     },
     {
       "id" : "Consent.category:mii.coding.code",
+      "path" : "Consent.category.coding.code",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Consent.category:resultType",
+      "path" : "Consent.category",
+      "sliceName" : "resultType",
+      "min" : 0,
+      "max" : "*",
+      "mustSupport" : true,
+      "binding" : {
+        "strength" : "required",
+        "valueSet" : "http://fhir.de/ConsentManagement/ValueSet/ResultType"
+      }
+    },
+    {
+      "id" : "Consent.category:resultType.coding",
+      "path" : "Consent.category.coding",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Consent.category:resultType.coding.system",
+      "path" : "Consent.category.coding.system",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Consent.category:resultType.coding.code",
+      "path" : "Consent.category.coding.code",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Consent.category:templateType",
+      "path" : "Consent.category",
+      "sliceName" : "templateType",
+      "min" : 0,
+      "max" : "*",
+      "mustSupport" : true,
+      "binding" : {
+        "strength" : "extensible",
+        "valueSet" : "http://fhir.de/ConsentManagement/ValueSet/TemplateType"
+      }
+    },
+    {
+      "id" : "Consent.category:templateType.coding",
+      "path" : "Consent.category.coding",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Consent.category:templateType.coding.system",
+      "path" : "Consent.category.coding.system",
+      "min" : 1,
+      "mustSupport" : true
+    },
+    {
+      "id" : "Consent.category:templateType.coding.code",
       "path" : "Consent.category.coding.code",
       "min" : 1,
       "mustSupport" : true

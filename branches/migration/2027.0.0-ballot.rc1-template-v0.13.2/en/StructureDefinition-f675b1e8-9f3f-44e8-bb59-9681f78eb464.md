@@ -16,6 +16,13 @@ Dieses Profil beschreibt Herkunftsinformationen zu Einwilligungen in der Medizin
 
 Based on the [recommendations](https://ig.fhir.de/einwilligungsmanagement/stable/Provenance.html) of the AG Einwilligungsmanagement, the profile **MIIConsentProvenance** describes the provenance information of a consent document.
 
+**Only the differences to the [base profile](https://ig.fhir.de/einwilligungsmanagement/stable/Provenance.html) are explained below.**
+
+| | |
+| :--- | :--- |
+| Provenance.entity.what | If a document scan is to be attached, the referenced resource must be of the profile type[DocumentReference](StructureDefinition-56375452-bfa1-4111-af7c-5b5ba9a1857c.md), Must-support |
+| Provenance.entity.signature.type | If a base64-encoded signature is to be attached, the type of the signature must follow[MII_VS_Consent_SignatureTypes](ValueSet-88464c5b-5338-4c2b-9c07-b42fef2ada64.md), Must-support |
+
 **Usages:**
 
 * Examples for this Profile: [Provenance/55219d12-6245-4de4-8b50-ddf6f16a789b](Provenance-55219d12-6245-4de4-8b50-ddf6f16a789b.md)

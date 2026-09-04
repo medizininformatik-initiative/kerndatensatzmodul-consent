@@ -338,13 +338,100 @@ Artefaktseite
 <!-- Policy-Tabelle aktualisiert aus terminologie/codesystems/CodeSystem-MiiConsentPolicy.md @ develop 744f7ba (develop-Inkorporation 2026-09-01; durchgestrichen = deprecated). -->
 <h3 id="mii-cs-consent-policy">MII CS Consent Policy</h3>
 
-<p><strong>Hinweis</strong>: Das Konzept der <strong>Verschachtelte Provision-Elemente</strong> im MII-Kontext arbeite mit zwei Level. Das übergeordnete Provision-Element, die Level1-Provision, repräsentiert eine Frage in der Einwilligung und legt über den Provision.Type=DENY (Out-In-Modell) fest, dass alles verboten ist, außer es ist in Form von untergeordneten Provision-Elementen, die Level2-Provision, explizit erlaubt. D.h. für die Interpretation, ob ein Erlaubnis für eine bestimmte Nutzung (erheben, speichern, nutzen) von spetifischen Daten (IDAT, MADT, BIOMAT, …) vorliegt, müssen die Elemete der Level2-Provisions ausgewertet werden.</p>
+<h4 id="consent-ressource-und-provision-level">Consent-Ressource und Provision-Level</h4>
 
-<p>Teilwiderrufe können ebenfalls auf den Level2-Provisions Änderungen hervor rufen. Z.B. kann die Erhebung untersagt werden, aber die Speicherung und Nutzung kann davon unbetroffen bleiben ("MDAT erheben"="deny", aber "MDAT wissenschaftlich nutzen EU DSGVO NIVEAU"="permit").</p>
+<p>Die <strong>Consent-Ressource</strong> erlaubt eine Verfeinerung von <code class="language-plaintext highlighter-rouge">consent.provision</code>, in dem <code class="language-plaintext highlighter-rouge">consent.provision</code> selbst erneut ein <code class="language-plaintext highlighter-rouge">provision</code> enthalten kann. In diesem IG ist diese Verfeinerung in Consent-Ressourcen auf 2 Level (Ebenen) beschränkt. Dabei ist Level 1 (<code class="language-plaintext highlighter-rouge">consent.provision</code>) entspr. des Opt-Out Modells auf DENY gesetzt (<code class="language-plaintext highlighter-rouge">consent.provision.type=DENY</code>). Dies legt fest, dass zunächst ALLES verboten ist (gemäß Opt-In-Ansatz). Level 2 der Consent-Resource <code class="language-plaintext highlighter-rouge">consent.provision.provision</code> die Verfeinerung der Level 1 Provisions und kann nun gezielt Erlaubnisse hinzufügen. Für <strong>Level 2 - Provisions</strong> innerhalb der Consent-Ressource werden die <strong>Policies</strong> aus dem nachfolgenden CodeSystem <em>MII CS Consent Policy</em> genutzt.</p>
 
-<p><strong>Achtung: Für die Nutzung in Level2-Provisions sind ausschließlich Policy-Codes vorgesehen. (Siehe nachstehende Tabelle, Spalte Lvl mit Wert 2)</strong></p>
+<p>Beispiel:</p>
 
-<p>Policies, die den Status "deprecated/inactive" haben, sollen zukünftig nicht mehr neu erzeugten Consent-Ressourcen hinzugefügt werden. Diese Policies sollten zukünftig auch nicht mehr ausgewertet werden (Enforcement).</p>
+<div class="language-plaintext highlighter-rouge"><div class="highlight"><pre class="highlight"><code>&lt;provision&gt; &lt;!-- Level 1 Provision steht auf 'deny' --&gt;
+  &lt;type value="deny" /&gt;
+  &lt;period&gt;
+    &lt;start value="2020-09-01" /&gt;
+    &lt;end value="2050-08-31" /&gt;
+  &lt;/period&gt;
+  &lt;provision&gt; &lt;!-- Level 2 Provision steht auf 'permit' --&gt;
+    &lt;type value="permit" /&gt;
+    &lt;period&gt;
+      &lt;start value="2020-09-01" /&gt;
+      &lt;end value="2025-08-31" /&gt;
+    &lt;/period&gt;
+    &lt;code&gt;
+      &lt;coding&gt;
+        &lt;system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3" /&gt;
+        &lt;code value="2.16.840.1.113883.3.1937.777.24.5.3.6" /&gt;
+        &lt;display value="MDAT_erheben" /&gt;
+      &lt;/coding&gt;
+    &lt;/code&gt;
+  &lt;/provision&gt;
+&lt;/provision&gt;
+</code></pre></div></div>
+
+<h4 id="policy-codesystem-und-dortige-level-angaben-lvl-für-module-und-policies">Policy-Codesystem und dortige Level-Angaben ("Lvl") für Module und Policies</h4>
+
+<p>Wie in der nachfolgenden <strong>Tabelle</strong> zu erkennen, ist das <strong>CodeSystem <em>MII CS Consent Policy</em></strong> ebenfalls in 2 Level strukturiert: <strong>CodeSystem Level 1</strong> (Lvl=1) bildet die <strong>Module</strong> und somit die Fragen im Broad Consent ab.</p>
+
+<p>Beispiel:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Lvl</th>
+      <th>Art</th>
+      <th>Display</th>
+      <th>Code</th>
+      <th>Gültigkeit</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>Modul</td>
+      <td>PATDAT erheben, speichern, nutzen</td>
+      <td>2.16.840.1.113883.3.1937.777.24.5.3.1</td>
+      <td> </td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>CodeSystem-Level 2</strong> (Lvl=2) bildet die semantischen Policies des MII Broad Consent ab. Policies erlauben eine feingranulare Unterscheidung von Erlaubnissen innerhalb eines Moduls.</p>
+
+<p>Beispiel:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th>Lvl</th>
+      <th>Art</th>
+      <th>Display</th>
+      <th>Code</th>
+      <th>Gültigkeit</th>
+      <th>Status</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>2</td>
+      <td>Policy</td>
+      <td>MDAT wissenschaftlich nutzen</td>
+      <td>2.16.840.1.113883.3.1937.777.24.5.3.8</td>
+      <td>30</td>
+      <td> </td>
+    </tr>
+  </tbody>
+</table>
+
+<p><strong>In der Consent-Ressource dürfen in <code class="language-plaintext highlighter-rouge">consent.provision.provision</code> (Level 2 Provisions) nur die Policy-Angaben (Lvl=2) verwendet werden</strong>!</p>
+
+<h4 id="hinweise-zur-verwendung-in-widerrufen-und-teilwiderrufen">Hinweise zur Verwendung in Widerrufen und Teilwiderrufen</h4>
+
+<p>Um Widerrufe oder Teilwiderrufe umzusetzen, müssen die entspr. Policies mittels der Level-2 Provisions (<code class="language-plaintext highlighter-rouge">consent.provision.provision</code>) auf DENY gesetzt werden. Z.B. kann die Erhebung (.6) untersagt werden, aber die Speicherung und Nutzung (.8) kann davon unbetroffen bleiben ("MDAT erheben"="DENY", aber "MDAT wissenschaftlich nutzen"="PERMIT").</p>
+
+<h4 id="hinweise-zu-policies-mit-_status-deprecatedinactive">Hinweise zu Policies mit _Status "deprecated/inactive"</h4>
+
+<p>Policies, die den Status "deprecated/inactive" in der nachfolgenden Tabelle haben, sollen zukünftig nicht mehr neu erzeugten Consent-Ressourcen hinzugefügt werden. Diese Policies sollten zukünftig auch nicht mehr ausgewertet werden (Enforcement).</p>
 
 <p>Dieses Code System <code class="language-plaintext highlighter-rouge">urn:oid:2.16.840.1.113883.3.1937.777.24.5.3</code> enthält die folgenden Codes:</p>
 
@@ -1380,7 +1467,7 @@ Artefaktseite
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.netzwerk-universitaetsmedizin.de">NUM-DIZ</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.consent#2027.0.0-ballot.rc1 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Tue, Sep 1, 2026 09:07+0000">2026-09-01</span>
+          Erstellt <span title="Fri, Sep 4, 2026 10:28+0000">2026-09-04</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

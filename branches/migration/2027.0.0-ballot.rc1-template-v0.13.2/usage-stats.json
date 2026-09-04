@@ -25,6 +25,9 @@
     ]
   },
   "usage": {
+    "http://fhir.de/ConsentManagement/StructureDefinition/ContextIdentifier": [
+      "ResearchStudy"
+    ],
     "http://fhir.de/ConsentManagement/StructureDefinition/DomainReference": [
       "Consent"
     ],
@@ -115,9 +118,6 @@
       "SearchParameter.publisher",
       "StructureDefinition.publisher",
       "ValueSet.publisher"
-    ],
-    "http://hl7.org/fhir/StructureDefinition/valueset-concept-comments": [
-      "ValueSet.compose.include.concept"
     ],
     "http://hl7.org/fhir/tools/StructureDefinition/expansion-parameters": [
       "ImplementationGuide.definition"

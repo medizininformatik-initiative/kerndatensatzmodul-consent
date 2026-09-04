@@ -38,6 +38,15 @@ Kennzeichnen Sie solche Einträge deutlich (zum Beispiel mit dem Präfix **BREAK
 
 -------
 
+#### Frische Migration auf das offizielle Release 2027.0.0-ballot.rc1 (2026-09-04)
+
+Datum 04.09.2026
+
+* **Geändert** — Inhaltsbasis dieses Branches ist jetzt das **offizielle Release [2027.0.0-ballot.rc1](https://github.com/medizininformatik-initiative/kerndatensatzmodul-consent/releases/tag/2027.0.0-ballot.rc1)** (Tag `508a666`, veröffentlicht 03.09.2026; Repo-Baum byte-identisch mit dem zuvor inkorporierten develop-Stand `744f7ba` — die inhaltlichen Aussagen des develop-Abschnitts unten gelten unverändert). Vollständige Re-Derivation aller Ressourcen aus dem Release-Paket (goFSH; Nachweis: `migration-log/rederivation-diff-release-2027.txt`) und Delta-Übernahme des Leitfadens in Version 2027.0.0-ballot.rc1 (18/18 Seiten; u. a. neu strukturierte Policy-Erläuterungen auf der CodeSystem-Seite).
+* **Geändert** — Eltern-Paket-Pin auf `de.einwilligungsmanagement` **2.0.4-rc1** (Pin des Release-Pakets). Das Eltern-Profil hat sein eigenes `Consent.category`-Slicing in 2.0.4 entfernt; dieses Profil deklariert die vier Slices (consentCategory/mii/resultType/templateType) jetzt selbst — Validierungssemantik unverändert.
+* **Behoben** — die in der 2026er-Migration mit dem "Darstellung"-Abschnitt entfallenen "Unterschiede zum Basis-Profil"-Tabellen der Provenance- und DocumentReference-Seiten sind in den Profil-Einleitungen ergänzt.
+* Bewusste, protokollierte Abweichungen vom ausgelieferten Release-Paket (Details: `migration-log/run.log`, Eintrag 5.2): harmonisierte Artefakt-Versionen, kanonische SearchParameter-IDs (das Paket liefert keine), korrigierte Beispiel-Displays und CodeSystem-Zählungen, `publisher`-Metadaten sowie das im Paket fehlende Version-Modules-CodeSystem.
+
 #### develop-Inkorporation (Stand 744f7ba, 2026-08-21) — Teil von 2027.0.0-ballot.rc1
 
 Datum 01.09.2026
@@ -51,6 +60,19 @@ Datum 01.09.2026
 Datum 31.08.2026
 
 * **Geändert** — Migration des Leitfadens auf das [MII-KDS-Modul-Template](https://github.com/medizininformatik-initiative/mii-kds-module-template) v0.13.2 (IG-Publisher-Toolchain, DE-first-Sprachmodell, Template-Seitenstruktur); **inhaltlich identisch mit Release 2026.0.0** (Profile, Terminologien und Beispiele unverändert; Nachweis: `migration-log/` auf diesem Branch). Alle Artefakt-Versionen auf die Paketversion 2027.0.0-ballot.rc1 harmonisiert (zuvor je Artefakt abweichend, z. B. 1.0.9/1.6.0/1.1.0).
+
+#### Version 2027.0.0-ballot.rc1 (Release Notes der Quelle)
+
+Datum 03.09.2026
+
+* Policies SNID korrigiert #121
+* Policy Labels ACRIBIS korrigiert #129
+* MIIConsentVersionModuleCodeSystem: BC Varianten für Vertretende hinzugefügt #127
+* Validierungs- und Abhängigkeits-Probleme ( `consent.category` Slices) behoben #124, #119
+* CodeSystem in Beispielen korrigiert #113
+* sprachliche Verbesserung zur Beschreibung der Level #112
+
+**Full Changelog**: [https://github.com/medizininformatik-initiative/kerndatensatzmodul-consent/compare/2026.0.0…2027.0.0-ballot.rc1](https://github.com/medizininformatik-initiative/kerndatensatzmodul-consent/compare/2026.0.0...2027.0.0-ballot.rc1)
 
 #### Version 2026.0.0
 

@@ -69,4 +69,8 @@
 * [89f494a3-cd75-44f5-a78a-581dfdd47a94 (Consent)](Consent-89f494a3-cd75-44f5-a78a-581dfdd47a94.md)
 * [Example-MII-Consent-ResultType-document (Consent)](Consent-Example-MII-Consent-ResultType-document.md)
 * [8a3d1799-2463-405e-b49c-6a16c8692b01 (DocumentReference)](DocumentReference-8a3d1799-2463-405e-b49c-6a16c8692b01.md)
+* [531cef77-2a30-4283-944d-affaf9ae234e (Patient)](Patient-531cef77-2a30-4283-944d-affaf9ae234e.md)
+* [9b4a702d-162c-428a-8c5d-8b98af21b693 (Patient)](Patient-9b4a702d-162c-428a-8c5d-8b98af21b693.md)
 * [55219d12-6245-4de4-8b50-ddf6f16a789b (Provenance)](Provenance-55219d12-6245-4de4-8b50-ddf6f16a789b.md)
+* [Synthetische MII-Einwilligungsstudie (Beispiel) (ResearchStudy)](ResearchStudy-c946ae17-e3e6-4178-b5ea-15f95aaeeeb4.md)
+* [Synthetische MII-Einwilligungsstudie (Beispiel) (ResearchStudy)](ResearchStudy-d7a65ce8-2810-401a-b0db-70782a7b19a6.md)

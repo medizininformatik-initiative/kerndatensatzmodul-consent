@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <Bundle xmlns="http://hl7.org/fhir">
-  <id value="69ab7a52-9ef8-4385-af73-460c9365889c"/>
+  <id value="33e9cba5-7728-45a3-85bb-7375b1024b3d"/>
   <meta>
-    <lastUpdated value="2026-09-01T09:07:35.926+00:00"/>
+    <lastUpdated value="2026-09-04T10:28:22.561+00:00"/>
   </meta>
   <type value="collection"/>
   <entry>
@@ -116,7 +116,7 @@
         <title value="MII Consent: Answer ValueSet"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-09-01T09:07:35+00:00"/>
+        <date value="2026-09-04T10:28:22+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -126,8 +126,8 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:7f02cd9d-de3a-43dc-b6cf-0b62c52b89f9"/>
-          <timestamp value="2026-09-01T09:08:41+00:00"/>
+          <identifier value="urn:uuid:10fa6b71-725e-4f41-bde9-f24c36f27c6c"/>
+          <timestamp value="2026-09-04T10:29:21+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -283,7 +283,7 @@
         <title value="MII Consent: Answer ValueSet"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-09-01T09:07:35+00:00"/>
+        <date value="2026-09-04T10:28:22+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -293,8 +293,8 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:7f02cd9d-de3a-43dc-b6cf-0b62c52b89f9"/>
-          <timestamp value="2026-09-01T09:08:41+00:00"/>
+          <identifier value="urn:uuid:10fa6b71-725e-4f41-bde9-f24c36f27c6c"/>
+          <timestamp value="2026-09-04T10:29:21+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -450,7 +450,7 @@
         <title value="MII Consent: Answer ValueSet"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-09-01T09:07:35+00:00"/>
+        <date value="2026-09-04T10:28:22+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -460,8 +460,8 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:e25f772f-6cec-4354-b31b-9150c3ee962c"/>
-          <timestamp value="2026-09-01T09:08:41+00:00"/>
+          <identifier value="urn:uuid:e2e034ad-c5a9-4bfa-aed1-d97a8f80b573"/>
+          <timestamp value="2026-09-04T10:29:21+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -3417,7 +3417,7 @@
         <title value="MII Consent: Policy ValueSet"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-09-01T09:07:35+00:00"/>
+        <date value="2026-09-04T10:28:22+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -3427,8 +3427,8 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:01a4dd21-6383-4b3a-81c5-48fe29b6bd5f"/>
-          <timestamp value="2026-09-01T09:08:42+00:00"/>
+          <identifier value="urn:uuid:a84bf1a8-dac4-4496-bb1d-fd0068874563"/>
+          <timestamp value="2026-09-04T10:29:21+00:00"/>
           <total value="124"/>
           <offset value="0"/>
           <parameter>
@@ -6893,7 +6893,7 @@
         <title value="MII Consent: Policy ValueSet"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-09-01T09:07:35+00:00"/>
+        <date value="2026-09-04T10:28:22+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -6903,8 +6903,8 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:01a4dd21-6383-4b3a-81c5-48fe29b6bd5f"/>
-          <timestamp value="2026-09-01T09:08:42+00:00"/>
+          <identifier value="urn:uuid:a84bf1a8-dac4-4496-bb1d-fd0068874563"/>
+          <timestamp value="2026-09-04T10:29:21+00:00"/>
           <total value="124"/>
           <offset value="0"/>
           <parameter>
@@ -7605,16 +7605,16 @@
                 <td style="white-space:nowrap">    
                   <a href="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003.html#2.16.840.1.113883.3.1937.777.24.5.3--20251211153003-2.4616.46840.461.46113883.463.461937.46777.4624.465.463.465">2.16.840.1.113883.3.1937.777.24.5.3.5</a>
                 </td>
-                <td>IDAT bereitstellen </td>
+                <td>IDAT bereitstellen</td>
                 <td/>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="{&quot;system&quot;: &quot;urn:oid:2.16.840.1.113883.3.1937.777.24.5.3&quot;, &quot;version&quot;: &quot;2027.0.0-ballot.rc1&quot;, &quot;code&quot;: &quot;2.16.840.1.113883.3.1937.777.24.5.3.5&quot;, &quot;display&quot;: &quot;IDAT bereitstellen &quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="{&quot;system&quot;: &quot;urn:oid:2.16.840.1.113883.3.1937.777.24.5.3&quot;, &quot;version&quot;: &quot;2027.0.0-ballot.rc1&quot;, &quot;code&quot;: &quot;2.16.840.1.113883.3.1937.777.24.5.3.5&quot;, &quot;display&quot;: &quot;IDAT bereitstellen&quot;}" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
                 <td>
                   <span class="copy-text-inline">
-                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;urn:oid:2.16.840.1.113883.3.1937.777.24.5.3&quot;&gt;&lt;version value=&quot;2027.0.0-ballot.rc1&quot;&gt;&lt;code value=&quot;2.16.840.1.113883.3.1937.777.24.5.3.5&quot;&gt;&lt;display value=&quot;IDAT bereitstellen &quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
+                    <button data-clipboard-text="&lt;coding&gt;&lt;system value=&quot;urn:oid:2.16.840.1.113883.3.1937.777.24.5.3&quot;&gt;&lt;version value=&quot;2027.0.0-ballot.rc1&quot;&gt;&lt;code value=&quot;2.16.840.1.113883.3.1937.777.24.5.3.5&quot;&gt;&lt;display value=&quot;IDAT bereitstellen&quot;&gt;&lt;/coding&gt;" title="Click to Copy as Coding" class="btn-copy"> </button>
                   </span>
                 </td>
               </tr>
@@ -10369,7 +10369,7 @@
         <title value="MII Consent: Policy ValueSet"/>
         <status value="active"/>
         <experimental value="false"/>
-        <date value="2026-09-01T09:07:35+00:00"/>
+        <date value="2026-09-04T10:28:22+00:00"/>
         <jurisdiction>
           <coding>
             <system value="urn:iso:std:iso:3166"/>
@@ -10379,8 +10379,8 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:a7524243-40c8-4a52-a251-57a4e42479e0"/>
-          <timestamp value="2026-09-01T09:08:42+00:00"/>
+          <identifier value="urn:uuid:717e5d48-18ef-4285-87b6-add7cac8f017"/>
+          <timestamp value="2026-09-04T10:29:21+00:00"/>
           <total value="124"/>
           <offset value="0"/>
           <parameter>
@@ -10433,7 +10433,7 @@
             <contains>
               <system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
               <code value="2.16.840.1.113883.3.1937.777.24.5.3.5"/>
-              <display value="IDAT bereitstellen "/>
+              <display value="IDAT bereitstellen"/>
             </contains>
             <contains>
               <system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
@@ -11180,8 +11180,8 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:33f776fb-6b23-434a-a0e1-b6904eed54d0"/>
-          <timestamp value="2026-09-01T09:08:42+00:00"/>
+          <identifier value="urn:uuid:b960f6eb-48a2-4c06-93ec-ce1ebfec07ae"/>
+          <timestamp value="2026-09-04T10:29:21+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -11349,8 +11349,8 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:33f776fb-6b23-434a-a0e1-b6904eed54d0"/>
-          <timestamp value="2026-09-01T09:08:42+00:00"/>
+          <identifier value="urn:uuid:b960f6eb-48a2-4c06-93ec-ce1ebfec07ae"/>
+          <timestamp value="2026-09-04T10:29:21+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>
@@ -11518,8 +11518,8 @@
         </jurisdiction>
         <immutable value="false"/>
         <expansion>
-          <identifier value="urn:uuid:cace1446-059c-43b1-a2c3-e911e501df2f"/>
-          <timestamp value="2026-09-01T09:08:42+00:00"/>
+          <identifier value="urn:uuid:2c60b15f-b14a-4c10-92d6-38eb54b2ccb7"/>
+          <timestamp value="2026-09-04T10:29:21+00:00"/>
           <total value="3"/>
           <offset value="0"/>
           <parameter>

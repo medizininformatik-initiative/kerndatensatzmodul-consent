@@ -18,6 +18,12 @@ Based on the [recommendations](https://ig.fhir.de/einwilligungsmanagement/stable
 
 However, it is restricted to scans of consent documents in PDF format.
 
+**Only the differences to the [base profile](https://ig.fhir.de/einwilligungsmanagement/stable/DocumentReference.html) are explained below.**
+
+| | |
+| :--- | :--- |
+| DocumentReference.content.attachment.contentType | Fixed value 'application/pdf', Must-support |
+
 **Usages:**
 
 * Refer to this Profile: [Profile - MI-I - Consent - Provenance](StructureDefinition-f675b1e8-9f3f-44e8-bb59-9681f78eb464.md)
