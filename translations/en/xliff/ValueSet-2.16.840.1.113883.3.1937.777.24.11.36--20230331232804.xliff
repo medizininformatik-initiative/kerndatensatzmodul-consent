@@ -35,8 +35,7 @@
              <notes>
                <note id="n1">ValueSet.description</note>
              </notes>
-        <source>
-**Disclaimer** 
+        <source>**Disclaimer** 
 
  (Punkte übernommen aus der Policy Liste ([MII SharePoint, TF Consent Umsetzung](https://tmfev.sharepoint.com/:f:/r/sites/tmf/mi-i/Taskforce%20Consent%20Umsetzung/02_Dokumente/Policies?csf=1&amp;web=1&amp;e=C0xLim &quot;&quot;)))
 1. Diese Liste fasst erforderliche
@@ -61,8 +60,7 @@ Um die in diesem ValueSet enthaltenen Codes in IHE BPPC verwenden zu können, is
  Beispiel 2:  
 
  2.16.840.1.113883.3.1937.777.24.5.3.4.2
-                    bedeutet, dass der Patient der Policy IDAT_zusammenfuehren_Dritte nicht zugestimmt hat.
-</source>
+                    bedeutet, dass der Patient der Policy IDAT_zusammenfuehren_Dritte nicht zugestimmt hat.</source>
         <target></target>
       </trans-unit>
       <trans-unit id="ValueSet-2.16.840.1.113883.3.1937.777.24.11.36--20230331232804" resname="Coding.display">

@@ -56,7 +56,7 @@ msgstr ""
 
 # CodeSystem.concept.display
 #: CodeSystem.concept.display
-msgid "IDAT bereitstellen "
+msgid "IDAT bereitstellen"
 msgstr ""
 
 # CodeSystem.concept.display

@@ -84,7 +84,7 @@
              <notes>
                <note id="n1">CodeSystem.concept.display</note>
              </notes>
-        <source>IDAT bereitstellen </source>
+        <source>IDAT bereitstellen</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">

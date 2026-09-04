@@ -72,7 +72,7 @@
     {
       "id" : "CodeSystem.concept.display",
       "context" : "CodeSystem.concept.display",
-      "source" : "IDAT bereitstellen ",
+      "source" : "IDAT bereitstellen",
       "target" : null
     },
     {
