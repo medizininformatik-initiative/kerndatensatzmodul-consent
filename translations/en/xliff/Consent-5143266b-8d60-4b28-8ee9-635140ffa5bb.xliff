@@ -28,7 +28,7 @@
              <notes>
                <note id="n1">Coding.display</note>
              </notes>
-        <source>BIOMAT wissenschaftlich nutzen</source>
+        <source>BIOMAT wissenschaftlich nutzen EU DSGVO NIVEAU</source>
         <target></target>
       </trans-unit>
       <trans-unit id="Consent-5143266b-8d60-4b28-8ee9-635140ffa5bb" resname="Coding.display">
@@ -98,7 +98,7 @@
              <notes>
                <note id="n1">Coding.display</note>
              </notes>
-        <source>MDAT wissenschaftlich nutzen</source>
+        <source>MDAT wissenschaftlich nutzen EU DSGVO NIVEAU</source>
         <target></target>
       </trans-unit>
       <trans-unit id="Consent-5143266b-8d60-4b28-8ee9-635140ffa5bb" resname="Coding.display">
@@ -119,7 +119,7 @@
              <notes>
                <note id="n1">Coding.display</note>
              </notes>
-        <source>IDAT bereitstellen</source>
+        <source>IDAT bereitstellen EU DSGVO NIVEAU</source>
         <target></target>
       </trans-unit>
       <trans-unit id="Consent-5143266b-8d60-4b28-8ee9-635140ffa5bb" resname="Coding.display">

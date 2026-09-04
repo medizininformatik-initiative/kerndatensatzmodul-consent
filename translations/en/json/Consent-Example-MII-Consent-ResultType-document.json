@@ -18,37 +18,37 @@
     {
       "id" : "Coding.display",
       "context" : "Coding.display",
-      "source" : "MDAT erheben",
+      "source" : "MDAT_erheben",
       "target" : null
     },
     {
       "id" : "Coding.display",
       "context" : "Coding.display",
-      "source" : "MDAT speichern, verarbeiten",
+      "source" : "MDAT_speichern_verarbeiten",
       "target" : null
     },
     {
       "id" : "Coding.display",
       "context" : "Coding.display",
-      "source" : "BIOMAT erheben",
+      "source" : "BIOMAT_erheben",
       "target" : null
     },
     {
       "id" : "Coding.display",
       "context" : "Coding.display",
-      "source" : "MDAT wissenschaftlich nutzen",
+      "source" : "MDAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU",
       "target" : null
     },
     {
       "id" : "Coding.display",
       "context" : "Coding.display",
-      "source" : "BIOMAT lagern verarbeiten",
+      "source" : "BIOMAT_lagern_verarbeiten",
       "target" : null
     },
     {
       "id" : "Coding.display",
       "context" : "Coding.display",
-      "source" : "BIOMAT wissenschaftlich nutzen",
+      "source" : "BIOMAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU",
       "target" : null
     }]
   }]

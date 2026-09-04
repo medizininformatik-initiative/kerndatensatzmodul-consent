@@ -11,31 +11,31 @@ msgstr ""
 
 # Coding.display
 #: Coding.display
-msgid "MDAT erheben"
+msgid "MDAT_erheben"
 msgstr ""
 
 # Coding.display
 #: Coding.display
-msgid "MDAT speichern, verarbeiten"
+msgid "MDAT_speichern_verarbeiten"
 msgstr ""
 
 # Coding.display
 #: Coding.display
-msgid "BIOMAT erheben"
+msgid "BIOMAT_erheben"
 msgstr ""
 
 # Coding.display
 #: Coding.display
-msgid "MDAT wissenschaftlich nutzen"
+msgid "MDAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU"
 msgstr ""
 
 # Coding.display
 #: Coding.display
-msgid "BIOMAT lagern verarbeiten"
+msgid "BIOMAT_lagern_verarbeiten"
 msgstr ""
 
 # Coding.display
 #: Coding.display
-msgid "BIOMAT wissenschaftlich nutzen"
+msgid "BIOMAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU"
 msgstr ""
 

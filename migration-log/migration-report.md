@@ -353,9 +353,11 @@ by the rename), and THIS branch re-bases the migration content on the official r
 * **Deliberate divergences from the shipped package, each ledgered** (run.log 5.2): harmonized
   resource versions `2027.0.0-ballot.rc1` (standing operator order + Governance §4.5; the release
   keeps per-resource 1.0.x/1.1.0), `InstanceOf`-base + `meta.profile` example form (SUSHI
-  slice-append gotcha), canonical-tail SP ids (release ships none), example display
-  harmonization + CS counts 124/21 + the 89f494a3 system fix (the release still carries those
-  defects), `publisher` on every resource via sushi-config.
+  slice-append gotcha), canonical-tail SP ids (release ships none), CS counts
+  124/21 + the 89f494a3 system fix (the release still carries those defects), `publisher` on
+  every resource via sushi-config. The example-display harmonization was REVERTED to
+  release-faithful values on operator instruction (2026-09-04, run.log 7.5) — deferred to the
+  owner decision; QA regains the source's display/VS-pair classes (measured in run.log 7.6).
 * **AFTER builds + BEFORE/AFTER delta + fix pass (run.log 6.1/7.1/7.2):**
   AFTER build 1 **err = 46** (vs BEFORE 90) — **conversion-introduced classes: NONE**;
   the migrated tree resolves 44 package errors (displays + paired VS-membership,
@@ -367,7 +369,10 @@ by the rename), and THIS branch re-bases the migration content on the official r
   (`category:templateType` extensible-binding-only under pattern/$this — construct
   shipped by parent and release; recommended fix: system-only pattern, see the
   QA-error analysis of 2026-09-01). Evidence: `qa-baseline-release-package.txt`
-  (BEFORE) / `qa-target-2027-fresh.txt` (AFTER).
+  (BEFORE) / `qa-target-2027-fresh.txt` (AFTER, err=33). After the operator-ordered
+  display revert (run.log 7.5/7.6) the current build stands at **err = 69** =
+  33 + the regained source classes (18 wrong-display + 18 paired code-not-in-VS):
+  `qa-target-2027-displayrevert.txt`.
 
 ## Sign-off (generated checklist)
 

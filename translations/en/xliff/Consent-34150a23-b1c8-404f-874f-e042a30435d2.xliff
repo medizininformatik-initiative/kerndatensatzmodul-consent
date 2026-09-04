@@ -28,14 +28,14 @@
              <notes>
                <note id="n1">Coding.display</note>
              </notes>
-        <source>MDAT speichern, verarbeiten</source>
+        <source>MDAT speichern verarbeiten</source>
         <target></target>
       </trans-unit>
       <trans-unit id="Consent-34150a23-b1c8-404f-874f-e042a30435d2" resname="Coding.display">
              <notes>
                <note id="n1">Coding.display</note>
              </notes>
-        <source>MDAT wissenschaftlich nutzen</source>
+        <source>MDAT wissenschaftlich nutzen EU DSGVO NIVEAU</source>
         <target></target>
       </trans-unit>
       <trans-unit id="Consent-34150a23-b1c8-404f-874f-e042a30435d2" resname="Coding.display">
@@ -56,7 +56,7 @@
              <notes>
                <note id="n1">Coding.display</note>
              </notes>
-        <source>BIOMAT wissenschaftlich nutzen</source>
+        <source>BIOMAT wissenschaftlich nutzen EU DSGVO NIVEAU</source>
         <target></target>
       </trans-unit>
     </body>
