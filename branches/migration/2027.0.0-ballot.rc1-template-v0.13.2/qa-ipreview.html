@@ -24,6 +24,10 @@
 <code>http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl</code>        </a>
       </li>
       <li>
+        <a href="Consent-89f494a3-cd75-44f5-a78a-581dfdd47a94.html">
+<code>https://www.medizininformatik-initiative.de/fhir/modul-consent/CodeSystem/mii-cs-consent-consent_category</code>        </a>
+      </li>
+      <li>
         <a href="ValueSet-88464c5b-5338-4c2b-9c07-b42fef2ada64.html">
 <code>urn:iso:std:iso:3166</code>        </a>
       </li>
@@ -67,7 +71,6 @@ This fragment is available on       <a href="en/ImplementationGuide-mii-ig-conse
                 <a href="CodeSystem-mii-cs-consent-version-modules.html">MII Consent Version and Modules CodeSystem</a>
 :                 <a href="Consent-34150a23-b1c8-404f-874f-e042a30435d2.html">Consent/34150a23-b1c8-404f-874f-e042a30435d2</a>
 ,                 <a href="Consent-5143266b-8d60-4b28-8ee9-635140ffa5bb.html">Consent/5143266b-8d60-4b28-8ee9-635140ffa5bb</a>
-,                 <a href="Consent-89f494a3-cd75-44f5-a78a-581dfdd47a94.html">Consent/89f494a3-cd75-44f5-a78a-581dfdd47a94</a>
 ,                 <a href="Consent-Example-MII-Consent-ResultType-document.html">Consent/Example-MII-Consent-ResultType-document</a>
  and                 <a href="StructureDefinition-e0e166b4-0f77-478d-9062-de0034d98ce0.html">MII_PR_Consent_Einwilligung</a>
               </li>
@@ -139,7 +142,8 @@ This material contains content that is copyright of SNOMED International. Implem
               <li>
                 <a href="http://hl7.org/fhir/R4/codesystem-snomedct.html">SNOMED Clinical Terms&amp;reg; (SNOMED CT&amp;reg;)</a>
 :                 <a href="CodeSystem-mii-cs-consent-version-modules.html">MIIConsentVersionModuleCodeSystem</a>
- and                 <a href="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.2--20210423105554.html">MII_CS_Consent_Answer</a>
+,                 <a href="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.2--20210423105554.html">MII_CS_Consent_Answer</a>
+ and                 <a href="ValueSet-2.16.840.1.113883.3.1937.777.24.11.30--20210323234509.html">MII_VS_Consent_Answer</a>
               </li>
 
 
@@ -169,14 +173,6 @@ This material derives from the HL7 Terminology (THO). THO is copyright &copy;198
               <li>
                 <a href="http://terminology.hl7.org/7.3.0/CodeSystem-provenance-participant-type.html">Provenance participant type</a>
 :                 <a href="Provenance-55219d12-6245-4de4-8b50-ddf6f16a789b.html">Provenance/55219d12-6245-4de4-8b50-ddf6f16a789b</a>
-              </li>
-
-              <li>
-                <a href="http://terminology.hl7.org/7.3.0/CodeSystem-v2-0203.html">identifierType</a>
-:                 <a href="Patient-531cef77-2a30-4283-944d-affaf9ae234e.html">Patient/531cef77-2a30-4283-944d-affaf9ae234e</a>
-,                 <a href="Patient-9b4a702d-162c-428a-8c5d-8b98af21b693.html">Patient/9b4a702d-162c-428a-8c5d-8b98af21b693</a>
-,                 <a href="ResearchStudy-c946ae17-e3e6-4178-b5ea-15f95aaeeeb4.html">ResearchStudy/c946ae17-e3e6-4178-b5ea-15f95aaeeeb4</a>
- and                 <a href="ResearchStudy-d7a65ce8-2810-401a-b0db-70782a7b19a6.html">ResearchStudy/d7a65ce8-2810-401a-b0db-70782a7b19a6</a>
               </li>
 
 
@@ -304,8 +300,6 @@ This material derives from the HL7 Terminology (THO). THO is copyright &copy;198
 * Consent Scope Codes: Consent/34150a23-b1c8-404f-874f-e042a30435d2, Consent/5143266b-8d60-4b28-8ee9-635140ffa5bb, Consent/89f494a3-cd75-44f5-a78a-581dfdd47a94 and Consent/Example-MII-Consent-ResultType-document
 
 * Provenance participant type: Provenance/55219d12-6245-4de4-8b50-ddf6f16a789b
-
-* identifierType: Patient/531cef77-2a30-4283-944d-affaf9ae234e, Patient/9b4a702d-162c-428a-8c5d-8b98af21b693, ResearchStudy/c946ae17-e3e6-4178-b5ea-15f95aaeeeb4 and ResearchStudy/d7a65ce8-2810-401a-b0db-70782a7b19a6
 
 
 
@@ -457,7 +451,7 @@ Konformität<b class="caret"> </b>          </a>
 .  
           Package de.medizininformatikinitiative.kerndatensatz.consent#2027.0.0-ballot.rc1 basiert auf           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
 .
-          Erstellt           <span title="Fri, Sep 4, 2026 12:01+0000">2026-09-04</span>
+          Erstellt           <span title="Fri, Sep 4, 2026 12:10+0000">2026-09-04</span>
 
                     <br/>
 
@@ -1990,7 +1984,7 @@ Conformance<b class="caret"> </b>          </a>
 .  
           Package de.medizininformatikinitiative.kerndatensatz.consent#2027.0.0-ballot.rc1 based on           <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>
 .
-          Generated           <span title="Fri, Sep 4, 2026 12:01+0000">2026-09-04</span>
+          Generated           <span title="Fri, Sep 4, 2026 12:10+0000">2026-09-04</span>
 
                     <br/>
 

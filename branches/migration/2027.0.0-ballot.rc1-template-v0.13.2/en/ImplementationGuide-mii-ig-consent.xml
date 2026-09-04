@@ -963,50 +963,6 @@
     </resource>
     <resource>
       <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ResearchStudy"/>
-      </extension>
-      <reference>
-        <reference value="ResearchStudy/c946ae17-e3e6-4178-b5ea-15f95aaeeeb4"/>
-      </reference>
-      <name value="Beispiel Einwilligungsdomäne (synthetische Studie)"/>
-      <description value="Synthetische Consent-Domäne (ResearchStudy) als Referenzziel der DomainReference-Extension der Quell-Beispiele."/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="ResearchStudy"/>
-      </extension>
-      <reference>
-        <reference value="ResearchStudy/d7a65ce8-2810-401a-b0db-70782a7b19a6"/>
-      </reference>
-      <name value="Beispiel Einwilligungsdomäne (synthetische Studie)"/>
-      <description value="Synthetische Consent-Domäne (ResearchStudy) als Referenzziel der DomainReference-Extension der Quell-Beispiele."/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Patient"/>
-      </extension>
-      <reference>
-        <reference value="Patient/531cef77-2a30-4283-944d-affaf9ae234e"/>
-      </reference>
-      <name value="Beispiel Patient (pseudonym, synthetisch)"/>
-      <description value="Synthetischer, pseudonymer Patient als Referenzziel der Quell-Beispiele (Consent.patient, DocumentReference.subject, Provenance.signature.who)."/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
-        <valueString value="Patient"/>
-      </extension>
-      <reference>
-        <reference value="Patient/9b4a702d-162c-428a-8c5d-8b98af21b693"/>
-      </reference>
-      <name value="Beispiel Patient (pseudonym, synthetisch)"/>
-      <description value="Synthetischer, pseudonymer Patient als Referenzziel der Quell-Beispiele (Consent.patient, DocumentReference.subject, Provenance.signature.who)."/>
-      <exampleBoolean value="true"/>
-    </resource>
-    <resource>
-      <extension url="http://hl7.org/fhir/tools/StructureDefinition/resource-information">
         <valueString value="Consent"/>
       </extension>
       <reference>

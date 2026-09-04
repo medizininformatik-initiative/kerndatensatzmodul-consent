@@ -415,11 +415,19 @@ DocumentReference-Seiten sind in den Profil-Einleitungen ergänzt.</li>
 (Details: <code class="language-plaintext highlighter-rouge">migration-log/run.log</code>, Eintrag 5.2): harmonisierte
 Artefakt-Versionen, kanonische SearchParameter-IDs (das Paket liefert keine),
 korrigierte CodeSystem-Zählungen, <code class="language-plaintext highlighter-rouge">publisher</code>-Metadaten
-sowie das im Paket fehlende Version-Modules-CodeSystem. Die zunächst an das
-korrigierte Policy-CodeSystem angeglichenen <strong>Beispiel-Displays wurden auf
-Operator-Anweisung (04.09.2026) wieder Release-getreu zurückgesetzt</strong> — die
-Angleichung ist bis zur Owner-Entscheidung zurückgestellt; die QA zeigt daher
-wieder die Display-/ValueSet-Paarfehler der Quelle.</li>
+sowie das im Paket fehlende Version-Modules-CodeSystem. <strong>Auf Operator-Anweisung (04.09.2026) wurden sämtliche inhaltlichen
+Nach-Migrations-Fixes zurückgesetzt</strong>, damit die QA den Fehlerstand des
+offiziellen Release-Pakets unmittelbar nach der Migration zeigt: Beispiel-
+Displays, CodeSystem-Zählungen (wieder 101/20), das Category-System des
+Beispiels 89f494a3 (wieder das nirgends definierte <code class="language-plaintext highlighter-rouge">consent_category</code>), die
+vier synthetischen Referenzziel-Instanzen und der Answer-ValueSet-Compose
+(wieder Konzept-Aufzählung). Alle Fixes bleiben vorbereitet und sind
+Owner-Entscheidungen (mit ihnen: err = 33). Verbleibende technische
+Abweichungen vom Paket: harmonisierte Versionen, kanonische SearchParameter-
+IDs (das Paket liefert ID-lose SPs — in FSH nicht darstellbar), <code class="language-plaintext highlighter-rouge">publisher</code>
+via sushi-config (Toolchain-Injektion) und das mitgeführte
+Version-Modules-CodeSystem (im Repo-Tag enthalten, nur im Paket fehlend —
+ohne dieses bräche der Build).</li>
 </ul>
 
 <h4 id="develop-inkorporation-stand-744f7ba-2026-08-21--teil-von-202700-ballotrc1">develop-Inkorporation (Stand 744f7ba, 2026-08-21) — Teil von 2027.0.0-ballot.rc1</h4>
@@ -603,7 +611,7 @@ Artefakt-Versionen auf die Paketversion 2027.0.0-ballot.rc1 harmonisiert
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.netzwerk-universitaetsmedizin.de">NUM-DIZ</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.consent#2027.0.0-ballot.rc1 basiert auf <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Erstellt <span title="Fri, Sep 4, 2026 12:01+0000">2026-09-04</span>
+          Erstellt <span title="Fri, Sep 4, 2026 12:10+0000">2026-09-04</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.

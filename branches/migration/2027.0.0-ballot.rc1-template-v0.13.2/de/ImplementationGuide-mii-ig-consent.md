@@ -36,7 +36,7 @@ This publication includes IP covered under the following statements.
 
 * ` © 2019+ TMF e. V., Charlottenstraße 42, 10117 Berlin CC BY 4.0 Diese Arbeit ist lizensiert unter der [Creative Commons Attribution 4.0 International License]([https://creativecommons.org/licenses/by/4.0/)](https://creativecommons.org/licenses/by/4.0/)). Zu den Nutzungsrechten der zugrunde liegenden FHIR-Technologie siehe die FHIR-Basis-Spezifikation. Einige verwendete Codesysteme werden von anderen Organisationen herausgegeben und gepflegt. Es gilt das Copyright der dort jeweils aufgeführten Herausgeber (Publisher). ` 
 
-* [MII Consent Version and Modules CodeSystem](CodeSystem-mii-cs-consent-version-modules.md): [Consent/34150a23-b1c8-404f-874f-e042a30435d2](Consent-34150a23-b1c8-404f-874f-e042a30435d2.md), [Consent/5143266b-8d60-4b28-8ee9-635140ffa5bb](Consent-5143266b-8d60-4b28-8ee9-635140ffa5bb.md), [Consent/89f494a3-cd75-44f5-a78a-581dfdd47a94](Consent-89f494a3-cd75-44f5-a78a-581dfdd47a94.md), [Consent/Example-MII-Consent-ResultType-document](Consent-Example-MII-Consent-ResultType-document.md) and [MII_PR_Consent_Einwilligung](StructureDefinition-e0e166b4-0f77-478d-9062-de0034d98ce0.md)
+* [MII Consent Version and Modules CodeSystem](CodeSystem-mii-cs-consent-version-modules.md): [Consent/34150a23-b1c8-404f-874f-e042a30435d2](Consent-34150a23-b1c8-404f-874f-e042a30435d2.md), [Consent/5143266b-8d60-4b28-8ee9-635140ffa5bb](Consent-5143266b-8d60-4b28-8ee9-635140ffa5bb.md), [Consent/Example-MII-Consent-ResultType-document](Consent-Example-MII-Consent-ResultType-document.md) and [MII_PR_Consent_Einwilligung](StructureDefinition-e0e166b4-0f77-478d-9062-de0034d98ce0.md)
 
 
 * These codes are excerpted from ASTM Standard, E1762-95(2013) - Standard Guide for Electronic Authentication of Health Care Information, Copyright by ASTM International, 100 Barr Harbor Drive, West Conshohocken, PA 19428. Copies of this standard are available through the ASTM Web Site at www.astm.org.
@@ -51,14 +51,13 @@ This publication includes IP covered under the following statements.
 
 * This material contains content that is copyright of SNOMED International. Implementers of these specifications must have the appropriate SNOMED CT Affiliate license - for more information contact [https://www.snomed.org/get-snomed](https://www.snomed.org/get-snomed) or [info@snomed.org](mailto:info@snomed.org).
 
-* [SNOMED Clinical Terms&reg; (SNOMED CT&reg;)](http://hl7.org/fhir/R4/codesystem-snomedct.html): [MIIConsentVersionModuleCodeSystem](CodeSystem-mii-cs-consent-version-modules.md) and [MII_CS_Consent_Answer](CodeSystem-2.16.840.1.113883.3.1937.777.24.5.2--20210423105554.md)
+* [SNOMED Clinical Terms&reg; (SNOMED CT&reg;)](http://hl7.org/fhir/R4/codesystem-snomedct.html): [MIIConsentVersionModuleCodeSystem](CodeSystem-mii-cs-consent-version-modules.md), [MII_CS_Consent_Answer](CodeSystem-2.16.840.1.113883.3.1937.777.24.5.2--20210423105554.md) and [MII_VS_Consent_Answer](ValueSet-2.16.840.1.113883.3.1937.777.24.11.30--20210323234509.md)
 
 
 * This material derives from the HL7 Terminology (THO). THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: [https://terminology.hl7.org/license.html](https://terminology.hl7.org/license.html)
 
 * [Consent Scope Codes](http://terminology.hl7.org/7.3.0/CodeSystem-consentscope.html): [Consent/34150a23-b1c8-404f-874f-e042a30435d2](Consent-34150a23-b1c8-404f-874f-e042a30435d2.md), [Consent/5143266b-8d60-4b28-8ee9-635140ffa5bb](Consent-5143266b-8d60-4b28-8ee9-635140ffa5bb.md), [Consent/89f494a3-cd75-44f5-a78a-581dfdd47a94](Consent-89f494a3-cd75-44f5-a78a-581dfdd47a94.md) and [Consent/Example-MII-Consent-ResultType-document](Consent-Example-MII-Consent-ResultType-document.md)
 * [Provenance participant type](http://terminology.hl7.org/7.3.0/CodeSystem-provenance-participant-type.html): [Provenance/55219d12-6245-4de4-8b50-ddf6f16a789b](Provenance-55219d12-6245-4de4-8b50-ddf6f16a789b.md)
-* [identifierType](http://terminology.hl7.org/7.3.0/CodeSystem-v2-0203.html): [Patient/531cef77-2a30-4283-944d-affaf9ae234e](Patient-531cef77-2a30-4283-944d-affaf9ae234e.md), [Patient/9b4a702d-162c-428a-8c5d-8b98af21b693](Patient-9b4a702d-162c-428a-8c5d-8b98af21b693.md), [ResearchStudy/c946ae17-e3e6-4178-b5ea-15f95aaeeeb4](ResearchStudy-c946ae17-e3e6-4178-b5ea-15f95aaeeeb4.md) and [ResearchStudy/d7a65ce8-2810-401a-b0db-70782a7b19a6](ResearchStudy-d7a65ce8-2810-401a-b0db-70782a7b19a6.md)
 
 
 ### IG-Parametereinstellungen und Expansionsparameter
@@ -1380,70 +1379,6 @@ Expansionsparameter sind Query-Parameter, die an eine `ValueSet`- `$expand`-Oper
       },
       "name" : "8a3d1799-2463-405e-b49c-6a16c8692b01",
       "exampleCanonical" : "https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-documentreference"
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ResearchStudy"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ResearchStudy-c946ae17-e3e6-4178-b5ea-15f95aaeeeb4.html"
-      }],
-      "reference" : {
-        "reference" : "ResearchStudy/c946ae17-e3e6-4178-b5ea-15f95aaeeeb4"
-      },
-      "name" : "Beispiel Einwilligungsdomäne (synthetische Studie)",
-      "description" : "Synthetische Consent-Domäne (ResearchStudy) als Referenzziel der DomainReference-Extension der Quell-Beispiele.",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "ResearchStudy"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "ResearchStudy-d7a65ce8-2810-401a-b0db-70782a7b19a6.html"
-      }],
-      "reference" : {
-        "reference" : "ResearchStudy/d7a65ce8-2810-401a-b0db-70782a7b19a6"
-      },
-      "name" : "Beispiel Einwilligungsdomäne (synthetische Studie)",
-      "description" : "Synthetische Consent-Domäne (ResearchStudy) als Referenzziel der DomainReference-Extension der Quell-Beispiele.",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Patient"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "Patient-531cef77-2a30-4283-944d-affaf9ae234e.html"
-      }],
-      "reference" : {
-        "reference" : "Patient/531cef77-2a30-4283-944d-affaf9ae234e"
-      },
-      "name" : "Beispiel Patient (pseudonym, synthetisch)",
-      "description" : "Synthetischer, pseudonymer Patient als Referenzziel der Quell-Beispiele (Consent.patient, DocumentReference.subject, Provenance.signature.who).",
-      "exampleBoolean" : true
-    },
-    {
-      "extension" : [{
-        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
-        "valueString" : "Patient"
-      },
-      {
-        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
-        "valueUri" : "Patient-9b4a702d-162c-428a-8c5d-8b98af21b693.html"
-      }],
-      "reference" : {
-        "reference" : "Patient/9b4a702d-162c-428a-8c5d-8b98af21b693"
-      },
-      "name" : "Beispiel Patient (pseudonym, synthetisch)",
-      "description" : "Synthetischer, pseudonymer Patient als Referenzziel der Quell-Beispiele (Consent.patient, DocumentReference.subject, Provenance.signature.who).",
-      "exampleBoolean" : true
     },
     {
       "extension" : [{

@@ -69,18 +69,14 @@ These define new code systems used by systems conforming to this implementation 
 
 These are example instances that show what data produced and consumed by systems conforming with this implementation guide might look like.
 
-| | |
-| :--- | :--- |
-| [ 34150a23-b1c8-404f-874f-e042a30435d2  ](Consent-34150a23-b1c8-404f-874f-e042a30435d2.md) |  |
-| [ 5143266b-8d60-4b28-8ee9-635140ffa5bb  ](Consent-5143266b-8d60-4b28-8ee9-635140ffa5bb.md) |  |
-| [ 55219d12-6245-4de4-8b50-ddf6f16a789b  ](Provenance-55219d12-6245-4de4-8b50-ddf6f16a789b.md) |  |
-| [ 89f494a3-cd75-44f5-a78a-581dfdd47a94  ](Consent-89f494a3-cd75-44f5-a78a-581dfdd47a94.md) |  |
-| [ 8a3d1799-2463-405e-b49c-6a16c8692b01  ](DocumentReference-8a3d1799-2463-405e-b49c-6a16c8692b01.md) |  |
-| [ Beispiel Einwilligungsdomäne (synthetische Studie)  ](ResearchStudy-c946ae17-e3e6-4178-b5ea-15f95aaeeeb4.md) | Synthetische Consent-Domäne (ResearchStudy) als Referenzziel der DomainReference-Extension der Quell-Beispiele. |
-| [ Beispiel Einwilligungsdomäne (synthetische Studie)  ](ResearchStudy-d7a65ce8-2810-401a-b0db-70782a7b19a6.md) | Synthetische Consent-Domäne (ResearchStudy) als Referenzziel der DomainReference-Extension der Quell-Beispiele. |
-| [ Beispiel Patient (pseudonym, synthetisch)  ](Patient-531cef77-2a30-4283-944d-affaf9ae234e.md) | Synthetischer, pseudonymer Patient als Referenzziel der Quell-Beispiele (Consent.patient, DocumentReference.subject, Provenance.signature.who). |
-| [ Beispiel Patient (pseudonym, synthetisch)  ](Patient-9b4a702d-162c-428a-8c5d-8b98af21b693.md) | Synthetischer, pseudonymer Patient als Referenzziel der Quell-Beispiele (Consent.patient, DocumentReference.subject, Provenance.signature.who). |
-| [ Example-MII-Consent-ResultType-document  ](Consent-Example-MII-Consent-ResultType-document.md) |  |
+| |
+| :--- |
+| [ 34150a23-b1c8-404f-874f-e042a30435d2  ](Consent-34150a23-b1c8-404f-874f-e042a30435d2.md) |
+| [ 5143266b-8d60-4b28-8ee9-635140ffa5bb  ](Consent-5143266b-8d60-4b28-8ee9-635140ffa5bb.md) |
+| [ 55219d12-6245-4de4-8b50-ddf6f16a789b  ](Provenance-55219d12-6245-4de4-8b50-ddf6f16a789b.md) |
+| [ 89f494a3-cd75-44f5-a78a-581dfdd47a94  ](Consent-89f494a3-cd75-44f5-a78a-581dfdd47a94.md) |
+| [ 8a3d1799-2463-405e-b49c-6a16c8692b01  ](DocumentReference-8a3d1799-2463-405e-b49c-6a16c8692b01.md) |
+| [ Example-MII-Consent-ResultType-document  ](Consent-Example-MII-Consent-ResultType-document.md) |
 
 ### Other 
 
