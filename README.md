@@ -53,6 +53,18 @@ Skript-Header und in `migration-log/`; Entscheidung D-4).
 | `ressourcen-profile/`, `searchparameters/`, `terminologie/`, `examples/` | **Alt-Quellbestand (Roh-XML/JSON)** — bleibt bis zur Freigabe (Gate D) erhalten, danach Rückbau (Entscheidung D-13) |
 | `README.simplifier-legacy.md` | Die ursprüngliche README der Quelle (unverändert archiviert) |
 
+### `package.json` im Repo-Root (CI-Kompatibilität)
+
+Das Root-`package.json` existiert ausschließlich für die MII-Standard-Validierung
+(`kerndatensatz-meta` `ci_dotnet_validation`, Schritt "FHIR Dependency restore" —
+sie erwartet das klassische Simplifier-Layout). Es ist **aus `sushi-config.yaml`
+abgeleitet** (Single Source of Truth): Version und Abhängigkeiten dort ändern und
+hier nachziehen. Gewollte Abweichung: `de.einwilligungsmanagement` ist hier auf die
+Registry-Version `2.0.4-rc1` gepinnt, während `sushi-config.yaml` den lokal
+generierten Cache-Eintrag `2.0.4-rc1-snapshots` pinnt
+(`scripts/generate-parent-snapshots.sh`) — den es auf keinem Registry-Server gibt.
+Das Build-Manifest des Pakets erzeugt weiterhin SUSHI (`fsh-generated/`).
+
 ## Herkunft & Governance
 
 Inhaltlich unverändert übernommen: alle Canonical-URLs, IDs, Versionen und die
