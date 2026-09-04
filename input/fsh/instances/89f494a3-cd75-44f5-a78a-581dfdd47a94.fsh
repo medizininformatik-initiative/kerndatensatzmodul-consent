@@ -27,15 +27,15 @@ Usage: #example
 * provision.provision[0].type = #permit
 * provision.provision[=].period.start = "2020-09-01"
 * provision.provision[=].period.end = "2025-08-31"
-* provision.provision[=].code[0] = urn:oid:2.16.840.1.113883.3.1937.777.24.5.3#2.16.840.1.113883.3.1937.777.24.5.3.6 "MDAT_erheben"
-* provision.provision[=].code[+] = urn:oid:2.16.840.1.113883.3.1937.777.24.5.3#2.16.840.1.113883.3.1937.777.24.5.3.7 "MDAT_speichern_verarbeiten"
-* provision.provision[=].code[+] = urn:oid:2.16.840.1.113883.3.1937.777.24.5.3#2.16.840.1.113883.3.1937.777.24.5.3.19 "BIOMAT_erheben"
+* provision.provision[=].code[0] = urn:oid:2.16.840.1.113883.3.1937.777.24.5.3#2.16.840.1.113883.3.1937.777.24.5.3.6 "MDAT erheben"
+* provision.provision[=].code[+] = urn:oid:2.16.840.1.113883.3.1937.777.24.5.3#2.16.840.1.113883.3.1937.777.24.5.3.7 "MDAT speichern, verarbeiten"
+* provision.provision[=].code[+] = urn:oid:2.16.840.1.113883.3.1937.777.24.5.3#2.16.840.1.113883.3.1937.777.24.5.3.19 "BIOMAT erheben"
 * provision.provision[+].type = #permit
 * provision.provision[=].period.start = "2020-09-01"
 * provision.provision[=].period.end = "2050-08-31"
-* provision.provision[=].code = urn:oid:2.16.840.1.113883.3.1937.777.24.5.3#2.16.840.1.113883.3.1937.777.24.5.3.8 "MDAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU"
+* provision.provision[=].code = urn:oid:2.16.840.1.113883.3.1937.777.24.5.3#2.16.840.1.113883.3.1937.777.24.5.3.8 "MDAT wissenschaftlich nutzen"
 * provision.provision[+].type = #permit
 * provision.provision[=].period.start = "2020-09-01"
 * provision.provision[=].period.end = "2050-08-31"
-* provision.provision[=].code[0] = urn:oid:2.16.840.1.113883.3.1937.777.24.5.3#2.16.840.1.113883.3.1937.777.24.5.3.20 "BIOMAT_lagern_verarbeiten"
-* provision.provision[=].code[+] = urn:oid:2.16.840.1.113883.3.1937.777.24.5.3#2.16.840.1.113883.3.1937.777.24.5.3.22 "BIOMAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU"
+* provision.provision[=].code[0] = urn:oid:2.16.840.1.113883.3.1937.777.24.5.3#2.16.840.1.113883.3.1937.777.24.5.3.20 "BIOMAT lagern verarbeiten"
+* provision.provision[=].code[+] = urn:oid:2.16.840.1.113883.3.1937.777.24.5.3#2.16.840.1.113883.3.1937.777.24.5.3.22 "BIOMAT wissenschaftlich nutzen"
