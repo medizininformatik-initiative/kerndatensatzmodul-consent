@@ -11,7 +11,7 @@ Usage: #example
 * status = #active
 * scope = $consentscope#research
 * category[0] = $loinc#57016-8
-* category[+] = $mii-cs-consent-version-modules#2.16.840.1.113883.3.1937.777.24.2.184
+* category[+] = $mii-cs-consent-consent_category#2.16.840.1.113883.3.1937.777.24.2.184
 * category[+] = $ResultType#document
 * category[+] = $TemplateType#CONSENT-OPT-IN
 * patient = Reference(Patient/9b4a702d-162c-428a-8c5d-8b98af21b693)

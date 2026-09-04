@@ -17,9 +17,38 @@ Description: "This ValueSet contains the possible answers to the questions of th
 * ^contact.telecom.system = #email
 * ^contact.telecom.value = "office@medizininformatik-initiative.de"
 * ^immutable = false
-// QA-Fix der frischen Migration 2026-09-04 (run.log 7.1): CodeSystem.valueSet
-// deklariert dieses ValueSet als implizites All-System-VS; der Compose darf dann
-// nur ein nacktes include des Systems enthalten (Validator CODESYSTEM_CS_VS_INCLUDE_DETAILS).
-// Die bisherige Konzept-Aufzaehlung (Designations identisch zum CS, 3 Kommentar-
-// Extensions) entfaellt; Expansion unveraendert (3 Codes).
-* include codes from system urn:oid:2.16.840.1.113883.3.1937.777.24.5.2
+* MII_CS_Consent_Answer#2.16.840.1.113883.3.1937.777.24.5.2.3 "unbekannt"
+* MII_CS_Consent_Answer#2.16.840.1.113883.3.1937.777.24.5.2.3 ^extension.url = "http://hl7.org/fhir/StructureDefinition/valueset-concept-comments"
+* MII_CS_Consent_Answer#2.16.840.1.113883.3.1937.777.24.5.2.3 ^extension.valueString = "unknown"
+* MII_CS_Consent_Answer#2.16.840.1.113883.3.1937.777.24.5.2.3 ^designation[0].language = #de-DE
+* MII_CS_Consent_Answer#2.16.840.1.113883.3.1937.777.24.5.2.3 ^designation[=].use.system = "http://snomed.info/sct"
+* MII_CS_Consent_Answer#2.16.840.1.113883.3.1937.777.24.5.2.3 ^designation[=].use = $sct#900000000000013009 "Synonym"
+* MII_CS_Consent_Answer#2.16.840.1.113883.3.1937.777.24.5.2.3 ^designation[=].use.display = "Synonym"
+* MII_CS_Consent_Answer#2.16.840.1.113883.3.1937.777.24.5.2.3 ^designation[=].value = "unbekannt"
+* MII_CS_Consent_Answer#2.16.840.1.113883.3.1937.777.24.5.2.3 ^designation[+].language = #en-US
+* MII_CS_Consent_Answer#2.16.840.1.113883.3.1937.777.24.5.2.3 ^designation[=].use.system = "http://snomed.info/sct"
+* MII_CS_Consent_Answer#2.16.840.1.113883.3.1937.777.24.5.2.3 ^designation[=].use = $sct#900000000000013009 "Synonym"
+* MII_CS_Consent_Answer#2.16.840.1.113883.3.1937.777.24.5.2.3 ^designation[=].use.display = "Synonym"
+* MII_CS_Consent_Answer#2.16.840.1.113883.3.1937.777.24.5.2.3 ^designation[=].value = "unknown"
+* MII_CS_Consent_Answer#2.16.840.1.113883.3.1937.777.24.5.2.2 "nicht gültig"
+* MII_CS_Consent_Answer#2.16.840.1.113883.3.1937.777.24.5.2.2 ^extension.url = "http://hl7.org/fhir/StructureDefinition/valueset-concept-comments"
+* MII_CS_Consent_Answer#2.16.840.1.113883.3.1937.777.24.5.2.2 ^extension.valueString = "not valid"
+* MII_CS_Consent_Answer#2.16.840.1.113883.3.1937.777.24.5.2.2 ^designation[0].language = #de-DE
+* MII_CS_Consent_Answer#2.16.840.1.113883.3.1937.777.24.5.2.2 ^designation[=].use.system = "http://snomed.info/sct"
+* MII_CS_Consent_Answer#2.16.840.1.113883.3.1937.777.24.5.2.2 ^designation[=].use = $sct#900000000000013009 "Synonym"
+* MII_CS_Consent_Answer#2.16.840.1.113883.3.1937.777.24.5.2.2 ^designation[=].use.display = "Synonym"
+* MII_CS_Consent_Answer#2.16.840.1.113883.3.1937.777.24.5.2.2 ^designation[=].value = "nicht gültig"
+* MII_CS_Consent_Answer#2.16.840.1.113883.3.1937.777.24.5.2.2 ^designation[+].language = #en-US
+* MII_CS_Consent_Answer#2.16.840.1.113883.3.1937.777.24.5.2.2 ^designation[=].use.system = "http://snomed.info/sct"
+* MII_CS_Consent_Answer#2.16.840.1.113883.3.1937.777.24.5.2.2 ^designation[=].use = $sct#900000000000013009 "Synonym"
+* MII_CS_Consent_Answer#2.16.840.1.113883.3.1937.777.24.5.2.2 ^designation[=].use.display = "Synonym"
+* MII_CS_Consent_Answer#2.16.840.1.113883.3.1937.777.24.5.2.2 ^designation[=].value = "not valid"
+* MII_CS_Consent_Answer#2.16.840.1.113883.3.1937.777.24.5.2.1 "gültig"
+* MII_CS_Consent_Answer#2.16.840.1.113883.3.1937.777.24.5.2.1 ^extension.url = "http://hl7.org/fhir/StructureDefinition/valueset-concept-comments"
+* MII_CS_Consent_Answer#2.16.840.1.113883.3.1937.777.24.5.2.1 ^extension.valueString = "valid"
+* MII_CS_Consent_Answer#2.16.840.1.113883.3.1937.777.24.5.2.1 ^designation[0].language = #de-DE
+* MII_CS_Consent_Answer#2.16.840.1.113883.3.1937.777.24.5.2.1 ^designation[=].use = $sct#900000000000013009 "Synonym"
+* MII_CS_Consent_Answer#2.16.840.1.113883.3.1937.777.24.5.2.1 ^designation[=].value = "gültig"
+* MII_CS_Consent_Answer#2.16.840.1.113883.3.1937.777.24.5.2.1 ^designation[+].language = #en-US
+* MII_CS_Consent_Answer#2.16.840.1.113883.3.1937.777.24.5.2.1 ^designation[=].use = $sct#900000000000013009 "Synonym"
+* MII_CS_Consent_Answer#2.16.840.1.113883.3.1937.777.24.5.2.1 ^designation[=].value = "valid"

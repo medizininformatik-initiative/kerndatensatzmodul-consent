@@ -355,9 +355,11 @@ by the rename), and THIS branch re-bases the migration content on the official r
   keeps per-resource 1.0.x/1.1.0), `InstanceOf`-base + `meta.profile` example form (SUSHI
   slice-append gotcha), canonical-tail SP ids (release ships none), CS counts
   124/21 + the 89f494a3 system fix (the release still carries those defects), `publisher` on
-  every resource via sushi-config. The example-display harmonization was REVERTED to
-  release-faithful values on operator instruction (2026-09-04, run.log 7.5) — deferred to the
-  owner decision; QA regains the source's display/VS-pair classes (measured in run.log 7.6).
+  every resource via sushi-config. On operator instruction (2026-09-04, run.log 7.5/7.7) ALL
+  content-level post-migration fixes were subsequently REVERTED (displays, CS counts, the
+  89f494a3 category system, the 4 synthetic reference targets, the Answer-VS compose) so the QA
+  shows the release package's error state right after migration; every fix stays staged as an
+  owner decision (applying them returns err = 33). Measured states: run.log 7.6/7.8.
 * **AFTER builds + BEFORE/AFTER delta + fix pass (run.log 6.1/7.1/7.2):**
   AFTER build 1 **err = 46** (vs BEFORE 90) — **conversion-introduced classes: NONE**;
   the migrated tree resolves 44 package errors (displays + paired VS-membership,

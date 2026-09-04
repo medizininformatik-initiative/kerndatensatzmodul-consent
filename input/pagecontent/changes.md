@@ -110,11 +110,19 @@ Datum 04.09.2026
   (Details: `migration-log/run.log`, Eintrag 5.2): harmonisierte
   Artefakt-Versionen, kanonische SearchParameter-IDs (das Paket liefert keine),
   korrigierte CodeSystem-Zählungen, `publisher`-Metadaten
-  sowie das im Paket fehlende Version-Modules-CodeSystem. Die zunächst an das
-  korrigierte Policy-CodeSystem angeglichenen **Beispiel-Displays wurden auf
-  Operator-Anweisung (04.09.2026) wieder Release-getreu zurückgesetzt** — die
-  Angleichung ist bis zur Owner-Entscheidung zurückgestellt; die QA zeigt daher
-  wieder die Display-/ValueSet-Paarfehler der Quelle.
+  sowie das im Paket fehlende Version-Modules-CodeSystem. **Auf Operator-Anweisung (04.09.2026) wurden sämtliche inhaltlichen
+  Nach-Migrations-Fixes zurückgesetzt**, damit die QA den Fehlerstand des
+  offiziellen Release-Pakets unmittelbar nach der Migration zeigt: Beispiel-
+  Displays, CodeSystem-Zählungen (wieder 101/20), das Category-System des
+  Beispiels 89f494a3 (wieder das nirgends definierte `consent_category`), die
+  vier synthetischen Referenzziel-Instanzen und der Answer-ValueSet-Compose
+  (wieder Konzept-Aufzählung). Alle Fixes bleiben vorbereitet und sind
+  Owner-Entscheidungen (mit ihnen: err = 33). Verbleibende technische
+  Abweichungen vom Paket: harmonisierte Versionen, kanonische SearchParameter-
+  IDs (das Paket liefert ID-lose SPs — in FSH nicht darstellbar), `publisher`
+  via sushi-config (Toolchain-Injektion) und das mitgeführte
+  Version-Modules-CodeSystem (im Repo-Tag enthalten, nur im Paket fehlend —
+  ohne dieses bräche der Build).
 
 #### develop-Inkorporation (Stand 744f7ba, 2026-08-21) — Teil von 2027.0.0-ballot.rc1
 

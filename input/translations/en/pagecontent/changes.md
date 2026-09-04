@@ -110,12 +110,19 @@ Date 04.09.2026
   2026 migration, have been added to the profile intro notes.
 * Deliberate, logged divergences from the shipped release package (details:
   `migration-log/run.log`, entry 5.2): harmonized artifact versions, canonical
-  SearchParameter ids (the package ships none), corrected CodeSystem counts, `publisher` metadata, and the Version-Modules CodeSystem
-  the package is missing. The example displays initially harmonized with the
-  corrected Policy CodeSystem were **reverted to the release-faithful values on
-  operator instruction (2026-09-04)** — the harmonization is deferred until the
-  owners decide; QA therefore again shows the source's display/ValueSet pair
-  errors.
+  SearchParameter ids (the package ships none), `publisher` metadata, and the Version-Modules CodeSystem
+  the package is missing. **On operator instruction (2026-09-04) ALL content-level post-migration fixes
+  were reverted** so that QA shows the official release package's error state
+  immediately after migration: example displays, CodeSystem counts (again
+  101/20), the category system of example 89f494a3 (again the undefined
+  `consent_category`), the four synthetic reference-target instances, and the
+  Answer-ValueSet compose (again a concept enumeration). All fixes remain
+  staged and are owner decisions (with them: err = 33). Remaining technical
+  divergences from the package: harmonized versions, canonical SearchParameter
+  ids (the package ships id-less SPs — not expressible in FSH), `publisher`
+  via sushi-config (toolchain injection), and the bundled Version-Modules
+  CodeSystem (present in the repo tag, missing only from the package — without
+  it the build breaks).
 
 #### develop incorporation (state 744f7ba, 2026-08-21) — part of 2027.0.0-ballot.rc1
 
