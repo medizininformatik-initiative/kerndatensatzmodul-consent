@@ -47,7 +47,7 @@
 </head>
 <body style="margin: 20px; background-color: #ffffff">
  <h1>Validation Results for MII_IG_Consent</h1>
- <p>Generated Fri Sep 04 12:21:40 UTC 2026, FHIR version 4.0.1 for de.medizininformatikinitiative.kerndatensatz.consent#2027.0.0-ballot.rc1 (canonical = <a href="https://www.medizininformatik-initiative.de/fhir/modul-consent">https://www.medizininformatik-initiative.de/fhir/modul-consent</a> (<a href="https://www.medizininformatik-initiative.de/fhir/modul-consent/history.html">history</a>)). See <a href="qa.html">Full QA Report</a> &amp; <a href="qa-ipreview.html">IP</a></p>
+ <p>Generated Fri Sep 04 13:17:53 UTC 2026, FHIR version 4.0.1 for de.medizininformatikinitiative.kerndatensatz.consent#2027.0.0-ballot.rc1 (canonical = <a href="https://www.medizininformatik-initiative.de/fhir/modul-consent">https://www.medizininformatik-initiative.de/fhir/modul-consent</a> (<a href="https://www.medizininformatik-initiative.de/fhir/modul-consent/history.html">history</a>)). See <a href="qa.html">Full QA Report</a> &amp; <a href="qa-ipreview.html">IP</a></p>
 <table class="grid"> <tr><td colspan=2><b>Quality Checks</b></td></tr>
  <tr><td>Publisher Version:</td><td><span style="background-color: #ffcccc">IG Publisher Version: v2.3.2 which is a development version. The latest official release version isv2.3.4 <a href="https://github.com/HL7/fhir-ig-publisher/releases/latest/download/publisher.jar">Download Latest</a></span></td></tr>
  <tr><td>Publication Code:</td><td>n/a<span style="color: maroon; font-weight: bold"> </span>. PackageId = de.medizininformatikinitiative.kerndatensatz.consent, Canonical = https://www.medizininformatik-initiative.de/fhir/modul-consent</td></tr>
@@ -91,7 +91,7 @@
  <tr><td>Related IGs:</td><td>n/a</td></tr>
  <tr><td>Dependent IGs:</td><td><a href="qa-dep.html">no references</a></td></tr>
  <tr><td>Global Profiles:</td><td>(none declared)</td></tr>
- <tr><td>Terminology Server(s):</td><td><a href="https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, <a href="https://tx.ontoserver.csiro.au/fhir">https://tx.ontoserver.csiro.au/fhir</a> (<a href="qa-txservers.html">details</a>)</td></tr>
+ <tr><td>Terminology Server(s):</td><td><a href="https://tx-nordics.fhir.org/fhir/r4">https://tx-nordics.fhir.org/fhir/r4</a>, <a href="https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, <a href="https://tx.hl7.cz/r4">https://tx.hl7.cz/r4</a>, <a href="https://tx.hl7.org.au/fhir">https://tx.hl7.org.au/fhir</a>, <a href="https://tx.hl7chile.cl/r4">https://tx.hl7chile.cl/r4</a>, <a href="https://tx.hl7europe.eu/r4">https://tx.hl7europe.eu/r4</a>, <a href="https://tx.ontoserver.csiro.au/fhir">https://tx.ontoserver.csiro.au/fhir</a> (<a href="qa-txservers.html">details</a>)</td></tr>
  <tr><td>HTA Analysis:</td><td><i>Non-HL7 Igs are exempt from terminology dependency analysis</i></td></tr>
  <tr><td>R5 Dependencies:</td><td><span style="color: grey">(none)</span></td></tr>
  <tr><td>Draft Dependencies:</td><td><ul>
@@ -258,8 +258,8 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 0ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Parameters: disp-lang=de, generate-narrative, default-to-latest
 0ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Version Rules: default:http://snomed.info/sct#http://snomed.info/sct/900000000000207008/version/20250701
 0ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Prepare include[0]: "(urn:iso:std:iso:3166)"
-0ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: CodeSystem found: "urn:iso:std:iso:3166|2018"
-0ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Prepare include[1]: "(urn:iso:std:iso:3166:-2)"
+1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: CodeSystem found: "urn:iso:std:iso:3166|2018"
+1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Prepare include[1]: "(urn:iso:std:iso:3166:-2)"
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: CodeSystem found: "urn:iso:std:iso:3166:-2|2021"
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Prepare include[2]: "(http://unstats.un.org/unsd/methods/m49/m49.htm)(class=region)"
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: CodeSystem found: "http://unstats.un.org/unsd/methods/m49/m49.htm|null"
@@ -300,7 +300,7 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem version http://snomed.info/sct/900000000000207008/version/20250701 not found: "http://snomed.info/sct"
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Validate "[http://snomed.info/sct#900000000000013009 ("Synonym")]"
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Check "http://snomed.info/sct#900000000000013009"
-0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html">Shareable CodeSystem</a></td>
+1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html">Shareable CodeSystem</a></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>CodeSystem&#8203;.concept[0]&#8203;.designation[1]&#8203;.use&#8203;.system (l1&#8203;/c5795)</b></td><td><b>warning</b></td><td><b>A definition for CodeSystem 'http://snomed.info/sct' could not be found, so the code cannot be validated</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l12">log</a>, or see <a href="#vmi747" onClick="document.getElementById('vmi747').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">UNKNOWN_CODESYSTEM</span><div id="vmi747" style="display:none"><br/><pre>0ms tx-op
@@ -311,7 +311,7 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem version http://snomed.info/sct/900000000000207008/version/20250701 not found: "http://snomed.info/sct"
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Validate "[http://snomed.info/sct#900000000000013009 ("Synonym")]"
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Check "http://snomed.info/sct#900000000000013009"
-0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html">Shareable CodeSystem</a></td>
+1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html">Shareable CodeSystem</a></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>CodeSystem&#8203;.concept[1]&#8203;.designation[0]&#8203;.use&#8203;.system (l1&#8203;/c6014)</b></td><td><b>warning</b></td><td><b>A definition for CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250701' could not be found, so the code cannot be validated. Valid versions: http://snomed.info/sct/11000146104/version/20240930, http://snomed.info/sct/2011000195101/version/20230607, http://snomed.info/sct/554471000005108/version/20260331, http://snomed.info/sct/731000124108/version/20230301, http://snomed.info/sct/731000124108/version/20240301, http://snomed.info/sct/731000124108/version/20250901, http://snomed.info/sct/827022005/version/20241216, http://snomed.info/sct/83821000000107/version/20230412, http://snomed.info/sct/900000000000207008/version/20240201, http://snomed.info/sct/900000000000207008/version/20250201 and http://snomed.info/xsct/31000003106/version/20250909</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l13">log</a>, or see <a href="#vmi748" onClick="document.getElementById('vmi748').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">UNKNOWN_CODESYSTEM_VERSION</span><div id="vmi748" style="display:none"><br/><pre>0ms tx-op
@@ -322,7 +322,7 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem version http://snomed.info/sct/900000000000207008/version/20250701 not found: "http://snomed.info/sct"
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Validate "[http://snomed.info/sct#900000000000013009 ("Synonym")]"
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Check "http://snomed.info/sct#900000000000013009"
-0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html">Shareable CodeSystem</a></td>
+1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html">Shareable CodeSystem</a></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>CodeSystem&#8203;.concept[1]&#8203;.designation[0]&#8203;.use&#8203;.system (l1&#8203;/c6014)</b></td><td><b>warning</b></td><td><b>A definition for CodeSystem 'http://snomed.info/sct' could not be found, so the code cannot be validated</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l13">log</a>, or see <a href="#vmi749" onClick="document.getElementById('vmi749').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">UNKNOWN_CODESYSTEM</span><div id="vmi749" style="display:none"><br/><pre>0ms tx-op
@@ -333,7 +333,7 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem version http://snomed.info/sct/900000000000207008/version/20250701 not found: "http://snomed.info/sct"
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Validate "[http://snomed.info/sct#900000000000013009 ("Synonym")]"
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Check "http://snomed.info/sct#900000000000013009"
-0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html">Shareable CodeSystem</a></td>
+1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html">Shareable CodeSystem</a></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>CodeSystem&#8203;.concept[1]&#8203;.designation[1]&#8203;.use&#8203;.system (l1&#8203;/c6148)</b></td><td><b>warning</b></td><td><b>A definition for CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250701' could not be found, so the code cannot be validated. Valid versions: http://snomed.info/sct/11000146104/version/20240930, http://snomed.info/sct/2011000195101/version/20230607, http://snomed.info/sct/554471000005108/version/20260331, http://snomed.info/sct/731000124108/version/20230301, http://snomed.info/sct/731000124108/version/20240301, http://snomed.info/sct/731000124108/version/20250901, http://snomed.info/sct/827022005/version/20241216, http://snomed.info/sct/83821000000107/version/20230412, http://snomed.info/sct/900000000000207008/version/20240201, http://snomed.info/sct/900000000000207008/version/20250201 and http://snomed.info/xsct/31000003106/version/20250909</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l14">log</a>, or see <a href="#vmi750" onClick="document.getElementById('vmi750').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">UNKNOWN_CODESYSTEM_VERSION</span><div id="vmi750" style="display:none"><br/><pre>0ms tx-op
@@ -387,8 +387,8 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Prepare include[0]: "(http://snomed.info/sct)(900000000000003001,900000000000013009)"
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem version http://snomed.info/sct/900000000000207008/version/20250701 not found: "http://snomed.info/sct"
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Validate "[http://snomed.info/sct#900000000000013009 ("Synonym")]"
-0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Check "http://snomed.info/sct#900000000000013009"
-0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html">Shareable CodeSystem</a></td>
+1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Check "http://snomed.info/sct#900000000000013009"
+1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html">Shareable CodeSystem</a></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>CodeSystem&#8203;.concept[2]&#8203;.designation[1]&#8203;.use&#8203;.system (l1&#8203;/c6491)</b></td><td><b>warning</b></td><td><b>A definition for CodeSystem 'http://snomed.info/sct' could not be found, so the code cannot be validated</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l16">log</a>, or see <a href="#vmi755" onClick="document.getElementById('vmi755').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">UNKNOWN_CODESYSTEM</span><div id="vmi755" style="display:none"><br/><pre>0ms tx-op
@@ -398,8 +398,8 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Prepare include[0]: "(http://snomed.info/sct)(900000000000003001,900000000000013009)"
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem version http://snomed.info/sct/900000000000207008/version/20250701 not found: "http://snomed.info/sct"
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Validate "[http://snomed.info/sct#900000000000013009 ("Synonym")]"
-0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Check "http://snomed.info/sct#900000000000013009"
-0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html">Shareable CodeSystem</a></td>
+1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Check "http://snomed.info/sct#900000000000013009"
+1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html">Shareable CodeSystem</a></td>
    </tr>
    <tr style="background-color: #ffcccc">
      <td><b>CodeSystem</b></td><td><b>error</b></td><td><b>CodeSystem urn:oid:2.16.840.1.113883.3.1937.777.24.5.2 hat einen 'all system' ValueSet von https://www.medizininformatik-initiative.de/fhir/modul-consent/ValueSet/mii-vs-consent-answer, aber das Include beeinhaltet zusätzliche Details</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">CodeSystem_CS_VS_IncludeDetails</span></td><td>--</td>
@@ -426,8 +426,8 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 0ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Parameters: disp-lang=de, generate-narrative, default-to-latest
 0ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Version Rules: default:http://snomed.info/sct#http://snomed.info/sct/900000000000207008/version/20250701
 0ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Prepare include[0]: "(urn:iso:std:iso:3166)"
-0ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: CodeSystem found: "urn:iso:std:iso:3166|2018"
-0ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Prepare include[1]: "(urn:iso:std:iso:3166:-2)"
+1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: CodeSystem found: "urn:iso:std:iso:3166|2018"
+1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Prepare include[1]: "(urn:iso:std:iso:3166:-2)"
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: CodeSystem found: "urn:iso:std:iso:3166:-2|2021"
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Prepare include[2]: "(http://unstats.un.org/unsd/methods/m49/m49.htm)(class=region)"
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: CodeSystem found: "http://unstats.un.org/unsd/methods/m49/m49.htm|null"
@@ -507,12 +507,12 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 0ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Parameters: disp-lang=de-DE, generate-narrative, default-to-latest
 0ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Version Rules: default:http://snomed.info/sct#http://snomed.info/sct/900000000000207008/version/20250701
 0ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Prepare include[0]: "(urn:iso:std:iso:3166)"
-0ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: CodeSystem found: "urn:iso:std:iso:3166|2018"
-0ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Prepare include[1]: "(urn:iso:std:iso:3166:-2)"
-0ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: CodeSystem found: "urn:iso:std:iso:3166:-2|2021"
-0ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Prepare include[2]: "(http://unstats.un.org/unsd/methods/m49/m49.htm)(class=region)"
-0ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: CodeSystem found: "http://unstats.un.org/unsd/methods/m49/m49.htm|null"
-0ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Validate "[urn:iso:std:iso:3166#DE ("Germany")]"
+1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: CodeSystem found: "urn:iso:std:iso:3166|2018"
+1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Prepare include[1]: "(urn:iso:std:iso:3166:-2)"
+1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: CodeSystem found: "urn:iso:std:iso:3166:-2|2021"
+1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Prepare include[2]: "(http://unstats.un.org/unsd/methods/m49/m49.htm)(class=region)"
+1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: CodeSystem found: "http://unstats.un.org/unsd/methods/m49/m49.htm|null"
+1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Validate "[urn:iso:std:iso:3166#DE ("Germany")]"
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Check "urn:iso:std:iso:3166#DE"
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: CodeSystem found: urn:iso:std:iso:3166|2018 for urn:iso:std:iso:3166
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: check code in (urn:iso:std:iso:3166) at CodeableConcept.coding[0]
@@ -529,8 +529,8 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Prepare include[0]: "(http://snomed.info/sct)(900000000000003001,900000000000013009)"
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem version http://snomed.info/sct/900000000000207008/version/20250701 not found: "http://snomed.info/sct"
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Validate "[http://snomed.info/sct#900000000000003001 ("Fully specified name")]"
-0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Check "http://snomed.info/sct#900000000000003001"
-0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html">Shareable CodeSystem</a></td>
+1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Check "http://snomed.info/sct#900000000000003001"
+1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html">Shareable CodeSystem</a></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>CodeSystem&#8203;.concept[0]&#8203;.designation[0]&#8203;.use&#8203;.system (l1&#8203;/c22528)</b></td><td><b>warning</b></td><td><b>A definition for CodeSystem 'http://snomed.info/sct' could not be found, so the code cannot be validated</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l21">log</a>, or see <a href="#vmi781" onClick="document.getElementById('vmi781').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">UNKNOWN_CODESYSTEM</span><div id="vmi781" style="display:none"><br/><pre>0ms tx-op
@@ -540,8 +540,8 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Prepare include[0]: "(http://snomed.info/sct)(900000000000003001,900000000000013009)"
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem version http://snomed.info/sct/900000000000207008/version/20250701 not found: "http://snomed.info/sct"
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Validate "[http://snomed.info/sct#900000000000003001 ("Fully specified name")]"
-0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Check "http://snomed.info/sct#900000000000003001"
-0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html">Shareable CodeSystem</a></td>
+1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Check "http://snomed.info/sct#900000000000003001"
+1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html">Shareable CodeSystem</a></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>CodeSystem&#8203;.concept[1]&#8203;.definition (l1&#8203;/c23832)</b></td><td><b>warning</b></td><td><b>Wert sollte nicht mit Leerzeichen beginnen oder enden</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Type_Specific_Checks_DT_String_WS</span></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html">Shareable CodeSystem</a></td>
@@ -555,7 +555,7 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem version http://snomed.info/sct/900000000000207008/version/20250701 not found: "http://snomed.info/sct"
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Validate "[http://snomed.info/sct#900000000000003001 ("Fully specified name")]"
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Check "http://snomed.info/sct#900000000000003001"
-0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html">Shareable CodeSystem</a></td>
+1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html">Shareable CodeSystem</a></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>CodeSystem&#8203;.concept[1]&#8203;.designation[0]&#8203;.use&#8203;.system (l1&#8203;/c23970)</b></td><td><b>warning</b></td><td><b>A definition for CodeSystem 'http://snomed.info/sct' could not be found, so the code cannot be validated</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l22">log</a>, or see <a href="#vmi784" onClick="document.getElementById('vmi784').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">UNKNOWN_CODESYSTEM</span><div id="vmi784" style="display:none"><br/><pre>0ms tx-op
@@ -566,7 +566,7 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem version http://snomed.info/sct/900000000000207008/version/20250701 not found: "http://snomed.info/sct"
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Validate "[http://snomed.info/sct#900000000000003001 ("Fully specified name")]"
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Check "http://snomed.info/sct#900000000000003001"
-0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html">Shareable CodeSystem</a></td>
+1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html">Shareable CodeSystem</a></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>CodeSystem&#8203;.concept[2]&#8203;.designation[0]&#8203;.use&#8203;.system (l1&#8203;/c24361)</b></td><td><b>warning</b></td><td><b>A definition for CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250701' could not be found, so the code cannot be validated. Valid versions: http://snomed.info/sct/11000146104/version/20240930, http://snomed.info/sct/2011000195101/version/20230607, http://snomed.info/sct/554471000005108/version/20260331, http://snomed.info/sct/731000124108/version/20230301, http://snomed.info/sct/731000124108/version/20240301, http://snomed.info/sct/731000124108/version/20250901, http://snomed.info/sct/827022005/version/20241216, http://snomed.info/sct/83821000000107/version/20230412, http://snomed.info/sct/900000000000207008/version/20240201, http://snomed.info/sct/900000000000207008/version/20250201 and http://snomed.info/xsct/31000003106/version/20250909</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l23">log</a>, or see <a href="#vmi785" onClick="document.getElementById('vmi785').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">UNKNOWN_CODESYSTEM_VERSION</span><div id="vmi785" style="display:none"><br/><pre>0ms tx-op
@@ -577,7 +577,7 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem version http://snomed.info/sct/900000000000207008/version/20250701 not found: "http://snomed.info/sct"
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Validate "[http://snomed.info/sct#900000000000003001 ("Fully specified name")]"
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Check "http://snomed.info/sct#900000000000003001"
-0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html">Shareable CodeSystem</a></td>
+1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html">Shareable CodeSystem</a></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>CodeSystem&#8203;.concept[2]&#8203;.designation[0]&#8203;.use&#8203;.system (l1&#8203;/c24361)</b></td><td><b>warning</b></td><td><b>A definition for CodeSystem 'http://snomed.info/sct' could not be found, so the code cannot be validated</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l23">log</a>, or see <a href="#vmi786" onClick="document.getElementById('vmi786').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">UNKNOWN_CODESYSTEM</span><div id="vmi786" style="display:none"><br/><pre>0ms tx-op
@@ -588,7 +588,7 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem version http://snomed.info/sct/900000000000207008/version/20250701 not found: "http://snomed.info/sct"
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Validate "[http://snomed.info/sct#900000000000003001 ("Fully specified name")]"
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Check "http://snomed.info/sct#900000000000003001"
-0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html">Shareable CodeSystem</a></td>
+1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html">Shareable CodeSystem</a></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>CodeSystem&#8203;.concept[3]&#8203;.designation[0]&#8203;.use&#8203;.system (l1&#8203;/c24747)</b></td><td><b>warning</b></td><td><b>A definition for CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250701' could not be found, so the code cannot be validated. Valid versions: http://snomed.info/sct/11000146104/version/20240930, http://snomed.info/sct/2011000195101/version/20230607, http://snomed.info/sct/554471000005108/version/20260331, http://snomed.info/sct/731000124108/version/20230301, http://snomed.info/sct/731000124108/version/20240301, http://snomed.info/sct/731000124108/version/20250901, http://snomed.info/sct/827022005/version/20241216, http://snomed.info/sct/83821000000107/version/20230412, http://snomed.info/sct/900000000000207008/version/20240201, http://snomed.info/sct/900000000000207008/version/20250201 and http://snomed.info/xsct/31000003106/version/20250909</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l24">log</a>, or see <a href="#vmi787" onClick="document.getElementById('vmi787').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">UNKNOWN_CODESYSTEM_VERSION</span><div id="vmi787" style="display:none"><br/><pre>0ms tx-op
@@ -599,7 +599,7 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem version http://snomed.info/sct/900000000000207008/version/20250701 not found: "http://snomed.info/sct"
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Validate "[http://snomed.info/sct#900000000000003001 ("Fully specified name")]"
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Check "http://snomed.info/sct#900000000000003001"
-0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html">Shareable CodeSystem</a></td>
+1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html">Shareable CodeSystem</a></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>CodeSystem&#8203;.concept[3]&#8203;.designation[0]&#8203;.use&#8203;.system (l1&#8203;/c24747)</b></td><td><b>warning</b></td><td><b>A definition for CodeSystem 'http://snomed.info/sct' could not be found, so the code cannot be validated</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l24">log</a>, or see <a href="#vmi788" onClick="document.getElementById('vmi788').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">UNKNOWN_CODESYSTEM</span><div id="vmi788" style="display:none"><br/><pre>0ms tx-op
@@ -610,7 +610,7 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem version http://snomed.info/sct/900000000000207008/version/20250701 not found: "http://snomed.info/sct"
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Validate "[http://snomed.info/sct#900000000000003001 ("Fully specified name")]"
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Check "http://snomed.info/sct#900000000000003001"
-0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html">Shareable CodeSystem</a></td>
+1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html">Shareable CodeSystem</a></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>CodeSystem&#8203;.concept[4]&#8203;.designation[0]&#8203;.use&#8203;.system (l1&#8203;/c25136)</b></td><td><b>warning</b></td><td><b>A definition for CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250701' could not be found, so the code cannot be validated. Valid versions: http://snomed.info/sct/11000146104/version/20240930, http://snomed.info/sct/2011000195101/version/20230607, http://snomed.info/sct/554471000005108/version/20260331, http://snomed.info/sct/731000124108/version/20230301, http://snomed.info/sct/731000124108/version/20240301, http://snomed.info/sct/731000124108/version/20250901, http://snomed.info/sct/827022005/version/20241216, http://snomed.info/sct/83821000000107/version/20230412, http://snomed.info/sct/900000000000207008/version/20240201, http://snomed.info/sct/900000000000207008/version/20250201 and http://snomed.info/xsct/31000003106/version/20250909</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l25">log</a>, or see <a href="#vmi789" onClick="document.getElementById('vmi789').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">UNKNOWN_CODESYSTEM_VERSION</span><div id="vmi789" style="display:none"><br/><pre>0ms tx-op
@@ -621,7 +621,7 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem version http://snomed.info/sct/900000000000207008/version/20250701 not found: "http://snomed.info/sct"
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Validate "[http://snomed.info/sct#900000000000003001 ("Fully specified name")]"
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Check "http://snomed.info/sct#900000000000003001"
-0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html">Shareable CodeSystem</a></td>
+1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html">Shareable CodeSystem</a></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>CodeSystem&#8203;.concept[4]&#8203;.designation[0]&#8203;.use&#8203;.system (l1&#8203;/c25136)</b></td><td><b>warning</b></td><td><b>A definition for CodeSystem 'http://snomed.info/sct' could not be found, so the code cannot be validated</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l25">log</a>, or see <a href="#vmi790" onClick="document.getElementById('vmi790').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">UNKNOWN_CODESYSTEM</span><div id="vmi790" style="display:none"><br/><pre>0ms tx-op
@@ -632,7 +632,7 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem version http://snomed.info/sct/900000000000207008/version/20250701 not found: "http://snomed.info/sct"
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Validate "[http://snomed.info/sct#900000000000003001 ("Fully specified name")]"
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Check "http://snomed.info/sct#900000000000003001"
-0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html">Shareable CodeSystem</a></td>
+1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html">Shareable CodeSystem</a></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>CodeSystem&#8203;.concept[5]&#8203;.designation[0]&#8203;.use&#8203;.system (l1&#8203;/c25530)</b></td><td><b>warning</b></td><td><b>A definition for CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250701' could not be found, so the code cannot be validated. Valid versions: http://snomed.info/sct/11000146104/version/20240930, http://snomed.info/sct/2011000195101/version/20230607, http://snomed.info/sct/554471000005108/version/20260331, http://snomed.info/sct/731000124108/version/20230301, http://snomed.info/sct/731000124108/version/20240301, http://snomed.info/sct/731000124108/version/20250901, http://snomed.info/sct/827022005/version/20241216, http://snomed.info/sct/83821000000107/version/20230412, http://snomed.info/sct/900000000000207008/version/20240201, http://snomed.info/sct/900000000000207008/version/20250201 and http://snomed.info/xsct/31000003106/version/20250909</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l26">log</a>, or see <a href="#vmi791" onClick="document.getElementById('vmi791').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">UNKNOWN_CODESYSTEM_VERSION</span><div id="vmi791" style="display:none"><br/><pre>0ms tx-op
@@ -643,7 +643,7 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem version http://snomed.info/sct/900000000000207008/version/20250701 not found: "http://snomed.info/sct"
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Validate "[http://snomed.info/sct#900000000000003001 ("Fully specified name")]"
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Check "http://snomed.info/sct#900000000000003001"
-0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html">Shareable CodeSystem</a></td>
+1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html">Shareable CodeSystem</a></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>CodeSystem&#8203;.concept[5]&#8203;.designation[0]&#8203;.use&#8203;.system (l1&#8203;/c25530)</b></td><td><b>warning</b></td><td><b>A definition for CodeSystem 'http://snomed.info/sct' could not be found, so the code cannot be validated</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l26">log</a>, or see <a href="#vmi792" onClick="document.getElementById('vmi792').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">UNKNOWN_CODESYSTEM</span><div id="vmi792" style="display:none"><br/><pre>0ms tx-op
@@ -654,7 +654,7 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem version http://snomed.info/sct/900000000000207008/version/20250701 not found: "http://snomed.info/sct"
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Validate "[http://snomed.info/sct#900000000000003001 ("Fully specified name")]"
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Check "http://snomed.info/sct#900000000000003001"
-0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html">Shareable CodeSystem</a></td>
+1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html">Shareable CodeSystem</a></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>CodeSystem&#8203;.concept[6]&#8203;.designation[0]&#8203;.use&#8203;.system (l1&#8203;/c25928)</b></td><td><b>warning</b></td><td><b>A definition for CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250701' could not be found, so the code cannot be validated. Valid versions: http://snomed.info/sct/11000146104/version/20240930, http://snomed.info/sct/2011000195101/version/20230607, http://snomed.info/sct/554471000005108/version/20260331, http://snomed.info/sct/731000124108/version/20230301, http://snomed.info/sct/731000124108/version/20240301, http://snomed.info/sct/731000124108/version/20250901, http://snomed.info/sct/827022005/version/20241216, http://snomed.info/sct/83821000000107/version/20230412, http://snomed.info/sct/900000000000207008/version/20240201, http://snomed.info/sct/900000000000207008/version/20250201 and http://snomed.info/xsct/31000003106/version/20250909</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l27">log</a>, or see <a href="#vmi793" onClick="document.getElementById('vmi793').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">UNKNOWN_CODESYSTEM_VERSION</span><div id="vmi793" style="display:none"><br/><pre>0ms tx-op
@@ -665,7 +665,7 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem version http://snomed.info/sct/900000000000207008/version/20250701 not found: "http://snomed.info/sct"
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Validate "[http://snomed.info/sct#900000000000003001 ("Fully specified name")]"
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Check "http://snomed.info/sct#900000000000003001"
-0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html">Shareable CodeSystem</a></td>
+1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html">Shareable CodeSystem</a></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>CodeSystem&#8203;.concept[6]&#8203;.designation[0]&#8203;.use&#8203;.system (l1&#8203;/c25928)</b></td><td><b>warning</b></td><td><b>A definition for CodeSystem 'http://snomed.info/sct' could not be found, so the code cannot be validated</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l27">log</a>, or see <a href="#vmi794" onClick="document.getElementById('vmi794').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">UNKNOWN_CODESYSTEM</span><div id="vmi794" style="display:none"><br/><pre>0ms tx-op
@@ -676,7 +676,7 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem version http://snomed.info/sct/900000000000207008/version/20250701 not found: "http://snomed.info/sct"
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Validate "[http://snomed.info/sct#900000000000003001 ("Fully specified name")]"
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Check "http://snomed.info/sct#900000000000003001"
-0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html">Shareable CodeSystem</a></td>
+1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html">Shareable CodeSystem</a></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>CodeSystem&#8203;.concept[7]&#8203;.designation[0]&#8203;.use&#8203;.system (l1&#8203;/c26317)</b></td><td><b>warning</b></td><td><b>A definition for CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250701' could not be found, so the code cannot be validated. Valid versions: http://snomed.info/sct/11000146104/version/20240930, http://snomed.info/sct/2011000195101/version/20230607, http://snomed.info/sct/554471000005108/version/20260331, http://snomed.info/sct/731000124108/version/20230301, http://snomed.info/sct/731000124108/version/20240301, http://snomed.info/sct/731000124108/version/20250901, http://snomed.info/sct/827022005/version/20241216, http://snomed.info/sct/83821000000107/version/20230412, http://snomed.info/sct/900000000000207008/version/20240201, http://snomed.info/sct/900000000000207008/version/20250201 and http://snomed.info/xsct/31000003106/version/20250909</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l28">log</a>, or see <a href="#vmi795" onClick="document.getElementById('vmi795').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">UNKNOWN_CODESYSTEM_VERSION</span><div id="vmi795" style="display:none"><br/><pre>0ms tx-op
@@ -730,8 +730,8 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Prepare include[0]: "(http://snomed.info/sct)(900000000000003001,900000000000013009)"
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem version http://snomed.info/sct/900000000000207008/version/20250701 not found: "http://snomed.info/sct"
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Validate "[http://snomed.info/sct#900000000000003001 ("Fully specified name")]"
-0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Check "http://snomed.info/sct#900000000000003001"
-0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html">Shareable CodeSystem</a></td>
+1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Check "http://snomed.info/sct#900000000000003001"
+1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html">Shareable CodeSystem</a></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>CodeSystem&#8203;.concept[9]&#8203;.designation[0]&#8203;.use&#8203;.system (l1&#8203;/c27105)</b></td><td><b>warning</b></td><td><b>A definition for CodeSystem 'http://snomed.info/sct' could not be found, so the code cannot be validated</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l30">log</a>, or see <a href="#vmi800" onClick="document.getElementById('vmi800').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">UNKNOWN_CODESYSTEM</span><div id="vmi800" style="display:none"><br/><pre>0ms tx-op
@@ -741,8 +741,8 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Prepare include[0]: "(http://snomed.info/sct)(900000000000003001,900000000000013009)"
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem version http://snomed.info/sct/900000000000207008/version/20250701 not found: "http://snomed.info/sct"
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Validate "[http://snomed.info/sct#900000000000003001 ("Fully specified name")]"
-0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Check "http://snomed.info/sct#900000000000003001"
-0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html">Shareable CodeSystem</a></td>
+1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Check "http://snomed.info/sct#900000000000003001"
+1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html">Shareable CodeSystem</a></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>CodeSystem&#8203;.concept[10]&#8203;.designation[0]&#8203;.use&#8203;.system (l1&#8203;/c27488)</b></td><td><b>warning</b></td><td><b>A definition for CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250701' could not be found, so the code cannot be validated. Valid versions: http://snomed.info/sct/11000146104/version/20240930, http://snomed.info/sct/2011000195101/version/20230607, http://snomed.info/sct/554471000005108/version/20260331, http://snomed.info/sct/731000124108/version/20230301, http://snomed.info/sct/731000124108/version/20240301, http://snomed.info/sct/731000124108/version/20250901, http://snomed.info/sct/827022005/version/20241216, http://snomed.info/sct/83821000000107/version/20230412, http://snomed.info/sct/900000000000207008/version/20240201, http://snomed.info/sct/900000000000207008/version/20250201 and http://snomed.info/xsct/31000003106/version/20250909</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l31">log</a>, or see <a href="#vmi801" onClick="document.getElementById('vmi801').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">UNKNOWN_CODESYSTEM_VERSION</span><div id="vmi801" style="display:none"><br/><pre>0ms tx-op
@@ -752,8 +752,8 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Prepare include[0]: "(http://snomed.info/sct)(900000000000003001,900000000000013009)"
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem version http://snomed.info/sct/900000000000207008/version/20250701 not found: "http://snomed.info/sct"
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Validate "[http://snomed.info/sct#900000000000003001 ("Fully specified name")]"
-0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Check "http://snomed.info/sct#900000000000003001"
-0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html">Shareable CodeSystem</a></td>
+1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Check "http://snomed.info/sct#900000000000003001"
+1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html">Shareable CodeSystem</a></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>CodeSystem&#8203;.concept[10]&#8203;.designation[0]&#8203;.use&#8203;.system (l1&#8203;/c27488)</b></td><td><b>warning</b></td><td><b>A definition for CodeSystem 'http://snomed.info/sct' could not be found, so the code cannot be validated</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l31">log</a>, or see <a href="#vmi802" onClick="document.getElementById('vmi802').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">UNKNOWN_CODESYSTEM</span><div id="vmi802" style="display:none"><br/><pre>0ms tx-op
@@ -763,8 +763,8 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Prepare include[0]: "(http://snomed.info/sct)(900000000000003001,900000000000013009)"
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem version http://snomed.info/sct/900000000000207008/version/20250701 not found: "http://snomed.info/sct"
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Validate "[http://snomed.info/sct#900000000000003001 ("Fully specified name")]"
-0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Check "http://snomed.info/sct#900000000000003001"
-0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html">Shareable CodeSystem</a></td>
+1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Check "http://snomed.info/sct#900000000000003001"
+1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html">Shareable CodeSystem</a></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>CodeSystem&#8203;.concept[11]&#8203;.designation[0]&#8203;.use&#8203;.system (l1&#8203;/c27878)</b></td><td><b>warning</b></td><td><b>A definition for CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250701' could not be found, so the code cannot be validated. Valid versions: http://snomed.info/sct/11000146104/version/20240930, http://snomed.info/sct/2011000195101/version/20230607, http://snomed.info/sct/554471000005108/version/20260331, http://snomed.info/sct/731000124108/version/20230301, http://snomed.info/sct/731000124108/version/20240301, http://snomed.info/sct/731000124108/version/20250901, http://snomed.info/sct/827022005/version/20241216, http://snomed.info/sct/83821000000107/version/20230412, http://snomed.info/sct/900000000000207008/version/20240201, http://snomed.info/sct/900000000000207008/version/20250201 and http://snomed.info/xsct/31000003106/version/20250909</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l32">log</a>, or see <a href="#vmi803" onClick="document.getElementById('vmi803').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">UNKNOWN_CODESYSTEM_VERSION</span><div id="vmi803" style="display:none"><br/><pre>0ms tx-op
@@ -775,7 +775,7 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem version http://snomed.info/sct/900000000000207008/version/20250701 not found: "http://snomed.info/sct"
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Validate "[http://snomed.info/sct#900000000000003001 ("Fully specified name")]"
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Check "http://snomed.info/sct#900000000000003001"
-0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html">Shareable CodeSystem</a></td>
+1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html">Shareable CodeSystem</a></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>CodeSystem&#8203;.concept[11]&#8203;.designation[0]&#8203;.use&#8203;.system (l1&#8203;/c27878)</b></td><td><b>warning</b></td><td><b>A definition for CodeSystem 'http://snomed.info/sct' could not be found, so the code cannot be validated</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l32">log</a>, or see <a href="#vmi804" onClick="document.getElementById('vmi804').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">UNKNOWN_CODESYSTEM</span><div id="vmi804" style="display:none"><br/><pre>0ms tx-op
@@ -786,7 +786,7 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem version http://snomed.info/sct/900000000000207008/version/20250701 not found: "http://snomed.info/sct"
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Validate "[http://snomed.info/sct#900000000000003001 ("Fully specified name")]"
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Check "http://snomed.info/sct#900000000000003001"
-0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html">Shareable CodeSystem</a></td>
+1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html">Shareable CodeSystem</a></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>CodeSystem&#8203;.concept[12]&#8203;.designation[0]&#8203;.use&#8203;.system (l1&#8203;/c28269)</b></td><td><b>warning</b></td><td><b>A definition for CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250701' could not be found, so the code cannot be validated. Valid versions: http://snomed.info/sct/11000146104/version/20240930, http://snomed.info/sct/2011000195101/version/20230607, http://snomed.info/sct/554471000005108/version/20260331, http://snomed.info/sct/731000124108/version/20230301, http://snomed.info/sct/731000124108/version/20240301, http://snomed.info/sct/731000124108/version/20250901, http://snomed.info/sct/827022005/version/20241216, http://snomed.info/sct/83821000000107/version/20230412, http://snomed.info/sct/900000000000207008/version/20240201, http://snomed.info/sct/900000000000207008/version/20250201 and http://snomed.info/xsct/31000003106/version/20250909</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l33">log</a>, or see <a href="#vmi805" onClick="document.getElementById('vmi805').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">UNKNOWN_CODESYSTEM_VERSION</span><div id="vmi805" style="display:none"><br/><pre>0ms tx-op
@@ -796,7 +796,7 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Prepare include[0]: "(http://snomed.info/sct)(900000000000003001,900000000000013009)"
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem version http://snomed.info/sct/900000000000207008/version/20250701 not found: "http://snomed.info/sct"
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Validate "[http://snomed.info/sct#900000000000003001 ("Fully specified name")]"
-0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Check "http://snomed.info/sct#900000000000003001"
+1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Check "http://snomed.info/sct#900000000000003001"
 1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html">Shareable CodeSystem</a></td>
    </tr>
    <tr style="background-color: #ffebcc">
@@ -807,7 +807,7 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Prepare include[0]: "(http://snomed.info/sct)(900000000000003001,900000000000013009)"
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem version http://snomed.info/sct/900000000000207008/version/20250701 not found: "http://snomed.info/sct"
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Validate "[http://snomed.info/sct#900000000000003001 ("Fully specified name")]"
-0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Check "http://snomed.info/sct#900000000000003001"
+1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Check "http://snomed.info/sct#900000000000003001"
 1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html">Shareable CodeSystem</a></td>
    </tr>
    <tr style="background-color: #ffebcc">
@@ -816,8 +816,8 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Parameters: disp-lang=de-DE, generate-narrative, default-to-latest
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Version Rules: default:http://snomed.info/sct#http://snomed.info/sct/900000000000207008/version/20250701
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Prepare include[0]: "(http://snomed.info/sct)(900000000000003001,900000000000013009)"
-0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem version http://snomed.info/sct/900000000000207008/version/20250701 not found: "http://snomed.info/sct"
-0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Validate "[http://snomed.info/sct#900000000000003001 ("Fully specified name")]"
+1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem version http://snomed.info/sct/900000000000207008/version/20250701 not found: "http://snomed.info/sct"
+1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Validate "[http://snomed.info/sct#900000000000003001 ("Fully specified name")]"
 1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Check "http://snomed.info/sct#900000000000003001"
 1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html">Shareable CodeSystem</a></td>
    </tr>
@@ -827,8 +827,8 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Parameters: disp-lang=de-DE, generate-narrative, default-to-latest
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Version Rules: default:http://snomed.info/sct#http://snomed.info/sct/900000000000207008/version/20250701
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Prepare include[0]: "(http://snomed.info/sct)(900000000000003001,900000000000013009)"
-0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem version http://snomed.info/sct/900000000000207008/version/20250701 not found: "http://snomed.info/sct"
-0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Validate "[http://snomed.info/sct#900000000000003001 ("Fully specified name")]"
+1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem version http://snomed.info/sct/900000000000207008/version/20250701 not found: "http://snomed.info/sct"
+1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Validate "[http://snomed.info/sct#900000000000003001 ("Fully specified name")]"
 1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Check "http://snomed.info/sct#900000000000003001"
 1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html">Shareable CodeSystem</a></td>
    </tr>
@@ -839,7 +839,7 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Version Rules: default:http://snomed.info/sct#http://snomed.info/sct/900000000000207008/version/20250701
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Prepare include[0]: "(http://snomed.info/sct)(900000000000003001,900000000000013009)"
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem version http://snomed.info/sct/900000000000207008/version/20250701 not found: "http://snomed.info/sct"
-1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Validate "[http://snomed.info/sct#900000000000003001 ("Fully specified name")]"
+0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Validate "[http://snomed.info/sct#900000000000003001 ("Fully specified name")]"
 1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Check "http://snomed.info/sct#900000000000003001"
 1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html">Shareable CodeSystem</a></td>
    </tr>
@@ -850,7 +850,7 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Version Rules: default:http://snomed.info/sct#http://snomed.info/sct/900000000000207008/version/20250701
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Prepare include[0]: "(http://snomed.info/sct)(900000000000003001,900000000000013009)"
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem version http://snomed.info/sct/900000000000207008/version/20250701 not found: "http://snomed.info/sct"
-1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Validate "[http://snomed.info/sct#900000000000003001 ("Fully specified name")]"
+0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Validate "[http://snomed.info/sct#900000000000003001 ("Fully specified name")]"
 1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Check "http://snomed.info/sct#900000000000003001"
 1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html">Shareable CodeSystem</a></td>
    </tr>
@@ -862,7 +862,7 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Prepare include[0]: "(http://snomed.info/sct)(900000000000003001,900000000000013009)"
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem version http://snomed.info/sct/900000000000207008/version/20250701 not found: "http://snomed.info/sct"
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Validate "[http://snomed.info/sct#900000000000003001 ("Fully specified name")]"
-0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Check "http://snomed.info/sct#900000000000003001"
+1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Check "http://snomed.info/sct#900000000000003001"
 1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html">Shareable CodeSystem</a></td>
    </tr>
    <tr style="background-color: #ffebcc">
@@ -873,7 +873,7 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Prepare include[0]: "(http://snomed.info/sct)(900000000000003001,900000000000013009)"
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem version http://snomed.info/sct/900000000000207008/version/20250701 not found: "http://snomed.info/sct"
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Validate "[http://snomed.info/sct#900000000000003001 ("Fully specified name")]"
-0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Check "http://snomed.info/sct#900000000000003001"
+1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Check "http://snomed.info/sct#900000000000003001"
 1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html">Shareable CodeSystem</a></td>
    </tr>
    <tr style="background-color: #ffebcc">
@@ -910,7 +910,7 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem version http://snomed.info/sct/900000000000207008/version/20250701 not found: "http://snomed.info/sct"
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Validate "[http://snomed.info/sct#900000000000003001 ("Fully specified name")]"
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Check "http://snomed.info/sct#900000000000003001"
-1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html">Shareable CodeSystem</a></td>
+0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html">Shareable CodeSystem</a></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>CodeSystem&#8203;.concept[17]&#8203;.designation[0]&#8203;.use&#8203;.system (l1&#8203;/c30659)</b></td><td><b>warning</b></td><td><b>A definition for CodeSystem 'http://snomed.info/sct' could not be found, so the code cannot be validated</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l38">log</a>, or see <a href="#vmi817" onClick="document.getElementById('vmi817').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">UNKNOWN_CODESYSTEM</span><div id="vmi817" style="display:none"><br/><pre>0ms tx-op
@@ -921,7 +921,7 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem version http://snomed.info/sct/900000000000207008/version/20250701 not found: "http://snomed.info/sct"
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Validate "[http://snomed.info/sct#900000000000003001 ("Fully specified name")]"
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Check "http://snomed.info/sct#900000000000003001"
-1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html">Shareable CodeSystem</a></td>
+0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html">Shareable CodeSystem</a></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>CodeSystem&#8203;.concept[18]&#8203;.designation[0]&#8203;.use&#8203;.system (l1&#8203;/c31054)</b></td><td><b>warning</b></td><td><b>A definition for CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250701' could not be found, so the code cannot be validated. Valid versions: http://snomed.info/sct/11000146104/version/20240930, http://snomed.info/sct/2011000195101/version/20230607, http://snomed.info/sct/554471000005108/version/20260331, http://snomed.info/sct/731000124108/version/20230301, http://snomed.info/sct/731000124108/version/20240301, http://snomed.info/sct/731000124108/version/20250901, http://snomed.info/sct/827022005/version/20241216, http://snomed.info/sct/83821000000107/version/20230412, http://snomed.info/sct/900000000000207008/version/20240201, http://snomed.info/sct/900000000000207008/version/20250201 and http://snomed.info/xsct/31000003106/version/20250909</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l39">log</a>, or see <a href="#vmi818" onClick="document.getElementById('vmi818').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">UNKNOWN_CODESYSTEM_VERSION</span><div id="vmi818" style="display:none"><br/><pre>0ms tx-op
@@ -931,7 +931,7 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Prepare include[0]: "(http://snomed.info/sct)(900000000000003001,900000000000013009)"
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem version http://snomed.info/sct/900000000000207008/version/20250701 not found: "http://snomed.info/sct"
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Validate "[http://snomed.info/sct#900000000000003001 ("Fully specified name")]"
-1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Check "http://snomed.info/sct#900000000000003001"
+0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Check "http://snomed.info/sct#900000000000003001"
 1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html">Shareable CodeSystem</a></td>
    </tr>
    <tr style="background-color: #ffebcc">
@@ -942,7 +942,7 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Prepare include[0]: "(http://snomed.info/sct)(900000000000003001,900000000000013009)"
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem version http://snomed.info/sct/900000000000207008/version/20250701 not found: "http://snomed.info/sct"
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Validate "[http://snomed.info/sct#900000000000003001 ("Fully specified name")]"
-1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Check "http://snomed.info/sct#900000000000003001"
+0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Check "http://snomed.info/sct#900000000000003001"
 1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html">Shareable CodeSystem</a></td>
    </tr>
    <tr style="background-color: #ffebcc">
@@ -954,7 +954,7 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem version http://snomed.info/sct/900000000000207008/version/20250701 not found: "http://snomed.info/sct"
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Validate "[http://snomed.info/sct#900000000000003001 ("Fully specified name")]"
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Check "http://snomed.info/sct#900000000000003001"
-0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html">Shareable CodeSystem</a></td>
+1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html">Shareable CodeSystem</a></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>CodeSystem&#8203;.concept[19]&#8203;.designation[0]&#8203;.use&#8203;.system (l1&#8203;/c31471)</b></td><td><b>warning</b></td><td><b>A definition for CodeSystem 'http://snomed.info/sct' could not be found, so the code cannot be validated</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l40">log</a>, or see <a href="#vmi821" onClick="document.getElementById('vmi821').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">UNKNOWN_CODESYSTEM</span><div id="vmi821" style="display:none"><br/><pre>0ms tx-op
@@ -965,7 +965,7 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem version http://snomed.info/sct/900000000000207008/version/20250701 not found: "http://snomed.info/sct"
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Validate "[http://snomed.info/sct#900000000000003001 ("Fully specified name")]"
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Check "http://snomed.info/sct#900000000000003001"
-0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html">Shareable CodeSystem</a></td>
+1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html">Shareable CodeSystem</a></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>CodeSystem&#8203;.concept[20]&#8203;.designation[0]&#8203;.use&#8203;.system (l1&#8203;/c31919)</b></td><td><b>warning</b></td><td><b>A definition for CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250701' could not be found, so the code cannot be validated. Valid versions: http://snomed.info/sct/11000146104/version/20240930, http://snomed.info/sct/2011000195101/version/20230607, http://snomed.info/sct/554471000005108/version/20260331, http://snomed.info/sct/731000124108/version/20230301, http://snomed.info/sct/731000124108/version/20240301, http://snomed.info/sct/731000124108/version/20250901, http://snomed.info/sct/827022005/version/20241216, http://snomed.info/sct/83821000000107/version/20230412, http://snomed.info/sct/900000000000207008/version/20240201, http://snomed.info/sct/900000000000207008/version/20250201 and http://snomed.info/xsct/31000003106/version/20250909</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l41">log</a>, or see <a href="#vmi822" onClick="document.getElementById('vmi822').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">UNKNOWN_CODESYSTEM_VERSION</span><div id="vmi822" style="display:none"><br/><pre>0ms tx-op
@@ -973,9 +973,9 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Parameters: disp-lang=de-DE, generate-narrative, default-to-latest
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Version Rules: default:http://snomed.info/sct#http://snomed.info/sct/900000000000207008/version/20250701
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Prepare include[0]: "(http://snomed.info/sct)(900000000000003001,900000000000013009)"
-0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem version http://snomed.info/sct/900000000000207008/version/20250701 not found: "http://snomed.info/sct"
-0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Validate "[http://snomed.info/sct#900000000000003001 ("Fully specified name")]"
-0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Check "http://snomed.info/sct#900000000000003001"
+1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem version http://snomed.info/sct/900000000000207008/version/20250701 not found: "http://snomed.info/sct"
+1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Validate "[http://snomed.info/sct#900000000000003001 ("Fully specified name")]"
+1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Check "http://snomed.info/sct#900000000000003001"
 1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html">Shareable CodeSystem</a></td>
    </tr>
    <tr style="background-color: #ffebcc">
@@ -984,9 +984,9 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Parameters: disp-lang=de-DE, generate-narrative, default-to-latest
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Version Rules: default:http://snomed.info/sct#http://snomed.info/sct/900000000000207008/version/20250701
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Prepare include[0]: "(http://snomed.info/sct)(900000000000003001,900000000000013009)"
-0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem version http://snomed.info/sct/900000000000207008/version/20250701 not found: "http://snomed.info/sct"
-0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Validate "[http://snomed.info/sct#900000000000003001 ("Fully specified name")]"
-0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Check "http://snomed.info/sct#900000000000003001"
+1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem version http://snomed.info/sct/900000000000207008/version/20250701 not found: "http://snomed.info/sct"
+1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Validate "[http://snomed.info/sct#900000000000003001 ("Fully specified name")]"
+1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Check "http://snomed.info/sct#900000000000003001"
 1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html">Shareable CodeSystem</a></td>
    </tr>
    <tr style="background-color: #ffcccc">
@@ -1377,7 +1377,7 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
      <td><b>ImplementationGuide&#8203;.extension[4]&#8203;.extension[2]&#8203;.value&#8203;.ofType(uri) (l1&#8203;/c3543)</b></td><td><b>warning</b></td><td><b>URL-Wert 'https://www.medizininformatik-initiative.de/fhir/modul-consent' löst nicht auf</b> <span class="code-value code-hidden" style="font-size: 8px; color: navy">Type_Specific_Checks_DT_URL_Resolve</span></td><td><a href="http://hl7.org/fhir/R4/implementationguide.html">ImplementationGuide</a></td>
    </tr>
    <tr style="background-color: #ffebcc">
-     <td><b>ImplementationGuide&#8203;.extension[16]&#8203;.value&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.code (l1&#8203;/c6030)</b></td><td><b>warning</b></td><td><b>Unknown Code 'C16735' in the CodeSystem 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' version 'null' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">UNKNOWN_CODE_IN_FRAGMENT</span></td><td><a href="http://hl7.org/fhir/R4/implementationguide.html">ImplementationGuide</a></td>
+     <td><b>ImplementationGuide&#8203;.extension[16]&#8203;.value&#8203;.ofType(CodeableConcept)&#8203;.coding[0]&#8203;.code (l1&#8203;/c6030)</b></td><td><b>warning</b></td><td><b>Unknown Code 'C16735' in the CodeSystem 'http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl' version 'null' - note that the code system is labeled as a fragment, so the code may be valid in some other fragment</b> (from <a href="qa-txservers.html#https://tx.hl7europe.eu/r4">https://tx.hl7europe.eu/r4</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">UNKNOWN_CODE_IN_FRAGMENT</span></td><td><a href="http://hl7.org/fhir/R4/implementationguide.html">ImplementationGuide</a></td>
    </tr>
    <tr style="background-color: #ffffe6">
      <td><b>ImplementationGuide&#8203;.jurisdiction[0]&#8203;.coding[0]&#8203;.display (l1&#8203;/c6980)</b></td><td><b>information</b></td><td><b>There are no valid display names found for the code urn:iso:std:iso:3166#DE for language(s) 'de'. The display is 'Germany' which is a valid display for the default language</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l8">log</a>, or see <a href="#vmi934" onClick="document.getElementById('vmi934').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">NO_VALID_DISPLAY_FOUND_NONE_FOR_LANG_OK</span><div id="vmi934" style="display:none"><br/><pre>0ms tx-op
@@ -1385,8 +1385,8 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 0ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Parameters: disp-lang=de, generate-narrative, default-to-latest
 0ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Version Rules: default:http://snomed.info/sct#http://snomed.info/sct/900000000000207008/version/20250701
 0ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Prepare include[0]: "(urn:iso:std:iso:3166)"
-0ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: CodeSystem found: "urn:iso:std:iso:3166|2018"
-0ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Prepare include[1]: "(urn:iso:std:iso:3166:-2)"
+1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: CodeSystem found: "urn:iso:std:iso:3166|2018"
+1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Prepare include[1]: "(urn:iso:std:iso:3166:-2)"
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: CodeSystem found: "urn:iso:std:iso:3166:-2|2021"
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Prepare include[2]: "(http://unstats.un.org/unsd/methods/m49/m49.htm)(class=region)"
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: CodeSystem found: "http://unstats.un.org/unsd/methods/m49/m49.htm|null"
@@ -1764,8 +1764,8 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 0ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Parameters: disp-lang=de, generate-narrative, default-to-latest
 0ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Version Rules: default:http://snomed.info/sct#http://snomed.info/sct/900000000000207008/version/20250701
 0ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Prepare include[0]: "(urn:iso:std:iso:3166)"
-0ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: CodeSystem found: "urn:iso:std:iso:3166|2018"
-0ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Prepare include[1]: "(urn:iso:std:iso:3166:-2)"
+1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: CodeSystem found: "urn:iso:std:iso:3166|2018"
+1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Prepare include[1]: "(urn:iso:std:iso:3166:-2)"
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: CodeSystem found: "urn:iso:std:iso:3166:-2|2021"
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Prepare include[2]: "(http://unstats.un.org/unsd/methods/m49/m49.htm)(class=region)"
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: CodeSystem found: "http://unstats.un.org/unsd/methods/m49/m49.htm|null"
@@ -2553,8 +2553,8 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 0ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Parameters: disp-lang=de, generate-narrative, default-to-latest
 0ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Version Rules: default:http://snomed.info/sct#http://snomed.info/sct/900000000000207008/version/20250701
 0ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Prepare include[0]: "(urn:iso:std:iso:3166)"
-0ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: CodeSystem found: "urn:iso:std:iso:3166|2018"
-0ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Prepare include[1]: "(urn:iso:std:iso:3166:-2)"
+1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: CodeSystem found: "urn:iso:std:iso:3166|2018"
+1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Prepare include[1]: "(urn:iso:std:iso:3166:-2)"
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: CodeSystem found: "urn:iso:std:iso:3166:-2|2021"
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Prepare include[2]: "(http://unstats.un.org/unsd/methods/m49/m49.htm)(class=region)"
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: CodeSystem found: "http://unstats.un.org/unsd/methods/m49/m49.htm|null"
@@ -2847,8 +2847,8 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 0ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Parameters: disp-lang=de, generate-narrative, default-to-latest
 0ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Version Rules: default:http://snomed.info/sct#http://snomed.info/sct/900000000000207008/version/20250701
 0ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Prepare include[0]: "(urn:iso:std:iso:3166)"
-0ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: CodeSystem found: "urn:iso:std:iso:3166|2018"
-0ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Prepare include[1]: "(urn:iso:std:iso:3166:-2)"
+1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: CodeSystem found: "urn:iso:std:iso:3166|2018"
+1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Prepare include[1]: "(urn:iso:std:iso:3166:-2)"
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: CodeSystem found: "urn:iso:std:iso:3166:-2|2021"
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Prepare include[2]: "(http://unstats.un.org/unsd/methods/m49/m49.htm)(class=region)"
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: CodeSystem found: "http://unstats.un.org/unsd/methods/m49/m49.htm|null"
@@ -2895,8 +2895,8 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 0ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Parameters: disp-lang=de, generate-narrative, default-to-latest
 0ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Version Rules: default:http://snomed.info/sct#http://snomed.info/sct/900000000000207008/version/20250701
 0ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Prepare include[0]: "(urn:iso:std:iso:3166)"
-0ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: CodeSystem found: "urn:iso:std:iso:3166|2018"
-0ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Prepare include[1]: "(urn:iso:std:iso:3166:-2)"
+1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: CodeSystem found: "urn:iso:std:iso:3166|2018"
+1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Prepare include[1]: "(urn:iso:std:iso:3166:-2)"
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: CodeSystem found: "urn:iso:std:iso:3166:-2|2021"
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Prepare include[2]: "(http://unstats.un.org/unsd/methods/m49/m49.htm)(class=region)"
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: CodeSystem found: "http://unstats.un.org/unsd/methods/m49/m49.htm|null"
@@ -2912,10 +2912,10 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Parameters: disp-lang=de, generate-narrative, default-to-latest
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Version Rules: default:http://snomed.info/sct#http://snomed.info/sct/900000000000207008/version/20250701
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Prepare include[0]: "(http://snomed.info/sct)(900000000000003001,900000000000013009)"
-0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem version http://snomed.info/sct/900000000000207008/version/20250701 not found: "http://snomed.info/sct"
-0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Validate "[http://snomed.info/sct#900000000000013009 ("Synonym")]"
-0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Check "http://snomed.info/sct#900000000000013009"
-0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablevalueset.html">Shareable ValueSet</a></td>
+1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem version http://snomed.info/sct/900000000000207008/version/20250701 not found: "http://snomed.info/sct"
+1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Validate "[http://snomed.info/sct#900000000000013009 ("Synonym")]"
+1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Check "http://snomed.info/sct#900000000000013009"
+1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablevalueset.html">Shareable ValueSet</a></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[0]&#8203;.designation[0]&#8203;.use&#8203;.system (l1&#8203;/c6435)</b></td><td><b>warning</b></td><td><b>A definition for CodeSystem 'http://snomed.info/sct' could not be found, so the code cannot be validated</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l42">log</a>, or see <a href="#vmi1404" onClick="document.getElementById('vmi1404').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">UNKNOWN_CODESYSTEM</span><div id="vmi1404" style="display:none"><br/><pre>0ms tx-op
@@ -2923,10 +2923,10 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Parameters: disp-lang=de, generate-narrative, default-to-latest
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Version Rules: default:http://snomed.info/sct#http://snomed.info/sct/900000000000207008/version/20250701
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Prepare include[0]: "(http://snomed.info/sct)(900000000000003001,900000000000013009)"
-0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem version http://snomed.info/sct/900000000000207008/version/20250701 not found: "http://snomed.info/sct"
-0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Validate "[http://snomed.info/sct#900000000000013009 ("Synonym")]"
-0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Check "http://snomed.info/sct#900000000000013009"
-0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablevalueset.html">Shareable ValueSet</a></td>
+1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem version http://snomed.info/sct/900000000000207008/version/20250701 not found: "http://snomed.info/sct"
+1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Validate "[http://snomed.info/sct#900000000000013009 ("Synonym")]"
+1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Check "http://snomed.info/sct#900000000000013009"
+1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablevalueset.html">Shareable ValueSet</a></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[0]&#8203;.designation[1]&#8203;.use&#8203;.system (l1&#8203;/c6566)</b></td><td><b>warning</b></td><td><b>A definition for CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250701' could not be found, so the code cannot be validated. Valid versions: http://snomed.info/sct/11000146104/version/20240930, http://snomed.info/sct/2011000195101/version/20230607, http://snomed.info/sct/554471000005108/version/20260331, http://snomed.info/sct/731000124108/version/20230301, http://snomed.info/sct/731000124108/version/20240301, http://snomed.info/sct/731000124108/version/20250901, http://snomed.info/sct/827022005/version/20241216, http://snomed.info/sct/83821000000107/version/20230412, http://snomed.info/sct/900000000000207008/version/20240201, http://snomed.info/sct/900000000000207008/version/20250201 and http://snomed.info/xsct/31000003106/version/20250909</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l43">log</a>, or see <a href="#vmi1405" onClick="document.getElementById('vmi1405').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">UNKNOWN_CODESYSTEM_VERSION</span><div id="vmi1405" style="display:none"><br/><pre>0ms tx-op
@@ -2934,10 +2934,10 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Parameters: disp-lang=de, generate-narrative, default-to-latest
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Version Rules: default:http://snomed.info/sct#http://snomed.info/sct/900000000000207008/version/20250701
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Prepare include[0]: "(http://snomed.info/sct)(900000000000003001,900000000000013009)"
-0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem version http://snomed.info/sct/900000000000207008/version/20250701 not found: "http://snomed.info/sct"
-0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Validate "[http://snomed.info/sct#900000000000013009 ("Synonym")]"
-0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Check "http://snomed.info/sct#900000000000013009"
-0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablevalueset.html">Shareable ValueSet</a></td>
+1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem version http://snomed.info/sct/900000000000207008/version/20250701 not found: "http://snomed.info/sct"
+1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Validate "[http://snomed.info/sct#900000000000013009 ("Synonym")]"
+1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Check "http://snomed.info/sct#900000000000013009"
+1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablevalueset.html">Shareable ValueSet</a></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[0]&#8203;.designation[1]&#8203;.use&#8203;.system (l1&#8203;/c6566)</b></td><td><b>warning</b></td><td><b>A definition for CodeSystem 'http://snomed.info/sct' could not be found, so the code cannot be validated</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l43">log</a>, or see <a href="#vmi1406" onClick="document.getElementById('vmi1406').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">UNKNOWN_CODESYSTEM</span><div id="vmi1406" style="display:none"><br/><pre>0ms tx-op
@@ -2945,10 +2945,10 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Parameters: disp-lang=de, generate-narrative, default-to-latest
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Version Rules: default:http://snomed.info/sct#http://snomed.info/sct/900000000000207008/version/20250701
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Prepare include[0]: "(http://snomed.info/sct)(900000000000003001,900000000000013009)"
-0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem version http://snomed.info/sct/900000000000207008/version/20250701 not found: "http://snomed.info/sct"
-0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Validate "[http://snomed.info/sct#900000000000013009 ("Synonym")]"
-0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Check "http://snomed.info/sct#900000000000013009"
-0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablevalueset.html">Shareable ValueSet</a></td>
+1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem version http://snomed.info/sct/900000000000207008/version/20250701 not found: "http://snomed.info/sct"
+1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Validate "[http://snomed.info/sct#900000000000013009 ("Synonym")]"
+1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Check "http://snomed.info/sct#900000000000013009"
+1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablevalueset.html">Shareable ValueSet</a></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[1]&#8203;.designation[0]&#8203;.use&#8203;.system (l1&#8203;/c6901)</b></td><td><b>warning</b></td><td><b>A definition for CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250701' could not be found, so the code cannot be validated. Valid versions: http://snomed.info/sct/11000146104/version/20240930, http://snomed.info/sct/2011000195101/version/20230607, http://snomed.info/sct/554471000005108/version/20260331, http://snomed.info/sct/731000124108/version/20230301, http://snomed.info/sct/731000124108/version/20240301, http://snomed.info/sct/731000124108/version/20250901, http://snomed.info/sct/827022005/version/20241216, http://snomed.info/sct/83821000000107/version/20230412, http://snomed.info/sct/900000000000207008/version/20240201, http://snomed.info/sct/900000000000207008/version/20250201 and http://snomed.info/xsct/31000003106/version/20250909</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l44">log</a>, or see <a href="#vmi1407" onClick="document.getElementById('vmi1407').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">UNKNOWN_CODESYSTEM_VERSION</span><div id="vmi1407" style="display:none"><br/><pre>0ms tx-op
@@ -2956,10 +2956,10 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Parameters: disp-lang=de, generate-narrative, default-to-latest
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Version Rules: default:http://snomed.info/sct#http://snomed.info/sct/900000000000207008/version/20250701
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Prepare include[0]: "(http://snomed.info/sct)(900000000000003001,900000000000013009)"
-0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem version http://snomed.info/sct/900000000000207008/version/20250701 not found: "http://snomed.info/sct"
-0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Validate "[http://snomed.info/sct#900000000000013009 ("Synonym")]"
-0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Check "http://snomed.info/sct#900000000000013009"
-0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablevalueset.html">Shareable ValueSet</a></td>
+1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem version http://snomed.info/sct/900000000000207008/version/20250701 not found: "http://snomed.info/sct"
+1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Validate "[http://snomed.info/sct#900000000000013009 ("Synonym")]"
+1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Check "http://snomed.info/sct#900000000000013009"
+1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablevalueset.html">Shareable ValueSet</a></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[1]&#8203;.designation[0]&#8203;.use&#8203;.system (l1&#8203;/c6901)</b></td><td><b>warning</b></td><td><b>A definition for CodeSystem 'http://snomed.info/sct' could not be found, so the code cannot be validated</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l44">log</a>, or see <a href="#vmi1408" onClick="document.getElementById('vmi1408').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">UNKNOWN_CODESYSTEM</span><div id="vmi1408" style="display:none"><br/><pre>0ms tx-op
@@ -2967,10 +2967,10 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Parameters: disp-lang=de, generate-narrative, default-to-latest
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Version Rules: default:http://snomed.info/sct#http://snomed.info/sct/900000000000207008/version/20250701
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Prepare include[0]: "(http://snomed.info/sct)(900000000000003001,900000000000013009)"
-0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem version http://snomed.info/sct/900000000000207008/version/20250701 not found: "http://snomed.info/sct"
-0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Validate "[http://snomed.info/sct#900000000000013009 ("Synonym")]"
-0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Check "http://snomed.info/sct#900000000000013009"
-0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablevalueset.html">Shareable ValueSet</a></td>
+1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem version http://snomed.info/sct/900000000000207008/version/20250701 not found: "http://snomed.info/sct"
+1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Validate "[http://snomed.info/sct#900000000000013009 ("Synonym")]"
+1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Check "http://snomed.info/sct#900000000000013009"
+1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablevalueset.html">Shareable ValueSet</a></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[1]&#8203;.designation[1]&#8203;.use&#8203;.system (l1&#8203;/c7035)</b></td><td><b>warning</b></td><td><b>A definition for CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250701' could not be found, so the code cannot be validated. Valid versions: http://snomed.info/sct/11000146104/version/20240930, http://snomed.info/sct/2011000195101/version/20230607, http://snomed.info/sct/554471000005108/version/20260331, http://snomed.info/sct/731000124108/version/20230301, http://snomed.info/sct/731000124108/version/20240301, http://snomed.info/sct/731000124108/version/20250901, http://snomed.info/sct/827022005/version/20241216, http://snomed.info/sct/83821000000107/version/20230412, http://snomed.info/sct/900000000000207008/version/20240201, http://snomed.info/sct/900000000000207008/version/20250201 and http://snomed.info/xsct/31000003106/version/20250909</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l45">log</a>, or see <a href="#vmi1409" onClick="document.getElementById('vmi1409').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">UNKNOWN_CODESYSTEM_VERSION</span><div id="vmi1409" style="display:none"><br/><pre>0ms tx-op
@@ -2981,7 +2981,7 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem version http://snomed.info/sct/900000000000207008/version/20250701 not found: "http://snomed.info/sct"
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Validate "[http://snomed.info/sct#900000000000013009 ("Synonym")]"
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Check "http://snomed.info/sct#900000000000013009"
-0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablevalueset.html">Shareable ValueSet</a></td>
+1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablevalueset.html">Shareable ValueSet</a></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[1]&#8203;.designation[1]&#8203;.use&#8203;.system (l1&#8203;/c7035)</b></td><td><b>warning</b></td><td><b>A definition for CodeSystem 'http://snomed.info/sct' could not be found, so the code cannot be validated</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l45">log</a>, or see <a href="#vmi1410" onClick="document.getElementById('vmi1410').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">UNKNOWN_CODESYSTEM</span><div id="vmi1410" style="display:none"><br/><pre>0ms tx-op
@@ -2992,7 +2992,7 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem version http://snomed.info/sct/900000000000207008/version/20250701 not found: "http://snomed.info/sct"
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Validate "[http://snomed.info/sct#900000000000013009 ("Synonym")]"
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Check "http://snomed.info/sct#900000000000013009"
-0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablevalueset.html">Shareable ValueSet</a></td>
+1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablevalueset.html">Shareable ValueSet</a></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[2]&#8203;.designation[0]&#8203;.use&#8203;.system (l1&#8203;/c7362)</b></td><td><b>warning</b></td><td><b>A definition for CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250701' could not be found, so the code cannot be validated. Valid versions: http://snomed.info/sct/11000146104/version/20240930, http://snomed.info/sct/2011000195101/version/20230607, http://snomed.info/sct/554471000005108/version/20260331, http://snomed.info/sct/731000124108/version/20230301, http://snomed.info/sct/731000124108/version/20240301, http://snomed.info/sct/731000124108/version/20250901, http://snomed.info/sct/827022005/version/20241216, http://snomed.info/sct/83821000000107/version/20230412, http://snomed.info/sct/900000000000207008/version/20240201, http://snomed.info/sct/900000000000207008/version/20250201 and http://snomed.info/xsct/31000003106/version/20250909</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l46">log</a>, or see <a href="#vmi1411" onClick="document.getElementById('vmi1411').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">UNKNOWN_CODESYSTEM_VERSION</span><div id="vmi1411" style="display:none"><br/><pre>0ms tx-op
@@ -3000,10 +3000,10 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Parameters: disp-lang=de, generate-narrative, default-to-latest
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Version Rules: default:http://snomed.info/sct#http://snomed.info/sct/900000000000207008/version/20250701
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Prepare include[0]: "(http://snomed.info/sct)(900000000000003001,900000000000013009)"
-0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem version http://snomed.info/sct/900000000000207008/version/20250701 not found: "http://snomed.info/sct"
-0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Validate "[http://snomed.info/sct#900000000000013009 ("Synonym")]"
-0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Check "http://snomed.info/sct#900000000000013009"
-0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablevalueset.html">Shareable ValueSet</a></td>
+1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem version http://snomed.info/sct/900000000000207008/version/20250701 not found: "http://snomed.info/sct"
+1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Validate "[http://snomed.info/sct#900000000000013009 ("Synonym")]"
+1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Check "http://snomed.info/sct#900000000000013009"
+1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablevalueset.html">Shareable ValueSet</a></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[2]&#8203;.designation[0]&#8203;.use&#8203;.system (l1&#8203;/c7362)</b></td><td><b>warning</b></td><td><b>A definition for CodeSystem 'http://snomed.info/sct' could not be found, so the code cannot be validated</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l46">log</a>, or see <a href="#vmi1412" onClick="document.getElementById('vmi1412').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">UNKNOWN_CODESYSTEM</span><div id="vmi1412" style="display:none"><br/><pre>0ms tx-op
@@ -3011,10 +3011,10 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Parameters: disp-lang=de, generate-narrative, default-to-latest
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Version Rules: default:http://snomed.info/sct#http://snomed.info/sct/900000000000207008/version/20250701
 0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Prepare include[0]: "(http://snomed.info/sct)(900000000000003001,900000000000013009)"
-0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem version http://snomed.info/sct/900000000000207008/version/20250701 not found: "http://snomed.info/sct"
-0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Validate "[http://snomed.info/sct#900000000000013009 ("Synonym")]"
-0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Check "http://snomed.info/sct#900000000000013009"
-0ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablevalueset.html">Shareable ValueSet</a></td>
+1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem version http://snomed.info/sct/900000000000207008/version/20250701 not found: "http://snomed.info/sct"
+1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Validate "[http://snomed.info/sct#900000000000013009 ("Synonym")]"
+1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: Check "http://snomed.info/sct#900000000000013009"
+1ms http://hl7.org/fhir/ValueSet/designation-use|4.0.1: CodeSystem not found: http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701</pre></div></td><td><a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablevalueset.html">Shareable ValueSet</a></td>
    </tr>
    <tr style="background-color: #ffebcc">
      <td><b>ValueSet&#8203;.compose&#8203;.include[0]&#8203;.concept[2]&#8203;.designation[1]&#8203;.use&#8203;.system (l1&#8203;/c7490)</b></td><td><b>warning</b></td><td><b>A definition for CodeSystem 'http://snomed.info/sct' version 'http://snomed.info/sct/900000000000207008/version/20250701' could not be found, so the code cannot be validated. Valid versions: http://snomed.info/sct/11000146104/version/20240930, http://snomed.info/sct/2011000195101/version/20230607, http://snomed.info/sct/554471000005108/version/20260331, http://snomed.info/sct/731000124108/version/20230301, http://snomed.info/sct/731000124108/version/20240301, http://snomed.info/sct/731000124108/version/20250901, http://snomed.info/sct/827022005/version/20241216, http://snomed.info/sct/83821000000107/version/20230412, http://snomed.info/sct/900000000000207008/version/20240201, http://snomed.info/sct/900000000000207008/version/20250201 and http://snomed.info/xsct/31000003106/version/20250909</b> (from <a href="qa-txservers.html#https://tx.fhir.org/r4">https://tx.fhir.org/r4</a>, see <a href="qa-tx.html#l47">log</a>, or see <a href="#vmi1413" onClick="document.getElementById('vmi1413').style.display='block'">the servers logic</a>) <span class="code-value code-hidden" style="font-size: 8px; color: navy">UNKNOWN_CODESYSTEM_VERSION</span><div id="vmi1413" style="display:none"><br/><pre>0ms tx-op
@@ -3072,8 +3072,8 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 0ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Parameters: disp-lang=de, generate-narrative, default-to-latest
 0ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Version Rules: default:http://snomed.info/sct#http://snomed.info/sct/900000000000207008/version/20250701
 0ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Prepare include[0]: "(urn:iso:std:iso:3166)"
-0ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: CodeSystem found: "urn:iso:std:iso:3166|2018"
-0ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Prepare include[1]: "(urn:iso:std:iso:3166:-2)"
+1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: CodeSystem found: "urn:iso:std:iso:3166|2018"
+1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Prepare include[1]: "(urn:iso:std:iso:3166:-2)"
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: CodeSystem found: "urn:iso:std:iso:3166:-2|2021"
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Prepare include[2]: "(http://unstats.un.org/unsd/methods/m49/m49.htm)(class=region)"
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: CodeSystem found: "http://unstats.un.org/unsd/methods/m49/m49.htm|null"
@@ -3117,8 +3117,8 @@ hl7.fhir.uv.extensions.r4#5.3.0:     <a href="http://hl7.org/fhir/extensions/5.3
 0ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Parameters: disp-lang=de, generate-narrative, default-to-latest
 0ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Version Rules: default:http://snomed.info/sct#http://snomed.info/sct/900000000000207008/version/20250701
 0ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Prepare include[0]: "(urn:iso:std:iso:3166)"
-0ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: CodeSystem found: "urn:iso:std:iso:3166|2018"
-0ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Prepare include[1]: "(urn:iso:std:iso:3166:-2)"
+1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: CodeSystem found: "urn:iso:std:iso:3166|2018"
+1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Prepare include[1]: "(urn:iso:std:iso:3166:-2)"
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: CodeSystem found: "urn:iso:std:iso:3166:-2|2021"
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: Prepare include[2]: "(http://unstats.un.org/unsd/methods/m49/m49.htm)(class=region)"
 1ms http://hl7.org/fhir/ValueSet/jurisdiction|4.0.1: CodeSystem found: "http://unstats.un.org/unsd/methods/m49/m49.htm|null"

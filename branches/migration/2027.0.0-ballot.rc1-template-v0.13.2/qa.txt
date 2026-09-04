@@ -3,7 +3,7 @@ MII_IG_Consent : Validation Results
 
 err = 82, warn = 134, info = 512
 IG Publisher Version: 2.3.2 Out of date - current version is 2.3.4
-Generated Fri Sep 04 12:21:40 UTC 2026. FHIR version 4.0.1 for de.medizininformatikinitiative.kerndatensatz.consent#2027.0.0-ballot.rc1 (canonical = https://www.medizininformatik-initiative.de/fhir/modul-consent)
+Generated Fri Sep 04 13:17:53 UTC 2026. FHIR version 4.0.1 for de.medizininformatikinitiative.kerndatensatz.consent#2027.0.0-ballot.rc1 (canonical = https://www.medizininformatik-initiative.de/fhir/modul-consent)
  Build Errors : 0 / 11 / 0
  /home/runner/work/kerndatensatzmodul-consent/kerndatensatzmodul-consent/fsh-generated/resources/CapabilityStatement-mii-cap-consent-server : 0 / 0 / 12
  /home/runner/work/kerndatensatzmodul-consent/kerndatensatzmodul-consent/fsh-generated/resources/CodeSystem-2.16.840.1.113883.3.1937.777.24.5.2--20210423105554 : 1 / 13 / 3
