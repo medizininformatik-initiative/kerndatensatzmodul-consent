@@ -1,0 +1,60 @@
+{
+  "codeSystems" : [{
+    "url" : "http://fhir.de/ConsentManagement/CodeSystem/ResultType",
+    "version" : "2.0.3",
+    "status" : "active",
+    "name" : "ResultType",
+    "title" : null,
+    "description" : "Ergebnistypen des Einwilligungsdokuments",
+    "uses" : {
+    },
+    "https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.4-rc1-snapshots&canonical=http://fhir.de/ConsentManagement/ValueSet/ResultType" : "ConsentManagementResultType"
+  },
+  {
+    "url" : "http://fhir.de/ConsentManagement/CodeSystem/TemplateType",
+    "version" : "2.0.3",
+    "status" : "active",
+    "name" : "TemplateType",
+    "title" : null,
+    "description" : "Typen des Einwilligungsdokuments",
+    "uses" : {
+    },
+    "https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.4-rc1-snapshots&canonical=http://fhir.de/ConsentManagement/ValueSet/TemplateType" : "ConsentManagementTemplateType"
+  },
+  {
+    "url" : "urn:iso-astm:E1762-95:2013",
+    "version" : "4.0.1",
+    "status" : "draft",
+    "name" : "SignatureTypeCodes",
+    "title" : "Signature Type Codes",
+    "description" : "The Digital Signature Purposes, an indication of the reason an entity signs a document. This is included in the signed information and can be used when determining accountability for various actions concerning the document. Examples include: author, transcriptionist/recorder, and witness.",
+    "oids" : ["2.16.840.1.113883.4.642.4.64"],
+    "uses" : {
+    },
+    "ValueSet-mii-vs-consent-signaturetypes.html" : "MII Consent: Signature Types"
+  },
+  {
+    "url" : "urn:oid:2.16.840.1.113883.3.1937.777.24.5.2",
+    "version" : "2027.0.0-ballot.rc1",
+    "status" : "active",
+    "name" : "MII_CS_Consent_Answer",
+    "title" : "MII Consent: Answer CodeSystem",
+    "description" : "This CodeSystem contains the possible answers to the questions of the MII Consent.",
+    "oids" : ["2.16.840.1.113883.3.1937.777.24.5.2"],
+    "uses" : {
+    },
+    "ValueSet-mii-vs-consent-answer.html" : "MII Consent: Answer ValueSet"
+  },
+  {
+    "url" : "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3",
+    "version" : "2027.0.0-ballot.rc1",
+    "status" : "active",
+    "name" : "MII CS Consent Policy",
+    "title" : "MII Consent: Policy CodeSystem",
+    "description" : "Codesystem mit Consent-Policy-Codes zur interoperablen Operationalisierung bzw. Durchsetzung (Enforcement) von Consent Informationen des MII Broad Consent",
+    "oids" : ["2.16.840.1.113883.3.1937.777.24.5.3"],
+    "uses" : {
+    },
+    "ValueSet-mii-vs-consent-policy.html" : "MII Consent: Policy ValueSet"
+  }]
+}

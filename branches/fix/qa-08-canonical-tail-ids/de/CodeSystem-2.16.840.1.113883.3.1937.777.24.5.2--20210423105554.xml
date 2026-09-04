@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<CodeSystem xmlns="http://hl7.org/fhir">
+  <id value="2.16.840.1.113883.3.1937.777.24.5.2--20210423105554"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablecodesystem"/>
+  </meta>
+  <language value="de"/>
+  <text>
+    <status value="generated"/><div xml:lang="de" lang="de"><hr/><p><b>German</b></p><hr/><p class="res-header-id"><b>Generated Narrative: CodeSystem 2.16.840.1.113883.3.1937.777.24.5.2--20210423105554</b></p><a name="2.16.840.1.113883.3.1937.777.24.5.2--20210423105554"> </a><a name="hc2.16.840.1.113883.3.1937.777.24.5.2--20210423105554"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html">Shareable CodeSystem</a></p></div><p>This case-sensitive code system <code>urn:oid:2.16.840.1.113883.3.1937.777.24.5.2</code> defines the following codes in a Part Of hierarchy:</p><table class="codes"><tr><td style="white-space:nowrap"><b>Code</b></td><td><b>Display</b></td></tr><tr><td style="white-space:nowrap">2.16.840.1.113883.3.1937.777.24.5.2.3<a name="2.16.840.1.113883.3.1937.777.24.5.2--20210423105554-2.4616.46840.461.46113883.463.461937.46777.4624.465.462.463"> </a></td><td>unbekannt</td></tr><tr><td style="white-space:nowrap">2.16.840.1.113883.3.1937.777.24.5.2.2<a name="2.16.840.1.113883.3.1937.777.24.5.2--20210423105554-2.4616.46840.461.46113883.463.461937.46777.4624.465.462.462"> </a></td><td>nicht gültig</td></tr><tr><td style="white-space:nowrap">2.16.840.1.113883.3.1937.777.24.5.2.1<a name="2.16.840.1.113883.3.1937.777.24.5.2--20210423105554-2.4616.46840.461.46113883.463.461937.46777.4624.465.462.461"> </a></td><td>gültig</td></tr></table><p><b>Additional Language Displays</b></p><table class="codes"><tr><td><b>Code</b></td><td><b>Deutsch (Deutschland) (German (Germany), de)</b></td><td><b>English (United States) (English (United States), en)</b></td></tr><tr><td>2.16.840.1.113883.3.1937.777.24.5.2.3</td><td>unbekannt</td><td>unknown</td></tr><tr><td>2.16.840.1.113883.3.1937.777.24.5.2.2</td><td>nicht gültig</td><td>not valid</td></tr><tr><td>2.16.840.1.113883.3.1937.777.24.5.2.1</td><td>gültig</td><td>valid</td></tr></table></div>
+  </text>
+  <url value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.2"/>
+  <version value="2027.0.0-ballot.rc1"/>
+  <name value="MII_CS_Consent_Answer"/>
+  <title value="MII Consent: Answer CodeSystem"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2021-03-23"/>
+  <publisher value="NUM-DIZ"/>
+  <contact>
+    <name value="NUM-DIZ"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.netzwerk-universitaetsmedizin.de"/>
+    </telecom>
+  </contact>
+  <description value="This CodeSystem contains the possible answers to the questions of the MII Consent."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DE"/>
+      <display value="Germany"/>
+    </coding>
+  </jurisdiction>
+  <caseSensitive value="true"/>
+  <valueSet value="https://www.medizininformatik-initiative.de/fhir/modul-consent/ValueSet/mii-vs-consent-answer"/>
+  <hierarchyMeaning value="part-of"/>
+  <content value="complete"/>
+  <count value="3"/>
+  <concept>
+    <code value="2.16.840.1.113883.3.1937.777.24.5.2.3"/>
+    <display value="unbekannt"/>
+    <designation>
+      <language value="de-DE"/>
+      <use>
+        <system value="http://snomed.info/sct"/>
+        <code value="900000000000013009"/>
+        <display value="Synonym"/>
+      </use>
+      <value value="unbekannt"/>
+    </designation>
+    <designation>
+      <language value="en-US"/>
+      <use>
+        <system value="http://snomed.info/sct"/>
+        <code value="900000000000013009"/>
+        <display value="Synonym"/>
+      </use>
+      <value value="unknown"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="2.16.840.1.113883.3.1937.777.24.5.2.2"/>
+    <display value="nicht gültig"/>
+    <designation>
+      <language value="de-DE"/>
+      <use>
+        <system value="http://snomed.info/sct"/>
+        <code value="900000000000013009"/>
+        <display value="Synonym"/>
+      </use>
+      <value value="nicht gültig"/>
+    </designation>
+    <designation>
+      <language value="en-US"/>
+      <use>
+        <system value="http://snomed.info/sct"/>
+        <code value="900000000000013009"/>
+        <display value="Synonym"/>
+      </use>
+      <value value="not valid"/>
+    </designation>
+  </concept>
+  <concept>
+    <code value="2.16.840.1.113883.3.1937.777.24.5.2.1"/>
+    <display value="gültig"/>
+    <designation>
+      <language value="de-DE"/>
+      <use>
+        <system value="http://snomed.info/sct"/>
+        <code value="900000000000013009"/>
+        <display value="Synonym"/>
+      </use>
+      <value value="gültig"/>
+    </designation>
+    <designation>
+      <language value="en-US"/>
+      <use>
+        <system value="http://snomed.info/sct"/>
+        <code value="900000000000013009"/>
+        <display value="Synonym"/>
+      </use>
+      <value value="valid"/>
+    </designation>
+  </concept>
+</CodeSystem>

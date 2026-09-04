@@ -1,0 +1,122 @@
+[{
+  "id" : "mii-cap-consent-server",
+  "type" : "CapabilityStatement",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/modul-consent/CapabilityStatement/mii-cap-consent-server",
+  "version" : "2027.0.0-ballot.rc1",
+  "name" : "MII_CAP_Consent_Server"
+},
+{
+  "id" : "mii-cs-consent-version-modules",
+  "type" : "CodeSystem",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/modul-consent/CodeSystem/mii-cs-consent-version-modules",
+  "version" : "2027.0.0-ballot.rc1",
+  "name" : "MIIConsentVersionModuleCodeSystem",
+  "oids" : ["2.16.840.1.113883.3.1937.777.24.5.27"]
+},
+{
+  "id" : "mii-ig-consent",
+  "type" : "ImplementationGuide",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/modul-consent/ImplementationGuide/mii-ig-consent",
+  "version" : "2027.0.0-ballot.rc1",
+  "name" : "MII_IG_Consent"
+},
+{
+  "id" : "mii-sp-consent-policyuri",
+  "type" : "SearchParameter",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/modul-consent/SearchParameter/mii-sp-consent-policyuri",
+  "version" : "2027.0.0-ballot.rc1",
+  "name" : "MII_SP_Consent_PolicyUri"
+},
+{
+  "id" : "mii-sp-consent-provisioncode",
+  "type" : "SearchParameter",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/modul-consent/SearchParameter/mii-sp-consent-provisioncode",
+  "version" : "2027.0.0-ballot.rc1",
+  "name" : "MII_SP_Consent_ProvisionCode"
+},
+{
+  "id" : "mii-sp-consent-provisioncodeperiod",
+  "type" : "SearchParameter",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/modul-consent/SearchParameter/mii-sp-consent-provisioncodeperiod",
+  "version" : "2027.0.0-ballot.rc1",
+  "name" : "MII_SP_Consent_ProvisionCodePeriod"
+},
+{
+  "id" : "mii-sp-consent-provisioncodetype",
+  "type" : "SearchParameter",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/modul-consent/SearchParameter/mii-sp-consent-provisioncodetype",
+  "version" : "2027.0.0-ballot.rc1",
+  "name" : "MII_SP_Consent_ProvisionCodeType"
+},
+{
+  "id" : "mii-sp-consent-provisionperiod",
+  "type" : "SearchParameter",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/modul-consent/SearchParameter/mii-sp-consent-provisionperiod",
+  "version" : "2027.0.0-ballot.rc1",
+  "name" : "MII_SP_Consent_ProvisionPeriod"
+},
+{
+  "id" : "mii-sp-consent-provisiontype",
+  "type" : "SearchParameter",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/modul-consent/SearchParameter/mii-sp-consent-provisiontype",
+  "version" : "2027.0.0-ballot.rc1",
+  "name" : "MII_SP_Consent_ProvisionType"
+},
+{
+  "id" : "mii-pr-consent-documentreference",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-documentreference",
+  "version" : "2027.0.0-ballot.rc1",
+  "name" : "MII_PR_Consent_DocumentReference"
+},
+{
+  "id" : "mii-pr-consent-einwilligung",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-einwilligung",
+  "version" : "2027.0.0-ballot.rc1",
+  "name" : "MII_PR_Consent_Einwilligung"
+},
+{
+  "id" : "mii-pr-consent-provenance",
+  "type" : "StructureDefinition",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-provenance",
+  "version" : "2027.0.0-ballot.rc1",
+  "name" : "MII_PR_Consent_Provenance"
+},
+{
+  "id" : "mii-vs-consent-answer",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/modul-consent/ValueSet/mii-vs-consent-answer",
+  "version" : "2027.0.0-ballot.rc1",
+  "name" : "MII_VS_Consent_Answer",
+  "oids" : ["2.16.840.1.113883.3.1937.777.24.11.30"]
+},
+{
+  "id" : "mii-vs-consent-policy",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/modul-consent/ValueSet/mii-vs-consent-policy",
+  "version" : "2027.0.0-ballot.rc1",
+  "name" : "MiiConsentPolicyValueSet",
+  "oids" : ["2.16.840.1.113883.3.1937.777.24.11.36"]
+},
+{
+  "id" : "mii-vs-consent-signaturetypes",
+  "type" : "ValueSet",
+  "url" : "https://www.medizininformatik-initiative.de/fhir/modul-consent/ValueSet/mii-vs-consent-signaturetypes",
+  "version" : "2027.0.0-ballot.rc1",
+  "name" : "MII_VS_Consent_SignatureTypes"
+},
+{
+  "id" : "2.16.840.1.113883.3.1937.777.24.5.2--20210423105554",
+  "type" : "CodeSystem",
+  "url" : "urn:oid:2.16.840.1.113883.3.1937.777.24.5.2",
+  "version" : "2027.0.0-ballot.rc1",
+  "name" : "MII_CS_Consent_Answer"
+},
+{
+  "id" : "2.16.840.1.113883.3.1937.777.24.5.3--20251211153003",
+  "type" : "CodeSystem",
+  "url" : "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3",
+  "version" : "2027.0.0-ballot.rc1",
+  "name" : "MII CS Consent Policy"
+}]

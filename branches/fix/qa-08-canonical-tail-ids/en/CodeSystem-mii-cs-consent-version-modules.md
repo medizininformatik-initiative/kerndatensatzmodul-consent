@@ -1,0 +1,632 @@
+# MII Consent Version and Modules CodeSystem - MII Implementation Guide Consent v2027.0.0-ballot.rc1
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **MII Consent Version and Modules CodeSystem**
+
+## CodeSystem: MII Consent Version and Modules CodeSystem 
+
+| | |
+| :--- | :--- |
+| *Official URL*:https://www.medizininformatik-initiative.de/fhir/modul-consent/CodeSystem/mii-cs-consent-version-modules | *Version*:2027.0.0-ballot.rc1 |
+| Draft as of 2026-09-04 | *Computable Name*:MIIConsentVersionModuleCodeSystem |
+| *Other Identifiers:*OID:2.16.840.1.113883.3.1937.777.24.5.27 (use: official, ) | |
+| **Copyright/Legal**: © 2019+ TMF e. V., Charlottenstraße 42, 10117 Berlin```
+                CC BY 4.0
+            
+             
+        
+        Diese Arbeit ist lizensiert unter der [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/). 
+        Zu den Nutzungsrechten der zugrunde liegenden FHIR-Technologie siehe die FHIR-Basis-Spezifikation. 
+        Einige verwendete Codesysteme werden von anderen Organisationen herausgegeben und gepflegt. Es gilt das Copyright der dort jeweils aufgeführten Herausgeber (Publisher). 
+
+```
+ | |
+
+ 
+Dieses Code System enthält die OIDs der verschiedenen Versionen und Zusatzmodule des Broad Consent der Medizininformatik Initiative. 
+
+This Code system is referenced in the definition of the following value sets:
+
+* This CodeSystem is not used here; it may be used elsewhere (e.g. specifications and/or implementations that use this content)
+
+-------
+
+ [Description of the above table(s)](http://build.fhir.org/ig/FHIR/ig-guidance/readingIgs.html#terminology). 
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "CodeSystem",
+  "id" : "mii-cs-consent-version-modules",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablecodesystem"]
+  },
+  "language" : "de-DE",
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod",
+    "valuePeriod" : {
+      "start" : "2025-12-18T15:02:43+01:00"
+    }
+  }],
+  "url" : "https://www.medizininformatik-initiative.de/fhir/modul-consent/CodeSystem/mii-cs-consent-version-modules",
+  "identifier" : [{
+    "use" : "official",
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.840.1.113883.3.1937.777.24.5.27"
+  }],
+  "version" : "2027.0.0-ballot.rc1",
+  "name" : "MIIConsentVersionModuleCodeSystem",
+  "title" : "MII Consent Version and Modules CodeSystem",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2026-09-04T13:39:50+00:00",
+  "publisher" : "NUM-DIZ",
+  "_publisher" : {
+    "extension" : [{
+      "extension" : [{
+        "url" : "lang",
+        "valueCode" : "en"
+      },
+      {
+        "url" : "content",
+        "valueString" : "NUM-DIZ"
+      }],
+      "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+    }]
+  },
+  "contact" : [{
+    "name" : "NUM-DIZ",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.netzwerk-universitaetsmedizin.de"
+    }]
+  }],
+  "description" : "Dieses Code System enthält die OIDs der verschiedenen Versionen und Zusatzmodule des Broad Consent der Medizininformatik Initiative.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DE",
+      "display" : "Germany"
+    }]
+  }],
+  "copyright" : "\n            © 2019+ TMF e. V., Charlottenstraße 42, 10117 Berlin \n            \n                \n                    CC BY 4.0\n                \n                 \n            \n            Diese Arbeit ist lizensiert unter der [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/). \n            Zu den Nutzungsrechten der zugrunde liegenden FHIR-Technologie siehe die FHIR-Basis-Spezifikation. \n            Einige verwendete Codesysteme werden von anderen Organisationen herausgegeben und gepflegt. Es gilt das Copyright der dort jeweils aufgeführten Herausgeber (Publisher). \n        ",
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 20,
+  "property" : [{
+    "code" : "status",
+    "uri" : "http://hl7.org/fhir/concept-properties#status",
+    "description" : "A code that indicates the status of the concept. Values found in this version of the code system are: draft",
+    "type" : "code"
+  },
+  {
+    "code" : "parent",
+    "uri" : "http://hl7.org/fhir/concept-properties#parent",
+    "description" : "The concept identified in this property is a parent of the concept on which it is a property. The property type will be 'code'. The meaning of 'parent' is defined by the hierarchyMeaning attribute",
+    "type" : "code"
+  },
+  {
+    "code" : "child",
+    "uri" : "http://hl7.org/fhir/concept-properties#child",
+    "description" : "The concept identified in this property is a child of the concept on which it is a property. The property type will be 'code'. The meaning of 'child' is defined by the hierarchyMeaning attribute",
+    "type" : "code"
+  }],
+  "concept" : [{
+    "code" : "2.16.840.1.113883.3.1937.777.24.2.184",
+    "display" : "MII Broad Consent",
+    "definition" : "\n                        Dieser Code (OID) kennzeichnet den Broad Consent der Medizininformatik Initiative (MII).",
+    "designation" : [{
+      "language" : "de-DE",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000003001",
+        "display" : "Fully specified name"
+      },
+      "value" : "MII Broad Consent"
+    }],
+    "property" : [{
+      "code" : "status",
+      "valueCode" : "draft"
+    },
+    {
+      "code" : "child",
+      "valueCode" : "2.16.840.1.113883.3.1937.777.24.2.1790"
+    },
+    {
+      "code" : "child",
+      "valueCode" : "2.16.840.1.113883.3.1937.777.24.2.4053"
+    },
+    {
+      "code" : "child",
+      "valueCode" : "2.16.840.1.113883.3.1937.777.24.2.2718"
+    },
+    {
+      "code" : "child",
+      "valueCode" : "2.16.840.1.113883.3.1937.777.24.2.2719"
+    },
+    {
+      "code" : "child",
+      "valueCode" : "2.16.840.1.113883.3.1937.777.24.2.1791"
+    },
+    {
+      "code" : "child",
+      "valueCode" : "2.16.840.1.113883.3.1937.777.24.2.2720"
+    },
+    {
+      "code" : "child",
+      "valueCode" : "2.16.840.1.113883.3.1937.777.24.2.2721"
+    },
+    {
+      "code" : "child",
+      "valueCode" : "2.16.840.1.113883.3.1937.777.24.2.2079"
+    },
+    {
+      "code" : "child",
+      "valueCode" : "2.16.840.1.113883.3.1937.777.24.2.4054"
+    },
+    {
+      "code" : "child",
+      "valueCode" : "2.16.840.1.113883.3.1937.777.24.2.4055"
+    },
+    {
+      "code" : "child",
+      "valueCode" : "2.16.840.1.113883.3.1937.777.24.2.2722"
+    },
+    {
+      "code" : "child",
+      "valueCode" : "2.16.840.1.113883.3.1937.777.24.2.2723"
+    },
+    {
+      "code" : "child",
+      "valueCode" : "2.16.840.1.113883.3.1937.777.24.2.3542"
+    },
+    {
+      "code" : "child",
+      "valueCode" : "2.16.840.1.113883.3.1937.777.24.2.3543"
+    },
+    {
+      "code" : "child",
+      "valueCode" : "2.16.840.1.113883.3.1937.777.24.2.3544"
+    }]
+  },
+  {
+    "code" : "2.16.840.1.113883.3.1937.777.24.2.1790",
+    "display" : "Version 1.6d des MII Broad Consent",
+    "definition" : "\n                        Version 1.6d des MII Broad Consent",
+    "designation" : [{
+      "language" : "de-DE",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000003001",
+        "display" : "Fully specified name"
+      },
+      "value" : "Version 1.6d des MII Broad Consent"
+    }],
+    "property" : [{
+      "code" : "status",
+      "valueCode" : "draft"
+    },
+    {
+      "code" : "parent",
+      "valueCode" : "2.16.840.1.113883.3.1937.777.24.2.184"
+    }]
+  },
+  {
+    "code" : "2.16.840.1.113883.3.1937.777.24.2.4053",
+    "display" : "Version 1.6d Ablehnung",
+    "designation" : [{
+      "language" : "de-DE",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000003001",
+        "display" : "Fully specified name"
+      },
+      "value" : "Version 1.6d Ablehnung"
+    }],
+    "property" : [{
+      "code" : "status",
+      "valueCode" : "draft"
+    },
+    {
+      "code" : "parent",
+      "valueCode" : "2.16.840.1.113883.3.1937.777.24.2.184"
+    }]
+  },
+  {
+    "code" : "2.16.840.1.113883.3.1937.777.24.2.2718",
+    "display" : "Version 1.6d Komplettwiderruf",
+    "designation" : [{
+      "language" : "de-DE",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000003001",
+        "display" : "Fully specified name"
+      },
+      "value" : "Version 1.6d Komplettwiderruf"
+    }],
+    "property" : [{
+      "code" : "status",
+      "valueCode" : "draft"
+    },
+    {
+      "code" : "parent",
+      "valueCode" : "2.16.840.1.113883.3.1937.777.24.2.184"
+    }]
+  },
+  {
+    "code" : "2.16.840.1.113883.3.1937.777.24.2.2719",
+    "display" : "Version 1.6d Teilwiderruf",
+    "designation" : [{
+      "language" : "de-DE",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000003001",
+        "display" : "Fully specified name"
+      },
+      "value" : "Version 1.6d Teilwiderruf"
+    }],
+    "property" : [{
+      "code" : "status",
+      "valueCode" : "draft"
+    },
+    {
+      "code" : "parent",
+      "valueCode" : "2.16.840.1.113883.3.1937.777.24.2.184"
+    }]
+  },
+  {
+    "code" : "2.16.840.1.113883.3.1937.777.24.2.1791",
+    "display" : "Version 1.6f des MII Broad Consent",
+    "designation" : [{
+      "language" : "de-DE",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000003001",
+        "display" : "Fully specified name"
+      },
+      "value" : "Version 1.6f des MII Broad Consent"
+    }],
+    "property" : [{
+      "code" : "status",
+      "valueCode" : "draft"
+    },
+    {
+      "code" : "parent",
+      "valueCode" : "2.16.840.1.113883.3.1937.777.24.2.184"
+    }]
+  },
+  {
+    "code" : "2.16.840.1.113883.3.1937.777.24.2.2720",
+    "display" : "Version 1.6f Komplettwiderruf",
+    "designation" : [{
+      "language" : "de-DE",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000003001",
+        "display" : "Fully specified name"
+      },
+      "value" : "Version 1.6f Komplettwiderruf"
+    }],
+    "property" : [{
+      "code" : "status",
+      "valueCode" : "draft"
+    },
+    {
+      "code" : "parent",
+      "valueCode" : "2.16.840.1.113883.3.1937.777.24.2.184"
+    }]
+  },
+  {
+    "code" : "2.16.840.1.113883.3.1937.777.24.2.2721",
+    "display" : "Version 1.6f Teilwiderruf",
+    "designation" : [{
+      "language" : "de-DE",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000003001",
+        "display" : "Fully specified name"
+      },
+      "value" : "Version 1.6f Teilwiderruf"
+    }],
+    "property" : [{
+      "code" : "status",
+      "valueCode" : "draft"
+    },
+    {
+      "code" : "parent",
+      "valueCode" : "2.16.840.1.113883.3.1937.777.24.2.184"
+    }]
+  },
+  {
+    "code" : "2.16.840.1.113883.3.1937.777.24.2.2079",
+    "display" : "Version 1.7.2 des MII Broad Consent",
+    "designation" : [{
+      "language" : "de-DE",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000003001",
+        "display" : "Fully specified name"
+      },
+      "value" : "Version 1.7.2 des MII Broad Consent"
+    }],
+    "property" : [{
+      "code" : "status",
+      "valueCode" : "draft"
+    },
+    {
+      "code" : "parent",
+      "valueCode" : "2.16.840.1.113883.3.1937.777.24.2.184"
+    }]
+  },
+  {
+    "code" : "2.16.840.1.113883.3.1937.777.24.2.4054",
+    "display" : "Version 1.7.2 Ablehnung",
+    "designation" : [{
+      "language" : "de-DE",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000003001",
+        "display" : "Fully specified name"
+      },
+      "value" : "Version 1.7.2 Ablehnung"
+    }],
+    "property" : [{
+      "code" : "status",
+      "valueCode" : "draft"
+    },
+    {
+      "code" : "parent",
+      "valueCode" : "2.16.840.1.113883.3.1937.777.24.2.184"
+    }]
+  },
+  {
+    "code" : "2.16.840.1.113883.3.1937.777.24.2.4055",
+    "display" : "Version 1.7.2 Vertretende",
+    "designation" : [{
+      "language" : "de-DE",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000003001",
+        "display" : "Fully specified name"
+      },
+      "value" : "Version 1.7.2 Vertretende"
+    }],
+    "property" : [{
+      "code" : "status",
+      "valueCode" : "draft"
+    },
+    {
+      "code" : "parent",
+      "valueCode" : "2.16.840.1.113883.3.1937.777.24.2.184"
+    }]
+  },
+  {
+    "code" : "2.16.840.1.113883.3.1937.777.24.2.2722",
+    "display" : "Version 1.7.2 Komplettwiderruf",
+    "designation" : [{
+      "language" : "de-DE",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000003001",
+        "display" : "Fully specified name"
+      },
+      "value" : "Version 1.7.2 Komplettwiderruf"
+    }],
+    "property" : [{
+      "code" : "status",
+      "valueCode" : "draft"
+    },
+    {
+      "code" : "parent",
+      "valueCode" : "2.16.840.1.113883.3.1937.777.24.2.184"
+    }]
+  },
+  {
+    "code" : "2.16.840.1.113883.3.1937.777.24.2.2723",
+    "display" : "Version 1.7.2 Teilwiderruf",
+    "designation" : [{
+      "language" : "de-DE",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000003001",
+        "display" : "Fully specified name"
+      },
+      "value" : "Version 1.7.2 Teilwiderruf"
+    }],
+    "property" : [{
+      "code" : "status",
+      "valueCode" : "draft"
+    },
+    {
+      "code" : "parent",
+      "valueCode" : "2.16.840.1.113883.3.1937.777.24.2.184"
+    }]
+  },
+  {
+    "code" : "2.16.840.1.113883.3.1937.777.24.2.3542",
+    "display" : "Version 1.7.2 Eltern und Sorgeberechtigte für Minderjährige v1.1",
+    "designation" : [{
+      "language" : "de-DE",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000003001",
+        "display" : "Fully specified name"
+      },
+      "value" : "Version 1.7.2 Eltern und Sorgeberechtigte für Minderjährige v1.1"
+    }],
+    "property" : [{
+      "code" : "status",
+      "valueCode" : "draft"
+    },
+    {
+      "code" : "parent",
+      "valueCode" : "2.16.840.1.113883.3.1937.777.24.2.184"
+    }]
+  },
+  {
+    "code" : "2.16.840.1.113883.3.1937.777.24.2.3543",
+    "display" : "Version 1.7.2 7-11 Minderjährige v1.1",
+    "designation" : [{
+      "language" : "de-DE",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000003001",
+        "display" : "Fully specified name"
+      },
+      "value" : "Version 1.7.2 7-11 Minderjährige v1.1"
+    }],
+    "property" : [{
+      "code" : "status",
+      "valueCode" : "draft"
+    },
+    {
+      "code" : "parent",
+      "valueCode" : "2.16.840.1.113883.3.1937.777.24.2.184"
+    }]
+  },
+  {
+    "code" : "2.16.840.1.113883.3.1937.777.24.2.3544",
+    "display" : "Version 1.7.2 12-17 Minderjährige v1.1",
+    "designation" : [{
+      "language" : "de-DE",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000003001",
+        "display" : "Fully specified name"
+      },
+      "value" : "Version 1.7.2 12-17 Minderjährige v1.1"
+    }],
+    "property" : [{
+      "code" : "status",
+      "valueCode" : "draft"
+    },
+    {
+      "code" : "parent",
+      "valueCode" : "2.16.840.1.113883.3.1937.777.24.2.184"
+    }]
+  },
+  {
+    "code" : "2.16.840.1.113883.3.1937.777.24.2.4052",
+    "display" : "Zusatzmodule des MII Broad Consent",
+    "definition" : "\n                        Dieser Code (OID) gruppiert die Zusatzmodule des MII Broad Consent.",
+    "designation" : [{
+      "language" : "de-DE",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000003001",
+        "display" : "Fully specified name"
+      },
+      "value" : "Zusatzmodule des MII Broad Consent"
+    }],
+    "property" : [{
+      "code" : "status",
+      "valueCode" : "draft"
+    },
+    {
+      "code" : "child",
+      "valueCode" : "2.16.840.1.113883.3.1937.777.24.2.4031"
+    },
+    {
+      "code" : "child",
+      "valueCode" : "2.16.840.1.113883.3.1937.777.24.2.4036"
+    },
+    {
+      "code" : "child",
+      "valueCode" : "2.16.840.1.113883.3.1937.777.24.2.4037"
+    },
+    {
+      "code" : "child",
+      "valueCode" : "2.16.840.1.113883.3.1937.777.24.2.4048"
+    }]
+  },
+  {
+    "code" : "2.16.840.1.113883.3.1937.777.24.2.4031",
+    "display" : "Zusatzmodul ACRIBiS (Z2)",
+    "designation" : [{
+      "language" : "de-DE",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000003001",
+        "display" : "Fully specified name"
+      },
+      "value" : "Zusatzmodul ACRIBiS (Z2)"
+    }],
+    "property" : [{
+      "code" : "status",
+      "valueCode" : "draft"
+    },
+    {
+      "code" : "parent",
+      "valueCode" : "2.16.840.1.113883.3.1937.777.24.2.4052"
+    }]
+  },
+  {
+    "code" : "2.16.840.1.113883.3.1937.777.24.2.4036",
+    "display" : "Zusatzmodul Patientenbefragung (Z3)",
+    "designation" : [{
+      "language" : "de-DE",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000003001",
+        "display" : "Fully specified name"
+      },
+      "value" : "Zusatzmodul Patientenbefragung (Z3)"
+    }],
+    "property" : [{
+      "code" : "status",
+      "valueCode" : "draft"
+    },
+    {
+      "code" : "parent",
+      "valueCode" : "2.16.840.1.113883.3.1937.777.24.2.4052"
+    }]
+  },
+  {
+    "code" : "2.16.840.1.113883.3.1937.777.24.2.4037",
+    "display" : "Zusatzmodul Fachnetzwerk Infektion - SNID (Z4)",
+    "designation" : [{
+      "language" : "de-DE",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000003001",
+        "display" : "Fully specified name"
+      },
+      "value" : "Zusatzmodul Fachnetzwerk Infektion - SNID (Z4)"
+    }],
+    "property" : [{
+      "code" : "status",
+      "valueCode" : "draft"
+    },
+    {
+      "code" : "parent",
+      "valueCode" : "2.16.840.1.113883.3.1937.777.24.2.4052"
+    }]
+  },
+  {
+    "code" : "2.16.840.1.113883.3.1937.777.24.2.4048",
+    "display" : "Zusatzmodul Deutsche Zentrum für Psychische Gesundheit - DZPG (Z5)",
+    "designation" : [{
+      "language" : "de-DE",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000003001",
+        "display" : "Fully specified name"
+      },
+      "value" : "Zusatzmodul Deutsche Zentrum für Psychische Gesundheit - DZPG (Z5)"
+    }],
+    "property" : [{
+      "code" : "status",
+      "valueCode" : "draft"
+    },
+    {
+      "code" : "parent",
+      "valueCode" : "2.16.840.1.113883.3.1937.777.24.2.4052"
+    }]
+  }]
+}
+
+```

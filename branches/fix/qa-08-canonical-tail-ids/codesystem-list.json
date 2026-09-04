@@ -1,0 +1,35 @@
+{
+  "codeSystems" : [{
+    "url" : "https://www.medizininformatik-initiative.de/fhir/modul-consent/CodeSystem/mii-cs-consent-version-modules",
+    "version" : "2027.0.0-ballot.rc1",
+    "status" : "draft",
+    "name" : "MIIConsentVersionModuleCodeSystem",
+    "title" : "MII Consent Version and Modules CodeSystem",
+    "description" : "Dieses Code System enthält die OIDs der verschiedenen Versionen und Zusatzmodule des Broad Consent der Medizininformatik Initiative.",
+    "oids" : ["2.16.840.1.113883.3.1937.777.24.5.27"]
+  },
+  {
+    "url" : "urn:oid:2.16.840.1.113883.3.1937.777.24.5.2",
+    "version" : "2027.0.0-ballot.rc1",
+    "status" : "active",
+    "name" : "MII_CS_Consent_Answer",
+    "title" : "MII Consent: Answer CodeSystem",
+    "description" : "This CodeSystem contains the possible answers to the questions of the MII Consent.",
+    "oids" : ["2.16.840.1.113883.3.1937.777.24.5.2"],
+    "uses" : {
+    },
+    "ValueSet-mii-vs-consent-answer.html" : "MII Consent: Answer ValueSet"
+  },
+  {
+    "url" : "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3",
+    "version" : "2027.0.0-ballot.rc1",
+    "status" : "active",
+    "name" : "MII CS Consent Policy",
+    "title" : "MII Consent: Policy CodeSystem",
+    "description" : "Codesystem mit Consent-Policy-Codes zur interoperablen Operationalisierung bzw. Durchsetzung (Enforcement) von Consent Informationen des MII Broad Consent",
+    "oids" : ["2.16.840.1.113883.3.1937.777.24.5.3"],
+    "uses" : {
+    },
+    "ValueSet-mii-vs-consent-policy.html" : "MII Consent: Policy ValueSet"
+  }]
+}

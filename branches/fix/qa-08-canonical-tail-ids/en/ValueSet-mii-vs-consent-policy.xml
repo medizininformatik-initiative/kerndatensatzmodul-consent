@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ValueSet xmlns="http://hl7.org/fhir">
+  <id value="mii-vs-consent-policy"/>
+  <meta>
+    <profile value="http://hl7.org/fhir/StructureDefinition/shareablevalueset"/>
+  </meta>
+  <language value="en"/>
+  <text>
+    <status value="generated"/><div xml:lang="en" lang="en"><hr/><p><b>English</b></p><hr/><p class="res-header-id"><b>Generated Narrative: ValueSet mii-vs-consent-policy</b></p><a name="en-mii-vs-consent-policy"> </a><a name="en-hcmii-vs-consent-policy"> </a><div style="display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%"><p style="margin-bottom: 0px"/><p style="margin-bottom: 0px">Profile: <a href="http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablevalueset.html">Shareable ValueSet</a></p></div><ul><li>Include all codes defined in <a href="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003.html"><code>urn:oid:2.16.840.1.113883.3.1937.777.24.5.3</code></a><span title="Version is not explicitly stated, which means it is fixed to the version provided in this specification"> version &#x1F4E6;2027.0.0-ballot.rc1</span></li></ul></div>
+  </text>
+  <extension url="http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod">
+    <valuePeriod>
+      <start value="2023-03-31T23:28:04+02:00"/>
+    </valuePeriod>
+  </extension>
+  <url value="https://www.medizininformatik-initiative.de/fhir/modul-consent/ValueSet/mii-vs-consent-policy"/>
+  <identifier>
+    <use value="official"/>
+    <system value="urn:ietf:rfc:3986"/>
+    <value value="urn:oid:2.16.840.1.113883.3.1937.777.24.11.36"/>
+  </identifier>
+  <version value="2027.0.0-ballot.rc1"/>
+  <name value="MiiConsentPolicyValueSet"/>
+  <title value="MII Consent: Policy ValueSet"/>
+  <status value="active"/>
+  <experimental value="false"/>
+  <date value="2026-09-04T13:39:50+00:00"/>
+  <publisher value="NUM-DIZ"/>
+  <contact>
+    <name value="NUM-DIZ"/>
+    <telecom>
+      <system value="url"/>
+      <value value="https://www.netzwerk-universitaetsmedizin.de"/>
+    </telecom>
+  </contact>
+  <description value="**Disclaimer** &#xA;&#xA; (Punkte übernommen aus der Policy Liste ([MII SharePoint, TF Consent Umsetzung](https://tmfev.sharepoint.com/:f:/r/sites/tmf/mi-i/Taskforce%20Consent%20Umsetzung/02_Dokumente/Policies?csf=1&amp;web=1&amp;e=C0xLim &quot;&quot;)))&#xA;1. Diese Liste fasst erforderliche&#xA;                    Einwilligungsmodule und zugeordnete Einwilligungspolicies für die technische Abbildung der &quot;MII Mustertexte Patienteneinwilligung&quot; in den aktuell verfügbaren Versionen zusammen. &#xA;2. Für die Abbildung der Policies im Art Decor werden ausschließlich die Spalten [Policybezeichner], [Bedeutung/Kontext] und [OID] verwendet. &#xA;3. Die Formulierung in&#xA;                    der Spalte [Bedeutung/Kontext] dient ausschließlich administrativen Zwecken und der Verständnisbildung für die jeweilige Policy. &#xA;4. Eine Darstellung der jeweiligen Formulierung innerhalb von Formularen oder digitalen Einwilligungsdokumenten ist nicht intendiert. &#xA;5. Die Spalte [Weitere Hinweise Enforcement-Seite] nennt zusätzliche&#xA;                    Randbedingungen, die auf der datenverarbeitenden Seite über die reine Einwilligungsinformation hinaus zu berücksichtigen sind. Die Gewährleistung der Einhaltung dieser weiteren Hinweise geht über den Wirkungsraum der Task Force Consent Umsetzung hinaus. &#xA;&#xA; **Hinweis 1 - Verwendung in FHIR:** Siehe [Implementation Guide](https://ig.fhir.de/einwilligungsmanagement/stable/Consent.html &quot;consent.provision Hierarchie ist noch in Arbeit&quot;).  &#xA;&#xA; **Hinweis 2 - Verwendung in IHE BPPC:** &#xA;Um die in diesem ValueSet enthaltenen Codes in IHE BPPC verwenden zu können, ist eine Kombination mit dem [MII Consent: Answer ValueSet](https://art-decor.org/art-decor/decor-valuesets--mide-?id=2.16.840.1.113883.3.1937.777.24.11.30&amp;effectiveDate=2021-03-23T23:45:09&amp;language=de-DE &quot;&quot;) möglich (evtl. sogar erforderlich).  &#xA;&#xA;  Beispiel 1:  &#xA;&#xA; Patient hat dem Erheben der IDAT (Policy: 2.16.840.1.113883.3.1937.777.24.5.3.2 &quot;IDAT_erheben&quot;) zugestimmt:&#xA;                            2.16.840.1.113883.3.1937.777.24.5.3.2**.1** (.1 wird aus dem [MII Consent: Answer ValueSet](https://art-decor.org/art-decor/decor-valuesets--mide-?id=2.16.840.1.113883.3.1937.777.24.11.30&amp;effectiveDate=2021-03-23T23:45:09&amp;language=de-DE &quot;&quot;) angehängt)  &#xA;&#xA; Beispiel 2:  &#xA;&#xA; 2.16.840.1.113883.3.1937.777.24.5.3.4.2&#xA;                    bedeutet, dass der Patient der Policy IDAT_zusammenfuehren_Dritte nicht zugestimmt hat."/>
+  <jurisdiction>
+    <coding>
+      <system value="urn:iso:std:iso:3166"/>
+      <code value="DE"/>
+      <display value="Germany"/>
+    </coding>
+  </jurisdiction>
+  <immutable value="false"/>
+  <compose>
+    <include>
+      <system value="urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"/>
+    </include>
+  </compose>
+</ValueSet>
