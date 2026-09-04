@@ -356,8 +356,18 @@ by the rename), and THIS branch re-bases the migration content on the official r
   slice-append gotcha), canonical-tail SP ids (release ships none), example display
   harmonization + CS counts 124/21 + the 89f494a3 system fix (the release still carries those
   defects), `publisher` on every resource via sushi-config.
-* **AFTER build + BEFORE/AFTER delta + fix pass:** see the run.log entries following 1.2/5.2/5.4
-  and the QA-delta note below this section (appended after the build).
+* **AFTER builds + BEFORE/AFTER delta + fix pass (run.log 6.1/7.1/7.2):**
+  AFTER build 1 **err = 46** (vs BEFORE 90) — **conversion-introduced classes: NONE**;
+  the migrated tree resolves 44 package errors (displays + paired VS-membership,
+  publisher, counts, stale snapshot, dangling CS). Fix pass (simple errors per the
+  QA report): 4 synthetic reference-target instances (pseudonymous, parent-profile
+  conformant), Answer-VS bare all-system include, 1 display whitespace →
+  AFTER build 2 **err = 33 / warn = 121** — exactly the release-inherent floor:
+  **18 id/url** (id modernization = new upstream issue) + **15 slicing-not-evaluable**
+  (`category:templateType` extensible-binding-only under pattern/$this — construct
+  shipped by parent and release; recommended fix: system-only pattern, see the
+  QA-error analysis of 2026-09-01). Evidence: `qa-baseline-release-package.txt`
+  (BEFORE) / `qa-target-2027-fresh.txt` (AFTER).
 
 ## Sign-off (generated checklist)
 

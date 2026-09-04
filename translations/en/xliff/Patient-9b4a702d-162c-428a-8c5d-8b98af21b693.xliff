@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="de" target-language="en" id="Patient-9b4a702d-162c-428a-8c5d-8b98af21b693" original="Resource Patient-9b4a702d-162c-428a-8c5d-8b98af21b693" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="Patient-9b4a702d-162c-428a-8c5d-8b98af21b693" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Anonymous identifier</source>
+        <target></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
