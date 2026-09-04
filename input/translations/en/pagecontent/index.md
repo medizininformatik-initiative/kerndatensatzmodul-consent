@@ -8,14 +8,16 @@
      https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/Beschreibung-Modul-Consent?version=2026.0.0
      Das Simplifier-Inhaltsverzeichnis der Quellseite wurde NICHT übertragen —
      der IG Publisher erzeugt das Inhaltsverzeichnis (toc.html) selbst. -->
+<!-- Delta reconciliation with the source guide ?version=2027.0.0-ballot.rc1
+     (harvest 2026-09-04): metadata table (Date, Status) adopted. -->
 
 This specification describes the FHIR representation of the Core Data Set module 'Consent' of the Medical Informatics Initiative. The following sections describe the module's use cases as well as the associated FHIR profiles and terminology resources in their binding form.
 
 | Publication / Status |  |
 | --- | --- |
-| Date | 31.08.2026 |
+| Date | 03.09.2026 |
 | Version | 2027.0.0-ballot.rc1 |
-| Status | active |
+| Status | draft |
 | Realm | DE |
 
 

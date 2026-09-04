@@ -2,12 +2,12 @@
 # generate-parent-snapshots.sh — make de.einwilligungsmanagement importable.
 #
 # WHY (migration decision D-4, Gate A): this module's profiles derive from
-# de.einwilligungsmanagement 2.0.2 (the SOURCE pin of the published
-# 2026.0.0 package). That upstream package ships 21 StructureDefinitions and
-# ZERO snapshots — in 2.0.2 AND 2.0.3 — and SUSHI cannot import a parent
+# de.einwilligungsmanagement 2.0.4-rc1 (the pin of the OFFICIAL release
+# package 2027.0.0-ballot.rc1). That upstream package ships 21 StructureDefinitions and
+# ZERO snapshots — in 2.0.2, 2.0.3 AND 2.0.4-rc1 — and SUSHI cannot import a parent
 # without a snapshot. This script generates the missing snapshots with the
 # OFFICIAL HL7 generator and installs them as a NEW FHIR-cache entry
-#   ~/.fhir/packages/de.einwilligungsmanagement#2.0.2-snapshots
+#   ~/.fhir/packages/de.einwilligungsmanagement#2.0.4-rc1-snapshots
 # (upstream is never overwritten), which sushi-config.yaml pins. CI runs this
 # before every build; run it once locally before `npx fsh-sushi .`.
 #
@@ -20,7 +20,7 @@
 set -euo pipefail
 
 PARENT_PACKAGE="de.einwilligungsmanagement"
-PARENT_VERSION="2.0.3"                       # THE SOURCE PIN — keep in sync with sushi-config.yaml
+PARENT_VERSION="2.0.4-rc1"                       # THE SOURCE PIN — keep in sync with sushi-config.yaml
 VALIDATOR_VERSION="6.10.0"
 VALIDATOR_SHA256="fc663ae55dd31bbfde19788dddfb49cacbeebc3c64498fa7b7779df90000434b"
 

@@ -358,11 +358,21 @@ log_info "$STEP" "$ACTION" \
   "One invocation PER FILE: a batch run aborts at the first failure and silently" \
   "skips the rest. Nothing here merges a differential by hand (script header)."
 
+# validator_cli 6.10.0 gotcha 3 (measured on de.einwilligungsmanagement 2.0.4-rc1):
+# loading a package DIRECTORY as -ig NPEs when package.json lacks `canonical`
+# ("canonical" is null in IgLoader.loadIg), while the equivalent npm tgz loads
+# fine -- so always hand the generator a tgz.
+IGSRC="$SRC"
+if [ -d "$SRC" ] && [ -f "$SRC/package.json" ]; then
+  tar -C "$(dirname "$SRC")" -czf "$WORK/igsrc.tgz" "$(basename "$SRC")"
+  IGSRC="$WORK/igsrc.tgz"
+fi
+
 OK=0; FAILED=""
 while IFS="$(printf '\t')" read -r n orig url id diff snap base; do
   [ -n "${n:-}" ] || continue
   java -jar "$VALIDATOR" snapshot "$WORK/in/$n.json" \
-    -version "$FHIRVER" -tx n/a -ig "$SRC" \
+    -version "$FHIRVER" -tx n/a -ig "$IGSRC" \
     -output "$WORK/in/$n.snap.json" </dev/null >"$WORK/$n.log" 2>&1
   msg=$(grep -aiE 'Exception generating|Error generating|Unsupported format|DefinitionException' \
         "$WORK/$n.log" | sed 's/\x1b\[[0-9;]*m//g' | head -1)

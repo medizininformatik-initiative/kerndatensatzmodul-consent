@@ -1,4 +1,4 @@
-<!-- Harvested from https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/AnwendungsflleInformationsmodell/Fragebgen?version=2026.0.0 on 2026-08-31 by scripts/guide-harvest.sh (spec 5.1d). -->
+<!-- Harvested from https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/AnwendungsflleInformationsmodell/Fragebgen?version=2027.0.0-ballot.rc1 on 2026-09-04 by scripts/guide-harvest.sh (spec 5.1d). -->
 <!-- Source of record: the Simplifier-rendered guide. Links and images are still absolute to simplifier.net and the page is not yet mapped onto the template page set (spec 9). TODO:REVIEW -->
 
 ## Fragebögen
@@ -33,7 +33,7 @@ Zur Abbildung der Antworten sollte das Value Set “[MII Consent: Answer ValueSe
 
 ### Abbildung des MII Broad Consent
 
-Die Datenelemente des MII Broad Consent Formulars in Version [1.6d](https://art-decor.org/art-decor/decor-datasets--mide-?conceptId=2.16.840.1.113883.3.1937.777.24.2.1790) und [1.6f](https://art-decor.org/art-decor/decor-datasets--mide-?conceptId=2.16.840.1.113883.3.1937.777.24.2.1791) sind als Dataset in ART-DECOR modelliert, siehe Abschnitt [Datensätze inkl. Beschreibungen](https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/AnwendungsflleInformationsmodell/Datenstzeinkl.Beschreibungen?version=2026.0.0).
+Die Datenelemente des MII Broad Consent Formulars in Version [1.6d](https://art-decor.org/art-decor/decor-datasets--mide-?conceptId=2.16.840.1.113883.3.1937.777.24.2.1790) und [1.6f](https://art-decor.org/art-decor/decor-datasets--mide-?conceptId=2.16.840.1.113883.3.1937.777.24.2.1791) sind als Dataset in ART-DECOR modelliert, siehe Abschnitt [Datensätze inkl. Beschreibungen](https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/AnwendungsflleInformationsmodell/Datenstzeinkl.Beschreibungen?version=2027.0.0-ballot.rc1).
 
 ### Verwendung einheitlicher Policies
 

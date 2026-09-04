@@ -7,3 +7,13 @@
 Based on the [recommendations](https://ig.fhir.de/einwilligungsmanagement/stable/DocumentReference.html) of the AG Einwilligungsmanagement, the profile *MIIConsentDocumentReference* targets a real, existing document related to the consent document.
 
 However, it is restricted to scans of consent documents in PDF format.
+
+<!-- Completion 2026-09-04 (fresh migration onto release 2027.0.0-ballot.rc1):
+     the source page's "Differences to the base profile" table was dropped
+     together with the "Darstellung" section in the 2026 migration — added
+     here (harvest content, table normalized). -->
+*Only the differences to the [base profile](https://ig.fhir.de/einwilligungsmanagement/stable/DocumentReference.html) are explained below.*
+
+| **FHIR element** | **Explanation** |
+| --- | --- |
+| DocumentReference.content.attachment.contentType | Fixed value 'application/pdf', Must-support |

@@ -1366,3 +1366,689 @@ Vergleich -> migration-log/same-module-comparison.md
     §5.1b.4). Escalated, not ignored: every item behind it belongs in the
     report's ① decision queue, named individually (spec §10.3, §10.6).
 2026-09-01T08:57:52Z  INFO   11  verify-adjudication  post-incorporation verifier deltas vs the pinned TAG source are the INCORPORATED develop changes by construction — every changed resource adjudicated against its develop commit sha (ledger row 12 develop-delta): profile e0e166b4 (401133b/5b22e17/744f7ba), Policy CS (display commits), VersionModules CS (afce23a + count 21 correction), 4 examples' category system (128f146/539e2f8/1d9e79c + D-14 consistency). C4/C7/R1/R2/F1/F2 adjudications from the 2026-08-31 runs carry forward unchanged
+2026-09-04T09:28:08Z  INFO   5.1b.5  parent-snapshots  params  mode=build package=de.einwilligungsmanagement version=2.0.4-rc1 registry=https://packages.simplifier.net fhir_version=4.0.1
+    cmd=`curl -sfL https://packages.simplifier.net/de.einwilligungsmanagement/2.0.4-rc1 -o p.tgz && tar xzf p.tgz`
+2026-09-04T09:28:08Z  INFO   5.1b.5  parent-snapshots  surveyed  structure_definitions=21 with_snapshot=0 without_snapshot=21
+2026-09-04T09:28:08Z  WARN   5.1b.5  parent-snapshots  parent-without-snapshots: 21 of 21 StructureDefinitions carry NO snapshot
+    This is the condition behind SUSHI's `is missing a snapshot. Snapshot is
+    required for import.` Every profile deriving from one of these, and every
+    instance declaring InstanceOf such a profile, fails to export. Another
+    version of the same package usually does NOT help -- measured, two
+    consecutive releases of the reference parent both ship 0 snapshots.
+    Next: `parent-snapshots.sh build …` (spec §5.1b.5). Never hand-roll one.
+2026-09-04T09:28:08Z  INFO   5.1b.5  parent-snapshots  derivation chain is flat: every SD derives directly from outside this package  count=21
+    So each can be snapshotted independently, in any order.
+2026-09-04T09:28:08Z  INFO   5.1b.5  parent-snapshots  base package for the element-count floor  base_dir=/Users/marcel/.fhir/packages/hl7.fhir.r4.core#4.0.1/package
+2026-09-04T09:28:08Z  INFO   5.1b.5  parent-snapshots  generating with the OFFICIAL HL7 generator  validator=/private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig2/validator_cli.jar java="openjdk version "25.0.2" 2026-01-20" fhir_version=4.0.1
+    cmd=`java -jar /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig2/validator_cli.jar snapshot <sd.json> -version 4.0.1 -tx n/a -ig /var/folders/d6/s255vt4x5pq9fy738bv7cs0h0000gq/T/tmp.cm0bkaALx7/src/package -output <out.json>`
+    One invocation PER FILE: a batch run aborts at the first failure and silently
+    skips the rest. Nothing here merges a differential by hand (script header).
+2026-09-04T09:28:17Z  WARN   5.1b.5  parent-snapshots  generator-refused: extension-ConsentManagement-ConsentMode.json  url=http://fhir.de/ConsentManagement/StructureDefinition/ConsentMode reason=no output produced
+    The generator declining a differential is EVIDENCE ABOUT THE PARENT, not a
+    gap to work around: an upstream differential the official merge cannot
+    process is malformed. Do not hand-finish it. Check whether the module's FSH
+    names this profile as a Parent or InstanceOf; if it does, this is a Gate-A
+    escalation for the upstream package's maintainers (spec §5.1b.4).
+2026-09-04T09:28:24Z  WARN   5.1b.5  parent-snapshots  generator-refused: extension-ConsentManagement-ContextIdentifier.json  url=http://fhir.de/ConsentManagement/StructureDefinition/ContextIdentifier reason=no output produced
+    The generator declining a differential is EVIDENCE ABOUT THE PARENT, not a
+    gap to work around: an upstream differential the official merge cannot
+    process is malformed. Do not hand-finish it. Check whether the module's FSH
+    names this profile as a Parent or InstanceOf; if it does, this is a Gate-A
+    escalation for the upstream package's maintainers (spec §5.1b.4).
+2026-09-04T09:28:32Z  WARN   5.1b.5  parent-snapshots  generator-refused: extension-ConsentManagement-DomainReference.json  url=http://fhir.de/ConsentManagement/StructureDefinition/DomainReference reason=no output produced
+    The generator declining a differential is EVIDENCE ABOUT THE PARENT, not a
+    gap to work around: an upstream differential the official merge cannot
+    process is malformed. Do not hand-finish it. Check whether the module's FSH
+    names this profile as a Parent or InstanceOf; if it does, this is a Gate-A
+    escalation for the upstream package's maintainers (spec §5.1b.4).
+2026-09-04T09:28:39Z  WARN   5.1b.5  parent-snapshots  generator-refused: extension-ConsentManagement-Logo.json  url=http://fhir.de/ConsentManagement/StructureDefinition/Logo reason=no output produced
+    The generator declining a differential is EVIDENCE ABOUT THE PARENT, not a
+    gap to work around: an upstream differential the official merge cannot
+    process is malformed. Do not hand-finish it. Check whether the module's FSH
+    names this profile as a Parent or InstanceOf; if it does, this is a Gate-A
+    escalation for the upstream package's maintainers (spec §5.1b.4).
+2026-09-04T09:28:47Z  WARN   5.1b.5  parent-snapshots  generator-refused: extension-ConsentManagement-OrganizationDescription.json  url=http://fhir.de/ConsentManagement/StructureDefinition/OrganizationDescription reason=no output produced
+    The generator declining a differential is EVIDENCE ABOUT THE PARENT, not a
+    gap to work around: an upstream differential the official merge cannot
+    process is malformed. Do not hand-finish it. Check whether the module's FSH
+    names this profile as a Parent or InstanceOf; if it does, this is a Gate-A
+    escalation for the upstream package's maintainers (spec §5.1b.4).
+2026-09-04T09:28:54Z  WARN   5.1b.5  parent-snapshots  generator-refused: extension-ConsentManagement-SignatureLocation.json  url=http://fhir.de/ConsentManagement/StructureDefinition/SignatureLocation reason=no output produced
+    The generator declining a differential is EVIDENCE ABOUT THE PARENT, not a
+    gap to work around: an upstream differential the official merge cannot
+    process is malformed. Do not hand-finish it. Check whether the module's FSH
+    names this profile as a Parent or InstanceOf; if it does, this is a Gate-A
+    escalation for the upstream package's maintainers (spec §5.1b.4).
+2026-09-04T09:29:03Z  WARN   5.1b.5  parent-snapshots  generator-refused: extension-ConsentManagement-SourceDocument.json  url=http://fhir.de/ConsentManagement/StructureDefinition/SourceDocument reason=no output produced
+    The generator declining a differential is EVIDENCE ABOUT THE PARENT, not a
+    gap to work around: an upstream differential the official merge cannot
+    process is malformed. Do not hand-finish it. Check whether the module's FSH
+    names this profile as a Parent or InstanceOf; if it does, this is a Gate-A
+    escalation for the upstream package's maintainers (spec §5.1b.4).
+2026-09-04T09:29:13Z  WARN   5.1b.5  parent-snapshots  generator-refused: extension-ConsentManagement-SubQuestionnaire.json  url=http://fhir.de/ConsentManagement/StructureDefinition/SubQuestionnaire reason=no output produced
+    The generator declining a differential is EVIDENCE ABOUT THE PARENT, not a
+    gap to work around: an upstream differential the official merge cannot
+    process is malformed. Do not hand-finish it. Check whether the module's FSH
+    names this profile as a Parent or InstanceOf; if it does, this is a Gate-A
+    escalation for the upstream package's maintainers (spec §5.1b.4).
+2026-09-04T09:29:24Z  WARN   5.1b.5  parent-snapshots  generator-refused: extension-ConsentManagement-VersionFormat.json  url=http://fhir.de/ConsentManagement/StructureDefinition/VersionFormat reason=no output produced
+    The generator declining a differential is EVIDENCE ABOUT THE PARENT, not a
+    gap to work around: an upstream differential the official merge cannot
+    process is malformed. Do not hand-finish it. Check whether the module's FSH
+    names this profile as a Parent or InstanceOf; if it does, this is a Gate-A
+    escalation for the upstream package's maintainers (spec §5.1b.4).
+2026-09-04T09:29:35Z  WARN   5.1b.5  parent-snapshots  generator-refused: extension-ConsentManagement-Xacml.json  url=http://fhir.de/ConsentManagement/StructureDefinition/Xacml reason=no output produced
+    The generator declining a differential is EVIDENCE ABOUT THE PARENT, not a
+    gap to work around: an upstream differential the official merge cannot
+    process is malformed. Do not hand-finish it. Check whether the module's FSH
+    names this profile as a Parent or InstanceOf; if it does, this is a Gate-A
+    escalation for the upstream package's maintainers (spec §5.1b.4).
+2026-09-04T09:29:49Z  WARN   5.1b.5  parent-snapshots  generator-refused: extension-ConsentManagement-XacmlTemplate.json  url=http://fhir.de/ConsentManagement/StructureDefinition/XacmlTemplate reason=no output produced
+    The generator declining a differential is EVIDENCE ABOUT THE PARENT, not a
+    gap to work around: an upstream differential the official merge cannot
+    process is malformed. Do not hand-finish it. Check whether the module's FSH
+    names this profile as a Parent or InstanceOf; if it does, this is a Gate-A
+    escalation for the upstream package's maintainers (spec §5.1b.4).
+2026-09-04T09:30:06Z  WARN   5.1b.5  parent-snapshots  generator-refused: profile-ConsentManagement-Consent.json  url=http://fhir.de/ConsentManagement/StructureDefinition/Consent reason=no output produced
+    The generator declining a differential is EVIDENCE ABOUT THE PARENT, not a
+    gap to work around: an upstream differential the official merge cannot
+    process is malformed. Do not hand-finish it. Check whether the module's FSH
+    names this profile as a Parent or InstanceOf; if it does, this is a Gate-A
+    escalation for the upstream package's maintainers (spec §5.1b.4).
+2026-09-04T09:30:16Z  WARN   5.1b.5  parent-snapshots  generator-refused: profile-ConsentManagement-DocumentReference.json  url=http://fhir.de/ConsentManagement/StructureDefinition/DocumentReference reason=no output produced
+    The generator declining a differential is EVIDENCE ABOUT THE PARENT, not a
+    gap to work around: an upstream differential the official merge cannot
+    process is malformed. Do not hand-finish it. Check whether the module's FSH
+    names this profile as a Parent or InstanceOf; if it does, this is a Gate-A
+    escalation for the upstream package's maintainers (spec §5.1b.4).
+2026-09-04T09:30:24Z  WARN   5.1b.5  parent-snapshots  generator-refused: profile-ConsentManagement-Domain-Organization.json  url=http://fhir.de/ConsentManagement/StructureDefinition/Domain/Organization reason=no output produced
+    The generator declining a differential is EVIDENCE ABOUT THE PARENT, not a
+    gap to work around: an upstream differential the official merge cannot
+    process is malformed. Do not hand-finish it. Check whether the module's FSH
+    names this profile as a Parent or InstanceOf; if it does, this is a Gate-A
+    escalation for the upstream package's maintainers (spec §5.1b.4).
+2026-09-04T09:30:31Z  WARN   5.1b.5  parent-snapshots  generator-refused: profile-ConsentManagement-Domain-ResearchStudy.json  url=http://fhir.de/ConsentManagement/StructureDefinition/Domain/ResearchStudy reason=no output produced
+    The generator declining a differential is EVIDENCE ABOUT THE PARENT, not a
+    gap to work around: an upstream differential the official merge cannot
+    process is malformed. Do not hand-finish it. Check whether the module's FSH
+    names this profile as a Parent or InstanceOf; if it does, this is a Gate-A
+    escalation for the upstream package's maintainers (spec §5.1b.4).
+2026-09-04T09:30:39Z  WARN   5.1b.5  parent-snapshots  generator-refused: profile-ConsentManagement-Patient.json  url=http://fhir.de/ConsentManagement/StructureDefinition/Patient reason=no output produced
+    The generator declining a differential is EVIDENCE ABOUT THE PARENT, not a
+    gap to work around: an upstream differential the official merge cannot
+    process is malformed. Do not hand-finish it. Check whether the module's FSH
+    names this profile as a Parent or InstanceOf; if it does, this is a Gate-A
+    escalation for the upstream package's maintainers (spec §5.1b.4).
+2026-09-04T09:30:46Z  WARN   5.1b.5  parent-snapshots  generator-refused: profile-ConsentManagement-Provenance.json  url=http://fhir.de/ConsentManagement/StructureDefinition/Provenance reason=no output produced
+    The generator declining a differential is EVIDENCE ABOUT THE PARENT, not a
+    gap to work around: an upstream differential the official merge cannot
+    process is malformed. Do not hand-finish it. Check whether the module's FSH
+    names this profile as a Parent or InstanceOf; if it does, this is a Gate-A
+    escalation for the upstream package's maintainers (spec §5.1b.4).
+2026-09-04T09:30:53Z  WARN   5.1b.5  parent-snapshots  generator-refused: profile-ConsentManagement-TemplateFrame.json  url=http://fhir.de/ConsentManagement/StructureDefinition/TemplateFrame reason=no output produced
+    The generator declining a differential is EVIDENCE ABOUT THE PARENT, not a
+    gap to work around: an upstream differential the official merge cannot
+    process is malformed. Do not hand-finish it. Check whether the module's FSH
+    names this profile as a Parent or InstanceOf; if it does, this is a Gate-A
+    escalation for the upstream package's maintainers (spec §5.1b.4).
+2026-09-04T09:31:01Z  WARN   5.1b.5  parent-snapshots  generator-refused: profile-ConsentManagement-TemplateModule.json  url=http://fhir.de/ConsentManagement/StructureDefinition/TemplateModule reason=no output produced
+    The generator declining a differential is EVIDENCE ABOUT THE PARENT, not a
+    gap to work around: an upstream differential the official merge cannot
+    process is malformed. Do not hand-finish it. Check whether the module's FSH
+    names this profile as a Parent or InstanceOf; if it does, this is a Gate-A
+    escalation for the upstream package's maintainers (spec §5.1b.4).
+2026-09-04T09:31:08Z  WARN   5.1b.5  parent-snapshots  generator-refused: profile-ConsentManagementQuestionnaireComposed.json  url=http://fhir.de/ConsentManagement/StructureDefinition/QuestionnaireComposed reason=no output produced
+    The generator declining a differential is EVIDENCE ABOUT THE PARENT, not a
+    gap to work around: an upstream differential the official merge cannot
+    process is malformed. Do not hand-finish it. Check whether the module's FSH
+    names this profile as a Parent or InstanceOf; if it does, this is a Gate-A
+    escalation for the upstream package's maintainers (spec §5.1b.4).
+2026-09-04T09:31:15Z  WARN   5.1b.5  parent-snapshots  generator-refused: profile-ConsentManagementQuestionnaireResponse.json  url=http://fhir.de/ConsentManagement/StructureDefinition/QuestionnaireResponse reason=no output produced
+    The generator declining a differential is EVIDENCE ABOUT THE PARENT, not a
+    gap to work around: an upstream differential the official merge cannot
+    process is malformed. Do not hand-finish it. Check whether the module's FSH
+    names this profile as a Parent or InstanceOf; if it does, this is a Gate-A
+    escalation for the upstream package's maintainers (spec §5.1b.4).
+2026-09-04T09:31:16Z  INFO   5.1b.5  parent-snapshots  rebuild written  dir=/var/folders/d6/s255vt4x5pq9fy738bv7cs0h0000gq/T/tmp.cm0bkaALx7/rebuilt/package merged=0 refused=0
+    Only the `snapshot` property was added; every other field is the upstream
+    bytes re-serialized. Do not diff this against upstream expecting byte
+    equality -- key order and indentation are the serializer's.
+2026-09-04T09:31:16Z  INFO   5.1b.5  parent-snapshots  generated 0 of 21 snapshots  expected=21 actual=0
+2026-09-04T09:31:16Z  WARN   5.1b.5  parent-snapshots  silent-partial-success: generated 0 of 21 snapshots
+    Exit status is not evidence of completeness; these two counts are.
+    Reconcile against the step-1 inventory before continuing.
+2026-09-04T09:31:16Z  ERROR  5.1b.5  parent-snapshots  required-parent-still-without-snapshot: http://fhir.de/ConsentManagement/StructureDefinition/Consent  file=profile-ConsentManagement-Consent.json
+    This one blocks the migration: SUSHI still cannot import it. Escalate it
+    to Gate A with the generator's reason, and migrate the rest -- never
+    fabricate the parent (guardrails 1 and 3).
+2026-09-04T09:31:16Z  ERROR  5.1b.5  parent-snapshots  required-parent-still-without-snapshot: http://fhir.de/ConsentManagement/StructureDefinition/DocumentReference  file=profile-ConsentManagement-DocumentReference.json
+    This one blocks the migration: SUSHI still cannot import it. Escalate it
+    to Gate A with the generator's reason, and migrate the rest -- never
+    fabricate the parent (guardrails 1 and 3).
+2026-09-04T09:31:16Z  ERROR  5.1b.5  parent-snapshots  required-parent-still-without-snapshot: http://fhir.de/ConsentManagement/StructureDefinition/DomainReference  file=extension-ConsentManagement-DomainReference.json
+    This one blocks the migration: SUSHI still cannot import it. Escalate it
+    to Gate A with the generator's reason, and migrate the rest -- never
+    fabricate the parent (guardrails 1 and 3).
+2026-09-04T09:31:16Z  ERROR  5.1b.5  parent-snapshots  required-parent-still-without-snapshot: http://fhir.de/ConsentManagement/StructureDefinition/Provenance  file=profile-ConsentManagement-Provenance.json
+    This one blocks the migration: SUSHI still cannot import it. Escalate it
+    to Gate A with the generator's reason, and migrate the rest -- never
+    fabricate the parent (guardrails 1 and 3).
+2026-09-04T09:31:16Z  INFO   5.1b.5  parent-snapshots  installed as a NEW cache entry  dest=/Users/marcel/.fhir/packages/de.einwilligungsmanagement#2.0.4-rc1-snapshots version=2.0.4-rc1-snapshots
+    Upstream de.einwilligungsmanagement#2.0.4-rc1 is untouched. Depend on it by pinning
+    `de.einwilligungsmanagement: 2.0.4-rc1-snapshots` in sushi-config.yaml -- and note that this entry is
+    LOCAL: CI and every other machine need this same build step, or the pin
+    fails to resolve there (spec §5.1b.5, 'carrying it upstream').
+2026-09-04T09:31:16Z  WARN   5.1b.5  parent-snapshots  rebuild-incomplete: the generator refused 21 of 21 StructureDefinition(s)  files=extension-ConsentManagement-ConsentMode.json extension-ConsentManagement-ContextIdentifier.json extension-ConsentManagement-DomainReference.json extension-ConsentManagement-Logo.json extension-ConsentManagement-OrganizationDescription.json extension-ConsentManagement-SignatureLocation.json extension-ConsentManagement-SourceDocument.json extension-ConsentManagement-SubQuestionnaire.json extension-ConsentManagement-VersionFormat.json extension-ConsentManagement-Xacml.json extension-ConsentManagement-XacmlTemplate.json profile-ConsentManagement-Consent.json profile-ConsentManagement-DocumentReference.json profile-ConsentManagement-Domain-Organization.json profile-ConsentManagement-Domain-ResearchStudy.json profile-ConsentManagement-Patient.json profile-ConsentManagement-Provenance.json profile-ConsentManagement-TemplateFrame.json profile-ConsentManagement-TemplateModule.json profile-ConsentManagementQuestionnaireComposed.json profile-ConsentManagementQuestionnaireResponse.json
+    Each refusal is named above with the generator's own reason. Decide per file
+    whether the module's FSH depends on it; those that it does are Gate-A
+    escalations for the upstream maintainers.
+2026-09-04T09:31:16Z  INFO   5.1b.5  parent-snapshots  done  mode=build generated=0 of 21 required_blocked=http://fhir.de/ConsentManagement/StructureDefinition/Consent http://fhir.de/ConsentManagement/StructureDefinition/DocumentReference http://fhir.de/ConsentManagement/StructureDefinition/DomainReference http://fhir.de/ConsentManagement/StructureDefinition/Provenance exit=1
+2026-09-04T09:32:08Z  INFO   5.1b.5  parent-snapshots  params  mode=build package=de.einwilligungsmanagement version=2.0.4-rc1 registry=https://packages.simplifier.net fhir_version=4.0.1
+    cmd=`curl -sfL https://packages.simplifier.net/de.einwilligungsmanagement/2.0.4-rc1 -o p.tgz && tar xzf p.tgz`
+2026-09-04T09:32:08Z  INFO   5.1b.5  parent-snapshots  surveyed  structure_definitions=21 with_snapshot=0 without_snapshot=21
+2026-09-04T09:32:08Z  WARN   5.1b.5  parent-snapshots  parent-without-snapshots: 21 of 21 StructureDefinitions carry NO snapshot
+    This is the condition behind SUSHI's `is missing a snapshot. Snapshot is
+    required for import.` Every profile deriving from one of these, and every
+    instance declaring InstanceOf such a profile, fails to export. Another
+    version of the same package usually does NOT help -- measured, two
+    consecutive releases of the reference parent both ship 0 snapshots.
+    Next: `parent-snapshots.sh build …` (spec §5.1b.5). Never hand-roll one.
+2026-09-04T09:32:08Z  INFO   5.1b.5  parent-snapshots  derivation chain is flat: every SD derives directly from outside this package  count=21
+    So each can be snapshotted independently, in any order.
+2026-09-04T09:32:08Z  INFO   5.1b.5  parent-snapshots  base package for the element-count floor  base_dir=/Users/marcel/.fhir/packages/hl7.fhir.r4.core#4.0.1/package
+2026-09-04T09:32:08Z  INFO   5.1b.5  parent-snapshots  generating with the OFFICIAL HL7 generator  validator=/private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig2/validator_cli.jar java="openjdk version "25.0.2" 2026-01-20" fhir_version=4.0.1
+    cmd=`java -jar /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig2/validator_cli.jar snapshot <sd.json> -version 4.0.1 -tx n/a -ig /var/folders/d6/s255vt4x5pq9fy738bv7cs0h0000gq/T/tmp.RaJh3d6o5C/src/package -output <out.json>`
+    One invocation PER FILE: a batch run aborts at the first failure and silently
+    skips the rest. Nothing here merges a differential by hand (script header).
+2026-09-04T09:32:18Z  WARN   5.1b.5  parent-snapshots  generator-refused: extension-ConsentManagement-ConsentMode.json  url=http://fhir.de/ConsentManagement/StructureDefinition/ConsentMode reason=no output produced
+    The generator declining a differential is EVIDENCE ABOUT THE PARENT, not a
+    gap to work around: an upstream differential the official merge cannot
+    process is malformed. Do not hand-finish it. Check whether the module's FSH
+    names this profile as a Parent or InstanceOf; if it does, this is a Gate-A
+    escalation for the upstream package's maintainers (spec §5.1b.4).
+2026-09-04T09:32:27Z  WARN   5.1b.5  parent-snapshots  generator-refused: extension-ConsentManagement-ContextIdentifier.json  url=http://fhir.de/ConsentManagement/StructureDefinition/ContextIdentifier reason=no output produced
+    The generator declining a differential is EVIDENCE ABOUT THE PARENT, not a
+    gap to work around: an upstream differential the official merge cannot
+    process is malformed. Do not hand-finish it. Check whether the module's FSH
+    names this profile as a Parent or InstanceOf; if it does, this is a Gate-A
+    escalation for the upstream package's maintainers (spec §5.1b.4).
+2026-09-04T09:32:35Z  WARN   5.1b.5  parent-snapshots  generator-refused: extension-ConsentManagement-DomainReference.json  url=http://fhir.de/ConsentManagement/StructureDefinition/DomainReference reason=no output produced
+    The generator declining a differential is EVIDENCE ABOUT THE PARENT, not a
+    gap to work around: an upstream differential the official merge cannot
+    process is malformed. Do not hand-finish it. Check whether the module's FSH
+    names this profile as a Parent or InstanceOf; if it does, this is a Gate-A
+    escalation for the upstream package's maintainers (spec §5.1b.4).
+2026-09-04T09:32:42Z  WARN   5.1b.5  parent-snapshots  generator-refused: extension-ConsentManagement-Logo.json  url=http://fhir.de/ConsentManagement/StructureDefinition/Logo reason=no output produced
+    The generator declining a differential is EVIDENCE ABOUT THE PARENT, not a
+    gap to work around: an upstream differential the official merge cannot
+    process is malformed. Do not hand-finish it. Check whether the module's FSH
+    names this profile as a Parent or InstanceOf; if it does, this is a Gate-A
+    escalation for the upstream package's maintainers (spec §5.1b.4).
+2026-09-04T09:32:51Z  WARN   5.1b.5  parent-snapshots  generator-refused: extension-ConsentManagement-OrganizationDescription.json  url=http://fhir.de/ConsentManagement/StructureDefinition/OrganizationDescription reason=no output produced
+    The generator declining a differential is EVIDENCE ABOUT THE PARENT, not a
+    gap to work around: an upstream differential the official merge cannot
+    process is malformed. Do not hand-finish it. Check whether the module's FSH
+    names this profile as a Parent or InstanceOf; if it does, this is a Gate-A
+    escalation for the upstream package's maintainers (spec §5.1b.4).
+2026-09-04T09:33:00Z  WARN   5.1b.5  parent-snapshots  generator-refused: extension-ConsentManagement-SignatureLocation.json  url=http://fhir.de/ConsentManagement/StructureDefinition/SignatureLocation reason=no output produced
+    The generator declining a differential is EVIDENCE ABOUT THE PARENT, not a
+    gap to work around: an upstream differential the official merge cannot
+    process is malformed. Do not hand-finish it. Check whether the module's FSH
+    names this profile as a Parent or InstanceOf; if it does, this is a Gate-A
+    escalation for the upstream package's maintainers (spec §5.1b.4).
+2026-09-04T09:33:09Z  WARN   5.1b.5  parent-snapshots  generator-refused: extension-ConsentManagement-SourceDocument.json  url=http://fhir.de/ConsentManagement/StructureDefinition/SourceDocument reason=no output produced
+    The generator declining a differential is EVIDENCE ABOUT THE PARENT, not a
+    gap to work around: an upstream differential the official merge cannot
+    process is malformed. Do not hand-finish it. Check whether the module's FSH
+    names this profile as a Parent or InstanceOf; if it does, this is a Gate-A
+    escalation for the upstream package's maintainers (spec §5.1b.4).
+2026-09-04T09:33:18Z  WARN   5.1b.5  parent-snapshots  generator-refused: extension-ConsentManagement-SubQuestionnaire.json  url=http://fhir.de/ConsentManagement/StructureDefinition/SubQuestionnaire reason=no output produced
+    The generator declining a differential is EVIDENCE ABOUT THE PARENT, not a
+    gap to work around: an upstream differential the official merge cannot
+    process is malformed. Do not hand-finish it. Check whether the module's FSH
+    names this profile as a Parent or InstanceOf; if it does, this is a Gate-A
+    escalation for the upstream package's maintainers (spec §5.1b.4).
+2026-09-04T09:33:26Z  WARN   5.1b.5  parent-snapshots  generator-refused: extension-ConsentManagement-VersionFormat.json  url=http://fhir.de/ConsentManagement/StructureDefinition/VersionFormat reason=no output produced
+    The generator declining a differential is EVIDENCE ABOUT THE PARENT, not a
+    gap to work around: an upstream differential the official merge cannot
+    process is malformed. Do not hand-finish it. Check whether the module's FSH
+    names this profile as a Parent or InstanceOf; if it does, this is a Gate-A
+    escalation for the upstream package's maintainers (spec §5.1b.4).
+2026-09-04T09:33:33Z  WARN   5.1b.5  parent-snapshots  generator-refused: extension-ConsentManagement-Xacml.json  url=http://fhir.de/ConsentManagement/StructureDefinition/Xacml reason=no output produced
+    The generator declining a differential is EVIDENCE ABOUT THE PARENT, not a
+    gap to work around: an upstream differential the official merge cannot
+    process is malformed. Do not hand-finish it. Check whether the module's FSH
+    names this profile as a Parent or InstanceOf; if it does, this is a Gate-A
+    escalation for the upstream package's maintainers (spec §5.1b.4).
+2026-09-04T09:33:41Z  WARN   5.1b.5  parent-snapshots  generator-refused: extension-ConsentManagement-XacmlTemplate.json  url=http://fhir.de/ConsentManagement/StructureDefinition/XacmlTemplate reason=no output produced
+    The generator declining a differential is EVIDENCE ABOUT THE PARENT, not a
+    gap to work around: an upstream differential the official merge cannot
+    process is malformed. Do not hand-finish it. Check whether the module's FSH
+    names this profile as a Parent or InstanceOf; if it does, this is a Gate-A
+    escalation for the upstream package's maintainers (spec §5.1b.4).
+2026-09-04T09:33:48Z  WARN   5.1b.5  parent-snapshots  generator-refused: profile-ConsentManagement-Consent.json  url=http://fhir.de/ConsentManagement/StructureDefinition/Consent reason=no output produced
+    The generator declining a differential is EVIDENCE ABOUT THE PARENT, not a
+    gap to work around: an upstream differential the official merge cannot
+    process is malformed. Do not hand-finish it. Check whether the module's FSH
+    names this profile as a Parent or InstanceOf; if it does, this is a Gate-A
+    escalation for the upstream package's maintainers (spec §5.1b.4).
+2026-09-04T09:33:56Z  WARN   5.1b.5  parent-snapshots  generator-refused: profile-ConsentManagement-DocumentReference.json  url=http://fhir.de/ConsentManagement/StructureDefinition/DocumentReference reason=no output produced
+    The generator declining a differential is EVIDENCE ABOUT THE PARENT, not a
+    gap to work around: an upstream differential the official merge cannot
+    process is malformed. Do not hand-finish it. Check whether the module's FSH
+    names this profile as a Parent or InstanceOf; if it does, this is a Gate-A
+    escalation for the upstream package's maintainers (spec §5.1b.4).
+2026-09-04T09:34:03Z  WARN   5.1b.5  parent-snapshots  generator-refused: profile-ConsentManagement-Domain-Organization.json  url=http://fhir.de/ConsentManagement/StructureDefinition/Domain/Organization reason=no output produced
+    The generator declining a differential is EVIDENCE ABOUT THE PARENT, not a
+    gap to work around: an upstream differential the official merge cannot
+    process is malformed. Do not hand-finish it. Check whether the module's FSH
+    names this profile as a Parent or InstanceOf; if it does, this is a Gate-A
+    escalation for the upstream package's maintainers (spec §5.1b.4).
+2026-09-04T09:34:11Z  WARN   5.1b.5  parent-snapshots  generator-refused: profile-ConsentManagement-Domain-ResearchStudy.json  url=http://fhir.de/ConsentManagement/StructureDefinition/Domain/ResearchStudy reason=no output produced
+    The generator declining a differential is EVIDENCE ABOUT THE PARENT, not a
+    gap to work around: an upstream differential the official merge cannot
+    process is malformed. Do not hand-finish it. Check whether the module's FSH
+    names this profile as a Parent or InstanceOf; if it does, this is a Gate-A
+    escalation for the upstream package's maintainers (spec §5.1b.4).
+2026-09-04T09:34:18Z  WARN   5.1b.5  parent-snapshots  generator-refused: profile-ConsentManagement-Patient.json  url=http://fhir.de/ConsentManagement/StructureDefinition/Patient reason=no output produced
+    The generator declining a differential is EVIDENCE ABOUT THE PARENT, not a
+    gap to work around: an upstream differential the official merge cannot
+    process is malformed. Do not hand-finish it. Check whether the module's FSH
+    names this profile as a Parent or InstanceOf; if it does, this is a Gate-A
+    escalation for the upstream package's maintainers (spec §5.1b.4).
+2026-09-04T09:34:26Z  WARN   5.1b.5  parent-snapshots  generator-refused: profile-ConsentManagement-Provenance.json  url=http://fhir.de/ConsentManagement/StructureDefinition/Provenance reason=no output produced
+    The generator declining a differential is EVIDENCE ABOUT THE PARENT, not a
+    gap to work around: an upstream differential the official merge cannot
+    process is malformed. Do not hand-finish it. Check whether the module's FSH
+    names this profile as a Parent or InstanceOf; if it does, this is a Gate-A
+    escalation for the upstream package's maintainers (spec §5.1b.4).
+2026-09-04T09:34:33Z  WARN   5.1b.5  parent-snapshots  generator-refused: profile-ConsentManagement-TemplateFrame.json  url=http://fhir.de/ConsentManagement/StructureDefinition/TemplateFrame reason=no output produced
+    The generator declining a differential is EVIDENCE ABOUT THE PARENT, not a
+    gap to work around: an upstream differential the official merge cannot
+    process is malformed. Do not hand-finish it. Check whether the module's FSH
+    names this profile as a Parent or InstanceOf; if it does, this is a Gate-A
+    escalation for the upstream package's maintainers (spec §5.1b.4).
+2026-09-04T09:34:40Z  WARN   5.1b.5  parent-snapshots  generator-refused: profile-ConsentManagement-TemplateModule.json  url=http://fhir.de/ConsentManagement/StructureDefinition/TemplateModule reason=no output produced
+    The generator declining a differential is EVIDENCE ABOUT THE PARENT, not a
+    gap to work around: an upstream differential the official merge cannot
+    process is malformed. Do not hand-finish it. Check whether the module's FSH
+    names this profile as a Parent or InstanceOf; if it does, this is a Gate-A
+    escalation for the upstream package's maintainers (spec §5.1b.4).
+2026-09-04T09:34:48Z  WARN   5.1b.5  parent-snapshots  generator-refused: profile-ConsentManagementQuestionnaireComposed.json  url=http://fhir.de/ConsentManagement/StructureDefinition/QuestionnaireComposed reason=no output produced
+    The generator declining a differential is EVIDENCE ABOUT THE PARENT, not a
+    gap to work around: an upstream differential the official merge cannot
+    process is malformed. Do not hand-finish it. Check whether the module's FSH
+    names this profile as a Parent or InstanceOf; if it does, this is a Gate-A
+    escalation for the upstream package's maintainers (spec §5.1b.4).
+2026-09-04T09:34:55Z  WARN   5.1b.5  parent-snapshots  generator-refused: profile-ConsentManagementQuestionnaireResponse.json  url=http://fhir.de/ConsentManagement/StructureDefinition/QuestionnaireResponse reason=no output produced
+    The generator declining a differential is EVIDENCE ABOUT THE PARENT, not a
+    gap to work around: an upstream differential the official merge cannot
+    process is malformed. Do not hand-finish it. Check whether the module's FSH
+    names this profile as a Parent or InstanceOf; if it does, this is a Gate-A
+    escalation for the upstream package's maintainers (spec §5.1b.4).
+2026-09-04T09:34:56Z  INFO   5.1b.5  parent-snapshots  rebuild written  dir=/var/folders/d6/s255vt4x5pq9fy738bv7cs0h0000gq/T/tmp.RaJh3d6o5C/rebuilt/package merged=0 refused=0
+    Only the `snapshot` property was added; every other field is the upstream
+    bytes re-serialized. Do not diff this against upstream expecting byte
+    equality -- key order and indentation are the serializer's.
+2026-09-04T09:34:56Z  INFO   5.1b.5  parent-snapshots  generated 0 of 21 snapshots  expected=21 actual=0
+2026-09-04T09:34:56Z  WARN   5.1b.5  parent-snapshots  silent-partial-success: generated 0 of 21 snapshots
+    Exit status is not evidence of completeness; these two counts are.
+    Reconcile against the step-1 inventory before continuing.
+2026-09-04T09:34:56Z  ERROR  5.1b.5  parent-snapshots  required-parent-still-without-snapshot: http://fhir.de/ConsentManagement/StructureDefinition/Consent  file=profile-ConsentManagement-Consent.json
+    This one blocks the migration: SUSHI still cannot import it. Escalate it
+    to Gate A with the generator's reason, and migrate the rest -- never
+    fabricate the parent (guardrails 1 and 3).
+2026-09-04T09:34:56Z  INFO   5.1b.5  parent-snapshots  installed as a NEW cache entry  dest=/Users/marcel/.fhir/packages/de.einwilligungsmanagement#2.0.4-rc1-snapshots version=2.0.4-rc1-snapshots
+    Upstream de.einwilligungsmanagement#2.0.4-rc1 is untouched. Depend on it by pinning
+    `de.einwilligungsmanagement: 2.0.4-rc1-snapshots` in sushi-config.yaml -- and note that this entry is
+    LOCAL: CI and every other machine need this same build step, or the pin
+    fails to resolve there (spec §5.1b.5, 'carrying it upstream').
+2026-09-04T09:34:56Z  WARN   5.1b.5  parent-snapshots  rebuild-incomplete: the generator refused 21 of 21 StructureDefinition(s)  files=extension-ConsentManagement-ConsentMode.json extension-ConsentManagement-ContextIdentifier.json extension-ConsentManagement-DomainReference.json extension-ConsentManagement-Logo.json extension-ConsentManagement-OrganizationDescription.json extension-ConsentManagement-SignatureLocation.json extension-ConsentManagement-SourceDocument.json extension-ConsentManagement-SubQuestionnaire.json extension-ConsentManagement-VersionFormat.json extension-ConsentManagement-Xacml.json extension-ConsentManagement-XacmlTemplate.json profile-ConsentManagement-Consent.json profile-ConsentManagement-DocumentReference.json profile-ConsentManagement-Domain-Organization.json profile-ConsentManagement-Domain-ResearchStudy.json profile-ConsentManagement-Patient.json profile-ConsentManagement-Provenance.json profile-ConsentManagement-TemplateFrame.json profile-ConsentManagement-TemplateModule.json profile-ConsentManagementQuestionnaireComposed.json profile-ConsentManagementQuestionnaireResponse.json
+    Each refusal is named above with the generator's own reason. Decide per file
+    whether the module's FSH depends on it; those that it does are Gate-A
+    escalations for the upstream maintainers.
+2026-09-04T09:34:56Z  INFO   5.1b.5  parent-snapshots  done  mode=build generated=0 of 21 required_blocked=http://fhir.de/ConsentManagement/StructureDefinition/Consent exit=1
+2026-09-04T09:36:24Z  INFO   5.1b.5  parent-snapshots  params  mode=build dir=/private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig2/parent204/package (no fetch) fhir_version=4.0.1
+2026-09-04T09:36:24Z  INFO   5.1b.5  parent-snapshots  surveyed  structure_definitions=21 with_snapshot=0 without_snapshot=21
+2026-09-04T09:36:24Z  WARN   5.1b.5  parent-snapshots  parent-without-snapshots: 21 of 21 StructureDefinitions carry NO snapshot
+    This is the condition behind SUSHI's `is missing a snapshot. Snapshot is
+    required for import.` Every profile deriving from one of these, and every
+    instance declaring InstanceOf such a profile, fails to export. Another
+    version of the same package usually does NOT help -- measured, two
+    consecutive releases of the reference parent both ship 0 snapshots.
+    Next: `parent-snapshots.sh build …` (spec §5.1b.5). Never hand-roll one.
+2026-09-04T09:36:24Z  INFO   5.1b.5  parent-snapshots  derivation chain is flat: every SD derives directly from outside this package  count=21
+    So each can be snapshotted independently, in any order.
+2026-09-04T09:36:24Z  INFO   5.1b.5  parent-snapshots  base package for the element-count floor  base_dir=/Users/marcel/.fhir/packages/hl7.fhir.r4.core#4.0.1/package
+2026-09-04T09:36:24Z  INFO   5.1b.5  parent-snapshots  generating with the OFFICIAL HL7 generator  validator=/private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig2/validator_cli.jar java="openjdk version "25.0.2" 2026-01-20" fhir_version=4.0.1
+    cmd=`java -jar /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig2/validator_cli.jar snapshot <sd.json> -version 4.0.1 -tx n/a -ig /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig2/parent204/package -output <out.json>`
+    One invocation PER FILE: a batch run aborts at the first failure and silently
+    skips the rest. Nothing here merges a differential by hand (script header).
+2026-09-04T09:36:32Z  WARN   5.1b.5  parent-snapshots  generator-refused: extension-ConsentManagement-ConsentMode.json  url=http://fhir.de/ConsentManagement/StructureDefinition/ConsentMode reason=no output produced
+    The generator declining a differential is EVIDENCE ABOUT THE PARENT, not a
+    gap to work around: an upstream differential the official merge cannot
+    process is malformed. Do not hand-finish it. Check whether the module's FSH
+    names this profile as a Parent or InstanceOf; if it does, this is a Gate-A
+    escalation for the upstream package's maintainers (spec §5.1b.4).
+2026-09-04T09:36:40Z  WARN   5.1b.5  parent-snapshots  generator-refused: extension-ConsentManagement-ContextIdentifier.json  url=http://fhir.de/ConsentManagement/StructureDefinition/ContextIdentifier reason=no output produced
+    The generator declining a differential is EVIDENCE ABOUT THE PARENT, not a
+    gap to work around: an upstream differential the official merge cannot
+    process is malformed. Do not hand-finish it. Check whether the module's FSH
+    names this profile as a Parent or InstanceOf; if it does, this is a Gate-A
+    escalation for the upstream package's maintainers (spec §5.1b.4).
+2026-09-04T09:36:47Z  WARN   5.1b.5  parent-snapshots  generator-refused: extension-ConsentManagement-DomainReference.json  url=http://fhir.de/ConsentManagement/StructureDefinition/DomainReference reason=no output produced
+    The generator declining a differential is EVIDENCE ABOUT THE PARENT, not a
+    gap to work around: an upstream differential the official merge cannot
+    process is malformed. Do not hand-finish it. Check whether the module's FSH
+    names this profile as a Parent or InstanceOf; if it does, this is a Gate-A
+    escalation for the upstream package's maintainers (spec §5.1b.4).
+2026-09-04T09:36:56Z  WARN   5.1b.5  parent-snapshots  generator-refused: extension-ConsentManagement-Logo.json  url=http://fhir.de/ConsentManagement/StructureDefinition/Logo reason=no output produced
+    The generator declining a differential is EVIDENCE ABOUT THE PARENT, not a
+    gap to work around: an upstream differential the official merge cannot
+    process is malformed. Do not hand-finish it. Check whether the module's FSH
+    names this profile as a Parent or InstanceOf; if it does, this is a Gate-A
+    escalation for the upstream package's maintainers (spec §5.1b.4).
+2026-09-04T09:37:04Z  WARN   5.1b.5  parent-snapshots  generator-refused: extension-ConsentManagement-OrganizationDescription.json  url=http://fhir.de/ConsentManagement/StructureDefinition/OrganizationDescription reason=no output produced
+    The generator declining a differential is EVIDENCE ABOUT THE PARENT, not a
+    gap to work around: an upstream differential the official merge cannot
+    process is malformed. Do not hand-finish it. Check whether the module's FSH
+    names this profile as a Parent or InstanceOf; if it does, this is a Gate-A
+    escalation for the upstream package's maintainers (spec §5.1b.4).
+2026-09-04T09:37:13Z  WARN   5.1b.5  parent-snapshots  generator-refused: extension-ConsentManagement-SignatureLocation.json  url=http://fhir.de/ConsentManagement/StructureDefinition/SignatureLocation reason=no output produced
+    The generator declining a differential is EVIDENCE ABOUT THE PARENT, not a
+    gap to work around: an upstream differential the official merge cannot
+    process is malformed. Do not hand-finish it. Check whether the module's FSH
+    names this profile as a Parent or InstanceOf; if it does, this is a Gate-A
+    escalation for the upstream package's maintainers (spec §5.1b.4).
+2026-09-04T09:37:21Z  WARN   5.1b.5  parent-snapshots  generator-refused: extension-ConsentManagement-SourceDocument.json  url=http://fhir.de/ConsentManagement/StructureDefinition/SourceDocument reason=no output produced
+    The generator declining a differential is EVIDENCE ABOUT THE PARENT, not a
+    gap to work around: an upstream differential the official merge cannot
+    process is malformed. Do not hand-finish it. Check whether the module's FSH
+    names this profile as a Parent or InstanceOf; if it does, this is a Gate-A
+    escalation for the upstream package's maintainers (spec §5.1b.4).
+2026-09-04T09:37:29Z  WARN   5.1b.5  parent-snapshots  generator-refused: extension-ConsentManagement-SubQuestionnaire.json  url=http://fhir.de/ConsentManagement/StructureDefinition/SubQuestionnaire reason=no output produced
+    The generator declining a differential is EVIDENCE ABOUT THE PARENT, not a
+    gap to work around: an upstream differential the official merge cannot
+    process is malformed. Do not hand-finish it. Check whether the module's FSH
+    names this profile as a Parent or InstanceOf; if it does, this is a Gate-A
+    escalation for the upstream package's maintainers (spec §5.1b.4).
+2026-09-04T09:37:37Z  WARN   5.1b.5  parent-snapshots  generator-refused: extension-ConsentManagement-VersionFormat.json  url=http://fhir.de/ConsentManagement/StructureDefinition/VersionFormat reason=no output produced
+    The generator declining a differential is EVIDENCE ABOUT THE PARENT, not a
+    gap to work around: an upstream differential the official merge cannot
+    process is malformed. Do not hand-finish it. Check whether the module's FSH
+    names this profile as a Parent or InstanceOf; if it does, this is a Gate-A
+    escalation for the upstream package's maintainers (spec §5.1b.4).
+2026-09-04T09:37:45Z  WARN   5.1b.5  parent-snapshots  generator-refused: extension-ConsentManagement-Xacml.json  url=http://fhir.de/ConsentManagement/StructureDefinition/Xacml reason=no output produced
+    The generator declining a differential is EVIDENCE ABOUT THE PARENT, not a
+    gap to work around: an upstream differential the official merge cannot
+    process is malformed. Do not hand-finish it. Check whether the module's FSH
+    names this profile as a Parent or InstanceOf; if it does, this is a Gate-A
+    escalation for the upstream package's maintainers (spec §5.1b.4).
+2026-09-04T09:37:53Z  WARN   5.1b.5  parent-snapshots  generator-refused: extension-ConsentManagement-XacmlTemplate.json  url=http://fhir.de/ConsentManagement/StructureDefinition/XacmlTemplate reason=no output produced
+    The generator declining a differential is EVIDENCE ABOUT THE PARENT, not a
+    gap to work around: an upstream differential the official merge cannot
+    process is malformed. Do not hand-finish it. Check whether the module's FSH
+    names this profile as a Parent or InstanceOf; if it does, this is a Gate-A
+    escalation for the upstream package's maintainers (spec §5.1b.4).
+2026-09-04T09:38:01Z  WARN   5.1b.5  parent-snapshots  generator-refused: profile-ConsentManagement-Consent.json  url=http://fhir.de/ConsentManagement/StructureDefinition/Consent reason=no output produced
+    The generator declining a differential is EVIDENCE ABOUT THE PARENT, not a
+    gap to work around: an upstream differential the official merge cannot
+    process is malformed. Do not hand-finish it. Check whether the module's FSH
+    names this profile as a Parent or InstanceOf; if it does, this is a Gate-A
+    escalation for the upstream package's maintainers (spec §5.1b.4).
+2026-09-04T09:38:10Z  WARN   5.1b.5  parent-snapshots  generator-refused: profile-ConsentManagement-DocumentReference.json  url=http://fhir.de/ConsentManagement/StructureDefinition/DocumentReference reason=no output produced
+    The generator declining a differential is EVIDENCE ABOUT THE PARENT, not a
+    gap to work around: an upstream differential the official merge cannot
+    process is malformed. Do not hand-finish it. Check whether the module's FSH
+    names this profile as a Parent or InstanceOf; if it does, this is a Gate-A
+    escalation for the upstream package's maintainers (spec §5.1b.4).
+2026-09-04T09:38:18Z  WARN   5.1b.5  parent-snapshots  generator-refused: profile-ConsentManagement-Domain-Organization.json  url=http://fhir.de/ConsentManagement/StructureDefinition/Domain/Organization reason=no output produced
+    The generator declining a differential is EVIDENCE ABOUT THE PARENT, not a
+    gap to work around: an upstream differential the official merge cannot
+    process is malformed. Do not hand-finish it. Check whether the module's FSH
+    names this profile as a Parent or InstanceOf; if it does, this is a Gate-A
+    escalation for the upstream package's maintainers (spec §5.1b.4).
+2026-09-04T09:38:26Z  WARN   5.1b.5  parent-snapshots  generator-refused: profile-ConsentManagement-Domain-ResearchStudy.json  url=http://fhir.de/ConsentManagement/StructureDefinition/Domain/ResearchStudy reason=no output produced
+    The generator declining a differential is EVIDENCE ABOUT THE PARENT, not a
+    gap to work around: an upstream differential the official merge cannot
+    process is malformed. Do not hand-finish it. Check whether the module's FSH
+    names this profile as a Parent or InstanceOf; if it does, this is a Gate-A
+    escalation for the upstream package's maintainers (spec §5.1b.4).
+2026-09-04T09:38:34Z  WARN   5.1b.5  parent-snapshots  generator-refused: profile-ConsentManagement-Patient.json  url=http://fhir.de/ConsentManagement/StructureDefinition/Patient reason=no output produced
+    The generator declining a differential is EVIDENCE ABOUT THE PARENT, not a
+    gap to work around: an upstream differential the official merge cannot
+    process is malformed. Do not hand-finish it. Check whether the module's FSH
+    names this profile as a Parent or InstanceOf; if it does, this is a Gate-A
+    escalation for the upstream package's maintainers (spec §5.1b.4).
+2026-09-04T09:38:43Z  WARN   5.1b.5  parent-snapshots  generator-refused: profile-ConsentManagement-Provenance.json  url=http://fhir.de/ConsentManagement/StructureDefinition/Provenance reason=no output produced
+    The generator declining a differential is EVIDENCE ABOUT THE PARENT, not a
+    gap to work around: an upstream differential the official merge cannot
+    process is malformed. Do not hand-finish it. Check whether the module's FSH
+    names this profile as a Parent or InstanceOf; if it does, this is a Gate-A
+    escalation for the upstream package's maintainers (spec §5.1b.4).
+2026-09-04T09:38:51Z  WARN   5.1b.5  parent-snapshots  generator-refused: profile-ConsentManagement-TemplateFrame.json  url=http://fhir.de/ConsentManagement/StructureDefinition/TemplateFrame reason=no output produced
+    The generator declining a differential is EVIDENCE ABOUT THE PARENT, not a
+    gap to work around: an upstream differential the official merge cannot
+    process is malformed. Do not hand-finish it. Check whether the module's FSH
+    names this profile as a Parent or InstanceOf; if it does, this is a Gate-A
+    escalation for the upstream package's maintainers (spec §5.1b.4).
+2026-09-04T09:38:59Z  WARN   5.1b.5  parent-snapshots  generator-refused: profile-ConsentManagement-TemplateModule.json  url=http://fhir.de/ConsentManagement/StructureDefinition/TemplateModule reason=no output produced
+    The generator declining a differential is EVIDENCE ABOUT THE PARENT, not a
+    gap to work around: an upstream differential the official merge cannot
+    process is malformed. Do not hand-finish it. Check whether the module's FSH
+    names this profile as a Parent or InstanceOf; if it does, this is a Gate-A
+    escalation for the upstream package's maintainers (spec §5.1b.4).
+2026-09-04T09:39:06Z  WARN   5.1b.5  parent-snapshots  generator-refused: profile-ConsentManagementQuestionnaireComposed.json  url=http://fhir.de/ConsentManagement/StructureDefinition/QuestionnaireComposed reason=no output produced
+    The generator declining a differential is EVIDENCE ABOUT THE PARENT, not a
+    gap to work around: an upstream differential the official merge cannot
+    process is malformed. Do not hand-finish it. Check whether the module's FSH
+    names this profile as a Parent or InstanceOf; if it does, this is a Gate-A
+    escalation for the upstream package's maintainers (spec §5.1b.4).
+2026-09-04T09:39:14Z  WARN   5.1b.5  parent-snapshots  generator-refused: profile-ConsentManagementQuestionnaireResponse.json  url=http://fhir.de/ConsentManagement/StructureDefinition/QuestionnaireResponse reason=no output produced
+    The generator declining a differential is EVIDENCE ABOUT THE PARENT, not a
+    gap to work around: an upstream differential the official merge cannot
+    process is malformed. Do not hand-finish it. Check whether the module's FSH
+    names this profile as a Parent or InstanceOf; if it does, this is a Gate-A
+    escalation for the upstream package's maintainers (spec §5.1b.4).
+2026-09-04T09:39:15Z  INFO   5.1b.5  parent-snapshots  rebuild written  dir=/var/folders/d6/s255vt4x5pq9fy738bv7cs0h0000gq/T/tmp.lEpczFXT6g/rebuilt/package merged=0 refused=0
+    Only the `snapshot` property was added; every other field is the upstream
+    bytes re-serialized. Do not diff this against upstream expecting byte
+    equality -- key order and indentation are the serializer's.
+2026-09-04T09:39:15Z  INFO   5.1b.5  parent-snapshots  generated 0 of 21 snapshots  expected=21 actual=0
+2026-09-04T09:39:15Z  WARN   5.1b.5  parent-snapshots  silent-partial-success: generated 0 of 21 snapshots
+    Exit status is not evidence of completeness; these two counts are.
+    Reconcile against the step-1 inventory before continuing.
+2026-09-04T09:39:15Z  ERROR  5.1b.5  parent-snapshots  required-parent-still-without-snapshot: http://fhir.de/ConsentManagement/StructureDefinition/Consent  file=profile-ConsentManagement-Consent.json
+    This one blocks the migration: SUSHI still cannot import it. Escalate it
+    to Gate A with the generator's reason, and migrate the rest -- never
+    fabricate the parent (guardrails 1 and 3).
+2026-09-04T09:39:15Z  ERROR  5.1b.5  parent-snapshots  required-parent-still-without-snapshot: http://fhir.de/ConsentManagement/StructureDefinition/DocumentReference  file=profile-ConsentManagement-DocumentReference.json
+    This one blocks the migration: SUSHI still cannot import it. Escalate it
+    to Gate A with the generator's reason, and migrate the rest -- never
+    fabricate the parent (guardrails 1 and 3).
+2026-09-04T09:39:15Z  ERROR  5.1b.5  parent-snapshots  required-parent-still-without-snapshot: http://fhir.de/ConsentManagement/StructureDefinition/DomainReference  file=extension-ConsentManagement-DomainReference.json
+    This one blocks the migration: SUSHI still cannot import it. Escalate it
+    to Gate A with the generator's reason, and migrate the rest -- never
+    fabricate the parent (guardrails 1 and 3).
+2026-09-04T09:39:15Z  ERROR  5.1b.5  parent-snapshots  required-parent-still-without-snapshot: http://fhir.de/ConsentManagement/StructureDefinition/Provenance  file=profile-ConsentManagement-Provenance.json
+    This one blocks the migration: SUSHI still cannot import it. Escalate it
+    to Gate A with the generator's reason, and migrate the rest -- never
+    fabricate the parent (guardrails 1 and 3).
+2026-09-04T09:39:15Z  ERROR  5.1b.5  parent-snapshots  refusing-to-install: the destination exists  dest=/Users/marcel/.fhir/packages/de.einwilligungsmanagement#2.0.4-rc1-snapshots exit=2
+    Pass --replace to overwrite it deliberately.
+2026-09-04T09:46:17Z  INFO   5.1b.5  parent-snapshots  params  mode=build dir=/private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig2/parent204/package (no fetch) fhir_version=4.0.1
+2026-09-04T09:46:17Z  INFO   5.1b.5  parent-snapshots  surveyed  structure_definitions=21 with_snapshot=0 without_snapshot=21
+2026-09-04T09:46:17Z  WARN   5.1b.5  parent-snapshots  parent-without-snapshots: 21 of 21 StructureDefinitions carry NO snapshot
+    This is the condition behind SUSHI's `is missing a snapshot. Snapshot is
+    required for import.` Every profile deriving from one of these, and every
+    instance declaring InstanceOf such a profile, fails to export. Another
+    version of the same package usually does NOT help -- measured, two
+    consecutive releases of the reference parent both ship 0 snapshots.
+    Next: `parent-snapshots.sh build …` (spec §5.1b.5). Never hand-roll one.
+2026-09-04T09:46:17Z  INFO   5.1b.5  parent-snapshots  derivation chain is flat: every SD derives directly from outside this package  count=21
+    So each can be snapshotted independently, in any order.
+2026-09-04T09:46:17Z  INFO   5.1b.5  parent-snapshots  base package for the element-count floor  base_dir=/Users/marcel/.fhir/packages/hl7.fhir.r4.core#4.0.1/package
+2026-09-04T09:46:17Z  INFO   5.1b.5  parent-snapshots  generating with the OFFICIAL HL7 generator  validator=/private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig2/validator_cli.jar java="openjdk version "25.0.2" 2026-01-20" fhir_version=4.0.1
+    cmd=`java -jar /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig2/validator_cli.jar snapshot <sd.json> -version 4.0.1 -tx n/a -ig /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig2/parent204/package -output <out.json>`
+    One invocation PER FILE: a batch run aborts at the first failure and silently
+    skips the rest. Nothing here merges a differential by hand (script header).
+2026-09-04T09:49:44Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=extension-ConsentManagement-ConsentMode.json snapshot=12 differential=5 base=5
+2026-09-04T09:49:44Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=extension-ConsentManagement-ContextIdentifier.json snapshot=20 differential=12 base=5
+2026-09-04T09:49:44Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=extension-ConsentManagement-DomainReference.json snapshot=22 differential=11 base=5
+2026-09-04T09:49:44Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=extension-ConsentManagement-Logo.json snapshot=5 differential=2 base=5
+2026-09-04T09:49:44Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=extension-ConsentManagement-OrganizationDescription.json snapshot=5 differential=2 base=5
+2026-09-04T09:49:44Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=extension-ConsentManagement-SignatureLocation.json snapshot=5 differential=2 base=5
+2026-09-04T09:49:44Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=extension-ConsentManagement-SourceDocument.json snapshot=15 differential=4 base=5
+2026-09-04T09:49:44Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=extension-ConsentManagement-SubQuestionnaire.json snapshot=11 differential=6 base=5
+2026-09-04T09:49:44Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=extension-ConsentManagement-VersionFormat.json snapshot=15 differential=10 base=5
+2026-09-04T09:49:44Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=extension-ConsentManagement-Xacml.json snapshot=5 differential=2 base=5
+2026-09-04T09:49:44Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=extension-ConsentManagement-XacmlTemplate.json snapshot=15 differential=9 base=5
+2026-09-04T09:49:44Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=profile-ConsentManagement-Consent.json snapshot=96 differential=20 base=57
+2026-09-04T09:49:44Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=profile-ConsentManagement-DocumentReference.json snapshot=61 differential=8 base=45
+2026-09-04T09:49:44Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=profile-ConsentManagement-Domain-Organization.json snapshot=91 differential=23 base=26
+2026-09-04T09:49:44Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=profile-ConsentManagement-Domain-ResearchStudy.json snapshot=104 differential=23 base=44
+2026-09-04T09:49:44Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=profile-ConsentManagement-Patient.json snapshot=64 differential=7 base=45
+2026-09-04T09:49:44Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=profile-ConsentManagement-Provenance.json snapshot=65 differential=20 base=32
+2026-09-04T09:49:44Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=profile-ConsentManagement-TemplateFrame.json snapshot=163 differential=58 base=65
+2026-09-04T09:49:44Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=profile-ConsentManagement-TemplateModule.json snapshot=111 differential=28 base=65
+2026-09-04T09:49:44Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=profile-ConsentManagementQuestionnaireComposed.json snapshot=152 differential=52 base=65
+2026-09-04T09:49:44Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=profile-ConsentManagementQuestionnaireResponse.json snapshot=39 differential=14 base=33
+2026-09-04T09:49:44Z  INFO   5.1b.5  parent-snapshots  rebuild written  dir=/var/folders/d6/s255vt4x5pq9fy738bv7cs0h0000gq/T/tmp.YgosGutS4K/rebuilt/package merged=21 refused=0
+    Only the `snapshot` property was added; every other field is the upstream
+    bytes re-serialized. Do not diff this against upstream expecting byte
+    equality -- key order and indentation are the serializer's.
+2026-09-04T09:49:44Z  INFO   5.1b.5  parent-snapshots  generated 21 of 21 snapshots  expected=21 actual=21
+2026-09-04T09:49:44Z  INFO   5.1b.5  parent-snapshots  required parent snapshotted  require=http://fhir.de/ConsentManagement/StructureDefinition/Consent file=profile-ConsentManagement-Consent.json
+2026-09-04T09:49:44Z  INFO   5.1b.5  parent-snapshots  required parent snapshotted  require=http://fhir.de/ConsentManagement/StructureDefinition/DocumentReference file=profile-ConsentManagement-DocumentReference.json
+2026-09-04T09:49:44Z  INFO   5.1b.5  parent-snapshots  required parent snapshotted  require=http://fhir.de/ConsentManagement/StructureDefinition/DomainReference file=extension-ConsentManagement-DomainReference.json
+2026-09-04T09:49:44Z  INFO   5.1b.5  parent-snapshots  required parent snapshotted  require=http://fhir.de/ConsentManagement/StructureDefinition/Provenance file=profile-ConsentManagement-Provenance.json
+2026-09-04T09:49:44Z  ERROR  5.1b.5  parent-snapshots  refusing-to-install: the destination exists  dest=/Users/marcel/.fhir/packages/de.einwilligungsmanagement#2.0.4-rc1-snapshots exit=2
+    Pass --replace to overwrite it deliberately.
+2026-09-04T09:50:03Z  INFO   5.1b.5  parent-snapshots  params  mode=build dir=/private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig2/parent204/package (no fetch) fhir_version=4.0.1
+2026-09-04T09:50:03Z  INFO   5.1b.5  parent-snapshots  surveyed  structure_definitions=21 with_snapshot=0 without_snapshot=21
+2026-09-04T09:50:03Z  WARN   5.1b.5  parent-snapshots  parent-without-snapshots: 21 of 21 StructureDefinitions carry NO snapshot
+    This is the condition behind SUSHI's `is missing a snapshot. Snapshot is
+    required for import.` Every profile deriving from one of these, and every
+    instance declaring InstanceOf such a profile, fails to export. Another
+    version of the same package usually does NOT help -- measured, two
+    consecutive releases of the reference parent both ship 0 snapshots.
+    Next: `parent-snapshots.sh build …` (spec §5.1b.5). Never hand-roll one.
+2026-09-04T09:50:03Z  INFO   5.1b.5  parent-snapshots  derivation chain is flat: every SD derives directly from outside this package  count=21
+    So each can be snapshotted independently, in any order.
+2026-09-04T09:50:03Z  INFO   5.1b.5  parent-snapshots  base package for the element-count floor  base_dir=/Users/marcel/.fhir/packages/hl7.fhir.r4.core#4.0.1/package
+2026-09-04T09:50:03Z  INFO   5.1b.5  parent-snapshots  generating with the OFFICIAL HL7 generator  validator=/private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig2/validator_cli.jar java="openjdk version "25.0.2" 2026-01-20" fhir_version=4.0.1
+    cmd=`java -jar /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig2/validator_cli.jar snapshot <sd.json> -version 4.0.1 -tx n/a -ig /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig2/parent204/package -output <out.json>`
+    One invocation PER FILE: a batch run aborts at the first failure and silently
+    skips the rest. Nothing here merges a differential by hand (script header).
+2026-09-04T09:53:28Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=extension-ConsentManagement-ConsentMode.json snapshot=12 differential=5 base=5
+2026-09-04T09:53:28Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=extension-ConsentManagement-ContextIdentifier.json snapshot=20 differential=12 base=5
+2026-09-04T09:53:28Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=extension-ConsentManagement-DomainReference.json snapshot=22 differential=11 base=5
+2026-09-04T09:53:28Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=extension-ConsentManagement-Logo.json snapshot=5 differential=2 base=5
+2026-09-04T09:53:28Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=extension-ConsentManagement-OrganizationDescription.json snapshot=5 differential=2 base=5
+2026-09-04T09:53:28Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=extension-ConsentManagement-SignatureLocation.json snapshot=5 differential=2 base=5
+2026-09-04T09:53:28Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=extension-ConsentManagement-SourceDocument.json snapshot=15 differential=4 base=5
+2026-09-04T09:53:28Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=extension-ConsentManagement-SubQuestionnaire.json snapshot=11 differential=6 base=5
+2026-09-04T09:53:28Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=extension-ConsentManagement-VersionFormat.json snapshot=15 differential=10 base=5
+2026-09-04T09:53:28Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=extension-ConsentManagement-Xacml.json snapshot=5 differential=2 base=5
+2026-09-04T09:53:28Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=extension-ConsentManagement-XacmlTemplate.json snapshot=15 differential=9 base=5
+2026-09-04T09:53:28Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=profile-ConsentManagement-Consent.json snapshot=96 differential=20 base=57
+2026-09-04T09:53:28Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=profile-ConsentManagement-DocumentReference.json snapshot=61 differential=8 base=45
+2026-09-04T09:53:28Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=profile-ConsentManagement-Domain-Organization.json snapshot=91 differential=23 base=26
+2026-09-04T09:53:28Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=profile-ConsentManagement-Domain-ResearchStudy.json snapshot=104 differential=23 base=44
+2026-09-04T09:53:28Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=profile-ConsentManagement-Patient.json snapshot=64 differential=7 base=45
+2026-09-04T09:53:28Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=profile-ConsentManagement-Provenance.json snapshot=65 differential=20 base=32
+2026-09-04T09:53:28Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=profile-ConsentManagement-TemplateFrame.json snapshot=163 differential=58 base=65
+2026-09-04T09:53:28Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=profile-ConsentManagement-TemplateModule.json snapshot=111 differential=28 base=65
+2026-09-04T09:53:28Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=profile-ConsentManagementQuestionnaireComposed.json snapshot=152 differential=52 base=65
+2026-09-04T09:53:28Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=profile-ConsentManagementQuestionnaireResponse.json snapshot=39 differential=14 base=33
+2026-09-04T09:53:28Z  INFO   5.1b.5  parent-snapshots  rebuild written  dir=/var/folders/d6/s255vt4x5pq9fy738bv7cs0h0000gq/T/tmp.lLZRV8k3Js/rebuilt/package merged=21 refused=0
+    Only the `snapshot` property was added; every other field is the upstream
+    bytes re-serialized. Do not diff this against upstream expecting byte
+    equality -- key order and indentation are the serializer's.
+2026-09-04T09:53:28Z  INFO   5.1b.5  parent-snapshots  generated 21 of 21 snapshots  expected=21 actual=21
+2026-09-04T09:53:28Z  INFO   5.1b.5  parent-snapshots  required parent snapshotted  require=http://fhir.de/ConsentManagement/StructureDefinition/Consent file=profile-ConsentManagement-Consent.json
+2026-09-04T09:53:28Z  INFO   5.1b.5  parent-snapshots  required parent snapshotted  require=http://fhir.de/ConsentManagement/StructureDefinition/DocumentReference file=profile-ConsentManagement-DocumentReference.json
+2026-09-04T09:53:28Z  INFO   5.1b.5  parent-snapshots  required parent snapshotted  require=http://fhir.de/ConsentManagement/StructureDefinition/DomainReference file=extension-ConsentManagement-DomainReference.json
+2026-09-04T09:53:28Z  INFO   5.1b.5  parent-snapshots  required parent snapshotted  require=http://fhir.de/ConsentManagement/StructureDefinition/Provenance file=profile-ConsentManagement-Provenance.json
+2026-09-04T09:53:28Z  INFO   5.1b.5  parent-snapshots  installed as a NEW cache entry  dest=/Users/marcel/.fhir/packages/de.einwilligungsmanagement#2.0.4-rc1-snapshots version=2.0.4-rc1-snapshots
+    Upstream de.einwilligungsmanagement#2.0.4-rc1 is untouched. Depend on it by pinning
+    `de.einwilligungsmanagement: 2.0.4-rc1-snapshots` in sushi-config.yaml -- and note that this entry is
+    LOCAL: CI and every other machine need this same build step, or the pin
+    fails to resolve there (spec §5.1b.5, 'carrying it upstream').
+2026-09-04T09:53:28Z  INFO   5.1b.5  parent-snapshots  done  mode=build generated=21 of 21 required=all-snapshotted exit=0
+    Re-run SUSHI now and compare the error count against the run BEFORE this
+    step; that difference is the evidence, not this script's exit status.
+2026-09-04T09:57:51Z  INFO   5.1d  guide-harvest  guide root fetched  cmd=`curl -sL https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent?version=2027.0.0-ballot.rc1`  http=200 bytes=24959
+2026-09-04T09:57:52Z  INFO   5.1d  guide-harvest  page tree discovered from the root's own hrefs  discovered=18 region_id=preview-content
+    Slugs are read from href values, never constructed from page titles.
+2026-09-04T09:57:52Z  INFO   5.1d  guide-harvest  page harvested  url=https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent?version=2027.0.0-ballot.rc1  file=/private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig2/harvest2027/pagecontent/index.md  region=found kind=narrative src_text_chars=2816 md_text_chars=4820 missing_runs=0 internal_links=13 images=1 artefact_markers=0 title=Kerndatensatz-Modul Consent
+2026-09-04T09:57:54Z  INFO   5.1d  guide-harvest  page harvested  url=https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/Release-Notes?version=2027.0.0-ballot.rc1  file=/private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig2/harvest2027/pagecontent/release-notes.md  region=found kind=narrative src_text_chars=4172 md_text_chars=4772 missing_runs=0 internal_links=0 images=0 artefact_markers=0 title=Release Notes
+2026-09-04T09:57:55Z  INFO   5.1d  guide-harvest  page harvested  url=https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/Beschreibung-Modul-Consent?version=2027.0.0-ballot.rc1  file=/private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig2/harvest2027/pagecontent/beschreibung-modul-consent.md  region=found kind=narrative src_text_chars=680 md_text_chars=1168 missing_runs=0 internal_links=0 images=1 artefact_markers=0 title=Beschreibung Modul Consent
+2026-09-04T09:57:57Z  INFO   5.1d  guide-harvest  page harvested  url=https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/KontextimGesamtprojektBezgezuanderenModulen?version=2027.0.0-ballot.rc1  file=/private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig2/harvest2027/pagecontent/kontextimgesamtprojektbezgezuanderenmodulen.md  region=found kind=narrative src_text_chars=858 md_text_chars=1094 missing_runs=0 internal_links=0 images=0 artefact_markers=0 title=Kontext im Gesamtprojekt / Bezüge zu anderen Modulen
+2026-09-04T09:57:58Z  INFO   5.1d  guide-harvest  page harvested  url=https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/Referenzen?version=2027.0.0-ballot.rc1  file=/private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig2/harvest2027/pagecontent/referenzen.md  region=found kind=narrative src_text_chars=613 md_text_chars=1083 missing_runs=0 internal_links=0 images=0 artefact_markers=0 title=Referenzen
+2026-09-04T09:58:00Z  INFO   5.1d  guide-harvest  page harvested  url=https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/AnwendungsflleInformationsmodell?version=2027.0.0-ballot.rc1  file=/private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig2/harvest2027/pagecontent/anwendungsflleinformationsmodell.md  region=found kind=narrative src_text_chars=81 md_text_chars=84 missing_runs=0 internal_links=0 images=0 artefact_markers=0 title=Anwendungsfälle / Informationsmodell
+2026-09-04T09:58:01Z  INFO   5.1d  guide-harvest  page harvested  url=https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/AnwendungsflleInformationsmodell/BeschreibungvonSzenarienfrdieAnwendungdesModuls?version=2027.0.0-ballot.rc1  file=/private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig2/harvest2027/pagecontent/anwendungsflleinformationsmodell-beschreibungvonszenarienfrdieanwendungdesmoduls.md  region=found kind=narrative src_text_chars=1407 md_text_chars=1640 missing_runs=0 internal_links=0 images=0 artefact_markers=0 title=Beschreibung von Szenarien für die Anwendung des Moduls
+2026-09-04T09:58:03Z  INFO   5.1d  guide-harvest  page harvested  url=https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/AnwendungsflleInformationsmodell/Datenstzeinkl.Beschreibungen?version=2027.0.0-ballot.rc1  file=/private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig2/harvest2027/pagecontent/anwendungsflleinformationsmodell-datenstzeinkl.beschreibungen.md  region=found kind=narrative src_text_chars=384 md_text_chars=604 missing_runs=0 internal_links=0 images=0 artefact_markers=0 title=Datensätze inkl. Beschreibungen
+2026-09-04T09:58:05Z  INFO   5.1d  guide-harvest  page harvested  url=https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/AnwendungsflleInformationsmodell/UML?version=2027.0.0-ballot.rc1  file=/private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig2/harvest2027/pagecontent/anwendungsflleinformationsmodell-uml.md  region=found kind=narrative src_text_chars=1861 md_text_chars=2968 missing_runs=0 internal_links=5 images=1 artefact_markers=0 title=UML
+2026-09-04T09:58:06Z  INFO   5.1d  guide-harvest  page harvested  url=https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/AnwendungsflleInformationsmodell/Fragebgen?version=2027.0.0-ballot.rc1  file=/private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig2/harvest2027/pagecontent/anwendungsflleinformationsmodell-fragebgen.md  region=found kind=narrative src_text_chars=2094 md_text_chars=3304 missing_runs=0 internal_links=1 images=0 artefact_markers=0 title=Fragebögen
+2026-09-04T09:58:08Z  INFO   5.1d  guide-harvest  page harvested  url=https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/TechnischeImplementierung?version=2027.0.0-ballot.rc1  file=/private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig2/harvest2027/pagecontent/technischeimplementierung.md  region=found kind=narrative src_text_chars=731 md_text_chars=773 missing_runs=0 internal_links=0 images=0 artefact_markers=0 title=Technische Implementierung
+2026-09-04T09:58:09Z  INFO   5.1d  guide-harvest  page harvested  url=https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/TechnischeImplementierung/FHIRProfile?version=2027.0.0-ballot.rc1  file=/private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig2/harvest2027/pagecontent/technischeimplementierung-fhirprofile.md  region=found kind=narrative src_text_chars=760 md_text_chars=895 missing_runs=0 internal_links=0 images=0 artefact_markers=0 title=FHIR Profile
+2026-09-04T09:58:12Z  INFO   5.1d  guide-harvest  page harvested  url=https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/TechnischeImplementierung/FHIRProfile/Consent?version=2027.0.0-ballot.rc1  file=/private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig2/harvest2027/pagecontent/technischeimplementierung-fhirprofile-consent.md  region=found kind=artefact-view src_text_chars=249862 md_text_chars=364914 missing_runs=6 internal_links=0 images=0 artefact_markers=1679 title=Consent
+2026-09-04T09:58:12Z  INFO   5.1d  guide-harvest  rendered-artefact-view: this page is a RENDERING of a conformance resource, not narrative  url=https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/TechnischeImplementierung/FHIRProfile/Consent?version=2027.0.0-ballot.rc1 file=/private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig2/harvest2027/pagecontent/technischeimplementierung-fhirprofile-consent.md src_text_chars=249862
+    The IG Publisher regenerates the element tree from the module's own
+    StructureDefinition. Take the prose above the tree; do not paste the tree
+    into pagecontent as hand-maintained content (spec 9).
+2026-09-04T09:58:12Z  WARN   5.1d  guide-harvest  generated-view-lossy: 6 text run(s) of a RENDERED ARTEFACT VIEW did not survive the conversion  url=https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/TechnischeImplementierung/FHIRProfile/Consent?version=2027.0.0-ballot.rc1 file=/private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig2/harvest2027/pagecontent/technischeimplementierung-fhirprofile-consent.md src_text_chars=249862 md_text_chars=364914
+    Not counted as a narrative loss, because the tree is regenerated from
+    the resource. It is still in the manifest and still reviewed at Gate B.
+2026-09-04T09:58:14Z  INFO   5.1d  guide-harvest  page harvested  url=https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/TechnischeImplementierung/FHIRProfile/Provenance?version=2027.0.0-ballot.rc1  file=/private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig2/harvest2027/pagecontent/technischeimplementierung-fhirprofile-provenance.md  region=found kind=artefact-view src_text_chars=74185 md_text_chars=103175 missing_runs=3 internal_links=1 images=0 artefact_markers=398 title=Provenance
+2026-09-04T09:58:14Z  INFO   5.1d  guide-harvest  rendered-artefact-view: this page is a RENDERING of a conformance resource, not narrative  url=https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/TechnischeImplementierung/FHIRProfile/Provenance?version=2027.0.0-ballot.rc1 file=/private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig2/harvest2027/pagecontent/technischeimplementierung-fhirprofile-provenance.md src_text_chars=74185
+    The IG Publisher regenerates the element tree from the module's own
+    StructureDefinition. Take the prose above the tree; do not paste the tree
+    into pagecontent as hand-maintained content (spec 9).
+2026-09-04T09:58:14Z  WARN   5.1d  guide-harvest  generated-view-lossy: 3 text run(s) of a RENDERED ARTEFACT VIEW did not survive the conversion  url=https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/TechnischeImplementierung/FHIRProfile/Provenance?version=2027.0.0-ballot.rc1 file=/private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig2/harvest2027/pagecontent/technischeimplementierung-fhirprofile-provenance.md src_text_chars=74185 md_text_chars=103175
+    Not counted as a narrative loss, because the tree is regenerated from
+    the resource. It is still in the manifest and still reviewed at Gate B.
+2026-09-04T09:58:16Z  INFO   5.1d  guide-harvest  page harvested  url=https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/TechnischeImplementierung/FHIRProfile/DocumentReference?version=2027.0.0-ballot.rc1  file=/private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig2/harvest2027/pagecontent/technischeimplementierung-fhirprofile-documentreference.md  region=found kind=artefact-view src_text_chars=75174 md_text_chars=102674 missing_runs=2 internal_links=0 images=0 artefact_markers=359 title=DocumentReference
+2026-09-04T09:58:16Z  INFO   5.1d  guide-harvest  rendered-artefact-view: this page is a RENDERING of a conformance resource, not narrative  url=https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/TechnischeImplementierung/FHIRProfile/DocumentReference?version=2027.0.0-ballot.rc1 file=/private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig2/harvest2027/pagecontent/technischeimplementierung-fhirprofile-documentreference.md src_text_chars=75174
+    The IG Publisher regenerates the element tree from the module's own
+    StructureDefinition. Take the prose above the tree; do not paste the tree
+    into pagecontent as hand-maintained content (spec 9).
+2026-09-04T09:58:16Z  WARN   5.1d  guide-harvest  generated-view-lossy: 2 text run(s) of a RENDERED ARTEFACT VIEW did not survive the conversion  url=https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/TechnischeImplementierung/FHIRProfile/DocumentReference?version=2027.0.0-ballot.rc1 file=/private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig2/harvest2027/pagecontent/technischeimplementierung-fhirprofile-documentreference.md src_text_chars=75174 md_text_chars=102674
+    Not counted as a narrative loss, because the tree is regenerated from
+    the resource. It is still in the manifest and still reviewed at Gate B.
+2026-09-04T09:58:18Z  INFO   5.1d  guide-harvest  page harvested  url=https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/TechnischeImplementierung/FHIRProfile/WeitererelevanteProfile?version=2027.0.0-ballot.rc1  file=/private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig2/harvest2027/pagecontent/technischeimplementierung-fhirprofile-weitererelevanteprofile.md  region=found kind=narrative src_text_chars=892 md_text_chars=1992 missing_runs=0 internal_links=3 images=0 artefact_markers=0 title=Weitere relevante Profile
+2026-09-04T09:58:19Z  INFO   5.1d  guide-harvest  page harvested  url=https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/TechnischeImplementierung/FHIRProfile/Empfehlungen-zur-praktischen-Anwendung?version=2027.0.0-ballot.rc1  file=/private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig2/harvest2027/pagecontent/technischeimplementierung-fhirprofile-empfehlungen-zur-praktischen-anwendung.md  region=found kind=narrative src_text_chars=2960 md_text_chars=3440 missing_runs=0 internal_links=0 images=0 artefact_markers=0 title=Empfehlungen zur praktischen Anwendung
+2026-09-04T09:58:21Z  INFO   5.1d  guide-harvest  page harvested  url=https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/TechnischeImplementierung/Terminologien?version=2027.0.0-ballot.rc1  file=/private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig2/harvest2027/pagecontent/technischeimplementierung-terminologien.md  region=found kind=artefact-view src_text_chars=22140 md_text_chars=24900 missing_runs=3 internal_links=0 images=0 artefact_markers=4 title=Terminologien
+2026-09-04T09:58:21Z  INFO   5.1d  guide-harvest  rendered-artefact-view: this page is a RENDERING of a conformance resource, not narrative  url=https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/TechnischeImplementierung/Terminologien?version=2027.0.0-ballot.rc1 file=/private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig2/harvest2027/pagecontent/technischeimplementierung-terminologien.md src_text_chars=22140
+    The IG Publisher regenerates the element tree from the module's own
+    StructureDefinition. Take the prose above the tree; do not paste the tree
+    into pagecontent as hand-maintained content (spec 9).
+2026-09-04T09:58:21Z  WARN   5.1d  guide-harvest  generated-view-lossy: 3 text run(s) of a RENDERED ARTEFACT VIEW did not survive the conversion  url=https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/TechnischeImplementierung/Terminologien?version=2027.0.0-ballot.rc1 file=/private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig2/harvest2027/pagecontent/technischeimplementierung-terminologien.md src_text_chars=22140 md_text_chars=24900
+    Not counted as a narrative loss, because the tree is regenerated from
+    the resource. It is still in the manifest and still reviewed at Gate B.
+2026-09-04T09:58:22Z  INFO   5.1d  guide-harvest  harvested 18 of 18 pages  expected=18 actual=18
+    Every discovered page is in migration-log/guide-harvest.tsv as 'harvested' or as 'skipped' with a reason.
+    assets referenced by the harvested pages: migration-log/guide-harvest-assets.tsv  short_pages=0
+2026-09-04T09:58:22Z  INFO   5.1d  guide-harvest  harvest complete  discovered=18 harvested=18 skipped=0 short=0 artefact_views=4 assets=3 out=/private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig2/harvest2027/pagecontent
+    Next: verify the harvested set against the published package's artefact list
+    (package-identity.sh, spec 2.1.1), then let the 5.4c advice run GENERATE the
+    map rows from this manifest (page-structure-advice.py --map; step 5 consumes
+    only the reviewed map, spec 9/9f) -- never one new page per harvested page.
+    Links and images are still absolute to simplifier.net: retargeting them is
+    part of that mapping, and the assets in migration-log/guide-harvest-assets.tsv still have to be transferred.
+2026-09-04T10:08:22Z  INFO   0  fresh-migration  run begin 2026-09-04: fresh migration onto the OFFICIAL release 2027.0.0-ballot.rc1 (user order)
+    Basis: repo tag 2027.0.0-ballot.rc1 = 508a666 (== master tip; tree BYTE-IDENTICAL to develop@744f7ba, 0 files differ)
+    + Simplifier package de.medizininformatikinitiative.kerndatensatz.consent 2027.0.0-ballot.rc1 (registry tgz, sha256 recorded below)
+    + Simplifier guide MIIIGModulConsent?version=2027.0.0-ballot.rc1 (fresh harvest 18/18).
+    Old branch renamed -> migration/2027.0.0-ballot.rc1-template-v0.13.2-obsolete (PR #131 auto-closed by the rename; successor PR follows).
+2026-09-04T10:08:22Z  INFO   2.1.1  package-identity  release package pin: version 2027.0.0-ballot.rc1, deps hl7.fhir.r4.core 4.0.1 + de.einwilligungsmanagement 2.0.4-rc1  sha256=d5aab53769dc56b99a9f1ba2159610f78ca12e92520ebce861b88a047ab8b901
+    UPSTREAM PACKAGING FINDINGS (package vs repo tag): (1) CodeSystem-MiiConsentVersionModuleCodeSystem is DROPPED from the package though the examples require its system (rc-4 packaging defect, previously flagged); (2) all 6 SearchParameters ship WITHOUT an id element; (3) the baked Einwilligung snapshot is STALE (still slice 'loinc', category 1..*) and contradicts its own differential (consentCategory, min 0 - min 0 itself an illegal widening vs core R4 category 1..*); (4) package.json lacks 'canonical' (validator_cli dir-loader NPEs on it); (5) per-resource .version stays 1.0.x/1.1.0 (not the module CalVer, KDS-Governance 4.0 §4.5 deviation); (6) example Einwilligung_1 (89f494a3) still references the nonexistent CS mii-cs-consent-consent_category; (7) CS Policy count still 101 (actual 124), VersionModules count still 20 (actual 21); (8) conformance resources lack 'publisher'.
+2026-09-04T10:08:22Z  INFO   5.1b.5  parent-snapshots  de.einwilligungsmanagement 2.0.4-rc1: snapshots generated 21/21 and installed as #2.0.4-rc1-snapshots (log: parent-snapshots-204rc1.log)
+    GOTCHA fixed in scripts/vendor/parent-snapshots.sh: validator_cli 6.10.0 NPEs loading a package DIRECTORY as -ig when package.json lacks 'canonical' - the script now packs --dir into a tgz first. Fix to be carried upstream to agent-skills.
+2026-09-04T10:08:22Z  INFO   1.2  qa-baseline  BEFORE runs on the RELEASE PACKAGE (user order): (a) validator_cli 6.10.0 example validation vs the shipped package: 51 error lines (before-package-validation-2027.0.0-ballot.rc1.txt); (b) IG-Publisher 2.3.2 wrapper over the package contents: err=90 warn=69 info=20 (qa-baseline-release-package.txt; wrapper config in qa-baseline-wrapper/, SP ids minted as canonical tails + module special-url mirrored so wrapper artifacts do not pollute the baseline; 1 residual wrapper-own dependsOn error excluded from comparisons).
+    Classes: 18 id/url (3 SDs+3 VSs) + 18 wrong-display + 18 display-paired code-not-in-VS + 15 slicing-not-evaluable (templateType) + 11 unresolvable (10 example refs + 1 dangling consent_category CS) + 5 missing publisher + 1 all-system-VS + 1 CS count + 1 stale-snapshot slice-min + 2 SP id + wrapper-own remainder.
+2026-09-04T10:08:49Z  INFO   5.2  rederivation  goFSH 2.6.1 re-derivation of the ENTIRE release package (+ the CS the package drops, taken from the tag) vs the migrated tree: full diff in rederivation-diff-release-2027.txt (749 lines).
+    Ported to the tree: (1) Einwilligung category block = release-derived (child now DECLARES all 4 slices in one contains incl. resultType/templateType 0..* MS - REQUIRED under parent 2.0.4-rc1, which REMOVED its own category slicing; the release differential's category min 0 is an illegal widening vs core R4 1..* - SUSHI refuses it - so the rule stays dropped and SUSHI derives min 2 from the slice minimums, validation-equivalent to the release's effective constraints); (2) Policy CS display 'IDAT bereitstellen' trailing space removed (release-faithful); (3) Policy VS description adopted byte-exact from the release; (4) parent pin sushi-config -> 2.0.4-rc1-snapshots + scripts/CI comments. KEPT deliberately (each ledgered): harmonized resource versions 2027.0.0-ballot.rc1 (standing user order + Governance §4.5; release keeps 1.0.x/1.1.0), InstanceOf-base+meta.profile example form (SUSHI slice-append gotcha), canonical-tail SP ids (release ships none), example display harmonization + CS counts 124/21 + Einwilligung_1 system fix (= the fix-pass; release still broken), publisher metadata via sushi-config.
+2026-09-04T10:08:49Z  INFO   5.4  guide-delta  guide 2027.0.0-ballot.rc1 vs 2026.0.0: 18/18 pages re-harvested; substantive deltas ported into the mapped pages (4 port agents + EN mirror):
+    code-systems.md: Policy narrative restructured into 4 subsections + provision XML example + 2 example tables (normalized); Policy TABLE row-identical. changes.md: upstream's own Release-Notes section added. index.md: metadata Datum 03.09.2026, Status draft (guide narrative; resources stay active - upstream-internal inconsistency recorded). Einwilligung intro-note: 2 table-row label fixes from the new guide (Consent.category + resultType.coding mislabel). Provenance/DocumentReference intros: narrative unchanged (deltas were artefact-view only); their never-migrated 'Unterschiede zum Basis-Profil' tables ADDED as completeness fix (2026 gap). NEW upstream guide defects recorded: 2 Consent example renders broken (renamed subjects Example-MII-Consent-Einwilligung / -ResultType-ConsentStatus not resolvable), Provenance example render still broken, guide prose still says 'mindestens zwei Categories' while its own tree shows min 1.

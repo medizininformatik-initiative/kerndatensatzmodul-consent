@@ -1,4 +1,4 @@
-<!-- Harvested from https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent?version=2026.0.0 on 2026-08-31 by scripts/guide-harvest.sh (spec 5.1d). -->
+<!-- Harvested from https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent?version=2027.0.0-ballot.rc1 on 2026-09-04 by scripts/guide-harvest.sh (spec 5.1d). -->
 <!-- Source of record: the Simplifier-rendered guide. Links and images are still absolute to simplifier.net and the page is not yet mapped onto the template page set (spec 9). TODO:REVIEW -->
 
 ## Kerndatensatz-Modul Consent
@@ -9,17 +9,17 @@ Die vorliegende Spezifikation beschreibt die FHIR-Repräsentation des Kerndatens
 
 | --- | --- |
 
-| Datum | 18.12.2025 |
+| Datum | 03.09.2026 |
 
-| Version | 2026.0.0 |
+| Version | 2027.0.0-ballot.rc1 |
 
-| Status | active |
+| Status | draft |
 
 | Realm | DE |
 
 ### Inhaltsverzeichnis
 
-[MIIIGModulConsent](https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent?version=2026.0.0)[Release Notes](https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/Release-Notes?version=2026.0.0)[Beschreibung Modul Consent](https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/Beschreibung-Modul-Consent?version=2026.0.0)[Kontext im Gesamtprojekt / Bezüge zu anderen Modulen](https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/KontextimGesamtprojektBezgezuanderenModulen?version=2026.0.0)[Referenzen](https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/Referenzen?version=2026.0.0)[Anwendungsfälle / Informationsmodell](https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/AnwendungsflleInformationsmodell?version=2026.0.0)[Beschreibung von Szenarien für die Anwendung des Moduls](https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/AnwendungsflleInformationsmodell/BeschreibungvonSzenarienfrdieAnwendungdesModuls?version=2026.0.0)[Datensätze inkl. Beschreibungen](https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/AnwendungsflleInformationsmodell/Datenstzeinkl.Beschreibungen?version=2026.0.0)[UML](https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/AnwendungsflleInformationsmodell/UML?version=2026.0.0)[Fragebögen](https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/AnwendungsflleInformationsmodell/Fragebgen?version=2026.0.0)[Technische Implementierung](https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/TechnischeImplementierung?version=2026.0.0)[FHIR Profile](https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/TechnischeImplementierung/FHIRProfile?version=2026.0.0)[Terminologien](https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/TechnischeImplementierung/Terminologien?version=2026.0.0)
+[MIIIGModulConsent](https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent?version=2027.0.0-ballot.rc1)[Release Notes](https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/Release-Notes?version=2027.0.0-ballot.rc1)[Beschreibung Modul Consent](https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/Beschreibung-Modul-Consent?version=2027.0.0-ballot.rc1)[Kontext im Gesamtprojekt / Bezüge zu anderen Modulen](https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/KontextimGesamtprojektBezgezuanderenModulen?version=2027.0.0-ballot.rc1)[Referenzen](https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/Referenzen?version=2027.0.0-ballot.rc1)[Anwendungsfälle / Informationsmodell](https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/AnwendungsflleInformationsmodell?version=2027.0.0-ballot.rc1)[Beschreibung von Szenarien für die Anwendung des Moduls](https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/AnwendungsflleInformationsmodell/BeschreibungvonSzenarienfrdieAnwendungdesModuls?version=2027.0.0-ballot.rc1)[Datensätze inkl. Beschreibungen](https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/AnwendungsflleInformationsmodell/Datenstzeinkl.Beschreibungen?version=2027.0.0-ballot.rc1)[UML](https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/AnwendungsflleInformationsmodell/UML?version=2027.0.0-ballot.rc1)[Fragebögen](https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/AnwendungsflleInformationsmodell/Fragebgen?version=2027.0.0-ballot.rc1)[Technische Implementierung](https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/TechnischeImplementierung?version=2027.0.0-ballot.rc1)[FHIR Profile](https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/TechnischeImplementierung/FHIRProfile?version=2027.0.0-ballot.rc1)[Terminologien](https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/TechnischeImplementierung/Terminologien?version=2027.0.0-ballot.rc1)
 
 ### Impressum
 

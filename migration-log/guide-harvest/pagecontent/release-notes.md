@@ -1,7 +1,25 @@
-<!-- Harvested from https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/Release-Notes?version=2026.0.0 on 2026-08-31 by scripts/guide-harvest.sh (spec 5.1d). -->
+<!-- Harvested from https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/Release-Notes?version=2027.0.0-ballot.rc1 on 2026-09-04 by scripts/guide-harvest.sh (spec 5.1d). -->
 <!-- Source of record: the Simplifier-rendered guide. Links and images are still absolute to simplifier.net and the page is not yet mapped onto the template page set (spec 9). TODO:REVIEW -->
 
 ## Release Notes
+
+### Version 2027.0.0-ballot.rc1
+
+Datum 03.09.2026
+
+- Policies SNID korrigiert #121
+
+- Policy Labels ACRIBIS korrigiert #129
+
+- MIIConsentVersionModuleCodeSystem: BC Varianten für Vertretende hinzugefügt #127
+
+- Validierungs- und Abhängigkeits-Probleme ( `consent.category` Slices) behoben #124, #119
+
+- CodeSystem in Beispielen korrigiert #113
+
+- sprachliche Verbesserung zur Beschreibung der Level #112
+
+**Full Changelog**: [https://github.com/medizininformatik-initiative/kerndatensatzmodul-consent/compare/2026.0.0...2027.0.0-ballot.rc1](https://github.com/medizininformatik-initiative/kerndatensatzmodul-consent/compare/2026.0.0...2027.0.0-ballot.rc1)
 
 ### Version 2026.0.0
 

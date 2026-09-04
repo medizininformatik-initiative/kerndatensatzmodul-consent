@@ -306,6 +306,59 @@ Verdicts: **IDENTISCH** = matches the source · **DIVERGIERT** = differs, named 
 
 **Inputs:** target `.` · source `/private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/recon/source-tag` · rendered `/private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/target/output` · log `migration-log/run.log`
 
+## Fresh migration onto the OFFICIAL release 2027.0.0-ballot.rc1 (2026-09-04)
+
+**Trigger (operator order):** upstream published the official release
+[2027.0.0-ballot.rc1](https://github.com/medizininformatik-initiative/kerndatensatzmodul-consent/releases/tag/2027.0.0-ballot.rc1)
+(tag `2027.0.0-ballot.rc1` = `508a666`, published 2026-09-03) + the Simplifier package
+`de.medizininformatikinitiative.kerndatensatz.consent 2027.0.0-ballot.rc1` + guide version
+2027.0.0-ballot.rc1. The previous branch (based on release 2026.0.0 + incorporated develop delta)
+was renamed to `migration/2027.0.0-ballot.rc1-template-v0.13.2-obsolete` (its PR #131 auto-closed
+by the rename), and THIS branch re-bases the migration content on the official release artifacts.
+
+* **Repo tag == develop@744f7ba, byte-identical** (0 files differ) — the develop incorporation of
+  2026-09-01 anticipated the release content exactly. The fresh work therefore re-derived
+  everything from the RELEASE PACKAGE (goFSH 2.6.1 over the shipped tgz; full FSH diff:
+  `rederivation-diff-release-2027.txt`) and the new guide version (18/18 pages re-harvested,
+  now the run-of-record under `guide-harvest/`), and re-pinned the parent to the release's
+  **de.einwilligungsmanagement 2.0.4-rc1** (`#2.0.4-rc1-snapshots`, 21/21 generated —
+  `parent-snapshots-204rc1.log`).
+* **Parent 2.0.4-rc1 REMOVED its own `Consent.category` slicing** (differential now carries a bare
+  MS `category`; new LegalBasis CS/VS added). The child profile therefore now DECLARES all four
+  slices itself (release-derived unified `contains` incl. `resultType`/`templateType` `0..* MS`).
+  The release differential's `category min 0` is an illegal widening vs core R4 (`1..*`) — SUSHI
+  refuses it; the min is inherited and SUSHI derives `min 2` from the slice minimums —
+  validation-equivalent to the release's effective constraints.
+* **BEFORE validator runs on the release package as shipped** (operator order): (a) validator_cli
+  6.10.0 over the 6 packaged examples: **51 error lines**
+  (`before-package-validation-2027.0.0-ballot.rc1.txt`); (b) IG-Publisher 2.3.2 wrapper over the
+  package contents: **err = 90, warn = 69** (`qa-baseline-release-package.txt`; wrapper config
+  under `qa-baseline-wrapper/` — SP ids minted as canonical tails and the module's `special-url`
+  mirrored, so wrapper construction does not pollute the baseline; 1 residual wrapper-own
+  dependsOn error is excluded from all comparisons).
+* **Upstream findings, release-package level** (run.log 2.1.1 carries the full list): package
+  drops the VersionModules CS its own examples require; all 6 SearchParameters ship without `id`;
+  the baked Einwilligung snapshot is stale (old `loinc` slice) and contradicts its own
+  differential; `package.json` lacks `canonical`; per-resource versions stay 1.0.x/1.1.0 against
+  KDS-Governance §4.5; example 89f494a3 still references the nonexistent `consent_category` CS;
+  CS counts still wrong (101/20); conformance resources lack `publisher`. Guide level: two Consent
+  example renders now broken (renamed render subjects), Provenance example render still broken.
+* **Guide delta ported** (run.log 5.4): restructured Policy narrative (4 new subsections +
+  provision XML example) into `code-systems.md`; upstream's own Release Notes into `changes.md`;
+  metadata/date updates into `index.md`; two table-row label fixes into the Einwilligung
+  intro-note; the never-migrated "Unterschiede zum Basis-Profil" tables added to the
+  Provenance/DocumentReference intro-notes (2026 completeness gap). EN mirror updated in the same
+  pass. The vendored `parent-snapshots.sh` gained a measured fix (dir→tgz for `-ig`; NPE on
+  canonical-less package.json) — to be carried upstream to agent-skills.
+* **Deliberate divergences from the shipped package, each ledgered** (run.log 5.2): harmonized
+  resource versions `2027.0.0-ballot.rc1` (standing operator order + Governance §4.5; the release
+  keeps per-resource 1.0.x/1.1.0), `InstanceOf`-base + `meta.profile` example form (SUSHI
+  slice-append gotcha), canonical-tail SP ids (release ships none), example display
+  harmonization + CS counts 124/21 + the 89f494a3 system fix (the release still carries those
+  defects), `publisher` on every resource via sushi-config.
+* **AFTER build + BEFORE/AFTER delta + fix pass:** see the run.log entries following 1.2/5.2/5.4
+  and the QA-delta note below this section (appended after the build).
+
 ## Sign-off (generated checklist)
 
 ### QA checklist (GENERATED by qa-checklist.py — do not retype; regenerate instead)

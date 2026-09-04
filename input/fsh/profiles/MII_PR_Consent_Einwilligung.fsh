@@ -32,22 +32,23 @@ Description: "Dieses Profil beschreibt eine Einwilligung in der Medizininformati
 * category ^slicing.discriminator.type = #pattern
 * category ^slicing.discriminator.path = "$this"
 * category ^slicing.rules = #open
-* category[consentCategory] 1..1 MS
+* category contains
+    consentCategory 1..1 MS and
+    mii 1..1 MS and
+    resultType 0..* MS and
+    templateType 0..* MS
 * category[consentCategory] = $loinc#57016-8
 * category[consentCategory].coding 1..1 MS
 * category[consentCategory].coding.system 1.. MS
 * category[consentCategory].coding.code 1.. MS
-* category contains mii 1..1 MS
 * category[mii] = MIIConsentVersionModuleCodeSystem#2.16.840.1.113883.3.1937.777.24.2.184
 * category[mii].coding 1..1 MS
 * category[mii].coding.system 1.. MS
 * category[mii].coding.code 1.. MS
-* category[resultType] MS
 * category[resultType] from ConsentManagementResultType (required)
 * category[resultType].coding 1.. MS
 * category[resultType].coding.system 1.. MS
 * category[resultType].coding.code 1.. MS
-* category[templateType] MS
 * category[templateType] from ConsentManagementTemplateType (extensible)
 * category[templateType].coding 1.. MS
 * category[templateType].coding.system 1.. MS

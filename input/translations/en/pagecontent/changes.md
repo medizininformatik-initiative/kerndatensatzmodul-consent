@@ -87,6 +87,33 @@ section.</p>
      Historische Abschnitte behalten das Format der Quelle (keine nachträgliche
      Keep-a-Changelog-Umgruppierung veröffentlichter Einträge). -->
 
+#### Fresh migration onto the official release 2027.0.0-ballot.rc1 (2026-09-04)
+
+Date 04.09.2026
+
+* **Changed** — this branch's content basis is now the **official release
+  [2027.0.0-ballot.rc1](https://github.com/medizininformatik-initiative/kerndatensatzmodul-consent/releases/tag/2027.0.0-ballot.rc1)**
+  (tag `508a666`, published 03.09.2026; the repository tree is byte-identical to
+  the previously incorporated develop state `744f7ba` — the content statements
+  of the develop section below remain valid unchanged). Complete re-derivation
+  of all resources from the release package (goFSH; evidence:
+  `migration-log/rederivation-diff-release-2027.txt`) and delta port of the
+  guide at version 2027.0.0-ballot.rc1 (18/18 pages; among others the
+  restructured policy explanations on the CodeSystem page).
+* **Changed** — parent package pin raised to `de.einwilligungsmanagement`
+  **2.0.4-rc1** (the release package's pin). The parent profile removed its own
+  `Consent.category` slicing in 2.0.4; this profile now declares the four
+  slices (consentCategory/mii/resultType/templateType) itself — validation
+  semantics unchanged.
+* **Fixed** — the "differences to the base profile" tables of the Provenance
+  and DocumentReference pages, dropped with the "Darstellung" section in the
+  2026 migration, have been added to the profile intro notes.
+* Deliberate, logged divergences from the shipped release package (details:
+  `migration-log/run.log`, entry 5.2): harmonized artifact versions, canonical
+  SearchParameter ids (the package ships none), corrected example displays and
+  CodeSystem counts, `publisher` metadata, and the Version-Modules CodeSystem
+  the package is missing.
+
 #### develop incorporation (state 744f7ba, 2026-08-21) — part of 2027.0.0-ballot.rc1
 
 Date 01.09.2026
@@ -117,6 +144,31 @@ Date 31.08.2026
   and examples unchanged; evidence: `migration-log/` on this branch). All
   artefact versions harmonized to the package version 2027.0.0-ballot.rc1
   (previously divergent per artefact, e.g. 1.0.9/1.6.0/1.1.0).
+
+<!-- Upstream release notes for version 2027.0.0-ballot.rc1, verbatim from the
+     source (https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/Release-Notes?version=2027.0.0-ballot.rc1,
+     harvest 2026-09-04). Describes the same substantive changes as the
+     "develop incorporation" section above, from the upstream perspective with
+     issue numbers; heading suffixed with "(Source Release Notes)" to
+     distinguish it from the migration section of the same version. -->
+
+#### Version 2027.0.0-ballot.rc1 (Source Release Notes)
+
+Date 03.09.2026
+
+- Policies SNID corrected #121
+
+- Policy labels ACRIBIS corrected #129
+
+- MIIConsentVersionModuleCodeSystem: BC variants for representatives added #127
+
+- Validation and dependency problems (`consent.category` slices) fixed #124, #119
+
+- CodeSystem in examples corrected #113
+
+- linguistic improvement to the description of the levels #112
+
+**Full Changelog**: [https://github.com/medizininformatik-initiative/kerndatensatzmodul-consent/compare/2026.0.0...2027.0.0-ballot.rc1](https://github.com/medizininformatik-initiative/kerndatensatzmodul-consent/compare/2026.0.0...2027.0.0-ballot.rc1)
 
 #### Version 2026.0.0
 

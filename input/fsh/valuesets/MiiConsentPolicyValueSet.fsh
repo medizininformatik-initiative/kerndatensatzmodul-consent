@@ -1,9 +1,7 @@
 ValueSet: MiiConsentPolicyValueSet
 Id: 2.16.840.1.113883.3.1937.777.24.11.36--20230331232804
 Title: "MII Consent: Policy ValueSet"
-Description: """
-
-**Disclaimer** 
+Description: """**Disclaimer** 
 
  (Punkte übernommen aus der Policy Liste ([MII SharePoint, TF Consent Umsetzung](https://tmfev.sharepoint.com/:f:/r/sites/tmf/mi-i/Taskforce%20Consent%20Umsetzung/02_Dokumente/Policies?csf=1&web=1&e=C0xLim "")))
 1. Diese Liste fasst erforderliche
@@ -28,9 +26,7 @@ Um die in diesem ValueSet enthaltenen Codes in IHE BPPC verwenden zu können, is
  Beispiel 2:  
 
  2.16.840.1.113883.3.1937.777.24.5.3.4.2
-                    bedeutet, dass der Patient der Policy IDAT_zusammenfuehren_Dritte nicht zugestimmt hat.
-
-"""
+                    bedeutet, dass der Patient der Policy IDAT_zusammenfuehren_Dritte nicht zugestimmt hat."""
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
 * ^extension.url = "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod"
 * ^extension.valuePeriod.start = "2023-03-31T23:28:04+02:00"

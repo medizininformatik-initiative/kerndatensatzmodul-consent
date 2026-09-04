@@ -184,7 +184,7 @@ jobs:
 
       - name: Generate parent snapshots (de.einwilligungsmanagement has none upstream)
         # Migration decision D-4 (Gate A): the parent package ships 0 snapshots
-        # in 2.0.2/2.0.3; SUSHI cannot import it. scripts/generate-parent-
+        # in 2.0.2/2.0.3/2.0.4-rc1; SUSHI cannot import it. scripts/generate-parent-
         # snapshots.sh drives the official HL7 generator (pinned
         # validator_cli.jar) and installs the rebuilt cache entry
         # de.einwilligungsmanagement#2.0.2-snapshots that sushi-config pins.

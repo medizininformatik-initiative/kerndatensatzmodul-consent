@@ -8,8 +8,9 @@
 > Preservation-Harvest: Branch `evidence/2026-08-31-plan-recon` in der
 > [FGDH-Sandbox](https://github.com/forschungsgruppe-digital-health/mii-kds-consent-ig-inoffiziell).
 
-Migration des **KDS Modul Consent** (Quelle: Release 2026.0.0, Tag `2026.0.0`
-= `792f9f3e`, plus inkorporiertes develop-Delta bis `744f7ba`) auf das
+Migration des **KDS Modul Consent** (Quelle: das OFFIZIELLE Release
+[2027.0.0-ballot.rc1](https://github.com/medizininformatik-initiative/kerndatensatzmodul-consent/releases/tag/2027.0.0-ballot.rc1),
+Tag `2027.0.0-ballot.rc1` = `508a666`) auf das
 [mii-kds-module-template](https://github.com/medizininformatik-initiative/mii-kds-module-template)
 **v0.13.2**, durchgeführt mit dem Skill `mii-ig-migration` v0.25.0
 ([agent-skills](https://github.com/forschungsgruppe-digital-health/agent-skills)).
@@ -19,9 +20,9 @@ Identitäts-Ledger, Harvest-Manifest, QA-Baseline, Migrationsbericht).
 | Koordinate | Wert |
 | --- | --- |
 | Canonical | `https://www.medizininformatik-initiative.de/fhir/modul-consent` |
-| Package | `de.medizininformatikinitiative.kerndatensatz.consent` 2027.0.0-ballot.rc1 (Ballot-Kandidat; Inhalt = Release 2026.0.0 + develop-Delta bis `744f7ba`) |
+| Package | `de.medizininformatikinitiative.kerndatensatz.consent` 2027.0.0-ballot.rc1 (Ballot-Kandidat; Inhalt = das offizielle Release-Paket 2027.0.0-ballot.rc1, Tag `508a666`) |
 | FHIR | R4 (4.0.1) |
-| Quell-IG (Simplifier, gepinnt) | [MII IG Modul Consent 2026.0.0](https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent?version=2026.0.0) |
+| Quell-IG (Simplifier, gepinnt) | [MII IG Modul Consent 2027.0.0-ballot.rc1](https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent?version=2027.0.0-ballot.rc1) |
 | Sprache | **DE-first**: Deutsch = Standardsprache, Englisch = Übersetzung unter `input/translations/en/` (Entscheidung D-3) |
 | Lizenz | CC BY 4.0 (Quelle: LICENSE der Quelle, byte-getreu übernommen) |
 

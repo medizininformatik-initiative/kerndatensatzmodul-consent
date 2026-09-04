@@ -2,9 +2,9 @@
   "resourceType": "ImplementationGuide",
   "id": "qa-baseline-wrapper",
   "url": "https://www.medizininformatik-initiative.de/fhir/modul-consent/ImplementationGuide/qa-baseline-wrapper",
-  "version": "2026.0.0",
+  "version": "2027.0.0-ballot.rc1",
   "name": "QABaselineWrapperConsent",
-  "title": "QA baseline wrapper - MII KDS Modul Consent 2026.0.0 (throwaway)",
+  "title": "QA baseline wrapper - MII KDS Modul Consent release package 2027.0.0-ballot.rc1 (throwaway)",
   "status": "draft",
   "packageId": "de.medizininformatikinitiative.kerndatensatz.consent.qabaseline",
   "fhirVersion": [
@@ -14,11 +14,25 @@
     {
       "uri": "https://simplifier.net/packages/de.einwilligungsmanagement",
       "packageId": "de.einwilligungsmanagement",
-      "version": "2.0.2"
+      "version": "2.0.4-rc1"
     }
   ],
   "definition": {
     "resource": [
+      {
+        "reference": {
+          "reference": "CodeSystem/2.16.840.1.113883.3.1937.777.24.5.2--20210423105554"
+        },
+        "name": "CodeSystem-MiiConsentAnswerCodeSystem",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/2.16.840.1.113883.3.1937.777.24.5.3--20251211153003"
+        },
+        "name": "CodeSystem-MiiConsentPolicyCodeSystem",
+        "exampleBoolean": false
+      },
       {
         "reference": {
           "reference": "DocumentReference/8a3d1799-2463-405e-b49c-6a16c8692b01"
@@ -31,6 +45,13 @@
           "reference": "Consent/34150a23-b1c8-404f-874f-e042a30435d2"
         },
         "name": "Example_MII_Consent_Einwilligung",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Consent/89f494a3-cd75-44f5-a78a-581dfdd47a94"
+        },
+        "name": "Example_MII_Consent_Einwilligung_1",
         "exampleBoolean": true
       },
       {
@@ -58,93 +79,92 @@
         "reference": {
           "reference": "StructureDefinition/56375452-bfa1-4111-af7c-5b5ba9a1857c"
         },
-        "name": "Profile_MII_Consent_DocumentReference"
+        "name": "Profile_MII_Consent_DocumentReference",
+        "exampleBoolean": false
       },
       {
         "reference": {
           "reference": "StructureDefinition/e0e166b4-0f77-478d-9062-de0034d98ce0"
         },
-        "name": "Profile_MII_Consent_Einwilligung"
+        "name": "Profile_MII_Consent_Einwilligung",
+        "exampleBoolean": false
       },
       {
         "reference": {
           "reference": "StructureDefinition/f675b1e8-9f3f-44e8-bb59-9681f78eb464"
         },
-        "name": "Profile_MII_Consent_Provenance"
+        "name": "Profile_MII_Consent_Provenance",
+        "exampleBoolean": false
       },
       {
         "reference": {
           "reference": "SearchParameter/mii-sp-consent-policyuri"
         },
-        "name": "SearchParameter_MII_Consent_Einwilligung_policyUri"
+        "name": "SearchParameter_MII_Consent_Einwilligung_policyUri",
+        "exampleBoolean": false
       },
       {
         "reference": {
           "reference": "SearchParameter/mii-sp-consent-provisioncode"
         },
-        "name": "SearchParameter_MII_Consent_Einwilligung_provisionCode"
+        "name": "SearchParameter_MII_Consent_Einwilligung_provisionCode",
+        "exampleBoolean": false
       },
       {
         "reference": {
           "reference": "SearchParameter/mii-sp-consent-provisionperiod"
         },
-        "name": "SearchParameter_MII_Consent_Einwilligung_provisionPeriod"
+        "name": "SearchParameter_MII_Consent_Einwilligung_provisionPeriod",
+        "exampleBoolean": false
       },
       {
         "reference": {
           "reference": "SearchParameter/mii-sp-consent-provisioncodeperiod"
         },
-        "name": "SearchParameter_MII_Consent_Einwilligung_provisionProvisionCodePeriod"
+        "name": "SearchParameter_MII_Consent_Einwilligung_provisionProvisionCodePeriod",
+        "exampleBoolean": false
       },
       {
         "reference": {
           "reference": "SearchParameter/mii-sp-consent-provisioncodetype"
         },
-        "name": "SearchParameter_MII_Consent_Einwilligung_provisionProvisionCodeType"
+        "name": "SearchParameter_MII_Consent_Einwilligung_provisionProvisionCodeType",
+        "exampleBoolean": false
       },
       {
         "reference": {
           "reference": "SearchParameter/mii-sp-consent-provisiontype"
         },
-        "name": "SearchParameter_MII_Consent_Einwilligung_provisionType"
-      },
-      {
-        "reference": {
-          "reference": "CodeSystem/2.16.840.1.113883.3.1937.777.24.5.2--20210423105554"
-        },
-        "name": "CodeSystem-MiiConsentAnswerCodeSystem"
-      },
-      {
-        "reference": {
-          "reference": "CodeSystem/2.16.840.1.113883.3.1937.777.24.5.3--20251211153003"
-        },
-        "name": "CodeSystem-MiiConsentPolicyCodeSystem"
-      },
-      {
-        "reference": {
-          "reference": "CodeSystem/mii-cs-consent-version-modules"
-        },
-        "name": "CodeSystem-MiiConsentVersionModuleCodeSystem"
+        "name": "SearchParameter_MII_Consent_Einwilligung_provisionType",
+        "exampleBoolean": false
       },
       {
         "reference": {
           "reference": "ValueSet/2.16.840.1.113883.3.1937.777.24.11.30--20210323234509"
         },
-        "name": "ValueSet-MiiConsentAnswerValueSet"
+        "name": "ValueSet-MiiConsentAnswerValueSet",
+        "exampleBoolean": false
       },
       {
         "reference": {
           "reference": "ValueSet/2.16.840.1.113883.3.1937.777.24.11.36--20230331232804"
         },
-        "name": "ValueSet-MiiConsentPolicyValueSet"
+        "name": "ValueSet-MiiConsentPolicyValueSet",
+        "exampleBoolean": false
       },
       {
         "reference": {
           "reference": "ValueSet/88464c5b-5338-4c2b-9c07-b42fef2ada64"
         },
-        "name": "ValueSet-MiiConsentSignatureTypes"
+        "name": "ValueSet-MiiConsentSignatureTypes",
+        "exampleBoolean": false
       }
     ],
+    "page": {
+      "nameUrl": "index.html",
+      "title": "Home",
+      "generation": "markdown"
+    },
     "parameter": [
       {
         "code": "copyrightyear",
@@ -157,6 +177,14 @@
       {
         "code": "path-resource",
         "value": "input/resources"
+      },
+      {
+        "code": "special-url",
+        "value": "urn:oid:2.16.840.1.113883.3.1937.777.24.5.2"
+      },
+      {
+        "code": "special-url",
+        "value": "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"
       }
     ]
   }

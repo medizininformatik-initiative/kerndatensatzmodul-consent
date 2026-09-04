@@ -7,14 +7,16 @@
      https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/Beschreibung-Modul-Consent?version=2026.0.0
      Das Simplifier-Inhaltsverzeichnis der Quellseite wurde NICHT übertragen —
      der IG Publisher erzeugt das Inhaltsverzeichnis (toc.html) selbst. -->
+<!-- Delta-Abgleich mit dem Quell-Guide ?version=2027.0.0-ballot.rc1
+     (Harvest 2026-09-04): Metadaten-Tabelle (Datum, Status) übernommen. -->
 
 Die vorliegende Spezifikation beschreibt die FHIR-Repräsentation des Kerndatensatz Moduls 'Consent' der Medizininformatik-Initiative. Im Folgenden werden die Use-Cases des Moduls sowie die dazugehörigen FHIR-Profile und Terminologie-Ressourcen in ihrer verbindlichen Form beschrieben.
 
 | Veröffentlichung / Status |  |
 | --- | --- |
-| Datum | 31.08.2026 |
+| Datum | 03.09.2026 |
 | Version | 2027.0.0-ballot.rc1 |
-| Status | active |
+| Status | draft |
 | Realm | DE |
 
 
