@@ -1,6 +1,6 @@
 Profile: MII_PR_Consent_Provenance
 Parent: ConsentManagementProvenance
-Id: f675b1e8-9f3f-44e8-bb59-9681f78eb464
+Id: mii-pr-consent-provenance
 Title: "Profile - MI-I - Consent - Provenance"
 Description: "Dieses Profil beschreibt Herkunftsinformationen zu Einwilligungen in der Medizininformatik-Initiative."
 * ^url = "https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-provenance"

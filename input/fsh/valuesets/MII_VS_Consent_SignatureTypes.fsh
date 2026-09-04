@@ -1,5 +1,5 @@
 ValueSet: MII_VS_Consent_SignatureTypes
-Id: 88464c5b-5338-4c2b-9c07-b42fef2ada64
+Id: mii-vs-consent-signaturetypes
 Title: "MII Consent: Signature Types"
 Description: "Dieses ValueSet enthält die zulässigen Werte für den Signaturtyp im Kontext des MI-I Consent."
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"

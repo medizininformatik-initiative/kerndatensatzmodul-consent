@@ -14,5 +14,5 @@ Basierend auf den [Empfehlungen](https://ig.fhir.de/einwilligungsmanagement/stab
 
 | **FHIR-Element** | **Erklärung** |
 | --- | --- |
-| Provenance.entity.what | Soll ein Dokumenten-Scan angehangen werden, muss die referenzierte Resource vom Profiltyp [DocumentReference](StructureDefinition-56375452-bfa1-4111-af7c-5b5ba9a1857c.html) sein, Must-support |
-| Provenance.entity.signature.type | Soll eine base64-codierte Unterschrift angehangen werden, muss die Art der Unterschrift gemäß [MII\_VS\_Consent\_SignatureTypes](ValueSet-88464c5b-5338-4c2b-9c07-b42fef2ada64.html) erfolgen, Must-support |
+| Provenance.entity.what | Soll ein Dokumenten-Scan angehangen werden, muss die referenzierte Resource vom Profiltyp [DocumentReference](StructureDefinition-mii-pr-consent-documentreference.html) sein, Must-support |
+| Provenance.entity.signature.type | Soll eine base64-codierte Unterschrift angehangen werden, muss die Art der Unterschrift gemäß [MII\_VS\_Consent\_SignatureTypes](ValueSet-mii-vs-consent-signaturetypes.html) erfolgen, Must-support |
