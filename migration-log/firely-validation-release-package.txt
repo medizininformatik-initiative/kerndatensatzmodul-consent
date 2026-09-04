@@ -1,0 +1,120 @@
+===== Example_MII_Consent_DocumentReference.json
+Warning: Terminology service failed while validating code 'application/pdf': Operation validate code failed: creating the required expansion failed with message "The ValueSet expander cannot find codesystem 'urn:ietf:bcp:13', so the expansion cannot be completed.".
+At: DocumentReference.content[0].attachment[0].contentType[0]
+http://hl7.org/fhir/dotnet-api-operation-outcome|6006
+
+Result: VALID
+===== Example_MII_Consent_Einwilligung.json
+Warning: Code '2.16.840.1.113883.3.1937.777.24.5.3.7' from system 'urn:oid:2.16.840.1.113883.3.1937.777.24.5.3' has incorrect display 'MDAT speichern verarbeiten', should be 'MDAT speichern, verarbeiten'
+At: Consent.provision[0].provision[1].code[0]
+http://hl7.org/fhir/dotnet-api-operation-outcome|6006
+
+Warning: Code '2.16.840.1.113883.3.1937.777.24.5.3.8' from system 'urn:oid:2.16.840.1.113883.3.1937.777.24.5.3' has incorrect display 'MDAT wissenschaftlich nutzen EU DSGVO NIVEAU', should be 'MDAT wissenschaftlich nutzen'
+At: Consent.provision[0].provision[2].code[0]
+http://hl7.org/fhir/dotnet-api-operation-outcome|6006
+
+Warning: Code '2.16.840.1.113883.3.1937.777.24.5.3.22' from system 'urn:oid:2.16.840.1.113883.3.1937.777.24.5.3' has incorrect display 'BIOMAT wissenschaftlich nutzen EU DSGVO NIVEAU', should be 'BIOMAT wissenschaftlich nutzen'
+At: Consent.provision[0].provision[5].code[0]
+http://hl7.org/fhir/dotnet-api-operation-outcome|6006
+
+Result: VALID
+===== Example_MII_Consent_Einwilligung_1.json
+Error: Instance count is 0, which is not within the specified cardinality of 1..1 (for slice mii)
+At: Consent.category
+http://hl7.org/fhir/dotnet-api-operation-outcome|1028
+
+Warning: Code '2.16.840.1.113883.3.1937.777.24.5.3.6' from system 'urn:oid:2.16.840.1.113883.3.1937.777.24.5.3' has incorrect display 'MDAT_erheben', should be 'MDAT erheben'
+At: Consent.provision[0].provision[0].code[0]
+http://hl7.org/fhir/dotnet-api-operation-outcome|6006
+
+Warning: Code '2.16.840.1.113883.3.1937.777.24.5.3.7' from system 'urn:oid:2.16.840.1.113883.3.1937.777.24.5.3' has incorrect display 'MDAT_speichern_verarbeiten', should be 'MDAT speichern, verarbeiten'
+At: Consent.provision[0].provision[0].code[1]
+http://hl7.org/fhir/dotnet-api-operation-outcome|6006
+
+Warning: Code '2.16.840.1.113883.3.1937.777.24.5.3.19' from system 'urn:oid:2.16.840.1.113883.3.1937.777.24.5.3' has incorrect display 'BIOMAT_erheben', should be 'BIOMAT erheben'
+At: Consent.provision[0].provision[0].code[2]
+http://hl7.org/fhir/dotnet-api-operation-outcome|6006
+
+Warning: Code '2.16.840.1.113883.3.1937.777.24.5.3.8' from system 'urn:oid:2.16.840.1.113883.3.1937.777.24.5.3' has incorrect display 'MDAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU', should be 'MDAT wissenschaftlich nutzen'
+At: Consent.provision[0].provision[1].code[0]
+http://hl7.org/fhir/dotnet-api-operation-outcome|6006
+
+Warning: Code '2.16.840.1.113883.3.1937.777.24.5.3.20' from system 'urn:oid:2.16.840.1.113883.3.1937.777.24.5.3' has incorrect display 'BIOMAT_lagern_verarbeiten', should be 'BIOMAT lagern verarbeiten'
+At: Consent.provision[0].provision[2].code[0]
+http://hl7.org/fhir/dotnet-api-operation-outcome|6006
+
+Warning: Code '2.16.840.1.113883.3.1937.777.24.5.3.22' from system 'urn:oid:2.16.840.1.113883.3.1937.777.24.5.3' has incorrect display 'BIOMAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU', should be 'BIOMAT wissenschaftlich nutzen'
+At: Consent.provision[0].provision[2].code[1]
+http://hl7.org/fhir/dotnet-api-operation-outcome|6006
+
+Result: INVALID
+===== Example_MII_Consent_Einwilligung_2.json
+Warning: Code '2.16.840.1.113883.3.1937.777.24.5.3.6' from system 'urn:oid:2.16.840.1.113883.3.1937.777.24.5.3' has incorrect display 'MDAT_erheben', should be 'MDAT erheben'
+At: Consent.provision[0].provision[0].code[0]
+http://hl7.org/fhir/dotnet-api-operation-outcome|6006
+
+Warning: Code '2.16.840.1.113883.3.1937.777.24.5.3.7' from system 'urn:oid:2.16.840.1.113883.3.1937.777.24.5.3' has incorrect display 'MDAT_speichern_verarbeiten', should be 'MDAT speichern, verarbeiten'
+At: Consent.provision[0].provision[0].code[1]
+http://hl7.org/fhir/dotnet-api-operation-outcome|6006
+
+Warning: Code '2.16.840.1.113883.3.1937.777.24.5.3.19' from system 'urn:oid:2.16.840.1.113883.3.1937.777.24.5.3' has incorrect display 'BIOMAT_erheben', should be 'BIOMAT erheben'
+At: Consent.provision[0].provision[0].code[2]
+http://hl7.org/fhir/dotnet-api-operation-outcome|6006
+
+Warning: Code '2.16.840.1.113883.3.1937.777.24.5.3.8' from system 'urn:oid:2.16.840.1.113883.3.1937.777.24.5.3' has incorrect display 'MDAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU', should be 'MDAT wissenschaftlich nutzen'
+At: Consent.provision[0].provision[1].code[0]
+http://hl7.org/fhir/dotnet-api-operation-outcome|6006
+
+Warning: Code '2.16.840.1.113883.3.1937.777.24.5.3.20' from system 'urn:oid:2.16.840.1.113883.3.1937.777.24.5.3' has incorrect display 'BIOMAT_lagern_verarbeiten', should be 'BIOMAT lagern verarbeiten'
+At: Consent.provision[0].provision[2].code[0]
+http://hl7.org/fhir/dotnet-api-operation-outcome|6006
+
+Warning: Code '2.16.840.1.113883.3.1937.777.24.5.3.22' from system 'urn:oid:2.16.840.1.113883.3.1937.777.24.5.3' has incorrect display 'BIOMAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU', should be 'BIOMAT wissenschaftlich nutzen'
+At: Consent.provision[0].provision[2].code[1]
+http://hl7.org/fhir/dotnet-api-operation-outcome|6006
+
+Result: VALID
+===== Example_MII_Consent_Provenance.json
+Result: VALID
+===== Example_MII_Consent_ResultType_ConsentStatus.json
+Warning: Code '2.16.840.1.113883.3.1937.777.24.5.3.22' from system 'urn:oid:2.16.840.1.113883.3.1937.777.24.5.3' has incorrect display 'BIOMAT wissenschaftlich nutzen EU DSGVO NIVEAU', should be 'BIOMAT wissenschaftlich nutzen'
+At: Consent.provision[0].provision[2].code[0]
+http://hl7.org/fhir/dotnet-api-operation-outcome|6006
+
+Warning: Code '2.16.840.1.113883.3.1937.777.24.5.3.8' from system 'urn:oid:2.16.840.1.113883.3.1937.777.24.5.3' has incorrect display 'MDAT wissenschaftlich nutzen EU DSGVO NIVEAU', should be 'MDAT wissenschaftlich nutzen'
+At: Consent.provision[0].provision[12].code[0]
+http://hl7.org/fhir/dotnet-api-operation-outcome|6006
+
+Warning: Code '2.16.840.1.113883.3.1937.777.24.5.3.5' from system 'urn:oid:2.16.840.1.113883.3.1937.777.24.5.3' has incorrect display 'IDAT bereitstellen EU DSGVO NIVEAU', should be 'IDAT bereitstellen'
+At: Consent.provision[0].provision[15].code[0]
+http://hl7.org/fhir/dotnet-api-operation-outcome|6006
+
+Result: VALID
+===== Profile_MII_Consent_DocumentReference.json
+Result: VALID
+===== Profile_MII_Consent_Einwilligung.json
+Result: VALID
+===== Profile_MII_Consent_Provenance.json
+Result: VALID
+===== ValueSet-MiiConsentAnswerValueSet.json
+Result: VALID
+===== ValueSet-MiiConsentPolicyValueSet.json
+Result: VALID
+===== ValueSet-MiiConsentSignatureTypes.json
+Result: VALID
+===== CodeSystem-MiiConsentAnswerCodeSystem.json
+Result: VALID
+===== CodeSystem-MiiConsentPolicyCodeSystem.json
+Result: VALID
+===== SearchParameter_MII_Consent_Einwilligung_policyUri.json
+Result: VALID
+===== SearchParameter_MII_Consent_Einwilligung_provisionCode.json
+Result: VALID
+===== SearchParameter_MII_Consent_Einwilligung_provisionPeriod.json
+Result: VALID
+===== SearchParameter_MII_Consent_Einwilligung_provisionProvisionCodePeriod.json
+Result: VALID
+===== SearchParameter_MII_Consent_Einwilligung_provisionProvisionCodeType.json
+Result: VALID
+===== SearchParameter_MII_Consent_Einwilligung_provisionType.json
+Result: VALID
