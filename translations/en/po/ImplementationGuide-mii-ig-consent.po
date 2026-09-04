@@ -76,26 +76,6 @@ msgstr ""
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
-msgid "Beispiel Einwilligungsdomäne (synthetische Studie)"
-msgstr ""
-
-# ImplementationGuide.definition.resource.description
-#: ImplementationGuide.definition.resource.description
-msgid "Synthetische Consent-Domäne (ResearchStudy) als Referenzziel der DomainReference-Extension der Quell-Beispiele."
-msgstr ""
-
-# ImplementationGuide.definition.resource.name
-#: ImplementationGuide.definition.resource.name
-msgid "Beispiel Patient (pseudonym, synthetisch)"
-msgstr ""
-
-# ImplementationGuide.definition.resource.description
-#: ImplementationGuide.definition.resource.description
-msgid "Synthetischer, pseudonymer Patient als Referenzziel der Quell-Beispiele (Consent.patient, DocumentReference.subject, Provenance.signature.who)."
-msgstr ""
-
-# ImplementationGuide.definition.resource.name
-#: ImplementationGuide.definition.resource.name
 msgid "Example-MII-Consent-ResultType-document"
 msgstr ""
 

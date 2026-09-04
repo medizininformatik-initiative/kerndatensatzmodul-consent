@@ -38,6 +38,66 @@
       "context" : "Coding.display",
       "source" : "Germany",
       "target" : null
+    },
+    {
+      "id" : "ValueSet.compose.include.concept.display",
+      "context" : "ValueSet.compose.include.concept.display",
+      "source" : "unbekannt",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "Synonym",
+      "target" : null
+    },
+    {
+      "id" : "ValueSet.compose.include.concept.designation.value",
+      "context" : "ValueSet.compose.include.concept.designation.value",
+      "source" : "unbekannt",
+      "target" : null
+    },
+    {
+      "id" : "ValueSet.compose.include.concept.designation.value",
+      "context" : "ValueSet.compose.include.concept.designation.value",
+      "source" : "unknown",
+      "target" : null
+    },
+    {
+      "id" : "ValueSet.compose.include.concept.display",
+      "context" : "ValueSet.compose.include.concept.display",
+      "source" : "nicht gültig",
+      "target" : null
+    },
+    {
+      "id" : "ValueSet.compose.include.concept.designation.value",
+      "context" : "ValueSet.compose.include.concept.designation.value",
+      "source" : "nicht gültig",
+      "target" : null
+    },
+    {
+      "id" : "ValueSet.compose.include.concept.designation.value",
+      "context" : "ValueSet.compose.include.concept.designation.value",
+      "source" : "not valid",
+      "target" : null
+    },
+    {
+      "id" : "ValueSet.compose.include.concept.display",
+      "context" : "ValueSet.compose.include.concept.display",
+      "source" : "gültig",
+      "target" : null
+    },
+    {
+      "id" : "ValueSet.compose.include.concept.designation.value",
+      "context" : "ValueSet.compose.include.concept.designation.value",
+      "source" : "gültig",
+      "target" : null
+    },
+    {
+      "id" : "ValueSet.compose.include.concept.designation.value",
+      "context" : "ValueSet.compose.include.concept.designation.value",
+      "source" : "valid",
+      "target" : null
     }]
   }]
 }

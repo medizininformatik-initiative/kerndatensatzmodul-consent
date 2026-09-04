@@ -96,30 +96,6 @@
     {
       "id" : "ImplementationGuide.definition.resource.name",
       "context" : "ImplementationGuide.definition.resource.name",
-      "source" : "Beispiel Einwilligungsdomäne (synthetische Studie)",
-      "target" : null
-    },
-    {
-      "id" : "ImplementationGuide.definition.resource.description",
-      "context" : "ImplementationGuide.definition.resource.description",
-      "source" : "Synthetische Consent-Domäne (ResearchStudy) als Referenzziel der DomainReference-Extension der Quell-Beispiele.",
-      "target" : null
-    },
-    {
-      "id" : "ImplementationGuide.definition.resource.name",
-      "context" : "ImplementationGuide.definition.resource.name",
-      "source" : "Beispiel Patient (pseudonym, synthetisch)",
-      "target" : null
-    },
-    {
-      "id" : "ImplementationGuide.definition.resource.description",
-      "context" : "ImplementationGuide.definition.resource.description",
-      "source" : "Synthetischer, pseudonymer Patient als Referenzziel der Quell-Beispiele (Consent.patient, DocumentReference.subject, Provenance.signature.who).",
-      "target" : null
-    },
-    {
-      "id" : "ImplementationGuide.definition.resource.name",
-      "context" : "ImplementationGuide.definition.resource.name",
       "source" : "Example-MII-Consent-ResultType-document",
       "target" : null
     },

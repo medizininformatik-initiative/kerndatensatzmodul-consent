@@ -45,6 +45,76 @@
         <source>Germany</source>
         <target></target>
       </trans-unit>
+      <trans-unit id="ValueSet-2.16.840.1.113883.3.1937.777.24.11.30--20210323234509" resname="ValueSet.compose.include.concept.display">
+             <notes>
+               <note id="n1">ValueSet.compose.include.concept.display</note>
+             </notes>
+        <source>unbekannt</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-2.16.840.1.113883.3.1937.777.24.11.30--20210323234509" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Synonym</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-2.16.840.1.113883.3.1937.777.24.11.30--20210323234509" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">ValueSet.compose.include.concept.designation.value</note>
+             </notes>
+        <source>unbekannt</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-2.16.840.1.113883.3.1937.777.24.11.30--20210323234509" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">ValueSet.compose.include.concept.designation.value</note>
+             </notes>
+        <source>unknown</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-2.16.840.1.113883.3.1937.777.24.11.30--20210323234509" resname="ValueSet.compose.include.concept.display">
+             <notes>
+               <note id="n1">ValueSet.compose.include.concept.display</note>
+             </notes>
+        <source>nicht gültig</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-2.16.840.1.113883.3.1937.777.24.11.30--20210323234509" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">ValueSet.compose.include.concept.designation.value</note>
+             </notes>
+        <source>nicht gültig</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-2.16.840.1.113883.3.1937.777.24.11.30--20210323234509" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">ValueSet.compose.include.concept.designation.value</note>
+             </notes>
+        <source>not valid</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-2.16.840.1.113883.3.1937.777.24.11.30--20210323234509" resname="ValueSet.compose.include.concept.display">
+             <notes>
+               <note id="n1">ValueSet.compose.include.concept.display</note>
+             </notes>
+        <source>gültig</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-2.16.840.1.113883.3.1937.777.24.11.30--20210323234509" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">ValueSet.compose.include.concept.designation.value</note>
+             </notes>
+        <source>gültig</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-2.16.840.1.113883.3.1937.777.24.11.30--20210323234509" resname="ValueSet.compose.include.concept.designation.value">
+             <notes>
+               <note id="n1">ValueSet.compose.include.concept.designation.value</note>
+             </notes>
+        <source>valid</source>
+        <target></target>
+      </trans-unit>
     </body>
   </file>
 </xliff>

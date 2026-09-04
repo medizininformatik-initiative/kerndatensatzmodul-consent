@@ -29,3 +29,53 @@ msgstr ""
 msgid "Germany"
 msgstr ""
 
+# ValueSet.compose.include.concept.display
+#: ValueSet.compose.include.concept.display
+msgid "unbekannt"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Synonym"
+msgstr ""
+
+# ValueSet.compose.include.concept.designation.value
+#: ValueSet.compose.include.concept.designation.value
+msgid "unbekannt"
+msgstr ""
+
+# ValueSet.compose.include.concept.designation.value
+#: ValueSet.compose.include.concept.designation.value
+msgid "unknown"
+msgstr ""
+
+# ValueSet.compose.include.concept.display
+#: ValueSet.compose.include.concept.display
+msgid "nicht gültig"
+msgstr ""
+
+# ValueSet.compose.include.concept.designation.value
+#: ValueSet.compose.include.concept.designation.value
+msgid "nicht gültig"
+msgstr ""
+
+# ValueSet.compose.include.concept.designation.value
+#: ValueSet.compose.include.concept.designation.value
+msgid "not valid"
+msgstr ""
+
+# ValueSet.compose.include.concept.display
+#: ValueSet.compose.include.concept.display
+msgid "gültig"
+msgstr ""
+
+# ValueSet.compose.include.concept.designation.value
+#: ValueSet.compose.include.concept.designation.value
+msgid "gültig"
+msgstr ""
+
+# ValueSet.compose.include.concept.designation.value
+#: ValueSet.compose.include.concept.designation.value
+msgid "valid"
+msgstr ""
+
