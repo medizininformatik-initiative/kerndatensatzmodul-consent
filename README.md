@@ -1,43 +1,73 @@
-## Medizininformatik Initiative - Modul Consent
+# MII KDS Modul Consent — Migration auf das MII-KDS-Modul-Template
 
-### Übersicht
+> **⚠️ Migrations-Branch — nicht freigegeben.** Dieser Branch trägt die
+> Migration des Moduls auf das MII-KDS-Modul-Template und ist **keine
+> MII-Publikation**; die Freigabe (Gate D) liegt bei TF KDS / AG IOP / NSG —
+> erst der Merge nach der Gate-Review macht diese Struktur zur offiziellen.
+> Vollständige Evidenz: [`migration-log/`](migration-log/); Plan, Recon und
+> Preservation-Harvest: Branch `evidence/2026-08-31-plan-recon` in der
+> [FGDH-Sandbox](https://github.com/forschungsgruppe-digital-health/mii-kds-consent-ig-inoffiziell).
 
-Ziel der Medizininformatik-Initiative (MII) ist es, Patientendaten für die Forschung bereitzustellen. Dazu ist in bestimmten Konstellationen das Einverständnis des Patienten notwendig. Daher wurde im Rahmen der MII AG Consent ein Verfahren entwickelt, wie man Patienten über die Nutzung ihrer Patientendaten für die Forschung aufklären und ihr Einverständnis einholen kann. Mit Hilfe des dazugehörigen Einwilligungsdokuments kann der Patient nach Aufklärung durch eine geeignete Fachkraft sein Einverständnis zur Nutzung verschiedener Daten zu verschiedenen Zwecken ausdrücken.
+Migration des **KDS Modul Consent** (Quelle: das OFFIZIELLE Release
+[2027.0.0-ballot.rc1](https://github.com/medizininformatik-initiative/kerndatensatzmodul-consent/releases/tag/2027.0.0-ballot.rc1),
+Tag `2027.0.0-ballot.rc1` = `508a666`) auf das
+[mii-kds-module-template](https://github.com/medizininformatik-initiative/mii-kds-module-template)
+**v0.13.2**, durchgeführt mit dem Skill `mii-ig-migration` v0.25.0
+([agent-skills](https://github.com/forschungsgruppe-digital-health/agent-skills)).
+Vollständige Nachvollziehbarkeit: [`migration-log/`](migration-log/) (Run-Log,
+Identitäts-Ledger, Harvest-Manifest, QA-Baseline, Migrationsbericht).
 
-Dies ist eine Voraussetzung für die Berücksichtigung des Patientenwillens bei der Verwendung der im Rahmen der Versorgung erfassten medizinischen Daten des Patienten für Forschungszwecke. Die Einwilligung ist vor allem dann erforderlich, wenn der Nutzungszweck über die Forschungsklauseln der jeweiligen anwendbaren Gesetze hinausgeht.  
-Die Einwilligungsinformationen (Einwilligungsformular, vom Patienten ausgefüllte Einwilligung, maschinell auswertbare Form der Einwilligung) sollen an den DIZ Standorten möglichst in einer MII-weit abgestimmten Form gespeichert und verarbeitet werden.
+| Koordinate | Wert |
+| --- | --- |
+| Canonical | `https://www.medizininformatik-initiative.de/fhir/modul-consent` |
+| Package | `de.medizininformatikinitiative.kerndatensatz.consent` 2027.0.0-ballot.rc1 (Ballot-Kandidat; Inhalt = das offizielle Release-Paket 2027.0.0-ballot.rc1, Tag `508a666`) |
+| FHIR | R4 (4.0.1) |
+| Quell-IG (Simplifier, gepinnt) | [MII IG Modul Consent 2027.0.0-ballot.rc1](https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent?version=2027.0.0-ballot.rc1) |
+| Sprache | **DE-first**: Deutsch = Standardsprache, Englisch = Übersetzung unter `input/translations/en/` (Entscheidung D-3) |
+| Lizenz | CC BY 4.0 (Quelle: LICENSE der Quelle, byte-getreu übernommen) |
 
-Das **Erweiterungsmodul Consent** beschreibt, wie die Einwilligungsinformationen in Form von FHIR Ressourcen für die Verarbeitung in einer lokalen Treuhandstelle und/oder einem DIZ einheitlich abgebildet werden. Die hier veröffentlichten FHIR Profile und ImplemenationGuides dienen als zentrale und verbindliche Spezifikation für die syntaktische und semantische Kodierung der Modulinhalte.
+## Bauen
 
-### Status
+Der Build läuft über die Template-Workflows (`.github/workflows/`), lokal über
+SUSHI + IG Publisher. **Zwingende Vorstufe:** das Eltern-Paket
+`de.einwilligungsmanagement` 2.0.2 liefert **keine Snapshots** — vor jedem
+Build muss der Cache-Eintrag `de.einwilligungsmanagement#2.0.2-snapshots`
+erzeugt werden:
 
-Alle veröffentlichen FHIR Artefakte innerhalb des Projektes verfügen über einen Status durch welchen der jeweilige Reifegrad abgeleitet werden kann.
-Profile mit dem Status 'Draft' wurden noch nicht ballotiert und können noch diversen und substantiellen Änderungen unterliegen. Verpflichtende und ballotierte Ergebnisse sind unter dem Tab 'Packages' zu finden.
+```bash
+bash scripts/generate-parent-snapshots.sh   # einmal pro Maschine/CI-Lauf
+npx --yes fsh-sushi@3.20.1 .
+```
 
-### Kurzzusammenfassung
+Ohne diesen Schritt bricht SUSHI mit „missing a snapshot" ab (Details im
+Skript-Header und in `migration-log/`; Entscheidung D-4).
 
-Das **Erweiterungsmodul Consent** beschreibt, wie die Einwilligungsinformationen in Form von FHIR Ressourcen für die Verarbeitung in einer lokalen Treuhandstelle und/oder einem DIZ einheitlich abgebildet werden können. Dabei basiert das Erweiterungsmodul Consent auf dem [Implementierungsleitfaden bzw. den FHIR Profilen zum Einwilligungsmanagement](https://ig.fhir.de/einwilligungsmanagement/stable/), die vom **HL7-DE/IHE-DE Interop-Forum (AG Einwilliungungsmanagement)** unter Mitwirkung der **MII Taskforce Consent Umsetzung** erstellt und im September 2021 ballotiert wurden. Das Erweiterungsmodul Consent präzisiert diese bewusst flexibel spezifizierten FHIR Profile (insbesondere das FHIR-Profil "Consent"), sodass sie 
-1. den **Anforderungen der MII** genügen und 
-2. die **Anwendung an den Standorten der MII vereinfachen**.
+## Repository-Struktur
 
-Unter anderem werden MII-spezifische ValueSets festgelegt und die IG-seitigen Vorgaben der MII KDS Governance umgesetzt.
+| Pfad | Inhalt |
+| --- | --- |
+| `input/fsh/` | FSH-Quellen (aus den Roh-XML/JSON-Ressourcen der Quelle per goFSH 2.6.1 abgeleitet, IDs/Canonicals unverändert) |
+| `input/pagecontent/` | Deutsche Leitfaden-Seiten (Standardsprache) |
+| `input/translations/en/` | Englische Übersetzungen (Seiten, Menü, `.po`) |
+| `migration-log/` | Migrations-Evidenz: Run-Log, Ledger, Harvest, QA-Baseline, Bericht |
+| `ressourcen-profile/`, `searchparameters/`, `terminologie/`, `examples/` | **Alt-Quellbestand (Roh-XML/JSON)** — bleibt bis zur Freigabe (Gate D) erhalten, danach Rückbau (Entscheidung D-13) |
+| `README.simplifier-legacy.md` | Die ursprüngliche README der Quelle (unverändert archiviert) |
 
-### Wichtige Dokumente und Links
-* [Beschreibung des MII-Kerndatensatzes in der Version 1.0 vom 10.3.2017 (PDF)](https://www.medizininformatik-initiative.de/sites/default/files/inline-files/MII_04_Kerndatensatz_1-0.pdf)
-* [Datenmodellbeschreibung des MII-Kerndatensatzes in ART-DECOR](https://art-decor.org/art-decor/decor-project--mide-)
-* [Implementierungsleitfaden und FHIR Profilen der AG Einwilligungsmanagement](https://ig.fhir.de/einwilligungsmanagement/stable/)
-* [Simplifier-Projekt MII KDS Modul Consent](https://simplifier.net/medizininformatikinitiative-modulconsent)
-* [IG MII KDS Modul Consent](https://simplifier.net/guide/MedizininformatikInitiative-ModulConsent-ImplementationGuide/IGMIIKDSModulConsent)
-* [Übersicht der KDS Module (Wiki github/kerndatensatz-meta)](https://github.com/medizininformatik-initiative/kerndatensatz-meta/wiki)
+### `package.json` im Repo-Root (CI-Kompatibilität)
 
-### Autoren und Ansprechpartner
+Das Root-`package.json` existiert ausschließlich für die MII-Standard-Validierung
+(`kerndatensatz-meta` `ci_dotnet_validation`, Schritt "FHIR Dependency restore" —
+sie erwartet das klassische Simplifier-Layout). Es ist **aus `sushi-config.yaml`
+abgeleitet** (Single Source of Truth): Version und Abhängigkeiten dort ändern und
+hier nachziehen. Gewollte Abweichung: `de.einwilligungsmanagement` ist hier auf die
+Registry-Version `2.0.4-rc1` gepinnt, während `sushi-config.yaml` den lokal
+generierten Cache-Eintrag `2.0.4-rc1-snapshots` pinnt
+(`scripts/generate-parent-snapshots.sh`) — den es auf keinem Registry-Server gibt.
+Das Build-Manifest des Pakets erzeugt weiterhin SUSHI (`fsh-generated/`).
 
-Leitung des Moduls:
+## Herkunft & Governance
 
-* Martin Bialke
-* [Sebastian Stäubert](https://github.com/SebStaeubert)
-
-Technische Umsetzung:
-
-* Stefan Lang (Technische Umsetzung FHIR Profile und ImplemenationGuides)
-* Martin Bialke (ImplemenationGuides)
+Inhaltlich unverändert übernommen: alle Canonical-URLs, IDs, Versionen und die
+Lizenz der Quelle (Guardrail 1). Jede Entscheidung der Migration ist im
+[Migrationsbericht](migration-log/migration-report.md) mit Gate-Zuordnung
+dokumentiert; offene Punkte tragen `TODO:REVIEW`.

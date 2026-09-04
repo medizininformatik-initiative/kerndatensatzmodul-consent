@@ -1,0 +1,41 @@
+<!-- markdownlint-disable MD041 -->
+<!-- Übersichtsseite "Anleitung" (Szenarien-Inhalt aus dem Quell-Leitfaden übernommen); die
+     Unterseiten-Struktur folgt kerndatensatz-basis. -->
+
+Dieser Abschnitt bündelt die fachlichen Hinweise zur Umsetzung und Nutzung des
+Moduls **Consent**.
+
+### Allgemeine Umsetzungshinweise
+
+* **[Datensätze und Beschreibungen](logical-models.html)** — die Datenelemente
+  des Moduls, beschrieben als logische Modelle.
+* **[UML-Diagramme](uml-diagrams.html)** — visuelle Darstellung der Datenmodelle
+  und ihrer Beziehungen.
+
+### Zielgruppenspezifische Hinweise
+
+* **[Anleitung für Implementierende](implementer-guidance.html)** — technische
+  Hinweise für DIZ-Implementierende.
+
+
+---
+Für die KDS-weiten Konformitätsanforderungen siehe die
+[Konformitätsregeln des Meta-Moduls](https://github.com/medizininformatik-initiative/kerndatensatz-meta/wiki/Conformance);
+für die technischen Artefakte siehe [Profile](profiles.html).
+
+<!-- Wortgetreu übertragen aus der Simplifier-Quellseite
+     https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/AnwendungsflleInformationsmodell/BeschreibungvonSzenarienfrdieAnwendungdesModuls?version=2026.0.0
+     (Harvest 2026-08-31, migration-log/guide-harvest/); interne Links auf die
+     Zielseiten dieser IG-Struktur umgeschrieben (migration-log/page-map.tsv). -->
+
+### Beschreibung von Szenarien für die Anwendung des Moduls
+
+Das Erweiterungsmodul Consent stellt die elektronische Abbildung des [MII Consent](https://www.medizininformatik-initiative.de/de/mustertext-zur-patienteneinwilligung) bereit, kann darüber hinaus aber auch für die Abbildung weiterer Einwilligungen ermöglichen. Dies ist eine Voraussetzung für die Berücksichtigung des Patientenwillens bei der Verwendung der im Rahmen der Versorgung erfassten medizinischen Daten des Patienten für Forschungszwecke. Die Einwilligung ist vor allem dann erforderlich, wenn der Nutzungszweck über die Forschungsklauseln der jeweiligen anwendbaren Gesetze hinausgeht.
+
+Eine wichtige Maßzahl für die medizinische Forschung ist u.a., wie viele Patienten bestimmten Kriterien genügen (Fallzahl) und ob diese Patienten der Verwendung ihrer Daten für Forschungszwecke zugestimmt haben. Entsprechende Anfragen können nur effizient elektronisch verarbeitet bzw. beantwortet werden, wenn der Einwilligungsstatus elektronisch geprüft werden kann. Derartige Fallzahlabfragen unter Berücksichtigung des Einwilligungsstatus sind essentiell für Anwendungsfälle, wie ‘Fallzahl-Schätzung’, ‘Feasibility-Abfragen’ und ‘Data Sharing’, für die MII übergreifenden Use Cases CORD und POLAR, sowie für die [Use Cases](https://www.medizininformatik-initiative.de/de/use-cases-und-projekte) der [MII-Konsortien](https://www.medizininformatik-initiative.de/index.php/de/konsortien).
+
+Die standardisierte Abbildung der Consentinformationen im Kerndatensatz ist erforderlich, damit diese als Suchkriterium insbesondere bei standortübergreifenden Anfragen einbezogen werden können.
+
+<!-- DERIVED:bridge source=anwendungsflleinformationsmodell-fragebgen.md gate=B -->
+> **Written during migration - review before release.** Die Abbildung der Einwilligungs-Fragebögen (Questionnaire-basierte Inhalte) beschreibt die Unterseite [Fragebögen](frageboegen.html).
+{: .ig-highlight .ig-highlight-blue}

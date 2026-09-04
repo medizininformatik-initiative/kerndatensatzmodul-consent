@@ -1,0 +1,81 @@
+
+# ValueSet.name
+#: ValueSet.name
+msgid "MII_VS_Consent_Answer"
+msgstr ""
+
+# ValueSet.title
+#: ValueSet.title
+msgid "MII Consent: Answer ValueSet"
+msgstr ""
+
+# ValueSet.publisher
+#: ValueSet.publisher
+msgid "NUM-DIZ"
+msgstr "NUM-DIZ"
+
+# ContactDetail.name
+#: ContactDetail.name
+msgid "NUM-DIZ"
+msgstr ""
+
+# ValueSet.description
+#: ValueSet.description
+msgid "This ValueSet contains the possible answers to the questions of the MII Consent."
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Germany"
+msgstr ""
+
+# ValueSet.compose.include.concept.display
+#: ValueSet.compose.include.concept.display
+msgid "unbekannt"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Synonym"
+msgstr ""
+
+# ValueSet.compose.include.concept.designation.value
+#: ValueSet.compose.include.concept.designation.value
+msgid "unbekannt"
+msgstr ""
+
+# ValueSet.compose.include.concept.designation.value
+#: ValueSet.compose.include.concept.designation.value
+msgid "unknown"
+msgstr ""
+
+# ValueSet.compose.include.concept.display
+#: ValueSet.compose.include.concept.display
+msgid "nicht gültig"
+msgstr ""
+
+# ValueSet.compose.include.concept.designation.value
+#: ValueSet.compose.include.concept.designation.value
+msgid "nicht gültig"
+msgstr ""
+
+# ValueSet.compose.include.concept.designation.value
+#: ValueSet.compose.include.concept.designation.value
+msgid "not valid"
+msgstr ""
+
+# ValueSet.compose.include.concept.display
+#: ValueSet.compose.include.concept.display
+msgid "gültig"
+msgstr ""
+
+# ValueSet.compose.include.concept.designation.value
+#: ValueSet.compose.include.concept.designation.value
+msgid "gültig"
+msgstr ""
+
+# ValueSet.compose.include.concept.designation.value
+#: ValueSet.compose.include.concept.designation.value
+msgid "valid"
+msgstr ""
+

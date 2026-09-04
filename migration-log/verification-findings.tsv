@@ -1,0 +1,148 @@
+id	layer	check	verdict	subject	evidence	autofix	action
+C1-1af231	conservation	C1	IDENTISCH	20 source artefacts	all present in fsh-generated, matched by id or canonical url (source: source tree, by content (resourceType / FHIR xmlns))	-	-
+C2-ee01da	conservation	C2	IDENTISCH	output/de (22 artefacts)	every generated resource is rendered and listed in artifacts.html	-	-
+C2-f98e7a	conservation	C2	IDENTISCH	output/en (22 artefacts)	every generated resource is rendered and listed in artifacts.html	-	-
+C3-41054c	conservation	C3	IDENTISCH	index	migrated -> input/pagecontent/index.md (input/pagecontent/index.md)	-	-
+C3-2e384d	conservation	C3	IDENTISCH	release-notes	migrated -> input/pagecontent/changes.md (input/pagecontent/changes.md)	-	-
+C3-85c6e3	conservation	C3	IDENTISCH	beschreibung-modul-consent	migrated -> input/pagecontent/index.md (input/pagecontent/index.md)	-	-
+C3-198487	conservation	C3	IDENTISCH	kontextimgesamtprojektbezgezuanderenmodulen	migrated -> input/pagecontent/implementer-guidance.md (input/pagecontent/implementer-guidance.md)	-	-
+C3-b60ffd	conservation	C3	IDENTISCH	referenzen	migrated -> input/pagecontent/implementer-guidance.md (input/pagecontent/implementer-guidance.md)	-	-
+C3-0be812	conservation	C3	IDENTISCH	anwendungsflleinformationsmodell	migrated -> input/pagecontent/logical-models.md (input/pagecontent/logical-models.md)	-	-
+C3-37c944	conservation	C3	IDENTISCH	anwendungsflleinformationsmodell-beschreibungvonszenarienfrdieanwendungdesmoduls	migrated -> input/pagecontent/guidance.md (input/pagecontent/guidance.md)	-	-
+C3-740ffd	conservation	C3	IDENTISCH	anwendungsflleinformationsmodell-datenstzeinkl.beschreibungen	migrated -> input/pagecontent/logical-models.md (input/pagecontent/logical-models.md)	-	-
+C3-cdee23	conservation	C3	IDENTISCH	anwendungsflleinformationsmodell-uml	migrated -> input/pagecontent/uml-diagrams.md (input/pagecontent/uml-diagrams.md)	-	-
+C3-6bcb9b	conservation	C3	IDENTISCH	anwendungsflleinformationsmodell-fragebgen	migrated -> input/pagecontent/frageboegen.md (input/pagecontent/frageboegen.md)	-	-
+C3-5b213f	conservation	C3	IDENTISCH	technischeimplementierung	migrated -> input/pagecontent/implementer-guidance.md (input/pagecontent/implementer-guidance.md)	-	-
+C3-4e864a	conservation	C3	IDENTISCH	technischeimplementierung-fhirprofile	migrated -> input/pagecontent/profiles.md (input/pagecontent/profiles.md)	-	-
+C3-9e979c	conservation	C3	IDENTISCH	technischeimplementierung-fhirprofile-consent	migrated -> input/intro-notes/StructureDefinition-e0e166b4-0f77-478d-9062-de0034d98ce0-intro.md (input/intro-notes/StructureDefinition-e0e166b4-0f77-478d-9062-de0034d98ce0-intro.md)	-	-
+C3-577b22	conservation	C3	IDENTISCH	technischeimplementierung-fhirprofile-provenance	migrated -> input/intro-notes/StructureDefinition-f675b1e8-9f3f-44e8-bb59-9681f78eb464-intro.md (input/intro-notes/StructureDefinition-f675b1e8-9f3f-44e8-bb59-9681f78eb464-intro.md)	-	-
+C3-8cbc97	conservation	C3	IDENTISCH	technischeimplementierung-fhirprofile-documentreference	migrated -> input/intro-notes/StructureDefinition-56375452-bfa1-4111-af7c-5b5ba9a1857c-intro.md (input/intro-notes/StructureDefinition-56375452-bfa1-4111-af7c-5b5ba9a1857c-intro.md)	-	-
+C3-46a714	conservation	C3	IDENTISCH	technischeimplementierung-fhirprofile-weitererelevanteprofile	migrated -> input/pagecontent/profiles.md (input/pagecontent/profiles.md)	-	-
+C3-e12748	conservation	C3	IDENTISCH	technischeimplementierung-fhirprofile-empfehlungen-zur-praktischen-anwendung	migrated -> input/pagecontent/implementer-guidance.md (input/pagecontent/implementer-guidance.md)	-	-
+C3-6f6494	conservation	C3	IDENTISCH	technischeimplementierung-terminologien	migrated -> input/pagecontent/code-systems.md (input/pagecontent/code-systems.md)	-	-
+C4-9eb98a	conservation	C4	DIVERGIERT	anwendungsflleinformationsmodell-beschreibungvonszenarienfrdieanwendungdesmoduls.md	2 of 8 PROSE runs of the source page are in no target page (first: ## Beschreibung von Szenarien für die Anwendung des Moduls D…)	-	map the missing text to a target page section, or record the loss in the report's content map
+C4-a1c54a	conservation	C4	DIVERGIERT	anwendungsflleinformationsmodell-datenstzeinkl.beschreibungen.md	1 of 3 PROSE runs of the source page are in no target page (first: - [formularbasierte Beschreibung MII Dataset, Concept 'Conse…)	-	map the missing text to a target page section, or record the loss in the report's content map
+C4-b9b940	conservation	C4	DIVERGIERT	anwendungsflleinformationsmodell-fragebgen.md	7 of 14 PROSE runs of the source page are in no target page (first: ## Fragebögen Die [AG Einwilligungsmanagement]( hat sich umf…); 5 generated table row(s) excluded -- migration replaces that view with the artefact page (R1 checks THAT)	-	map the missing text to a target page section, or record the loss in the report's content map
+C4-7494b2	conservation	C4	DIVERGIERT	anwendungsflleinformationsmodell-uml.md	6 of 17 PROSE runs of the source page are in no target page (first: ## UML ### [Consent]( Die Consent-Resource stellt eine rein …)	-	map the missing text to a target page section, or record the loss in the report's content map
+C4-e5132a	conservation	C4	DIVERGIERT	anwendungsflleinformationsmodell.md	1 of 1 PROSE runs of the source page are in no target page (first: ## Anwendungsfälle / Informationsmodell Diese Seite wurde ab…)	-	map the missing text to a target page section, or record the loss in the report's content map
+C4-f2a3c5	conservation	C4	DIVERGIERT	beschreibung-modul-consent.md	3 of 4 PROSE runs of the source page are in no target page (first: # Beschreibung Modul Consent ![]( Das MII KDS Modul Consent …)	-	map the missing text to a target page section, or record the loss in the report's content map
+C4-ef59ff	conservation	C4	DIVERGIERT	index.md	4 of 18 PROSE runs of the source page are in no target page (first: ## Kerndatensatz-Modul Consent Die vorliegende Spezifikation…); 6 generated table row(s) excluded -- migration replaces that view with the artefact page (R1 checks THAT)	-	map the missing text to a target page section, or record the loss in the report's content map
+C4-c9ac53	conservation	C4	DIVERGIERT	kontextimgesamtprojektbezgezuanderenmodulen.md	1 of 4 PROSE runs of the source page are in no target page (first: ### Verweise auf andere Vorhaben In der [Handreichung]( zur …)	-	map the missing text to a target page section, or record the loss in the report's content map
+C4-5f8d7e	conservation	C4	DIVERGIERT	referenzen.md	2 of 3 PROSE runs of the source page are in no target page (first: - [Implementation Guide der Arbeitsgruppe Einwilligungsmanag…)	-	map the missing text to a target page section, or record the loss in the report's content map
+C4-76968d	conservation	C4	DIVERGIERT	release-notes.md	1 of 20 PROSE runs of the source page are in no target page (first: ## Release Notes ### Version 2026.0.0 Datum 18.12.2025 - Val…)	-	map the missing text to a target page section, or record the loss in the report's content map
+C4-b8093b	conservation	C4	NICHT PRUEFBAR	technischeimplementierung-fhirprofile-consent.md	the source page embeds an element-tree rendering (174 occurrences of the renderer's marker); 1043 of 1093 runs are in no target page, but prose and rendered view cannot be told apart in it	-	read the page against its target: migration replaces the VIEW with the artefact page (R1), so only its prose has to be conserved -- and only a human can say which is which here
+C4-7926aa	conservation	C4	NICHT PRUEFBAR	technischeimplementierung-fhirprofile-documentreference.md	the source page embeds an element-tree rendering (60 occurrences of the renderer's marker); 363 of 364 runs are in no target page, but prose and rendered view cannot be told apart in it	-	read the page against its target: migration replaces the VIEW with the artefact page (R1), so only its prose has to be conserved -- and only a human can say which is which here
+C4-8434d0	conservation	C4	DIVERGIERT	technischeimplementierung-fhirprofile-empfehlungen-zur-praktischen-anwendung.md	4 of 13 PROSE runs of the source page are in no target page (first: ## Empfehlungen zur praktischen Anwendung ### Bedeutung der …); 4 generated table row(s) excluded -- migration replaces that view with the artefact page (R1 checks THAT)	-	map the missing text to a target page section, or record the loss in the report's content map
+C4-a4c8ef	conservation	C4	NICHT PRUEFBAR	technischeimplementierung-fhirprofile-provenance.md	the source page embeds an element-tree rendering (66 occurrences of the renderer's marker); 380 of 380 runs are in no target page, but prose and rendered view cannot be told apart in it	-	read the page against its target: migration replaces the VIEW with the artefact page (R1), so only its prose has to be conserved -- and only a human can say which is which here
+C4-09788a	conservation	C4	DIVERGIERT	technischeimplementierung-fhirprofile-weitererelevanteprofile.md	1 of 4 PROSE runs of the source page are in no target page (first: ## Weitere relevante Profile Neben [Consent]( [Provenance]( …); 11 generated table row(s) excluded -- migration replaces that view with the artefact page (R1 checks THAT)	-	map the missing text to a target page section, or record the loss in the report's content map
+C4-909a4e	conservation	C4	DIVERGIERT	technischeimplementierung-fhirprofile.md	1 of 5 PROSE runs of the source page are in no target page (first: ### Verpflichtende / must-support Elemente Für **verpflichte…)	-	map the missing text to a target page section, or record the loss in the report's content map
+C4-ccb0aa	conservation	C4	DIVERGIERT	technischeimplementierung-terminologien.md	9 of 19 PROSE runs of the source page are in no target page (first: ## Terminologien ### ValueSets This value set includes codes…); 131 generated table row(s) excluded -- migration replaces that view with the artefact page (R1 checks THAT)	-	map the missing text to a target page section, or record the loss in the report's content map
+C4-2fba3b	conservation	C4	IDENTISCH	technischeimplementierung.md	all 5 prose runs present in the target's de corpus	-	-
+C5-f09e26	conservation	C5	IDENTISCH	input/includes/menu.xml	all 26 menu entries resolve to a real page	-	-
+C5-89fa79	conservation	C5	IDENTISCH	input/translations/en/includes/menu.xml	all 26 menu entries resolve to a real page	-	-
+C5-e81039	conservation	C5	IDENTISCH	18 narrative pages	every one is reachable from a menu entry	-	-
+C5-3cab9a	conservation	C5	IDENTISCH	target page set	every narrative page is either the template's or a page-map target	-	-
+C6-1fcdf3	conservation	C6	IDENTISCH	anwendungsflleinformationsmodell-beschreibungvonszenarienfrdieanwendungdesmoduls.md	6 of 8 runs placed, most on guidance -- the mapped target	-	-
+C6-d9e114	conservation	C6	IDENTISCH	anwendungsflleinformationsmodell-datenstzeinkl.beschreibungen.md	2 of 3 runs placed, most on logical-models -- the mapped target	-	-
+C6-6bc6b9	conservation	C6	IDENTISCH	anwendungsflleinformationsmodell-fragebgen.md	7 of 14 runs placed, most on frageboegen -- the mapped target	-	-
+C6-831cb7	conservation	C6	IDENTISCH	anwendungsflleinformationsmodell-uml.md	11 of 17 runs placed, most on uml-diagrams -- the mapped target	-	-
+C6-04b01e	conservation	C6	IDENTISCH	beschreibung-modul-consent.md	1 of 4 runs placed, most on index -- the mapped target	-	-
+C6-876559	conservation	C6	IDENTISCH	index.md	14 of 18 runs placed, most on index -- the mapped target	-	-
+C6-f2c05f	conservation	C6	IDENTISCH	kontextimgesamtprojektbezgezuanderenmodulen.md	3 of 4 runs placed, most on implementer-guidance -- the mapped target	-	-
+C6-442db9	conservation	C6	IDENTISCH	referenzen.md	1 of 3 runs placed, most on implementer-guidance -- the mapped target	-	-
+C6-ae5d72	conservation	C6	IDENTISCH	release-notes.md	19 of 20 runs placed, most on changes -- the mapped target	-	-
+C6-26e322	conservation	C6	IDENTISCH	technischeimplementierung-fhirprofile-consent.md	50 of 1093 runs placed, most on StructureDefinition-e0e166b4-0f77-478d-9062-de0034d98ce0-intro -- the mapped target	-	-
+C6-be2cef	conservation	C6	IDENTISCH	technischeimplementierung-fhirprofile-documentreference.md	1 of 364 runs placed, most on StructureDefinition-56375452-bfa1-4111-af7c-5b5ba9a1857c-intro -- the mapped target	-	-
+C6-714484	conservation	C6	IDENTISCH	technischeimplementierung-fhirprofile-empfehlungen-zur-praktischen-anwendung.md	9 of 13 runs placed, most on implementer-guidance -- the mapped target	-	-
+C6-4d9850	conservation	C6	IDENTISCH	technischeimplementierung-fhirprofile-weitererelevanteprofile.md	3 of 4 runs placed, most on profiles -- the mapped target	-	-
+C6-9f3ed4	conservation	C6	IDENTISCH	technischeimplementierung-fhirprofile.md	4 of 5 runs placed, most on profiles -- the mapped target	-	-
+C6-af9180	conservation	C6	IDENTISCH	technischeimplementierung-terminologien.md	10 of 19 runs placed, most on code-systems -- the mapped target	-	-
+C6-1a8b2d	conservation	C6	IDENTISCH	technischeimplementierung.md	5 of 5 runs placed, most on implementer-guidance -- the mapped target	-	-
+C7-bd1fc5	conservation	C7	DIVERGIERT	logical-models	1 of 3 prose runs of the source page anwendungsflleinformationsmodell-datenstzeinkl.beschreibungen.md are in no target page (C4), and logical-models carries no DERIVED marker at all -- text was rewritten and the guide does not say so	-	mark the passage per spec section 9d (the DERIVED comment plus the visible box, in BOTH language mirrors), or restore the source wording; if the text was deliberately dropped, record that in migration-log/page-map.tsv instead
+C7-d2e35f	conservation	C7	DIVERGIERT	frageboegen	7 of 14 prose runs of the source page anwendungsflleinformationsmodell-fragebgen.md are in no target page (C4), and frageboegen carries no DERIVED marker at all -- text was rewritten and the guide does not say so	-	mark the passage per spec section 9d (the DERIVED comment plus the visible box, in BOTH language mirrors), or restore the source wording; if the text was deliberately dropped, record that in migration-log/page-map.tsv instead
+C7-8a1680	conservation	C7	DIVERGIERT	uml-diagrams	6 of 17 prose runs of the source page anwendungsflleinformationsmodell-uml.md are in no target page (C4), and uml-diagrams carries no DERIVED marker at all -- text was rewritten and the guide does not say so	-	mark the passage per spec section 9d (the DERIVED comment plus the visible box, in BOTH language mirrors), or restore the source wording; if the text was deliberately dropped, record that in migration-log/page-map.tsv instead
+C7-c764cd	conservation	C7	DIVERGIERT	logical-models	1 of 1 prose runs of the source page anwendungsflleinformationsmodell.md are in no target page (C4), and logical-models carries no DERIVED marker at all -- text was rewritten and the guide does not say so	-	mark the passage per spec section 9d (the DERIVED comment plus the visible box, in BOTH language mirrors), or restore the source wording; if the text was deliberately dropped, record that in migration-log/page-map.tsv instead
+C7-0209b1	conservation	C7	DIVERGIERT	index	3 of 4 prose runs of the source page beschreibung-modul-consent.md are in no target page (C4), and index carries no DERIVED marker at all -- text was rewritten and the guide does not say so	-	mark the passage per spec section 9d (the DERIVED comment plus the visible box, in BOTH language mirrors), or restore the source wording; if the text was deliberately dropped, record that in migration-log/page-map.tsv instead
+C7-668b36	conservation	C7	DIVERGIERT	index	4 of 18 prose runs of the source page index.md are in no target page (C4), and index carries no DERIVED marker at all -- text was rewritten and the guide does not say so	-	mark the passage per spec section 9d (the DERIVED comment plus the visible box, in BOTH language mirrors), or restore the source wording; if the text was deliberately dropped, record that in migration-log/page-map.tsv instead
+C7-4f50d8	conservation	C7	DIVERGIERT	changes	1 of 20 prose runs of the source page release-notes.md are in no target page (C4), and changes carries no DERIVED marker at all -- text was rewritten and the guide does not say so	-	mark the passage per spec section 9d (the DERIVED comment plus the visible box, in BOTH language mirrors), or restore the source wording; if the text was deliberately dropped, record that in migration-log/page-map.tsv instead
+C7-8c8c7d	conservation	C7	DIVERGIERT	profiles	1 of 4 prose runs of the source page technischeimplementierung-fhirprofile-weitererelevanteprofile.md are in no target page (C4), and profiles carries no DERIVED marker at all -- text was rewritten and the guide does not say so	-	mark the passage per spec section 9d (the DERIVED comment plus the visible box, in BOTH language mirrors), or restore the source wording; if the text was deliberately dropped, record that in migration-log/page-map.tsv instead
+C7-ae2f0c	conservation	C7	DIVERGIERT	profiles	1 of 5 prose runs of the source page technischeimplementierung-fhirprofile.md are in no target page (C4), and profiles carries no DERIVED marker at all -- text was rewritten and the guide does not say so	-	mark the passage per spec section 9d (the DERIVED comment plus the visible box, in BOTH language mirrors), or restore the source wording; if the text was deliberately dropped, record that in migration-log/page-map.tsv instead
+C7-fabfa8	conservation	C7	DIVERGIERT	code-systems	9 of 19 prose runs of the source page technischeimplementierung-terminologien.md are in no target page (C4), and code-systems carries no DERIVED marker at all -- text was rewritten and the guide does not say so	-	mark the passage per spec section 9d (the DERIVED comment plus the visible box, in BOTH language mirrors), or restore the source wording; if the text was deliberately dropped, record that in migration-log/page-map.tsv instead
+C7-40e18f	conservation	C7	NICHT PRUEFBAR	technischeimplementierung-fhirprofile-consent.md	C4 could not tell this page's prose from its embedded element-tree rendering, so whether anything was rewritten here is not measured	-	read the page against its target (the same human action C4 asks for) and mark whatever the migration wrote per spec section 9d
+C7-42473f	conservation	C7	NICHT PRUEFBAR	technischeimplementierung-fhirprofile-documentreference.md	C4 could not tell this page's prose from its embedded element-tree rendering, so whether anything was rewritten here is not measured	-	read the page against its target (the same human action C4 asks for) and mark whatever the migration wrote per spec section 9d
+C7-059fd9	conservation	C7	NICHT PRUEFBAR	technischeimplementierung-fhirprofile-provenance.md	C4 could not tell this page's prose from its embedded element-tree rendering, so whether anything was rewritten here is not measured	-	read the page against its target (the same human action C4 asks for) and mark whatever the migration wrote per spec section 9d
+F1-093008	fidelity	F1	NICHT PRUEFBAR	id	no source value (neither the source tree nor the claims ledger yields one)	-	supply it at Gate A -- an identity field nobody can compare is not a field that matches
+F1-bacf3c	fidelity	F1	IDENTISCH	packageId	de.medizininformatikinitiative.kerndatensatz.consent (identical to the source)	-	-
+F1-489e82	fidelity	F1	IDENTISCH	canonical	https://www.medizininformatik-initiative.de/fhir/modul-conse… (identical to the source)	-	-
+F1-6cbfea	fidelity	F1	NICHT PRUEFBAR	version	target 2027.0.0-ballot.rc1 vs source 2026.0.0 -- the target version is a human decision (spec 2.1)	-	confirm the target version at Gate A and record it
+F1-8a3995	fidelity	F1	NICHT PRUEFBAR	status	the claims ledger holds 2 contradicting readings (active, draft)	-	decide the field at Gate A (check L3), then re-run verification
+F1-b5b102	fidelity	F1	DIVERGIERT	title	target MII Implementation Guide Consent  vs  source Medizininformatik Initiative - Modul Consent	-	the SOURCE wins (spec 2.2); restore it or record the divergence as a Gate-A decision -- never normalise silently
+F1-7bae24	fidelity	F1	IDENTISCH	license	CC-BY-4.0 (identical to the source)	-	-
+F1-5451f2	fidelity	F1	NICHT PRUEFBAR	publisher	no source value (neither the source tree nor the claims ledger yields one)	-	supply it at Gate A -- an identity field nobody can compare is not a field that matches
+F1-f60f40	fidelity	F1	NICHT PRUEFBAR	fhirVersion	no source value (neither the source tree nor the claims ledger yields one)	-	supply it at Gate A -- an identity field nobody can compare is not a field that matches
+F2-94f168	fidelity	F2	DIVERGIERT	de.einwilligungsmanagement	target 2.0.3-snapshots  vs  source pin 2.0.2 (migration-log/identity-claims.tsv, tier(s) P)	-	the source pin is the evidence; a registry dist-tag is not. Restore the pin or make the bump a Gate-A decision
+F2-5a159c	fidelity	F2	IDENTISCH	hl7.fhir.r4.core	declared through `fhirVersion` (4.0.1), not as a dependency -- F1 compares it	-	-
+F2-fd0e73	fidelity	F2	NICHT PRUEFBAR	hl7.fhir.uv.crmi	target-only dependency 2.0.0 (not in the source)	-	confirm at Gate A that this is template machinery (hl7.fhir.uv.crmi is) and not an accidental addition
+F2-047205	fidelity	F2	NICHT PRUEFBAR	hl7.fhir.uv.extensions.r4	target-only dependency 5.3.0 (not in the source)	-	confirm at Gate A that this is template machinery (hl7.fhir.uv.crmi is) and not an accidental addition
+F2-8f9355	fidelity	F2	NICHT PRUEFBAR	hl7.terminology.r4	target-only dependency 7.3.0 (not in the source)	-	confirm at Gate A that this is template machinery (hl7.fhir.uv.crmi is) and not an accidental addition
+F3-1a29c4	fidelity	F3	IDENTISCH	license	CC-BY-4.0 asserted from tier R (LICENSE (text matched))	-	-
+F3-ce21cb	fidelity	F3	IDENTISCH	LICENSE file	the file text is CC-BY-4.0 (header: 'attribution 4.0 international'), matching the declared scalar	-	-
+F4-0792d3	fidelity	F4	IDENTISCH	34 FSH files	no fhir_comments rules, no whitespace-bearing code references	-	-
+P1-fded0e	provenance	P1	IDENTISCH	template	rendered de.medizininformatikinitiative.template#1.3.4 == recorded template release v1.3.4 (URL reference)	-	-
+P2-27e398	provenance	P2	IDENTISCH	scaffold template ref	v0.13.2 == latest release v0.13.2	-	-
+P3-a28a47	provenance	P3	IDENTISCH	IG Publisher version	2.3.2 == the workflow pin	-	-
+P3-c39a79	provenance	P3	NICHT PRUEFBAR	IG Publisher currency	the publisher reports itself out of date (current 2.3.3)	-	upgrading the publisher is a target-repository decision, not a migration one -- record it, do not act on it here
+P4-379bde	provenance	P4	IDENTISCH	source guide version	pinned 2026.0.0 (guide-harvest.tsv (the URL pages were fetched from))	-	-
+P5-ae41ea	provenance	P5	IDENTISCH	ig.ini	`ig = fsh-generated/resources/ImplementationGuide-mii-ig-consent.json` exists in the target	-	-
+R1-866fe1	rendering	R1	IDENTISCH	output/de	tables, tabs and images all non-empty and resolvable	-	-
+R2-48ed52	rendering	R2	DIVERGIERT	output/de id="ig-status" [{{]	on 1 page(s), e.g. searchform.html: Search {{title}} (Current Build)	-	rendered header/footer metadata defect -- qa.txt does not report it. Fix the metadata it renders (a jurisdiction code the template cannot resolve is the measured case)
+R1-e1bc49	rendering	R1	IDENTISCH	output/en	tables, tabs and images all non-empty and resolvable	-	-
+R2-d1da9a	rendering	R2	DIVERGIERT	output/en id="ig-status" [{{]	on 1 page(s), e.g. searchform.html: Search {{title}} (Current Build)	-	rendered header/footer metadata defect -- qa.txt does not report it. Fix the metadata it renders (a jurisdiction code the template cannot resolve is the measured case)
+R1-51f27a	rendering	R1	DIVERGIERT	release-notes -> changes.html	source rendering had 1 tables; the target page has none	-	a live table or figure that vanished in migration is a CONTENT loss the build cannot see -- restore it or record the substitution in the report's content map
+R1-954cb2	rendering	R1	DIVERGIERT	anwendungsflleinformationsmodell -> logical-models.html	source rendering had 1 tables; the target page has none	-	a live table or figure that vanished in migration is a CONTENT loss the build cannot see -- restore it or record the substitution in the report's content map
+R1-3aa2ea	rendering	R1	DIVERGIERT	anwendungsflleinformationsmodell-beschreibungvonszenarienfrdieanwendungdesmoduls -> guidance.html	source rendering had 1 tables; the target page has none	-	a live table or figure that vanished in migration is a CONTENT loss the build cannot see -- restore it or record the substitution in the report's content map
+R1-7580db	rendering	R1	DIVERGIERT	anwendungsflleinformationsmodell-datenstzeinkl.beschreibungen -> logical-models.html	source rendering had 1 tables; the target page has none	-	a live table or figure that vanished in migration is a CONTENT loss the build cannot see -- restore it or record the substitution in the report's content map
+R1-ba859a	rendering	R1	DIVERGIERT	anwendungsflleinformationsmodell-uml -> uml-diagrams.html	source rendering had 1 tables; the target page has none	-	a live table or figure that vanished in migration is a CONTENT loss the build cannot see -- restore it or record the substitution in the report's content map
+R1-115994	rendering	R1	IDENTISCH	10 of 15 source pages compared to their target pages	tables, tabs and images non-empty in the target wherever they were non-empty in the source	-	-
+R3-c3bc54	rendering	R3	IDENTISCH	output/de	all 18 narrative pages differ from the default language	-	-
+R4-84ad62	rendering	R4	IDENTISCH	template example links	none, over 1 token(s) from template-artifacts-v1.3.4.tsv (verified against template package 1.3.4)	-	-
+R5-20a475	rendering	R5	IDENTISCH	input/translations/en/ImplementationGuide-mii-ig-consent.po	a translated unit for every one of the 19 page titles	-	-
+L0-493df2	log	L0	IDENTISCH	migration-log/run.log	644 parsed lines, 3 runs	-	-
+L1-409c89	log	L1	IDENTISCH	5.1b.5/parent-snapshots @ 2026-08-31T17:58:40Z	silent-partial-success WARN, later resolved in the log	-	-
+L2-0e48db	log	L2	IDENTISCH	1 preflight-analysis	present in the log	-	-
+L2-5e1c48	log	L2	IDENTISCH	pre.2 classify-source-shape	present in the log	-	-
+L2-4fd559	log	L2	IDENTISCH	pre.5 toolchain	present in the log	-	-
+L2-541189	log	L2	IDENTISCH	5.1 source-inventory	present in the log	-	-
+L2-9a6da6	log	L2	IDENTISCH	2.1 read-identity	present in the log	-	-
+L2-23b069	log	L2	IDENTISCH	2.1 package-identity	present in the log	-	-
+L2-7163a2	log	L2	IDENTISCH	2.1 repo-identity	present in the log	-	-
+L2-07bdbb	log	L2	NICHT PRUEFBAR	5.1c simplifier-discover	no line in the log; the step is conditional (no rendered-IG URL was supplied)	-	confirm the condition did not hold -- Without the discovery chain the guide is not found, and a migration then ships the template's starter pages.
+L2-930ba2	log	L2	IDENTISCH	5.1d guide-harvest	present in the log	-	-
+L2-91b7ea	log	L2	IDENTISCH	5.1b.2 gofsh-input	present in the log	-	-
+L2-f0a960	log	L2	IDENTISCH	5.1b.2 gofsh-convert	present in the log	-	-
+L2-395531	log	L2	IDENTISCH	5.1b.3 sushi-before	present in the log	-	-
+L2-837623	log	L2	IDENTISCH	5.1b.3 postprocess-gofsh	present in the log	-	-
+L2-41942e	log	L2	IDENTISCH	5.1b.3 sushi-after	present in the log	-	-
+L2-cd2674	log	L2	IDENTISCH	5.1b.5 parent-snapshots	present in the log	-	-
+L2-666ef6	log	L2	IDENTISCH	5.2 skeleton-vendored	present in the log	-	-
+L2-1e1cb5	log	L2	IDENTISCH	5.2 template-reference	present in the log	-	-
+L2-200a9d	log	L2	IDENTISCH	5.2 sushi-skeleton	present in the log	-	-
+L2-f09283	log	L2	IDENTISCH	5.2 license-align	present in the log	-	-
+L2-9a700e	log	L2	IDENTISCH	5.3 transfer-artefacts	present in the log	-	-
+L2-8fadca	log	L2	IDENTISCH	5.4 fql-scan	present in the log	-	-
+L2-ec69ec	log	L2	IDENTISCH	5.4a optional-page-decisions	present in the log	-	-
+L2-b6ec8c	log	L2	IDENTISCH	5.4b security-privacy-decision	present in the log	-	-
+L2-254dc3	log	L2	IDENTISCH	5.4c page-routing	present in the log	-	-
+L2-21c0ec	log	L2	IDENTISCH	5.4d derived-scan	present in the log	-	-
+L2-a85d96	log	L2	IDENTISCH	5.5 gen-page-title-po	present in the log	-	-
+L2-619c38	log	L2	IDENTISCH	5.6 sushi-build	present in the log	-	-
+L2-a60619	log	L2	IDENTISCH	5.6 ig-publisher	present in the log	-	-
+L2-d8144d	log	L2	IDENTISCH	5.6a sibling-skill-check	present in the log	-	-
+L2-bce311	log	L2	IDENTISCH	7 prepost-delta	present in the log	-	-
+L2-3b5912	log	L2	IDENTISCH	11 verify-migration	present in the log	-	-
+L3-4436a8	log	L3	IDENTISCH	identity field description	2 contradicting readings, decided in the log	-	-
+L3-fb74fa	log	L3	IDENTISCH	identity field status	1 contradicting readings, decided in the log	-	-
+L3-8766f8	log	L3	IDENTISCH	identity ledger	migration-log/identity-claims.tsv present, 14 claim(s)	-	-
+L4-106e61	log	L4	IDENTISCH	conversion count	log 20 converted <= 22 generated (SUSHI adds the IG resource itself)	-	-
+L4-f17740	log	L4	IDENTISCH	page count	log and manifest agree: 18 harvested	-	-
+L4-40cf60	log	L4	IDENTISCH	artifact count	artifacts.html lists 22 for 22 generated resources	-	-

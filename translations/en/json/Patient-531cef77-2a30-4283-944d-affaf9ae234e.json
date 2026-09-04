@@ -1,0 +1,13 @@
+{
+  "id" : "Patient-531cef77-2a30-4283-944d-affaf9ae234e",
+  "baseLang" : "de",
+  "languages" : [{
+    "targetLang" : "en",
+    "entries" : [{
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "Anonymous identifier",
+      "target" : null
+    }]
+  }]
+}

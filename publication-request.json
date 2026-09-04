@@ -1,0 +1,17 @@
+{
+   "package-id" : "de.medizininformatikinitiative.kerndatensatz.consent",
+   "version" : "2027.0.0-ballot.rc1",
+   "path" : "https://medizininformatik-initiative.github.io/kerndatensatzmodul-consent/2027.0.0-ballot.rc1",
+   "mode" : "milestone",
+   "status" : "release",
+   "sequence" : "2027",
+   "desc" : "KDS Modul Consent 2027.0.0-ballot.rc1 (Ballot-Kandidat; inhaltlich identisch mit Release 2026.0.0)",
+   "first" : true,
+   "title" : "MII Implementation Guide Consent",
+   "ci-build" : "https://medizininformatik-initiative.github.io/kerndatensatzmodul-consent/branches/dev/",
+   "category" : "Research",
+   "introduction" : "KDS Modul Consent der Medizininformatik-Initiative (MII)",
+   "registry-description" : "Medizininformatik-Initiative - KDS Modul Consent",
+   "registry-country" : "de",
+   "registry-authority" : "Medical Informatics Initiative (MII)"
+}

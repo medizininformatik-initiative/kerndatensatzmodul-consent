@@ -1,0 +1,43 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="de" target-language="en" id="Provenance-55219d12-6245-4de4-8b50-ddf6f16a789b" original="Resource Provenance-55219d12-6245-4de4-8b50-ddf6f16a789b" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="Provenance-55219d12-6245-4de4-8b50-ddf6f16a789b" resname="Reference.display">
+             <notes>
+               <note id="n1">Reference.display</note>
+             </notes>
+        <source>Snakeoil Soft Consent Manager 2021</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Provenance-55219d12-6245-4de4-8b50-ddf6f16a789b" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Consent Signature</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Provenance-55219d12-6245-4de4-8b50-ddf6f16a789b" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Consent Witness Signature</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Provenance-55219d12-6245-4de4-8b50-ddf6f16a789b" resname="Reference.display">
+             <notes>
+               <note id="n1">Reference.display</note>
+             </notes>
+        <source>Dr. F. Müller</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Provenance-55219d12-6245-4de4-8b50-ddf6f16a789b" resname="Reference.display">
+             <notes>
+               <note id="n1">Reference.display</note>
+             </notes>
+        <source>Krankenhaus Musterstadt</source>
+        <target></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

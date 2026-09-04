@@ -1,0 +1,1363 @@
+{
+  "schemaVersion": "1.4",
+  "tool": "ig-stats.py",
+  "mode": "static",
+  "analyzed": {
+    "path": "/private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/target",
+    "label": "consent 2027.0.0-ballot.rc1 migrated tree",
+    "project_root_nested": null,
+    "project_root_candidates": null,
+    "git_commit": "5d025ff",
+    "timestamp": "2026-08-31T21:40:03Z"
+  },
+  "identity": {
+    "id": "mii-ig-consent",
+    "canonical": "https://www.medizininformatik-initiative.de/fhir/modul-consent",
+    "packageId": "de.medizininformatikinitiative.kerndatensatz.consent",
+    "name": "MII_IG_Consent",
+    "title": "MII Implementation Guide Consent",
+    "version": "2027.0.0-ballot.rc1",
+    "calver": true,
+    "status": "active",
+    "fhirVersion": "4.0.1",
+    "license": "CC-BY-4.0",
+    "publisher": "NUM-DIZ"
+  },
+  "artifacts": {
+    "profiles": 3,
+    "extensions": 0,
+    "valuesets": 3,
+    "codesystems": 3,
+    "logicals": 0,
+    "capabilitystatements": 1,
+    "questionnaires": 0,
+    "searchparameters": 6,
+    "operations": 0,
+    "examples": 6,
+    "rulesets": 55,
+    "invariants": 0,
+    "mappings": 0,
+    "other": {},
+    "total": 22,
+    "other_total": 0,
+    "_source": "input/fsh (FSH-Deklarationen)",
+    "generated_crosscheck": {
+      "source": "fsh-generated/resources",
+      "counts": {
+        "profiles": 3,
+        "extensions": 0,
+        "valuesets": 3,
+        "codesystems": 3,
+        "logicals": 0,
+        "capabilitystatements": 1,
+        "questionnaires": 0,
+        "searchparameters": 6,
+        "operations": 0,
+        "examples": 6
+      },
+      "other": {},
+      "mismatches": {}
+    }
+  },
+  "artifacts_detail": [
+    {
+      "type": "Instance",
+      "name": "mii-cap-consent-server",
+      "instanceOf": "CapabilityStatement",
+      "category": "capabilitystatements",
+      "path": "input/fsh/capabilitystatements/MII_CAP_Consent_Server.fsh",
+      "line": 5
+    },
+    {
+      "type": "CodeSystem",
+      "name": "MIIConsentVersionModuleCodeSystem",
+      "instanceOf": null,
+      "category": "codesystems",
+      "path": "input/fsh/codesystems/MIIConsentVersionModuleCodeSystem.fsh",
+      "line": 1
+    },
+    {
+      "type": "CodeSystem",
+      "name": "MII_CS_Consent_Answer",
+      "instanceOf": null,
+      "category": "codesystems",
+      "path": "input/fsh/codesystems/MII_CS_Consent_Answer.fsh",
+      "line": 1
+    },
+    {
+      "type": "CodeSystem",
+      "name": "MII_CS_Consent_Policy",
+      "instanceOf": null,
+      "category": "codesystems",
+      "path": "input/fsh/codesystems/MII_CS_Consent_Policy.fsh",
+      "line": 1
+    },
+    {
+      "type": "Instance",
+      "name": "34150a23-b1c8-404f-874f-e042a30435d2",
+      "instanceOf": "Consent",
+      "category": "examples",
+      "path": "input/fsh/instances/34150a23-b1c8-404f-874f-e042a30435d2.fsh",
+      "line": 1
+    },
+    {
+      "type": "Instance",
+      "name": "5143266b-8d60-4b28-8ee9-635140ffa5bb",
+      "instanceOf": "Consent",
+      "category": "examples",
+      "path": "input/fsh/instances/5143266b-8d60-4b28-8ee9-635140ffa5bb.fsh",
+      "line": 1
+    },
+    {
+      "type": "Instance",
+      "name": "55219d12-6245-4de4-8b50-ddf6f16a789b",
+      "instanceOf": "Provenance",
+      "category": "examples",
+      "path": "input/fsh/instances/55219d12-6245-4de4-8b50-ddf6f16a789b.fsh",
+      "line": 1
+    },
+    {
+      "type": "Instance",
+      "name": "89f494a3-cd75-44f5-a78a-581dfdd47a94",
+      "instanceOf": "Consent",
+      "category": "examples",
+      "path": "input/fsh/instances/89f494a3-cd75-44f5-a78a-581dfdd47a94.fsh",
+      "line": 1
+    },
+    {
+      "type": "Instance",
+      "name": "8a3d1799-2463-405e-b49c-6a16c8692b01",
+      "instanceOf": "DocumentReference",
+      "category": "examples",
+      "path": "input/fsh/instances/8a3d1799-2463-405e-b49c-6a16c8692b01.fsh",
+      "line": 1
+    },
+    {
+      "type": "Instance",
+      "name": "Example-MII-Consent-ResultType-document",
+      "instanceOf": "Consent",
+      "category": "examples",
+      "path": "input/fsh/instances/Example-MII-Consent-ResultType-document.fsh",
+      "line": 1
+    },
+    {
+      "type": "Instance",
+      "name": "mii-sp-consent-policyuri",
+      "instanceOf": "SearchParameter",
+      "category": "searchparameters",
+      "path": "input/fsh/instances/mii-sp-consent-policyuri.fsh",
+      "line": 1
+    },
+    {
+      "type": "Instance",
+      "name": "mii-sp-consent-provisioncode",
+      "instanceOf": "SearchParameter",
+      "category": "searchparameters",
+      "path": "input/fsh/instances/mii-sp-consent-provisioncode.fsh",
+      "line": 1
+    },
+    {
+      "type": "Instance",
+      "name": "mii-sp-consent-provisioncodeperiod",
+      "instanceOf": "SearchParameter",
+      "category": "searchparameters",
+      "path": "input/fsh/instances/mii-sp-consent-provisioncodeperiod.fsh",
+      "line": 1
+    },
+    {
+      "type": "Instance",
+      "name": "mii-sp-consent-provisioncodetype",
+      "instanceOf": "SearchParameter",
+      "category": "searchparameters",
+      "path": "input/fsh/instances/mii-sp-consent-provisioncodetype.fsh",
+      "line": 1
+    },
+    {
+      "type": "Instance",
+      "name": "mii-sp-consent-provisionperiod",
+      "instanceOf": "SearchParameter",
+      "category": "searchparameters",
+      "path": "input/fsh/instances/mii-sp-consent-provisionperiod.fsh",
+      "line": 1
+    },
+    {
+      "type": "Instance",
+      "name": "mii-sp-consent-provisiontype",
+      "instanceOf": "SearchParameter",
+      "category": "searchparameters",
+      "path": "input/fsh/instances/mii-sp-consent-provisiontype.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_Consent_DocumentReference",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/MII_PR_Consent_DocumentReference.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_Consent_Einwilligung",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/MII_PR_Consent_Einwilligung.fsh",
+      "line": 1
+    },
+    {
+      "type": "Profile",
+      "name": "MII_PR_Consent_Provenance",
+      "instanceOf": null,
+      "category": "profiles",
+      "path": "input/fsh/profiles/MII_PR_Consent_Provenance.fsh",
+      "line": 1
+    },
+    {
+      "type": "RuleSet",
+      "name": "SupportResource",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/cps-rules.fsh",
+      "line": 21
+    },
+    {
+      "type": "RuleSet",
+      "name": "Profile",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/cps-rules.fsh",
+      "line": 39
+    },
+    {
+      "type": "RuleSet",
+      "name": "SupportProfile",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/cps-rules.fsh",
+      "line": 44
+    },
+    {
+      "type": "RuleSet",
+      "name": "SupportInteraction",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/cps-rules.fsh",
+      "line": 50
+    },
+    {
+      "type": "RuleSet",
+      "name": "SupportSearchParam",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/cps-rules.fsh",
+      "line": 56
+    },
+    {
+      "type": "RuleSet",
+      "name": "SupportSpecialSearchParam",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/cps-rules.fsh",
+      "line": 64
+    },
+    {
+      "type": "RuleSet",
+      "name": "CRMIVersionPolicyStrict",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/crmi.fsh",
+      "line": 25
+    },
+    {
+      "type": "RuleSet",
+      "name": "CRMIVersionPolicyStrictInstance",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/crmi.fsh",
+      "line": 29
+    },
+    {
+      "type": "RuleSet",
+      "name": "CRMICopyrightLabel",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/crmi.fsh",
+      "line": 39
+    },
+    {
+      "type": "RuleSet",
+      "name": "CRMICopyrightLabelInstance",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/crmi.fsh",
+      "line": 43
+    },
+    {
+      "type": "RuleSet",
+      "name": "CRMIApprovalDate",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/crmi.fsh",
+      "line": 50
+    },
+    {
+      "type": "RuleSet",
+      "name": "CRMIApprovalDateInstance",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/crmi.fsh",
+      "line": 54
+    },
+    {
+      "type": "RuleSet",
+      "name": "CRMIArtifactTopic",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/crmi.fsh",
+      "line": 64
+    },
+    {
+      "type": "RuleSet",
+      "name": "CRMIArtifactTopicInstance",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/crmi.fsh",
+      "line": 68
+    },
+    {
+      "type": "RuleSet",
+      "name": "CRMIArtifactContributors",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/crmi.fsh",
+      "line": 78
+    },
+    {
+      "type": "RuleSet",
+      "name": "CRMIArtifactContributorsInstance",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/crmi.fsh",
+      "line": 101
+    },
+    {
+      "type": "RuleSet",
+      "name": "CRMIShareableStructureDefinition",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/crmi.fsh",
+      "line": 126
+    },
+    {
+      "type": "RuleSet",
+      "name": "CRMIPublishableStructureDefinition",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/crmi.fsh",
+      "line": 129
+    },
+    {
+      "type": "RuleSet",
+      "name": "CRMIKnowledgeCapabilitiesStructureDefinition",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/crmi.fsh",
+      "line": 132
+    },
+    {
+      "type": "RuleSet",
+      "name": "CRMIArtifactUsageLogicalModel",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/crmi.fsh",
+      "line": 138
+    },
+    {
+      "type": "RuleSet",
+      "name": "CRMIArtifactUsageProfile",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/crmi.fsh",
+      "line": 142
+    },
+    {
+      "type": "RuleSet",
+      "name": "CRMIArtifactUsageExtension",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/crmi.fsh",
+      "line": 146
+    },
+    {
+      "type": "RuleSet",
+      "name": "CRMIShareableCapabilityStatement",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/crmi.fsh",
+      "line": 152
+    },
+    {
+      "type": "RuleSet",
+      "name": "CRMIPublishableCapabilityStatement",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/crmi.fsh",
+      "line": 155
+    },
+    {
+      "type": "RuleSet",
+      "name": "CRMIKnowledgeCapabilitiesCapabilityStatement",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/crmi.fsh",
+      "line": 158
+    },
+    {
+      "type": "RuleSet",
+      "name": "CRMIArtifactUsageCapabilityStatement",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/crmi.fsh",
+      "line": 164
+    },
+    {
+      "type": "RuleSet",
+      "name": "CRMIShareableCodeSystem",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/crmi.fsh",
+      "line": 170
+    },
+    {
+      "type": "RuleSet",
+      "name": "CRMIPublishableCodeSystem",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/crmi.fsh",
+      "line": 173
+    },
+    {
+      "type": "RuleSet",
+      "name": "CRMIKnowledgeCapabilitiesCodeSystem",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/crmi.fsh",
+      "line": 176
+    },
+    {
+      "type": "RuleSet",
+      "name": "CRMIKnowledgeCapabilitiesCodeSystemPublishable",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/crmi.fsh",
+      "line": 182
+    },
+    {
+      "type": "RuleSet",
+      "name": "CRMIShareableValueSet",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/crmi.fsh",
+      "line": 188
+    },
+    {
+      "type": "RuleSet",
+      "name": "CRMIPublishableValueSet",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/crmi.fsh",
+      "line": 191
+    },
+    {
+      "type": "RuleSet",
+      "name": "CRMIComputableValueSet",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/crmi.fsh",
+      "line": 194
+    },
+    {
+      "type": "RuleSet",
+      "name": "CRMIKnowledgeCapabilitiesValueSet",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/crmi.fsh",
+      "line": 197
+    },
+    {
+      "type": "RuleSet",
+      "name": "ExtensionContext",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/extension-context.fsh",
+      "line": 10
+    },
+    {
+      "type": "RuleSet",
+      "name": "LicenseCodeableCCBY40",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/license-terms.fsh",
+      "line": 14
+    },
+    {
+      "type": "RuleSet",
+      "name": "LicenseCodeableCCBY40Instance",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/license-terms.fsh",
+      "line": 18
+    },
+    {
+      "type": "RuleSet",
+      "name": "LicenseCodeableCC0",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/license-terms.fsh",
+      "line": 22
+    },
+    {
+      "type": "RuleSet",
+      "name": "SnomedLicense",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/license.fsh",
+      "line": 12
+    },
+    {
+      "type": "RuleSet",
+      "name": "MetaProfile",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/meta-profile.fsh",
+      "line": 13
+    },
+    {
+      "type": "RuleSet",
+      "name": "Publisher",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/publisher.fsh",
+      "line": 10
+    },
+    {
+      "type": "RuleSet",
+      "name": "SP_Publisher",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/publisher.fsh",
+      "line": 15
+    },
+    {
+      "type": "RuleSet",
+      "name": "TestDataLabel",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/test-data-label.fsh",
+      "line": 14
+    },
+    {
+      "type": "RuleSet",
+      "name": "Translation",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/translation.fsh",
+      "line": 27
+    },
+    {
+      "type": "RuleSet",
+      "name": "AddSnomedCodingTranslation",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/translation.fsh",
+      "line": 38
+    },
+    {
+      "type": "RuleSet",
+      "name": "AddIcd10CodingTranslation",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/translation.fsh",
+      "line": 46
+    },
+    {
+      "type": "RuleSet",
+      "name": "AddAlphaIdCodingTranslation",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/translation.fsh",
+      "line": 54
+    },
+    {
+      "type": "RuleSet",
+      "name": "AddOrphaCodingTranslation",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/translation.fsh",
+      "line": 62
+    },
+    {
+      "type": "RuleSet",
+      "name": "AddOpsCodingTranslation",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/translation.fsh",
+      "line": 70
+    },
+    {
+      "type": "RuleSet",
+      "name": "Version",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/version.fsh",
+      "line": 15
+    },
+    {
+      "type": "RuleSet",
+      "name": "PR_CS_VS_Version",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/version.fsh",
+      "line": 21
+    },
+    {
+      "type": "RuleSet",
+      "name": "CRMIPackageSource",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/version.fsh",
+      "line": 34
+    },
+    {
+      "type": "RuleSet",
+      "name": "CRMIPackageSourceDefinitionalResource",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/version.fsh",
+      "line": 43
+    },
+    {
+      "type": "RuleSet",
+      "name": "CRMIResourceEffectivePeriod",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/version.fsh",
+      "line": 56
+    },
+    {
+      "type": "RuleSet",
+      "name": "CRMIResourceEffectivePeriodInstance",
+      "instanceOf": null,
+      "category": "rulesets",
+      "path": "input/fsh/rulesets/version.fsh",
+      "line": 60
+    },
+    {
+      "type": "ValueSet",
+      "name": "MII_VS_Consent_Answer",
+      "instanceOf": null,
+      "category": "valuesets",
+      "path": "input/fsh/valuesets/MII_VS_Consent_Answer.fsh",
+      "line": 1
+    },
+    {
+      "type": "ValueSet",
+      "name": "MII_VS_Consent_SignatureTypes",
+      "instanceOf": null,
+      "category": "valuesets",
+      "path": "input/fsh/valuesets/MII_VS_Consent_SignatureTypes.fsh",
+      "line": 1
+    },
+    {
+      "type": "ValueSet",
+      "name": "MiiConsentPolicyValueSet",
+      "instanceOf": null,
+      "category": "valuesets",
+      "path": "input/fsh/valuesets/MiiConsentPolicyValueSet.fsh",
+      "line": 1
+    }
+  ],
+  "preflight": {
+    "licence": {
+      "evidence": [
+        {
+          "source": "sushi-config.yaml/package.json",
+          "value": "CC-BY-4.0"
+        },
+        {
+          "source": "LICENSE",
+          "value": "Attribution 4.0 International"
+        },
+        {
+          "source": "input/pagecontent/index.md",
+          "value": "CC BY 4.0"
+        },
+        {
+          "source": "input/pagecontent/code-systems.md",
+          "value": "CC0"
+        }
+      ],
+      "declared_anywhere": true,
+      "contradictory": true,
+      "distinct_values": [
+        "attribution4.0international",
+        "cc-by-4.0",
+        "cc0-1.0",
+        "ccby4.0"
+      ]
+    },
+    "canonical_space": {
+      "canonical": "https://www.medizininformatik-initiative.de/fhir/modul-consent",
+      "package_json_canonical": null,
+      "config_contradiction": false,
+      "out_of_space_count": 2,
+      "out_of_space": [
+        {
+          "type": "CodeSystem",
+          "id": "2.16.840.1.113883.3.1937.777.24.5.2--20210423105554",
+          "url": "urn:oid:2.16.840.1.113883.3.1937.777.24.5.2"
+        },
+        {
+          "type": "CodeSystem",
+          "id": "2.16.840.1.113883.3.1937.777.24.5.3--20251211153003",
+          "url": "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"
+        }
+      ],
+      "id_url_mismatch": [
+        {
+          "type": "StructureDefinition",
+          "id": "56375452-bfa1-4111-af7c-5b5ba9a1857c",
+          "url": "https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-documentreference"
+        },
+        {
+          "type": "StructureDefinition",
+          "id": "e0e166b4-0f77-478d-9062-de0034d98ce0",
+          "url": "https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-einwilligung"
+        },
+        {
+          "type": "StructureDefinition",
+          "id": "f675b1e8-9f3f-44e8-bb59-9681f78eb464",
+          "url": "https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-provenance"
+        },
+        {
+          "type": "ValueSet",
+          "id": "2.16.840.1.113883.3.1937.777.24.11.30--20210323234509",
+          "url": "https://www.medizininformatik-initiative.de/fhir/modul-consent/ValueSet/mii-vs-consent-answer"
+        },
+        {
+          "type": "ValueSet",
+          "id": "2.16.840.1.113883.3.1937.777.24.11.36--20230331232804",
+          "url": "https://www.medizininformatik-initiative.de/fhir/modul-consent/ValueSet/mii-vs-consent-policy"
+        },
+        {
+          "type": "ValueSet",
+          "id": "88464c5b-5338-4c2b-9c07-b42fef2ada64",
+          "url": "https://www.medizininformatik-initiative.de/fhir/modul-consent/ValueSet/mii-vs-consent-signaturetypes"
+        }
+      ],
+      "special_url_prediction": 8,
+      "example_org": []
+    },
+    "dependency_health": {
+      "old_style_packages": [],
+      "tho_pinned_directly": true,
+      "extensions_pinned_directly": true,
+      "injection_risk": false,
+      "external_parents": [
+        "http://fhir.de/ConsentManagement/StructureDefinition/DocumentReference",
+        "http://fhir.de/ConsentManagement/StructureDefinition/Provenance"
+      ],
+      "dependency_block_present": true,
+      "dependency_block_unparsed": false
+    },
+    "package_layout": null,
+    "narrative_sources": {
+      "pagecontent": true,
+      "intro_notes": true,
+      "implementation_guides_tree": false,
+      "dual_source": false,
+      "pagecontent_last_commit": "2026-08-31T22:50:41+02:00",
+      "implementation_guides_last_commit": null
+    },
+    "qa_baseline": {
+      "source": "output/qa.json",
+      "errs": 70,
+      "warnings": 137,
+      "date": "Mon, 31 Aug, 2026 21:34:42 +0000"
+    },
+    "_comment": "migration Gate-0 aspects; None = not measurable from this tree (obtain it, never assume it)"
+  },
+  "dependencies": {
+    "count": 4,
+    "pinned": 4,
+    "floating": 0,
+    "items": {
+      "de.einwilligungsmanagement": "2.0.2-snapshots",
+      "hl7.fhir.uv.crmi": "2.0.0",
+      "hl7.terminology.r4": "7.3.0",
+      "hl7.fhir.uv.extensions.r4": "5.3.0"
+    },
+    "floating_items": [],
+    "block_present": true,
+    "_source": "sushi-config.yaml: dependencies"
+  },
+  "narrative": {
+    "format": "target",
+    "pages": 18,
+    "pages_all": 18,
+    "translation_pages": 18,
+    "translation_words": 9261,
+    "intro_note_pages": 3,
+    "intro_note_words": 1540,
+    "words": 8320,
+    "words_all_incl_stubs": 19121,
+    "images": 2,
+    "mandatory_present": [
+      "index",
+      "guidance",
+      "implementer-guidance",
+      "uml-diagrams",
+      "profiles",
+      "capability-statements",
+      "logical-models",
+      "examples",
+      "security-and-privacy",
+      "changes",
+      "version-history",
+      "downloads",
+      "translationinfo"
+    ],
+    "mandatory_missing_in_target": [],
+    "files": [
+      {
+        "path": "input/pagecontent/ImplementationGuide-mii-ig-consent.md",
+        "words": 344,
+        "kind": "target",
+        "stub": false
+      },
+      {
+        "path": "input/pagecontent/capability-statements.md",
+        "words": 88,
+        "kind": "target",
+        "stub": false
+      },
+      {
+        "path": "input/pagecontent/changes.md",
+        "words": 995,
+        "kind": "target",
+        "stub": false
+      },
+      {
+        "path": "input/pagecontent/code-systems.md",
+        "words": 2201,
+        "kind": "target",
+        "stub": false
+      },
+      {
+        "path": "input/pagecontent/downloads.md",
+        "words": 303,
+        "kind": "target",
+        "stub": false
+      },
+      {
+        "path": "input/pagecontent/examples.md",
+        "words": 159,
+        "kind": "target",
+        "stub": false
+      },
+      {
+        "path": "input/pagecontent/frageboegen.md",
+        "words": 289,
+        "kind": "target",
+        "stub": false
+      },
+      {
+        "path": "input/pagecontent/guidance.md",
+        "words": 300,
+        "kind": "target",
+        "stub": false
+      },
+      {
+        "path": "input/pagecontent/implementer-guidance.md",
+        "words": 709,
+        "kind": "target",
+        "stub": false
+      },
+      {
+        "path": "input/pagecontent/index.md",
+        "words": 459,
+        "kind": "target",
+        "stub": false
+      },
+      {
+        "path": "input/pagecontent/logical-models.md",
+        "words": 126,
+        "kind": "target",
+        "stub": false
+      },
+      {
+        "path": "input/pagecontent/profiles.md",
+        "words": 273,
+        "kind": "target",
+        "stub": false
+      },
+      {
+        "path": "input/pagecontent/search-parameters.md",
+        "words": 642,
+        "kind": "target",
+        "stub": false
+      },
+      {
+        "path": "input/pagecontent/security-and-privacy.md",
+        "words": 378,
+        "kind": "target",
+        "stub": false
+      },
+      {
+        "path": "input/pagecontent/translationinfo.md",
+        "words": 108,
+        "kind": "target",
+        "stub": false
+      },
+      {
+        "path": "input/pagecontent/uml-diagrams.md",
+        "words": 282,
+        "kind": "target",
+        "stub": false
+      },
+      {
+        "path": "input/pagecontent/value-sets.md",
+        "words": 153,
+        "kind": "target",
+        "stub": false
+      },
+      {
+        "path": "input/pagecontent/version-history.md",
+        "words": 511,
+        "kind": "target",
+        "stub": false
+      },
+      {
+        "path": "input/intro-notes/StructureDefinition-56375452-bfa1-4111-af7c-5b5ba9a1857c-intro.md",
+        "words": 59,
+        "kind": "intro",
+        "stub": false
+      },
+      {
+        "path": "input/intro-notes/StructureDefinition-e0e166b4-0f77-478d-9062-de0034d98ce0-intro.md",
+        "words": 1422,
+        "kind": "intro",
+        "stub": false
+      },
+      {
+        "path": "input/intro-notes/StructureDefinition-f675b1e8-9f3f-44e8-bb59-9681f78eb464-intro.md",
+        "words": 59,
+        "kind": "intro",
+        "stub": false
+      },
+      {
+        "path": "input/translations/en/pagecontent/ImplementationGuide-mii-ig-consent.md",
+        "words": 423,
+        "kind": "translation",
+        "stub": false
+      },
+      {
+        "path": "input/translations/en/pagecontent/capability-statements.md",
+        "words": 106,
+        "kind": "translation",
+        "stub": false
+      },
+      {
+        "path": "input/translations/en/pagecontent/changes.md",
+        "words": 1072,
+        "kind": "translation",
+        "stub": false
+      },
+      {
+        "path": "input/translations/en/pagecontent/code-systems.md",
+        "words": 2249,
+        "kind": "translation",
+        "stub": false
+      },
+      {
+        "path": "input/translations/en/pagecontent/downloads.md",
+        "words": 330,
+        "kind": "translation",
+        "stub": false
+      },
+      {
+        "path": "input/translations/en/pagecontent/examples.md",
+        "words": 182,
+        "kind": "translation",
+        "stub": false
+      },
+      {
+        "path": "input/translations/en/pagecontent/frageboegen.md",
+        "words": 314,
+        "kind": "translation",
+        "stub": false
+      },
+      {
+        "path": "input/translations/en/pagecontent/guidance.md",
+        "words": 365,
+        "kind": "translation",
+        "stub": false
+      },
+      {
+        "path": "input/translations/en/pagecontent/implementer-guidance.md",
+        "words": 830,
+        "kind": "translation",
+        "stub": false
+      },
+      {
+        "path": "input/translations/en/pagecontent/index.md",
+        "words": 527,
+        "kind": "translation",
+        "stub": false
+      },
+      {
+        "path": "input/translations/en/pagecontent/logical-models.md",
+        "words": 152,
+        "kind": "translation",
+        "stub": false
+      },
+      {
+        "path": "input/translations/en/pagecontent/profiles.md",
+        "words": 316,
+        "kind": "translation",
+        "stub": false
+      },
+      {
+        "path": "input/translations/en/pagecontent/search-parameters.md",
+        "words": 730,
+        "kind": "translation",
+        "stub": false
+      },
+      {
+        "path": "input/translations/en/pagecontent/security-and-privacy.md",
+        "words": 456,
+        "kind": "translation",
+        "stub": false
+      },
+      {
+        "path": "input/translations/en/pagecontent/translationinfo.md",
+        "words": 132,
+        "kind": "translation",
+        "stub": false
+      },
+      {
+        "path": "input/translations/en/pagecontent/uml-diagrams.md",
+        "words": 334,
+        "kind": "translation",
+        "stub": false
+      },
+      {
+        "path": "input/translations/en/pagecontent/value-sets.md",
+        "words": 185,
+        "kind": "translation",
+        "stub": false
+      },
+      {
+        "path": "input/translations/en/pagecontent/version-history.md",
+        "words": 558,
+        "kind": "translation",
+        "stub": false
+      }
+    ]
+  },
+  "linguistics": {
+    "content_pages": 18,
+    "words_total": 8320,
+    "words_avg": 462.2,
+    "words_median": 302,
+    "words_min": 88,
+    "words_max": 2201,
+    "longest_page": "input/pagecontent/code-systems.md",
+    "shortest_page": "input/pagecontent/capability-statements.md",
+    "per_page": [
+      {
+        "path": "input/pagecontent/code-systems.md",
+        "words": 2201
+      },
+      {
+        "path": "input/pagecontent/changes.md",
+        "words": 995
+      },
+      {
+        "path": "input/pagecontent/implementer-guidance.md",
+        "words": 709
+      },
+      {
+        "path": "input/pagecontent/search-parameters.md",
+        "words": 642
+      },
+      {
+        "path": "input/pagecontent/version-history.md",
+        "words": 511
+      },
+      {
+        "path": "input/pagecontent/index.md",
+        "words": 459
+      },
+      {
+        "path": "input/pagecontent/security-and-privacy.md",
+        "words": 378
+      },
+      {
+        "path": "input/pagecontent/ImplementationGuide-mii-ig-consent.md",
+        "words": 344
+      },
+      {
+        "path": "input/pagecontent/downloads.md",
+        "words": 303
+      },
+      {
+        "path": "input/pagecontent/guidance.md",
+        "words": 300
+      },
+      {
+        "path": "input/pagecontent/frageboegen.md",
+        "words": 289
+      },
+      {
+        "path": "input/pagecontent/uml-diagrams.md",
+        "words": 282
+      },
+      {
+        "path": "input/pagecontent/profiles.md",
+        "words": 273
+      },
+      {
+        "path": "input/pagecontent/examples.md",
+        "words": 159
+      },
+      {
+        "path": "input/pagecontent/value-sets.md",
+        "words": 153
+      },
+      {
+        "path": "input/pagecontent/logical-models.md",
+        "words": 126
+      },
+      {
+        "path": "input/pagecontent/translationinfo.md",
+        "words": 108
+      },
+      {
+        "path": "input/pagecontent/capability-statements.md",
+        "words": 88
+      }
+    ]
+  },
+  "duplication": {
+    "duplicate_block_count": 0,
+    "duplicate_blocks": [],
+    "duplicate_file_groups": []
+  },
+  "hygiene": {
+    "images_total": 2,
+    "unreferenced_images": [],
+    "examples_total": 6,
+    "examples_not_in_narrative": [],
+    "note": "Heuristik: 'nicht referenziert' = Dateiname/Artefaktname kommt in keiner Erklärseite vor. Kein Beweis für Ungenutztheit (Referenz kann über Konfiguration/Build erfolgen)."
+  },
+  "i18n": {
+    "default_lang": null,
+    "default_lang_source": null,
+    "languages": [
+      "init",
+      "progress",
+      "context",
+      "html",
+      "tx"
+    ],
+    "translation_supplements": 0,
+    "supplement_files": [],
+    "translated_pages": 0,
+    "fsh_translation_ext": true,
+    "fsh_translation_files": [
+      "input/fsh/rulesets/translation.fsh"
+    ]
+  },
+  "directives": {
+    "total": 0,
+    "by_label": {},
+    "unknown": 0,
+    "occurrences": [],
+    "unknown_occurrences": []
+  },
+  "quality": {
+    "qc_rules_defined": 12,
+    "qc_rules": [
+      {
+        "name": "parse-fhir-resources",
+        "action": "parse",
+        "status": "Checking if all FHIR resource files can be parsed",
+        "category": null
+      },
+      {
+        "name": "resource-validation",
+        "action": "validate",
+        "status": "Validating resources against the FHIR standard and their profiles",
+        "category": "Resource"
+      },
+      {
+        "name": "unique-canonicals",
+        "action": "unique",
+        "status": "Checking if all StructureDefinitions have a unique canonical",
+        "category": "StructureDefinition"
+      },
+      {
+        "name": "no-snapshot",
+        "action": null,
+        "status": "Checking that StructureDefinitions carry no pre-generated snapshot",
+        "category": "StructureDefinition"
+      },
+      {
+        "name": "valid-ids",
+        "action": null,
+        "status": "Checking for valid resource ids",
+        "category": null
+      },
+      {
+        "name": "valid-names",
+        "action": null,
+        "status": "Checking that StructureDefinition names contain no spaces",
+        "category": "StructureDefinition"
+      },
+      {
+        "name": "unique-names",
+        "action": null,
+        "status": null,
+        "category": "Conformance"
+      },
+      {
+        "name": "version-filled",
+        "action": null,
+        "status": "Checking that every conformance resource carries the release version",
+        "category": null
+      },
+      {
+        "name": "naming-convention-id",
+        "action": null,
+        "status": "Checking the id naming convention (mii-<prefix>-<module>-…)",
+        "category": null
+      },
+      {
+        "name": "naming-convention-name",
+        "action": null,
+        "status": "Checking the name naming convention (MII_<PREFIX>_<Module>_…)",
+        "category": null
+      },
+      {
+        "name": "naming-convention-title",
+        "action": null,
+        "status": "Checking the title naming convention (MII <PREFIX> <Module> …)",
+        "category": null
+      },
+      {
+        "name": "naming-convention-url",
+        "action": null,
+        "status": "Checking the canonical-URL naming convention",
+        "category": null
+      }
+    ],
+    "qc_source": "qc/custom.rules.yaml",
+    "qc_violations": null,
+    "suppressed_messages": 8,
+    "qa_errors": null,
+    "qa_warnings": null,
+    "qa_hints": null,
+    "broken_links": null,
+    "qa_categories": null
+  },
+  "maturity": {
+    "components": {
+      "Status": "active",
+      "Doku-Vollständigkeit": 100,
+      "Beispiel-Abdeckung": 0,
+      "Governance": 100
+    },
+    "example_coverage": {
+      "profiles_total": 3,
+      "covered": 0,
+      "uncovered": [
+        "MII_PR_Consent_DocumentReference",
+        "MII_PR_Consent_Einwilligung",
+        "MII_PR_Consent_Provenance"
+      ],
+      "coverage_pct": 0
+    },
+    "governance": {
+      "ci_workflows": 8,
+      "publication_request": true,
+      "ig_ini": true,
+      "devcontainer": true,
+      "governance_score": 100
+    },
+    "doc_health_pct": 100
+  },
+  "portfolio": {
+    "vendor_lockin_score": 0,
+    "vendor_lockin_band": "gering",
+    "directives_per_page": 0.0,
+    "terminology_standard_systems": [
+      "SNOMED CT",
+      "LOINC",
+      "ICD-10"
+    ],
+    "terminology_standard_refs": 144,
+    "local_codesystems": 3,
+    "terminology_standard_share_pct": 98,
+    "canonical_reuse_ratio_pct": 100,
+    "external_parents": 3,
+    "local_parents": 0,
+    "fhir_version_label": "R4",
+    "fhir_version_note": "aktuell verbreitet",
+    "dependency_stale_count": 0,
+    "dependency_stale": [],
+    "dependency_staleness_note": "Heuristik aus CalVer-Jahr; exakt nur via Package-Registry (extern).",
+    "release_cadence_per_year": 23.7,
+    "days_since_last_commit": 0,
+    "tags": 5
+  },
+  "risk": {
+    "terminology_license_flags": [
+      {
+        "system": "SNOMED CT",
+        "license": "lizenzpflichtig (Affiliate/Land)"
+      },
+      {
+        "system": "LOINC",
+        "license": "frei (Registrierung)"
+      },
+      {
+        "system": "ICD-10",
+        "license": "frei"
+      }
+    ],
+    "terminology_license_risk": true,
+    "suppressed_total": 8,
+    "suppressed_broad": 0,
+    "suppressed_warning_risk": "gering",
+    "privacy_page_words": 0,
+    "privacy_page_substantial": false,
+    "examples_contain_pii_like": false,
+    "bus_factor_top_author_pct": 31,
+    "bus_factor_authors": 7,
+    "bus_factor_risk": "gering",
+    "breaking_change_risk": null,
+    "breaking_change_note": "Erfordert Diff gegen die publizierte Vorversion (Build/extern) — statisch nicht erhoben."
+  },
+  "git": {
+    "commits": 109,
+    "authors": 7,
+    "top_author_share": 31,
+    "days_since_last": 0,
+    "commits_per_year": 23.7,
+    "tags": 5,
+    "first": "2022-01-28",
+    "last": "2026-08-31",
+    "history_complete": true
+  }
+}

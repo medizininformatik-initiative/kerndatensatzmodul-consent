@@ -1,0 +1,26 @@
+
+# Reference.display
+#: Reference.display
+msgid "Snakeoil Soft Consent Manager 2021"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Consent Signature"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Consent Witness Signature"
+msgstr ""
+
+# Reference.display
+#: Reference.display
+msgid "Dr. F. Müller"
+msgstr ""
+
+# Reference.display
+#: Reference.display
+msgid "Krankenhaus Musterstadt"
+msgstr ""
+

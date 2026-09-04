@@ -1,0 +1,28 @@
+# Re-measured for THIS migration (decision D-11): input/pagecontent/ of
+# medizininformatik-initiative/mii-kds-module-template at tag v0.13.2
+# (commit a2390dea), read from the checkout on 2026-08-31. Page set verified
+# byte-identical to the skill's vendored v0.11.1 measurement (gh compare
+# v0.11.1...v0.13.2 = 62 files, ZERO under input/); the slug-bearing
+# IG-resource intro page is prefix-matched in code as before. Same
+# role column semantics as references/template-pages.tsv.
+capability-statements	scaffold	v0.13.2
+changes	scaffold	v0.13.2
+code-systems	optional	v0.13.2
+downloads	scaffold	v0.13.2
+examples	scaffold	v0.13.2
+extensions	optional	v0.13.2
+guidance	scaffold	v0.13.2
+implementer-guidance	scaffold	v0.13.2
+index	scaffold	v0.13.2
+logical-models	scaffold	v0.13.2
+metadata	optional	v0.13.2
+operations	optional	v0.13.2
+profiles	scaffold	v0.13.2
+rendering-artifacts	demo	v0.13.2
+researcher-guidance	optional	v0.13.2
+search-parameters	optional	v0.13.2
+security-and-privacy	scaffold	v0.13.2
+translationinfo	scaffold	v0.13.2
+uml-diagrams	scaffold	v0.13.2
+value-sets	optional	v0.13.2
+version-history	scaffold	v0.13.2

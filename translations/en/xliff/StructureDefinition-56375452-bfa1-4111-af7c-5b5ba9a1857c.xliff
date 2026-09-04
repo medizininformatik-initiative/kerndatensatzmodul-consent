@@ -1,0 +1,71 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="de" target-language="en" id="StructureDefinition-56375452-bfa1-4111-af7c-5b5ba9a1857c" original="Resource StructureDefinition-56375452-bfa1-4111-af7c-5b5ba9a1857c" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="StructureDefinition-56375452-bfa1-4111-af7c-5b5ba9a1857c" resname="StructureDefinition.name">
+             <notes>
+               <note id="n1">A natural language name identifying the structure definition. This name should be usable as an identifier for the module by machine processing applications such as code generation.</note>
+             </notes>
+        <source>MII_PR_Consent_DocumentReference</source>
+        <target>MII_PR_Consent_DocumentReference</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-56375452-bfa1-4111-af7c-5b5ba9a1857c" resname="StructureDefinition.title">
+             <notes>
+               <note id="n1">A short, descriptive, user-friendly title for the structure definition.</note>
+             </notes>
+        <source>Profile - MI-I - Consent - DocumentReference</source>
+        <target>Profile - MI-I - Consent - DocumentReference</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-56375452-bfa1-4111-af7c-5b5ba9a1857c" resname="StructureDefinition.publisher">
+             <notes>
+               <note id="n1">The name of the organization or individual responsible for the release and ongoing maintenance of the structure definition.</note>
+             </notes>
+        <source>NUM-DIZ</source>
+        <target>NUM-DIZ</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-56375452-bfa1-4111-af7c-5b5ba9a1857c" resname="StructureDefinition.contact.name">
+             <notes>
+               <note id="n1">The name of an individual to contact.</note>
+             </notes>
+        <source>NUM-DIZ</source>
+        <target>NUM-DIZ</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-56375452-bfa1-4111-af7c-5b5ba9a1857c" resname="StructureDefinition.mapping.workflow/name">
+             <notes>
+               <note id="n1">A name for the specification that is being mapped to.</note>
+             </notes>
+        <source>Workflow Pattern</source>
+        <target>Workflow Pattern</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-56375452-bfa1-4111-af7c-5b5ba9a1857c" resname="StructureDefinition.mapping.fhircomposition/name">
+             <notes>
+               <note id="n1">A name for the specification that is being mapped to.</note>
+             </notes>
+        <source>FHIR Composition</source>
+        <target>FHIR Composition</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-56375452-bfa1-4111-af7c-5b5ba9a1857c" resname="StructureDefinition.mapping.w5/name">
+             <notes>
+               <note id="n1">A name for the specification that is being mapped to.</note>
+             </notes>
+        <source>FiveWs Pattern Mapping</source>
+        <target>FiveWs Pattern Mapping</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-56375452-bfa1-4111-af7c-5b5ba9a1857c" resname="StructureDefinition.mapping.v2/name">
+             <notes>
+               <note id="n1">A name for the specification that is being mapped to.</note>
+             </notes>
+        <source>HL7 v2 Mapping</source>
+        <target>HL7 v2 Mapping</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-56375452-bfa1-4111-af7c-5b5ba9a1857c" resname="StructureDefinition.mapping.xds/name">
+             <notes>
+               <note id="n1">A name for the specification that is being mapped to.</note>
+             </notes>
+        <source>XDS metadata equivalent</source>
+        <target>XDS metadata equivalent</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

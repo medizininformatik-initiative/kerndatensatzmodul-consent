@@ -1,0 +1,20 @@
+{
+  "name": "de.medizininformatikinitiative.kerndatensatz.consent",
+  "version": "2027.0.0-ballot.rc1",
+  "description": "KDS Modul Consent der Medizininformatik-Initiative (MII)",
+  "author": "NUM-DIZ",
+  "license": "CC-BY-4.0",
+  "canonical": "https://www.medizininformatik-initiative.de/fhir/modul-consent",
+  "url": "https://www.medizininformatik-initiative.de/fhir/modul-consent",
+  "fhirVersions": [
+    "4.0.1"
+  ],
+  "jurisdiction": "urn:iso:std:iso:3166#DE",
+  "dependencies": {
+    "hl7.fhir.r4.core": "4.0.1",
+    "de.einwilligungsmanagement": "2.0.4-rc1",
+    "hl7.fhir.uv.crmi": "2.0.0",
+    "hl7.terminology.r4": "7.3.0",
+    "hl7.fhir.uv.extensions.r4": "5.3.0"
+  }
+}

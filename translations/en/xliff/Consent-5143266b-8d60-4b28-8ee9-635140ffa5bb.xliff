@@ -1,0 +1,204 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="de" target-language="en" id="Consent-5143266b-8d60-4b28-8ee9-635140ffa5bb" original="Resource Consent-5143266b-8d60-4b28-8ee9-635140ffa5bb" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="Consent-5143266b-8d60-4b28-8ee9-635140ffa5bb" resname="Reference.display">
+             <notes>
+               <note id="n1">Reference.display</note>
+             </notes>
+        <source>MII</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Consent-5143266b-8d60-4b28-8ee9-635140ffa5bb" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>IDAT erheben</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Consent-5143266b-8d60-4b28-8ee9-635140ffa5bb" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>KKDAT 5J retrospektiv speichern verarbeiten</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Consent-5143266b-8d60-4b28-8ee9-635140ffa5bb" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>BIOMAT wissenschaftlich nutzen EU DSGVO NIVEAU</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Consent-5143266b-8d60-4b28-8ee9-635140ffa5bb" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>KKDAT 5J retrospektiv wissenschaftlich nutzen</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Consent-5143266b-8d60-4b28-8ee9-635140ffa5bb" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>BIOMAT Analysedaten zusammenfuehren Dritte</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Consent-5143266b-8d60-4b28-8ee9-635140ffa5bb" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Rekontaktierung Zusatzbefund</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Consent-5143266b-8d60-4b28-8ee9-635140ffa5bb" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>KKDAT 5J prospektiv wissenschaftlich nutzen</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Consent-5143266b-8d60-4b28-8ee9-635140ffa5bb" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>BIOMAT lagern verarbeiten</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Consent-5143266b-8d60-4b28-8ee9-635140ffa5bb" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>KKDAT 5J retrospektiv uebertragen</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Consent-5143266b-8d60-4b28-8ee9-635140ffa5bb" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>KKDAT 5J retrospektiv uebertragen KVNR</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Consent-5143266b-8d60-4b28-8ee9-635140ffa5bb" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>MDAT erheben</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Consent-5143266b-8d60-4b28-8ee9-635140ffa5bb" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>KKDAT 5J prospektiv speichern verarbeiten</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Consent-5143266b-8d60-4b28-8ee9-635140ffa5bb" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>MDAT wissenschaftlich nutzen EU DSGVO NIVEAU</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Consent-5143266b-8d60-4b28-8ee9-635140ffa5bb" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Rekontaktierung Verknüpfung Datenbanken</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Consent-5143266b-8d60-4b28-8ee9-635140ffa5bb" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Rekontaktierung weitere Studien</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Consent-5143266b-8d60-4b28-8ee9-635140ffa5bb" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>IDAT bereitstellen EU DSGVO NIVEAU</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Consent-5143266b-8d60-4b28-8ee9-635140ffa5bb" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>BIOMAT Eigentum übertragen</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Consent-5143266b-8d60-4b28-8ee9-635140ffa5bb" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>IDAT speichern, verarbeiten</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Consent-5143266b-8d60-4b28-8ee9-635140ffa5bb" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>MDAT speichern, verarbeiten</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Consent-5143266b-8d60-4b28-8ee9-635140ffa5bb" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>BIOMAT erheben</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Consent-5143266b-8d60-4b28-8ee9-635140ffa5bb" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Rekontaktierung Ergebnisse erheblicher Bedeutung</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Consent-5143266b-8d60-4b28-8ee9-635140ffa5bb" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>KKDAT 5J prospektiv uebertragen KVNR</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Consent-5143266b-8d60-4b28-8ee9-635140ffa5bb" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>BIOMAT Zusatzmengen entnehmen</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Consent-5143266b-8d60-4b28-8ee9-635140ffa5bb" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Rekontaktierung weitere Erhebung</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Consent-5143266b-8d60-4b28-8ee9-635140ffa5bb" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>IDAT zusammenfuehren Dritte</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Consent-5143266b-8d60-4b28-8ee9-635140ffa5bb" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>MDAT zusammenfuehren Dritte</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="Consent-5143266b-8d60-4b28-8ee9-635140ffa5bb" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>KKDAT 5J prospektiv uebertragen</source>
+        <target></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

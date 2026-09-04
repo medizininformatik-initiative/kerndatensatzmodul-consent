@@ -1,0 +1,61 @@
+{
+  "id" : "StructureDefinition-56375452-bfa1-4111-af7c-5b5ba9a1857c",
+  "baseLang" : "de",
+  "languages" : [{
+    "targetLang" : "en",
+    "entries" : [{
+      "id" : "StructureDefinition.name",
+      "context" : "A natural language name identifying the structure definition. This name should be usable as an identifier for the module by machine processing applications such as code generation.",
+      "source" : "MII_PR_Consent_DocumentReference",
+      "target" : "MII_PR_Consent_DocumentReference"
+    },
+    {
+      "id" : "StructureDefinition.title",
+      "context" : "A short, descriptive, user-friendly title for the structure definition.",
+      "source" : "Profile - MI-I - Consent - DocumentReference",
+      "target" : "Profile - MI-I - Consent - DocumentReference"
+    },
+    {
+      "id" : "StructureDefinition.publisher",
+      "context" : "The name of the organization or individual responsible for the release and ongoing maintenance of the structure definition.",
+      "source" : "NUM-DIZ",
+      "target" : "NUM-DIZ"
+    },
+    {
+      "id" : "StructureDefinition.contact.name",
+      "context" : "The name of an individual to contact.",
+      "source" : "NUM-DIZ",
+      "target" : "NUM-DIZ"
+    },
+    {
+      "id" : "StructureDefinition.mapping.workflow/name",
+      "context" : "A name for the specification that is being mapped to.",
+      "source" : "Workflow Pattern",
+      "target" : "Workflow Pattern"
+    },
+    {
+      "id" : "StructureDefinition.mapping.fhircomposition/name",
+      "context" : "A name for the specification that is being mapped to.",
+      "source" : "FHIR Composition",
+      "target" : "FHIR Composition"
+    },
+    {
+      "id" : "StructureDefinition.mapping.w5/name",
+      "context" : "A name for the specification that is being mapped to.",
+      "source" : "FiveWs Pattern Mapping",
+      "target" : "FiveWs Pattern Mapping"
+    },
+    {
+      "id" : "StructureDefinition.mapping.v2/name",
+      "context" : "A name for the specification that is being mapped to.",
+      "source" : "HL7 v2 Mapping",
+      "target" : "HL7 v2 Mapping"
+    },
+    {
+      "id" : "StructureDefinition.mapping.xds/name",
+      "context" : "A name for the specification that is being mapped to.",
+      "source" : "XDS metadata equivalent",
+      "target" : "XDS metadata equivalent"
+    }]
+  }]
+}

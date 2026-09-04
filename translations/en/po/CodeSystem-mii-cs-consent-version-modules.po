@@ -1,0 +1,295 @@
+
+# CodeSystem.name
+#: CodeSystem.name
+msgid "MIIConsentVersionModuleCodeSystem"
+msgstr ""
+
+# CodeSystem.title
+#: CodeSystem.title
+msgid "MII Consent Version and Modules CodeSystem"
+msgstr ""
+
+# CodeSystem.publisher
+#: CodeSystem.publisher
+msgid "NUM-DIZ"
+msgstr "NUM-DIZ"
+
+# ContactDetail.name
+#: ContactDetail.name
+msgid "NUM-DIZ"
+msgstr ""
+
+# CodeSystem.description
+#: CodeSystem.description
+msgid "Dieses Code System enthält die OIDs der verschiedenen Versionen und Zusatzmodule des Broad Consent der Medizininformatik Initiative."
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Germany"
+msgstr ""
+
+# CodeSystem.copyright
+#: CodeSystem.copyright
+msgid "
+            © 2019+ TMF e. V., Charlottenstraße 42, 10117 Berlin 
+            
+                
+                    CC BY 4.0
+                
+                 
+            
+            Diese Arbeit ist lizensiert unter der [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/). 
+            Zu den Nutzungsrechten der zugrunde liegenden FHIR-Technologie siehe die FHIR-Basis-Spezifikation. 
+            Einige verwendete Codesysteme werden von anderen Organisationen herausgegeben und gepflegt. Es gilt das Copyright der dort jeweils aufgeführten Herausgeber (Publisher). 
+        "
+msgstr ""
+
+# CodeSystem.property.description
+#: CodeSystem.property.description
+msgid "A code that indicates the status of the concept. Values found in this version of the code system are: draft"
+msgstr ""
+
+# CodeSystem.property.description
+#: CodeSystem.property.description
+msgid "The concept identified in this property is a parent of the concept on which it is a property. The property type will be 'code'. The meaning of 'parent' is defined by the hierarchyMeaning attribute"
+msgstr ""
+
+# CodeSystem.property.description
+#: CodeSystem.property.description
+msgid "The concept identified in this property is a child of the concept on which it is a property. The property type will be 'code'. The meaning of 'child' is defined by the hierarchyMeaning attribute"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "MII Broad Consent"
+msgstr ""
+
+# CodeSystem.concept.definition
+#: CodeSystem.concept.definition
+msgid "
+                        Dieser Code (OID) kennzeichnet den Broad Consent der Medizininformatik Initiative (MII)."
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Fully specified name"
+msgstr ""
+
+# CodeSystem.concept.designation.value
+#: CodeSystem.concept.designation.value
+msgid "MII Broad Consent"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "Version 1.6d des MII Broad Consent"
+msgstr ""
+
+# CodeSystem.concept.definition
+#: CodeSystem.concept.definition
+msgid "
+                        Version 1.6d des MII Broad Consent"
+msgstr ""
+
+# CodeSystem.concept.designation.value
+#: CodeSystem.concept.designation.value
+msgid "Version 1.6d des MII Broad Consent"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "Version 1.6d Ablehnung"
+msgstr ""
+
+# CodeSystem.concept.designation.value
+#: CodeSystem.concept.designation.value
+msgid "Version 1.6d Ablehnung"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "Version 1.6d Komplettwiderruf"
+msgstr ""
+
+# CodeSystem.concept.designation.value
+#: CodeSystem.concept.designation.value
+msgid "Version 1.6d Komplettwiderruf"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "Version 1.6d Teilwiderruf"
+msgstr ""
+
+# CodeSystem.concept.designation.value
+#: CodeSystem.concept.designation.value
+msgid "Version 1.6d Teilwiderruf"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "Version 1.6f des MII Broad Consent"
+msgstr ""
+
+# CodeSystem.concept.designation.value
+#: CodeSystem.concept.designation.value
+msgid "Version 1.6f des MII Broad Consent"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "Version 1.6f Komplettwiderruf"
+msgstr ""
+
+# CodeSystem.concept.designation.value
+#: CodeSystem.concept.designation.value
+msgid "Version 1.6f Komplettwiderruf"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "Version 1.6f Teilwiderruf"
+msgstr ""
+
+# CodeSystem.concept.designation.value
+#: CodeSystem.concept.designation.value
+msgid "Version 1.6f Teilwiderruf"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "Version 1.7.2 des MII Broad Consent"
+msgstr ""
+
+# CodeSystem.concept.designation.value
+#: CodeSystem.concept.designation.value
+msgid "Version 1.7.2 des MII Broad Consent"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "Version 1.7.2 Ablehnung"
+msgstr ""
+
+# CodeSystem.concept.designation.value
+#: CodeSystem.concept.designation.value
+msgid "Version 1.7.2 Ablehnung"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "Version 1.7.2 Vertretende"
+msgstr ""
+
+# CodeSystem.concept.designation.value
+#: CodeSystem.concept.designation.value
+msgid "Version 1.7.2 Vertretende"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "Version 1.7.2 Komplettwiderruf"
+msgstr ""
+
+# CodeSystem.concept.designation.value
+#: CodeSystem.concept.designation.value
+msgid "Version 1.7.2 Komplettwiderruf"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "Version 1.7.2 Teilwiderruf"
+msgstr ""
+
+# CodeSystem.concept.designation.value
+#: CodeSystem.concept.designation.value
+msgid "Version 1.7.2 Teilwiderruf"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "Version 1.7.2 Eltern und Sorgeberechtigte für Minderjährige v1.1"
+msgstr ""
+
+# CodeSystem.concept.designation.value
+#: CodeSystem.concept.designation.value
+msgid "Version 1.7.2 Eltern und Sorgeberechtigte für Minderjährige v1.1"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "Version 1.7.2 7-11 Minderjährige v1.1"
+msgstr ""
+
+# CodeSystem.concept.designation.value
+#: CodeSystem.concept.designation.value
+msgid "Version 1.7.2 7-11 Minderjährige v1.1"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "Version 1.7.2 12-17 Minderjährige v1.1"
+msgstr ""
+
+# CodeSystem.concept.designation.value
+#: CodeSystem.concept.designation.value
+msgid "Version 1.7.2 12-17 Minderjährige v1.1"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "Zusatzmodule des MII Broad Consent"
+msgstr ""
+
+# CodeSystem.concept.definition
+#: CodeSystem.concept.definition
+msgid "
+                        Dieser Code (OID) gruppiert die Zusatzmodule des MII Broad Consent."
+msgstr ""
+
+# CodeSystem.concept.designation.value
+#: CodeSystem.concept.designation.value
+msgid "Zusatzmodule des MII Broad Consent"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "Zusatzmodul ACRIBiS (Z2)"
+msgstr ""
+
+# CodeSystem.concept.designation.value
+#: CodeSystem.concept.designation.value
+msgid "Zusatzmodul ACRIBiS (Z2)"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "Zusatzmodul Patientenbefragung (Z3)"
+msgstr ""
+
+# CodeSystem.concept.designation.value
+#: CodeSystem.concept.designation.value
+msgid "Zusatzmodul Patientenbefragung (Z3)"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "Zusatzmodul Fachnetzwerk Infektion - SNID (Z4)"
+msgstr ""
+
+# CodeSystem.concept.designation.value
+#: CodeSystem.concept.designation.value
+msgid "Zusatzmodul Fachnetzwerk Infektion - SNID (Z4)"
+msgstr ""
+
+# CodeSystem.concept.display
+#: CodeSystem.concept.display
+msgid "Zusatzmodul Deutsche Zentrum für Psychische Gesundheit - DZPG (Z5)"
+msgstr ""
+
+# CodeSystem.concept.designation.value
+#: CodeSystem.concept.designation.value
+msgid "Zusatzmodul Deutsche Zentrum für Psychische Gesundheit - DZPG (Z5)"
+msgstr ""
+

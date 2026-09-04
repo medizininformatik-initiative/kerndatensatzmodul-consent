@@ -1,0 +1,41 @@
+
+# Reference.display
+#: Reference.display
+msgid "Klinikum Musterstadt"
+msgstr ""
+
+# CodeableConcept.text
+#: CodeableConcept.text
+msgid "siehe eingebettetes XACML"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "MDAT erheben"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "MDAT speichern verarbeiten"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "MDAT wissenschaftlich nutzen EU DSGVO NIVEAU"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "BIOMAT erheben"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "BIOMAT lagern verarbeiten"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "BIOMAT wissenschaftlich nutzen EU DSGVO NIVEAU"
+msgstr ""
+

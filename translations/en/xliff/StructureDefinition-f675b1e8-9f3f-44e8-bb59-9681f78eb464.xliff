@@ -1,0 +1,64 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="de" target-language="en" id="StructureDefinition-f675b1e8-9f3f-44e8-bb59-9681f78eb464" original="Resource StructureDefinition-f675b1e8-9f3f-44e8-bb59-9681f78eb464" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="StructureDefinition-f675b1e8-9f3f-44e8-bb59-9681f78eb464" resname="StructureDefinition.name">
+             <notes>
+               <note id="n1">A natural language name identifying the structure definition. This name should be usable as an identifier for the module by machine processing applications such as code generation.</note>
+             </notes>
+        <source>MII_PR_Consent_Provenance</source>
+        <target>MII_PR_Consent_Provenance</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-f675b1e8-9f3f-44e8-bb59-9681f78eb464" resname="StructureDefinition.title">
+             <notes>
+               <note id="n1">A short, descriptive, user-friendly title for the structure definition.</note>
+             </notes>
+        <source>Profile - MI-I - Consent - Provenance</source>
+        <target>Profile - MI-I - Consent - Provenance</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-f675b1e8-9f3f-44e8-bb59-9681f78eb464" resname="StructureDefinition.publisher">
+             <notes>
+               <note id="n1">The name of the organization or individual responsible for the release and ongoing maintenance of the structure definition.</note>
+             </notes>
+        <source>NUM-DIZ</source>
+        <target>NUM-DIZ</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-f675b1e8-9f3f-44e8-bb59-9681f78eb464" resname="StructureDefinition.contact.name">
+             <notes>
+               <note id="n1">The name of an individual to contact.</note>
+             </notes>
+        <source>NUM-DIZ</source>
+        <target>NUM-DIZ</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-f675b1e8-9f3f-44e8-bb59-9681f78eb464" resname="StructureDefinition.mapping.workflow/name">
+             <notes>
+               <note id="n1">A name for the specification that is being mapped to.</note>
+             </notes>
+        <source>Workflow Pattern</source>
+        <target>Workflow Pattern</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-f675b1e8-9f3f-44e8-bb59-9681f78eb464" resname="StructureDefinition.mapping.w3c.prov/name">
+             <notes>
+               <note id="n1">A name for the specification that is being mapped to.</note>
+             </notes>
+        <source>W3C PROV</source>
+        <target>W3C PROV</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-f675b1e8-9f3f-44e8-bb59-9681f78eb464" resname="StructureDefinition.mapping.w5/name">
+             <notes>
+               <note id="n1">A name for the specification that is being mapped to.</note>
+             </notes>
+        <source>FiveWs Pattern Mapping</source>
+        <target>FiveWs Pattern Mapping</target>
+      </trans-unit>
+      <trans-unit id="StructureDefinition-f675b1e8-9f3f-44e8-bb59-9681f78eb464" resname="StructureDefinition.mapping.fhirauditevent/name">
+             <notes>
+               <note id="n1">A name for the specification that is being mapped to.</note>
+             </notes>
+        <source>FHIR AuditEvent Mapping</source>
+        <target>FHIR AuditEvent Mapping</target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>
