@@ -1,0 +1,580 @@
+{
+  "resourceType" : "CodeSystem",
+  "id" : "mii-cs-consent-version-modules",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablecodesystem"]
+  },
+  "language" : "de",
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xml:lang=\"de\" lang=\"de\"><hr/><p><b>German</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: CodeSystem mii-cs-consent-version-modules</b></p><a name=\"mii-cs-consent-version-modules\"> </a><a name=\"hcmii-cs-consent-version-modules\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\">Language: de-DE</p><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablecodesystem.html\">Shareable CodeSystem</a></p></div><p><b>Properties</b></p><p><b>This code system defines the following properties for its concepts</b></p><table class=\"grid\"><tr><td><b>Name</b></td><td><b>Code</b></td><td><b>URI</b></td><td><b>Type</b></td><td><b>Description</b></td></tr><tr><td>status</td><td>status</td><td>http://hl7.org/fhir/concept-properties#status</td><td>code</td><td>A code that indicates the status of the concept. Values found in this version of the code system are: draft</td></tr><tr><td>Parent</td><td>parent</td><td>http://hl7.org/fhir/concept-properties#parent</td><td>code</td><td>The concept identified in this property is a parent of the concept on which it is a property. The property type will be 'code'. The meaning of 'parent' is defined by the hierarchyMeaning attribute</td></tr><tr><td>Child</td><td>child</td><td>http://hl7.org/fhir/concept-properties#child</td><td>code</td><td>The concept identified in this property is a child of the concept on which it is a property. The property type will be 'code'. The meaning of 'child' is defined by the hierarchyMeaning attribute</td></tr></table><p><b>Concepts</b></p><p>This case-insensitive code system <code>https://www.medizininformatik-initiative.de/fhir/modul-consent/CodeSystem/mii-cs-consent-version-modules</code> defines the following codes:</p><table class=\"codes\"><tr><td style=\"white-space:nowrap\"><b>Code</b></td><td><b>Display</b></td><td><b>Definition</b></td><td><b>status</b></td><td><b>Parent</b></td><td><b>Child</b></td></tr><tr><td style=\"white-space:nowrap\">2.16.840.1.113883.3.1937.777.24.2.184<a name=\"mii-cs-consent-version-modules-2.4616.46840.461.46113883.463.461937.46777.4624.462.46184\"> </a></td><td>MII Broad Consent</td><td><div><pre><code>                    Dieser Code (OID) kennzeichnet den Broad Consent der Medizininformatik Initiative (MII).\n</code></pre>\n</div></td><td>draft</td><td/><td>2.16.840.1.113883.3.1937.777.24.2.1790, 2.16.840.1.113883.3.1937.777.24.2.4053, 2.16.840.1.113883.3.1937.777.24.2.2718, 2.16.840.1.113883.3.1937.777.24.2.2719, 2.16.840.1.113883.3.1937.777.24.2.1791, 2.16.840.1.113883.3.1937.777.24.2.2720, 2.16.840.1.113883.3.1937.777.24.2.2721, 2.16.840.1.113883.3.1937.777.24.2.2079, 2.16.840.1.113883.3.1937.777.24.2.4054, 2.16.840.1.113883.3.1937.777.24.2.4055, 2.16.840.1.113883.3.1937.777.24.2.2722, 2.16.840.1.113883.3.1937.777.24.2.2723, 2.16.840.1.113883.3.1937.777.24.2.3542, 2.16.840.1.113883.3.1937.777.24.2.3543, 2.16.840.1.113883.3.1937.777.24.2.3544</td></tr><tr><td style=\"white-space:nowrap\">2.16.840.1.113883.3.1937.777.24.2.1790<a name=\"mii-cs-consent-version-modules-2.4616.46840.461.46113883.463.461937.46777.4624.462.461790\"> </a></td><td>Version 1.6d des MII Broad Consent</td><td><div><pre><code>                    Version 1.6d des MII Broad Consent\n</code></pre>\n</div></td><td>draft</td><td>2.16.840.1.113883.3.1937.777.24.2.184</td><td/></tr><tr><td style=\"white-space:nowrap\">2.16.840.1.113883.3.1937.777.24.2.4053<a name=\"mii-cs-consent-version-modules-2.4616.46840.461.46113883.463.461937.46777.4624.462.464053\"> </a></td><td>Version 1.6d Ablehnung</td><td/><td>draft</td><td>2.16.840.1.113883.3.1937.777.24.2.184</td><td/></tr><tr><td style=\"white-space:nowrap\">2.16.840.1.113883.3.1937.777.24.2.2718<a name=\"mii-cs-consent-version-modules-2.4616.46840.461.46113883.463.461937.46777.4624.462.462718\"> </a></td><td>Version 1.6d Komplettwiderruf</td><td/><td>draft</td><td>2.16.840.1.113883.3.1937.777.24.2.184</td><td/></tr><tr><td style=\"white-space:nowrap\">2.16.840.1.113883.3.1937.777.24.2.2719<a name=\"mii-cs-consent-version-modules-2.4616.46840.461.46113883.463.461937.46777.4624.462.462719\"> </a></td><td>Version 1.6d Teilwiderruf</td><td/><td>draft</td><td>2.16.840.1.113883.3.1937.777.24.2.184</td><td/></tr><tr><td style=\"white-space:nowrap\">2.16.840.1.113883.3.1937.777.24.2.1791<a name=\"mii-cs-consent-version-modules-2.4616.46840.461.46113883.463.461937.46777.4624.462.461791\"> </a></td><td>Version 1.6f des MII Broad Consent</td><td/><td>draft</td><td>2.16.840.1.113883.3.1937.777.24.2.184</td><td/></tr><tr><td style=\"white-space:nowrap\">2.16.840.1.113883.3.1937.777.24.2.2720<a name=\"mii-cs-consent-version-modules-2.4616.46840.461.46113883.463.461937.46777.4624.462.462720\"> </a></td><td>Version 1.6f Komplettwiderruf</td><td/><td>draft</td><td>2.16.840.1.113883.3.1937.777.24.2.184</td><td/></tr><tr><td style=\"white-space:nowrap\">2.16.840.1.113883.3.1937.777.24.2.2721<a name=\"mii-cs-consent-version-modules-2.4616.46840.461.46113883.463.461937.46777.4624.462.462721\"> </a></td><td>Version 1.6f Teilwiderruf</td><td/><td>draft</td><td>2.16.840.1.113883.3.1937.777.24.2.184</td><td/></tr><tr><td style=\"white-space:nowrap\">2.16.840.1.113883.3.1937.777.24.2.2079<a name=\"mii-cs-consent-version-modules-2.4616.46840.461.46113883.463.461937.46777.4624.462.462079\"> </a></td><td>Version 1.7.2 des MII Broad Consent</td><td/><td>draft</td><td>2.16.840.1.113883.3.1937.777.24.2.184</td><td/></tr><tr><td style=\"white-space:nowrap\">2.16.840.1.113883.3.1937.777.24.2.4054<a name=\"mii-cs-consent-version-modules-2.4616.46840.461.46113883.463.461937.46777.4624.462.464054\"> </a></td><td>Version 1.7.2 Ablehnung</td><td/><td>draft</td><td>2.16.840.1.113883.3.1937.777.24.2.184</td><td/></tr><tr><td style=\"white-space:nowrap\">2.16.840.1.113883.3.1937.777.24.2.4055<a name=\"mii-cs-consent-version-modules-2.4616.46840.461.46113883.463.461937.46777.4624.462.464055\"> </a></td><td>Version 1.7.2 Vertretende</td><td/><td>draft</td><td>2.16.840.1.113883.3.1937.777.24.2.184</td><td/></tr><tr><td style=\"white-space:nowrap\">2.16.840.1.113883.3.1937.777.24.2.2722<a name=\"mii-cs-consent-version-modules-2.4616.46840.461.46113883.463.461937.46777.4624.462.462722\"> </a></td><td>Version 1.7.2 Komplettwiderruf</td><td/><td>draft</td><td>2.16.840.1.113883.3.1937.777.24.2.184</td><td/></tr><tr><td style=\"white-space:nowrap\">2.16.840.1.113883.3.1937.777.24.2.2723<a name=\"mii-cs-consent-version-modules-2.4616.46840.461.46113883.463.461937.46777.4624.462.462723\"> </a></td><td>Version 1.7.2 Teilwiderruf</td><td/><td>draft</td><td>2.16.840.1.113883.3.1937.777.24.2.184</td><td/></tr><tr><td style=\"white-space:nowrap\">2.16.840.1.113883.3.1937.777.24.2.3542<a name=\"mii-cs-consent-version-modules-2.4616.46840.461.46113883.463.461937.46777.4624.462.463542\"> </a></td><td>Version 1.7.2 Eltern und Sorgeberechtigte für Minderjährige v1.1</td><td/><td>draft</td><td>2.16.840.1.113883.3.1937.777.24.2.184</td><td/></tr><tr><td style=\"white-space:nowrap\">2.16.840.1.113883.3.1937.777.24.2.3543<a name=\"mii-cs-consent-version-modules-2.4616.46840.461.46113883.463.461937.46777.4624.462.463543\"> </a></td><td>Version 1.7.2 7-11 Minderjährige v1.1</td><td/><td>draft</td><td>2.16.840.1.113883.3.1937.777.24.2.184</td><td/></tr><tr><td style=\"white-space:nowrap\">2.16.840.1.113883.3.1937.777.24.2.3544<a name=\"mii-cs-consent-version-modules-2.4616.46840.461.46113883.463.461937.46777.4624.462.463544\"> </a></td><td>Version 1.7.2 12-17 Minderjährige v1.1</td><td/><td>draft</td><td>2.16.840.1.113883.3.1937.777.24.2.184</td><td/></tr><tr><td style=\"white-space:nowrap\">2.16.840.1.113883.3.1937.777.24.2.4052<a name=\"mii-cs-consent-version-modules-2.4616.46840.461.46113883.463.461937.46777.4624.462.464052\"> </a></td><td>Zusatzmodule des MII Broad Consent</td><td><div><pre><code>                    Dieser Code (OID) gruppiert die Zusatzmodule des MII Broad Consent.\n</code></pre>\n</div></td><td>draft</td><td/><td>2.16.840.1.113883.3.1937.777.24.2.4031, 2.16.840.1.113883.3.1937.777.24.2.4036, 2.16.840.1.113883.3.1937.777.24.2.4037, 2.16.840.1.113883.3.1937.777.24.2.4048</td></tr><tr><td style=\"white-space:nowrap\">2.16.840.1.113883.3.1937.777.24.2.4031<a name=\"mii-cs-consent-version-modules-2.4616.46840.461.46113883.463.461937.46777.4624.462.464031\"> </a></td><td>Zusatzmodul ACRIBiS (Z2)</td><td/><td>draft</td><td>2.16.840.1.113883.3.1937.777.24.2.4052</td><td/></tr><tr><td style=\"white-space:nowrap\">2.16.840.1.113883.3.1937.777.24.2.4036<a name=\"mii-cs-consent-version-modules-2.4616.46840.461.46113883.463.461937.46777.4624.462.464036\"> </a></td><td>Zusatzmodul Patientenbefragung (Z3)</td><td/><td>draft</td><td>2.16.840.1.113883.3.1937.777.24.2.4052</td><td/></tr><tr><td style=\"white-space:nowrap\">2.16.840.1.113883.3.1937.777.24.2.4037<a name=\"mii-cs-consent-version-modules-2.4616.46840.461.46113883.463.461937.46777.4624.462.464037\"> </a></td><td>Zusatzmodul Fachnetzwerk Infektion - SNID (Z4)</td><td/><td>draft</td><td>2.16.840.1.113883.3.1937.777.24.2.4052</td><td/></tr><tr><td style=\"white-space:nowrap\">2.16.840.1.113883.3.1937.777.24.2.4048<a name=\"mii-cs-consent-version-modules-2.4616.46840.461.46113883.463.461937.46777.4624.462.464048\"> </a></td><td>Zusatzmodul Deutsche Zentrum für Psychische Gesundheit - DZPG (Z5)</td><td/><td>draft</td><td>2.16.840.1.113883.3.1937.777.24.2.4052</td><td/></tr></table></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod",
+    "valuePeriod" : {
+      "start" : "2025-12-18T15:02:43+01:00"
+    }
+  }],
+  "url" : "https://www.medizininformatik-initiative.de/fhir/modul-consent/CodeSystem/mii-cs-consent-version-modules",
+  "identifier" : [{
+    "use" : "official",
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.840.1.113883.3.1937.777.24.5.27"
+  }],
+  "version" : "2027.0.0-ballot.rc1",
+  "name" : "MIIConsentVersionModuleCodeSystem",
+  "title" : "MII Consent Version and Modules CodeSystem",
+  "status" : "draft",
+  "experimental" : false,
+  "date" : "2026-09-04T14:29:06+00:00",
+  "publisher" : "NUM-DIZ",
+  "contact" : [{
+    "name" : "NUM-DIZ",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.netzwerk-universitaetsmedizin.de"
+    }]
+  }],
+  "description" : "Dieses Code System enthält die OIDs der verschiedenen Versionen und Zusatzmodule des Broad Consent der Medizininformatik Initiative.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DE",
+      "display" : "Germany"
+    }]
+  }],
+  "copyright" : "\n            © 2019+ TMF e. V., Charlottenstraße 42, 10117 Berlin \n            \n                \n                    CC BY 4.0\n                \n                 \n            \n            Diese Arbeit ist lizensiert unter der [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/). \n            Zu den Nutzungsrechten der zugrunde liegenden FHIR-Technologie siehe die FHIR-Basis-Spezifikation. \n            Einige verwendete Codesysteme werden von anderen Organisationen herausgegeben und gepflegt. Es gilt das Copyright der dort jeweils aufgeführten Herausgeber (Publisher). \n        ",
+  "caseSensitive" : false,
+  "content" : "complete",
+  "count" : 20,
+  "property" : [{
+    "code" : "status",
+    "uri" : "http://hl7.org/fhir/concept-properties#status",
+    "description" : "A code that indicates the status of the concept. Values found in this version of the code system are: draft",
+    "type" : "code"
+  },
+  {
+    "code" : "parent",
+    "uri" : "http://hl7.org/fhir/concept-properties#parent",
+    "description" : "The concept identified in this property is a parent of the concept on which it is a property. The property type will be 'code'. The meaning of 'parent' is defined by the hierarchyMeaning attribute",
+    "type" : "code"
+  },
+  {
+    "code" : "child",
+    "uri" : "http://hl7.org/fhir/concept-properties#child",
+    "description" : "The concept identified in this property is a child of the concept on which it is a property. The property type will be 'code'. The meaning of 'child' is defined by the hierarchyMeaning attribute",
+    "type" : "code"
+  }],
+  "concept" : [{
+    "code" : "2.16.840.1.113883.3.1937.777.24.2.184",
+    "display" : "MII Broad Consent",
+    "definition" : "\n                        Dieser Code (OID) kennzeichnet den Broad Consent der Medizininformatik Initiative (MII).",
+    "designation" : [{
+      "language" : "de-DE",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000003001",
+        "display" : "Fully specified name"
+      },
+      "value" : "MII Broad Consent"
+    }],
+    "property" : [{
+      "code" : "status",
+      "valueCode" : "draft"
+    },
+    {
+      "code" : "child",
+      "valueCode" : "2.16.840.1.113883.3.1937.777.24.2.1790"
+    },
+    {
+      "code" : "child",
+      "valueCode" : "2.16.840.1.113883.3.1937.777.24.2.4053"
+    },
+    {
+      "code" : "child",
+      "valueCode" : "2.16.840.1.113883.3.1937.777.24.2.2718"
+    },
+    {
+      "code" : "child",
+      "valueCode" : "2.16.840.1.113883.3.1937.777.24.2.2719"
+    },
+    {
+      "code" : "child",
+      "valueCode" : "2.16.840.1.113883.3.1937.777.24.2.1791"
+    },
+    {
+      "code" : "child",
+      "valueCode" : "2.16.840.1.113883.3.1937.777.24.2.2720"
+    },
+    {
+      "code" : "child",
+      "valueCode" : "2.16.840.1.113883.3.1937.777.24.2.2721"
+    },
+    {
+      "code" : "child",
+      "valueCode" : "2.16.840.1.113883.3.1937.777.24.2.2079"
+    },
+    {
+      "code" : "child",
+      "valueCode" : "2.16.840.1.113883.3.1937.777.24.2.4054"
+    },
+    {
+      "code" : "child",
+      "valueCode" : "2.16.840.1.113883.3.1937.777.24.2.4055"
+    },
+    {
+      "code" : "child",
+      "valueCode" : "2.16.840.1.113883.3.1937.777.24.2.2722"
+    },
+    {
+      "code" : "child",
+      "valueCode" : "2.16.840.1.113883.3.1937.777.24.2.2723"
+    },
+    {
+      "code" : "child",
+      "valueCode" : "2.16.840.1.113883.3.1937.777.24.2.3542"
+    },
+    {
+      "code" : "child",
+      "valueCode" : "2.16.840.1.113883.3.1937.777.24.2.3543"
+    },
+    {
+      "code" : "child",
+      "valueCode" : "2.16.840.1.113883.3.1937.777.24.2.3544"
+    }]
+  },
+  {
+    "code" : "2.16.840.1.113883.3.1937.777.24.2.1790",
+    "display" : "Version 1.6d des MII Broad Consent",
+    "definition" : "\n                        Version 1.6d des MII Broad Consent",
+    "designation" : [{
+      "language" : "de-DE",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000003001",
+        "display" : "Fully specified name"
+      },
+      "value" : "Version 1.6d des MII Broad Consent"
+    }],
+    "property" : [{
+      "code" : "status",
+      "valueCode" : "draft"
+    },
+    {
+      "code" : "parent",
+      "valueCode" : "2.16.840.1.113883.3.1937.777.24.2.184"
+    }]
+  },
+  {
+    "code" : "2.16.840.1.113883.3.1937.777.24.2.4053",
+    "display" : "Version 1.6d Ablehnung",
+    "designation" : [{
+      "language" : "de-DE",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000003001",
+        "display" : "Fully specified name"
+      },
+      "value" : "Version 1.6d Ablehnung"
+    }],
+    "property" : [{
+      "code" : "status",
+      "valueCode" : "draft"
+    },
+    {
+      "code" : "parent",
+      "valueCode" : "2.16.840.1.113883.3.1937.777.24.2.184"
+    }]
+  },
+  {
+    "code" : "2.16.840.1.113883.3.1937.777.24.2.2718",
+    "display" : "Version 1.6d Komplettwiderruf",
+    "designation" : [{
+      "language" : "de-DE",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000003001",
+        "display" : "Fully specified name"
+      },
+      "value" : "Version 1.6d Komplettwiderruf"
+    }],
+    "property" : [{
+      "code" : "status",
+      "valueCode" : "draft"
+    },
+    {
+      "code" : "parent",
+      "valueCode" : "2.16.840.1.113883.3.1937.777.24.2.184"
+    }]
+  },
+  {
+    "code" : "2.16.840.1.113883.3.1937.777.24.2.2719",
+    "display" : "Version 1.6d Teilwiderruf",
+    "designation" : [{
+      "language" : "de-DE",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000003001",
+        "display" : "Fully specified name"
+      },
+      "value" : "Version 1.6d Teilwiderruf"
+    }],
+    "property" : [{
+      "code" : "status",
+      "valueCode" : "draft"
+    },
+    {
+      "code" : "parent",
+      "valueCode" : "2.16.840.1.113883.3.1937.777.24.2.184"
+    }]
+  },
+  {
+    "code" : "2.16.840.1.113883.3.1937.777.24.2.1791",
+    "display" : "Version 1.6f des MII Broad Consent",
+    "designation" : [{
+      "language" : "de-DE",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000003001",
+        "display" : "Fully specified name"
+      },
+      "value" : "Version 1.6f des MII Broad Consent"
+    }],
+    "property" : [{
+      "code" : "status",
+      "valueCode" : "draft"
+    },
+    {
+      "code" : "parent",
+      "valueCode" : "2.16.840.1.113883.3.1937.777.24.2.184"
+    }]
+  },
+  {
+    "code" : "2.16.840.1.113883.3.1937.777.24.2.2720",
+    "display" : "Version 1.6f Komplettwiderruf",
+    "designation" : [{
+      "language" : "de-DE",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000003001",
+        "display" : "Fully specified name"
+      },
+      "value" : "Version 1.6f Komplettwiderruf"
+    }],
+    "property" : [{
+      "code" : "status",
+      "valueCode" : "draft"
+    },
+    {
+      "code" : "parent",
+      "valueCode" : "2.16.840.1.113883.3.1937.777.24.2.184"
+    }]
+  },
+  {
+    "code" : "2.16.840.1.113883.3.1937.777.24.2.2721",
+    "display" : "Version 1.6f Teilwiderruf",
+    "designation" : [{
+      "language" : "de-DE",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000003001",
+        "display" : "Fully specified name"
+      },
+      "value" : "Version 1.6f Teilwiderruf"
+    }],
+    "property" : [{
+      "code" : "status",
+      "valueCode" : "draft"
+    },
+    {
+      "code" : "parent",
+      "valueCode" : "2.16.840.1.113883.3.1937.777.24.2.184"
+    }]
+  },
+  {
+    "code" : "2.16.840.1.113883.3.1937.777.24.2.2079",
+    "display" : "Version 1.7.2 des MII Broad Consent",
+    "designation" : [{
+      "language" : "de-DE",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000003001",
+        "display" : "Fully specified name"
+      },
+      "value" : "Version 1.7.2 des MII Broad Consent"
+    }],
+    "property" : [{
+      "code" : "status",
+      "valueCode" : "draft"
+    },
+    {
+      "code" : "parent",
+      "valueCode" : "2.16.840.1.113883.3.1937.777.24.2.184"
+    }]
+  },
+  {
+    "code" : "2.16.840.1.113883.3.1937.777.24.2.4054",
+    "display" : "Version 1.7.2 Ablehnung",
+    "designation" : [{
+      "language" : "de-DE",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000003001",
+        "display" : "Fully specified name"
+      },
+      "value" : "Version 1.7.2 Ablehnung"
+    }],
+    "property" : [{
+      "code" : "status",
+      "valueCode" : "draft"
+    },
+    {
+      "code" : "parent",
+      "valueCode" : "2.16.840.1.113883.3.1937.777.24.2.184"
+    }]
+  },
+  {
+    "code" : "2.16.840.1.113883.3.1937.777.24.2.4055",
+    "display" : "Version 1.7.2 Vertretende",
+    "designation" : [{
+      "language" : "de-DE",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000003001",
+        "display" : "Fully specified name"
+      },
+      "value" : "Version 1.7.2 Vertretende"
+    }],
+    "property" : [{
+      "code" : "status",
+      "valueCode" : "draft"
+    },
+    {
+      "code" : "parent",
+      "valueCode" : "2.16.840.1.113883.3.1937.777.24.2.184"
+    }]
+  },
+  {
+    "code" : "2.16.840.1.113883.3.1937.777.24.2.2722",
+    "display" : "Version 1.7.2 Komplettwiderruf",
+    "designation" : [{
+      "language" : "de-DE",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000003001",
+        "display" : "Fully specified name"
+      },
+      "value" : "Version 1.7.2 Komplettwiderruf"
+    }],
+    "property" : [{
+      "code" : "status",
+      "valueCode" : "draft"
+    },
+    {
+      "code" : "parent",
+      "valueCode" : "2.16.840.1.113883.3.1937.777.24.2.184"
+    }]
+  },
+  {
+    "code" : "2.16.840.1.113883.3.1937.777.24.2.2723",
+    "display" : "Version 1.7.2 Teilwiderruf",
+    "designation" : [{
+      "language" : "de-DE",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000003001",
+        "display" : "Fully specified name"
+      },
+      "value" : "Version 1.7.2 Teilwiderruf"
+    }],
+    "property" : [{
+      "code" : "status",
+      "valueCode" : "draft"
+    },
+    {
+      "code" : "parent",
+      "valueCode" : "2.16.840.1.113883.3.1937.777.24.2.184"
+    }]
+  },
+  {
+    "code" : "2.16.840.1.113883.3.1937.777.24.2.3542",
+    "display" : "Version 1.7.2 Eltern und Sorgeberechtigte für Minderjährige v1.1",
+    "designation" : [{
+      "language" : "de-DE",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000003001",
+        "display" : "Fully specified name"
+      },
+      "value" : "Version 1.7.2 Eltern und Sorgeberechtigte für Minderjährige v1.1"
+    }],
+    "property" : [{
+      "code" : "status",
+      "valueCode" : "draft"
+    },
+    {
+      "code" : "parent",
+      "valueCode" : "2.16.840.1.113883.3.1937.777.24.2.184"
+    }]
+  },
+  {
+    "code" : "2.16.840.1.113883.3.1937.777.24.2.3543",
+    "display" : "Version 1.7.2 7-11 Minderjährige v1.1",
+    "designation" : [{
+      "language" : "de-DE",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000003001",
+        "display" : "Fully specified name"
+      },
+      "value" : "Version 1.7.2 7-11 Minderjährige v1.1"
+    }],
+    "property" : [{
+      "code" : "status",
+      "valueCode" : "draft"
+    },
+    {
+      "code" : "parent",
+      "valueCode" : "2.16.840.1.113883.3.1937.777.24.2.184"
+    }]
+  },
+  {
+    "code" : "2.16.840.1.113883.3.1937.777.24.2.3544",
+    "display" : "Version 1.7.2 12-17 Minderjährige v1.1",
+    "designation" : [{
+      "language" : "de-DE",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000003001",
+        "display" : "Fully specified name"
+      },
+      "value" : "Version 1.7.2 12-17 Minderjährige v1.1"
+    }],
+    "property" : [{
+      "code" : "status",
+      "valueCode" : "draft"
+    },
+    {
+      "code" : "parent",
+      "valueCode" : "2.16.840.1.113883.3.1937.777.24.2.184"
+    }]
+  },
+  {
+    "code" : "2.16.840.1.113883.3.1937.777.24.2.4052",
+    "display" : "Zusatzmodule des MII Broad Consent",
+    "definition" : "\n                        Dieser Code (OID) gruppiert die Zusatzmodule des MII Broad Consent.",
+    "designation" : [{
+      "language" : "de-DE",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000003001",
+        "display" : "Fully specified name"
+      },
+      "value" : "Zusatzmodule des MII Broad Consent"
+    }],
+    "property" : [{
+      "code" : "status",
+      "valueCode" : "draft"
+    },
+    {
+      "code" : "child",
+      "valueCode" : "2.16.840.1.113883.3.1937.777.24.2.4031"
+    },
+    {
+      "code" : "child",
+      "valueCode" : "2.16.840.1.113883.3.1937.777.24.2.4036"
+    },
+    {
+      "code" : "child",
+      "valueCode" : "2.16.840.1.113883.3.1937.777.24.2.4037"
+    },
+    {
+      "code" : "child",
+      "valueCode" : "2.16.840.1.113883.3.1937.777.24.2.4048"
+    }]
+  },
+  {
+    "code" : "2.16.840.1.113883.3.1937.777.24.2.4031",
+    "display" : "Zusatzmodul ACRIBiS (Z2)",
+    "designation" : [{
+      "language" : "de-DE",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000003001",
+        "display" : "Fully specified name"
+      },
+      "value" : "Zusatzmodul ACRIBiS (Z2)"
+    }],
+    "property" : [{
+      "code" : "status",
+      "valueCode" : "draft"
+    },
+    {
+      "code" : "parent",
+      "valueCode" : "2.16.840.1.113883.3.1937.777.24.2.4052"
+    }]
+  },
+  {
+    "code" : "2.16.840.1.113883.3.1937.777.24.2.4036",
+    "display" : "Zusatzmodul Patientenbefragung (Z3)",
+    "designation" : [{
+      "language" : "de-DE",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000003001",
+        "display" : "Fully specified name"
+      },
+      "value" : "Zusatzmodul Patientenbefragung (Z3)"
+    }],
+    "property" : [{
+      "code" : "status",
+      "valueCode" : "draft"
+    },
+    {
+      "code" : "parent",
+      "valueCode" : "2.16.840.1.113883.3.1937.777.24.2.4052"
+    }]
+  },
+  {
+    "code" : "2.16.840.1.113883.3.1937.777.24.2.4037",
+    "display" : "Zusatzmodul Fachnetzwerk Infektion - SNID (Z4)",
+    "designation" : [{
+      "language" : "de-DE",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000003001",
+        "display" : "Fully specified name"
+      },
+      "value" : "Zusatzmodul Fachnetzwerk Infektion - SNID (Z4)"
+    }],
+    "property" : [{
+      "code" : "status",
+      "valueCode" : "draft"
+    },
+    {
+      "code" : "parent",
+      "valueCode" : "2.16.840.1.113883.3.1937.777.24.2.4052"
+    }]
+  },
+  {
+    "code" : "2.16.840.1.113883.3.1937.777.24.2.4048",
+    "display" : "Zusatzmodul Deutsche Zentrum für Psychische Gesundheit - DZPG (Z5)",
+    "designation" : [{
+      "language" : "de-DE",
+      "use" : {
+        "system" : "http://snomed.info/sct",
+        "code" : "900000000000003001",
+        "display" : "Fully specified name"
+      },
+      "value" : "Zusatzmodul Deutsche Zentrum für Psychische Gesundheit - DZPG (Z5)"
+    }],
+    "property" : [{
+      "code" : "status",
+      "valueCode" : "draft"
+    },
+    {
+      "code" : "parent",
+      "valueCode" : "2.16.840.1.113883.3.1937.777.24.2.4052"
+    }]
+  }]
+}

@@ -1,0 +1,186 @@
+# mii-param-consent-manifest - MII Implementation Guide Consent v2027.0.0-ballot.rc1
+
+* [**Table of Contents**](toc.md)
+* [**Artifacts Summary**](artifacts.md)
+* **mii-param-consent-manifest**
+
+## Parameters: mii-param-consent-manifest
+
+
+
+## Resource Content
+
+```json
+{
+  "resourceType" : "Parameters",
+  "id" : "mii-param-consent-manifest",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-manifestparameters"]
+  },
+  "parameter" : [{
+    "name" : "system-version",
+    "valueCanonical" : "http://snomed.info/sct|http://snomed.info/sct/900000000000207008/version/20250701"
+  },
+  {
+    "name" : "system-version",
+    "valueCanonical" : "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes|3.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueCanonical" : "http://hl7.org/fhir/StructureDefinition/shareablecodesystem|4.0.2"
+  },
+  {
+    "name" : "system-version",
+    "valueCanonical" : "urn:oid:2.16.840.1.113883.3.1937.777.24.5.2|2027.0.0-ballot.rc1"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueCanonical" : "http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.2"
+  },
+  {
+    "name" : "system-version",
+    "valueCanonical" : "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3|2027.0.0-ballot.rc1"
+  },
+  {
+    "name" : "system-version",
+    "valueCanonical" : "urn:iso-astm:E1762-95:2013|4.0.1"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/modul-consent/SearchParameter/mii-sp-consent-provisioncode|2027.0.0-ballot.rc1"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-einwilligung|2027.0.0-ballot.rc1"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/modul-consent/SearchParameter/mii-sp-consent-policyuri|2027.0.0-ballot.rc1"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/modul-consent/SearchParameter/mii-sp-consent-provisioncodeperiod|2027.0.0-ballot.rc1"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/modul-consent/SearchParameter/mii-sp-consent-provisioncodetype|2027.0.0-ballot.rc1"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/modul-consent/SearchParameter/mii-sp-consent-provisionperiod|2027.0.0-ballot.rc1"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/modul-consent/SearchParameter/mii-sp-consent-provisiontype|2027.0.0-ballot.rc1"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-provenance|2027.0.0-ballot.rc1"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-documentreference|2027.0.0-ballot.rc1"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueCanonical" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareableimplementationguide|2.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueCanonical" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishableimplementationguide|2.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueCanonical" : "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-implementationguide|2.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueCanonical" : "http://fhir.de/ConsentManagement/StructureDefinition/DocumentReference|2.0.3"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueCanonical" : "http://hl7.org/fhir/StructureDefinition/DomainResource|4.0.1"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueCanonical" : "http://hl7.org/fhir/StructureDefinition/Element|4.0.1"
+  },
+  {
+    "name" : "default-valueset-version",
+    "valueCanonical" : "http://hl7.org/fhir/ValueSet/all-languages|4.0.1"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueCanonical" : "http://hl7.org/fhir/StructureDefinition/Extension|4.0.1"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueCanonical" : "http://fhir.de/ConsentManagement/StructureDefinition/Patient|2.0.3"
+  },
+  {
+    "name" : "default-valueset-version",
+    "valueCanonical" : "http://terminology.hl7.org/ValueSet/v3-ActCode|3.0.0"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueCanonical" : "http://fhir.de/ConsentManagement/StructureDefinition/Consent|2.0.4"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueCanonical" : "http://hl7.org/fhir/StructureDefinition/Consent|4.0.1"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueCanonical" : "http://fhir.de/ConsentManagement/StructureDefinition/DomainReference|2.0.3"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueCanonical" : "http://fhir.de/ConsentManagement/StructureDefinition/Domain/Organization|2.0.3"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueCanonical" : "http://fhir.de/ConsentManagement/StructureDefinition/Domain/ResearchStudy|2.0.3"
+  },
+  {
+    "name" : "default-valueset-version",
+    "valueCanonical" : "http://hl7.org/fhir/ValueSet/publication-status|4.0.1"
+  },
+  {
+    "name" : "default-valueset-version",
+    "valueCanonical" : "http://fhir.de/ConsentManagement/ValueSet/ResultType|2.0.3"
+  },
+  {
+    "name" : "default-valueset-version",
+    "valueCanonical" : "http://fhir.de/ConsentManagement/ValueSet/TemplateType|2.0.3"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueCanonical" : "http://fhir.de/ConsentManagement/StructureDefinition/QuestionnaireResponse|2.0.3"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueCanonical" : "http://fhir.de/ConsentManagement/StructureDefinition/Xacml|2.0.3"
+  },
+  {
+    "name" : "default-valueset-version",
+    "valueCanonical" : "http://terminology.hl7.org/ValueSet/v3-PurposeOfUse|3.1.0"
+  },
+  {
+    "name" : "default-valueset-version",
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/modul-consent/ValueSet/mii-vs-consent-policy|2027.0.0-ballot.rc1"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueCanonical" : "http://fhir.de/ConsentManagement/StructureDefinition/Provenance|2.0.3"
+  },
+  {
+    "name" : "default-canonical-version",
+    "valueCanonical" : "http://fhir.de/ConsentManagement/StructureDefinition/SignatureLocation|2.0.3"
+  },
+  {
+    "name" : "default-valueset-version",
+    "valueCanonical" : "https://www.medizininformatik-initiative.de/fhir/modul-consent/ValueSet/mii-vs-consent-signaturetypes|2027.0.0-ballot.rc1"
+  }]
+}
+
+```
