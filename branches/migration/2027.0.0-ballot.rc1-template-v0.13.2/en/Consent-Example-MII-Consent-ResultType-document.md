@@ -37,22 +37,22 @@ This consent is made under the regulation siehe eingebettetes XACML and the poli
 * [Rule](https://hl7.org/fhir/R4/formats.html#table): permit
   * [Time Period](https://hl7.org/fhir/R4/formats.html#table): * Period: 2020-09-01 --> 2025-08-31
 
-  * [What](https://hl7.org/fhir/R4/formats.html#table): * Code: MDAT erheben
-* Code: MDAT speichern, verarbeiten
-* Code: BIOMAT erheben
+  * [What](https://hl7.org/fhir/R4/formats.html#table): * Code: MDAT_erheben
+* Code: MDAT_speichern_verarbeiten
+* Code: BIOMAT_erheben
 
   * [Rules](https://hl7.org/fhir/R4/formats.html#table)![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC): 
 * [Rule](https://hl7.org/fhir/R4/formats.html#table): permit
   * [Time Period](https://hl7.org/fhir/R4/formats.html#table): * Period: 2020-09-01 --> 2050-08-31
 
-  * [What](https://hl7.org/fhir/R4/formats.html#table): * Code: MDAT wissenschaftlich nutzen
+  * [What](https://hl7.org/fhir/R4/formats.html#table): * Code: MDAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU
 
   * [Rules](https://hl7.org/fhir/R4/formats.html#table)![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC): 
 * [Rule](https://hl7.org/fhir/R4/formats.html#table): permit
   * [Time Period](https://hl7.org/fhir/R4/formats.html#table): * Period: 2020-09-01 --> 2050-08-31
 
-  * [What](https://hl7.org/fhir/R4/formats.html#table): * Code: BIOMAT lagern verarbeiten
-* Code: BIOMAT wissenschaftlich nutzen
+  * [What](https://hl7.org/fhir/R4/formats.html#table): * Code: BIOMAT_lagern_verarbeiten
+* Code: BIOMAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU
 
   * [Rules](https://hl7.org/fhir/R4/formats.html#table)![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC): 
 * [Rule](https://hl7.org/fhir/R4/formats.html#table): ![](data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABmJLR0QA/wD/AP+gvaeTAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAB3RJTUUH3goXBCwdPqAP0wAAAldJREFUOMuNk0tIlFEYhp9z/vE2jHkhxXA0zJCMitrUQlq4lnSltEqCFhFG2MJFhIvIFpkEWaTQqjaWZRkp0g26URZkTpbaaOJkDqk10szoODP//7XIMUe0elcfnPd9zsfLOYplGrpRwZaqTtw3K7PtGem7Q6FoidbGgqHVy/HRb669R+56zx7eRV1L31JGxYbBtjKK93cxeqfyQHbehkZbUkK20goELEuIzEd+dHS+qz/Y8PTSif0FnGkbiwcAjHaU1+QWOptFiyCLp/LnKptpqIuXHx6rbR26kJcBX3yLgBfnd7CxwJmflpP2wUg0HIAoUUpZBmKzELGWcN8nAr6Gpu7tLU/CkwAaoKTWRSQyt89Q8w6J+oVQkKnBoblH7V0PPvUOvDYXfopE/SJmALsxnVm6LbkotrUtNowMeIrVrBcBpaMmdS0j9df7abpSuy7HWehwJdt1lhVwi/J58U5beXGAF6c3UXLycw1wdFklArBn87xdh0ZsZtArghBdAA3+OEDVubG4UEzP6x1FOWneHh2VDAHBAt80IbdXDcesNoCvs3E5AFyNSU5nbrDPZpcUEQQTFZiEVx+51fxMhhyJEAgvlriadIJZZksRuwBYMOPBbO3hePVVqgEJhFeUuFLhIPkRP6BQLIBrmMenujm/3g4zc398awIe90Zb5A1vREALqneMcYgP/xVQWlG+Ncu5vgwwlaUNx+3799rfe96u9K0JSDXcOzOTJg4B6IgmXfsygc7/Bvg9g9E58/cDVmGIBOP/zT8Bz1zqWqpbXIsd0O9hajXfL6u4BaOS6SeWAAAAAElFTkSuQmCC) Documentation for this format
@@ -149,21 +149,21 @@ This consent is made under the regulation siehe eingebettetes XACML and the poli
         "coding" : [{
           "system" : "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3",
           "code" : "2.16.840.1.113883.3.1937.777.24.5.3.6",
-          "display" : "MDAT erheben"
+          "display" : "MDAT_erheben"
         }]
       },
       {
         "coding" : [{
           "system" : "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3",
           "code" : "2.16.840.1.113883.3.1937.777.24.5.3.7",
-          "display" : "MDAT speichern, verarbeiten"
+          "display" : "MDAT_speichern_verarbeiten"
         }]
       },
       {
         "coding" : [{
           "system" : "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3",
           "code" : "2.16.840.1.113883.3.1937.777.24.5.3.19",
-          "display" : "BIOMAT erheben"
+          "display" : "BIOMAT_erheben"
         }]
       }]
     },
@@ -177,7 +177,7 @@ This consent is made under the regulation siehe eingebettetes XACML and the poli
         "coding" : [{
           "system" : "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3",
           "code" : "2.16.840.1.113883.3.1937.777.24.5.3.8",
-          "display" : "MDAT wissenschaftlich nutzen"
+          "display" : "MDAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU"
         }]
       }]
     },
@@ -191,14 +191,14 @@ This consent is made under the regulation siehe eingebettetes XACML and the poli
         "coding" : [{
           "system" : "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3",
           "code" : "2.16.840.1.113883.3.1937.777.24.5.3.20",
-          "display" : "BIOMAT lagern verarbeiten"
+          "display" : "BIOMAT_lagern_verarbeiten"
         }]
       },
       {
         "coding" : [{
           "system" : "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3",
           "code" : "2.16.840.1.113883.3.1937.777.24.5.3.22",
-          "display" : "BIOMAT wissenschaftlich nutzen"
+          "display" : "BIOMAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU"
         }]
       }]
     }]

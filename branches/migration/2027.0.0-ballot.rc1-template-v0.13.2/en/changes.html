@@ -450,9 +450,12 @@ and DocumentReference pages, dropped with the "Darstellung" section in the
 2026 migration, have been added to the profile intro notes.</li>
   <li>Deliberate, logged divergences from the shipped release package (details:
 <code class="language-plaintext highlighter-rouge">migration-log/run.log</code>, entry 5.2): harmonized artifact versions, canonical
-SearchParameter ids (the package ships none), corrected example displays and
-CodeSystem counts, <code class="language-plaintext highlighter-rouge">publisher</code> metadata, and the Version-Modules CodeSystem
-the package is missing.</li>
+SearchParameter ids (the package ships none), corrected CodeSystem counts, <code class="language-plaintext highlighter-rouge">publisher</code> metadata, and the Version-Modules CodeSystem
+the package is missing. The example displays initially harmonized with the
+corrected Policy CodeSystem were <strong>reverted to the release-faithful values on
+operator instruction (2026-09-04)</strong> — the harmonization is deferred until the
+owners decide; QA therefore again shows the source's display/ValueSet pair
+errors.</li>
 </ul>
 
 <h4 id="develop-incorporation-state-744f7ba-2026-08-21--part-of-202700-ballotrc1">develop incorporation (state 744f7ba, 2026-08-21) — part of 2027.0.0-ballot.rc1</h4>
@@ -636,7 +639,7 @@ artefact versions harmonized to the package version 2027.0.0-ballot.rc1
 
           IG © 2019+ <a style="color:var(--footer-hyperlink-text-color)" href="https://www.netzwerk-universitaetsmedizin.de">NUM-DIZ</a>.  
           Package de.medizininformatikinitiative.kerndatensatz.consent#2027.0.0-ballot.rc1 based on <a style="color: var(--footer-hyperlink-text-color)" href="http://hl7.org/fhir/R4/">FHIR 4.0.1</a>.
-          Generated <span title="Fri, Sep 4, 2026 11:52+0000">2026-09-04</span>
+          Generated <span title="Fri, Sep 4, 2026 12:01+0000">2026-09-04</span>
           <br/>
           <span style="color: var(--footer-highlight-text-color)">
             <!-- Branding override for the fhir2.base.template footer fragment.
