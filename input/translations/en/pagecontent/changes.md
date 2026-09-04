@@ -110,9 +110,12 @@ Date 04.09.2026
   2026 migration, have been added to the profile intro notes.
 * Deliberate, logged divergences from the shipped release package (details:
   `migration-log/run.log`, entry 5.2): harmonized artifact versions, canonical
-  SearchParameter ids (the package ships none), corrected example displays and
-  CodeSystem counts, `publisher` metadata, and the Version-Modules CodeSystem
-  the package is missing.
+  SearchParameter ids (the package ships none), corrected CodeSystem counts, and the Version-Modules CodeSystem
+  the package is missing. The example displays initially harmonized with the
+  corrected Policy CodeSystem were **reverted to the release-faithful values on
+  operator instruction (2026-09-04)** — the harmonization is deferred until the
+  owners decide; QA therefore again shows the source's display/ValueSet pair
+  errors.
 
 #### develop incorporation (state 744f7ba, 2026-08-21) — part of 2027.0.0-ballot.rc1
 

@@ -109,8 +109,12 @@ Datum 04.09.2026
 * Bewusste, protokollierte Abweichungen vom ausgelieferten Release-Paket
   (Details: `migration-log/run.log`, Eintrag 5.2): harmonisierte
   Artefakt-Versionen, kanonische SearchParameter-IDs (das Paket liefert keine),
-  korrigierte Beispiel-Displays und CodeSystem-Zählungen, `publisher`-Metadaten
-  sowie das im Paket fehlende Version-Modules-CodeSystem.
+  korrigierte CodeSystem-Zählungen, `publisher`-Metadaten
+  sowie das im Paket fehlende Version-Modules-CodeSystem. Die zunächst an das
+  korrigierte Policy-CodeSystem angeglichenen **Beispiel-Displays wurden auf
+  Operator-Anweisung (04.09.2026) wieder Release-getreu zurückgesetzt** — die
+  Angleichung ist bis zur Owner-Entscheidung zurückgestellt; die QA zeigt daher
+  wieder die Display-/ValueSet-Paarfehler der Quelle.
 
 #### develop-Inkorporation (Stand 744f7ba, 2026-08-21) — Teil von 2027.0.0-ballot.rc1
 

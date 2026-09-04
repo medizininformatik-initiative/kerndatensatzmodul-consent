@@ -50,13 +50,13 @@ Usage: #example
 * provision.provision[=].period.start = "2020-09-01"
 * provision.provision[=].period.end = "2050-08-31"
 // fhir_comments (source XML comment on provision.provision[=].period.fhir_comments): " Medizinische Daten speichern: 30 Jahre gültig "
-* provision.provision[=].code = MII_CS_Consent_Policy#2.16.840.1.113883.3.1937.777.24.5.3.7 "MDAT speichern, verarbeiten"
+* provision.provision[=].code = MII_CS_Consent_Policy#2.16.840.1.113883.3.1937.777.24.5.3.7 "MDAT speichern verarbeiten"
 * provision.provision[+].type = #permit
 // fhir_comments (source XML comment on provision.provision[=].type.fhir_comments): " ergibt sich aus der Antwort \"PATDAT erheben speichern nutzen=gültig\" (Teil 3) "
 * provision.provision[=].period.start = "2020-09-01"
 * provision.provision[=].period.end = "2050-08-31"
 // fhir_comments (source XML comment on provision.provision[=].period.fhir_comments): " Medizinische Daten nutzen: 30 Jahre gültig "
-* provision.provision[=].code = MII_CS_Consent_Policy#2.16.840.1.113883.3.1937.777.24.5.3.8 "MDAT wissenschaftlich nutzen"
+* provision.provision[=].code = MII_CS_Consent_Policy#2.16.840.1.113883.3.1937.777.24.5.3.8 "MDAT wissenschaftlich nutzen EU DSGVO NIVEAU"
 * provision.provision[+].type = #permit
 // fhir_comments (source XML comment on provision.provision[=].type.fhir_comments): " ergibt sich aus der Antwort \"BIOMAT gewinnen lagern nutzen=gültig\" (Teil 1) "
 * provision.provision[=].period.start = "2020-09-01"
@@ -74,5 +74,5 @@ Usage: #example
 * provision.provision[=].period.start = "2020-09-01"
 * provision.provision[=].period.end = "2050-08-31"
 // fhir_comments (source XML comment on provision.provision[=].period.fhir_comments): " Biomaterial nutzen: 30 Jahre gültig "
-* provision.provision[=].code = MII_CS_Consent_Policy#2.16.840.1.113883.3.1937.777.24.5.3.22 "BIOMAT wissenschaftlich nutzen"
+* provision.provision[=].code = MII_CS_Consent_Policy#2.16.840.1.113883.3.1937.777.24.5.3.22 "BIOMAT wissenschaftlich nutzen EU DSGVO NIVEAU"
 // fhir_comments (source XML comment on provision.fhir_comments): " In diesem Beispiel repräsentiert jede Provision eine Frage/Antwort bzw. Teilaussage einer Frage/Antwort in der Einwilligungserklärung eines Patienten. "
