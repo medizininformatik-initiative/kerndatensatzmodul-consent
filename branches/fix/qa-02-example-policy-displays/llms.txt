@@ -1,0 +1,72 @@
+# de.medizininformatikinitiative.kerndatensatz.consent#2027.0.0-ballot.rc1: MII Implementation Guide Consent(de)
+
+## Pages
+
+* [Startseite](de/index.md)
+* [Sicherheit und Datenschutz](de/security-and-privacy.md)
+* [Änderungshistorie](de/changes.md)
+* [CodeSystems](de/code-systems.md)
+* [Beispiele](de/examples.md)
+* [ValueSets](de/value-sets.md)
+* [CapabilityStatements](de/capability-statements.md)
+* [Artefaktübersicht](de/artifacts.md)
+* [UML-Diagramme](de/uml-diagrams.md)
+* [Hinweise zur Übersetzung](de/translationinfo.md)
+* [Downloads](de/downloads.md)
+* [Anleitung](de/guidance.md)
+* [Profile](de/profiles.md)
+* [Fragebögen](de/frageboegen.md)
+* [Versionierung](de/version-history.md)
+* [Anleitung für Implementierende](de/implementer-guidance.md)
+* [Logische Modelle](de/logical-models.md)
+* [Suchparameter](de/search-parameters.md)
+
+## Resources
+
+### CodeSystems
+
+* [MII Consent: Answer CodeSystem](de/CodeSystem-2.16.840.1.113883.3.1937.777.24.5.2--20210423105554.md)
+* [MII Consent: Policy CodeSystem](de/CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003.md)
+* [MII Consent Version and Modules CodeSystem](de/CodeSystem-mii-cs-consent-version-modules.md)
+
+### ValueSets
+
+* [MII Consent: Answer ValueSet](de/ValueSet-2.16.840.1.113883.3.1937.777.24.11.30--20210323234509.md)
+* [MII Consent: Policy ValueSet](de/ValueSet-2.16.840.1.113883.3.1937.777.24.11.36--20230331232804.md)
+* [MII Consent: Signature Types](de/ValueSet-88464c5b-5338-4c2b-9c07-b42fef2ada64.md)
+
+### Resource Profiles
+
+* [Profile - MI-I - Consent - DocumentReference](de/StructureDefinition-56375452-bfa1-4111-af7c-5b5ba9a1857c.md)
+* [Profile - MI-I - Consent - Einwilligung](de/StructureDefinition-e0e166b4-0f77-478d-9062-de0034d98ce0.md)
+* [Profile - MI-I - Consent - Provenance](de/StructureDefinition-f675b1e8-9f3f-44e8-bb59-9681f78eb464.md)
+
+### CapabilityStatements
+
+* [MII KDS Modul Consent — CapabilityStatement (Migrationsvorschlag)](de/CapabilityStatement-mii-cap-consent-server.md)
+
+### ImplementationGuides
+
+* [MII Implementation Guide Consent](de/ImplementationGuide-mii-ig-consent.md)
+
+### Parameters
+
+* [mii-param-consent-manifest](de/Parameters-mii-param-consent-manifest.md)
+
+### SearchParameters
+
+* [MII_SP_Consent_PolicyUri](de/SearchParameter-mii-sp-consent-policyuri.md)
+* [MII_SP_Consent_ProvisionCode](de/SearchParameter-mii-sp-consent-provisioncode.md)
+* [MII_SP_Consent_ProvisionCodePeriod](de/SearchParameter-mii-sp-consent-provisioncodeperiod.md)
+* [MII_SP_Consent_ProvisionCodeType](de/SearchParameter-mii-sp-consent-provisioncodetype.md)
+* [MII_SP_Consent_ProvisionPeriod](de/SearchParameter-mii-sp-consent-provisionperiod.md)
+* [MII_SP_Consent_ProvisionType](de/SearchParameter-mii-sp-consent-provisiontype.md)
+
+### Examples
+
+* [34150a23-b1c8-404f-874f-e042a30435d2 (Consent)](de/Consent-34150a23-b1c8-404f-874f-e042a30435d2.md)
+* [5143266b-8d60-4b28-8ee9-635140ffa5bb (Consent)](de/Consent-5143266b-8d60-4b28-8ee9-635140ffa5bb.md)
+* [89f494a3-cd75-44f5-a78a-581dfdd47a94 (Consent)](de/Consent-89f494a3-cd75-44f5-a78a-581dfdd47a94.md)
+* [Example-MII-Consent-ResultType-document (Consent)](de/Consent-Example-MII-Consent-ResultType-document.md)
+* [8a3d1799-2463-405e-b49c-6a16c8692b01 (DocumentReference)](de/DocumentReference-8a3d1799-2463-405e-b49c-6a16c8692b01.md)
+* [55219d12-6245-4de4-8b50-ddf6f16a789b (Provenance)](de/Provenance-55219d12-6245-4de4-8b50-ddf6f16a789b.md)

@@ -1,0 +1,143 @@
+{
+  "package": "de.medizininformatikinitiative.kerndatensatz.consent",
+  "version": "2027.0.0-ballot.rc1",
+  "fhirVersion": "4.0.1",
+  "jurisdiction": "DE",
+  "extensions": [],
+  "profiles": {
+    "DocumentReference": [
+      {
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-documentreference",
+        "title": "Profile - MI-I - Consent - DocumentReference"
+      }
+    ],
+    "Consent": [
+      {
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-einwilligung",
+        "title": "Profile - MI-I - Consent - Einwilligung"
+      }
+    ],
+    "Provenance": [
+      {
+        "url": "https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-provenance",
+        "title": "Profile - MI-I - Consent - Provenance"
+      }
+    ]
+  },
+  "usage": {
+    "http://fhir.de/ConsentManagement/StructureDefinition/DomainReference": [
+      "Consent"
+    ],
+    "http://fhir.de/ConsentManagement/StructureDefinition/SignatureLocation": [
+      "Provenance.signature"
+    ],
+    "http://fhir.de/ConsentManagement/StructureDefinition/Xacml": [
+      "Consent.policyRule"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/artifact-author": [
+      "ImplementationGuide"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/artifact-editor": [
+      "ImplementationGuide"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/artifact-endorser": [
+      "ImplementationGuide"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/artifact-purpose": [
+      "ImplementationGuide"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/artifact-reviewer": [
+      "ImplementationGuide"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/artifact-topic": [
+      "ImplementationGuide"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/artifact-usage": [
+      "ImplementationGuide"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm": [
+      "ImplementationGuide"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy": [
+      "ImplementationGuide"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/cqf-expansionParameters": [
+      "ImplementationGuide"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability": [
+      "ImplementationGuide"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bestpractice-explanation": [
+      "StructureDefinition.snapshot.element.constraint"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-bindingName": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-maxValueSet": [
+      "StructureDefinition.snapshot.element.binding"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/elementdefinition-translatable": [
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/package-source": [
+      "ImplementationGuide"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/resource-approvalDate": [
+      "ImplementationGuide"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod": [
+      "CodeSystem",
+      "ImplementationGuide",
+      "ValueSet"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-fhir-type": [
+      "StructureDefinition.snapshot.element.type"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version": [
+      "StructureDefinition.differential.element",
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/structuredefinition-standards-status": [
+      "StructureDefinition.differential.element",
+      "StructureDefinition.snapshot.element"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/translation": [
+      "CapabilityStatement.publisher",
+      "CodeSystem.publisher",
+      "ImplementationGuide.definition.page.page.page.title",
+      "ImplementationGuide.definition.page.page.title",
+      "ImplementationGuide.definition.page.title",
+      "ImplementationGuide.publisher",
+      "ImplementationGuide.title",
+      "SearchParameter.publisher",
+      "StructureDefinition.publisher",
+      "ValueSet.publisher"
+    ],
+    "http://hl7.org/fhir/StructureDefinition/valueset-concept-comments": [
+      "ValueSet.compose.include.concept"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/expansion-parameters": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-internal-dependency": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-page-name": [
+      "ImplementationGuide.definition.page",
+      "ImplementationGuide.definition.page.page",
+      "ImplementationGuide.definition.page.page.page"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/ig-parameter": [
+      "ImplementationGuide.definition"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/resource-information": [
+      "ImplementationGuide.definition.resource"
+    ],
+    "http://hl7.org/fhir/tools/StructureDefinition/snapshot-base-version": [
+      "StructureDefinition.snapshot"
+    ]
+  }
+}

@@ -1,0 +1,64 @@
+{
+  "resourceType" : "ValueSet",
+  "id" : "2.16.840.1.113883.3.1937.777.24.11.36--20230331232804",
+  "meta" : {
+    "profile" : ["http://hl7.org/fhir/StructureDefinition/shareablevalueset"]
+  },
+  "text" : {
+    "status" : "generated",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"de\" lang=\"de\"><hr/><p><b>German</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: ValueSet 2.16.840.1.113883.3.1937.777.24.11.36--20230331232804</b></p><a name=\"2.16.840.1.113883.3.1937.777.24.11.36--20230331232804\"> </a><a name=\"hc2.16.840.1.113883.3.1937.777.24.11.36--20230331232804\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablevalueset.html\">Shareable ValueSet</a></p></div><ul><li>Include all codes defined in <a href=\"CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003.html\"><code>urn:oid:2.16.840.1.113883.3.1937.777.24.5.3</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;2027.0.0-ballot.rc1</span></li></ul></div><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: ValueSet 2.16.840.1.113883.3.1937.777.24.11.36--20230331232804</b></p><a name=\"en-2.16.840.1.113883.3.1937.777.24.11.36--20230331232804\"> </a><a name=\"en-hc2.16.840.1.113883.3.1937.777.24.11.36--20230331232804\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"http://hl7.org/fhir/uv/crmi/STU2/StructureDefinition-shareablevalueset.html\">Shareable ValueSet</a></p></div><ul><li>Include all codes defined in <a href=\"CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003.html\"><code>urn:oid:2.16.840.1.113883.3.1937.777.24.5.3</code></a><span title=\"Version is not explicitly stated, which means it is fixed to the version provided in this specification\"> version &#x1F4E6;2027.0.0-ballot.rc1</span></li></ul></div></div>"
+  },
+  "extension" : [{
+    "url" : "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod",
+    "valuePeriod" : {
+      "start" : "2023-03-31T23:28:04+02:00"
+    }
+  }],
+  "url" : "https://www.medizininformatik-initiative.de/fhir/modul-consent/ValueSet/mii-vs-consent-policy",
+  "identifier" : [{
+    "use" : "official",
+    "system" : "urn:ietf:rfc:3986",
+    "value" : "urn:oid:2.16.840.1.113883.3.1937.777.24.11.36"
+  }],
+  "version" : "2027.0.0-ballot.rc1",
+  "name" : "MiiConsentPolicyValueSet",
+  "title" : "MII Consent: Policy ValueSet",
+  "status" : "active",
+  "experimental" : false,
+  "date" : "2026-09-04T13:30:52+00:00",
+  "publisher" : "NUM-DIZ",
+  "_publisher" : {
+    "extension" : [{
+      "extension" : [{
+        "url" : "lang",
+        "valueCode" : "en"
+      },
+      {
+        "url" : "content",
+        "valueString" : "NUM-DIZ"
+      }],
+      "url" : "http://hl7.org/fhir/StructureDefinition/translation"
+    }]
+  },
+  "contact" : [{
+    "name" : "NUM-DIZ",
+    "telecom" : [{
+      "system" : "url",
+      "value" : "https://www.netzwerk-universitaetsmedizin.de"
+    }]
+  }],
+  "description" : "**Disclaimer** \n\n (Punkte übernommen aus der Policy Liste ([MII SharePoint, TF Consent Umsetzung](https://tmfev.sharepoint.com/:f:/r/sites/tmf/mi-i/Taskforce%20Consent%20Umsetzung/02_Dokumente/Policies?csf=1&web=1&e=C0xLim \"\")))\n1. Diese Liste fasst erforderliche\n                    Einwilligungsmodule und zugeordnete Einwilligungspolicies für die technische Abbildung der \"MII Mustertexte Patienteneinwilligung\" in den aktuell verfügbaren Versionen zusammen. \n2. Für die Abbildung der Policies im Art Decor werden ausschließlich die Spalten [Policybezeichner], [Bedeutung/Kontext] und [OID] verwendet. \n3. Die Formulierung in\n                    der Spalte [Bedeutung/Kontext] dient ausschließlich administrativen Zwecken und der Verständnisbildung für die jeweilige Policy. \n4. Eine Darstellung der jeweiligen Formulierung innerhalb von Formularen oder digitalen Einwilligungsdokumenten ist nicht intendiert. \n5. Die Spalte [Weitere Hinweise Enforcement-Seite] nennt zusätzliche\n                    Randbedingungen, die auf der datenverarbeitenden Seite über die reine Einwilligungsinformation hinaus zu berücksichtigen sind. Die Gewährleistung der Einhaltung dieser weiteren Hinweise geht über den Wirkungsraum der Task Force Consent Umsetzung hinaus. \n\n **Hinweis 1 - Verwendung in FHIR:** Siehe [Implementation Guide](https://ig.fhir.de/einwilligungsmanagement/stable/Consent.html \"consent.provision Hierarchie ist noch in Arbeit\").  \n\n **Hinweis 2 - Verwendung in IHE BPPC:** \nUm die in diesem ValueSet enthaltenen Codes in IHE BPPC verwenden zu können, ist eine Kombination mit dem [MII Consent: Answer ValueSet](https://art-decor.org/art-decor/decor-valuesets--mide-?id=2.16.840.1.113883.3.1937.777.24.11.30&effectiveDate=2021-03-23T23:45:09&language=de-DE \"\") möglich (evtl. sogar erforderlich).  \n\n  Beispiel 1:  \n\n Patient hat dem Erheben der IDAT (Policy: 2.16.840.1.113883.3.1937.777.24.5.3.2 \"IDAT_erheben\") zugestimmt:\n                            2.16.840.1.113883.3.1937.777.24.5.3.2**.1**\u00a0(.1 wird aus dem\u00a0[MII Consent: Answer ValueSet](https://art-decor.org/art-decor/decor-valuesets--mide-?id=2.16.840.1.113883.3.1937.777.24.11.30&effectiveDate=2021-03-23T23:45:09&language=de-DE \"\")\u00a0angehängt)  \n\n Beispiel 2:  \n\n 2.16.840.1.113883.3.1937.777.24.5.3.4.2\n                    bedeutet, dass der Patient der Policy\u00a0IDAT_zusammenfuehren_Dritte nicht zugestimmt hat.",
+  "jurisdiction" : [{
+    "coding" : [{
+      "system" : "urn:iso:std:iso:3166",
+      "code" : "DE",
+      "display" : "Germany"
+    }]
+  }],
+  "immutable" : false,
+  "compose" : {
+    "include" : [{
+      "system" : "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"
+    }]
+  }
+}
