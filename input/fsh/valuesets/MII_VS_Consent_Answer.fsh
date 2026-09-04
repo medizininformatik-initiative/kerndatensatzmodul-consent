@@ -1,5 +1,5 @@
 ValueSet: MII_VS_Consent_Answer
-Id: 2.16.840.1.113883.3.1937.777.24.11.30--20210323234509
+Id: mii-vs-consent-answer
 Title: "MII Consent: Answer ValueSet"
 Description: "This ValueSet contains the possible answers to the questions of the MII Consent."
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"

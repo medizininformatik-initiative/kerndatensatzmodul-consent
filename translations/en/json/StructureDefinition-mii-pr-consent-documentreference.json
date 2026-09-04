@@ -1,5 +1,5 @@
 {
-  "id" : "StructureDefinition-56375452-bfa1-4111-af7c-5b5ba9a1857c",
+  "id" : "StructureDefinition-mii-pr-consent-documentreference",
   "baseLang" : "de",
   "languages" : [{
     "targetLang" : "en",

@@ -1,5 +1,5 @@
 {
-  "id" : "ValueSet-2.16.840.1.113883.3.1937.777.24.11.30--20210323234509",
+  "id" : "ValueSet-mii-vs-consent-answer",
   "baseLang" : "de",
   "languages" : [{
     "targetLang" : "en",
