@@ -1,7 +1,7 @@
 # ╭────────────────────────────── TEMPLATE — READ FIRST ───────────────────────────────╮
 # │ This is the CRMI-profiled metadata contract for an MII KDS module IG,              │
 # │ parameterized from medizininformatik-initiative/kerndatensatz-basis (main).        │
-# │ The file does NOT build until every {{...}} placeholder is replaced.               │
+# │ The file does NOT build until every template placeholder is replaced.              │
 # │                                                                                    │
 # │ All 19 placeholders this repository uses are listed below — 15 ACTIVE and 4        │
 # │ OPTIONAL. ACTIVE ones sit on lines the build reads today — leaving one             │
@@ -56,13 +56,13 @@
 # │                           the FHIR IG registry entry.                              │
 # │                                                                                    │
 # │ ── OPTIONAL (inside commented-out blocks — replace only if you enable them) ──     │
-# │   {{SPECIAL_URL_1}}       one entry of the `special-url` list: a canonical this    │
+# │   SPECIAL_URL_1          one entry of the `special-url` list: a canonical this     │
 # │                           IG defines that does NOT start with the module           │
 # │                           canonical. Regenerate the list per                       │
 # │                           docs/recipes/regenerate-special-url.md.                  │
-# │   {{CITATION_TEXT}}       artifact-relatedArtifact — the module's literature       │
-# │   {{CITATION_URL}}        citation, its URL, and its publication date              │
-# │   {{CITATION_PUBLICATION_DATE}}  (ISO YYYY-MM-DD).                                 │
+# │   CITATION_TEXT          artifact-relatedArtifact — the module's literature        │
+# │   CITATION_URL           citation, its URL, and its publication date               │
+# │   CITATION_PUBLICATION_DATE      (ISO YYYY-MM-DD).                                 │
 # ╰────────────────────────────────────────────────────────────────────────────────────╯
 # ABOUT THE kerndatensatz-basis CITATIONS BELOW
 # `kerndatensatz-basis` is the MII reference module. Wherever a comment quotes
@@ -197,11 +197,11 @@ extension:
   # - url: http://hl7.org/fhir/StructureDefinition/artifact-relatedArtifact
   #   valueRelatedArtifact:
   #     type: citation
-  #     citation: "{{CITATION_TEXT}}"
-  #     url: "{{CITATION_URL}}"
+  #     citation: "<CITATION_TEXT>"
+  #     url: "<CITATION_URL>"
   #     extension:
   #       - url: http://hl7.org/fhir/StructureDefinition/cqf-publicationDate
-  #         valueDate: "{{CITATION_PUBLICATION_DATE}}"
+  #         valueDate: "<CITATION_PUBLICATION_DATE>"
   #       - url: http://hl7.org/fhir/StructureDefinition/cqf-publicationStatus
   #         valueCode: active
   # The module's expansion-parameters manifest — the pinned code system versions
