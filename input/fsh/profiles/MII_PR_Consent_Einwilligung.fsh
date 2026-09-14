@@ -45,10 +45,19 @@ Description: "Dieses Profil beschreibt eine Einwilligung in der Medizininformati
 * category[mii].coding 1..1 MS
 * category[mii].coding.system 1.. MS
 * category[mii].coding.code 1.. MS
+// Fix Kategorie 6: unter dem pattern/$this-Diskriminator braucht jeder Slice eine
+// entscheidbare Regel. resultType diskriminierte bisher nur ueber das required
+// Binding (terminologieserver-abhaengig) — ein system-only Pattern macht den
+// Slice offline und deterministisch entscheidbar.
+* category[resultType] ^patternCodeableConcept.coding[0].system = "http://fhir.de/ConsentManagement/CodeSystem/ResultType"
 * category[resultType] from ConsentManagementResultType (required)
 * category[resultType].coding 1.. MS
 * category[resultType].coding.system 1.. MS
 * category[resultType].coding.code 1.. MS
+// templateType hatte NUR ein extensible Binding — unter pattern/$this per
+// Definition unentscheidbar; der Java-Validator brach damit die Slicing-
+// Auswertung fuer JEDE category-Wiederholung ab (15 Fehler).
+* category[templateType] ^patternCodeableConcept.coding[0].system = "http://fhir.de/ConsentManagement/CodeSystem/TemplateType"
 * category[templateType] from ConsentManagementTemplateType (extensible)
 * category[templateType].coding 1.. MS
 * category[templateType].coding.system 1.. MS
