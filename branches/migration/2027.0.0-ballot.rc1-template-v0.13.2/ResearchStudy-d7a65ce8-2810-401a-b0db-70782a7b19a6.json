@@ -1,0 +1,43 @@
+{
+  "resourceType" : "ResearchStudy",
+  "id" : "d7a65ce8-2810-401a-b0db-70782a7b19a6",
+  "meta" : {
+    "profile" : ["http://fhir.de/ConsentManagement/StructureDefinition/Domain/ResearchStudy"]
+  },
+  "text" : {
+    "status" : "extensions",
+    "div" : "<div xmlns=\"http://www.w3.org/1999/xhtml\"><div xml:lang=\"de\" lang=\"de\"><hr/><p><b>German</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: ResearchStudy d7a65ce8-2810-401a-b0db-70782a7b19a6</b></p><a name=\"d7a65ce8-2810-401a-b0db-70782a7b19a6\"> </a><a name=\"hcd7a65ce8-2810-401a-b0db-70782a7b19a6\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.4-rc1-snapshots&amp;canonical=http://fhir.de/ConsentManagement/StructureDefinition/Domain/ResearchStudy\">Consent Management Domain Research Study</a></p></div><blockquote><p><b>Consent Management Kontext-Identifikatoren einer Domain</b></p><ul><li>resourceType: <a href=\"http://hl7.org/fhir/R4/codesystem-resource-types.html#resource-types-Patient\">ResourceType: Patient</a> (Patient)</li><li>type: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v2-0203 ANON}\">Anonymous identifier</span></li><li>system: <a href=\"https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.4-rc1-snapshots&amp;canonical=https://example.org/fhir/sid/mii-consent-pseudonym\">https://example.org/fhir/sid/mii-consent-pseudonym</a></li></ul></blockquote><p><b>identifier</b>: <code>https://example.org/fhir/sid/mii-consent-domain</code>/MII-CONSENT-TESTDOMAIN-0001</p><p><b>title</b>: Synthetische MII-Einwilligungsstudie (Beispiel)</p><p><b>status</b>: Active</p><p><b>description</b>: </p><div><p>Synthetische Einwilligungsdomäne, ausschließlich als Referenzziel der Beispiel-Ressourcen dieses Leitfadens.</p>\n</div></div><div xml:lang=\"en\" lang=\"en\"><hr/><p><b>English</b></p><hr/><p class=\"res-header-id\"><b>Generated Narrative: ResearchStudy d7a65ce8-2810-401a-b0db-70782a7b19a6</b></p><a name=\"en-d7a65ce8-2810-401a-b0db-70782a7b19a6\"> </a><a name=\"en-hcd7a65ce8-2810-401a-b0db-70782a7b19a6\"> </a><div style=\"display: inline-block; background-color: #d9e0e7; padding: 6px; margin: 4px; border: 1px solid #8da1b4; border-radius: 5px; line-height: 60%\"><p style=\"margin-bottom: 0px\"/><p style=\"margin-bottom: 0px\">Profile: <a href=\"https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.4-rc1-snapshots&amp;canonical=http://fhir.de/ConsentManagement/StructureDefinition/Domain/ResearchStudy\">Consent Management Domain Research Study</a></p></div><blockquote><p><b>Consent Management Kontext-Identifikatoren einer Domain</b></p><ul><li>resourceType: <a href=\"http://hl7.org/fhir/R4/codesystem-resource-types.html#resource-types-Patient\">ResourceType: Patient</a> (Patient)</li><li>type: <span title=\"Codes:{http://terminology.hl7.org/CodeSystem/v2-0203 ANON}\">Anonymous identifier</span></li><li>system: <a href=\"https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.4-rc1-snapshots&amp;canonical=https://example.org/fhir/sid/mii-consent-pseudonym\">https://example.org/fhir/sid/mii-consent-pseudonym</a></li></ul></blockquote><p><b>identifier</b>: <code>https://example.org/fhir/sid/mii-consent-domain</code>/MII-CONSENT-TESTDOMAIN-0001</p><p><b>title</b>: Synthetische MII-Einwilligungsstudie (Beispiel)</p><p><b>status</b>: Active</p><p><b>description</b>: </p><div><p>Synthetische Einwilligungsdomäne, ausschließlich als Referenzziel der Beispiel-Ressourcen dieses Leitfadens.</p>\n</div></div></div>"
+  },
+  "extension" : [{
+    "extension" : [{
+      "url" : "resourceType",
+      "valueCoding" : {
+        "system" : "http://hl7.org/fhir/resource-types",
+        "code" : "Patient",
+        "display" : "Patient"
+      }
+    },
+    {
+      "url" : "type",
+      "valueCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://terminology.hl7.org/CodeSystem/v2-0203",
+          "code" : "ANON",
+          "display" : "Anonymous identifier"
+        }]
+      }
+    },
+    {
+      "url" : "system",
+      "valueUri" : "https://example.org/fhir/sid/mii-consent-pseudonym"
+    }],
+    "url" : "http://fhir.de/ConsentManagement/StructureDefinition/ContextIdentifier"
+  }],
+  "identifier" : [{
+    "system" : "https://example.org/fhir/sid/mii-consent-domain",
+    "value" : "MII-CONSENT-TESTDOMAIN-0001"
+  }],
+  "title" : "Synthetische MII-Einwilligungsstudie (Beispiel)",
+  "status" : "active",
+  "description" : "Synthetische Einwilligungsdomäne, ausschließlich als Referenzziel der Beispiel-Ressourcen dieses Leitfadens."
+}

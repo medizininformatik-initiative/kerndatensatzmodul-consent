@@ -25,6 +25,9 @@
     ]
   },
   "usage": {
+    "http://fhir.de/ConsentManagement/StructureDefinition/ContextIdentifier": [
+      "ResearchStudy"
+    ],
     "http://fhir.de/ConsentManagement/StructureDefinition/DomainReference": [
       "Consent"
     ],

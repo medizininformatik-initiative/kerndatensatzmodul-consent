@@ -58,6 +58,7 @@ This publication includes IP covered under the following statements.
 
 * [Consent Scope Codes](http://terminology.hl7.org/7.3.0/CodeSystem-consentscope.html): [Consent/34150a23-b1c8-404f-874f-e042a30435d2](Consent-34150a23-b1c8-404f-874f-e042a30435d2.md), [Consent/5143266b-8d60-4b28-8ee9-635140ffa5bb](Consent-5143266b-8d60-4b28-8ee9-635140ffa5bb.md), [Consent/89f494a3-cd75-44f5-a78a-581dfdd47a94](Consent-89f494a3-cd75-44f5-a78a-581dfdd47a94.md) and [Consent/Example-MII-Consent-ResultType-document](Consent-Example-MII-Consent-ResultType-document.md)
 * [Provenance participant type](http://terminology.hl7.org/7.3.0/CodeSystem-provenance-participant-type.html): [Provenance/55219d12-6245-4de4-8b50-ddf6f16a789b](Provenance-55219d12-6245-4de4-8b50-ddf6f16a789b.md)
+* [identifierType](http://terminology.hl7.org/7.3.0/CodeSystem-v2-0203.html): [Patient/531cef77-2a30-4283-944d-affaf9ae234e](Patient-531cef77-2a30-4283-944d-affaf9ae234e.md), [Patient/9b4a702d-162c-428a-8c5d-8b98af21b693](Patient-9b4a702d-162c-428a-8c5d-8b98af21b693.md), [ResearchStudy/c946ae17-e3e6-4178-b5ea-15f95aaeeeb4](ResearchStudy-c946ae17-e3e6-4178-b5ea-15f95aaeeeb4.md) and [ResearchStudy/d7a65ce8-2810-401a-b0db-70782a7b19a6](ResearchStudy-d7a65ce8-2810-401a-b0db-70782a7b19a6.md)
 
 
 ### IG Parameter Settings and Expansion Parameters
@@ -1379,6 +1380,70 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
       },
       "name" : "8a3d1799-2463-405e-b49c-6a16c8692b01",
       "exampleCanonical" : "https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-documentreference"
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ResearchStudy"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ResearchStudy-c946ae17-e3e6-4178-b5ea-15f95aaeeeb4.html"
+      }],
+      "reference" : {
+        "reference" : "ResearchStudy/c946ae17-e3e6-4178-b5ea-15f95aaeeeb4"
+      },
+      "name" : "Beispiel Einwilligungsdomäne (synthetische Studie)",
+      "description" : "Synthetische Consent-Domäne (ResearchStudy) als Referenzziel der DomainReference-Extension der Quell-Beispiele.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "ResearchStudy"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "ResearchStudy-d7a65ce8-2810-401a-b0db-70782a7b19a6.html"
+      }],
+      "reference" : {
+        "reference" : "ResearchStudy/d7a65ce8-2810-401a-b0db-70782a7b19a6"
+      },
+      "name" : "Beispiel Einwilligungsdomäne (synthetische Studie)",
+      "description" : "Synthetische Consent-Domäne (ResearchStudy) als Referenzziel der DomainReference-Extension der Quell-Beispiele.",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Patient-531cef77-2a30-4283-944d-affaf9ae234e.html"
+      }],
+      "reference" : {
+        "reference" : "Patient/531cef77-2a30-4283-944d-affaf9ae234e"
+      },
+      "name" : "Beispiel Patient (pseudonym, synthetisch)",
+      "description" : "Synthetischer, pseudonymer Patient als Referenzziel der Quell-Beispiele (Consent.patient, DocumentReference.subject, Provenance.signature.who).",
+      "exampleBoolean" : true
+    },
+    {
+      "extension" : [{
+        "url" : "http://hl7.org/fhir/tools/StructureDefinition/resource-information",
+        "valueString" : "Patient"
+      },
+      {
+        "url" : "http://hl7.org/fhir/StructureDefinition/implementationguide-page",
+        "valueUri" : "Patient-9b4a702d-162c-428a-8c5d-8b98af21b693.html"
+      }],
+      "reference" : {
+        "reference" : "Patient/9b4a702d-162c-428a-8c5d-8b98af21b693"
+      },
+      "name" : "Beispiel Patient (pseudonym, synthetisch)",
+      "description" : "Synthetischer, pseudonymer Patient als Referenzziel der Quell-Beispiele (Consent.patient, DocumentReference.subject, Provenance.signature.who).",
+      "exampleBoolean" : true
     },
     {
       "extension" : [{
