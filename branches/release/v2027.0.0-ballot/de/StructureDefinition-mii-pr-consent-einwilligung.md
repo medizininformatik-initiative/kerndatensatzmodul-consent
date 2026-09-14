@@ -148,7 +148,7 @@ You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir
 
 #### Constraints
 
-Diese Struktur ist abgeleitet von [ConsentManagementConsent](https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.4-snapshots&canonical=http://fhir.de/ConsentManagement/StructureDefinition/Consent) 
+Diese Struktur ist abgeleitet von [ConsentManagementConsent](https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.4&canonical=http://fhir.de/ConsentManagement/StructureDefinition/Consent) 
 
 #### Terminology Bindings (Differential)
 
@@ -156,7 +156,7 @@ Diese Struktur ist abgeleitet von [ConsentManagementConsent](https://simplifier.
 
 #### Constraints
 
-Diese Struktur ist abgeleitet von [ConsentManagementConsent](https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.4-snapshots&canonical=http://fhir.de/ConsentManagement/StructureDefinition/Consent) 
+Diese Struktur ist abgeleitet von [ConsentManagementConsent](https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.4&canonical=http://fhir.de/ConsentManagement/StructureDefinition/Consent) 
 
 ** Summary **
 
@@ -179,7 +179,7 @@ This structure defines the following [Slices](http://hl7.org/fhir/R4/profiling.h
 
  **Differential-Ansicht** 
 
-Diese Struktur ist abgeleitet von [ConsentManagementConsent](https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.4-snapshots&canonical=http://fhir.de/ConsentManagement/StructureDefinition/Consent) 
+Diese Struktur ist abgeleitet von [ConsentManagementConsent](https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.4&canonical=http://fhir.de/ConsentManagement/StructureDefinition/Consent) 
 
 #### Terminology Bindings (Differential)
 
@@ -189,7 +189,7 @@ Diese Struktur ist abgeleitet von [ConsentManagementConsent](https://simplifier.
 
 #### Constraints
 
-Diese Struktur ist abgeleitet von [ConsentManagementConsent](https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.4-snapshots&canonical=http://fhir.de/ConsentManagement/StructureDefinition/Consent) 
+Diese Struktur ist abgeleitet von [ConsentManagementConsent](https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.4&canonical=http://fhir.de/ConsentManagement/StructureDefinition/Consent) 
 
 ** Summary **
 

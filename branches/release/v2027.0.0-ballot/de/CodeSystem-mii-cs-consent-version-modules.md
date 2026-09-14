@@ -53,7 +53,7 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
   "title" : "MII Consent Version and Modules CodeSystem",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-09-14T18:39:54+00:00",
+  "date" : "2026-09-14T19:07:39+00:00",
   "publisher" : "NUM-DIZ",
   "_publisher" : {
     "extension" : [{

@@ -44,7 +44,7 @@ You can also check for [usages in the FHIR IG Statistics](https://packages2.fhir
 
 #### Constraints
 
-Diese Struktur ist abgeleitet von [ConsentManagementProvenance](https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.4-snapshots&canonical=http://fhir.de/ConsentManagement/StructureDefinition/Provenance) 
+Diese Struktur ist abgeleitet von [ConsentManagementProvenance](https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.4&canonical=http://fhir.de/ConsentManagement/StructureDefinition/Provenance) 
 
 #### Terminology Bindings (Differential)
 
@@ -52,7 +52,7 @@ Diese Struktur ist abgeleitet von [ConsentManagementProvenance](https://simplifi
 
 #### Constraints
 
-Diese Struktur ist abgeleitet von [ConsentManagementProvenance](https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.4-snapshots&canonical=http://fhir.de/ConsentManagement/StructureDefinition/Provenance) 
+Diese Struktur ist abgeleitet von [ConsentManagementProvenance](https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.4&canonical=http://fhir.de/ConsentManagement/StructureDefinition/Provenance) 
 
 ** Summary **
 
@@ -70,7 +70,7 @@ This structure refers to these other structures:
 
  **Differential-Ansicht** 
 
-Diese Struktur ist abgeleitet von [ConsentManagementProvenance](https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.4-snapshots&canonical=http://fhir.de/ConsentManagement/StructureDefinition/Provenance) 
+Diese Struktur ist abgeleitet von [ConsentManagementProvenance](https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.4&canonical=http://fhir.de/ConsentManagement/StructureDefinition/Provenance) 
 
 #### Terminology Bindings (Differential)
 
@@ -80,7 +80,7 @@ Diese Struktur ist abgeleitet von [ConsentManagementProvenance](https://simplifi
 
 #### Constraints
 
-Diese Struktur ist abgeleitet von [ConsentManagementProvenance](https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.4-snapshots&canonical=http://fhir.de/ConsentManagement/StructureDefinition/Provenance) 
+Diese Struktur ist abgeleitet von [ConsentManagementProvenance](https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.4&canonical=http://fhir.de/ConsentManagement/StructureDefinition/Provenance) 
 
 ** Summary **
 

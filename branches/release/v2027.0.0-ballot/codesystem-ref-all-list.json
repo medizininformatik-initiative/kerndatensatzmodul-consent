@@ -20,7 +20,7 @@
     "description" : "Rechtsgrundlage der Datenverarbeitung. ANWENDUNGSHINWEIS: die hier als Code hinterlegten URIs sind Ergebnis einer ersten Recherche und sollten zukünftig korrigiert und erweitert werden, idealerweise bundesweit einheitlich durch eine entsprechend autorisierte Institution.",
     "uses" : {
     },
-    "https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.4-snapshots&canonical=http://fhir.de/ConsentManagement/ValueSet/LegalBasisDataProcessing" : "ConsentManagementLegalBasisDataProcessing"
+    "https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.4&canonical=http://fhir.de/ConsentManagement/ValueSet/LegalBasisDataProcessing" : "ConsentManagementLegalBasisDataProcessing"
   },
   {
     "url" : "http://fhir.de/ConsentManagement/CodeSystem/ResultType",
@@ -31,7 +31,7 @@
     "description" : "Ergebnistypen des Einwilligungsdokuments",
     "uses" : {
     },
-    "https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.4-snapshots&canonical=http://fhir.de/ConsentManagement/ValueSet/ResultType" : "ConsentManagementResultType"
+    "https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.4&canonical=http://fhir.de/ConsentManagement/ValueSet/ResultType" : "ConsentManagementResultType"
   },
   {
     "url" : "http://fhir.de/ConsentManagement/CodeSystem/TemplateType",
@@ -42,7 +42,7 @@
     "description" : "Typen des Einwilligungsdokuments",
     "uses" : {
     },
-    "https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.4-snapshots&canonical=http://fhir.de/ConsentManagement/ValueSet/TemplateType" : "ConsentManagementTemplateType"
+    "https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.4&canonical=http://fhir.de/ConsentManagement/ValueSet/TemplateType" : "ConsentManagementTemplateType"
   },
   {
     "url" : "http://hl7.org/fhir/composition-status",

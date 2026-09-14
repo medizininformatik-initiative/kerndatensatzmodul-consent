@@ -12,12 +12,12 @@
 
 -------
 
-Profile: [Consent Management Domain Research Study](https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.4-snapshots&canonical=http://fhir.de/ConsentManagement/StructureDefinition/Domain/ResearchStudy)
+Profile: [Consent Management Domain Research Study](https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.4&canonical=http://fhir.de/ConsentManagement/StructureDefinition/Domain/ResearchStudy)
 
 > **Consent Management Kontext-Identifikatoren einer Domain**
 * resourceType: [ResourceType: Patient](http://hl7.org/fhir/R4/codesystem-resource-types.html#resource-types-Patient) (Patient)
 * type: Anonymous identifier
-* system: [https://example.org/fhir/sid/mii-consent-pseudonym](https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.4-snapshots&canonical=https://example.org/fhir/sid/mii-consent-pseudonym)
+* system: [https://example.org/fhir/sid/mii-consent-pseudonym](https://simplifier.net/resolve?scope=de.einwilligungsmanagement@2.0.4&canonical=https://example.org/fhir/sid/mii-consent-pseudonym)
 
 **identifier**: `https://example.org/fhir/sid/mii-consent-domain`/MII-CONSENT-TESTDOMAIN-0001
 

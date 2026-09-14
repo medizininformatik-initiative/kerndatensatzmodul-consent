@@ -263,7 +263,7 @@ Expansion parameters are query parameters that can be passed to a `ValueSet` `$e
     "id" : "de_einwilligungsmanagement",
     "uri" : "http://fhir.org/packages/de.einwilligungsmanagement/ImplementationGuide/de.einwilligungsmanagement",
     "packageId" : "de.einwilligungsmanagement",
-    "version" : "2.0.4-snapshots"
+    "version" : "2.0.4"
   },
   {
     "id" : "hl7_fhir_uv_crmi",
