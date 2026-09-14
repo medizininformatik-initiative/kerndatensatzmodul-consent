@@ -263,7 +263,11 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Plain text representation of the concept","A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.","Very often the text is the same as a displayName of one of the codings.","The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source.","","","","","","","",,,,,"",,,,"CodeableConcept.text",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","C*E.9. But note many systems use C*E.2 for this"
 "Consent.category:resultType","Consent.category","resultType","","",0,*,"Y","","Y","CodeableConcept {[]} {[]}
-","Classification of the consent statement - for indexing/retrieval","A classification of the type of consents found in the statement. This element supports indexing and retrieval of consent statements.","","","","","","","","","",,"required","","http://fhir.de/ConsentManagement/ValueSet/ResultType","",,,,"Consent.category",1,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Classification of the consent statement - for indexing/retrieval","A classification of the type of consents found in the statement. This element supports indexing and retrieval of consent statements.","","","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+  <coding>
+    <system value=""http://fhir.de/ConsentManagement/CodeSystem/ResultType""/>
+  </coding>
+</valueCodeableConcept>","","","",,"required","","http://fhir.de/ConsentManagement/ValueSet/ResultType","",,,,"Consent.category",1,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.code","HL7 Table 0497 - Consent Type","FiveWs.class"
 "Consent.category:resultType.id","Consent.category.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""
@@ -301,7 +305,11 @@ ext-1:Must have either extensions or value[x], not both {extension.exists() != v
 ","Plain text representation of the concept","A human language representation of the concept as seen/selected/uttered by the user who entered the data and/or which represents the intended meaning of the user.","Very often the text is the same as a displayName of one of the codings.","The codes from the terminologies do not always capture the correct meaning with all the nuances of the human using them, or sometimes there is no appropriate code at all. In these cases, the text is used to capture the full meaning of the source.","","","","","","","",,,,,"",,,,"CodeableConcept.text",0,1,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","C*E.9. But note many systems use C*E.2 for this"
 "Consent.category:templateType","Consent.category","templateType","","",0,*,"Y","","Y","CodeableConcept {[]} {[]}
-","Classification of the consent statement - for indexing/retrieval","A classification of the type of consents found in the statement. This element supports indexing and retrieval of consent statements.","","","","","","","","","",,"extensible","","http://fhir.de/ConsentManagement/ValueSet/TemplateType","",,,,"Consent.category",1,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
+","Classification of the consent statement - for indexing/retrieval","A classification of the type of consents found in the statement. This element supports indexing and retrieval of consent statements.","","","","","","<valueCodeableConcept xmlns=""http://hl7.org/fhir"">
+  <coding>
+    <system value=""http://fhir.de/ConsentManagement/CodeSystem/TemplateType""/>
+  </coding>
+</valueCodeableConcept>","","","",,"extensible","","http://fhir.de/ConsentManagement/ValueSet/TemplateType","",,,,"Consent.category",1,*,"","ele-1:All FHIR elements must have a @value or children {hasValue() or (children().count() > id.count())}
 ","Event.code","HL7 Table 0497 - Consent Type","FiveWs.class"
 "Consent.category:templateType.id","Consent.category.id","","","",0,1,"","","","string {[]} {[]}
 ","Unique id for inter-element referencing","Unique id for the element within a resource (for internal references). This may be any string value that does not contain spaces.","","","","","","","","","",,,,,"",,,,"Element.id",0,1,"",""

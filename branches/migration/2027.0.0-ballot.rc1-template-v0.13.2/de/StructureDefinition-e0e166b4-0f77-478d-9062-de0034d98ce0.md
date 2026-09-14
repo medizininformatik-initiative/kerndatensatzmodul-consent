@@ -411,6 +411,11 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-e0e166b4-0f7
       "sliceName" : "resultType",
       "min" : 0,
       "max" : "*",
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://fhir.de/ConsentManagement/CodeSystem/ResultType"
+        }]
+      },
       "mustSupport" : true,
       "binding" : {
         "strength" : "required",
@@ -441,6 +446,11 @@ Weitere Repräsentationen des Profils: [CSV](../StructureDefinition-e0e166b4-0f7
       "sliceName" : "templateType",
       "min" : 0,
       "max" : "*",
+      "patternCodeableConcept" : {
+        "coding" : [{
+          "system" : "http://fhir.de/ConsentManagement/CodeSystem/TemplateType"
+        }]
+      },
       "mustSupport" : true,
       "binding" : {
         "strength" : "extensible",
