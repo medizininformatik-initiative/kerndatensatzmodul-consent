@@ -182,14 +182,18 @@ jobs:
           sed -i '/^parameters:/a\  version-comparison: n/a' sushi-config.yaml
           echo "::notice::version comparison disabled via ENABLE_VERSION_COMPARISON (set to the publisher-native n/a)."
 
-      - name: Generate parent snapshots (de.einwilligungsmanagement has none upstream)
+      - name: Install parent snapshots (de.einwilligungsmanagement has none upstream)
         # Migration decision D-4 (Gate A): the parent package ships 0 snapshots
-        # in 2.0.2/2.0.3/2.0.4-rc1; SUSHI cannot import it. scripts/generate-parent-
-        # snapshots.sh drives the official HL7 generator (pinned
-        # validator_cli.jar) and installs the rebuilt cache entry
-        # de.einwilligungsmanagement#2.0.2-snapshots that sushi-config pins.
-        # Idempotent; upstream package untouched.
-        run: bash scripts/generate-parent-snapshots.sh
+        # in 2.0.2 / 2.0.3 / 2.0.4-rc1 / 2.0.4 — measured — and SUSHI cannot
+        # import a parent without one. This seeds the cache entry
+        # de.einwilligungsmanagement#2.0.4 (the plain version sushi-config pins)
+        # from the committed, checksum-verified rebuild in dependencies/.
+        # Offline: no download, no Java, no python3 — which matters, because the
+        # pinned IG Publisher container has no python3 and therefore cannot run
+        # the generator (scripts/generate-parent-snapshots.sh) at all.
+        # Idempotent; skips a cached copy that already carries snapshots.
+        # TEMPORARY — remove with dependencies/ once upstream ships snapshots.
+        run: bash scripts/install-parent-snapshots.sh
 
       - name: SUSHI compile and decide build mode
         id: build
