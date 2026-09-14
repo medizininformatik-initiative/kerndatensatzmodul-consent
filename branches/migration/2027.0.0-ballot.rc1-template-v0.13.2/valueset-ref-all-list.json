@@ -320,8 +320,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.20"],
     "uses" : {
     },
-    "StructureDefinition-mii-pr-consent-documentreference.html" : "Profile - MI-I - Consent - DocumentReference",
     "StructureDefinition-mii-pr-consent-provenance.html" : "Profile - MI-I - Consent - Provenance",
+    "StructureDefinition-mii-pr-consent-documentreference.html" : "Profile - MI-I - Consent - DocumentReference",
     "StructureDefinition-mii-pr-consent-einwilligung.html" : "Profile - MI-I - Consent - Einwilligung"
   },
   {
@@ -336,8 +336,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.1024"],
     "uses" : {
     },
-    "StructureDefinition-mii-pr-consent-documentreference.html" : "Profile - MI-I - Consent - DocumentReference",
-    "StructureDefinition-mii-pr-consent-provenance.html" : "Profile - MI-I - Consent - Provenance"
+    "StructureDefinition-mii-pr-consent-provenance.html" : "Profile - MI-I - Consent - Provenance",
+    "StructureDefinition-mii-pr-consent-documentreference.html" : "Profile - MI-I - Consent - DocumentReference"
   },
   {
     "url" : "http://hl7.org/fhir/ValueSet/provenance-activity-type",
@@ -410,8 +410,8 @@
     "sources" : ["2.16.840.1.113883.4.642.3.27"],
     "uses" : {
     },
-    "StructureDefinition-mii-pr-consent-documentreference.html" : "Profile - MI-I - Consent - DocumentReference",
     "StructureDefinition-mii-pr-consent-provenance.html" : "Profile - MI-I - Consent - Provenance",
+    "StructureDefinition-mii-pr-consent-documentreference.html" : "Profile - MI-I - Consent - DocumentReference",
     "StructureDefinition-mii-pr-consent-einwilligung.html" : "Profile - MI-I - Consent - Einwilligung"
   },
   {
