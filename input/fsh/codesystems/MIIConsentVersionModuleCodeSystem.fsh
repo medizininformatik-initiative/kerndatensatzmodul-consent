@@ -21,7 +21,7 @@ Description: "Dieses Code System enthält die OIDs der verschiedenen Versionen u
 * ^copyright = "\n            © 2019+ TMF e. V., Charlottenstraße 42, 10117 Berlin \n            \n                \n                    CC BY 4.0\n                \n                 \n            \n            Diese Arbeit ist lizensiert unter der [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/). \n            Zu den Nutzungsrechten der zugrunde liegenden FHIR-Technologie siehe die FHIR-Basis-Spezifikation. \n            Einige verwendete Codesysteme werden von anderen Organisationen herausgegeben und gepflegt. Es gilt das Copyright der dort jeweils aufgeführten Herausgeber (Publisher). \n        "
 * ^caseSensitive = false
 * ^content = #complete
-* ^count = 20
+* ^count = 21
 * ^property[0].code = #status
 * ^property[=].uri = "http://hl7.org/fhir/concept-properties#status"
 * ^property[=].description = "A code that indicates the status of the concept. Values found in this version of the code system are: draft"

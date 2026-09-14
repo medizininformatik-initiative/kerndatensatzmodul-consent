@@ -17,7 +17,7 @@ Description: "Codesystem mit Consent-Policy-Codes zur interoperablen Operational
 * ^valueSet = "https://www.medizininformatik-initiative.de/fhir/modul-consent/ValueSet/mii-vs-consent-policy"
 * ^hierarchyMeaning = #part-of
 * ^content = #complete
-* ^count = 101
+* ^count = 124
 * ^property[0].code = #period-of-validity
 * ^property[=].description = "A property that indicates the duration of validity of a concept. The string is a duration as ISO 8601:2004 string, ref. to http://hl7.org/fhir/iso-8601-date."
 * ^property[=].type = #string
