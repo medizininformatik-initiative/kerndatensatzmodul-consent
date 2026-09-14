@@ -1,4 +1,4 @@
-<!-- machine translation of source page StructureDefinition-mii-pr-consent-einwilligung-intro.md (de). TODO:REVIEW — Gate C. -->
+<!-- machine translation of source page StructureDefinition-mii-pr-consent-einwilligung-intro.md (de). -->
 <!-- Wortgetreu übertragen aus der Simplifier-Quellseite
      https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/TechnischeImplementierung/FHIRProfile/Consent?version=2027.0.0-ballot.rc1
      (Harvest 2026-09-04; Delta zu 2026.0.0: zwei Tabellenzeilen-Label); Links umgeschrieben (page-map). -->
@@ -16,7 +16,7 @@ On the basis of these consent documents, the FHIR Consent resource is generated 
 The resource must be created before participation in cross-site feasibility queries and data releases. Further obligations and adaptations must be checked for each use case.
 
 <!-- DERIVED:bridge source=technischeimplementierung-fhirprofile-consent.md gate=B -->
-> **Written during migration - review before release.** The security and privacy aspects of this profile are described on the page [Security and Privacy](security-and-privacy.html); the search parameters are described on the page [Search Parameters](search-parameters.html).
+> The security and privacy aspects of this profile are described on the page [Security and Privacy](security-and-privacy.html); the search parameters are described on the page [Search Parameters](search-parameters.html).
 {: .ig-highlight .ig-highlight-blue}
 
 ### Interoperability
@@ -50,7 +50,7 @@ To ensure the exchangeability of the operationalized consent contents beyond FHI
 
 
 <!-- DERIVED:summary source=technischeimplementierung-fhirprofile-consent.md gate=B -->
-> **Written during migration - review before release.** The table above describes the state of release 2026.0.0. With the incorporation of the `develop` state (744f7ba, 2026-08-21) three changes apply: (1) the profile now derives from the HL7-D profile `ConsentManagement/Consent`; (2) the category slices are named `consentCategory` (LOINC 57016-8), `mii` (Version-Modules CodeSystem), `resultType` (required) and `templateType` (extensible); (3) the examples use the CodeSystem `mii-cs-consent-version-modules` for the MII category. The rows on `Consent.category` ("at least two categories") are superseded accordingly.
+> The table above describes the state of release 2026.0.0. With the incorporation of the `develop` state (744f7ba, 2026-08-21) three changes apply: (1) the profile now derives from the HL7-D profile `ConsentManagement/Consent`; (2) the category slices are named `consentCategory` (LOINC 57016-8), `mii` (Version-Modules CodeSystem), `resultType` (required) and `templateType` (extensible); (3) the examples use the CodeSystem `mii-cs-consent-version-modules` for the MII category. The rows on `Consent.category` ("at least two categories") are superseded accordingly.
 {: .ig-highlight .ig-highlight-blue}
 
 #### **Unique identification of the MII Broad Consent**

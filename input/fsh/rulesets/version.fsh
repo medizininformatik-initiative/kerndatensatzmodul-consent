@@ -3,7 +3,7 @@
 //
 // One place to switch the version of every conformance resource in the module.
 // basis's literals are replaced by this repository's placeholders:
-//   2026.0.1                                    → 2027.0.0-ballot.rc1
+//   2026.0.1                                    → 2027.0.0-ballot
 //   de.medizininformatikinitiative.kerndatensatz.base → …kerndatensatz.consent
 //   …/fhir/modul-base                           → …/fhir/modul-consent
 //   "2027" (effectivePeriod.start)              → 2026
@@ -13,13 +13,13 @@
 
 // Instance-path flavour (Instance: … InstanceOf: …, e.g. CapabilityStatement).
 RuleSet: Version
-* version = "2027.0.0-ballot.rc1"
+* version = "2027.0.0-ballot"
 * extension[+].url = $artifact-versionAlgorithm
 * extension[=].valueCoding = $version-algorithm#semver "SemVer"
 
 // Caret-path flavour (Profile:, Extension:, Logical:, ValueSet:, CodeSystem:).
 RuleSet: PR_CS_VS_Version
-* ^version = "2027.0.0-ballot.rc1"
+* ^version = "2027.0.0-ballot"
 * ^extension[+].url = $artifact-versionAlgorithm
 * ^extension[=].valueCoding = $version-algorithm#semver "SemVer"
 
@@ -36,7 +36,7 @@ RuleSet: CRMIPackageSource
 * meta.extension[=].extension[+].url = "packageId"
 * meta.extension[=].extension[=].valueId = "de.medizininformatikinitiative.kerndatensatz.consent"
 * meta.extension[=].extension[+].url = "version"
-* meta.extension[=].extension[=].valueString = "2027.0.0-ballot.rc1"
+* meta.extension[=].extension[=].valueString = "2027.0.0-ballot"
 * meta.extension[=].extension[+].url = "uri"
 * meta.extension[=].extension[=].valueUri = "https://www.medizininformatik-initiative.de/fhir/modul-consent"
 
@@ -45,7 +45,7 @@ RuleSet: CRMIPackageSourceDefinitionalResource
 * ^meta.extension[=].extension[+].url = "packageId"
 * ^meta.extension[=].extension[=].valueId = "de.medizininformatikinitiative.kerndatensatz.consent"
 * ^meta.extension[=].extension[+].url = "version"
-* ^meta.extension[=].extension[=].valueString = "2027.0.0-ballot.rc1"
+* ^meta.extension[=].extension[=].valueString = "2027.0.0-ballot"
 * ^meta.extension[=].extension[+].url = "uri"
 * ^meta.extension[=].extension[=].valueUri = "https://www.medizininformatik-initiative.de/fhir/modul-consent"
 

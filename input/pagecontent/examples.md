@@ -13,7 +13,7 @@ Diese Seite führt die Beispielinstanzen des Moduls **Consent** auf.
 Patientendaten in Beispielen verwenden.
 
 <!-- DERIVED:bridge source=technischeimplementierung-fhirprofile-consent.md gate=B -->
-> **Written during migration - review before release.** Die Beispiel-Render der Quellseiten sind durch Links auf die vom IG Publisher erzeugten Artefaktseiten ersetzt; die Instanzen selbst sind unverändert übernommen.
+> Die Beispiel-Render der Quellseiten sind durch Links auf die vom IG Publisher erzeugten Artefaktseiten ersetzt; die Instanzen selbst sind unverändert übernommen.
 {: .ig-highlight .ig-highlight-blue}
 
 ### Beispielhafte Consent-Ressourcen

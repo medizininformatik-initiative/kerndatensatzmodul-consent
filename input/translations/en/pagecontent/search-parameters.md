@@ -1,5 +1,5 @@
 <!-- markdownlint-disable MD041 -->
-<!-- machine translation of source page search-parameters.md (de). TODO:REVIEW — Gate C. -->
+<!-- machine translation of source page search-parameters.md (de). -->
 <!-- Wortgetreu übertragen aus der Simplifier-Quellseite
      https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/TechnischeImplementierung/FHIRProfile/Consent?version=2026.0.0
      (Harvest 2026-08-31); Links umgeschrieben (page-map). -->

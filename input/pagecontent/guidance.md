@@ -37,5 +37,5 @@ Eine wichtige Maßzahl für die medizinische Forschung ist u.a., wie viele Patie
 Die standardisierte Abbildung der Consentinformationen im Kerndatensatz ist erforderlich, damit diese als Suchkriterium insbesondere bei standortübergreifenden Anfragen einbezogen werden können.
 
 <!-- DERIVED:bridge source=anwendungsflleinformationsmodell-fragebgen.md gate=B -->
-> **Written during migration - review before release.** Die Abbildung der Einwilligungs-Fragebögen (Questionnaire-basierte Inhalte) beschreibt die Unterseite [Fragebögen](frageboegen.html).
+> Die Abbildung der Einwilligungs-Fragebögen (Questionnaire-basierte Inhalte) beschreibt die Unterseite [Fragebögen](frageboegen.html).
 {: .ig-highlight .ig-highlight-blue}

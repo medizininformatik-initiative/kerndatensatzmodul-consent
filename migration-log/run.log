@@ -2070,3 +2070,60 @@ Vergleich -> migration-log/same-module-comparison.md
     NOT revertable, documented: publisher (SUSHI injects sushi-config publisher into every resource - toolchain), SP ids (release ships ID-LESS SearchParameters, not expressible in FSH; canonical tails kept), harmonized versions (standing operator order + Governance 4.5), VersionModules-CS inclusion (present in the repo TAG, missing only from the package - removing it breaks SUSHI/build). Measured after rebuild in 7.8.
 2026-09-04T12:05:39Z  INFO   7.8  full-fix-revert-verified  AFTER build 4 (all content fixes reverted): err=82 warn=134 info=512 = 18 id/url + 15 slicing + 18 wrong-display + 18 paired code-not-in-VS + 10 unresolvable example refs + 1 all-system-VS + 2 CS-count (Policy 101 AND VersionModules 20 - one MORE than the baseline could show, since the package drops the VersionModules CS whose wrong count only a complete build reveals). Conversion-introduced classes: NONE. Nuance: the dangling consent_category system on 89f494a3 surfaces as WARNING in the module build (baseline wrapper graded it ERROR) - severity difference recorded; Answer-VS designation warnings back (+12), warn 121->134.
     Evidence: qa-target-2027-postmigration.txt (82) alongside qa-target-2027-displayrevert.txt (69) and qa-target-2027-fresh.txt (33). vs baseline 90: remaining gap = 5 missing-publisher (toolchain injects), 1 stale-snapshot (regenerated correctly), 1 wrapper-own, +1 new count.
+2026-09-14T18:10:37Z  INFO   5.1b.5  parent-snapshots  params  mode=build package=de.einwilligungsmanagement version=2.0.4 registry=https://packages.simplifier.net fhir_version=4.0.1
+    cmd=`curl -sfL https://packages.simplifier.net/de.einwilligungsmanagement/2.0.4 -o p.tgz && tar xzf p.tgz`
+2026-09-14T18:10:37Z  INFO   5.1b.5  parent-snapshots  surveyed  structure_definitions=23 with_snapshot=0 without_snapshot=23
+2026-09-14T18:10:37Z  WARN   5.1b.5  parent-snapshots  parent-without-snapshots: 23 of 23 StructureDefinitions carry NO snapshot
+    This is the condition behind SUSHI's `is missing a snapshot. Snapshot is
+    required for import.` Every profile deriving from one of these, and every
+    instance declaring InstanceOf such a profile, fails to export. Another
+    version of the same package usually does NOT help -- measured, two
+    consecutive releases of the reference parent both ship 0 snapshots.
+    Next: `parent-snapshots.sh build …` (spec §5.1b.5). Never hand-roll one.
+2026-09-14T18:10:37Z  INFO   5.1b.5  parent-snapshots  derivation chain is flat: every SD derives directly from outside this package  count=23
+    So each can be snapshotted independently, in any order.
+2026-09-14T18:10:37Z  INFO   5.1b.5  parent-snapshots  base package for the element-count floor  base_dir=/Users/marcel/.fhir/packages/hl7.fhir.r4.core#4.0.1/package
+2026-09-14T18:10:37Z  INFO   5.1b.5  parent-snapshots  generating with the OFFICIAL HL7 generator  validator=/var/folders/d6/s255vt4x5pq9fy738bv7cs0h0000gq/T/tmp.AOuBUtHQia/validator_cli.jar java="openjdk version "25.0.2" 2026-01-20" fhir_version=4.0.1
+    cmd=`java -jar /var/folders/d6/s255vt4x5pq9fy738bv7cs0h0000gq/T/tmp.AOuBUtHQia/validator_cli.jar snapshot <sd.json> -version 4.0.1 -tx n/a -ig /var/folders/d6/s255vt4x5pq9fy738bv7cs0h0000gq/T/tmp.RkgwbQqICM/src/package -output <out.json>`
+    One invocation PER FILE: a batch run aborts at the first failure and silently
+    skips the rest. Nothing here merges a differential by hand (script header).
+2026-09-14T18:14:51Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=extension-ConsentManagement-ConsentMode.json snapshot=12 differential=5 base=5
+2026-09-14T18:14:51Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=extension-ConsentManagement-ContextIdentifier.json snapshot=20 differential=12 base=5
+2026-09-14T18:14:51Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=extension-ConsentManagement-DomainReference.json snapshot=22 differential=11 base=5
+2026-09-14T18:14:51Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=extension-ConsentManagement-Logo.json snapshot=5 differential=2 base=5
+2026-09-14T18:14:51Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=extension-ConsentManagement-OrganizationDescription.json snapshot=5 differential=2 base=5
+2026-09-14T18:14:51Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=extension-ConsentManagement-PhysicalDocumentLocation.json snapshot=5 differential=2 base=5
+2026-09-14T18:14:51Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=extension-ConsentManagement-Policy.json snapshot=5 differential=2 base=5
+2026-09-14T18:14:51Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=extension-ConsentManagement-SignatureLocation.json snapshot=5 differential=2 base=5
+2026-09-14T18:14:51Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=extension-ConsentManagement-SourceDocument.json snapshot=15 differential=4 base=5
+2026-09-14T18:14:51Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=extension-ConsentManagement-SubQuestionnaire.json snapshot=11 differential=6 base=5
+2026-09-14T18:14:51Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=extension-ConsentManagement-VersionFormat.json snapshot=15 differential=10 base=5
+2026-09-14T18:14:51Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=extension-ConsentManagement-Xacml.json snapshot=5 differential=2 base=5
+2026-09-14T18:14:51Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=extension-ConsentManagement-XacmlTemplate.json snapshot=15 differential=9 base=5
+2026-09-14T18:14:51Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=profile-ConsentManagement-Consent.json snapshot=96 differential=20 base=57
+2026-09-14T18:14:51Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=profile-ConsentManagement-DocumentReference.json snapshot=62 differential=10 base=45
+2026-09-14T18:14:51Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=profile-ConsentManagement-Domain-Organization.json snapshot=91 differential=23 base=26
+2026-09-14T18:14:51Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=profile-ConsentManagement-Domain-ResearchStudy.json snapshot=104 differential=23 base=44
+2026-09-14T18:14:51Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=profile-ConsentManagement-Patient.json snapshot=64 differential=7 base=45
+2026-09-14T18:14:51Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=profile-ConsentManagement-Provenance.json snapshot=65 differential=20 base=32
+2026-09-14T18:14:51Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=profile-ConsentManagement-TemplateFrame.json snapshot=168 differential=60 base=65
+2026-09-14T18:14:51Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=profile-ConsentManagement-TemplateModule.json snapshot=111 differential=28 base=65
+2026-09-14T18:14:51Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=profile-ConsentManagementQuestionnaireComposed.json snapshot=152 differential=52 base=65
+2026-09-14T18:14:51Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=profile-ConsentManagementQuestionnaireResponse.json snapshot=39 differential=14 base=33
+2026-09-14T18:14:51Z  INFO   5.1b.5  parent-snapshots  rebuild written  dir=/var/folders/d6/s255vt4x5pq9fy738bv7cs0h0000gq/T/tmp.RkgwbQqICM/rebuilt/package merged=23 refused=0
+    Only the `snapshot` property was added; every other field is the upstream
+    bytes re-serialized. Do not diff this against upstream expecting byte
+    equality -- key order and indentation are the serializer's.
+2026-09-14T18:14:51Z  INFO   5.1b.5  parent-snapshots  generated 23 of 23 snapshots  expected=23 actual=23
+2026-09-14T18:14:51Z  INFO   5.1b.5  parent-snapshots  required parent snapshotted  require=http://fhir.de/ConsentManagement/StructureDefinition/Consent file=profile-ConsentManagement-Consent.json
+2026-09-14T18:14:51Z  INFO   5.1b.5  parent-snapshots  required parent snapshotted  require=http://fhir.de/ConsentManagement/StructureDefinition/DocumentReference file=profile-ConsentManagement-DocumentReference.json
+2026-09-14T18:14:51Z  INFO   5.1b.5  parent-snapshots  required parent snapshotted  require=http://fhir.de/ConsentManagement/StructureDefinition/DomainReference file=extension-ConsentManagement-DomainReference.json
+2026-09-14T18:14:51Z  INFO   5.1b.5  parent-snapshots  required parent snapshotted  require=http://fhir.de/ConsentManagement/StructureDefinition/Provenance file=profile-ConsentManagement-Provenance.json
+2026-09-14T18:14:51Z  INFO   5.1b.5  parent-snapshots  installed as a NEW cache entry  dest=/Users/marcel/.fhir/packages/de.einwilligungsmanagement#2.0.4-snapshots version=2.0.4-snapshots
+    Upstream de.einwilligungsmanagement#2.0.4 is untouched. Depend on it by pinning
+    `de.einwilligungsmanagement: 2.0.4-snapshots` in sushi-config.yaml -- and note that this entry is
+    LOCAL: CI and every other machine need this same build step, or the pin
+    fails to resolve there (spec §5.1b.5, 'carrying it upstream').
+2026-09-14T18:14:51Z  INFO   5.1b.5  parent-snapshots  done  mode=build generated=23 of 23 required=all-snapshotted exit=0
+    Re-run SUSHI now and compare the error count against the run BEFORE this
+    step; that difference is the evidence, not this script's exit status.

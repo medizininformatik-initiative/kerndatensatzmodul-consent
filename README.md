@@ -1,12 +1,11 @@
-# MII KDS Modul Consent — Migration auf das MII-KDS-Modul-Template
+# MII KDS Modul Consent
 
-> **⚠️ Migrations-Branch — nicht freigegeben.** Dieser Branch trägt die
-> Migration des Moduls auf das MII-KDS-Modul-Template und ist **keine
-> MII-Publikation**; die Freigabe (Gate D) liegt bei TF KDS / AG IOP / NSG —
-> erst der Merge nach der Gate-Review macht diese Struktur zur offiziellen.
-> Vollständige Evidenz: [`migration-log/`](migration-log/); Plan, Recon und
-> Preservation-Harvest: Branch `evidence/2026-08-31-plan-recon` in der
-> [FGDH-Sandbox](https://github.com/forschungsgruppe-digital-health/mii-kds-consent-ig-inoffiziell).
+> **Release 2027.0.0-ballot.** Dieses Repository baut den Implementierungs-
+> leitfaden mit SUSHI + HL7 IG Publisher auf Basis des MII-KDS-Modul-Templates
+> v0.13.2. Die Migration von der Simplifier-Autorenumgebung ist mit diesem
+> Release abgeschlossen. Vollständige Evidenz: [`migration-log/`](migration-log/);
+> Plan, Recon und Preservation-Harvest: Branch `evidence/2026-08-31-plan-recon`
+> in der [FGDH-Sandbox](https://github.com/forschungsgruppe-digital-health/mii-kds-consent-ig-inoffiziell).
 
 Migration des **KDS Modul Consent** (Quelle: das OFFIZIELLE Release
 [2027.0.0-ballot.rc1](https://github.com/medizininformatik-initiative/kerndatensatzmodul-consent/releases/tag/2027.0.0-ballot.rc1),
@@ -20,7 +19,7 @@ Identitäts-Ledger, Harvest-Manifest, QA-Baseline, Migrationsbericht).
 | Koordinate | Wert |
 | --- | --- |
 | Canonical | `https://www.medizininformatik-initiative.de/fhir/modul-consent` |
-| Package | `de.medizininformatikinitiative.kerndatensatz.consent` 2027.0.0-ballot.rc1 (Ballot-Kandidat; Inhalt = das offizielle Release-Paket 2027.0.0-ballot.rc1, Tag `508a666`) |
+| Package | `de.medizininformatikinitiative.kerndatensatz.consent` 2027.0.0-ballot (Ballot-Version; Vorgänger-Release der Quelle: 2027.0.0-ballot.rc1, Tag `508a666`) |
 | FHIR | R4 (4.0.1) |
 | Quell-IG (Simplifier, gepinnt) | [MII IG Modul Consent 2027.0.0-ballot.rc1](https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent?version=2027.0.0-ballot.rc1) |
 | Sprache | **DE-first**: Deutsch = Standardsprache, Englisch = Übersetzung unter `input/translations/en/` (Entscheidung D-3) |

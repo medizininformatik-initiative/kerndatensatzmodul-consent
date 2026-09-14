@@ -1,6 +1,6 @@
 {
   "name": "de.medizininformatikinitiative.kerndatensatz.consent",
-  "version": "2027.0.0-ballot.rc1",
+  "version": "2027.0.0-ballot",
   "description": "KDS Modul Consent der Medizininformatik-Initiative (MII)",
   "author": "NUM-DIZ",
   "license": "CC-BY-4.0",

@@ -21,42 +21,42 @@
              <notes>
                <note id="n1">Coding.display</note>
              </notes>
-        <source>MDAT_erheben</source>
+        <source>MDAT erheben</source>
         <target></target>
       </trans-unit>
       <trans-unit id="Consent-89f494a3-cd75-44f5-a78a-581dfdd47a94" resname="Coding.display">
              <notes>
                <note id="n1">Coding.display</note>
              </notes>
-        <source>MDAT_speichern_verarbeiten</source>
+        <source>MDAT speichern, verarbeiten</source>
         <target></target>
       </trans-unit>
       <trans-unit id="Consent-89f494a3-cd75-44f5-a78a-581dfdd47a94" resname="Coding.display">
              <notes>
                <note id="n1">Coding.display</note>
              </notes>
-        <source>BIOMAT_erheben</source>
+        <source>BIOMAT erheben</source>
         <target></target>
       </trans-unit>
       <trans-unit id="Consent-89f494a3-cd75-44f5-a78a-581dfdd47a94" resname="Coding.display">
              <notes>
                <note id="n1">Coding.display</note>
              </notes>
-        <source>MDAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU</source>
+        <source>MDAT wissenschaftlich nutzen</source>
         <target></target>
       </trans-unit>
       <trans-unit id="Consent-89f494a3-cd75-44f5-a78a-581dfdd47a94" resname="Coding.display">
              <notes>
                <note id="n1">Coding.display</note>
              </notes>
-        <source>BIOMAT_lagern_verarbeiten</source>
+        <source>BIOMAT lagern verarbeiten</source>
         <target></target>
       </trans-unit>
       <trans-unit id="Consent-89f494a3-cd75-44f5-a78a-581dfdd47a94" resname="Coding.display">
              <notes>
                <note id="n1">Coding.display</note>
              </notes>
-        <source>BIOMAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU</source>
+        <source>BIOMAT wissenschaftlich nutzen</source>
         <target></target>
       </trans-unit>
     </body>

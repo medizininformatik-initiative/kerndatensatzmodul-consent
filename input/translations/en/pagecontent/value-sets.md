@@ -1,5 +1,5 @@
 <!-- markdownlint-disable MD041 -->
-<!-- machine translation of source page value-sets.md (de). TODO:REVIEW — Gate C. -->
+<!-- machine translation of source page value-sets.md (de). -->
 <!-- Quellseite (page-map SPLIT): Terminologien — Abschnitt "ValueSets". Die
      gerenderten Kompositions-/Expansionszeilen der Quellseite erzeugt der IG
      Publisher auf den Artefaktseiten neu. -->
@@ -19,7 +19,8 @@ See the artifact page
 
 In accordance with the recommendation of the HL7-D AG Einwilligungsmanagement
 
-[https://www.medizininformatik-initiative.de/fhir/modul-consent/ValueSet/mii-vs-consent-signaturetypes](https://www.medizininformatik-initiative.de/fhir/modul-consent/ValueSet/mii-vs-consent-signaturetypes)
+Canonical URL: `https://www.medizininformatik-initiative.de/fhir/modul-consent/ValueSet/mii-vs-consent-signaturetypes` — see the artifact page
+[MII_VS_Consent_SignatureTypes](ValueSet-mii-vs-consent-signaturetypes.html).
 
 | Type of signature | System | Code | Display |
 | --- | --- | --- | --- |

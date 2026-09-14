@@ -1,5 +1,5 @@
 <!-- markdownlint-disable MD041 -->
-<!-- machine translation of source page security-and-privacy.md (de). TODO:REVIEW — Gate C. -->
+<!-- machine translation of source page security-and-privacy.md (de). -->
 <!-- Deutsche Übersetzung von input/pagecontent/security-and-privacy.md.
      Aufgebaut in den abgestimmten DREI Stufen: (1) das übergreifende
      übergreifende Datenschutzkonzept, (2) DIMP im Datenportal, (3) die

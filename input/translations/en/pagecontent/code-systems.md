@@ -1,5 +1,5 @@
 <!-- markdownlint-disable MD041 -->
-<!-- machine translation of source page code-systems.md (de). TODO:REVIEW — Gate C. -->
+<!-- machine translation of source page code-systems.md (de). -->
 <!-- Quellseite (page-map): Terminologien — Abschnitt "CodeSysteme". Die
      gerenderten Konzeptlisten der Quellseite (Version-Modules, Answer) werden
      vom IG Publisher auf den Artefaktseiten neu erzeugt und sind hier durch

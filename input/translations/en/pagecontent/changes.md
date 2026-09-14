@@ -1,5 +1,5 @@
 <!-- markdownlint-disable MD041 -->
-<!-- machine translation of source page changes.md (de). TODO:REVIEW — Gate C. -->
+<!-- machine translation of source page changes.md (de). -->
 <!-- Deutsche Übersetzung der Standardsprachseite input/pagecontent/changes.md
      — beide Dateien müssen dasselbe aussagen. Struktur aus kerndatensatz-basis
      input/pagecontent/changes.md (Branch main) — ein Abschnitt je Version,
@@ -86,6 +86,55 @@ section.</p>
      (https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/Release-Notes?version=2026.0.0, Harvest 2026-08-31).
      Historische Abschnitte behalten das Format der Quelle (keine nachträgliche
      Keep-a-Changelog-Umgruppierung veröffentlichter Einträge). -->
+
+#### Version 2027.0.0-ballot
+
+Date 14.09.2026
+
+The module's first release from the IG Publisher toolchain. It builds on the
+release package 2027.0.0-ballot.rc1 and adds the QA corrections from pull
+requests [#135](https://github.com/medizininformatik-initiative/kerndatensatzmodul-consent/pull/135) to [#141](https://github.com/medizininformatik-initiative/kerndatensatzmodul-consent/pull/141) plus the parent-package bump.
+
+* **Added** — two artifacts missing from package 2027.0.0-ballot.rc1 are now
+  shipped: the CodeSystem `mii-cs-consent-version-modules` (present in the
+  repository, absent from the package) and the CapabilityStatement
+  `mii-cap-consent-server`.
+* **Added** — four synthetic reference-target instances (two `Patient`, two
+  `ResearchStudy`) so the examples' references resolve ([#137](https://github.com/medizininformatik-initiative/kerndatensatzmodul-consent/pull/137)).
+* **Changed** — parent package `de.einwilligungsmanagement` raised from
+  `2.0.4-rc1` to the final release `2.0.4` (2026-09-09). Against the release
+  candidate it adds two extensions (`Policy`, `PhysicalDocumentLocation`) and
+  gives `Consent.policy.uri` an extensible binding to
+  `LegalBasisDataProcessing`.
+* **Changed** — the `category` slices `resultType` and `templateType` get
+  decidable `pattern` discriminators ([#140](https://github.com/medizininformatik-initiative/kerndatensatzmodul-consent/pull/140)).
+* **Fixed** — example policy displays aligned with the CodeSystem
+  ([#136](https://github.com/medizininformatik-initiative/kerndatensatzmodul-consent/pull/136)); `CodeSystem.count` corrected to the actual concept count
+  ([#139](https://github.com/medizininformatik-initiative/kerndatensatzmodul-consent/pull/139)); the Answer ValueSet reduced to a bare all-system
+  `include` ([#138](https://github.com/medizininformatik-initiative/kerndatensatzmodul-consent/pull/138)); example `89f494a3` switched to the defined
+  version-modules CodeSystem ([#135](https://github.com/medizininformatik-initiative/kerndatensatzmodul-consent/pull/135)).
+* **BREAKING: Changed** — resource ids modernised to the canonical tails
+  ([#141](https://github.com/medizininformatik-initiative/kerndatensatzmodul-consent/pull/141)).
+  * *What exactly changed:* 14 artifacts carry new `id` values — the three
+    profiles (`56375452-…` → `mii-pr-consent-documentreference`, `e0e166b4-…` →
+    `mii-pr-consent-einwilligung`, `f675b1e8-…` → `mii-pr-consent-provenance`),
+    the three value sets (`2.16.840.…11.30--20210323234509` →
+    `mii-vs-consent-answer`, `2.16.840.…11.36--20230331232804` →
+    `mii-vs-consent-policy`, `88464c5b-…` → `mii-vs-consent-signaturetypes`)
+    and the six search parameters, which carried **no `id` at all** in the
+    previous package (now `mii-sp-consent-…`). The **canonical URLs are
+    unchanged**; the ids now follow the MII naming convention (kebab-case of
+    `name`).
+  * *What this means for existing data:* instance data is **not** affected.
+    Examples and production data reference the profiles through the canonical
+    URL in `meta.profile`, and that does not change — data that validated
+    against 2027.0.0-ballot.rc1 still validates unchanged.
+  * *What implementers should do:* every reference that addresses an artifact
+    by its **id** rather than by its canonical URL must be updated — in
+    particular REST reads of the form `[base]/StructureDefinition/e0e166b4-…`,
+    artifact ids stored in registries, and deep links into the guide's artifact
+    pages (whose file names follow the id). No automated migration path is
+    provided; the old → new mapping is the list above.
 
 #### Fresh migration onto the official release 2027.0.0-ballot.rc1 (2026-09-04)
 

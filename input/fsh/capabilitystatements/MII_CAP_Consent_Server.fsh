@@ -8,7 +8,7 @@ Usage: #definition
 * url = "https://www.medizininformatik-initiative.de/fhir/modul-consent/CapabilityStatement/mii-cap-consent-server"
 * name = "MII_CAP_Consent_Server"
 * title = "MII KDS Modul Consent — CapabilityStatement (Migrationsvorschlag)"
-* version = "2027.0.0-ballot.rc1"
+* version = "2027.0.0-ballot"
 * status = #draft
 * experimental = true
 * date = "2026-08-31"

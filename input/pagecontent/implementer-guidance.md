@@ -6,7 +6,7 @@
      nur die Zwischenüberschriften-Hierarchie wurde an die Zielseite angepasst. -->
 
 <!-- DERIVED:bridge source=technischeimplementierung.md gate=B -->
-> **Written during migration - review before release.** Diese Seite bündelt die implementierungsbezogenen Abschnitte des ursprünglichen Leitfadens: die technische Implementierung, den Kontext im Gesamtprojekt, die Referenzen und die Empfehlungen zur praktischen Anwendung.
+> Diese Seite bündelt die implementierungsbezogenen Abschnitte des ursprünglichen Leitfadens: die technische Implementierung, den Kontext im Gesamtprojekt, die Referenzen und die Empfehlungen zur praktischen Anwendung.
 {: .ig-highlight .ig-highlight-blue}
 
 ### Technische Implementierung

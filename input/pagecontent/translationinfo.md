@@ -15,7 +15,7 @@ unter `input/translations/en/`. Details:
 [`docs/recipes/add-translation.md`](https://github.com/medizininformatik-initiative/kerndatensatzmodul-consent/blob/main/docs/recipes/add-translation.md) in diesem Repository.
 
 Alle Leitfaden-Seiten dieses Moduls liegen als **maschinelle englische
-Übersetzungen** der deutschen Quellseiten vor (Migrationsstand 2026-08-31,
-Review an Gate C offen — jede Seite trägt einen entsprechenden
-TODO:REVIEW-Vermerk). Die Ressourcen-Titel übersetzt der IG-Level-Katalog
+Übersetzungen** der deutschen Quellseiten vor (Migrationsstand 2026-08-31;
+die fachliche Durchsicht der Übersetzungen erfolgt fortlaufend). Die
+Ressourcen-Titel übersetzt der IG-Level-Katalog
 `input/translations/en/ImplementationGuide-mii-ig-consent.po`.

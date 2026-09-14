@@ -24,13 +24,13 @@
     {
       "id" : "Coding.display",
       "context" : "Coding.display",
-      "source" : "MDAT speichern verarbeiten",
+      "source" : "MDAT speichern, verarbeiten",
       "target" : null
     },
     {
       "id" : "Coding.display",
       "context" : "Coding.display",
-      "source" : "MDAT wissenschaftlich nutzen EU DSGVO NIVEAU",
+      "source" : "MDAT wissenschaftlich nutzen",
       "target" : null
     },
     {
@@ -48,7 +48,7 @@
     {
       "id" : "Coding.display",
       "context" : "Coding.display",
-      "source" : "BIOMAT wissenschaftlich nutzen EU DSGVO NIVEAU",
+      "source" : "BIOMAT wissenschaftlich nutzen",
       "target" : null
     }]
   }]

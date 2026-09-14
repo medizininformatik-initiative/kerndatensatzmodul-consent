@@ -15,7 +15,7 @@ Auf Grundlage dieser Einwilligungsdokumente wird die FHIR Consent Ressource auto
 Die Erstellung der Ressource muss vor der Teilnahme an Standort-übergreifenden Feasability-Anfragen und Datenherausgaben erfolgen. Weitere Pflichten und Anpassungen sind für jeden Use Case zu prüfen.
 
 <!-- DERIVED:bridge source=technischeimplementierung-fhirprofile-consent.md gate=B -->
-> **Written during migration - review before release.** Die Datenschutz-Aspekte dieses Profils beschreibt die Seite [Sicherheit und Datenschutz](security-and-privacy.html); die Suchparameter beschreibt die Seite [Suchparameter](search-parameters.html).
+> Die Datenschutz-Aspekte dieses Profils beschreibt die Seite [Sicherheit und Datenschutz](security-and-privacy.html); die Suchparameter beschreibt die Seite [Suchparameter](search-parameters.html).
 {: .ig-highlight .ig-highlight-blue}
 
 ### Interoperabilität
@@ -49,7 +49,7 @@ Um die Austauschbarkeit der operationalisierten Einwilligungsinhalte auch über 
 
 
 <!-- DERIVED:summary source=technischeimplementierung-fhirprofile-consent.md gate=B -->
-> **Written during migration - review before release.** Die obenstehende Tabelle beschreibt den Stand des Release 2026.0.0. Mit der Inkorporation des `develop`-Standes (744f7ba, 2026-08-21) gelten drei Änderungen: (1) das Profil leitet jetzt vom HL7-D-Profil `ConsentManagement/Consent` ab; (2) die Category-Slices heißen `consentCategory` (LOINC 57016-8), `mii` (Version-Modules-CodeSystem), `resultType` (required) und `templateType` (extensible); (3) die Beispiele verwenden für die MII-Kategorie das CodeSystem `mii-cs-consent-version-modules`. Die Zeilen zu `Consent.category` ("mindestens zwei Categories") sind entsprechend überholt.
+> Die obenstehende Tabelle beschreibt den Stand des Release 2026.0.0. Mit der Inkorporation des `develop`-Standes (744f7ba, 2026-08-21) gelten drei Änderungen: (1) das Profil leitet jetzt vom HL7-D-Profil `ConsentManagement/Consent` ab; (2) die Category-Slices heißen `consentCategory` (LOINC 57016-8), `mii` (Version-Modules-CodeSystem), `resultType` (required) und `templateType` (extensible); (3) die Beispiele verwenden für die MII-Kategorie das CodeSystem `mii-cs-consent-version-modules`. Die Zeilen zu `Consent.category` ("mindestens zwei Categories") sind entsprechend überholt.
 {: .ig-highlight .ig-highlight-blue}
 
 #### **Eindeutige Identifikation des MII-Broad Consent**

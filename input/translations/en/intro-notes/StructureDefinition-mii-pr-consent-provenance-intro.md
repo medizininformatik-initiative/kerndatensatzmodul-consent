@@ -1,4 +1,4 @@
-<!-- machine translation of source page StructureDefinition-mii-pr-consent-provenance-intro.md (de). TODO:REVIEW — Gate C. -->
+<!-- machine translation of source page StructureDefinition-mii-pr-consent-provenance-intro.md (de). -->
 <!-- Wortgetreu übertragen aus der Simplifier-Quellseite
      https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/TechnischeImplementierung/FHIRProfile/Provenance?version=2026.0.0
      (Harvest 2026-08-31); Links umgeschrieben (page-map). -->

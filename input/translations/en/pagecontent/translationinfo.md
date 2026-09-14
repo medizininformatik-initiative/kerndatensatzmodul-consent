@@ -15,7 +15,7 @@ as the German page); resource translations are `.po` files under
 [`docs/recipes/add-translation.md`](https://github.com/medizininformatik-initiative/kerndatensatzmodul-consent/blob/main/docs/recipes/add-translation.md) in this repository.
 
 All guide pages of this module exist as **machine-translated English
-versions** of the German source pages (migration state 2026-08-31, review
-pending at Gate C — every page carries a corresponding TODO:REVIEW note). The
+versions** of the German source pages (migration state 2026-08-31; expert
+review of the translations is ongoing). The
 resource titles are translated by the IG-level catalogue
 `input/translations/en/ImplementationGuide-mii-ig-consent.po`.

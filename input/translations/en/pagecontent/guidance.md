@@ -1,5 +1,5 @@
 <!-- markdownlint-disable MD041 -->
-<!-- machine translation of source page guidance.md (de). TODO:REVIEW — Gate C. -->
+<!-- machine translation of source page guidance.md (de). -->
 <!-- Übersichtsseite "Anleitung" (Szenarien-Inhalt aus dem Quell-Leitfaden übernommen); die
      Unterseiten-Struktur folgt kerndatensatz-basis. -->
 
@@ -38,5 +38,5 @@ An important measure for medical research is, among other things, how many patie
 The standardized representation of the consent information in the Core Data Set is required so that it can be included as a search criterion, in particular for cross-site queries.
 
 <!-- DERIVED:bridge source=anwendungsflleinformationsmodell-fragebgen.md gate=B -->
-> **Written during migration - review before release.** The representation of the consent questionnaires (Questionnaire-based content) is described on the subpage [Questionnaires](frageboegen.html).
+> The representation of the consent questionnaires (Questionnaire-based content) is described on the subpage [Questionnaires](frageboegen.html).
 {: .ig-highlight .ig-highlight-blue}

@@ -18,7 +18,8 @@ Siehe die Artefaktseite
 
 Gemäß HL7-D AG Einwilligungsmanagement-Empfehlung
 
-[https://www.medizininformatik-initiative.de/fhir/modul-consent/ValueSet/mii-vs-consent-signaturetypes](https://www.medizininformatik-initiative.de/fhir/modul-consent/ValueSet/mii-vs-consent-signaturetypes)
+Kanonische URL: `https://www.medizininformatik-initiative.de/fhir/modul-consent/ValueSet/mii-vs-consent-signaturetypes` — siehe die Artefaktseite
+[MII_VS_Consent_SignatureTypes](ValueSet-mii-vs-consent-signaturetypes.html).
 
 | Art der Unterschrift | System | Code | Display |
 | --- | --- | --- | --- |

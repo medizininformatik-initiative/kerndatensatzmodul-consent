@@ -1,5 +1,5 @@
 <!-- markdownlint-disable MD041 -->
-<!-- machine translation of source page profiles.md (de). TODO:REVIEW — Gate C. -->
+<!-- machine translation of source page profiles.md (de). -->
 <!-- Wortgetreu übertragen aus der Simplifier-Quellseite
      https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/TechnischeImplementierung/FHIRProfile?version=2026.0.0
      (Harvest 2026-08-31, migration-log/guide-harvest/); interne Links auf die

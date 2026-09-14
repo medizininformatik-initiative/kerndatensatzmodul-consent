@@ -9,7 +9,7 @@ Description: "Dieses Code System enthält die OIDs der verschiedenen Versionen u
 * ^identifier.use = #official
 * ^identifier.system = "urn:ietf:rfc:3986"
 * ^identifier.value = "urn:oid:2.16.840.1.113883.3.1937.777.24.5.27"
-* ^version = "2027.0.0-ballot.rc1"
+* ^version = "2027.0.0-ballot"
 * ^status = #draft
 * ^experimental = false
 * ^publisher = "Medizininformatik-Initiative"
@@ -18,7 +18,7 @@ Description: "Dieses Code System enthält die OIDs der verschiedenen Versionen u
 * ^contact.telecom[=].value = "https://www.medizininformatik-initiative.de"
 * ^contact.telecom[+].system = #email
 * ^contact.telecom[=].value = "office@medizininformatik-initiative.de"
-* ^copyright = "\n            © 2019+ TMF e. V., Charlottenstraße 42, 10117 Berlin \n            \n                \n                    CC BY 4.0\n                \n                 \n            \n            Diese Arbeit ist lizensiert unter der [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/). \n            Zu den Nutzungsrechten der zugrunde liegenden FHIR-Technologie siehe die FHIR-Basis-Spezifikation. \n            Einige verwendete Codesysteme werden von anderen Organisationen herausgegeben und gepflegt. Es gilt das Copyright der dort jeweils aufgeführten Herausgeber (Publisher). \n        "
+* ^copyright = "© 2019+ TMF e. V., Charlottenstraße 42, 10117 Berlin\n\nCC BY 4.0\n\nDiese Arbeit ist lizensiert unter der [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/).\nZu den Nutzungsrechten der zugrunde liegenden FHIR-Technologie siehe die FHIR-Basis-Spezifikation.\nEinige verwendete Codesysteme werden von anderen Organisationen herausgegeben und gepflegt. Es gilt das Copyright der dort jeweils aufgeführten Herausgeber (Publisher)."
 * ^caseSensitive = false
 * ^content = #complete
 * ^count = 21

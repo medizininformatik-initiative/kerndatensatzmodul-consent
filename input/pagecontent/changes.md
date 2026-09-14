@@ -85,6 +85,58 @@ werden können.</p>
      Historische Abschnitte behalten das Format der Quelle (keine nachträgliche
      Keep-a-Changelog-Umgruppierung veröffentlichter Einträge). -->
 
+#### Version 2027.0.0-ballot
+
+Datum 14.09.2026
+
+Erstes Release des Moduls aus der IG-Publisher-Toolchain. Es baut auf dem
+Release-Paket 2027.0.0-ballot.rc1 auf und ergänzt die QA-Korrekturen aus den
+Pull-Requests [#135](https://github.com/medizininformatik-initiative/kerndatensatzmodul-consent/pull/135) bis [#141](https://github.com/medizininformatik-initiative/kerndatensatzmodul-consent/pull/141) sowie die Anhebung des
+Eltern-Pakets.
+
+* **Hinzugefügt** — zwei Artefakte, die das Paket 2027.0.0-ballot.rc1 nicht
+  enthielt, werden jetzt ausgeliefert: das CodeSystem
+  `mii-cs-consent-version-modules` (im Repository vorhanden, im Paket fehlend)
+  und der CapabilityStatement `mii-cap-consent-server`.
+* **Hinzugefügt** — vier synthetische Referenzziel-Instanzen (zwei `Patient`,
+  zwei `ResearchStudy`), damit die Referenzen der Beispiele auflösen
+  ([#137](https://github.com/medizininformatik-initiative/kerndatensatzmodul-consent/pull/137)).
+* **Geändert** — Eltern-Paket `de.einwilligungsmanagement` von `2.0.4-rc1` auf
+  das finale Release `2.0.4` (09.09.2026) angehoben. Gegenüber dem
+  Release-Kandidaten kommen zwei Extensions hinzu (`Policy`,
+  `PhysicalDocumentLocation`), und `Consent.policy.uri` erhält ein extensible
+  Binding auf `LegalBasisDataProcessing`.
+* **Geändert** — die `category`-Slices `resultType` und `templateType`
+  erhalten entscheidbare `pattern`-Discriminatoren ([#140](https://github.com/medizininformatik-initiative/kerndatensatzmodul-consent/pull/140)).
+* **Behoben** — Policy-Displays der Beispiele an das CodeSystem angeglichen
+  ([#136](https://github.com/medizininformatik-initiative/kerndatensatzmodul-consent/pull/136)); `CodeSystem.count` auf die tatsächliche Konzeptzahl
+  korrigiert ([#139](https://github.com/medizininformatik-initiative/kerndatensatzmodul-consent/pull/139)); das Answer-ValueSet auf ein nacktes
+  All-System-`include` reduziert ([#138](https://github.com/medizininformatik-initiative/kerndatensatzmodul-consent/pull/138)); das Beispiel `89f494a3`
+  auf das definierte Version-Modul-CodeSystem umgestellt ([#135](https://github.com/medizininformatik-initiative/kerndatensatzmodul-consent/pull/135)).
+* **BREAKING: Geändert** — die Ressourcen-IDs sind auf die kanonischen Tails
+  modernisiert ([#141](https://github.com/medizininformatik-initiative/kerndatensatzmodul-consent/pull/141)).
+  * *Was genau sich geändert hat:* 14 Artefakte tragen neue `id`-Werte — die
+    drei Profile (`56375452-…` → `mii-pr-consent-documentreference`,
+    `e0e166b4-…` → `mii-pr-consent-einwilligung`, `f675b1e8-…` →
+    `mii-pr-consent-provenance`), die drei ValueSets
+    (`2.16.840.…11.30--20210323234509` → `mii-vs-consent-answer`,
+    `2.16.840.…11.36--20230331232804` → `mii-vs-consent-policy`, `88464c5b-…` →
+    `mii-vs-consent-signaturetypes`) und die sechs SearchParameter, die im
+    Vorgänger-Paket **gar keine `id`** trugen (jetzt `mii-sp-consent-…`). Die
+    **kanonischen URLs bleiben unverändert**; die IDs folgen jetzt der
+    MII-Namenskonvention (kebab-case des `name`).
+  * *Was das für bestehende Daten bedeutet:* Instanzdaten sind **nicht**
+    betroffen. Beispiele und Produktivdaten referenzieren die Profile über die
+    kanonische URL in `meta.profile`, und diese ändert sich nicht — Daten, die
+    gegen 2027.0.0-ballot.rc1 valide waren, validieren unverändert weiter.
+  * *Was Implementierende tun sollten:* Jede Referenz, die ein Artefakt über
+    seine **ID** statt über die kanonische URL adressiert, muss angepasst
+    werden — insbesondere REST-Zugriffe der Form
+    `[base]/StructureDefinition/e0e166b4-…`, in Registries gespeicherte
+    Artefakt-IDs und Deep-Links auf die Artefaktseiten des Leitfadens (deren
+    Dateinamen der ID folgen). Ein automatischer Migrationspfad wird nicht
+    bereitgestellt; die Zuordnung alt → neu ist die obige Liste.
+
 #### Frische Migration auf das offizielle Release 2027.0.0-ballot.rc1 (2026-09-04)
 
 Datum 04.09.2026

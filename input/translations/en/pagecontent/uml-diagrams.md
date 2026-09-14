@@ -1,5 +1,5 @@
 <!-- markdownlint-disable MD041 -->
-<!-- machine translation of source page uml-diagrams.md (de). TODO:REVIEW — Gate C. -->
+<!-- machine translation of source page uml-diagrams.md (de). -->
 <!-- Wortgetreu übertragen aus der Simplifier-Quellseite
      https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/AnwendungsflleInformationsmodell/UML?version=2026.0.0
      (Harvest 2026-08-31, migration-log/guide-harvest/); interne Links auf die

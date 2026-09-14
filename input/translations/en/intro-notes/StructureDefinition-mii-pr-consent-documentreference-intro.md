@@ -1,4 +1,4 @@
-<!-- machine translation of source page StructureDefinition-mii-pr-consent-documentreference-intro.md (de). TODO:REVIEW — Gate C. -->
+<!-- machine translation of source page StructureDefinition-mii-pr-consent-documentreference-intro.md (de). -->
 <!-- Wortgetreu übertragen aus der Simplifier-Quellseite
      https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/TechnischeImplementierung/FHIRProfile/DocumentReference?version=2026.0.0
      (Harvest 2026-08-31); Links umgeschrieben (page-map). -->

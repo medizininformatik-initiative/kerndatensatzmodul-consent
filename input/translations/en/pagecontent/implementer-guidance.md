@@ -1,5 +1,5 @@
 <!-- markdownlint-disable MD041 -->
-<!-- machine translation of source page implementer-guidance.md (de). TODO:REVIEW — Gate C. -->
+<!-- machine translation of source page implementer-guidance.md (de). -->
 <!-- Zusammengeführt aus VIER Quellseiten des Simplifier-Leitfadens (page-map,
      [MAP-EDIT]-Zeilen; Harvest 2026-08-31): TechnischeImplementierung,
      KontextimGesamtprojektBezgezuanderenModulen, Referenzen und
@@ -7,7 +7,7 @@
      nur die Zwischenüberschriften-Hierarchie wurde an die Zielseite angepasst. -->
 
 <!-- DERIVED:bridge source=technischeimplementierung.md gate=B -->
-> **Written during migration - review before release.** This page bundles the implementation-related sections of the original guide: the technical implementation, the context within the overall project, the references, and the recommendations for practical use.
+> This page bundles the implementation-related sections of the original guide: the technical implementation, the context within the overall project, the references, and the recommendations for practical use.
 {: .ig-highlight .ig-highlight-blue}
 
 ### Technical Implementation
