@@ -1,0 +1,41 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "mii-pr-consent-provenance",
+  "url": "https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-provenance",
+  "version": "2027.0.0-ballot",
+  "name": "MII_PR_Consent_Provenance",
+  "title": "Profile - MI-I - Consent - Provenance",
+  "status": "active",
+  "date": "2023-05-09",
+  "description": "Dieses Profil beschreibt Herkunftsinformationen zu Einwilligungen in der Medizininformatik-Initiative.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "Provenance",
+  "baseDefinition": "http://fhir.de/ConsentManagement/StructureDefinition/Provenance",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "Provenance.entity.what",
+        "path": "Provenance.entity.what",
+        "type": [
+          {
+            "code": "Reference",
+            "targetProfile": [
+              "https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-documentreference"
+            ]
+          }
+        ]
+      },
+      {
+        "id": "Provenance.signature.type",
+        "path": "Provenance.signature.type",
+        "binding": {
+          "strength": "required",
+          "valueSet": "https://www.medizininformatik-initiative.de/fhir/modul-consent/ValueSet/mii-vs-consent-signaturetypes"
+        }
+      }
+    ]
+  }
+}

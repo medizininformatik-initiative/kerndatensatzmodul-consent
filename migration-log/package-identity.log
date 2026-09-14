@@ -1,0 +1,54 @@
+2026-08-31T17:45:01Z  INFO   2.1  package-identity  params  package=de.medizininformatikinitiative.kerndatensatz.consent version=2026.0.0 registry=https://packages.simplifier.net work=/var/folders/d6/s255vt4x5pq9fy738bv7cs0h0000gq/T/tmp.5ClZ9RB9Vu
+    Reporting only: no file in the module repository is read or written here.
+    Recovered values are Gate-A evidence, never applied to existing metadata.
+2026-08-31T17:45:01Z  INFO   2.1  package-identity  version supplied by the operator  version=2026.0.0 source=--version package=de.medizininformatikinitiative.kerndatensatz.consent
+2026-08-31T17:45:01Z  INFO   2.1  package-identity  fetched  cmd=`curl -sfL https://packages.simplifier.net/de.medizininformatikinitiative.kerndatensatz.consent/2026.0.0 -o pkg.tgz && tar xzf pkg.tgz`  bytes=12053 json_files=22 manifest=package/package.json
+2026-08-31T17:45:01Z  INFO   2.1  package-identity  manifest field  name=de.medizininformatikinitiative.kerndatensatz.consent  -- = packageId (spec §2.1)
+2026-08-31T17:45:01Z  INFO   2.1  package-identity  identity-claim  field=packageId value=de.medizininformatikinitiative.kerndatensatz.consent tier=P source=package/package.json
+2026-08-31T17:45:01Z  INFO   2.1  package-identity  manifest field  version=2026.0.0  -- the module version -- authoritative for this RELEASE
+2026-08-31T17:45:01Z  INFO   2.1  package-identity  identity-claim  field=version value=2026.0.0 tier=P source=package/package.json
+2026-08-31T17:45:01Z  INFO   2.1  package-identity  manifest field  description=KDS Modul Consent Release 2026.0.0
+2026-08-31T17:45:01Z  INFO   2.1  package-identity  identity-claim  field=description value=KDS Modul Consent Release 2026.0.0 tier=P source=package/package.json
+2026-08-31T17:45:01Z  INFO   2.1  package-identity  manifest field  fhirVersions=["4.0.1"]
+2026-08-31T17:45:01Z  INFO   2.1  package-identity  identity-claim  field=fhirVersions value=["4.0.1"] tier=P source=package/package.json
+2026-08-31T17:45:01Z  INFO   2.1  package-identity  manifest field  jurisdiction=urn:iso:std:iso:3166#DE
+2026-08-31T17:45:01Z  INFO   2.1  package-identity  identity-claim  field=jurisdiction value=urn:iso:std:iso:3166#DE tier=P source=package/package.json
+2026-08-31T17:45:01Z  INFO   2.1  package-identity  manifest field  author=sebastianstubert  -- a REGISTRY ACCOUNT, not `publisher`
+2026-08-31T17:45:01Z  INFO   2.1  package-identity  manifest read  package/package.json  recovered=6 absent=5 fields=name,version,description,fhirVersions,jurisdiction,author
+2026-08-31T17:45:01Z  WARN   2.1  package-identity  not-in-a-package-manifest: title, license, publisher
+    A FHIR package manifest has no field for these, so the published package
+    cannot supply them and no other field substitutes -- `author` is the
+    registry account that pushed the package, never a publishing organisation.
+    They stay Gate-A items: a human supplies them (spec §2.1).
+2026-08-31T17:45:01Z  INFO   2.1  package-identity  manifest fields absent (optional in this format)  canonical, homepage
+2026-08-31T17:45:02Z  INFO   2.1  package-identity  identity-claim  field=dependency:de.einwilligungsmanagement value=2.0.2 tier=P source=package/package.json (source pin)
+2026-08-31T17:45:02Z  INFO   2.1  package-identity  identity-claim  field=dependency:hl7.fhir.r4.core value=4.0.1 tier=P source=package/package.json (source pin)
+2026-08-31T17:45:02Z  INFO   2.1  package-identity  dependency pins from the SOURCE package  de.einwilligungsmanagement@2.0.2 hl7.fhir.r4.core@4.0.1
+    SOURCE EVIDENCE, and it outranks the registry's dist-tags.latest for the
+    same package (spec §2.1 floating-pin rule, §5.1b.2 step 1): this is what
+    the module was actually published against. Use these for goFSH's `-d` set
+    and record any divergence from a previously assumed pin in the report.
+2026-08-31T17:45:02Z  INFO   2.1  package-identity  packaged ImplementationGuide  file=ImplementationGuide.json url=/guide/mii-ig-modul-consent-2026?version=current version=2026.0.0 name=MII IG Consent v2026 title=<absent> publisher=<absent> license=<absent>
+2026-08-31T17:45:02Z  WARN   2.1  package-identity  ig-url-not-canonical: the packaged ImplementationGuide's url is not an absolute http(s) URL  url=/guide/mii-ig-modul-consent-2026?version=current
+    A Simplifier-rendered guide carries its own relative guide path here.
+    It is a rendering address, not the module's canonical base, and it is
+    excluded from the derivation below.
+2026-08-31T17:45:02Z  INFO   2.1  package-identity  urls excluded from the canonical derivation  count=3
+      CodeSystem-MiiConsentAnswerCodeSystem.json -> urn:oid:2.16.840.1.113883.3.1937.777.24.5.2 (not an absolute http(s) URL)
+      CodeSystem-MiiConsentPolicyCodeSystem.json -> urn:oid:2.16.840.1.113883.3.1937.777.24.5.3 (not an absolute http(s) URL)
+      ImplementationGuide.json -> /guide/mii-ig-modul-consent-2026?version=current (not an absolute http(s) URL)
+2026-08-31T17:45:02Z  INFO   2.1  package-identity  packaged resources carrying no url  count=6
+      examples/Example_MII_Consent_DocumentReference.json [DocumentReference]
+      examples/Example_MII_Consent_Einwilligung.json [Consent]
+      examples/Example_MII_Consent_Einwilligung_1.json [Consent]
+      examples/Example_MII_Consent_Einwilligung_2.json [Consent]
+      examples/Example_MII_Consent_Provenance.json [Provenance]
+      examples/Example_MII_Consent_ResultType_ConsentStatus.json [Consent]
+2026-08-31T17:45:02Z  INFO   2.1  package-identity  identity-claim  field=canonical value=https://www.medizininformatik-initiative.de/fhir/modul-consent tier=P source=packaged resource urls (13 of 13 agree)
+2026-08-31T17:45:02Z  INFO   2.1  package-identity  canonical derived by common prefix  canonical=https://www.medizininformatik-initiative.de/fhir/modul-consent agree=13 of 13
+    Unanimous: every packaged resource with an absolute canonical url shares
+    this base. Carried over UNCHANGED -- guardrail 1. It is not written
+    anywhere by this script; a human records it at Gate A.
+2026-08-31T17:45:02Z  INFO   2.1  package-identity  done  package=de.medizininformatikinitiative.kerndatensatz.consent version=2026.0.0  canonical=derived exit=0
+    Identity RECOVERED, not applied: record it at Gate A against the module's
+    own existing metadata, and change nothing that already carries a value.

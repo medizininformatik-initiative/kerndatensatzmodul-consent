@@ -1,0 +1,4 @@
+2026-08-31T17:34:03Z  INFO   5.6a  sibling-skill-check  sibling-skill-present  skill=fhir-ig-analysis path=/private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/recon/agent-skills/skills/fhir-ig-analysis roots_examined=1 ref=<ref> ref_source=not recorded
+    Identified by its frontmatter name, not by its directory name. §5.6's
+    same-module verification can run; its IDENTISCH lines are the evidence, not
+    this line.

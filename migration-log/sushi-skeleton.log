@@ -1,0 +1,42 @@
+info  Running SUSHI v3.20.1 (implements FHIR Shorthand specification v3.0.0)
+info  Arguments:
+info    /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/target
+info  No output path specified. Output to .
+info  Using configuration file: /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/target/sushi-config.yaml
+info  Importing FSH text...
+info  Preprocessed 12 documents with 50 aliases.
+info  Imported 0 definitions and 0 instances.
+info  Loaded virtual package sushi-r5forR4#1.0.0 with 7 resources
+info  Resolved hl7.fhir.uv.tools.r4#latest to concrete version 1.1.2
+info  Loaded hl7.fhir.uv.tools.r4#1.1.2 with 119 resources
+info  Loaded hl7.terminology.r4#7.3.0 with 4176 resources
+info  Loaded de.einwilligungsmanagement#2.0.2-snapshots with 32 resources
+info  Loaded hl7.fhir.uv.crmi#2.0.0 with 123 resources
+info  Loaded hl7.fhir.r4.core#4.0.1 with 4578 resources
+info  Loaded hl7.fhir.uv.extensions.r4#5.3.0 with 885 resources
+info  Found 1 non-JSON / non-XML file(s) in directory: /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/target/input/resources. Only resource files with JSON or XML extensions are supported. To see the skipped files in the logs, use debug logging.
+info  Loaded virtual package sushi-local#LOCAL with 1 resources
+info  Converting FSH to FHIR resources...
+info  Exporting FHIR resources as JSON...
+info  Exported 0 FHIR resources as JSON.
+info  Assembling Implementation Guide sources...
+info  Generated ImplementationGuide-mii-ig-consent.json
+info  Assembled Implementation Guide sources; ready for IG Publisher.
+info  The _build script hosted at https://github.com/HL7/ig-publisher-scripts is useful for downloading and running the IG Publisher.
+
+========================= SUSHI RESULTS ===========================
+|  -------------------------------------------------------------  |
+| |    Profiles   |  Extensions  |   Logicals   |   Resources   | |
+| |-------------------------------------------------------------| |
+| |       0       |      0       |      0       |       0       | |
+|  -------------------------------------------------------------  |
+|  -------------------------------------------------------------  |
+| |      ValueSets     |    CodeSystems    |     Instances      | |
+| |-------------------------------------------------------------| |
+| |         0          |         0         |         0          | |
+|  -------------------------------------------------------------  |
+|                                                                 |
+===================================================================
+| Valedictorian of the School of FSH!    0 Errors      0 Warnings |
+===================================================================
+

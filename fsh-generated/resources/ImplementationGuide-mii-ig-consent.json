@@ -1,0 +1,625 @@
+{
+  "resourceType": "ImplementationGuide",
+  "id": "mii-ig-consent",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-shareableimplementationguide",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-publishableimplementationguide",
+      "http://hl7.org/fhir/uv/crmi/StructureDefinition/crmi-implementationguide"
+    ]
+  },
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/resource-approvalDate",
+      "valueDate": "2026-09-14"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
+      "valueCode": "shareable"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-knowledgeCapability",
+      "valueCode": "publishable"
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-versionPolicy",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://terminology.hl7.org/CodeSystem/artifact-version-policy-codes",
+            "code": "package",
+            "display": "Package"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/package-source",
+      "extension": [
+        {
+          "url": "packageId",
+          "valueId": "de.medizininformatikinitiative.kerndatensatz.consent"
+        },
+        {
+          "url": "version",
+          "valueString": "2027.0.0-ballot"
+        },
+        {
+          "url": "uri",
+          "valueUri": "https://www.medizininformatik-initiative.de/fhir/modul-consent"
+        }
+      ]
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod",
+      "valuePeriod": {
+        "start": "2027"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-author",
+      "valueContactDetail": {
+        "telecom": [
+          {
+            "system": "email",
+            "value": "info@medizininformatik-initiative.de"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-editor",
+      "valueContactDetail": {
+        "name": "Taskforce Core Data Set"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-reviewer",
+      "valueContactDetail": {
+        "name": "Interoperability Working Group",
+        "telecom": [
+          {
+            "system": "url",
+            "value": "https://www.medizininformatik-initiative.de/en/collaboration/interoperability-working-group"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-reviewer",
+      "valueContactDetail": {
+        "name": "National Steering Committee",
+        "telecom": [
+          {
+            "system": "url",
+            "value": "https://www.medizininformatik-initiative.de/en/collaboration/national-steering-committee"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-endorser",
+      "valueContactDetail": {
+        "name": "Interoperability Working Group",
+        "telecom": [
+          {
+            "system": "url",
+            "value": "https://www.medizininformatik-initiative.de/en/collaboration/interoperability-working-group"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-endorser",
+      "valueContactDetail": {
+        "name": "National Steering Committee",
+        "telecom": [
+          {
+            "system": "url",
+            "value": "https://www.medizininformatik-initiative.de/en/collaboration/national-steering-committee"
+          }
+        ]
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/cqf-expansionParameters",
+      "valueReference": {
+        "reference": "Parameters/mii-param-consent-manifest"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-versionAlgorithm",
+      "valueCoding": {
+        "system": "http://hl7.org/fhir/version-algorithm",
+        "code": "semver"
+      }
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-usage",
+      "valueMarkdown": "Use this ImplementationGuide resource as a computable definition of all the parts of the corresponding module of the Medical Informatics Initiative core data set."
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-purpose",
+      "valueMarkdown": "Provide the computable publication unit for the MII Core Dataset Consent module, enabling implementers to discover, validate, version, and apply the specification consistently."
+    },
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/artifact-topic",
+      "valueCodeableConcept": {
+        "coding": [
+          {
+            "system": "http://ncicb.nci.nih.gov/xml/owl/EVS/Thesaurus.owl",
+            "code": "C16735"
+          }
+        ]
+      }
+    }
+  ],
+  "url": "https://www.medizininformatik-initiative.de/fhir/modul-consent/ImplementationGuide/mii-ig-consent",
+  "version": "2027.0.0-ballot",
+  "name": "MII_IG_Consent",
+  "title": "MII Implementation Guide Consent",
+  "status": "active",
+  "experimental": false,
+  "date": "2026-09-14",
+  "publisher": "NUM-DIZ",
+  "contact": [
+    {
+      "name": "NUM-DIZ",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.netzwerk-universitaetsmedizin.de"
+        }
+      ]
+    }
+  ],
+  "description": "KDS Modul Consent der Medizininformatik-Initiative (MII)",
+  "jurisdiction": [
+    {
+      "coding": [
+        {
+          "code": "DE",
+          "system": "urn:iso:std:iso:3166",
+          "display": "Germany"
+        }
+      ]
+    }
+  ],
+  "packageId": "de.medizininformatikinitiative.kerndatensatz.consent",
+  "license": "CC-BY-4.0",
+  "fhirVersion": [
+    "4.0.1"
+  ],
+  "dependsOn": [
+    {
+      "packageId": "de.einwilligungsmanagement",
+      "version": "2.0.4",
+      "uri": "http://fhir.org/packages/de.einwilligungsmanagement/ImplementationGuide/de.einwilligungsmanagement",
+      "id": "de_einwilligungsmanagement"
+    },
+    {
+      "packageId": "hl7.fhir.uv.crmi",
+      "version": "2.0.0",
+      "uri": "http://hl7.org/fhir/uv/crmi/ImplementationGuide/hl7.fhir.uv.crmi",
+      "id": "hl7_fhir_uv_crmi"
+    },
+    {
+      "packageId": "hl7.terminology.r4",
+      "version": "7.3.0",
+      "uri": "http://terminology.hl7.org/ImplementationGuide/hl7.terminology",
+      "id": "hl7_terminology_r4"
+    },
+    {
+      "packageId": "hl7.fhir.uv.extensions.r4",
+      "version": "5.3.0",
+      "uri": "http://hl7.org/fhir/extensions/ImplementationGuide/hl7.fhir.uv.extensions",
+      "id": "hl7_fhir_uv_extensions_r4"
+    }
+  ],
+  "definition": {
+    "resource": [
+      {
+        "reference": {
+          "reference": "Consent/34150a23-b1c8-404f-874f-e042a30435d2"
+        },
+        "name": "34150a23-b1c8-404f-874f-e042a30435d2",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-einwilligung"
+      },
+      {
+        "reference": {
+          "reference": "Consent/5143266b-8d60-4b28-8ee9-635140ffa5bb"
+        },
+        "name": "5143266b-8d60-4b28-8ee9-635140ffa5bb",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-einwilligung"
+      },
+      {
+        "reference": {
+          "reference": "Provenance/55219d12-6245-4de4-8b50-ddf6f16a789b"
+        },
+        "name": "55219d12-6245-4de4-8b50-ddf6f16a789b",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-provenance"
+      },
+      {
+        "reference": {
+          "reference": "Consent/89f494a3-cd75-44f5-a78a-581dfdd47a94"
+        },
+        "name": "89f494a3-cd75-44f5-a78a-581dfdd47a94",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-einwilligung"
+      },
+      {
+        "reference": {
+          "reference": "DocumentReference/8a3d1799-2463-405e-b49c-6a16c8692b01"
+        },
+        "name": "8a3d1799-2463-405e-b49c-6a16c8692b01",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-documentreference"
+      },
+      {
+        "reference": {
+          "reference": "ResearchStudy/c946ae17-e3e6-4178-b5ea-15f95aaeeeb4"
+        },
+        "name": "Beispiel Einwilligungsdomäne (synthetische Studie)",
+        "description": "Synthetische Consent-Domäne (ResearchStudy) als Referenzziel der DomainReference-Extension der Quell-Beispiele.",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "ResearchStudy/d7a65ce8-2810-401a-b0db-70782a7b19a6"
+        },
+        "name": "Beispiel Einwilligungsdomäne (synthetische Studie)",
+        "description": "Synthetische Consent-Domäne (ResearchStudy) als Referenzziel der DomainReference-Extension der Quell-Beispiele.",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Patient/531cef77-2a30-4283-944d-affaf9ae234e"
+        },
+        "name": "Beispiel Patient (pseudonym, synthetisch)",
+        "description": "Synthetischer, pseudonymer Patient als Referenzziel der Quell-Beispiele (Consent.patient, DocumentReference.subject, Provenance.signature.who).",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Patient/9b4a702d-162c-428a-8c5d-8b98af21b693"
+        },
+        "name": "Beispiel Patient (pseudonym, synthetisch)",
+        "description": "Synthetischer, pseudonymer Patient als Referenzziel der Quell-Beispiele (Consent.patient, DocumentReference.subject, Provenance.signature.who).",
+        "exampleBoolean": true
+      },
+      {
+        "reference": {
+          "reference": "Consent/Example-MII-Consent-ResultType-document"
+        },
+        "name": "Example-MII-Consent-ResultType-document",
+        "exampleCanonical": "https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-einwilligung"
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/mii-cs-consent-version-modules"
+        },
+        "name": "MII Consent Version and Modules CodeSystem",
+        "description": "Dieses Code System enthält die OIDs der verschiedenen Versionen und Zusatzmodule des Broad Consent der Medizininformatik Initiative.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/2.16.840.1.113883.3.1937.777.24.5.2--20210423105554"
+        },
+        "name": "MII Consent: Answer CodeSystem",
+        "description": "This CodeSystem contains the possible answers to the questions of the MII Consent.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/mii-vs-consent-answer"
+        },
+        "name": "MII Consent: Answer ValueSet",
+        "description": "This ValueSet contains the possible answers to the questions of the MII Consent.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CodeSystem/2.16.840.1.113883.3.1937.777.24.5.3--20251211153003"
+        },
+        "name": "MII Consent: Policy CodeSystem",
+        "description": "Codesystem mit Consent-Policy-Codes zur interoperablen Operationalisierung bzw. Durchsetzung (Enforcement) von Consent Informationen des MII Broad Consent",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/mii-vs-consent-policy"
+        },
+        "name": "MII Consent: Policy ValueSet",
+        "description": "**Disclaimer** \n\n (Punkte übernommen aus der Policy Liste ([MII SharePoint, TF Consent Umsetzung](https://tmfev.sharepoint.com/:f:/r/sites/tmf/mi-i/Taskforce%20Consent%20Umsetzung/02_Dokumente/Policies?csf=1&web=1&e=C0xLim \"\")))\n1. Diese Liste fasst erforderliche\n                    Einwilligungsmodule und zugeordnete Einwilligungspolicies für die technische Abbildung der \"MII Mustertexte Patienteneinwilligung\" in den aktuell verfügbaren Versionen zusammen. \n2. Für die Abbildung der Policies im Art Decor werden ausschließlich die Spalten [Policybezeichner], [Bedeutung/Kontext] und [OID] verwendet. \n3. Die Formulierung in\n                    der Spalte [Bedeutung/Kontext] dient ausschließlich administrativen Zwecken und der Verständnisbildung für die jeweilige Policy. \n4. Eine Darstellung der jeweiligen Formulierung innerhalb von Formularen oder digitalen Einwilligungsdokumenten ist nicht intendiert. \n5. Die Spalte [Weitere Hinweise Enforcement-Seite] nennt zusätzliche\n                    Randbedingungen, die auf der datenverarbeitenden Seite über die reine Einwilligungsinformation hinaus zu berücksichtigen sind. Die Gewährleistung der Einhaltung dieser weiteren Hinweise geht über den Wirkungsraum der Task Force Consent Umsetzung hinaus. \n\n **Hinweis 1 - Verwendung in FHIR:** Siehe [Implementation Guide](https://ig.fhir.de/einwilligungsmanagement/stable/Consent.html \"consent.provision Hierarchie ist noch in Arbeit\").  \n\n **Hinweis 2 - Verwendung in IHE BPPC:** \nUm die in diesem ValueSet enthaltenen Codes in IHE BPPC verwenden zu können, ist eine Kombination mit dem [MII Consent: Answer ValueSet](https://art-decor.org/art-decor/decor-valuesets--mide-?id=2.16.840.1.113883.3.1937.777.24.11.30&effectiveDate=2021-03-23T23:45:09&language=de-DE \"\") möglich (evtl. sogar erforderlich).  \n\n  Beispiel 1:  \n\n Patient hat dem Erheben der IDAT (Policy: 2.16.840.1.113883.3.1937.777.24.5.3.2 \"IDAT_erheben\") zugestimmt:\n                            2.16.840.1.113883.3.1937.777.24.5.3.2**.1** (.1 wird aus dem [MII Consent: Answer ValueSet](https://art-decor.org/art-decor/decor-valuesets--mide-?id=2.16.840.1.113883.3.1937.777.24.11.30&effectiveDate=2021-03-23T23:45:09&language=de-DE \"\") angehängt)  \n\n Beispiel 2:  \n\n 2.16.840.1.113883.3.1937.777.24.5.3.4.2\n                    bedeutet, dass der Patient der Policy IDAT_zusammenfuehren_Dritte nicht zugestimmt hat.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "ValueSet/mii-vs-consent-signaturetypes"
+        },
+        "name": "MII Consent: Signature Types",
+        "description": "Dieses ValueSet enthält die zulässigen Werte für den Signaturtyp im Kontext des MI-I Consent.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "CapabilityStatement/mii-cap-consent-server"
+        },
+        "name": "MII KDS Modul Consent — CapabilityStatement (Migrationsvorschlag)",
+        "description": "MIGRATION-GENERATED PROPOSAL (not part of the published 2026.0.0 release): server capabilities derived from the module's profiles and search parameters during the migration onto the MII KDS module template. The module team confirms, amends or deletes this artefact at Gate A.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "Parameters/mii-param-consent-manifest"
+        },
+        "exampleBoolean": false,
+        "name": "mii-param-consent-manifest"
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-consent-policyuri"
+        },
+        "name": "mii-sp-consent-policyuri",
+        "description": "Suche in der Policy URI (versionsspezifische Policy / Broad Consent)",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-consent-provisioncode"
+        },
+        "name": "mii-sp-consent-provisioncode",
+        "description": "Suche im Code der Provison",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-consent-provisioncodeperiod"
+        },
+        "name": "mii-sp-consent-provisioncodeperiod",
+        "description": "Composite-Suche nach Zeitraum (period) einer bestimmten, durch einen Code definierten, Provision.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-consent-provisioncodetype"
+        },
+        "name": "mii-sp-consent-provisioncodetype",
+        "description": "Composite-Suche nach Typ (type) einer bestimmten, durch einen Code definierten, Provision.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-consent-provisionperiod"
+        },
+        "name": "mii-sp-consent-provisionperiod",
+        "description": "Suche im Zeitraum der Provision. Dieser Suchparameter bezieht sich explizit auf die zweite Verschachtelungsebene von provison.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "SearchParameter/mii-sp-consent-provisiontype"
+        },
+        "name": "mii-sp-consent-provisiontype",
+        "description": "Suche im Typ der Provison (permit, deny).",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-consent-documentreference"
+        },
+        "name": "Profile - MI-I - Consent - DocumentReference",
+        "description": "Dieses Profil beschreibt die Abbildung von Originaldokumenten zu Einwilligungen in der Medizininformatik-Initiative.\nDiese müssen im PDF-Format vorliegen.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-consent-einwilligung"
+        },
+        "name": "Profile - MI-I - Consent - Einwilligung",
+        "description": "Dieses Profil beschreibt eine Einwilligung in der Medizininformatik-Initiative.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
+          "reference": "StructureDefinition/mii-pr-consent-provenance"
+        },
+        "name": "Profile - MI-I - Consent - Provenance",
+        "description": "Dieses Profil beschreibt Herkunftsinformationen zu Einwilligungen in der Medizininformatik-Initiative.",
+        "exampleBoolean": false
+      }
+    ],
+    "page": {
+      "nameUrl": "toc.html",
+      "title": "Table of Contents",
+      "generation": "html",
+      "page": [
+        {
+          "nameUrl": "index.html",
+          "title": "Startseite",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "guidance.html",
+          "title": "Anleitung",
+          "generation": "markdown",
+          "page": [
+            {
+              "nameUrl": "implementer-guidance.html",
+              "title": "Anleitung für Implementierende",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "uml-diagrams.html",
+              "title": "UML-Diagramme",
+              "generation": "markdown"
+            },
+            {
+              "nameUrl": "frageboegen.html",
+              "title": "Fragebögen",
+              "generation": "markdown"
+            }
+          ]
+        },
+        {
+          "nameUrl": "security-and-privacy.html",
+          "title": "Sicherheit und Datenschutz",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "profiles.html",
+          "title": "Profile",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "capability-statements.html",
+          "title": "CapabilityStatements",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "search-parameters.html",
+          "title": "Suchparameter",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "logical-models.html",
+          "title": "Logische Modelle",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "value-sets.html",
+          "title": "ValueSets",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "code-systems.html",
+          "title": "CodeSystems",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "examples.html",
+          "title": "Beispiele",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "downloads.html",
+          "title": "Downloads",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "changes.html",
+          "title": "Änderungshistorie",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "version-history.html",
+          "title": "Versionierung",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "ImplementationGuide-mii-ig-consent.html",
+          "title": "MII ImplementationGuide Ressource",
+          "generation": "markdown"
+        },
+        {
+          "nameUrl": "translationinfo.html",
+          "title": "Hinweise zur Übersetzung",
+          "generation": "markdown"
+        }
+      ]
+    },
+    "parameter": [
+      {
+        "code": "copyrightyear",
+        "value": "2019+"
+      },
+      {
+        "code": "releaselabel",
+        "value": "ballot"
+      },
+      {
+        "code": "path-resource",
+        "value": "input/predefined-resources"
+      },
+      {
+        "code": "path-pages",
+        "value": "input/intro-notes"
+      },
+      {
+        "code": "i18n-default-lang",
+        "value": "de"
+      },
+      {
+        "code": "i18n-lang",
+        "value": "en"
+      },
+      {
+        "code": "translation-sources",
+        "value": "input/translations/en"
+      },
+      {
+        "code": "excludexml",
+        "value": "false"
+      },
+      {
+        "code": "excludejson",
+        "value": "false"
+      },
+      {
+        "code": "excludettl",
+        "value": "true"
+      },
+      {
+        "code": "excludemap",
+        "value": "false"
+      },
+      {
+        "code": "logging",
+        "value": "init"
+      },
+      {
+        "code": "logging",
+        "value": "progress"
+      },
+      {
+        "code": "logging",
+        "value": "context"
+      },
+      {
+        "code": "logging",
+        "value": "html"
+      },
+      {
+        "code": "logging",
+        "value": "tx"
+      },
+      {
+        "code": "pin-canonicals",
+        "value": "pin-all"
+      },
+      {
+        "code": "path-expansion-params",
+        "value": "../../input/resources/Parameters-expansion-manifest.json"
+      },
+      {
+        "code": "pin-manifest",
+        "value": "mii-param-consent-manifest"
+      },
+      {
+        "code": "suppress-mappings",
+        "value": "http://hl7.org/v3"
+      },
+      {
+        "code": "suppress-mappings",
+        "value": "http://hl7.org/v3/cda"
+      },
+      {
+        "code": "special-url",
+        "value": "urn:oid:2.16.840.1.113883.3.1937.777.24.5.2"
+      },
+      {
+        "code": "special-url",
+        "value": "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"
+      }
+    ]
+  }
+}

@@ -1,0 +1,24 @@
+REBUILD after fidelity fixes: target=70 baseline=67 shared=49 new=21 resolved=18
+== NEW in target ==
+  6x  Consent.provision.provision[N].code[N].coding[N].display:
+  6x  Consent.provision.provision[N].code[N]:
+  3x  /work/fsh-generated/resources/StructureDefinition-
+  2x  /work/fsh-generated/resources/ValueSet-2.16.840.1.
+  1x  Consent:
+  1x  Consent.extension[N].extension[N].value.ofType(Reference):
+  1x  Consent.patient:
+  1x  /work/fsh-generated/resources/ValueSet-88464c5b-53
+== only in baseline ==
+  3x  CodeSystem:
+  3x  ValueSet:
+  2x  CodeSystem.where(url
+  1x  ImplementationGuide.dependsOn[N]:
+  1x  /work/input/resources/CodeSystem-MiiConsentAnswerC
+  1x  /work/input/resources/CodeSystem-MiiConsentPolicyC
+  1x  /work/input/resources/Profile_MII_Consent_Document
+  1x  StructureDefinition.snapshot.element[N]:
+  1x  /work/input/resources/Profile_MII_Consent_Einwilli
+  1x  /work/input/resources/Profile_MII_Consent_Provenan
+  1x  /work/input/resources/ValueSet-MiiConsentAnswerVal
+  1x  /work/input/resources/ValueSet-MiiConsentPolicyVal
+  1x  /work/input/resources/ValueSet-MiiConsentSignature

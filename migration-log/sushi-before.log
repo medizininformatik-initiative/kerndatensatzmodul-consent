@@ -1,0 +1,177 @@
+info  Running SUSHI v3.20.0 (implements FHIR Shorthand specification v3.0.0)
+info  Arguments:
+info    /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/gofsh-out
+info  No output path specified. Output to .
+info  Using configuration file: /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/gofsh-out/sushi-config.yaml
+info  Importing FSH text...
+error extraneous input 'CS' expecting {<EOF>, KW_ALIAS, KW_PROFILE, KW_EXTENSION, KW_INSTANCE, KW_INVARIANT, KW_VALUESET, KW_CODESYSTEM, KW_RULESET, KW_MAPPING, KW_LOGICAL, KW_RESOURCE}
+  File: /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/gofsh-out/input/fsh/instances/34150a23-b1c8-404f-874f-e042a30435d2.fsh
+  Line: 46
+error extraneous input 'CS' expecting {<EOF>, KW_ALIAS, KW_PROFILE, KW_EXTENSION, KW_INSTANCE, KW_INVARIANT, KW_VALUESET, KW_CODESYSTEM, KW_RULESET, KW_MAPPING, KW_LOGICAL, KW_RESOURCE}
+  File: /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/gofsh-out/input/fsh/instances/5143266b-8d60-4b28-8ee9-635140ffa5bb.fsh
+  Line: 25
+error extraneous input 'CS' expecting {<EOF>, KW_ALIAS, KW_PROFILE, KW_EXTENSION, KW_INSTANCE, KW_INVARIANT, KW_VALUESET, KW_CODESYSTEM, KW_RULESET, KW_MAPPING, KW_LOGICAL, KW_RESOURCE}
+  File: /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/gofsh-out/input/fsh/instances/Example-MII-Consent-ResultType-document.fsh
+  Line: 42
+info  Preprocessed 21 documents with 8 aliases.
+info  Imported 9 definitions and 11 instances.
+info  Loaded virtual package sushi-r5forR4#1.0.0 with 7 resources
+info  Resolved hl7.fhir.uv.tools.r4#latest to concrete version 1.1.2
+info  Loaded hl7.fhir.uv.tools.r4#1.1.2 with 119 resources
+info  Resolved hl7.terminology.r4#latest to concrete version 7.3.0
+info  Loaded hl7.terminology.r4#7.3.0 with 4176 resources
+info  Loaded de.einwilligungsmanagement#2.0.2 with 32 resources
+info  Loaded hl7.fhir.r4.core#4.0.1 with 4578 resources
+info  hl7.fhir.r4.core#4.0.1 already loaded
+info  Resolved hl7.fhir.uv.extensions.r4#latest to concrete version 5.3.0
+info  Loaded hl7.fhir.uv.extensions.r4#5.3.0 with 885 resources
+info  Loaded virtual package sushi-local#LOCAL with 0 resources
+info  Converting FSH to FHIR resources...
+error Structure Definition http://fhir.de/ConsentManagement/StructureDefinition/DocumentReference is missing a snapshot. Snapshot is required for import.
+  File: /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/gofsh-out/input/fsh/profiles/MII_PR_Consent_DocumentReference.fsh
+  Line: 1 - 10
+error Structure Definition http://fhir.de/ConsentManagement/StructureDefinition/DomainReference is missing a snapshot. Snapshot is required for import.
+  File: /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/gofsh-out/input/fsh/profiles/MII_PR_Consent_Einwilligung.fsh
+  Line: 1 - 98
+error Structure Definition http://fhir.de/ConsentManagement/StructureDefinition/Provenance is missing a snapshot. Snapshot is required for import.
+  File: /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/gofsh-out/input/fsh/profiles/MII_PR_Consent_Provenance.fsh
+  Line: 1 - 10
+info  Converted 3 FHIR StructureDefinitions.
+warn  The name "MII CS Consent Policy" may not be suitable for machine processing applications such as code generation. Valid names start with an upper-case ASCII letter ('A'..'Z') followed by any combination of upper- or lower-case ASCII letters ('A'..'Z', and 'a'..'z'), numerals ('0'..'9') and '_', with a length limit of 255 characters.
+  File: /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/gofsh-out/input/fsh/codesystems/MII_CS_Consent_Policy.fsh
+  Line: 5
+warn  The user-specified ^count (101) does not match the specified number of concepts (124). If this is not a "complete" CodeSystem, set the ^content property to the appropriate value; otherwise fix or remove the ^count.
+  File: /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/gofsh-out/input/fsh/codesystems/MII_CS_Consent_Policy.fsh
+  Line: 20
+info  Converted 3 FHIR CodeSystems.
+info  Converted 3 FHIR ValueSets.
+error Cannot find definition for Instance: MII. Skipping rule.
+  File: /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/gofsh-out/input/fsh/instances/34150a23-b1c8-404f-874f-e042a30435d2.fsh
+  Line: 46
+error The element or path you referenced does not exist: extension.fhir_comments
+  File: /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/gofsh-out/input/fsh/instances/34150a23-b1c8-404f-874f-e042a30435d2.fsh
+  Line: 10
+error The element or path you referenced does not exist: status.fhir_comments
+  File: /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/gofsh-out/input/fsh/instances/34150a23-b1c8-404f-874f-e042a30435d2.fsh
+  Line: 12
+error The element or path you referenced does not exist: scope.fhir_comments
+  File: /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/gofsh-out/input/fsh/instances/34150a23-b1c8-404f-874f-e042a30435d2.fsh
+  Line: 14
+error The element or path you referenced does not exist: category.fhir_comments
+  File: /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/gofsh-out/input/fsh/instances/34150a23-b1c8-404f-874f-e042a30435d2.fsh
+  Line: 16
+error The element or path you referenced does not exist: category[1].fhir_comments
+  File: /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/gofsh-out/input/fsh/instances/34150a23-b1c8-404f-874f-e042a30435d2.fsh
+  Line: 18
+error The element or path you referenced does not exist: category[2].fhir_comments
+  File: /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/gofsh-out/input/fsh/instances/34150a23-b1c8-404f-874f-e042a30435d2.fsh
+  Line: 20
+error The element or path you referenced does not exist: category[3].fhir_comments
+  File: /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/gofsh-out/input/fsh/instances/34150a23-b1c8-404f-874f-e042a30435d2.fsh
+  Line: 22
+error The element or path you referenced does not exist: patient.fhir_comments
+  File: /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/gofsh-out/input/fsh/instances/34150a23-b1c8-404f-874f-e042a30435d2.fsh
+  Line: 24
+error The element or path you referenced does not exist: dateTime.fhir_comments
+  File: /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/gofsh-out/input/fsh/instances/34150a23-b1c8-404f-874f-e042a30435d2.fsh
+  Line: 26
+error The element or path you referenced does not exist: organization.display.fhir_comments
+  File: /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/gofsh-out/input/fsh/instances/34150a23-b1c8-404f-874f-e042a30435d2.fsh
+  Line: 28
+error The element or path you referenced does not exist: policy.uri.fhir_comments
+  File: /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/gofsh-out/input/fsh/instances/34150a23-b1c8-404f-874f-e042a30435d2.fsh
+  Line: 30
+error The element or path you referenced does not exist: policy.fhir_comments
+  File: /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/gofsh-out/input/fsh/instances/34150a23-b1c8-404f-874f-e042a30435d2.fsh
+  Line: 31
+error The element or path you referenced does not exist: policyRule.fhir_comments
+  File: /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/gofsh-out/input/fsh/instances/34150a23-b1c8-404f-874f-e042a30435d2.fsh
+  Line: 35
+error The element or path you referenced does not exist: provision.type.fhir_comments
+  File: /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/gofsh-out/input/fsh/instances/34150a23-b1c8-404f-874f-e042a30435d2.fsh
+  Line: 37
+error The element or path you referenced does not exist: provision.period.fhir_comments
+  File: /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/gofsh-out/input/fsh/instances/34150a23-b1c8-404f-874f-e042a30435d2.fsh
+  Line: 40
+error The element or path you referenced does not exist: provision.provision.type.fhir_comments
+  File: /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/gofsh-out/input/fsh/instances/34150a23-b1c8-404f-874f-e042a30435d2.fsh
+  Line: 42
+error The element or path you referenced does not exist: provision.provision.period.fhir_comments
+  File: /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/gofsh-out/input/fsh/instances/34150a23-b1c8-404f-874f-e042a30435d2.fsh
+  Line: 45
+error Cannot find definition for Instance: MII. Skipping rule.
+  File: /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/gofsh-out/input/fsh/instances/5143266b-8d60-4b28-8ee9-635140ffa5bb.fsh
+  Line: 25
+error InstanceOf MII_PR_Consent_Provenance not found for 55219d12-6245-4de4-8b50-ddf6f16a789b
+  File: /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/gofsh-out/input/fsh/instances/55219d12-6245-4de4-8b50-ddf6f16a789b.fsh
+  Line: 1 - 27
+error InstanceOf MII_PR_Consent_DocumentReference not found for 8a3d1799-2463-405e-b49c-6a16c8692b01
+  File: /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/gofsh-out/input/fsh/instances/8a3d1799-2463-405e-b49c-6a16c8692b01.fsh
+  Line: 1 - 11
+error Cannot find definition for Instance: MII. Skipping rule.
+  File: /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/gofsh-out/input/fsh/instances/Example-MII-Consent-ResultType-document.fsh
+  Line: 42
+error The element or path you referenced does not exist: extension.fhir_comments
+  File: /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/gofsh-out/input/fsh/instances/Example-MII-Consent-ResultType-document.fsh
+  Line: 10
+error The element or path you referenced does not exist: status.fhir_comments
+  File: /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/gofsh-out/input/fsh/instances/Example-MII-Consent-ResultType-document.fsh
+  Line: 12
+error The element or path you referenced does not exist: scope.fhir_comments
+  File: /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/gofsh-out/input/fsh/instances/Example-MII-Consent-ResultType-document.fsh
+  Line: 14
+error The element or path you referenced does not exist: category.fhir_comments
+  File: /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/gofsh-out/input/fsh/instances/Example-MII-Consent-ResultType-document.fsh
+  Line: 16
+error The element or path you referenced does not exist: category[1].fhir_comments
+  File: /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/gofsh-out/input/fsh/instances/Example-MII-Consent-ResultType-document.fsh
+  Line: 18
+error The element or path you referenced does not exist: category[2].fhir_comments
+  File: /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/gofsh-out/input/fsh/instances/Example-MII-Consent-ResultType-document.fsh
+  Line: 20
+error The element or path you referenced does not exist: category[3].fhir_comments
+  File: /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/gofsh-out/input/fsh/instances/Example-MII-Consent-ResultType-document.fsh
+  Line: 22
+error The element or path you referenced does not exist: patient.fhir_comments
+  File: /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/gofsh-out/input/fsh/instances/Example-MII-Consent-ResultType-document.fsh
+  Line: 24
+error The element or path you referenced does not exist: dateTime.fhir_comments
+  File: /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/gofsh-out/input/fsh/instances/Example-MII-Consent-ResultType-document.fsh
+  Line: 26
+error The element or path you referenced does not exist: organization.display.fhir_comments
+  File: /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/gofsh-out/input/fsh/instances/Example-MII-Consent-ResultType-document.fsh
+  Line: 28
+error The element or path you referenced does not exist: policy.uri.fhir_comments
+  File: /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/gofsh-out/input/fsh/instances/Example-MII-Consent-ResultType-document.fsh
+  Line: 30
+error The element or path you referenced does not exist: policy.fhir_comments
+  File: /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/gofsh-out/input/fsh/instances/Example-MII-Consent-ResultType-document.fsh
+  Line: 31
+error The element or path you referenced does not exist: policyRule.fhir_comments
+  File: /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/gofsh-out/input/fsh/instances/Example-MII-Consent-ResultType-document.fsh
+  Line: 35
+info  Converted 11 FHIR instances.
+info  Exporting FHIR resources as JSON...
+info  Exported 16 FHIR resources as JSON.
+info  Exporting FSH definitions only. No IG related content will be exported.
+
+========================= SUSHI RESULTS ===========================
+|  -------------------------------------------------------------  |
+| |    Profiles   |  Extensions  |   Logicals   |   Resources   | |
+| |-------------------------------------------------------------| |
+| |       1       |      0       |      0       |       0       | |
+|  -------------------------------------------------------------  |
+|  -------------------------------------------------------------  |
+| |      ValueSets     |    CodeSystems    |     Instances      | |
+| |-------------------------------------------------------------| |
+| |         3          |         3         |         9          | |
+|  -------------------------------------------------------------  |
+|                                                                 |
+===================================================================
+| This was a turtle disaster.           41 Errors      2 Warnings |
+===================================================================
+|    You are using SUSHI version 3.20.0, but the latest stable    |
+| release is version 3.20.1. To install the latest release, run:  |
+|                    npm install -g fsh-sushi                     |
+===================================================================
+

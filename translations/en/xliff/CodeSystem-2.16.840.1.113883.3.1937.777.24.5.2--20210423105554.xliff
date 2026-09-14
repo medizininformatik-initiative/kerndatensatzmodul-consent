@@ -1,0 +1,120 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="de" target-language="en" id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.2--20210423105554" original="Resource CodeSystem-2.16.840.1.113883.3.1937.777.24.5.2--20210423105554" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.2--20210423105554" resname="CodeSystem.name">
+             <notes>
+               <note id="n1">CodeSystem.name</note>
+             </notes>
+        <source>MII_CS_Consent_Answer</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.2--20210423105554" resname="CodeSystem.title">
+             <notes>
+               <note id="n1">CodeSystem.title</note>
+             </notes>
+        <source>MII Consent: Answer CodeSystem</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.2--20210423105554" resname="CodeSystem.publisher">
+             <notes>
+               <note id="n1">CodeSystem.publisher</note>
+             </notes>
+        <source>NUM-DIZ</source>
+        <target>NUM-DIZ</target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.2--20210423105554" resname="ContactDetail.name">
+             <notes>
+               <note id="n1">ContactDetail.name</note>
+             </notes>
+        <source>NUM-DIZ</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.2--20210423105554" resname="CodeSystem.description">
+             <notes>
+               <note id="n1">CodeSystem.description</note>
+             </notes>
+        <source>This CodeSystem contains the possible answers to the questions of the MII Consent.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.2--20210423105554" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Germany</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.2--20210423105554" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">CodeSystem.concept.display</note>
+             </notes>
+        <source>unbekannt</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.2--20210423105554" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Synonym</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.2--20210423105554" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>unbekannt</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.2--20210423105554" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>unknown</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.2--20210423105554" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">CodeSystem.concept.display</note>
+             </notes>
+        <source>nicht gültig</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.2--20210423105554" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>nicht gültig</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.2--20210423105554" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>not valid</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.2--20210423105554" resname="CodeSystem.concept.display">
+             <notes>
+               <note id="n1">CodeSystem.concept.display</note>
+             </notes>
+        <source>gültig</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.2--20210423105554" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>gültig</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.2--20210423105554" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>valid</source>
+        <target></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

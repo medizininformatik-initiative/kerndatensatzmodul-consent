@@ -1,0 +1,75 @@
+{
+  "resourceType": "CapabilityStatement",
+  "id": "mii-cap-consent-server",
+  "url": "https://www.medizininformatik-initiative.de/fhir/modul-consent/CapabilityStatement/mii-cap-consent-server",
+  "format": [
+    "json",
+    "xml"
+  ],
+  "rest": [
+    {
+      "resource": [
+        {
+          "supportedProfile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-einwilligung"
+          ],
+          "searchParam": [
+            {
+              "name": "mii-policy-uri",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/modul-consent/SearchParameter/mii-sp-consent-policyuri",
+              "type": "uri"
+            },
+            {
+              "name": "mii-provision-provision-code",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/modul-consent/SearchParameter/mii-sp-consent-provisioncode",
+              "type": "token"
+            },
+            {
+              "name": "mii-provision-provision-code-period",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/modul-consent/SearchParameter/mii-sp-consent-provisioncodeperiod",
+              "type": "composite"
+            },
+            {
+              "name": "mii-provision-provision-code-type",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/modul-consent/SearchParameter/mii-sp-consent-provisioncodetype",
+              "type": "composite"
+            },
+            {
+              "name": "mii-provision-provision-period",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/modul-consent/SearchParameter/mii-sp-consent-provisionperiod",
+              "type": "date"
+            },
+            {
+              "name": "mii-provision-provision-type",
+              "definition": "https://www.medizininformatik-initiative.de/fhir/modul-consent/SearchParameter/mii-sp-consent-provisiontype",
+              "type": "token"
+            }
+          ],
+          "type": "Consent"
+        },
+        {
+          "supportedProfile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-provenance"
+          ],
+          "type": "Provenance"
+        },
+        {
+          "supportedProfile": [
+            "https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-documentreference"
+          ],
+          "type": "DocumentReference"
+        }
+      ],
+      "mode": "server"
+    }
+  ],
+  "name": "MII_CAP_Consent_Server",
+  "title": "MII KDS Modul Consent — CapabilityStatement (Migrationsvorschlag)",
+  "version": "2027.0.0-ballot",
+  "status": "draft",
+  "experimental": true,
+  "date": "2026-08-31",
+  "description": "MIGRATION-GENERATED PROPOSAL (not part of the published 2026.0.0 release): server capabilities derived from the module's profiles and search parameters during the migration onto the MII KDS module template. The module team confirms, amends or deletes this artefact at Gate A.",
+  "kind": "requirements",
+  "fhirVersion": "4.0.1"
+}

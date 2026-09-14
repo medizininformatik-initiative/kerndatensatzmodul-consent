@@ -1,0 +1,236 @@
+{
+  "schemaVersion": "1.4",
+  "tool": "ig-stats.py",
+  "mode": "reduced",
+  "analyzed": {
+    "path": "/private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/target",
+    "label": "consent 2026.0.0 unmigrated source",
+    "project_root_nested": null,
+    "project_root_candidates": null,
+    "git_commit": "792f9f3",
+    "timestamp": "2026-08-31T17:34:03Z"
+  },
+  "identity": {
+    "id": null,
+    "canonical": null,
+    "packageId": null,
+    "name": null,
+    "title": null,
+    "version": null,
+    "calver": false,
+    "status": null,
+    "fhirVersion": null,
+    "license": null,
+    "publisher": null
+  },
+  "artifacts": {
+    "profiles": 0,
+    "extensions": 0,
+    "valuesets": 0,
+    "codesystems": 0,
+    "logicals": 0,
+    "capabilitystatements": 0,
+    "questionnaires": 0,
+    "searchparameters": 0,
+    "operations": 0,
+    "examples": 0,
+    "rulesets": 0,
+    "invariants": 0,
+    "mappings": 0,
+    "other": {},
+    "total": 0,
+    "other_total": 0,
+    "_source": "(keine FSH/generierten Ressourcen gefunden)",
+    "generated_crosscheck": null
+  },
+  "artifacts_detail": [],
+  "preflight": {
+    "licence": {
+      "evidence": [
+        {
+          "source": "LICENSE",
+          "value": "Attribution 4.0 International"
+        }
+      ],
+      "declared_anywhere": true,
+      "contradictory": false,
+      "distinct_values": [
+        "attribution4.0international"
+      ]
+    },
+    "canonical_space": {
+      "canonical": null,
+      "package_json_canonical": null,
+      "config_contradiction": false,
+      "out_of_space_count": null,
+      "out_of_space": [],
+      "id_url_mismatch": [],
+      "special_url_prediction": null,
+      "example_org": []
+    },
+    "dependency_health": {
+      "old_style_packages": [],
+      "tho_pinned_directly": false,
+      "extensions_pinned_directly": false,
+      "injection_risk": true,
+      "external_parents": null,
+      "dependency_block_present": false,
+      "dependency_block_unparsed": false
+    },
+    "package_layout": null,
+    "narrative_sources": {
+      "pagecontent": false,
+      "intro_notes": false,
+      "implementation_guides_tree": false,
+      "dual_source": false,
+      "pagecontent_last_commit": null,
+      "implementation_guides_last_commit": null
+    },
+    "qa_baseline": null,
+    "_comment": "migration Gate-0 aspects; None = not measurable from this tree (obtain it, never assume it)"
+  },
+  "dependencies": {
+    "count": 0,
+    "pinned": 0,
+    "floating": 0,
+    "items": {},
+    "floating_items": [],
+    "block_present": false,
+    "_source": "sushi-config.yaml: dependencies"
+  },
+  "narrative": {
+    "format": "leer",
+    "pages": 0,
+    "pages_all": 0,
+    "translation_pages": 0,
+    "translation_words": 0,
+    "intro_note_pages": 0,
+    "intro_note_words": 0,
+    "words": 0,
+    "words_all_incl_stubs": 0,
+    "images": 0,
+    "mandatory_present": [],
+    "mandatory_missing_in_target": [],
+    "files": []
+  },
+  "linguistics": {
+    "content_pages": 0,
+    "words_total": 0,
+    "words_avg": 0,
+    "words_median": 0,
+    "words_min": 0,
+    "words_max": 0,
+    "longest_page": null,
+    "shortest_page": null,
+    "per_page": []
+  },
+  "duplication": {
+    "duplicate_block_count": 0,
+    "duplicate_blocks": [],
+    "duplicate_file_groups": []
+  },
+  "hygiene": {
+    "images_total": 0,
+    "unreferenced_images": [],
+    "examples_total": 0,
+    "examples_not_in_narrative": [],
+    "note": "Heuristik: 'nicht referenziert' = Dateiname/Artefaktname kommt in keiner Erklärseite vor. Kein Beweis für Ungenutztheit (Referenz kann über Konfiguration/Build erfolgen)."
+  },
+  "i18n": {
+    "default_lang": null,
+    "default_lang_source": null,
+    "languages": [],
+    "translation_supplements": 0,
+    "supplement_files": [],
+    "translated_pages": 0,
+    "fsh_translation_ext": false,
+    "fsh_translation_files": []
+  },
+  "directives": {
+    "total": 0,
+    "by_label": {},
+    "unknown": 0,
+    "occurrences": [],
+    "unknown_occurrences": []
+  },
+  "quality": {
+    "qc_rules_defined": null,
+    "qc_rules": [],
+    "qc_source": null,
+    "qc_violations": null,
+    "suppressed_messages": null,
+    "qa_errors": null,
+    "qa_warnings": null,
+    "qa_hints": null,
+    "broken_links": null,
+    "qa_categories": null
+  },
+  "maturity": {
+    "components": {
+      "Status": null,
+      "Doku-Vollständigkeit": null,
+      "Beispiel-Abdeckung": null,
+      "Governance": 0
+    },
+    "example_coverage": {
+      "profiles_total": 0,
+      "covered": 0,
+      "uncovered": [],
+      "coverage_pct": null
+    },
+    "governance": {
+      "ci_workflows": 0,
+      "publication_request": false,
+      "ig_ini": false,
+      "devcontainer": false,
+      "governance_score": 0
+    },
+    "doc_health_pct": null
+  },
+  "portfolio": {
+    "vendor_lockin_score": 0,
+    "vendor_lockin_band": "gering",
+    "directives_per_page": 0.0,
+    "terminology_standard_systems": [],
+    "terminology_standard_refs": 0,
+    "local_codesystems": 0,
+    "terminology_standard_share_pct": null,
+    "canonical_reuse_ratio_pct": null,
+    "external_parents": 0,
+    "local_parents": 0,
+    "fhir_version_label": "?",
+    "fhir_version_note": "unbekannt",
+    "dependency_stale_count": 0,
+    "dependency_stale": [],
+    "dependency_staleness_note": "Heuristik aus CalVer-Jahr; exakt nur via Package-Registry (extern).",
+    "release_cadence_per_year": 25.2,
+    "days_since_last_commit": 256,
+    "tags": 5
+  },
+  "risk": {
+    "terminology_license_flags": [],
+    "terminology_license_risk": false,
+    "suppressed_total": 0,
+    "suppressed_broad": 0,
+    "suppressed_warning_risk": "keine",
+    "privacy_page_words": 0,
+    "privacy_page_substantial": false,
+    "examples_contain_pii_like": false,
+    "bus_factor_top_author_pct": 35,
+    "bus_factor_authors": 6,
+    "bus_factor_risk": "gering",
+    "breaking_change_risk": null,
+    "breaking_change_note": "Erfordert Diff gegen die publizierte Vorversion (Build/extern) — statisch nicht erhoben."
+  },
+  "git": {
+    "commits": 98,
+    "authors": 6,
+    "top_author_share": 35,
+    "days_since_last": 256,
+    "commits_per_year": 25.2,
+    "tags": 5,
+    "first": "2022-01-28",
+    "last": "2025-12-18",
+    "history_complete": true
+  }
+}

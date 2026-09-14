@@ -1,0 +1,43 @@
+{
+  "id" : "CapabilityStatement-mii-cap-consent-server",
+  "baseLang" : "de",
+  "languages" : [{
+    "targetLang" : "en",
+    "entries" : [{
+      "id" : "CapabilityStatement.name",
+      "context" : "CapabilityStatement.name",
+      "source" : "MII_CAP_Consent_Server",
+      "target" : null
+    },
+    {
+      "id" : "CapabilityStatement.title",
+      "context" : "CapabilityStatement.title",
+      "source" : "MII KDS Modul Consent — CapabilityStatement (Migrationsvorschlag)",
+      "target" : null
+    },
+    {
+      "id" : "CapabilityStatement.publisher",
+      "context" : "CapabilityStatement.publisher",
+      "source" : "NUM-DIZ",
+      "target" : "NUM-DIZ"
+    },
+    {
+      "id" : "ContactDetail.name",
+      "context" : "ContactDetail.name",
+      "source" : "NUM-DIZ",
+      "target" : null
+    },
+    {
+      "id" : "CapabilityStatement.description",
+      "context" : "CapabilityStatement.description",
+      "source" : "MIGRATION-GENERATED PROPOSAL (not part of the published 2026.0.0 release): server capabilities derived from the module's profiles and search parameters during the migration onto the MII KDS module template. The module team confirms, amends or deletes this artefact at Gate A.",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "Germany",
+      "target" : null
+    }]
+  }]
+}

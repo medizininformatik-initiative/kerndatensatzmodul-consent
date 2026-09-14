@@ -1,0 +1,108 @@
+{
+  "resourceType": "CodeSystem",
+  "status": "active",
+  "content": "complete",
+  "name": "MII_CS_Consent_Answer",
+  "id": "2.16.840.1.113883.3.1937.777.24.5.2--20210423105554",
+  "title": "MII Consent: Answer CodeSystem",
+  "description": "This CodeSystem contains the possible answers to the questions of the MII Consent.",
+  "url": "urn:oid:2.16.840.1.113883.3.1937.777.24.5.2",
+  "concept": [
+    {
+      "code": "2.16.840.1.113883.3.1937.777.24.5.2.3",
+      "display": "unbekannt",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009",
+            "display": "Synonym"
+          },
+          "value": "unbekannt"
+        },
+        {
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009",
+            "display": "Synonym"
+          },
+          "value": "unknown"
+        }
+      ]
+    },
+    {
+      "code": "2.16.840.1.113883.3.1937.777.24.5.2.2",
+      "display": "nicht gültig",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009",
+            "display": "Synonym"
+          },
+          "value": "nicht gültig"
+        },
+        {
+          "language": "en-US",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000013009",
+            "display": "Synonym"
+          },
+          "value": "not valid"
+        }
+      ]
+    },
+    {
+      "code": "2.16.840.1.113883.3.1937.777.24.5.2.1",
+      "display": "gültig",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "code": "900000000000013009",
+            "system": "http://snomed.info/sct",
+            "display": "Synonym"
+          },
+          "value": "gültig"
+        },
+        {
+          "language": "en-US",
+          "use": {
+            "code": "900000000000013009",
+            "system": "http://snomed.info/sct",
+            "display": "Synonym"
+          },
+          "value": "valid"
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "version": "2027.0.0-ballot",
+  "experimental": false,
+  "date": "2021-03-23",
+  "publisher": "MII Task Force Consent Umsetzung",
+  "contact": [
+    {
+      "name": "MII Task Force Consent Umsetzung",
+      "telecom": [
+        {
+          "system": "email",
+          "value": "office@medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "caseSensitive": true,
+  "valueSet": "https://www.medizininformatik-initiative.de/fhir/modul-consent/ValueSet/mii-vs-consent-answer",
+  "hierarchyMeaning": "part-of",
+  "count": 3
+}

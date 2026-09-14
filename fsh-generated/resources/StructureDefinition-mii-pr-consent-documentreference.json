@@ -1,0 +1,26 @@
+{
+  "resourceType": "StructureDefinition",
+  "id": "mii-pr-consent-documentreference",
+  "url": "https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-documentreference",
+  "version": "2027.0.0-ballot",
+  "name": "MII_PR_Consent_DocumentReference",
+  "title": "Profile - MI-I - Consent - DocumentReference",
+  "status": "active",
+  "date": "2023-05-09",
+  "description": "Dieses Profil beschreibt die Abbildung von Originaldokumenten zu Einwilligungen in der Medizininformatik-Initiative.\nDiese müssen im PDF-Format vorliegen.",
+  "fhirVersion": "4.0.1",
+  "kind": "resource",
+  "abstract": false,
+  "type": "DocumentReference",
+  "baseDefinition": "http://fhir.de/ConsentManagement/StructureDefinition/DocumentReference",
+  "derivation": "constraint",
+  "differential": {
+    "element": [
+      {
+        "id": "DocumentReference.content.attachment.contentType",
+        "path": "DocumentReference.content.attachment.contentType",
+        "patternCode": "application/pdf"
+      }
+    ]
+  }
+}

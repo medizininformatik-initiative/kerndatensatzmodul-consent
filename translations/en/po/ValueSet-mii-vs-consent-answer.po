@@ -1,0 +1,31 @@
+
+# ValueSet.name
+#: ValueSet.name
+msgid "MII_VS_Consent_Answer"
+msgstr ""
+
+# ValueSet.title
+#: ValueSet.title
+msgid "MII Consent: Answer ValueSet"
+msgstr ""
+
+# ValueSet.publisher
+#: ValueSet.publisher
+msgid "NUM-DIZ"
+msgstr "NUM-DIZ"
+
+# ContactDetail.name
+#: ContactDetail.name
+msgid "NUM-DIZ"
+msgstr ""
+
+# ValueSet.description
+#: ValueSet.description
+msgid "This ValueSet contains the possible answers to the questions of the MII Consent."
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Germany"
+msgstr ""
+

@@ -1,0 +1,749 @@
+### profiles/MII_PR_Consent_DocumentReference.fsh
+--- /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig2/gofsh-release/input/fsh/profiles/MII_PR_Consent_DocumentReference.fsh	2026-09-04 11:30:19
++++ /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig2/target/input/fsh/profiles/MII_PR_Consent_DocumentReference.fsh	2026-09-04 11:24:41
+@@ -2,9 +2,9 @@
+ Parent: ConsentManagementDocumentReference
+ Id: 56375452-bfa1-4111-af7c-5b5ba9a1857c
+ Title: "Profile - MI-I - Consent - DocumentReference"
+-Description: """Dieses Profil beschreibt die Abbildung von Originaldokumenten zu Einwilligungen in der Medizininformatik-Initiative.
++Description: """Dieses Profil beschreibt die Abbildung von Originaldokumenten zu Einwilligungen in der Medizininformatik-Initiative.
+ Diese müssen im PDF-Format vorliegen."""
+ * ^url = "https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-documentreference"
+-* ^version = "1.0.8"
++* ^version = "2027.0.0-ballot.rc1"
+ * ^date = "2023-05-09"
+ * content.attachment.contentType = #application/pdf
+\ No newline at end of file
+### profiles/MII_PR_Consent_Einwilligung.fsh
+--- /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig2/gofsh-release/input/fsh/profiles/MII_PR_Consent_Einwilligung.fsh	2026-09-04 11:30:19
++++ /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig2/target/input/fsh/profiles/MII_PR_Consent_Einwilligung.fsh	2026-09-04 11:24:41
+@@ -4,7 +4,7 @@
+ Title: "Profile - MI-I - Consent - Einwilligung"
+ Description: "Dieses Profil beschreibt eine Einwilligung in der Medizininformatik-Initiative."
+ * ^url = "https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-einwilligung"
+-* ^version = "1.1.0"
++* ^version = "2027.0.0-ballot.rc1"
+ * ^date = "2026-08-21"
+ * id MS
+ * meta MS
+@@ -28,27 +28,26 @@
+ * scope.coding.system = "http://terminology.hl7.org/CodeSystem/consentscope" (exactly)
+ * scope.coding.code 1..
+ * scope.coding.code = #research (exactly)
+-* category 0..* MS
++* category MS
+ * category ^slicing.discriminator.type = #pattern
+ * category ^slicing.discriminator.path = "$this"
+ * category ^slicing.rules = #open
+-* category contains
+-    consentCategory 1..1 MS and
+-    mii 1..1 MS and
+-    resultType 0..* MS and
+-    templateType 0..* MS
++* category[consentCategory] 1..1 MS
+ * category[consentCategory] = $loinc#57016-8
+ * category[consentCategory].coding 1..1 MS
+ * category[consentCategory].coding.system 1.. MS
+ * category[consentCategory].coding.code 1.. MS
++* category contains mii 1..1 MS
+ * category[mii] = MIIConsentVersionModuleCodeSystem#2.16.840.1.113883.3.1937.777.24.2.184
+ * category[mii].coding 1..1 MS
+ * category[mii].coding.system 1.. MS
+ * category[mii].coding.code 1.. MS
++* category[resultType] MS
+ * category[resultType] from ConsentManagementResultType (required)
+ * category[resultType].coding 1.. MS
+ * category[resultType].coding.system 1.. MS
+ * category[resultType].coding.code 1.. MS
++* category[templateType] MS
+ * category[templateType] from ConsentManagementTemplateType (extensible)
+ * category[templateType].coding 1.. MS
+ * category[templateType].coding.system 1.. MS
+### profiles/MII_PR_Consent_Provenance.fsh
+--- /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig2/gofsh-release/input/fsh/profiles/MII_PR_Consent_Provenance.fsh	2026-09-04 11:30:19
++++ /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig2/target/input/fsh/profiles/MII_PR_Consent_Provenance.fsh	2026-09-04 11:24:41
+@@ -4,7 +4,7 @@
+ Title: "Profile - MI-I - Consent - Provenance"
+ Description: "Dieses Profil beschreibt Herkunftsinformationen zu Einwilligungen in der Medizininformatik-Initiative."
+ * ^url = "https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-provenance"
+-* ^version = "1.0.8"
++* ^version = "2027.0.0-ballot.rc1"
+ * ^date = "2023-05-09"
+ * entity.what only Reference(MII_PR_Consent_DocumentReference)
+ * signature.type from MII_VS_Consent_SignatureTypes (required)
+\ No newline at end of file
+### codesystems/MIIConsentVersionModuleCodeSystem.fsh
+--- /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig2/gofsh-release/input/fsh/codesystems/MIIConsentVersionModuleCodeSystem.fsh	2026-09-04 11:30:19
++++ /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig2/target/input/fsh/codesystems/MIIConsentVersionModuleCodeSystem.fsh	2026-09-04 11:24:41
+@@ -9,7 +9,7 @@
+ * ^identifier.use = #official
+ * ^identifier.system = "urn:ietf:rfc:3986"
+ * ^identifier.value = "urn:oid:2.16.840.1.113883.3.1937.777.24.5.27"
+-* ^version = "0.2.0"
++* ^version = "2027.0.0-ballot.rc1"
+ * ^status = #draft
+ * ^experimental = false
+ * ^publisher = "Medizininformatik-Initiative"
+@@ -21,7 +21,7 @@
+ * ^copyright = "\n            © 2019+ TMF e. V., Charlottenstraße 42, 10117 Berlin \n            \n                \n                    CC BY 4.0\n                \n                 \n            \n            Diese Arbeit ist lizensiert unter der [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/). \n            Zu den Nutzungsrechten der zugrunde liegenden FHIR-Technologie siehe die FHIR-Basis-Spezifikation. \n            Einige verwendete Codesysteme werden von anderen Organisationen herausgegeben und gepflegt. Es gilt das Copyright der dort jeweils aufgeführten Herausgeber (Publisher). \n        "
+ * ^caseSensitive = false
+ * ^content = #complete
+-* ^count = 20
++* ^count = 21
+ * ^property[0].code = #status
+ * ^property[=].uri = "http://hl7.org/fhir/concept-properties#status"
+ * ^property[=].description = "A code that indicates the status of the concept. Values found in this version of the code system are: draft"
+### codesystems/MII_CS_Consent_Answer.fsh
+--- /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig2/gofsh-release/input/fsh/codesystems/MII_CS_Consent_Answer.fsh	2026-09-04 11:30:19
++++ /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig2/target/input/fsh/codesystems/MII_CS_Consent_Answer.fsh	2026-09-04 11:24:41
+@@ -4,7 +4,7 @@
+ Description: "This CodeSystem contains the possible answers to the questions of the MII Consent."
+ * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+ * ^url = "urn:oid:2.16.840.1.113883.3.1937.777.24.5.2"
+-* ^version = "1.6.0"
++* ^version = "2027.0.0-ballot.rc1"
+ * ^status = #active
+ * ^experimental = false
+ * ^date = "2021-03-23"
+### codesystems/MII_CS_Consent_Policy.fsh
+--- /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig2/gofsh-release/input/fsh/codesystems/MII_CS_Consent_Policy.fsh	2026-09-04 11:30:19
++++ /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig2/target/input/fsh/codesystems/MII_CS_Consent_Policy.fsh	2026-09-04 11:24:41
+@@ -5,7 +5,7 @@
+ * ^name = "MII CS Consent Policy"
+ * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+ * ^url = "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"
+-* ^version = "1.1.0"
++* ^version = "2027.0.0-ballot.rc1"
+ * ^status = #active
+ * ^experimental = false
+ * ^date = "2025-12-11"
+@@ -17,7 +17,7 @@
+ * ^valueSet = "https://www.medizininformatik-initiative.de/fhir/modul-consent/ValueSet/mii-vs-consent-policy"
+ * ^hierarchyMeaning = #part-of
+ * ^content = #complete
+-* ^count = 101
++* ^count = 124
+ * ^property[0].code = #period-of-validity
+ * ^property[=].description = "A property that indicates the duration of validity of a concept. The string is a duration as ISO 8601:2004 string, ref. to http://hl7.org/fhir/iso-8601-date."
+ * ^property[=].type = #string
+@@ -31,7 +31,7 @@
+ * #2.16.840.1.113883.3.1937.777.24.5.3.1 #2.16.840.1.113883.3.1937.777.24.5.3.4 "IDAT zusammenfuehren Dritte"
+ * #2.16.840.1.113883.3.1937.777.24.5.3.1 #2.16.840.1.113883.3.1937.777.24.5.3.4 ^property[0].code = #period-of-validity
+ * #2.16.840.1.113883.3.1937.777.24.5.3.1 #2.16.840.1.113883.3.1937.777.24.5.3.4 ^property[=].valueString = "P30Y"
+-* #2.16.840.1.113883.3.1937.777.24.5.3.1 #2.16.840.1.113883.3.1937.777.24.5.3.5 "IDAT bereitstellen"
++* #2.16.840.1.113883.3.1937.777.24.5.3.1 #2.16.840.1.113883.3.1937.777.24.5.3.5 "IDAT bereitstellen "
+ * #2.16.840.1.113883.3.1937.777.24.5.3.1 #2.16.840.1.113883.3.1937.777.24.5.3.5 ^property[0].code = #period-of-validity
+ * #2.16.840.1.113883.3.1937.777.24.5.3.1 #2.16.840.1.113883.3.1937.777.24.5.3.5 ^property[=].valueString = "P30Y"
+ * #2.16.840.1.113883.3.1937.777.24.5.3.1 #2.16.840.1.113883.3.1937.777.24.5.3.6 "MDAT erheben"
+### valuesets/MII_VS_Consent_Answer.fsh
+--- /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig2/gofsh-release/input/fsh/valuesets/MII_VS_Consent_Answer.fsh	2026-09-04 11:30:19
++++ /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig2/target/input/fsh/valuesets/MII_VS_Consent_Answer.fsh	2026-09-04 11:24:41
+@@ -9,7 +9,7 @@
+ * ^identifier.use = #official
+ * ^identifier.system = "urn:ietf:rfc:3986"
+ * ^identifier.value = "urn:oid:2.16.840.1.113883.3.1937.777.24.11.30"
+-* ^version = "1.6.0"
++* ^version = "2027.0.0-ballot.rc1"
+ * ^status = #active
+ * ^experimental = false
+ * ^publisher = "MII Task Force Consent Umsetzung"
+### valuesets/MII_VS_Consent_SignatureTypes.fsh
+--- /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig2/gofsh-release/input/fsh/valuesets/MII_VS_Consent_SignatureTypes.fsh	2026-09-04 11:30:19
++++ /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig2/target/input/fsh/valuesets/MII_VS_Consent_SignatureTypes.fsh	2026-09-04 11:24:41
+@@ -6,7 +6,7 @@
+ * ^extension.url = "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod"
+ * ^extension.valuePeriod.start = "2022-02-11T10:27:00+01:00"
+ * ^url = "https://www.medizininformatik-initiative.de/fhir/modul-consent/ValueSet/mii-vs-consent-signaturetypes"
+-* ^version = "1.0.1"
++* ^version = "2027.0.0-ballot.rc1"
+ * ^status = #active
+ * ^experimental = false
+ * ^date = "2025-12-03"
+### valuesets/MiiConsentPolicyValueSet.fsh
+--- /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig2/gofsh-release/input/fsh/valuesets/MiiConsentPolicyValueSet.fsh	2026-09-04 11:30:19
++++ /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig2/target/input/fsh/valuesets/MiiConsentPolicyValueSet.fsh	2026-09-04 11:24:41
+@@ -1,32 +1,36 @@
+ ValueSet: MiiConsentPolicyValueSet
+ Id: 2.16.840.1.113883.3.1937.777.24.11.36--20230331232804
+ Title: "MII Consent: Policy ValueSet"
+-Description: """**Disclaimer** 
+-
+- (Punkte übernommen aus der Policy Liste ([MII SharePoint, TF Consent Umsetzung](https://tmfev.sharepoint.com/:f:/r/sites/tmf/mi-i/Taskforce%20Consent%20Umsetzung/02_Dokumente/Policies?csf=1&web=1&e=C0xLim "")))
++Description: """
++
++**Disclaimer** 
++
++ (Punkte übernommen aus der Policy Liste ([MII SharePoint, TF Consent Umsetzung](https://tmfev.sharepoint.com/:f:/r/sites/tmf/mi-i/Taskforce%20Consent%20Umsetzung/02_Dokumente/Policies?csf=1&web=1&e=C0xLim "")))
+ 1. Diese Liste fasst erforderliche
+-                    Einwilligungsmodule und zugeordnete Einwilligungspolicies für die technische Abbildung der "MII Mustertexte Patienteneinwilligung" in den aktuell verfügbaren Versionen zusammen. 
+-2. Für die Abbildung der Policies im Art Decor werden ausschließlich die Spalten [Policybezeichner], [Bedeutung/Kontext] und [OID] verwendet. 
++                    Einwilligungsmodule und zugeordnete Einwilligungspolicies für die technische Abbildung der "MII Mustertexte Patienteneinwilligung" in den aktuell verfügbaren Versionen zusammen. 
++2. Für die Abbildung der Policies im Art Decor werden ausschließlich die Spalten [Policybezeichner], [Bedeutung/Kontext] und [OID] verwendet. 
+ 3. Die Formulierung in
+-                    der Spalte [Bedeutung/Kontext] dient ausschließlich administrativen Zwecken und der Verständnisbildung für die jeweilige Policy. 
+-4. Eine Darstellung der jeweiligen Formulierung innerhalb von Formularen oder digitalen Einwilligungsdokumenten ist nicht intendiert. 
++                    der Spalte [Bedeutung/Kontext] dient ausschließlich administrativen Zwecken und der Verständnisbildung für die jeweilige Policy. 
++4. Eine Darstellung der jeweiligen Formulierung innerhalb von Formularen oder digitalen Einwilligungsdokumenten ist nicht intendiert. 
+ 5. Die Spalte [Weitere Hinweise Enforcement-Seite] nennt zusätzliche
+-                    Randbedingungen, die auf der datenverarbeitenden Seite über die reine Einwilligungsinformation hinaus zu berücksichtigen sind. Die Gewährleistung der Einhaltung dieser weiteren Hinweise geht über den Wirkungsraum der Task Force Consent Umsetzung hinaus. 
+-
+- **Hinweis 1 - Verwendung in FHIR:** Siehe [Implementation Guide](https://ig.fhir.de/einwilligungsmanagement/stable/Consent.html "consent.provision Hierarchie ist noch in Arbeit").  
+-
+- **Hinweis 2 - Verwendung in IHE BPPC:** 
+-Um die in diesem ValueSet enthaltenen Codes in IHE BPPC verwenden zu können, ist eine Kombination mit dem [MII Consent: Answer ValueSet](https://art-decor.org/art-decor/decor-valuesets--mide-?id=2.16.840.1.113883.3.1937.777.24.11.30&effectiveDate=2021-03-23T23:45:09&language=de-DE "") möglich (evtl. sogar erforderlich).  
+-
+-  Beispiel 1:  
+-
++                    Randbedingungen, die auf der datenverarbeitenden Seite über die reine Einwilligungsinformation hinaus zu berücksichtigen sind. Die Gewährleistung der Einhaltung dieser weiteren Hinweise geht über den Wirkungsraum der Task Force Consent Umsetzung hinaus. 
++
++ **Hinweis 1 - Verwendung in FHIR:** Siehe [Implementation Guide](https://ig.fhir.de/einwilligungsmanagement/stable/Consent.html "consent.provision Hierarchie ist noch in Arbeit").  
++
++ **Hinweis 2 - Verwendung in IHE BPPC:** 
++Um die in diesem ValueSet enthaltenen Codes in IHE BPPC verwenden zu können, ist eine Kombination mit dem [MII Consent: Answer ValueSet](https://art-decor.org/art-decor/decor-valuesets--mide-?id=2.16.840.1.113883.3.1937.777.24.11.30&effectiveDate=2021-03-23T23:45:09&language=de-DE "") möglich (evtl. sogar erforderlich).  
++
++  Beispiel 1:  
++
+  Patient hat dem Erheben der IDAT (Policy: 2.16.840.1.113883.3.1937.777.24.5.3.2 "IDAT_erheben") zugestimmt:
+-                            2.16.840.1.113883.3.1937.777.24.5.3.2**.1** (.1 wird aus dem [MII Consent: Answer ValueSet](https://art-decor.org/art-decor/decor-valuesets--mide-?id=2.16.840.1.113883.3.1937.777.24.11.30&effectiveDate=2021-03-23T23:45:09&language=de-DE "") angehängt)  
+-
+- Beispiel 2:  
+-
++                            2.16.840.1.113883.3.1937.777.24.5.3.2**.1** (.1 wird aus dem [MII Consent: Answer ValueSet](https://art-decor.org/art-decor/decor-valuesets--mide-?id=2.16.840.1.113883.3.1937.777.24.11.30&effectiveDate=2021-03-23T23:45:09&language=de-DE "") angehängt)  
++
++ Beispiel 2:  
++
+  2.16.840.1.113883.3.1937.777.24.5.3.4.2
+-                    bedeutet, dass der Patient der Policy IDAT_zusammenfuehren_Dritte nicht zugestimmt hat."""
++                    bedeutet, dass der Patient der Policy IDAT_zusammenfuehren_Dritte nicht zugestimmt hat.
++
++"""
+ * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablevalueset"
+ * ^extension.url = "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod"
+ * ^extension.valuePeriod.start = "2023-03-31T23:28:04+02:00"
+@@ -34,7 +38,7 @@
+ * ^identifier.use = #official
+ * ^identifier.system = "urn:ietf:rfc:3986"
+ * ^identifier.value = "urn:oid:2.16.840.1.113883.3.1937.777.24.11.36"
+-* ^version = "1.0.3"
++* ^version = "2027.0.0-ballot.rc1"
+ * ^status = #active
+ * ^experimental = false
+ * ^publisher = "MII Task Force Consent Umsetzung"
+### instances/34150a23-b1c8-404f-874f-e042a30435d2.fsh
+--- /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig2/gofsh-release/input/fsh/instances/34150a23-b1c8-404f-874f-e042a30435d2.fsh	2026-09-04 11:30:19
++++ /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig2/target/input/fsh/instances/34150a23-b1c8-404f-874f-e042a30435d2.fsh	2026-09-04 11:24:41
+@@ -1,49 +1,78 @@
+ Instance: 34150a23-b1c8-404f-874f-e042a30435d2
+-InstanceOf: MII_PR_Consent_Einwilligung
++InstanceOf: Consent
+ Usage: #example
++* meta.profile = "https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-einwilligung"
+ * meta.lastUpdated = "2020-12-11T09:39:07+00:00"
+ * extension.extension[0].url = "domain"
+-* extension.extension[=].valueReference = Reference(ResearchStudy/d7a65ce8-2810-401a-b0db-70782a7b19a6)
++* extension.extension[=].valueReference.reference = "ResearchStudy/d7a65ce8-2810-401a-b0db-70782a7b19a6"
+ * extension.extension[+].url = "status"
+ * extension.extension[=].valueCoding = $publication-status#active
+ * extension.url = "http://fhir.de/ConsentManagement/StructureDefinition/DomainReference"
++// fhir_comments (source XML comment on extension.fhir_comments): " Verweis auf die zugehörige Domain (hier: Studie) "
+ * status = #active
++// fhir_comments (source XML comment on status.fhir_comments): " Finalisierungsstatus "
+ * scope = $consentscope#research
++// fhir_comments (source XML comment on scope.fhir_comments): " Einwilligung zur Verwendung, hier: in der Forschung "
+ * category[0] = $loinc#57016-8
+-* category[+] = MIIConsentVersionModuleCodeSystem#2.16.840.1.113883.3.1937.777.24.2.184
++// fhir_comments (source XML comment on category[=].fhir_comments): " Consent-Kategorie, hier: Einwilligung "
++* category[+] = $mii-cs-consent-version-modules#2.16.840.1.113883.3.1937.777.24.2.184
++// fhir_comments (source XML comment on category[=].fhir_comments): " MII Broad Consent "
+ * category[+] = $ResultType#document
++// fhir_comments (source XML comment on category[=].fhir_comments): " Consent-Kategorie resultType, hier: Dokument "
+ * category[+] = $TemplateType#CONSENT-OPT-IN
+-* patient = Reference(Patient/9b4a702d-162c-428a-8c5d-8b98af21b693)
++// fhir_comments (source XML comment on category[=].fhir_comments): " Consent-Kategorie bezogen auf das ValueSet 'ConsentManagementTemplateType', hier: Einwilligung "
++* patient.reference = "Patient/9b4a702d-162c-428a-8c5d-8b98af21b693"
++// fhir_comments (source XML comment on patient.fhir_comments): " Patient, für den die Einwilligungserklärung gilt "
+ * dateTime = "2020-09-01"
++// fhir_comments (source XML comment on dateTime.fhir_comments): " Zeitpunkt der Einwilligung "
+ * organization.display = "Klinikum Musterstadt"
++// fhir_comments (source XML comment on organization.display.fhir_comments): " hier kann bei Bedarf auch auf beliebige Organization-Ressourcen referenziert werden "
+ * policy.uri = "urn:oid:2.16.840.1.113883.3.1937.777.24.2.1791"
++// fhir_comments (source XML comment on policy.uri.fhir_comments): " z.B. MII Broad Consent Version 1.6f "
++// fhir_comments (source XML comment on policy.fhir_comments): " durch diesen Consent geltende Policy/Policies bzw Module"
+ * policyRule.extension.url = "http://fhir.de/ConsentManagement/StructureDefinition/Xacml"
+ * policyRule.extension.valueBase64Binary = "TUlJIEJDIEV4YW1wbGUgWEFDTUw="
+ * policyRule.text = "siehe eingebettetes XACML"
++// fhir_comments (source XML comment on policyRule.fhir_comments): " XacML-Repräsentation "
+ * provision.type = #deny
++// fhir_comments (source XML comment on provision.type.fhir_comments): " per default ist alles verweigert. was nicht in den Unterelementen erlaubt ist "
+ * provision.period.start = "2020-09-01"
+ * provision.period.end = "2050-08-31"
++// fhir_comments (source XML comment on provision.period.fhir_comments): " längster Zeitraum der Gültigkeit "
+ * provision.provision[0].type = #permit
++// fhir_comments (source XML comment on provision.provision[=].type.fhir_comments): " ergibt sich aus der Antwort \"PATDAT erheben speichern nutzen=gültig\" (Teil 1) "
+ * provision.provision[=].period.start = "2020-09-01"
+ * provision.provision[=].period.end = "2025-08-31"
+-* provision.provision[=].code = MII CS Consent Policy#2.16.840.1.113883.3.1937.777.24.5.3.6 "MDAT erheben"
++// fhir_comments (source XML comment on provision.provision[=].period.fhir_comments): " Medizinische Daten erheben: 5 Jahre gültig "
++* provision.provision[=].code = MII_CS_Consent_Policy#2.16.840.1.113883.3.1937.777.24.5.3.6 "MDAT erheben"
+ * provision.provision[+].type = #permit
++// fhir_comments (source XML comment on provision.provision[=].type.fhir_comments): " ergibt sich aus der Antwort \"PATDAT erheben speichern nutzen=gültig\" (Teil 2) "
+ * provision.provision[=].period.start = "2020-09-01"
+ * provision.provision[=].period.end = "2050-08-31"
+-* provision.provision[=].code = MII CS Consent Policy#2.16.840.1.113883.3.1937.777.24.5.3.7 "MDAT speichern verarbeiten"
++// fhir_comments (source XML comment on provision.provision[=].period.fhir_comments): " Medizinische Daten speichern: 30 Jahre gültig "
++* provision.provision[=].code = MII_CS_Consent_Policy#2.16.840.1.113883.3.1937.777.24.5.3.7 "MDAT speichern, verarbeiten"
+ * provision.provision[+].type = #permit
++// fhir_comments (source XML comment on provision.provision[=].type.fhir_comments): " ergibt sich aus der Antwort \"PATDAT erheben speichern nutzen=gültig\" (Teil 3) "
+ * provision.provision[=].period.start = "2020-09-01"
+ * provision.provision[=].period.end = "2050-08-31"
+-* provision.provision[=].code = MII CS Consent Policy#2.16.840.1.113883.3.1937.777.24.5.3.8 "MDAT wissenschaftlich nutzen EU DSGVO NIVEAU"
++// fhir_comments (source XML comment on provision.provision[=].period.fhir_comments): " Medizinische Daten nutzen: 30 Jahre gültig "
++* provision.provision[=].code = MII_CS_Consent_Policy#2.16.840.1.113883.3.1937.777.24.5.3.8 "MDAT wissenschaftlich nutzen"
+ * provision.provision[+].type = #permit
++// fhir_comments (source XML comment on provision.provision[=].type.fhir_comments): " ergibt sich aus der Antwort \"BIOMAT gewinnen lagern nutzen=gültig\" (Teil 1) "
+ * provision.provision[=].period.start = "2020-09-01"
+ * provision.provision[=].period.end = "2025-08-31"
+-* provision.provision[=].code = MII CS Consent Policy#2.16.840.1.113883.3.1937.777.24.5.3.19 "BIOMAT erheben"
++// fhir_comments (source XML comment on provision.provision[=].period.fhir_comments): " Biomaterial gewinnen: 5 Jahre gültig "
++* provision.provision[=].code = MII_CS_Consent_Policy#2.16.840.1.113883.3.1937.777.24.5.3.19 "BIOMAT erheben"
+ * provision.provision[+].type = #permit
++// fhir_comments (source XML comment on provision.provision[=].type.fhir_comments): " ergibt sich aus der Antwort \"BIOMAT gewinnen lagern nutzen=gültig\" (Teil 2) "
+ * provision.provision[=].period.start = "2020-09-01"
+ * provision.provision[=].period.end = "2050-08-31"
+-* provision.provision[=].code = MII CS Consent Policy#2.16.840.1.113883.3.1937.777.24.5.3.20 "BIOMAT lagern verarbeiten"
++// fhir_comments (source XML comment on provision.provision[=].period.fhir_comments): " Biomaterial lagern: 30 Jahre gültig "
++* provision.provision[=].code = MII_CS_Consent_Policy#2.16.840.1.113883.3.1937.777.24.5.3.20 "BIOMAT lagern verarbeiten"
+ * provision.provision[+].type = #permit
++// fhir_comments (source XML comment on provision.provision[=].type.fhir_comments): " ergibt sich aus der Antwort \"BIOMAT gewinnen lagern nutzen=gültig\" (Teil 3) "
+ * provision.provision[=].period.start = "2020-09-01"
+ * provision.provision[=].period.end = "2050-08-31"
+-* provision.provision[=].code = MII CS Consent Policy#2.16.840.1.113883.3.1937.777.24.5.3.22 "BIOMAT wissenschaftlich nutzen EU DSGVO NIVEAU"
+\ No newline at end of file
++// fhir_comments (source XML comment on provision.provision[=].period.fhir_comments): " Biomaterial nutzen: 30 Jahre gültig "
++* provision.provision[=].code = MII_CS_Consent_Policy#2.16.840.1.113883.3.1937.777.24.5.3.22 "BIOMAT wissenschaftlich nutzen"
++// fhir_comments (source XML comment on provision.fhir_comments): " In diesem Beispiel repräsentiert jede Provision eine Frage/Antwort bzw. Teilaussage einer Frage/Antwort in der Einwilligungserklärung eines Patienten. "
+\ No newline at end of file
+### instances/5143266b-8d60-4b28-8ee9-635140ffa5bb.fsh
+--- /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig2/gofsh-release/input/fsh/instances/5143266b-8d60-4b28-8ee9-635140ffa5bb.fsh	2026-09-04 11:30:19
++++ /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig2/target/input/fsh/instances/5143266b-8d60-4b28-8ee9-635140ffa5bb.fsh	2026-09-04 11:24:41
+@@ -1,9 +1,10 @@
+ Instance: 5143266b-8d60-4b28-8ee9-635140ffa5bb
+-InstanceOf: MII_PR_Consent_Einwilligung
++InstanceOf: Consent
+ Usage: #example
++* meta.profile = "https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-einwilligung"
+ * meta.lastUpdated = "2025-12-04T15:34:40.067+01:00"
+ * extension.extension[0].url = "domain"
+-* extension.extension[=].valueReference = Reference(ResearchStudy/c946ae17-e3e6-4178-b5ea-15f95aaeeeb4)
++* extension.extension[=].valueReference.reference = "ResearchStudy/c946ae17-e3e6-4178-b5ea-15f95aaeeeb4"
+ * extension.extension[+].url = "status"
+ * extension.extension[=].valueCoding = $publication-status#active
+ * extension.url = "http://fhir.de/ConsentManagement/StructureDefinition/DomainReference"
+@@ -11,8 +12,8 @@
+ * scope = $consentscope#research
+ * category[0] = $loinc#57016-8
+ * category[+] = $ResultType#consent-status
+-* category[+] = MIIConsentVersionModuleCodeSystem#2.16.840.1.113883.3.1937.777.24.2.184
+-* patient = Reference(Patient/531cef77-2a30-4283-944d-affaf9ae234e)
++* category[+] = $mii-cs-consent-version-modules#2.16.840.1.113883.3.1937.777.24.2.184
++* patient.reference = "Patient/531cef77-2a30-4283-944d-affaf9ae234e"
+ * dateTime = "2025-12-04T15:34:40+01:00"
+ * organization.display = "MII"
+ * policy.uri = "2.16.840.1.113883.3.1937.777.24.2.184"
+@@ -22,108 +23,108 @@
+ * provision.provision[0].type = #deny
+ * provision.provision[=].period.start = "2022-01-31T23:00:00+01:00"
+ * provision.provision[=].period.end = "3000-01-01T00:00:00+01:00"
+-* provision.provision[=].code = MII CS Consent Policy#2.16.840.1.113883.3.1937.777.24.5.3.2 "IDAT erheben"
++* provision.provision[=].code = MII_CS_Consent_Policy#2.16.840.1.113883.3.1937.777.24.5.3.2 "IDAT erheben"
+ * provision.provision[+].type = #deny
+ * provision.provision[=].period.start = "2022-01-31T23:00:00+01:00"
+ * provision.provision[=].period.end = "3000-01-01T00:00:00+01:00"
+-* provision.provision[=].code = MII CS Consent Policy#2.16.840.1.113883.3.1937.777.24.5.3.12 "KKDAT 5J retrospektiv speichern verarbeiten"
++* provision.provision[=].code = MII_CS_Consent_Policy#2.16.840.1.113883.3.1937.777.24.5.3.12 "KKDAT 5J retrospektiv speichern verarbeiten"
+ * provision.provision[+].type = #deny
+ * provision.provision[=].period.start = "2022-01-31T23:00:00+01:00"
+ * provision.provision[=].period.end = "3000-01-01T00:00:00+01:00"
+-* provision.provision[=].code = MII CS Consent Policy#2.16.840.1.113883.3.1937.777.24.5.3.22 "BIOMAT wissenschaftlich nutzen EU DSGVO NIVEAU"
++* provision.provision[=].code = MII_CS_Consent_Policy#2.16.840.1.113883.3.1937.777.24.5.3.22 "BIOMAT wissenschaftlich nutzen"
+ * provision.provision[+].type = #deny
+ * provision.provision[=].period.start = "2022-01-31T23:00:00+01:00"
+ * provision.provision[=].period.end = "3000-01-01T00:00:00+01:00"
+-* provision.provision[=].code = MII CS Consent Policy#2.16.840.1.113883.3.1937.777.24.5.3.13 "KKDAT 5J retrospektiv wissenschaftlich nutzen"
++* provision.provision[=].code = MII_CS_Consent_Policy#2.16.840.1.113883.3.1937.777.24.5.3.13 "KKDAT 5J retrospektiv wissenschaftlich nutzen"
+ * provision.provision[+].type = #deny
+ * provision.provision[=].period.start = "2022-01-31T23:00:00+01:00"
+ * provision.provision[=].period.end = "3000-01-01T00:00:00+01:00"
+-* provision.provision[=].code = MII CS Consent Policy#2.16.840.1.113883.3.1937.777.24.5.3.23 "BIOMAT Analysedaten zusammenfuehren Dritte"
++* provision.provision[=].code = MII_CS_Consent_Policy#2.16.840.1.113883.3.1937.777.24.5.3.23 "BIOMAT Analysedaten zusammenfuehren Dritte"
+ * provision.provision[+].type = #deny
+ * provision.provision[=].period.start = "2022-01-31T23:00:00+01:00"
+ * provision.provision[=].period.end = "3000-01-01T00:00:00+01:00"
+-* provision.provision[=].code = MII CS Consent Policy#2.16.840.1.113883.3.1937.777.24.5.3.31 "Rekontaktierung Zusatzbefund"
++* provision.provision[=].code = MII_CS_Consent_Policy#2.16.840.1.113883.3.1937.777.24.5.3.31 "Rekontaktierung Zusatzbefund"
+ * provision.provision[+].type = #deny
+ * provision.provision[=].period.start = "2022-01-31T23:00:00+01:00"
+ * provision.provision[=].period.end = "3000-01-01T00:00:00+01:00"
+-* provision.provision[=].code = MII CS Consent Policy#2.16.840.1.113883.3.1937.777.24.5.3.17 "KKDAT 5J prospektiv wissenschaftlich nutzen"
++* provision.provision[=].code = MII_CS_Consent_Policy#2.16.840.1.113883.3.1937.777.24.5.3.17 "KKDAT 5J prospektiv wissenschaftlich nutzen"
+ * provision.provision[+].type = #deny
+ * provision.provision[=].period.start = "2022-01-31T23:00:00+01:00"
+ * provision.provision[=].period.end = "3000-01-01T00:00:00+01:00"
+-* provision.provision[=].code = MII CS Consent Policy#2.16.840.1.113883.3.1937.777.24.5.3.20 "BIOMAT lagern verarbeiten"
++* provision.provision[=].code = MII_CS_Consent_Policy#2.16.840.1.113883.3.1937.777.24.5.3.20 "BIOMAT lagern verarbeiten"
+ * provision.provision[+].type = #deny
+ * provision.provision[=].period.start = "2022-01-31T23:00:00+01:00"
+ * provision.provision[=].period.end = "3000-01-01T00:00:00+01:00"
+-* provision.provision[=].code = MII CS Consent Policy#2.16.840.1.113883.3.1937.777.24.5.3.11 "KKDAT 5J retrospektiv uebertragen"
++* provision.provision[=].code = MII_CS_Consent_Policy#2.16.840.1.113883.3.1937.777.24.5.3.11 "KKDAT 5J retrospektiv uebertragen"
+ * provision.provision[+].type = #deny
+ * provision.provision[=].period.start = "2022-01-31T23:00:00+01:00"
+ * provision.provision[=].period.end = "3000-01-01T00:00:00+01:00"
+-* provision.provision[=].code = MII CS Consent Policy#2.16.840.1.113883.3.1937.777.24.5.3.38 "KKDAT 5J retrospektiv uebertragen KVNR"
++* provision.provision[=].code = MII_CS_Consent_Policy#2.16.840.1.113883.3.1937.777.24.5.3.38 "KKDAT 5J retrospektiv uebertragen KVNR"
+ * provision.provision[+].type = #deny
+ * provision.provision[=].period.start = "2022-01-31T23:00:00+01:00"
+ * provision.provision[=].period.end = "3000-01-01T00:00:00+01:00"
+-* provision.provision[=].code = MII CS Consent Policy#2.16.840.1.113883.3.1937.777.24.5.3.6 "MDAT erheben"
++* provision.provision[=].code = MII_CS_Consent_Policy#2.16.840.1.113883.3.1937.777.24.5.3.6 "MDAT erheben"
+ * provision.provision[+].type = #deny
+ * provision.provision[=].period.start = "2022-01-31T23:00:00+01:00"
+ * provision.provision[=].period.end = "3000-01-01T00:00:00+01:00"
+-* provision.provision[=].code = MII CS Consent Policy#2.16.840.1.113883.3.1937.777.24.5.3.16 "KKDAT 5J prospektiv speichern verarbeiten"
++* provision.provision[=].code = MII_CS_Consent_Policy#2.16.840.1.113883.3.1937.777.24.5.3.16 "KKDAT 5J prospektiv speichern verarbeiten"
+ * provision.provision[+].type = #deny
+ * provision.provision[=].period.start = "2022-01-31T23:00:00+01:00"
+ * provision.provision[=].period.end = "3000-01-01T00:00:00+01:00"
+-* provision.provision[=].code = MII CS Consent Policy#2.16.840.1.113883.3.1937.777.24.5.3.8 "MDAT wissenschaftlich nutzen EU DSGVO NIVEAU"
++* provision.provision[=].code = MII_CS_Consent_Policy#2.16.840.1.113883.3.1937.777.24.5.3.8 "MDAT wissenschaftlich nutzen"
+ * provision.provision[+].type = #deny
+ * provision.provision[=].period.start = "2022-01-31T23:00:00+01:00"
+ * provision.provision[=].period.end = "3000-01-01T00:00:00+01:00"
+-* provision.provision[=].code = MII CS Consent Policy#2.16.840.1.113883.3.1937.777.24.5.3.27 "Rekontaktierung Verknüpfung Datenbanken"
++* provision.provision[=].code = MII_CS_Consent_Policy#2.16.840.1.113883.3.1937.777.24.5.3.27 "Rekontaktierung Verknüpfung Datenbanken"
+ * provision.provision[+].type = #deny
+ * provision.provision[=].period.start = "2022-01-31T23:00:00+01:00"
+ * provision.provision[=].period.end = "3000-01-01T00:00:00+01:00"
+-* provision.provision[=].code = MII CS Consent Policy#2.16.840.1.113883.3.1937.777.24.5.3.29 "Rekontaktierung weitere Studien"
++* provision.provision[=].code = MII_CS_Consent_Policy#2.16.840.1.113883.3.1937.777.24.5.3.29 "Rekontaktierung weitere Studien"
+ * provision.provision[+].type = #deny
+ * provision.provision[=].period.start = "2022-01-31T23:00:00+01:00"
+ * provision.provision[=].period.end = "3000-01-01T00:00:00+01:00"
+-* provision.provision[=].code = MII CS Consent Policy#2.16.840.1.113883.3.1937.777.24.5.3.5 "IDAT bereitstellen EU DSGVO NIVEAU"
++* provision.provision[=].code = MII_CS_Consent_Policy#2.16.840.1.113883.3.1937.777.24.5.3.5 "IDAT bereitstellen "
+ * provision.provision[+].type = #deny
+ * provision.provision[=].period.start = "2022-01-31T23:00:00+01:00"
+ * provision.provision[=].period.end = "3000-01-01T00:00:00+01:00"
+-* provision.provision[=].code = MII CS Consent Policy#2.16.840.1.113883.3.1937.777.24.5.3.21 "BIOMAT Eigentum übertragen"
++* provision.provision[=].code = MII_CS_Consent_Policy#2.16.840.1.113883.3.1937.777.24.5.3.21 "BIOMAT Eigentum übertragen"
+ * provision.provision[+].type = #deny
+ * provision.provision[=].period.start = "2022-01-31T23:00:00+01:00"
+ * provision.provision[=].period.end = "3000-01-01T00:00:00+01:00"
+-* provision.provision[=].code = MII CS Consent Policy#2.16.840.1.113883.3.1937.777.24.5.3.3 "IDAT speichern, verarbeiten"
++* provision.provision[=].code = MII_CS_Consent_Policy#2.16.840.1.113883.3.1937.777.24.5.3.3 "IDAT speichern, verarbeiten"
+ * provision.provision[+].type = #deny
+ * provision.provision[=].period.start = "2022-01-31T23:00:00+01:00"
+ * provision.provision[=].period.end = "3000-01-01T00:00:00+01:00"
+-* provision.provision[=].code = MII CS Consent Policy#2.16.840.1.113883.3.1937.777.24.5.3.7 "MDAT speichern, verarbeiten"
++* provision.provision[=].code = MII_CS_Consent_Policy#2.16.840.1.113883.3.1937.777.24.5.3.7 "MDAT speichern, verarbeiten"
+ * provision.provision[+].type = #deny
+ * provision.provision[=].period.start = "2022-01-31T23:00:00+01:00"
+ * provision.provision[=].period.end = "3000-01-01T00:00:00+01:00"
+-* provision.provision[=].code = MII CS Consent Policy#2.16.840.1.113883.3.1937.777.24.5.3.19 "BIOMAT erheben"
++* provision.provision[=].code = MII_CS_Consent_Policy#2.16.840.1.113883.3.1937.777.24.5.3.19 "BIOMAT erheben"
+ * provision.provision[+].type = #deny
+ * provision.provision[=].period.start = "2022-01-31T23:00:00+01:00"
+ * provision.provision[=].period.end = "3000-01-01T00:00:00+01:00"
+-* provision.provision[=].code = MII CS Consent Policy#2.16.840.1.113883.3.1937.777.24.5.3.37 "Rekontaktierung Ergebnisse erheblicher Bedeutung"
++* provision.provision[=].code = MII_CS_Consent_Policy#2.16.840.1.113883.3.1937.777.24.5.3.37 "Rekontaktierung Ergebnisse erheblicher Bedeutung"
+ * provision.provision[+].type = #deny
+ * provision.provision[=].period.start = "2022-01-31T23:00:00+01:00"
+ * provision.provision[=].period.end = "3000-01-01T00:00:00+01:00"
+-* provision.provision[=].code = MII CS Consent Policy#2.16.840.1.113883.3.1937.777.24.5.3.39 "KKDAT 5J prospektiv uebertragen KVNR"
++* provision.provision[=].code = MII_CS_Consent_Policy#2.16.840.1.113883.3.1937.777.24.5.3.39 "KKDAT 5J prospektiv uebertragen KVNR"
+ * provision.provision[+].type = #deny
+ * provision.provision[=].period.start = "2022-01-31T23:00:00+01:00"
+ * provision.provision[=].period.end = "3000-01-01T00:00:00+01:00"
+-* provision.provision[=].code = MII CS Consent Policy#2.16.840.1.113883.3.1937.777.24.5.3.25 "BIOMAT Zusatzmengen entnehmen"
++* provision.provision[=].code = MII_CS_Consent_Policy#2.16.840.1.113883.3.1937.777.24.5.3.25 "BIOMAT Zusatzmengen entnehmen"
+ * provision.provision[+].type = #deny
+ * provision.provision[=].period.start = "2022-01-31T23:00:00+01:00"
+ * provision.provision[=].period.end = "3000-01-01T00:00:00+01:00"
+-* provision.provision[=].code = MII CS Consent Policy#2.16.840.1.113883.3.1937.777.24.5.3.28 "Rekontaktierung weitere Erhebung"
++* provision.provision[=].code = MII_CS_Consent_Policy#2.16.840.1.113883.3.1937.777.24.5.3.28 "Rekontaktierung weitere Erhebung"
+ * provision.provision[+].type = #deny
+ * provision.provision[=].period.start = "2022-01-31T23:00:00+01:00"
+ * provision.provision[=].period.end = "3000-01-01T00:00:00+01:00"
+-* provision.provision[=].code = MII CS Consent Policy#2.16.840.1.113883.3.1937.777.24.5.3.4 "IDAT zusammenfuehren Dritte"
++* provision.provision[=].code = MII_CS_Consent_Policy#2.16.840.1.113883.3.1937.777.24.5.3.4 "IDAT zusammenfuehren Dritte"
+ * provision.provision[+].type = #deny
+ * provision.provision[=].period.start = "2022-01-31T23:00:00+01:00"
+ * provision.provision[=].period.end = "3000-01-01T00:00:00+01:00"
+-* provision.provision[=].code = MII CS Consent Policy#2.16.840.1.113883.3.1937.777.24.5.3.9 "MDAT zusammenfuehren Dritte"
++* provision.provision[=].code = MII_CS_Consent_Policy#2.16.840.1.113883.3.1937.777.24.5.3.9 "MDAT zusammenfuehren Dritte"
+ * provision.provision[+].type = #deny
+ * provision.provision[=].period.start = "2022-01-31T23:00:00+01:00"
+ * provision.provision[=].period.end = "3000-01-01T00:00:00+01:00"
+-* provision.provision[=].code = MII CS Consent Policy#2.16.840.1.113883.3.1937.777.24.5.3.15 "KKDAT 5J prospektiv uebertragen"
+\ No newline at end of file
++* provision.provision[=].code = MII_CS_Consent_Policy#2.16.840.1.113883.3.1937.777.24.5.3.15 "KKDAT 5J prospektiv uebertragen"
+\ No newline at end of file
+### instances/55219d12-6245-4de4-8b50-ddf6f16a789b.fsh
+--- /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig2/gofsh-release/input/fsh/instances/55219d12-6245-4de4-8b50-ddf6f16a789b.fsh	2026-09-04 11:30:19
++++ /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig2/target/input/fsh/instances/55219d12-6245-4de4-8b50-ddf6f16a789b.fsh	2026-09-04 11:24:41
+@@ -1,19 +1,28 @@
+ Instance: 55219d12-6245-4de4-8b50-ddf6f16a789b
+-InstanceOf: MII_PR_Consent_Provenance
++InstanceOf: Provenance
+ Usage: #example
++* meta.profile = "https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-provenance"
+ * meta.lastUpdated = "2021-02-08T14:21:07.5320994+00:00"
+-* target = Reference(34150a23-b1c8-404f-874f-e042a30435d2)
++* target.reference = "Consent/34150a23-b1c8-404f-874f-e042a30435d2"
++// fhir_comments (source XML comment on target.fhir_comments): "\n\t\tDiese Provenance gilt für den ausgefüllten Fragebogen (QuestionnaireResponse).\n\n\t\tSofern in der jeweiligen konkreten Implementierung keine Einwände bestehen\n\t\t(z.B. Datenschutz- oder anderes Recht) können auch aus dem QuestionnaireResponse\n\t\tabgeleitete Consent-Ressourcen hier als target referenziert werden.\n\t\tDies würde bedeuten, dass alle Signaturen (signature-Elemeent) auch für\n\t\tdiese Consent-Ressourcen gelten.\n\t"
+ * recorded = "2020-12-11T09:39:07+00:00"
++// fhir_comments (source XML comment on recorded.fhir_comments): " Zeitpunkt der Erfassung der Provenance (bzw. hier auch der bezogenen Ressourcen) "
+ * agent.type = $provenance-participant-type#assembler
+ * agent.who.display = "Snakeoil Soft Consent Manager 2021"
++// fhir_comments (source XML comment on agent.fhir_comments): " Software, die zur Verarbeitung verwendet wurde "
+ * entity.role = #source
+-* entity.what = Reference(8a3d1799-2463-405e-b49c-6a16c8692b01)
++* entity.what.reference = "DocumentReference/8a3d1799-2463-405e-b49c-6a16c8692b01"
++// fhir_comments (source XML comment on entity.fhir_comments): " Verweis auf die originale Informationsquelle, z.B. (gescanntes) Papierdokument "
+ * signature[0].type = urn:iso-astm:E1762-95:2013#1.2.840.10065.1.12.1.7 "Consent Signature"
+ * signature[=].when = "2020-12-11T09:39:07+00:00"
+-* signature[=].who = Reference(Patient/9b4a702d-162c-428a-8c5d-8b98af21b693)
++* signature[=].who.reference = "Patient/9b4a702d-162c-428a-8c5d-8b98af21b693"
+ * signature[=].data = "RGllcyBpc3QgZWluIFBsYXR6aGFsdGVyIGbDvHIgZWluZSBnZXNjYW5udCB1bmQgQmFzZTY0LWVuY29kaWVydGUgVW50ZXJzY2hyaWZ0Lg=="
++// fhir_comments (source XML comment on signature[=].data.fhir_comments): " [base64-codiert, z.B. Scan der Unterschrift] "
++// fhir_comments (source XML comment on signature[=].fhir_comments): " Unterschrift des Patienten "
+ * signature[+].type = urn:iso-astm:E1762-95:2013#1.2.840.10065.1.12.1.11 "Consent Witness Signature"
+ * signature[=].when = "2020-12-11T09:39:07+00:00"
+ * signature[=].who.display = "Dr. F. Müller"
+ * signature[=].onBehalfOf.display = "Krankenhaus Musterstadt"
+-* signature[=].data = "QUcgRVdFIEZISVIgcm9ja3M="
+\ No newline at end of file
++* signature[=].data = "QUcgRVdFIEZISVIgcm9ja3M="
++// fhir_comments (source XML comment on signature[=].data.fhir_comments): " [base64-codiert, z.B. Scan der Unterschrift] "
++// fhir_comments (source XML comment on signature[=].fhir_comments): " Unterschrift des aufklärenden Arztes "
+\ No newline at end of file
+### instances/89f494a3-cd75-44f5-a78a-581dfdd47a94.fsh
+--- /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig2/gofsh-release/input/fsh/instances/89f494a3-cd75-44f5-a78a-581dfdd47a94.fsh	2026-09-04 11:30:19
++++ /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig2/target/input/fsh/instances/89f494a3-cd75-44f5-a78a-581dfdd47a94.fsh	2026-09-04 11:24:41
+@@ -1,7 +1,8 @@
+ Instance: 89f494a3-cd75-44f5-a78a-581dfdd47a94
+-InstanceOf: MII_PR_Consent_Einwilligung
++InstanceOf: Consent
+ Usage: #example
+ * meta.lastUpdated = "2020-12-11T09:39:07+00:00"
++* meta.profile = "https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-einwilligung"
+ * extension.extension[0].url = "domain"
+ * extension.extension[=].valueReference = Reference(ResearchStudy/d7a65ce8-2810-401a-b0db-70782a7b19a6)
+ * extension.extension[+].url = "status"
+@@ -10,7 +11,7 @@
+ * status = #active
+ * scope = $consentscope#research
+ * category[0] = $loinc#57016-8
+-* category[+] = $mii-cs-consent-consent_category#2.16.840.1.113883.3.1937.777.24.2.184
++* category[+] = $mii-cs-consent-version-modules#2.16.840.1.113883.3.1937.777.24.2.184
+ * category[+] = $ResultType#document
+ * category[+] = $TemplateType#CONSENT-OPT-IN
+ * patient = Reference(Patient/9b4a702d-162c-428a-8c5d-8b98af21b693)
+@@ -26,15 +27,15 @@
+ * provision.provision[0].type = #permit
+ * provision.provision[=].period.start = "2020-09-01"
+ * provision.provision[=].period.end = "2025-08-31"
+-* provision.provision[=].code[0] = MII CS Consent Policy#2.16.840.1.113883.3.1937.777.24.5.3.6 "MDAT_erheben"
+-* provision.provision[=].code[+] = MII CS Consent Policy#2.16.840.1.113883.3.1937.777.24.5.3.7 "MDAT_speichern_verarbeiten"
+-* provision.provision[=].code[+] = MII CS Consent Policy#2.16.840.1.113883.3.1937.777.24.5.3.19 "BIOMAT_erheben"
++* provision.provision[=].code[0] = urn:oid:2.16.840.1.113883.3.1937.777.24.5.3#2.16.840.1.113883.3.1937.777.24.5.3.6 "MDAT erheben"
++* provision.provision[=].code[+] = urn:oid:2.16.840.1.113883.3.1937.777.24.5.3#2.16.840.1.113883.3.1937.777.24.5.3.7 "MDAT speichern, verarbeiten"
++* provision.provision[=].code[+] = urn:oid:2.16.840.1.113883.3.1937.777.24.5.3#2.16.840.1.113883.3.1937.777.24.5.3.19 "BIOMAT erheben"
+ * provision.provision[+].type = #permit
+ * provision.provision[=].period.start = "2020-09-01"
+ * provision.provision[=].period.end = "2050-08-31"
+-* provision.provision[=].code = MII CS Consent Policy#2.16.840.1.113883.3.1937.777.24.5.3.8 "MDAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU"
++* provision.provision[=].code = urn:oid:2.16.840.1.113883.3.1937.777.24.5.3#2.16.840.1.113883.3.1937.777.24.5.3.8 "MDAT wissenschaftlich nutzen"
+ * provision.provision[+].type = #permit
+ * provision.provision[=].period.start = "2020-09-01"
+ * provision.provision[=].period.end = "2050-08-31"
+-* provision.provision[=].code[0] = MII CS Consent Policy#2.16.840.1.113883.3.1937.777.24.5.3.20 "BIOMAT_lagern_verarbeiten"
+-* provision.provision[=].code[+] = MII CS Consent Policy#2.16.840.1.113883.3.1937.777.24.5.3.22 "BIOMAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU"
+\ No newline at end of file
++* provision.provision[=].code[0] = urn:oid:2.16.840.1.113883.3.1937.777.24.5.3#2.16.840.1.113883.3.1937.777.24.5.3.20 "BIOMAT lagern verarbeiten"
++* provision.provision[=].code[+] = urn:oid:2.16.840.1.113883.3.1937.777.24.5.3#2.16.840.1.113883.3.1937.777.24.5.3.22 "BIOMAT wissenschaftlich nutzen"
+\ No newline at end of file
+### instances/8a3d1799-2463-405e-b49c-6a16c8692b01.fsh
+--- /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig2/gofsh-release/input/fsh/instances/8a3d1799-2463-405e-b49c-6a16c8692b01.fsh	2026-09-04 11:30:19
++++ /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig2/target/input/fsh/instances/8a3d1799-2463-405e-b49c-6a16c8692b01.fsh	2026-09-04 11:24:41
+@@ -1,8 +1,12 @@
+ Instance: 8a3d1799-2463-405e-b49c-6a16c8692b01
+-InstanceOf: MII_PR_Consent_DocumentReference
++InstanceOf: DocumentReference
+ Usage: #example
++* meta.profile = "https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-documentreference"
+ * meta.lastUpdated = "2020-12-11T09:09:07.5320994+00:00"
+ * status = #current
+-* subject = Reference(Patient/9b4a702d-162c-428a-8c5d-8b98af21b693)
++// fhir_comments (source XML comment on status.fhir_comments): " FHIR will es "
++* subject.reference = "Patient/9b4a702d-162c-428a-8c5d-8b98af21b693"
++// fhir_comments (source XML comment on subject.reference.fhir_comments): " literale Referenz auf den Patienten "
++// fhir_comments (source XML comment on subject.fhir_comments): " Das vom Patienten ausgefüllte Original-(Papier-)Dokument; in diesem Beispiel ist kein valides base64 enthalten "
+ * content.attachment.contentType = #application/pdf
+ * content.attachment.data = "YmFzZTY0Q29kaWVydGVzUERGRGVzVW50ZXJzY2hyaWViZW5lblBhdGllbnRlbkVpbndpbGxpZ3VuZ3Nib2dlbnM="
+\ No newline at end of file
+### instances/Example-MII-Consent-ResultType-document.fsh
+--- /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig2/gofsh-release/input/fsh/instances/Example-MII-Consent-ResultType-document.fsh	2026-09-04 11:30:19
++++ /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig2/target/input/fsh/instances/Example-MII-Consent-ResultType-document.fsh	2026-09-04 11:24:41
+@@ -1,40 +1,55 @@
+ Instance: Example-MII-Consent-ResultType-document
+-InstanceOf: MII_PR_Consent_Einwilligung
++InstanceOf: Consent
+ Usage: #example
++* meta.profile = "https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-einwilligung"
+ * meta.lastUpdated = "2020-12-11T09:39:07+00:00"
+ * extension.extension[0].url = "domain"
+-* extension.extension[=].valueReference = Reference(ResearchStudy/d7a65ce8-2810-401a-b0db-70782a7b19a6)
++* extension.extension[=].valueReference.reference = "ResearchStudy/d7a65ce8-2810-401a-b0db-70782a7b19a6"
+ * extension.extension[+].url = "status"
+ * extension.extension[=].valueCoding = $publication-status#active
+ * extension.url = "http://fhir.de/ConsentManagement/StructureDefinition/DomainReference"
++// fhir_comments (source XML comment on extension.fhir_comments): " Verweis auf die zugehörige Domain (hier: Studie) "
+ * status = #active
++// fhir_comments (source XML comment on status.fhir_comments): " Finalisierungsstatus "
+ * scope = $consentscope#research
++// fhir_comments (source XML comment on scope.fhir_comments): " Einwilligung zur Verwendung, hier: in der Forschung "
+ * category[0] = $loinc#57016-8
+-* category[+] = MIIConsentVersionModuleCodeSystem#2.16.840.1.113883.3.1937.777.24.2.184
++// fhir_comments (source XML comment on category[=].fhir_comments): " Consent-Kategorie, hier: Einwilligung "
++* category[+] = $mii-cs-consent-version-modules#2.16.840.1.113883.3.1937.777.24.2.184
++// fhir_comments (source XML comment on category[=].fhir_comments): " MII Broad Consent "
+ * category[+] = $ResultType#document
++// fhir_comments (source XML comment on category[=].fhir_comments): " Consent-Kategorie resultType, hier: Dokument "
+ * category[+] = $TemplateType#CONSENT-OPT-IN
+-* patient = Reference(Patient/9b4a702d-162c-428a-8c5d-8b98af21b693)
++// fhir_comments (source XML comment on category[=].fhir_comments): " Consent-Kategorie bezogen auf das ValueSet 'ConsentManagementTemplateType', hier: Einwilligung "
++* patient.reference = "Patient/9b4a702d-162c-428a-8c5d-8b98af21b693"
++// fhir_comments (source XML comment on patient.fhir_comments): " Patient, für den die Einwilligungserklärung gilt "
+ * dateTime = "2020-09-01"
++// fhir_comments (source XML comment on dateTime.fhir_comments): " Zeitpunkt der Einwilligung "
+ * organization.display = "Klinikum Musterstadt"
++// fhir_comments (source XML comment on organization.display.fhir_comments): " hier kann bei Bedarf auch auf beliebige Organization-Ressourcen referenziert werden "
+ * policy.uri = "urn:oid:2.16.840.1.113883.3.1937.777.24.2.1791"
++// fhir_comments (source XML comment on policy.uri.fhir_comments): " z.B. MII Broad Consent Version 1.6f "
++// fhir_comments (source XML comment on policy.fhir_comments): " durch diesen Consent geltende Policy/Policies bzw Module"
+ * policyRule.extension.url = "http://fhir.de/ConsentManagement/StructureDefinition/Xacml"
+ * policyRule.extension.valueBase64Binary = "TUlJIEJDIEV4YW1wbGUgWEFDTUw="
+ * policyRule.text = "siehe eingebettetes XACML"
++// fhir_comments (source XML comment on policyRule.fhir_comments): " XacML-Repräsentation "
+ * provision.type = #deny
+ * provision.period.start = "2020-09-01"
+ * provision.period.end = "2050-08-31"
+ * provision.provision[0].type = #permit
+ * provision.provision[=].period.start = "2020-09-01"
+ * provision.provision[=].period.end = "2025-08-31"
+-* provision.provision[=].code[0] = MII CS Consent Policy#2.16.840.1.113883.3.1937.777.24.5.3.6 "MDAT_erheben"
+-* provision.provision[=].code[+] = MII CS Consent Policy#2.16.840.1.113883.3.1937.777.24.5.3.7 "MDAT_speichern_verarbeiten"
+-* provision.provision[=].code[+] = MII CS Consent Policy#2.16.840.1.113883.3.1937.777.24.5.3.19 "BIOMAT_erheben"
++* provision.provision[=].code[0] = MII_CS_Consent_Policy#2.16.840.1.113883.3.1937.777.24.5.3.6 "MDAT erheben"
++* provision.provision[=].code[+] = MII_CS_Consent_Policy#2.16.840.1.113883.3.1937.777.24.5.3.7 "MDAT speichern, verarbeiten"
++* provision.provision[=].code[+] = MII_CS_Consent_Policy#2.16.840.1.113883.3.1937.777.24.5.3.19 "BIOMAT erheben"
+ * provision.provision[+].type = #permit
+ * provision.provision[=].period.start = "2020-09-01"
+ * provision.provision[=].period.end = "2050-08-31"
+-* provision.provision[=].code = MII CS Consent Policy#2.16.840.1.113883.3.1937.777.24.5.3.8 "MDAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU"
++* provision.provision[=].code = MII_CS_Consent_Policy#2.16.840.1.113883.3.1937.777.24.5.3.8 "MDAT wissenschaftlich nutzen"
+ * provision.provision[+].type = #permit
+ * provision.provision[=].period.start = "2020-09-01"
+ * provision.provision[=].period.end = "2050-08-31"
+-* provision.provision[=].code[0] = MII CS Consent Policy#2.16.840.1.113883.3.1937.777.24.5.3.20 "BIOMAT_lagern_verarbeiten"
+-* provision.provision[=].code[+] = MII CS Consent Policy#2.16.840.1.113883.3.1937.777.24.5.3.22 "BIOMAT_wissenschaftlich_nutzen_EU_DSGVO_NIVEAU"
+\ No newline at end of file
++* provision.provision[=].code[0] = MII_CS_Consent_Policy#2.16.840.1.113883.3.1937.777.24.5.3.20 "BIOMAT lagern verarbeiten"
++* provision.provision[=].code[+] = MII_CS_Consent_Policy#2.16.840.1.113883.3.1937.777.24.5.3.22 "BIOMAT wissenschaftlich nutzen"
++// fhir_comments (source XML comment on provision.fhir_comments): " In diesem Beispiel repräsentiert jede Provision eine Gruppe von Fragen/Antworten bzw. Teilaussagen mit gleichem Gültigkeitszeitraum. "
+\ No newline at end of file
+### instances/MII-SP-Consent-PolicyUri.fsh
+--- /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig2/gofsh-release/input/fsh/instances/MII-SP-Consent-PolicyUri.fsh	2026-09-04 11:30:19
++++ /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig2/target/input/fsh/instances/MII-SP-Consent-PolicyUri.fsh	2026-09-04 11:24:41
+@@ -1,8 +1,8 @@
+-Instance: MII-SP-Consent-PolicyUri
++Instance: mii-sp-consent-policyuri
+ InstanceOf: SearchParameter
+ Usage: #definition
+ * url = "https://www.medizininformatik-initiative.de/fhir/modul-consent/SearchParameter/mii-sp-consent-policyuri"
+-* version = "1.0.7"
++* version = "2027.0.0-ballot.rc1"
+ * name = "MII_SP_Consent_PolicyUri"
+ * status = #active
+ * date = "2023-05-09"
+### instances/MII-SP-Consent-ProvisionCode.fsh
+--- /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig2/gofsh-release/input/fsh/instances/MII-SP-Consent-ProvisionCode.fsh	2026-09-04 11:30:19
++++ /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig2/target/input/fsh/instances/MII-SP-Consent-ProvisionCode.fsh	2026-09-04 11:24:41
+@@ -1,8 +1,8 @@
+-Instance: MII-SP-Consent-ProvisionCode
++Instance: mii-sp-consent-provisioncode
+ InstanceOf: SearchParameter
+ Usage: #definition
+ * url = "https://www.medizininformatik-initiative.de/fhir/modul-consent/SearchParameter/mii-sp-consent-provisioncode"
+-* version = "1.0.7"
++* version = "2027.0.0-ballot.rc1"
+ * name = "MII_SP_Consent_ProvisionCode"
+ * status = #active
+ * date = "2023-05-09"
+### instances/MII-SP-Consent-ProvisionCodePeriod.fsh
+--- /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig2/gofsh-release/input/fsh/instances/MII-SP-Consent-ProvisionCodePeriod.fsh	2026-09-04 11:30:19
++++ /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig2/target/input/fsh/instances/MII-SP-Consent-ProvisionCodePeriod.fsh	2026-09-04 11:24:41
+@@ -1,8 +1,8 @@
+-Instance: MII-SP-Consent-ProvisionCodePeriod
++Instance: mii-sp-consent-provisioncodeperiod
+ InstanceOf: SearchParameter
+ Usage: #definition
+ * url = "https://www.medizininformatik-initiative.de/fhir/modul-consent/SearchParameter/mii-sp-consent-provisioncodeperiod"
+-* version = "1.0.7"
++* version = "2027.0.0-ballot.rc1"
+ * name = "MII_SP_Consent_ProvisionCodePeriod"
+ * status = #active
+ * date = "2023-05-09"
+### instances/MII-SP-Consent-ProvisionCodeType.fsh
+--- /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig2/gofsh-release/input/fsh/instances/MII-SP-Consent-ProvisionCodeType.fsh	2026-09-04 11:30:19
++++ /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig2/target/input/fsh/instances/MII-SP-Consent-ProvisionCodeType.fsh	2026-09-04 11:24:41
+@@ -1,8 +1,8 @@
+-Instance: MII-SP-Consent-ProvisionCodeType
++Instance: mii-sp-consent-provisioncodetype
+ InstanceOf: SearchParameter
+ Usage: #definition
+ * url = "https://www.medizininformatik-initiative.de/fhir/modul-consent/SearchParameter/mii-sp-consent-provisioncodetype"
+-* version = "1.0.7"
++* version = "2027.0.0-ballot.rc1"
+ * name = "MII_SP_Consent_ProvisionCodeType"
+ * status = #active
+ * date = "2023-05-09"
+### instances/MII-SP-Consent-ProvisionPeriod.fsh
+--- /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig2/gofsh-release/input/fsh/instances/MII-SP-Consent-ProvisionPeriod.fsh	2026-09-04 11:30:19
++++ /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig2/target/input/fsh/instances/MII-SP-Consent-ProvisionPeriod.fsh	2026-09-04 11:24:41
+@@ -1,8 +1,8 @@
+-Instance: MII-SP-Consent-ProvisionPeriod
++Instance: mii-sp-consent-provisionperiod
+ InstanceOf: SearchParameter
+ Usage: #definition
+ * url = "https://www.medizininformatik-initiative.de/fhir/modul-consent/SearchParameter/mii-sp-consent-provisionperiod"
+-* version = "1.0.7"
++* version = "2027.0.0-ballot.rc1"
+ * name = "MII_SP_Consent_ProvisionPeriod"
+ * status = #active
+ * date = "2023-05-09"
+### instances/MII-SP-Consent-ProvisionType.fsh
+--- /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig2/gofsh-release/input/fsh/instances/MII-SP-Consent-ProvisionType.fsh	2026-09-04 11:30:19
++++ /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig2/target/input/fsh/instances/MII-SP-Consent-ProvisionType.fsh	2026-09-04 11:24:41
+@@ -1,8 +1,8 @@
+-Instance: MII-SP-Consent-ProvisionType
++Instance: mii-sp-consent-provisiontype
+ InstanceOf: SearchParameter
+ Usage: #definition
+ * url = "https://www.medizininformatik-initiative.de/fhir/modul-consent/SearchParameter/mii-sp-consent-provisiontype"
+-* version = "1.0.7"
++* version = "2027.0.0-ballot.rc1"
+ * name = "MII_SP_Consent_ProvisionType"
+ * status = #active
+ * date = "2023-05-09"

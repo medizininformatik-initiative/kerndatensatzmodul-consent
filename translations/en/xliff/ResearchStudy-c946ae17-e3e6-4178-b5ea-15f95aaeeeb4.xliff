@@ -1,0 +1,36 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="de" target-language="en" id="ResearchStudy-c946ae17-e3e6-4178-b5ea-15f95aaeeeb4" original="Resource ResearchStudy-c946ae17-e3e6-4178-b5ea-15f95aaeeeb4" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="ResearchStudy-c946ae17-e3e6-4178-b5ea-15f95aaeeeb4" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Patient</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ResearchStudy-c946ae17-e3e6-4178-b5ea-15f95aaeeeb4" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Anonymous identifier</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ResearchStudy-c946ae17-e3e6-4178-b5ea-15f95aaeeeb4" resname="ResearchStudy.title">
+             <notes>
+               <note id="n1">ResearchStudy.title</note>
+             </notes>
+        <source>Synthetische MII-Einwilligungsstudie (Beispiel)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ResearchStudy-c946ae17-e3e6-4178-b5ea-15f95aaeeeb4" resname="ResearchStudy.description">
+             <notes>
+               <note id="n1">ResearchStudy.description</note>
+             </notes>
+        <source>Synthetische Einwilligungsdomäne, ausschließlich als Referenzziel der Beispiel-Ressourcen dieses Leitfadens.</source>
+        <target></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

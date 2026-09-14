@@ -1,0 +1,21 @@
+
+# Coding.display
+#: Coding.display
+msgid "Patient"
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Anonymous identifier"
+msgstr ""
+
+# ResearchStudy.title
+#: ResearchStudy.title
+msgid "Synthetische MII-Einwilligungsstudie (Beispiel)"
+msgstr ""
+
+# ResearchStudy.description
+#: ResearchStudy.description
+msgid "Synthetische Einwilligungsdomäne, ausschließlich als Referenzziel der Beispiel-Ressourcen dieses Leitfadens."
+msgstr ""
+

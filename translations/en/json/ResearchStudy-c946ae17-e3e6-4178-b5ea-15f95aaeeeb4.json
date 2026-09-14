@@ -1,0 +1,31 @@
+{
+  "id" : "ResearchStudy-c946ae17-e3e6-4178-b5ea-15f95aaeeeb4",
+  "baseLang" : "de",
+  "languages" : [{
+    "targetLang" : "en",
+    "entries" : [{
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "Patient",
+      "target" : null
+    },
+    {
+      "id" : "Coding.display",
+      "context" : "Coding.display",
+      "source" : "Anonymous identifier",
+      "target" : null
+    },
+    {
+      "id" : "ResearchStudy.title",
+      "context" : "ResearchStudy.title",
+      "source" : "Synthetische MII-Einwilligungsstudie (Beispiel)",
+      "target" : null
+    },
+    {
+      "id" : "ResearchStudy.description",
+      "context" : "ResearchStudy.description",
+      "source" : "Synthetische Einwilligungsdomäne, ausschließlich als Referenzziel der Beispiel-Ressourcen dieses Leitfadens.",
+      "target" : null
+    }]
+  }]
+}

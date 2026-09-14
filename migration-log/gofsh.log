@@ -1,0 +1,101 @@
+info  Starting goFSH v2.6.1 (implements FHIR Shorthand specification v2.0.0)
+info  Arguments:
+info    --dependency de.einwilligungsmanagement@2.0.2,hl7.fhir.r4.core@4.0.1
+info    --style file-per-definition
+info    --file-type json-and-xml
+info    --out /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/gofsh-out
+info    /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/recon/source-tag
+info  Using input directory: /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/recon/source-tag
+info  Using output directory: /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/gofsh-out
+info  Found 1 JSON file.
+info  Found 19 XML files.
+warn  Encountered 6 definition(s) that were missing an id. GoFSH created ids for the following:
+  - /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/recon/source-tag/searchparameters/SearchParameter_MII_Consent_Einwilligung_policyUri.xml (SearchParameter/MII-SP-Consent-PolicyUri)
+  - /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/recon/source-tag/searchparameters/SearchParameter_MII_Consent_Einwilligung_provisionCode.xml (SearchParameter/MII-SP-Consent-ProvisionCode)
+  - /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/recon/source-tag/searchparameters/SearchParameter_MII_Consent_Einwilligung_provisionPeriod.xml (SearchParameter/MII-SP-Consent-ProvisionPeriod)
+  - /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/recon/source-tag/searchparameters/SearchParameter_MII_Consent_Einwilligung_provisionProvisionCodePeriod.xml (SearchParameter/MII-SP-Consent-ProvisionCodePeriod)
+  - /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/recon/source-tag/searchparameters/SearchParameter_MII_Consent_Einwilligung_provisionProvisionCodeType.xml (SearchParameter/MII-SP-Consent-ProvisionCodeType)
+  - /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/recon/source-tag/searchparameters/SearchParameter_MII_Consent_Einwilligung_provisionType.xml (SearchParameter/MII-SP-Consent-ProvisionType)
+info  Loaded virtual package wild-fhir#1.0.0 with 20 resources
+info  Using FHIR Version 4.0.1
+info  Loaded virtual package sushi-r5forR4#1.0.0 with 7 resources
+info  Resolved hl7.fhir.uv.tools.r4#latest to concrete version 1.1.2
+info  Loaded hl7.fhir.uv.tools.r4#1.1.2 with 119 resources
+info  Resolved hl7.terminology.r4#latest to concrete version 7.3.0
+info  Loaded hl7.terminology.r4#7.3.0 with 4176 resources
+info  Attempting to download de.einwilligungsmanagement#2.0.2 from https://packages.fhir.org/de.einwilligungsmanagement/2.0.2
+info  Downloaded de.einwilligungsmanagement#2.0.2
+info  Cached de.einwilligungsmanagement#2.0.2 to /Users/marcel/.fhir/packages/de.einwilligungsmanagement#2.0.2
+info  Loaded de.einwilligungsmanagement#2.0.2 with 32 resources
+info  Loaded hl7.fhir.r4.core#4.0.1 with 4578 resources
+info  Resolved hl7.fhir.uv.extensions.r4#latest to concrete version 5.3.0
+info  Loaded hl7.fhir.uv.extensions.r4#5.3.0 with 885 resources
+info  Processing StructureDefinitions...
+info  Processed 3 StructureDefinitions             
+info  Processing CodeSystems...
+warn  CodeSystem with id 2.16.840.1.113883.3.1937.777.24.5.3--20251211153003 has name with whitespace (MII CS Consent Policy). Converting whitespace to underscores (MII_CS_Consent_Policy).
+info  Processed 3 CodeSystems                      
+info  Processing ValueSets...
+info  Processed 3 ValueSets                        
+info  Processing Instances...
+info  Processed 5 of 11 Instances...
+info  Processed 10 of 11 Instances...
+info  Processed 11 Instances                       
+info  Optimizing FSH definitions to follow best practices...
+info  Running optimizer simplify_obeys_rule_dot_paths: Simplify obeys rules by changing dot paths to empty paths.
+info  Running optimizer separate_concepts_with_caret_rules: Separate concepts in ValueSets from the same system if they also have caret rules.
+info  Running optimizer resolve_value_set_component_rule_urls: Replace URLs in value set component rules with their names or aliases
+info  Running optimizer resolve_value_set_caret_rule_urls: Replace URLs in value set caret rules with their names or aliases
+info  Running optimizer construct_inline_instance: Construct inline instances from groups of rules in a contained resource or a Bundle
+info  Running optimizer combine_coding_and_quantity_values: Combine separate caret and assignment rules that together form a Coding or Quantity value
+info  Running optimizer resolve_value_rule_system_urls_for_codes: Replace system URLs in code values in caret and assignment rules with their names or aliases
+info  Running optimizer resolve_instanceof_urls: Replace declared instanceOf URLs with their names or aliases
+info  Running optimizer simplify_instance_names: Simplify Instance names by removing the appended InstanceOf information from the name (where possible)
+info  Running optimizer add_reference_keyword_optimizer: Adds the "Reference" keyword to instances where applicable
+info  Running optimizer resolve_reference_assignments_optimizer: Resolves values in reference assignment rules if possible
+info  Running optimizer resolve_parent_urls: Replace declared parent URLs with their names or aliases
+info  Running optimizer resolve_only_rule_urls: Replace URLs in "only" rules with their names or aliases
+info  Running optimizer resolve_context_urls: Replace declared extension context URLs with their names or aliases
+info  Running optimizer resolve_binding_rule_urls: Replace URLs in binding rules with their names or aliases
+info  Running optimizer remove_publisher_derived_date_rules: Remove ^date rules that appear to be the result of the IG Publisher automatically setting a date
+info  Running optimizer remove_implied_zero_zero_card_rules: Remove value[x]/extension 0..0 rules that SUSHI automatically applies in Extension definitions
+info  Running optimizer remove_generated_text_rules: Remove rules on "text" which represent generated content.
+info  Running optimizer remove_extension_url_assignment_rules: Remove assignment rules on inline extension "url" paths since SUSHI automatically applies these
+info  Running optimizer remove_extension_slicing_rules: Remove standard extension slicing rules that SUSHI automatically applies to extension paths
+info  Running optimizer remove_default_resource_caret_rules_optimizer: Remove caret rules on a Resource that provide values that will be provided by default SUSHI behavior
+info  Running optimizer remove_default_logical_caret_rules_optimizer: Remove caret rules on a Logical that provide values that will be provided by default SUSHI behavior
+info  Running optimizer remove_default_extension_context_rules: Remove extension contexts matching the default context that SUSHI generates
+info  Running optimizer remove_choice_slicing_rules: Remove standard choice slicing rules that SUSHI automatically applies to choices
+info  Running optimizer construct_named_extension_contains_rules: Convert "extension contains" rules to use named extensions where appropriate
+info  Running optimizer combine_contains_rules: Combine separate contains rules on the same path to a single contains rule with multiple items
+info  Running optimizer combine_card_and_flag_rules: Combine card rules (foo 1..1) and flag rules (foo MS) into a single rule (foo 1..1 MS)
+info  Running optimizer simplify_array_indexing: Replace numeric indices with soft indexing
+info  Running optimizer simplify_mapping_names: Simplify Mapping names by removing the appended source information from the name (where possible)
+info  Wrote fsh to /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/gofsh-out/input/fsh.
+info  Wrote config to /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/gofsh-out/sushi-config.yaml.
+
+╔═════════════════════════ GoFSH RESULTS ═════════════════════════╗
+║ ╭────────────────────┬───────────────────┬────────────────────╮ ║
+║ │      Profiles      │    Extensions     │      Logicals      │ ║
+║ ├────────────────────┼───────────────────┼────────────────────┤ ║
+║ │         3          │         0         │         0          │ ║
+║ ╰────────────────────┴───────────────────┴────────────────────╯ ║
+║ ╭────────────────────┬───────────────────┬────────────────────╮ ║
+║ │     Resources      │     ValueSets     │     CodeSystems    │ ║
+║ ├────────────────────┼───────────────────┼────────────────────┤ ║
+║ │         0          │         3         │         3          │ ║
+║ ╰────────────────────┴───────────────────┴────────────────────╯ ║
+║ ╭────────────────────┬───────────────────┬────────────────────╮ ║
+║ │     Instances      │    Invariants     │      Mappings      │ ║
+║ ├────────────────────┼───────────────────┼────────────────────┤ ║
+║ │         11         │         0         │         0          │ ║
+║ ╰────────────────────┴───────────────────┴────────────────────╯ ║
+║ ╭────────────────────┬───────────────────┬────────────────────╮ ║
+║ │      Aliases       │                   │                    │ ║
+║ ├────────────────────┼───────────────────┼────────────────────┤ ║
+║ │         8          │                   │                    │ ║
+║ ╰────────────────────┴───────────────────┴────────────────────╯ ║
+║                                                                 ║
+╠═════════════════════════════════════════════════════════════════╣
+║ Not bad, but it cod be batter!          0 Errors     2 Warnings ║
+╚═════════════════════════════════════════════════════════════════╝

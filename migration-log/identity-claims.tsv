@@ -1,0 +1,14 @@
+2026-08-31T17:45:01Z	packageId	P	package/package.json	de.medizininformatikinitiative.kerndatensatz.consent	2.1	package-identity
+2026-08-31T17:45:01Z	version	P	package/package.json	2026.0.0	2.1	package-identity
+2026-08-31T17:45:01Z	description	P	package/package.json	KDS Modul Consent Release 2026.0.0	2.1	package-identity
+2026-08-31T17:45:01Z	fhirVersions	P	package/package.json	["4.0.1"]	2.1	package-identity
+2026-08-31T17:45:01Z	jurisdiction	P	package/package.json	urn:iso:std:iso:3166#DE	2.1	package-identity
+2026-08-31T17:45:02Z	dependency:de.einwilligungsmanagement	P	package/package.json (source pin)	2.0.2	2.1	package-identity
+2026-08-31T17:45:02Z	dependency:hl7.fhir.r4.core	P	package/package.json (source pin)	4.0.1	2.1	package-identity
+2026-08-31T17:45:02Z	canonical	P	packaged resource urls (13 of 13 agree)	https://www.medizininformatik-initiative.de/fhir/modul-consent	2.1	package-identity
+2026-08-31T17:45:02Z	title	R	README.md first heading	Medizininformatik Initiative - Modul Consent	2.1	repo-identity
+2026-08-31T17:45:02Z	license	R	LICENSE (text matched)	CC-BY-4.0	2.1	repo-identity
+2026-08-31T17:45:03Z	description	R	GitHub repository description	Kerndatensatzmodul Consent	2.1	repo-identity
+2026-08-31T17:45:03Z	license	R	GitHub license.spdx_id	CC-BY-4.0	2.1	repo-identity
+2026-08-31T17:45:54Z	status	P	packaged ImplementationGuide.json (Simplifier skeleton)	draft	2.1	read-identity
+2026-08-31T17:45:54Z	status	H	guide index table Status column (recon/guide.md g.1; human-read at Gate A)	active	2.1	read-identity

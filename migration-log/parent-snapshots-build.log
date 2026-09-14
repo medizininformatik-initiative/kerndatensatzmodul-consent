@@ -1,0 +1,76 @@
+2026-08-31T17:53:17Z  INFO   5.1b.5  parent-snapshots  params  mode=build dir=/private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/parent/package (no fetch) fhir_version=4.0.1
+2026-08-31T17:53:17Z  INFO   5.1b.5  parent-snapshots  surveyed  structure_definitions=21 with_snapshot=0 without_snapshot=21
+2026-08-31T17:53:17Z  WARN   5.1b.5  parent-snapshots  parent-without-snapshots: 21 of 21 StructureDefinitions carry NO snapshot
+    This is the condition behind SUSHI's `is missing a snapshot. Snapshot is
+    required for import.` Every profile deriving from one of these, and every
+    instance declaring InstanceOf such a profile, fails to export. Another
+    version of the same package usually does NOT help -- measured, two
+    consecutive releases of the reference parent both ship 0 snapshots.
+    Next: `parent-snapshots.sh build …` (spec §5.1b.5). Never hand-roll one.
+2026-08-31T17:53:17Z  INFO   5.1b.5  parent-snapshots  derivation chain is flat: every SD derives directly from outside this package  count=21
+    So each can be snapshotted independently, in any order.
+2026-08-31T17:53:17Z  INFO   5.1b.5  parent-snapshots  base package for the element-count floor  base_dir=/Users/marcel/.fhir/packages/hl7.fhir.r4.core#4.0.1/package
+2026-08-31T17:53:20Z  INFO   5.1b.5  parent-snapshots  generating with the OFFICIAL HL7 generator  validator=/private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/validator_cli.jar java="openjdk version "25.0.2" 2026-01-20" fhir_version=4.0.1
+    cmd=`java -jar /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/validator_cli.jar snapshot <sd.json> -version 4.0.1 -tx n/a -ig /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/parent/package -output <out.json>`
+    One invocation PER FILE: a batch run aborts at the first failure and silently
+    skips the rest. Nothing here merges a differential by hand (script header).
+2026-08-31T17:58:05Z  WARN   5.1b.5  parent-snapshots  generator-refused: profile-ConsentManagement-TemplateFrame.json  url=http://fhir.de/ConsentManagement/StructureDefinition/TemplateFrame reason=Exception generating snapshot for http://fhir.de/ConsentManagement/StructureDefinition/TemplateFrame|2.0.2: The element Questionnaire.item.text.extension:renderingMarkdown.value[x]:valueMarkdown launches straight into slicing without the slicing being set up properly first
+    The generator declining a differential is EVIDENCE ABOUT THE PARENT, not a
+    gap to work around: an upstream differential the official merge cannot
+    process is malformed. Do not hand-finish it. Check whether the module's FSH
+    names this profile as a Parent or InstanceOf; if it does, this is a Gate-A
+    escalation for the upstream package's maintainers (spec §5.1b.4).
+2026-08-31T17:58:17Z  WARN   5.1b.5  parent-snapshots  generator-refused: profile-ConsentManagement-TemplateModule.json  url=http://fhir.de/ConsentManagement/StructureDefinition/TemplateModule reason=Exception generating snapshot for http://fhir.de/ConsentManagement/StructureDefinition/TemplateModule|2.0.2: The element Questionnaire.item.text.extension:renderingMarkdown.value[x]:valueMarkdown launches straight into slicing without the slicing being set up properly first
+    The generator declining a differential is EVIDENCE ABOUT THE PARENT, not a
+    gap to work around: an upstream differential the official merge cannot
+    process is malformed. Do not hand-finish it. Check whether the module's FSH
+    names this profile as a Parent or InstanceOf; if it does, this is a Gate-A
+    escalation for the upstream package's maintainers (spec §5.1b.4).
+2026-08-31T17:58:28Z  WARN   5.1b.5  parent-snapshots  generator-refused: profile-ConsentManagementQuestionnaireComposed.json  url=http://fhir.de/ConsentManagement/StructureDefinition/QuestionnaireComposed reason=Exception generating snapshot for http://fhir.de/ConsentManagement/StructureDefinition/QuestionnaireComposed|2.0.2: The element Questionnaire.item.text.extension:renderingMarkdown.value[x]:valueMarkdown launches straight into slicing without the slicing being set up properly first
+    The generator declining a differential is EVIDENCE ABOUT THE PARENT, not a
+    gap to work around: an upstream differential the official merge cannot
+    process is malformed. Do not hand-finish it. Check whether the module's FSH
+    names this profile as a Parent or InstanceOf; if it does, this is a Gate-A
+    escalation for the upstream package's maintainers (spec §5.1b.4).
+2026-08-31T17:58:40Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=extension-ConsentManagement-ConsentMode.json snapshot=12 differential=5 base=5
+2026-08-31T17:58:40Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=extension-ConsentManagement-ContextIdentifier.json snapshot=20 differential=12 base=5
+2026-08-31T17:58:40Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=extension-ConsentManagement-DomainReference.json snapshot=22 differential=11 base=5
+2026-08-31T17:58:40Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=extension-ConsentManagement-Logo.json snapshot=5 differential=2 base=5
+2026-08-31T17:58:40Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=extension-ConsentManagement-OrganizationDescription.json snapshot=5 differential=2 base=5
+2026-08-31T17:58:40Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=extension-ConsentManagement-SignatureLocation.json snapshot=5 differential=2 base=5
+2026-08-31T17:58:40Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=extension-ConsentManagement-SourceDocument.json snapshot=15 differential=4 base=5
+2026-08-31T17:58:40Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=extension-ConsentManagement-SubQuestionnaire.json snapshot=11 differential=6 base=5
+2026-08-31T17:58:40Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=extension-ConsentManagement-VersionFormat.json snapshot=15 differential=10 base=5
+2026-08-31T17:58:40Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=extension-ConsentManagement-Xacml.json snapshot=5 differential=2 base=5
+2026-08-31T17:58:40Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=extension-ConsentManagement-XacmlTemplate.json snapshot=15 differential=9 base=5
+2026-08-31T17:58:40Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=profile-ConsentManagement-Consent.json snapshot=132 differential=32 base=57
+2026-08-31T17:58:40Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=profile-ConsentManagement-DocumentReference.json snapshot=61 differential=8 base=45
+2026-08-31T17:58:40Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=profile-ConsentManagement-Domain-Organization.json snapshot=91 differential=23 base=26
+2026-08-31T17:58:40Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=profile-ConsentManagement-Domain-ResearchStudy.json snapshot=104 differential=23 base=44
+2026-08-31T17:58:40Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=profile-ConsentManagement-Patient.json snapshot=64 differential=7 base=45
+2026-08-31T17:58:40Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=profile-ConsentManagement-Provenance.json snapshot=65 differential=20 base=32
+2026-08-31T17:58:40Z  INFO   5.1b.5  parent-snapshots  snapshot verified and merged  file=profile-ConsentManagementQuestionnaireResponse.json snapshot=39 differential=14 base=33
+2026-08-31T17:58:40Z  INFO   5.1b.5  parent-snapshots  rebuild written  dir=/var/folders/d6/s255vt4x5pq9fy738bv7cs0h0000gq/T/tmp.84cFWoL9ek/rebuilt/package merged=18 refused=0
+    Only the `snapshot` property was added; every other field is the upstream
+    bytes re-serialized. Do not diff this against upstream expecting byte
+    equality -- key order and indentation are the serializer's.
+2026-08-31T17:58:40Z  INFO   5.1b.5  parent-snapshots  generated 18 of 21 snapshots  expected=21 actual=18
+2026-08-31T17:58:40Z  WARN   5.1b.5  parent-snapshots  silent-partial-success: generated 18 of 21 snapshots
+    Exit status is not evidence of completeness; these two counts are.
+    Reconcile against the step-1 inventory before continuing.
+2026-08-31T17:58:40Z  INFO   5.1b.5  parent-snapshots  required parent snapshotted  require=http://fhir.de/ConsentManagement/StructureDefinition/DocumentReference file=profile-ConsentManagement-DocumentReference.json
+2026-08-31T17:58:40Z  INFO   5.1b.5  parent-snapshots  required parent snapshotted  require=http://fhir.de/ConsentManagement/StructureDefinition/DomainReference file=extension-ConsentManagement-DomainReference.json
+2026-08-31T17:58:40Z  INFO   5.1b.5  parent-snapshots  required parent snapshotted  require=http://fhir.de/ConsentManagement/StructureDefinition/Provenance file=profile-ConsentManagement-Provenance.json
+2026-08-31T17:58:40Z  INFO   5.1b.5  parent-snapshots  required parent snapshotted  require=http://fhir.de/ConsentManagement/StructureDefinition/Consent file=profile-ConsentManagement-Consent.json
+2026-08-31T17:58:40Z  INFO   5.1b.5  parent-snapshots  installed as a NEW cache entry  dest=/Users/marcel/.fhir/packages/de.einwilligungsmanagement#2.0.2-snapshots version=2.0.2-snapshots
+    Upstream de.einwilligungsmanagement#2.0.2 is untouched. Depend on it by pinning
+    `de.einwilligungsmanagement: 2.0.2-snapshots` in sushi-config.yaml -- and note that this entry is
+    LOCAL: CI and every other machine need this same build step, or the pin
+    fails to resolve there (spec §5.1b.5, 'carrying it upstream').
+2026-08-31T17:58:40Z  WARN   5.1b.5  parent-snapshots  rebuild-incomplete: the generator refused 3 of 21 StructureDefinition(s)  files=profile-ConsentManagement-TemplateFrame.json profile-ConsentManagement-TemplateModule.json profile-ConsentManagementQuestionnaireComposed.json
+    Each refusal is named above with the generator's own reason. Decide per file
+    whether the module's FSH depends on it; those that it does are Gate-A
+    escalations for the upstream maintainers.
+2026-08-31T17:58:40Z  INFO   5.1b.5  parent-snapshots  done  mode=build generated=18 of 21 required=all-snapshotted exit=0
+    Re-run SUSHI now and compare the error count against the run BEFORE this
+    step; that difference is the evidence, not this script's exit status.

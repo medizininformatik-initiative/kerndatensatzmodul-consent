@@ -1,0 +1,72 @@
+info  Running SUSHI v3.20.1 (implements FHIR Shorthand specification v3.0.0)
+info  Arguments:
+info    /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/target
+info  Unable to determine the latest version of sushi: spawnSync /bin/sh ETIMEDOUT
+info  Attempting fallback to determine version of sushi.
+info  No output path specified. Output to .
+info  Using configuration file: /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/target/sushi-config.yaml
+info  Importing FSH text...
+info  Preprocessed 34 documents with 56 aliases.
+info  Imported 9 definitions and 13 instances.
+info  Loaded virtual package sushi-r5forR4#1.0.0 with 7 resources
+info  Resolved hl7.fhir.uv.tools.r4#latest to concrete version 1.1.2
+info  Loaded hl7.fhir.uv.tools.r4#1.1.2 with 119 resources
+info  Loaded hl7.terminology.r4#7.3.0 with 4176 resources
+info  Loaded de.einwilligungsmanagement#2.0.2-snapshots with 32 resources
+info  Loaded hl7.fhir.uv.crmi#2.0.0 with 123 resources
+info  Loaded hl7.fhir.r4.core#4.0.1 with 4578 resources
+info  Loaded hl7.fhir.uv.extensions.r4#5.3.0 with 885 resources
+info  Found 1 non-JSON / non-XML file(s) in directory: /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/target/input/resources. Only resource files with JSON or XML extensions are supported. To see the skipped files in the logs, use debug logging.
+info  Loaded virtual package sushi-local#LOCAL with 1 resources
+info  Converting FSH to FHIR resources...
+info  Converted 3 FHIR StructureDefinitions.
+warn  The name "MII CS Consent Policy" may not be suitable for machine processing applications such as code generation. Valid names start with an upper-case ASCII letter ('A'..'Z') followed by any combination of upper- or lower-case ASCII letters ('A'..'Z', and 'a'..'z'), numerals ('0'..'9') and '_', with a length limit of 255 characters.
+  File: /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/target/input/fsh/codesystems/MII_CS_Consent_Policy.fsh
+  Line: 5
+warn  The user-specified ^count (101) does not match the specified number of concepts (124). If this is not a "complete" CodeSystem, set the ^content property to the appropriate value; otherwise fix or remove the ^count.
+  File: /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/target/input/fsh/codesystems/MII_CS_Consent_Policy.fsh
+  Line: 20
+info  Converted 3 FHIR CodeSystems.
+info  Converted 3 FHIR ValueSets.
+warn  34150a23-b1c8-404f-874f-e042a30435d2 has an array item that is exactly the same as a required slice, but does not use the slice name in its path. This may result in unexpected items in your array. Usually you can remove this item from your FSH, since FSH instances inherit required assigned values from their profile. Alternately, you can modify your FSH to use the slice name in the item's path.  See: https://hl7.org/fhir/uv/shorthand/reference.html#sliced-array-paths
+  Path:  Consent.category
+  Slice: loinc
+  Value: {"coding":[{"code":"57016-8","system":"http://loinc.org"}]}
+  File: /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/target/input/fsh/instances/34150a23-b1c8-404f-874f-e042a30435d2.fsh
+  Line: 1 - 76
+warn  5143266b-8d60-4b28-8ee9-635140ffa5bb has an array item that is exactly the same as a required slice, but does not use the slice name in its path. This may result in unexpected items in your array. Usually you can remove this item from your FSH, since FSH instances inherit required assigned values from their profile. Alternately, you can modify your FSH to use the slice name in the item's path.  See: https://hl7.org/fhir/uv/shorthand/reference.html#sliced-array-paths
+  Path:  Consent.category
+  Slice: loinc
+  Value: {"coding":[{"code":"57016-8","system":"http://loinc.org"}]}
+  File: /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/target/input/fsh/instances/5143266b-8d60-4b28-8ee9-635140ffa5bb.fsh
+  Line: 1 - 129
+warn  Example-MII-Consent-ResultType-document has an array item that is exactly the same as a required slice, but does not use the slice name in its path. This may result in unexpected items in your array. Usually you can remove this item from your FSH, since FSH instances inherit required assigned values from their profile. Alternately, you can modify your FSH to use the slice name in the item's path.  See: https://hl7.org/fhir/uv/shorthand/reference.html#sliced-array-paths
+  Path:  Consent.category
+  Slice: loinc
+  Value: {"coding":[{"code":"57016-8","system":"http://loinc.org"}]}
+  File: /private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/target/input/fsh/instances/Example-MII-Consent-ResultType-document.fsh
+  Line: 1 - 53
+info  Converted 13 FHIR instances.
+info  Exporting FHIR resources as JSON...
+info  Exported 22 FHIR resources as JSON.
+info  Assembling Implementation Guide sources...
+info  Generated ImplementationGuide-mii-ig-consent.json
+info  Assembled Implementation Guide sources; ready for IG Publisher.
+info  The _build script hosted at https://github.com/HL7/ig-publisher-scripts is useful for downloading and running the IG Publisher.
+
+========================= SUSHI RESULTS ===========================
+|  -------------------------------------------------------------  |
+| |    Profiles   |  Extensions  |   Logicals   |   Resources   | |
+| |-------------------------------------------------------------| |
+| |       3       |      0       |      0       |       0       | |
+|  -------------------------------------------------------------  |
+|  -------------------------------------------------------------  |
+| |      ValueSets     |    CodeSystems    |     Instances      | |
+| |-------------------------------------------------------------| |
+| |         3          |         3         |         13         | |
+|  -------------------------------------------------------------  |
+|                                                                 |
+===================================================================
+| Keep swimming, Dory.                   0 Errors      5 Warnings |
+===================================================================
+

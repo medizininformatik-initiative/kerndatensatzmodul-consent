@@ -1,0 +1,15 @@
+2026-08-31T17:53:17Z  INFO   5.1b.5  parent-snapshots  params  mode=detect dir=/private/tmp/claude-503/-Users-marcel-Development-cross-hub-patientportal/9e6d07a4-6adb-4483-b4c7-d44df6dc83fb/scratchpad/mig/parent/package (no fetch) fhir_version=4.0.1
+2026-08-31T17:53:17Z  INFO   5.1b.5  parent-snapshots  surveyed  structure_definitions=21 with_snapshot=0 without_snapshot=21
+2026-08-31T17:53:17Z  WARN   5.1b.5  parent-snapshots  parent-without-snapshots: 21 of 21 StructureDefinitions carry NO snapshot
+    This is the condition behind SUSHI's `is missing a snapshot. Snapshot is
+    required for import.` Every profile deriving from one of these, and every
+    instance declaring InstanceOf such a profile, fails to export. Another
+    version of the same package usually does NOT help -- measured, two
+    consecutive releases of the reference parent both ship 0 snapshots.
+    Next: `parent-snapshots.sh build …` (spec §5.1b.5). Never hand-roll one.
+2026-08-31T17:53:17Z  INFO   5.1b.5  parent-snapshots  derivation chain is flat: every SD derives directly from outside this package  count=21
+    So each can be snapshotted independently, in any order.
+2026-08-31T17:53:17Z  INFO   5.1b.5  parent-snapshots  done  mode=detect missing_snapshots=21 of 21 exit=1
+    The condition IS present. It is not a post-processing task and not a
+    reason to invent a parent: generate the snapshots with `build` (spec
+    §5.1b.5), or record the dependent profiles as blocked and migrate the rest.

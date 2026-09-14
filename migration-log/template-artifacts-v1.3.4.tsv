@@ -1,0 +1,6 @@
+# Re-measured for THIS migration (decision D-11): mii-kds-module-template
+# v0.13.2 vendors/references ig-template-mii-kds v1.3.4 by URL; the example
+# artefact set verified unchanged at the v0.13.2 checkout on 2026-08-31
+# (input/fsh/profiles/example-patient.fsh + instances/example-patient-instance.fsh).
+token	template_version	verified_on	why
+example-patient	1.3.4	2026-08-31	the template's example Patient profile + instance and their pages, deleted by step 3 (re-verified at module-template v0.13.2 / ig-template v1.3.4)
