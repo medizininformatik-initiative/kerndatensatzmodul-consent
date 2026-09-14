@@ -3,7 +3,7 @@ Alias: $publication-status = http://hl7.org/fhir/publication-status
 Alias: $consentscope = http://terminology.hl7.org/CodeSystem/consentscope
 Alias: $loinc = http://loinc.org
 Alias: $mii-cs-consent-version-modules = https://www.medizininformatik-initiative.de/fhir/modul-consent/CodeSystem/mii-cs-consent-version-modules
-// Nur von Beispiel 89f494a3 referenziert — im Release NIRGENDS definiert (dangling, Upstream-Befund D-9/D-14):
+// UNBENUTZT seit Fix qa-01 (Beispiel 89f494a3 nutzt jetzt version-modules); im Release NIRGENDS definiert (Upstream-Befund D-9/D-14):
 Alias: $mii-cs-consent-consent_category = https://www.medizininformatik-initiative.de/fhir/modul-consent/CodeSystem/mii-cs-consent-consent_category
 Alias: $ResultType = http://fhir.de/ConsentManagement/CodeSystem/ResultType
 Alias: $TemplateType = http://fhir.de/ConsentManagement/CodeSystem/TemplateType
