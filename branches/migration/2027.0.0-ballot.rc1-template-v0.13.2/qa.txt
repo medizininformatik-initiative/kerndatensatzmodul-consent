@@ -1,14 +1,14 @@
 MII_IG_Consent : Validation Results
 =========================================
 
-err = 36, warn = 83, info = 606
+err = 33, warn = 83, info = 588
 IG Publisher Version: 2.3.2 Out of date - current version is 2.3.4
-Generated Mon Sep 14 13:03:52 UTC 2026. FHIR version 4.0.1 for de.medizininformatikinitiative.kerndatensatz.consent#2027.0.0-ballot.rc1 (canonical = https://www.medizininformatik-initiative.de/fhir/modul-consent)
+Generated Mon Sep 14 13:14:18 UTC 2026. FHIR version 4.0.1 for de.medizininformatikinitiative.kerndatensatz.consent#2027.0.0-ballot.rc1 (canonical = https://www.medizininformatik-initiative.de/fhir/modul-consent)
  Build Errors : 0 / 11 / 0
  /home/runner/work/kerndatensatzmodul-consent/kerndatensatzmodul-consent/fsh-generated/resources/CapabilityStatement-mii-cap-consent-server : 0 / 1 / 11
- /home/runner/work/kerndatensatzmodul-consent/kerndatensatzmodul-consent/fsh-generated/resources/CodeSystem-2.16.840.1.113883.3.1937.777.24.5.2--20210423105554 : 1 / 2 / 20
- /home/runner/work/kerndatensatzmodul-consent/kerndatensatzmodul-consent/fsh-generated/resources/CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003 : 1 / 15 / 3
- /home/runner/work/kerndatensatzmodul-consent/kerndatensatzmodul-consent/fsh-generated/resources/CodeSystem-mii-cs-consent-version-modules : 1 / 5 / 68
+ /home/runner/work/kerndatensatzmodul-consent/kerndatensatzmodul-consent/fsh-generated/resources/CodeSystem-2.16.840.1.113883.3.1937.777.24.5.2--20210423105554 : 0 / 2 / 20
+ /home/runner/work/kerndatensatzmodul-consent/kerndatensatzmodul-consent/fsh-generated/resources/CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003 : 0 / 15 / 3
+ /home/runner/work/kerndatensatzmodul-consent/kerndatensatzmodul-consent/fsh-generated/resources/CodeSystem-mii-cs-consent-version-modules : 0 / 5 / 68
  /home/runner/work/kerndatensatzmodul-consent/kerndatensatzmodul-consent/fsh-generated/resources/Consent-34150a23-b1c8-404f-874f-e042a30435d2 : 4 / 1 / 3
  /home/runner/work/kerndatensatzmodul-consent/kerndatensatzmodul-consent/fsh-generated/resources/Consent-5143266b-8d60-4b28-8ee9-635140ffa5bb : 3 / 31 / 3
  /home/runner/work/kerndatensatzmodul-consent/kerndatensatzmodul-consent/fsh-generated/resources/Consent-89f494a3-cd75-44f5-a78a-581dfdd47a94 : 4 / 1 / 3
@@ -29,7 +29,7 @@ Generated Mon Sep 14 13:03:52 UTC 2026. FHIR version 4.0.1 for de.medizininforma
  /home/runner/work/kerndatensatzmodul-consent/kerndatensatzmodul-consent/fsh-generated/resources/StructureDefinition-56375452-bfa1-4111-af7c-5b5ba9a1857c : 3 / 1 / 76
  /home/runner/work/kerndatensatzmodul-consent/kerndatensatzmodul-consent/fsh-generated/resources/StructureDefinition-e0e166b4-0f77-478d-9062-de0034d98ce0 : 3 / 1 / 255
  /home/runner/work/kerndatensatzmodul-consent/kerndatensatzmodul-consent/fsh-generated/resources/StructureDefinition-f675b1e8-9f3f-44e8-bb59-9681f78eb464 : 3 / 1 / 83
- /home/runner/work/kerndatensatzmodul-consent/kerndatensatzmodul-consent/fsh-generated/resources/ValueSet-2.16.840.1.113883.3.1937.777.24.11.30--20210323234509 : 3 / 1 / 23
+ /home/runner/work/kerndatensatzmodul-consent/kerndatensatzmodul-consent/fsh-generated/resources/ValueSet-2.16.840.1.113883.3.1937.777.24.11.30--20210323234509 : 3 / 1 / 5
  /home/runner/work/kerndatensatzmodul-consent/kerndatensatzmodul-consent/fsh-generated/resources/ValueSet-2.16.840.1.113883.3.1937.777.24.11.36--20230331232804 : 3 / 1 / 5
  /home/runner/work/kerndatensatzmodul-consent/kerndatensatzmodul-consent/fsh-generated/resources/ValueSet-88464c5b-5338-4c2b-9c07-b42fef2ada64 : 3 / 2 / 8
  /home/runner/work/kerndatensatzmodul-consent/kerndatensatzmodul-consent/input/resources/Parameters-expansion-manifest : 0 / 0 / 1
@@ -79,13 +79,11 @@ INFORMATION: CodeSystem/2.16.840.1.113883.3.1937.777.24.5.2--20210423105554: Cod
 INFORMATION: CodeSystem/2.16.840.1.113883.3.1937.777.24.5.2--20210423105554: CodeSystem.concept[2].designation[1].language: Reference to draft ValueSet http://hl7.org/fhir/ValueSet/languages|4.0.1
 INFORMATION: CodeSystem/2.16.840.1.113883.3.1937.777.24.5.2--20210423105554: CodeSystem.concept[2].designation[1].language: Reference to trial-use ValueSet http://hl7.org/fhir/ValueSet/languages|4.0.1
 INFORMATION: CodeSystem/2.16.840.1.113883.3.1937.777.24.5.2--20210423105554: CodeSystem.concept[2].designation[1].use.display: 'Synonym' is the default display; the code system http://snomed.info/sct has no Display Names for the language de
-ERROR: CodeSystem/2.16.840.1.113883.3.1937.777.24.5.2--20210423105554: CodeSystem: CodeSystem urn:oid:2.16.840.1.113883.3.1937.777.24.5.2 hat einen 'all system' ValueSet von https://www.medizininformatik-initiative.de/fhir/modul-consent/ValueSet/mii-vs-consent-answer, aber das Include beeinhaltet zusätzliche Details
 WARNING: Resource: The resource CodeSystem/2.16.840.1.113883.3.1937.777.24.5.2--20210423105554 should have an OID assigned to cater for possible use with OID based terminology systems e.g. CDA usage (OIDs are easy to assign - see https://build.fhir.org/ig/FHIR/fhir-tools-ig/CodeSystem-ig-parameters.html#ig-parameters-auto-oid-root)
 == fsh-generated/resources/CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003.json ==
 INFORMATION: CodeSystem.meta.profile[0]: Pinned the version of http://hl7.org/fhir/StructureDefinition/shareablecodesystem to 4.0.2
 WARNING: CodeSystem/2.16.840.1.113883.3.1937.777.24.5.3--20251211153003: CodeSystem.jurisdiction[0].coding[0].system: A definition for CodeSystem 'urn:iso:std:iso:3166:-2' could not be found, so the code cannot be validated
 WARNING: CodeSystem/2.16.840.1.113883.3.1937.777.24.5.3--20251211153003: CodeSystem: Constraint failed: csd-0: 'Name should be usable as an identifier for the module by machine processing applications such as code generation (name.matches('[A-Z]([A-Za-z0-9_]){0,254}'))' (defined in http://hl7.org/fhir/StructureDefinition/CodeSystem)
-ERROR: CodeSystem/2.16.840.1.113883.3.1937.777.24.5.3--20251211153003: CodeSystem.count: The code system is complete, but the number of concepts (124) does not match the stated total number (101)
 INFORMATION: CodeSystem/2.16.840.1.113883.3.1937.777.24.5.3--20251211153003: CodeSystem.property[0]: This property has only a code ('period-of-validity') and not a URI, so it has no clearly defined meaning in the terminology ecosystem
 WARNING: CodeSystem/2.16.840.1.113883.3.1937.777.24.5.3--20251211153003: CodeSystem.concept[1].concept[1].property[1]: The property 'status' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
 WARNING: CodeSystem/2.16.840.1.113883.3.1937.777.24.5.3--20251211153003: CodeSystem.concept[1].concept[1].property[2]: The property 'inactive' has no definition in CodeSystem.property. Many terminology tools won't know what to do with it
@@ -172,7 +170,6 @@ INFORMATION: CodeSystem/mii-cs-consent-version-modules: CodeSystem.concept[19].d
 INFORMATION: CodeSystem/mii-cs-consent-version-modules: CodeSystem.concept[20].designation[0].language: Reference to draft ValueSet http://hl7.org/fhir/ValueSet/languages|4.0.1
 INFORMATION: CodeSystem/mii-cs-consent-version-modules: CodeSystem.concept[20].designation[0].language: Reference to trial-use ValueSet http://hl7.org/fhir/ValueSet/languages|4.0.1
 INFORMATION: CodeSystem/mii-cs-consent-version-modules: CodeSystem.concept[20].designation[0].use.display: 'Fully specified name' is the default display; the code system http://snomed.info/sct has no Display Names for the language de-DE
-ERROR: CodeSystem/mii-cs-consent-version-modules: CodeSystem.count: The code system is complete, but the number of concepts (21) does not match the stated total number (20)
 WARNING: CodeSystem/mii-cs-consent-version-modules: CodeSystem: Die Ressource hat eine Sprache (de-DE), und das XHTML hat eine Sprache (de), aber sie unterscheiden sich
 == fsh-generated/resources/Consent-34150a23-b1c8-404f-874f-e042a30435d2.json ==
 ERROR: Consent/34150a23-b1c8-404f-874f-e042a30435d2: Consent.category[0]: Slicing kann nicht ausgewertet werden: Konnte nicht mit dem Diskriminator (1) für Slice $this in Profil Consent.category:templateType übereinstimmen - der Diskriminator https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-einwilligung|2027.0.0-ballot.rc1 hat keinen fixed Value, kein Binding oder existence assertions
@@ -750,24 +747,6 @@ INFORMATION: ValueSet.meta.profile[0]: Pinned the version of http://hl7.org/fhir
 ERROR: ValueSet.url: Resource id/url mismatch: 2.16.840.1.113883.3.1937.777.24.11.30--20210323234509/https://www.medizininformatik-initiative.de/fhir/modul-consent/ValueSet/mii-vs-consent-answer
 INFORMATION: ValueSet/2.16.840.1.113883.3.1937.777.24.11.30--20210323234509: ValueSet.extension[0]: Dieses Element stimmt mit keinem bekannten Slicedefined in the profile http://hl7.org/fhir/StructureDefinition/shareablevalueset|4.0.2 überein.
 WARNING: ValueSet/2.16.840.1.113883.3.1937.777.24.11.30--20210323234509: ValueSet.jurisdiction[0].coding[0].system: A definition for CodeSystem 'urn:iso:std:iso:3166:-2' could not be found, so the code cannot be validated
-INFORMATION: ValueSet/2.16.840.1.113883.3.1937.777.24.11.30--20210323234509: ValueSet.compose.include[0].concept[0].designation[0].language: Reference to draft ValueSet http://hl7.org/fhir/ValueSet/languages|4.0.1
-INFORMATION: ValueSet/2.16.840.1.113883.3.1937.777.24.11.30--20210323234509: ValueSet.compose.include[0].concept[0].designation[0].language: Reference to trial-use ValueSet http://hl7.org/fhir/ValueSet/languages|4.0.1
-INFORMATION: ValueSet/2.16.840.1.113883.3.1937.777.24.11.30--20210323234509: ValueSet.compose.include[0].concept[0].designation[0].use.display: 'Synonym' is the default display; the code system http://snomed.info/sct has no Display Names for the language de
-INFORMATION: ValueSet/2.16.840.1.113883.3.1937.777.24.11.30--20210323234509: ValueSet.compose.include[0].concept[0].designation[1].language: Reference to draft ValueSet http://hl7.org/fhir/ValueSet/languages|4.0.1
-INFORMATION: ValueSet/2.16.840.1.113883.3.1937.777.24.11.30--20210323234509: ValueSet.compose.include[0].concept[0].designation[1].language: Reference to trial-use ValueSet http://hl7.org/fhir/ValueSet/languages|4.0.1
-INFORMATION: ValueSet/2.16.840.1.113883.3.1937.777.24.11.30--20210323234509: ValueSet.compose.include[0].concept[0].designation[1].use.display: 'Synonym' is the default display; the code system http://snomed.info/sct has no Display Names for the language de
-INFORMATION: ValueSet/2.16.840.1.113883.3.1937.777.24.11.30--20210323234509: ValueSet.compose.include[0].concept[1].designation[0].language: Reference to draft ValueSet http://hl7.org/fhir/ValueSet/languages|4.0.1
-INFORMATION: ValueSet/2.16.840.1.113883.3.1937.777.24.11.30--20210323234509: ValueSet.compose.include[0].concept[1].designation[0].language: Reference to trial-use ValueSet http://hl7.org/fhir/ValueSet/languages|4.0.1
-INFORMATION: ValueSet/2.16.840.1.113883.3.1937.777.24.11.30--20210323234509: ValueSet.compose.include[0].concept[1].designation[0].use.display: 'Synonym' is the default display; the code system http://snomed.info/sct has no Display Names for the language de
-INFORMATION: ValueSet/2.16.840.1.113883.3.1937.777.24.11.30--20210323234509: ValueSet.compose.include[0].concept[1].designation[1].language: Reference to draft ValueSet http://hl7.org/fhir/ValueSet/languages|4.0.1
-INFORMATION: ValueSet/2.16.840.1.113883.3.1937.777.24.11.30--20210323234509: ValueSet.compose.include[0].concept[1].designation[1].language: Reference to trial-use ValueSet http://hl7.org/fhir/ValueSet/languages|4.0.1
-INFORMATION: ValueSet/2.16.840.1.113883.3.1937.777.24.11.30--20210323234509: ValueSet.compose.include[0].concept[1].designation[1].use.display: 'Synonym' is the default display; the code system http://snomed.info/sct has no Display Names for the language de
-INFORMATION: ValueSet/2.16.840.1.113883.3.1937.777.24.11.30--20210323234509: ValueSet.compose.include[0].concept[2].designation[0].language: Reference to draft ValueSet http://hl7.org/fhir/ValueSet/languages|4.0.1
-INFORMATION: ValueSet/2.16.840.1.113883.3.1937.777.24.11.30--20210323234509: ValueSet.compose.include[0].concept[2].designation[0].language: Reference to trial-use ValueSet http://hl7.org/fhir/ValueSet/languages|4.0.1
-INFORMATION: ValueSet/2.16.840.1.113883.3.1937.777.24.11.30--20210323234509: ValueSet.compose.include[0].concept[2].designation[0].use.display: 'Synonym' is the default display; the code system http://snomed.info/sct has no Display Names for the language de
-INFORMATION: ValueSet/2.16.840.1.113883.3.1937.777.24.11.30--20210323234509: ValueSet.compose.include[0].concept[2].designation[1].language: Reference to draft ValueSet http://hl7.org/fhir/ValueSet/languages|4.0.1
-INFORMATION: ValueSet/2.16.840.1.113883.3.1937.777.24.11.30--20210323234509: ValueSet.compose.include[0].concept[2].designation[1].language: Reference to trial-use ValueSet http://hl7.org/fhir/ValueSet/languages|4.0.1
-INFORMATION: ValueSet/2.16.840.1.113883.3.1937.777.24.11.30--20210323234509: ValueSet.compose.include[0].concept[2].designation[1].use.display: 'Synonym' is the default display; the code system http://snomed.info/sct has no Display Names for the language de
 ERROR: /home/runner/work/kerndatensatzmodul-consent/kerndatensatzmodul-consent/fsh-generated/resources/ValueSet-2.16.840.1.113883.3.1937.777.24.11.30--20210323234509: URL Mismatch https://www.medizininformatik-initiative.de/fhir/modul-consent/ValueSet/2.16.840.1.113883.3.1937.777.24.11.30--20210323234509 vs https://www.medizininformatik-initiative.de/fhir/modul-consent/ValueSet/mii-vs-consent-answer
 == fsh-generated/resources/ValueSet-2.16.840.1.113883.3.1937.777.24.11.36--20230331232804.json ==
 ERROR: ValueSet.where(url = 'https://www.medizininformatik-initiative.de/fhir/modul-consent/ValueSet/mii-vs-consent-policy'): Conformance resource /home/runner/work/kerndatensatzmodul-consent/kerndatensatzmodul-consent/fsh-generated/resources/ValueSet-2.16.840.1.113883.3.1937.777.24.11.36--20230331232804.json - the canonical URL (https://www.medizininformatik-initiative.de/fhir/modul-consent/ValueSet/2.16.840.1.113883.3.1937.777.24.11.36--20230331232804) does not match the URL (https://www.medizininformatik-initiative.de/fhir/modul-consent/ValueSet/mii-vs-consent-policy). Use the special-url parameter if you really mean for it not to match

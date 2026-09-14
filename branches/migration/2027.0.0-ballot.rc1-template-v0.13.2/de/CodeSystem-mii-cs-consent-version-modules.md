@@ -63,7 +63,7 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
   "title" : "MII Consent Version and Modules CodeSystem",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-09-14T13:01:52+00:00",
+  "date" : "2026-09-14T13:11:56+00:00",
   "publisher" : "NUM-DIZ",
   "_publisher" : {
     "extension" : [{
@@ -96,7 +96,7 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
   "copyright" : "\n            © 2019+ TMF e. V., Charlottenstraße 42, 10117 Berlin \n            \n                \n                    CC BY 4.0\n                \n                 \n            \n            Diese Arbeit ist lizensiert unter der [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/). \n            Zu den Nutzungsrechten der zugrunde liegenden FHIR-Technologie siehe die FHIR-Basis-Spezifikation. \n            Einige verwendete Codesysteme werden von anderen Organisationen herausgegeben und gepflegt. Es gilt das Copyright der dort jeweils aufgeführten Herausgeber (Publisher). \n        ",
   "caseSensitive" : false,
   "content" : "complete",
-  "count" : 20,
+  "count" : 21,
   "property" : [{
     "code" : "status",
     "uri" : "http://hl7.org/fhir/concept-properties#status",

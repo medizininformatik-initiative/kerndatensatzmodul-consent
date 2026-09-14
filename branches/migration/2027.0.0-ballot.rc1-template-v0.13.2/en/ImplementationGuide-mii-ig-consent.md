@@ -51,7 +51,7 @@ This publication includes IP covered under the following statements.
 
 * This material contains content that is copyright of SNOMED International. Implementers of these specifications must have the appropriate SNOMED CT Affiliate license - for more information contact [https://www.snomed.org/get-snomed](https://www.snomed.org/get-snomed) or [info@snomed.org](mailto:info@snomed.org).
 
-* [SNOMED Clinical Terms&reg; (SNOMED CT&reg;)](http://hl7.org/fhir/R4/codesystem-snomedct.html): [MIIConsentVersionModuleCodeSystem](CodeSystem-mii-cs-consent-version-modules.md), [MII_CS_Consent_Answer](CodeSystem-2.16.840.1.113883.3.1937.777.24.5.2--20210423105554.md) and [MII_VS_Consent_Answer](ValueSet-2.16.840.1.113883.3.1937.777.24.11.30--20210323234509.md)
+* [SNOMED Clinical Terms&reg; (SNOMED CT&reg;)](http://hl7.org/fhir/R4/codesystem-snomedct.html): [MIIConsentVersionModuleCodeSystem](CodeSystem-mii-cs-consent-version-modules.md) and [MII_CS_Consent_Answer](CodeSystem-2.16.840.1.113883.3.1937.777.24.5.2--20210423105554.md)
 
 
 * This material derives from the HL7 Terminology (THO). THO is copyright ©1989+ Health Level Seven International and is made available under the CC0 designation. For more licensing information see: [https://terminology.hl7.org/license.html](https://terminology.hl7.org/license.html)

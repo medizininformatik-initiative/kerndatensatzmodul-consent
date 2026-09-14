@@ -150,8 +150,8 @@
     "description" : "One of the resource types defined as part of this version of FHIR.",
     "uses" : {
     },
-    "http://hl7.org/fhir/R4/valueset-consent-content-class.html" : "Consent Content Class",
-    "http://hl7.org/fhir/R4/valueset-resource-types.html" : "ResourceType"
+    "http://hl7.org/fhir/R4/valueset-resource-types.html" : "ResourceType",
+    "http://hl7.org/fhir/R4/valueset-consent-content-class.html" : "Consent Content Class"
   },
   {
     "url" : "http://snomed.info/sct",
