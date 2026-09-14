@@ -1,0 +1,21 @@
+{
+  "packages" : [{
+    "path" : "package-list.json",
+    "package-id" : "de.medizininformatikinitiative.kerndatensatz.consent",
+    "title" : "MII Implementation Guide Consent",
+    "canonical" : "https://www.medizininformatik-initiative.de/fhir/modul-consent",
+    "category" : "Research",
+    "ci-build" : "https://medizininformatik-initiative.github.io/kerndatensatzmodul-consent/branches/dev/",
+    "version-count" : 1,
+    "latest" : {
+      "version" : "2027.0.0-ballot",
+      "date" : "2026-09-14",
+      "path" : "https://medizininformatik-initiative.github.io/kerndatensatzmodul-consent/2027.0.0-ballot"
+    },
+    "milestone" : {
+      "version" : "2027.0.0-ballot",
+      "date" : "2026-09-14",
+      "path" : "https://medizininformatik-initiative.github.io/kerndatensatzmodul-consent/2027.0.0-ballot"
+    }
+  }]
+}

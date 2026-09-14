@@ -1,0 +1,24 @@
+{
+  "list" : [{
+    "version" : "current",
+    "path" : "https://medizininformatik-initiative.github.io/kerndatensatzmodul-consent/branches/dev/",
+    "status" : "ci-build",
+    "sequence" : "ci-build",
+    "desc" : "Continuous Integration Build (latest in version control) - Content subject to frequent changes"
+  },
+  {
+    "version" : "2027.0.0-ballot",
+    "path" : "https://medizininformatik-initiative.github.io/kerndatensatzmodul-consent/2027.0.0-ballot",
+    "status" : "release",
+    "sequence" : "2027",
+    "fhirversion" : "4.0.1",
+    "date" : "2026-09-14",
+    "current" : true,
+    "desc" : "KDS Modul Consent 2027.0.0-ballot (Ballot-Version; Migration auf die IG-Publisher-Toolchain, QA-Korrekturen, Parent-Paket de.einwilligungsmanagement 2.0.4)"
+  }],
+  "package-id" : "de.medizininformatikinitiative.kerndatensatz.consent",
+  "canonical" : "https://www.medizininformatik-initiative.de/fhir/modul-consent",
+  "title" : "MII Implementation Guide Consent",
+  "category" : "Research",
+  "introduction" : "KDS Modul Consent der Medizininformatik-Initiative (MII)"
+}
