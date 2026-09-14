@@ -9,7 +9,7 @@
     "systems" : ["http://fhir.de/ConsentManagement/CodeSystem/ResultType"],
     "uses" : {
     },
-    "StructureDefinition-e0e166b4-0f77-478d-9062-de0034d98ce0.html" : "Profile - MI-I - Consent - Einwilligung"
+    "StructureDefinition-mii-pr-consent-einwilligung.html" : "Profile - MI-I - Consent - Einwilligung"
   },
   {
     "url" : "http://fhir.de/ConsentManagement/ValueSet/TemplateType",
@@ -21,7 +21,7 @@
     "systems" : ["http://fhir.de/ConsentManagement/CodeSystem/TemplateType"],
     "uses" : {
     },
-    "StructureDefinition-e0e166b4-0f77-478d-9062-de0034d98ce0.html" : "Profile - MI-I - Consent - Einwilligung"
+    "StructureDefinition-mii-pr-consent-einwilligung.html" : "Profile - MI-I - Consent - Einwilligung"
   },
   {
     "url" : "https://www.medizininformatik-initiative.de/fhir/modul-consent/ValueSet/mii-vs-consent-answer",
@@ -46,7 +46,7 @@
     "sources" : ["2.16.840.1.113883.3.1937.777.24.11.36"],
     "uses" : {
     },
-    "StructureDefinition-e0e166b4-0f77-478d-9062-de0034d98ce0.html" : "Profile - MI-I - Consent - Einwilligung"
+    "StructureDefinition-mii-pr-consent-einwilligung.html" : "Profile - MI-I - Consent - Einwilligung"
   },
   {
     "url" : "https://www.medizininformatik-initiative.de/fhir/modul-consent/ValueSet/mii-vs-consent-signaturetypes",
@@ -58,6 +58,6 @@
     "systems" : ["urn:iso-astm:E1762-95:2013"],
     "uses" : {
     },
-    "StructureDefinition-f675b1e8-9f3f-44e8-bb59-9681f78eb464.html" : "Profile - MI-I - Consent - Provenance"
+    "StructureDefinition-mii-pr-consent-provenance.html" : "Profile - MI-I - Consent - Provenance"
   }]
 }

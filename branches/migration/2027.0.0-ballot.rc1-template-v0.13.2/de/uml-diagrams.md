@@ -14,7 +14,7 @@ Die Einwilligung wird in einem konkreten Kontext (z.B. MII) erhoben, was in FHIR
 
 ### Provenance
 
-Die Provenance-Resource beschreibt die Herkunft der Einwilligungsinhalte (u.a. Unterschriften) und verknüpft diese mit den beteiligten Personen ([Patient](https://ig.fhir.de/einwilligungsmanagement/stable/Patient.html), Consent Witness) und eventuell vorhandenen Dokumenten-Scans ([DocumentReference](StructureDefinition-56375452-bfa1-4111-af7c-5b5ba9a1857c.md)). Ebenso können die für die Erhebung genutzten Anwendungssysteme genannt (display) bzw. referenziert werden, sowie im Anwendungssystem geltende Patienten-Identifier.
+Die Provenance-Resource beschreibt die Herkunft der Einwilligungsinhalte (u.a. Unterschriften) und verknüpft diese mit den beteiligten Personen ([Patient](https://ig.fhir.de/einwilligungsmanagement/stable/Patient.html), Consent Witness) und eventuell vorhandenen Dokumenten-Scans ([DocumentReference](StructureDefinition-mii-pr-consent-documentreference.md)). Ebenso können die für die Erhebung genutzten Anwendungssysteme genannt (display) bzw. referenziert werden, sowie im Anwendungssystem geltende Patienten-Identifier.
 
 ### Abbildung von Fragebögen
 

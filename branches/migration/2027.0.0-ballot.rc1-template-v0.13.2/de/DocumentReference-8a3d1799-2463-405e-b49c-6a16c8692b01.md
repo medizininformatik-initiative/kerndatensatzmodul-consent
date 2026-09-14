@@ -14,7 +14,7 @@
 
 Last updated: 2020-12-11 09:09:07+0000
 
-Profile: [Profile - MI-I - Consent - DocumentReference](StructureDefinition-56375452-bfa1-4111-af7c-5b5ba9a1857c.md)
+Profile: [Profile - MI-I - Consent - DocumentReference](StructureDefinition-mii-pr-consent-documentreference.md)
 
 **status**: Current
 

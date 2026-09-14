@@ -18,7 +18,7 @@
     "oids" : ["2.16.840.1.113883.3.1937.777.24.5.2"],
     "uses" : {
     },
-    "ValueSet-2.16.840.1.113883.3.1937.777.24.11.30--20210323234509.html" : "MII Consent: Answer ValueSet"
+    "ValueSet-mii-vs-consent-answer.html" : "MII Consent: Answer ValueSet"
   },
   {
     "url" : "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3",
@@ -30,6 +30,6 @@
     "oids" : ["2.16.840.1.113883.3.1937.777.24.5.3"],
     "uses" : {
     },
-    "ValueSet-2.16.840.1.113883.3.1937.777.24.11.36--20230331232804.html" : "MII Consent: Policy ValueSet"
+    "ValueSet-mii-vs-consent-policy.html" : "MII Consent: Policy ValueSet"
   }]
 }

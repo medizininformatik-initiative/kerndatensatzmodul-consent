@@ -63,28 +63,28 @@
   "name" : "MII_SP_Consent_ProvisionType"
 },
 {
-  "id" : "56375452-bfa1-4111-af7c-5b5ba9a1857c",
+  "id" : "mii-pr-consent-documentreference",
   "type" : "StructureDefinition",
   "url" : "https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-documentreference",
   "version" : "2027.0.0-ballot.rc1",
   "name" : "MII_PR_Consent_DocumentReference"
 },
 {
-  "id" : "e0e166b4-0f77-478d-9062-de0034d98ce0",
+  "id" : "mii-pr-consent-einwilligung",
   "type" : "StructureDefinition",
   "url" : "https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-einwilligung",
   "version" : "2027.0.0-ballot.rc1",
   "name" : "MII_PR_Consent_Einwilligung"
 },
 {
-  "id" : "f675b1e8-9f3f-44e8-bb59-9681f78eb464",
+  "id" : "mii-pr-consent-provenance",
   "type" : "StructureDefinition",
   "url" : "https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-provenance",
   "version" : "2027.0.0-ballot.rc1",
   "name" : "MII_PR_Consent_Provenance"
 },
 {
-  "id" : "2.16.840.1.113883.3.1937.777.24.11.30--20210323234509",
+  "id" : "mii-vs-consent-answer",
   "type" : "ValueSet",
   "url" : "https://www.medizininformatik-initiative.de/fhir/modul-consent/ValueSet/mii-vs-consent-answer",
   "version" : "2027.0.0-ballot.rc1",
@@ -92,7 +92,7 @@
   "oids" : ["2.16.840.1.113883.3.1937.777.24.11.30"]
 },
 {
-  "id" : "2.16.840.1.113883.3.1937.777.24.11.36--20230331232804",
+  "id" : "mii-vs-consent-policy",
   "type" : "ValueSet",
   "url" : "https://www.medizininformatik-initiative.de/fhir/modul-consent/ValueSet/mii-vs-consent-policy",
   "version" : "2027.0.0-ballot.rc1",
@@ -100,7 +100,7 @@
   "oids" : ["2.16.840.1.113883.3.1937.777.24.11.36"]
 },
 {
-  "id" : "88464c5b-5338-4c2b-9c07-b42fef2ada64",
+  "id" : "mii-vs-consent-signaturetypes",
   "type" : "ValueSet",
   "url" : "https://www.medizininformatik-initiative.de/fhir/modul-consent/ValueSet/mii-vs-consent-signaturetypes",
   "version" : "2027.0.0-ballot.rc1",

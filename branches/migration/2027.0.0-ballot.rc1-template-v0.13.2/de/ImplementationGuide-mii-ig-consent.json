@@ -1356,7 +1356,7 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/2.16.840.1.113883.3.1937.777.24.11.30--20210323234509"
+        "reference" : "ValueSet/mii-vs-consent-answer"
       },
       "name" : "MII Consent: Answer ValueSet",
       "description" : "This ValueSet contains the possible answers to the questions of the MII Consent.",
@@ -1380,7 +1380,7 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/2.16.840.1.113883.3.1937.777.24.11.36--20230331232804"
+        "reference" : "ValueSet/mii-vs-consent-policy"
       },
       "name" : "MII Consent: Policy ValueSet",
       "description" : "**Disclaimer** \n\n (Punkte übernommen aus der Policy Liste ([MII SharePoint, TF Consent Umsetzung](https://tmfev.sharepoint.com/:f:/r/sites/tmf/mi-i/Taskforce%20Consent%20Umsetzung/02_Dokumente/Policies?csf=1&web=1&e=C0xLim \"\")))\n1. Diese Liste fasst erforderliche\n                    Einwilligungsmodule und zugeordnete Einwilligungspolicies für die technische Abbildung der \"MII Mustertexte Patienteneinwilligung\" in den aktuell verfügbaren Versionen zusammen. \n2. Für die Abbildung der Policies im Art Decor werden ausschließlich die Spalten [Policybezeichner], [Bedeutung/Kontext] und [OID] verwendet. \n3. Die Formulierung in\n                    der Spalte [Bedeutung/Kontext] dient ausschließlich administrativen Zwecken und der Verständnisbildung für die jeweilige Policy. \n4. Eine Darstellung der jeweiligen Formulierung innerhalb von Formularen oder digitalen Einwilligungsdokumenten ist nicht intendiert. \n5. Die Spalte [Weitere Hinweise Enforcement-Seite] nennt zusätzliche\n                    Randbedingungen, die auf der datenverarbeitenden Seite über die reine Einwilligungsinformation hinaus zu berücksichtigen sind. Die Gewährleistung der Einhaltung dieser weiteren Hinweise geht über den Wirkungsraum der Task Force Consent Umsetzung hinaus. \n\n **Hinweis 1 - Verwendung in FHIR:** Siehe [Implementation Guide](https://ig.fhir.de/einwilligungsmanagement/stable/Consent.html \"consent.provision Hierarchie ist noch in Arbeit\").  \n\n **Hinweis 2 - Verwendung in IHE BPPC:** \nUm die in diesem ValueSet enthaltenen Codes in IHE BPPC verwenden zu können, ist eine Kombination mit dem [MII Consent: Answer ValueSet](https://art-decor.org/art-decor/decor-valuesets--mide-?id=2.16.840.1.113883.3.1937.777.24.11.30&effectiveDate=2021-03-23T23:45:09&language=de-DE \"\") möglich (evtl. sogar erforderlich).  \n\n  Beispiel 1:  \n\n Patient hat dem Erheben der IDAT (Policy: 2.16.840.1.113883.3.1937.777.24.5.3.2 \"IDAT_erheben\") zugestimmt:\n                            2.16.840.1.113883.3.1937.777.24.5.3.2**.1**\u00a0(.1 wird aus dem\u00a0[MII Consent: Answer ValueSet](https://art-decor.org/art-decor/decor-valuesets--mide-?id=2.16.840.1.113883.3.1937.777.24.11.30&effectiveDate=2021-03-23T23:45:09&language=de-DE \"\")\u00a0angehängt)  \n\n Beispiel 2:  \n\n 2.16.840.1.113883.3.1937.777.24.5.3.4.2\n                    bedeutet, dass der Patient der Policy\u00a0IDAT_zusammenfuehren_Dritte nicht zugestimmt hat.",
@@ -1392,7 +1392,7 @@
         "valueString" : "ValueSet"
       }],
       "reference" : {
-        "reference" : "ValueSet/88464c5b-5338-4c2b-9c07-b42fef2ada64"
+        "reference" : "ValueSet/mii-vs-consent-signaturetypes"
       },
       "name" : "MII Consent: Signature Types",
       "description" : "Dieses ValueSet enthält die zulässigen Werte für den Signaturtyp im Kontext des MI-I Consent.",
@@ -1499,7 +1499,7 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/56375452-bfa1-4111-af7c-5b5ba9a1857c"
+        "reference" : "StructureDefinition/mii-pr-consent-documentreference"
       },
       "name" : "Profile - MI-I - Consent - DocumentReference",
       "description" : "Dieses Profil beschreibt die Abbildung von Originaldokumenten zu Einwilligungen in der Medizininformatik-Initiative.\nDiese müssen im PDF-Format vorliegen.",
@@ -1511,7 +1511,7 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/e0e166b4-0f77-478d-9062-de0034d98ce0"
+        "reference" : "StructureDefinition/mii-pr-consent-einwilligung"
       },
       "name" : "Profile - MI-I - Consent - Einwilligung",
       "description" : "Dieses Profil beschreibt eine Einwilligung in der Medizininformatik-Initiative.",
@@ -1523,7 +1523,7 @@
         "valueString" : "StructureDefinition:resource"
       }],
       "reference" : {
-        "reference" : "StructureDefinition/f675b1e8-9f3f-44e8-bb59-9681f78eb464"
+        "reference" : "StructureDefinition/mii-pr-consent-provenance"
       },
       "name" : "Profile - MI-I - Consent - Provenance",
       "description" : "Dieses Profil beschreibt Herkunftsinformationen zu Einwilligungen in der Medizininformatik-Initiative.",

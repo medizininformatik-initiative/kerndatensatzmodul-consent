@@ -16,7 +16,7 @@ This CodeSystem contains the possible answers to the questions of the MII Consen
 
 Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
 
-* [MII Consent: Answer ValueSet](ValueSet-2.16.840.1.113883.3.1937.777.24.11.30--20210323234509.md)
+* [MII Consent: Answer ValueSet](ValueSet-mii-vs-consent-answer.md)
 
 -------
 

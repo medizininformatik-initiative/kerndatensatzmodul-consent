@@ -13,7 +13,7 @@ Diese Seite beschreibt die ValueSets des Moduls **Consent**; die zugrunde liegen
 
 Erweiterungen des PolicyValueSets im ART-DECOR werden zeitnah durch die TFCU in diesem IG eingepflegt. Eine erneute Ballotierung ist nicht erforderlich.
 
-Siehe die Artefaktseite [MII_VS_Consent_Policy](ValueSet-2.16.840.1.113883.3.1937.777.24.11.36--20230331232804.md).
+Siehe die Artefaktseite [MII_VS_Consent_Policy](ValueSet-mii-vs-consent-policy.md).
 
 ### mii-vs-consent-signaturetypes
 
@@ -31,5 +31,5 @@ Gemäß HL7-D AG Einwilligungsmanagement-Empfehlung
 
 Dieses ValueSet findet ausschließlich im Kontext von Questionnaires Verwendung.
 
-Siehe die Artefaktseite [mii-vs-consent-answer](ValueSet-2.16.840.1.113883.3.1937.777.24.11.30--20210323234509.md).
+Siehe die Artefaktseite [mii-vs-consent-answer](ValueSet-mii-vs-consent-answer.md).
 

@@ -16,7 +16,7 @@ Codesystem mit Consent-Policy-Codes zur interoperablen Operationalisierung bzw. 
 
 This Code system is referenced in the definition of the following value sets:
 
-* [MII Consent: Policy ValueSet](ValueSet-2.16.840.1.113883.3.1937.777.24.11.36--20230331232804.md)
+* [MII Consent: Policy ValueSet](ValueSet-mii-vs-consent-policy.md)
 
 -------
 

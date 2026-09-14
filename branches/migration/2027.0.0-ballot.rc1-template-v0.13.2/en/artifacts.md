@@ -36,9 +36,9 @@ These define constraints on FHIR resources for systems conforming to this implem
 
 | | |
 | :--- | :--- |
-| [ Profile - MI-I - Consent - DocumentReference  ](StructureDefinition-56375452-bfa1-4111-af7c-5b5ba9a1857c.md) | Dieses Profil beschreibt die Abbildung von Originaldokumenten zu Einwilligungen in der Medizininformatik-Initiative. Diese müssen im PDF-Format vorliegen. |
-| [ Profile - MI-I - Consent - Einwilligung  ](StructureDefinition-e0e166b4-0f77-478d-9062-de0034d98ce0.md) | Dieses Profil beschreibt eine Einwilligung in der Medizininformatik-Initiative. |
-| [ Profile - MI-I - Consent - Provenance  ](StructureDefinition-f675b1e8-9f3f-44e8-bb59-9681f78eb464.md) | Dieses Profil beschreibt Herkunftsinformationen zu Einwilligungen in der Medizininformatik-Initiative. |
+| [ Profile - MI-I - Consent - DocumentReference  ](StructureDefinition-mii-pr-consent-documentreference.md) | Dieses Profil beschreibt die Abbildung von Originaldokumenten zu Einwilligungen in der Medizininformatik-Initiative. Diese müssen im PDF-Format vorliegen. |
+| [ Profile - MI-I - Consent - Einwilligung  ](StructureDefinition-mii-pr-consent-einwilligung.md) | Dieses Profil beschreibt eine Einwilligung in der Medizininformatik-Initiative. |
+| [ Profile - MI-I - Consent - Provenance  ](StructureDefinition-mii-pr-consent-provenance.md) | Dieses Profil beschreibt Herkunftsinformationen zu Einwilligungen in der Medizininformatik-Initiative. |
 
 ### Terminology: Value Sets 
 
@@ -46,14 +46,14 @@ These define sets of codes used by systems conforming to this implementation gui
 
 | | |
 | :--- | :--- |
-| [ MII Consent: Answer ValueSet  ](ValueSet-2.16.840.1.113883.3.1937.777.24.11.30--20210323234509.md) | This ValueSet contains the possible answers to the questions of the MII Consent. |
-| [ MII Consent: Policy ValueSet  ](ValueSet-2.16.840.1.113883.3.1937.777.24.11.36--20230331232804.md) | **Disclaimer**(Punkte übernommen aus der Policy Liste ([MII SharePoint, TF Consent Umsetzung](https://tmfev.sharepoint.com/:f:/r/sites/tmf/mi-i/Taskforce%20Consent%20Umsetzung/02_Dokumente/Policies?csf=1&web=1&e=C0xLim "")))1. Diese Liste fasst erforderliche Einwilligungsmodule und zugeordnete Einwilligungspolicies für die technische Abbildung der "MII Mustertexte Patienteneinwilligung" in den aktuell verfügbaren Versionen zusammen.
+| [ MII Consent: Answer ValueSet  ](ValueSet-mii-vs-consent-answer.md) | This ValueSet contains the possible answers to the questions of the MII Consent. |
+| [ MII Consent: Policy ValueSet  ](ValueSet-mii-vs-consent-policy.md) | **Disclaimer**(Punkte übernommen aus der Policy Liste ([MII SharePoint, TF Consent Umsetzung](https://tmfev.sharepoint.com/:f:/r/sites/tmf/mi-i/Taskforce%20Consent%20Umsetzung/02_Dokumente/Policies?csf=1&web=1&e=C0xLim "")))1. Diese Liste fasst erforderliche Einwilligungsmodule und zugeordnete Einwilligungspolicies für die technische Abbildung der "MII Mustertexte Patienteneinwilligung" in den aktuell verfügbaren Versionen zusammen.
 1. Für die Abbildung der Policies im Art Decor werden ausschließlich die Spalten [Policybezeichner], [Bedeutung/Kontext] und [OID] verwendet.
 1. Die Formulierung in der Spalte [Bedeutung/Kontext] dient ausschließlich administrativen Zwecken und der Verständnisbildung für die jeweilige Policy.
 1. Eine Darstellung der jeweiligen Formulierung innerhalb von Formularen oder digitalen Einwilligungsdokumenten ist nicht intendiert.
 1. Die Spalte [Weitere Hinweise Enforcement-Seite] nennt zusätzliche Randbedingungen, die auf der datenverarbeitenden Seite über die reine Einwilligungsinformation hinaus zu berücksichtigen sind. Die Gewährleistung der Einhaltung dieser weiteren Hinweise geht über den Wirkungsraum der Task Force Consent Umsetzung hinaus.
 **Hinweis 1 - Verwendung in FHIR:** Siehe [Implementation Guide](https://ig.fhir.de/einwilligungsmanagement/stable/Consent.html).**Hinweis 2 - Verwendung in IHE BPPC:** Um die in diesem ValueSet enthaltenen Codes in IHE BPPC verwenden zu können, ist eine Kombination mit dem [MII Consent: Answer ValueSet](https://art-decor.org/art-decor/decor-valuesets–mide-?id=2.16.840.1.113883.3.1937.777.24.11.30&effectiveDate=2021-03-23T23:45:09&language=de-DE "") möglich (evtl. sogar erforderlich).Beispiel 1:Patient hat dem Erheben der IDAT (Policy: 2.16.840.1.113883.3.1937.777.24.5.3.2 "IDAT_erheben") zugestimmt: 2.16.840.1.113883.3.1937.777.24.5.3.2**.1** (.1 wird aus dem [MII Consent: Answer ValueSet](https://art-decor.org/art-decor/decor-valuesets–mide-?id=2.16.840.1.113883.3.1937.777.24.11.30&effectiveDate=2021-03-23T23:45:09&language=de-DE "") angehängt)Beispiel 2:2.16.840.1.113883.3.1937.777.24.5.3.4.2 bedeutet, dass der Patient der Policy IDAT_zusammenfuehren_Dritte nicht zugestimmt hat. |
-| [ MII Consent: Signature Types  ](ValueSet-88464c5b-5338-4c2b-9c07-b42fef2ada64.md) | Dieses ValueSet enthält die zulässigen Werte für den Signaturtyp im Kontext des MI-I Consent. |
+| [ MII Consent: Signature Types  ](ValueSet-mii-vs-consent-signaturetypes.md) | Dieses ValueSet enthält die zulässigen Werte für den Signaturtyp im Kontext des MI-I Consent. |
 
 ### Terminology: Code Systems 
 

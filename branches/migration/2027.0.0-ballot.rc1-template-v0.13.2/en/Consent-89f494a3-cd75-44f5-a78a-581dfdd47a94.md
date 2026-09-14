@@ -14,7 +14,7 @@
 
 Last updated: 2020-12-11 09:39:07+0000
 
-Profile: [Profile - MI-I - Consent - Einwilligung](StructureDefinition-e0e166b4-0f77-478d-9062-de0034d98ce0.md)
+Profile: [Profile - MI-I - Consent - Einwilligung](StructureDefinition-mii-pr-consent-einwilligung.md)
 
 ## Participants
 
