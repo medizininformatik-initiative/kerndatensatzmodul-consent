@@ -27,7 +27,7 @@ Profile: [Profile - MI-I - Consent - DocumentReference](StructureDefinition-5637
 | | | |
 | :--- | :--- | :--- |
 | - | **ContentType** | **Data** |
-| * | application/pdf | `YmFzZTY0Q29kaWVydGVzUERGRGVzVW50ZXJzY2hyaWViZW5lblBhdGllbnRlbkVpbndpbGxpZ3VuZ3Nib2dlbnM=` |
+| * | pdf | `YmFzZTY0Q29kaWVydGVzUERGRGVzVW50ZXJzY2hyaWViZW5lblBhdGllbnRlbkVpbndpbGxpZ3VuZ3Nib2dlbnM=` |
 
 
 

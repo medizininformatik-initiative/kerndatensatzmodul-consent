@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Official URL*:https://www.medizininformatik-initiative.de/fhir/modul-consent/ValueSet/mii-vs-consent-policy | *Version*:2027.0.0-ballot.rc1 |
-| Active as of 2026-09-04 | *Computable Name*:MiiConsentPolicyValueSet |
+| Active as of 2026-09-14 | *Computable Name*:MiiConsentPolicyValueSet |
 | *Other Identifiers:*OID:2.16.840.1.113883.3.1937.777.24.11.36 (use: official, ) | |
 
  
@@ -70,7 +70,7 @@ Beispiel 2:
   "title" : "MII Consent: Policy ValueSet",
   "status" : "active",
   "experimental" : false,
-  "date" : "2026-09-04T13:15:57+00:00",
+  "date" : "2026-09-14T12:52:13+00:00",
   "publisher" : "NUM-DIZ",
   "_publisher" : {
     "extension" : [{
