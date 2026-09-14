@@ -1,37 +1,37 @@
 <?xml version="1.0" ?>
 
 <xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
-  <file source-language="de" target-language="en" id="ValueSet-2.16.840.1.113883.3.1937.777.24.11.36--20230331232804" original="Resource ValueSet-2.16.840.1.113883.3.1937.777.24.11.36--20230331232804" datatype="KEYVALUEJSON">
+  <file source-language="de" target-language="en" id="ValueSet-mii-vs-consent-policy" original="Resource ValueSet-mii-vs-consent-policy" datatype="KEYVALUEJSON">
     <body>
-      <trans-unit id="ValueSet-2.16.840.1.113883.3.1937.777.24.11.36--20230331232804" resname="ValueSet.name">
+      <trans-unit id="ValueSet-mii-vs-consent-policy" resname="ValueSet.name">
              <notes>
                <note id="n1">ValueSet.name</note>
              </notes>
         <source>MiiConsentPolicyValueSet</source>
         <target></target>
       </trans-unit>
-      <trans-unit id="ValueSet-2.16.840.1.113883.3.1937.777.24.11.36--20230331232804" resname="ValueSet.title">
+      <trans-unit id="ValueSet-mii-vs-consent-policy" resname="ValueSet.title">
              <notes>
                <note id="n1">ValueSet.title</note>
              </notes>
         <source>MII Consent: Policy ValueSet</source>
         <target></target>
       </trans-unit>
-      <trans-unit id="ValueSet-2.16.840.1.113883.3.1937.777.24.11.36--20230331232804" resname="ValueSet.publisher">
+      <trans-unit id="ValueSet-mii-vs-consent-policy" resname="ValueSet.publisher">
              <notes>
                <note id="n1">ValueSet.publisher</note>
              </notes>
         <source>NUM-DIZ</source>
         <target>NUM-DIZ</target>
       </trans-unit>
-      <trans-unit id="ValueSet-2.16.840.1.113883.3.1937.777.24.11.36--20230331232804" resname="ContactDetail.name">
+      <trans-unit id="ValueSet-mii-vs-consent-policy" resname="ContactDetail.name">
              <notes>
                <note id="n1">ContactDetail.name</note>
              </notes>
         <source>NUM-DIZ</source>
         <target></target>
       </trans-unit>
-      <trans-unit id="ValueSet-2.16.840.1.113883.3.1937.777.24.11.36--20230331232804" resname="ValueSet.description">
+      <trans-unit id="ValueSet-mii-vs-consent-policy" resname="ValueSet.description">
              <notes>
                <note id="n1">ValueSet.description</note>
              </notes>
@@ -63,7 +63,7 @@ Um die in diesem ValueSet enthaltenen Codes in IHE BPPC verwenden zu können, is
                     bedeutet, dass der Patient der Policy IDAT_zusammenfuehren_Dritte nicht zugestimmt hat.</source>
         <target></target>
       </trans-unit>
-      <trans-unit id="ValueSet-2.16.840.1.113883.3.1937.777.24.11.36--20230331232804" resname="Coding.display">
+      <trans-unit id="ValueSet-mii-vs-consent-policy" resname="Coding.display">
              <notes>
                <note id="n1">Coding.display</note>
              </notes>

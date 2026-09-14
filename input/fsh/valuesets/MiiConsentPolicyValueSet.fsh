@@ -1,5 +1,5 @@
 ValueSet: MiiConsentPolicyValueSet
-Id: 2.16.840.1.113883.3.1937.777.24.11.36--20230331232804
+Id: mii-vs-consent-policy
 Title: "MII Consent: Policy ValueSet"
 Description: """**Disclaimer** 
 

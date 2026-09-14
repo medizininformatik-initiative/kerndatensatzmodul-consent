@@ -8,15 +8,15 @@
      des Quell-Repositories; der Simplifier-Leitfaden verlinkte sie hot auf den
      master-Branch). Die .graphml-Quelle liegt unter figures/. -->
 
-### [Consent](StructureDefinition-e0e166b4-0f77-478d-9062-de0034d98ce0.html)
+### [Consent](StructureDefinition-mii-pr-consent-einwilligung.html)
 
 The Consent resource is a purely machine-readable representation of a person's real-world consent and is used for the enforcement (implementation, execution) of the consent policies.
 
 The consent is obtained in a concrete context (e.g. MII), which is modeled in FHIR in the form of a reference to the responsible organization ([Organization](https://ig.fhir.de/einwilligungsmanagement/stable/Organization.html)) and/or to a research project ([ResearchStudy](https://ig.fhir.de/einwilligungsmanagement/stable/ResearchStudy.html)).
 
-### [Provenance](StructureDefinition-f675b1e8-9f3f-44e8-bb59-9681f78eb464.html)
+### [Provenance](StructureDefinition-mii-pr-consent-provenance.html)
 
-The Provenance resource describes the origin of the consent contents (including signatures) and links them to the persons involved ([Patient](https://ig.fhir.de/einwilligungsmanagement/stable/Patient.html), Consent Witness) and to any existing document scans ([DocumentReference](StructureDefinition-56375452-bfa1-4111-af7c-5b5ba9a1857c.html)). Likewise, the application systems used for capturing the consent can be named (display) or referenced, as well as the patient identifiers valid in the application system.
+The Provenance resource describes the origin of the consent contents (including signatures) and links them to the persons involved ([Patient](https://ig.fhir.de/einwilligungsmanagement/stable/Patient.html), Consent Witness) and to any existing document scans ([DocumentReference](StructureDefinition-mii-pr-consent-documentreference.html)). Likewise, the application systems used for capturing the consent can be named (display) or referenced, as well as the patient identifiers valid in the application system.
 
 ### Representation of [questionnaires](frageboegen.html)
 

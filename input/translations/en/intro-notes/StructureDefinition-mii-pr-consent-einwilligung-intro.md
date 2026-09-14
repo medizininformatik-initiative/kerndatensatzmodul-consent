@@ -1,4 +1,4 @@
-<!-- machine translation of source page StructureDefinition-e0e166b4-0f77-478d-9062-de0034d98ce0-intro.md (de). TODO:REVIEW — Gate C. -->
+<!-- machine translation of source page StructureDefinition-mii-pr-consent-einwilligung-intro.md (de). TODO:REVIEW — Gate C. -->
 <!-- Wortgetreu übertragen aus der Simplifier-Quellseite
      https://simplifier.net/guide/miiigmodulconsent/MIIIGModulConsent/TechnischeImplementierung/FHIRProfile/Consent?version=2027.0.0-ballot.rc1
      (Harvest 2026-09-04; Delta zu 2026.0.0: zwei Tabellenzeilen-Label); Links umgeschrieben (page-map). -->

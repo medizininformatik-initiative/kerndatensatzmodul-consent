@@ -1,6 +1,6 @@
 Profile: MII_PR_Consent_Einwilligung
 Parent: ConsentManagementConsent
-Id: e0e166b4-0f77-478d-9062-de0034d98ce0
+Id: mii-pr-consent-einwilligung
 Title: "Profile - MI-I - Consent - Einwilligung"
 Description: "Dieses Profil beschreibt eine Einwilligung in der Medizininformatik-Initiative."
 * ^url = "https://www.medizininformatik-initiative.de/fhir/modul-consent/StructureDefinition/mii-pr-consent-einwilligung"

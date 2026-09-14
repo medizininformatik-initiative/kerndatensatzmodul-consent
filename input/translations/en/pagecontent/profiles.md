@@ -18,13 +18,13 @@ For **mandatory** elements or elements marked as **must-support**, please refer 
 
 The profiles of this module:
 
-* [MII PR Consent Einwilligung](StructureDefinition-e0e166b4-0f77-478d-9062-de0034d98ce0.html)
-* [MII PR Consent Provenance](StructureDefinition-f675b1e8-9f3f-44e8-bb59-9681f78eb464.html)
-* [MII PR Consent DocumentReference](StructureDefinition-56375452-bfa1-4111-af7c-5b5ba9a1857c.html)
+* [MII PR Consent Einwilligung](StructureDefinition-mii-pr-consent-einwilligung.html)
+* [MII PR Consent Provenance](StructureDefinition-mii-pr-consent-provenance.html)
+* [MII PR Consent DocumentReference](StructureDefinition-mii-pr-consent-documentreference.html)
 
 ### Further relevant profiles
 
-In addition to [Consent](StructureDefinition-e0e166b4-0f77-478d-9062-de0034d98ce0.html), [Provenance](StructureDefinition-f675b1e8-9f3f-44e8-bb59-9681f78eb464.html), and [DocumentReference](StructureDefinition-56375452-bfa1-4111-af7c-5b5ba9a1857c.html), further profiles are relevant for handling consents and consent templates; they are adopted unchanged from the [Einwilligungsmanagement implementation guide](https://ig.fhir.de/einwilligungsmanagement/stable/Home.html).
+In addition to [Consent](StructureDefinition-mii-pr-consent-einwilligung.html), [Provenance](StructureDefinition-mii-pr-consent-provenance.html), and [DocumentReference](StructureDefinition-mii-pr-consent-documentreference.html), further profiles are relevant for handling consents and consent templates; they are adopted unchanged from the [Einwilligungsmanagement implementation guide](https://ig.fhir.de/einwilligungsmanagement/stable/Home.html).
 
 Support for the following profiles is mandatory when using this guide:
 
