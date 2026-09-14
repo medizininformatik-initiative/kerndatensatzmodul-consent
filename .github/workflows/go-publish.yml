@@ -542,6 +542,16 @@ jobs:
             echo "Terminology: public HL7 fallback (https://tx.fhir.org)" >> "${GITHUB_STEP_SUMMARY}"
           fi
 
+      - name: Install parent snapshots (de.einwilligungsmanagement has none upstream)
+        # The upstream parent ships 0 snapshots in every release, 2.0.4 included,
+        # and SUSHI cannot import a parent without one. Seeds the cache entry
+        # de.einwilligungsmanagement#2.0.4 from the committed, checksum-verified
+        # rebuild in dependencies/, exactly as ig-publisher.yml and
+        # module-release.yml do. The script derives its own paths from its
+        # location, so calling it inside the source/ checkout is enough.
+        # TEMPORARY — remove with dependencies/ once upstream ships snapshots.
+        run: bash source/scripts/install-parent-snapshots.sh
+
       - name: Seed the comparison cache (previous-version packages)
         # No-op unless the module's sushi-config.yaml activates
         # `version-comparison`. The go-publish checkout lives in source/;
