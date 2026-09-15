@@ -220,3 +220,48 @@ This code system `urn:oid:2.16.840.1.113883.3.1937.777.24.5.3` contains the foll
 | 2   | Policy | IPSC Verbunddaten zusammenfuehren mit Dritten (DZPG)                             | 2.16.840.1.113883.3.1937.777.24.5.3.124     | 30         |            |
 
 
+
+### Versioning of the terminologies
+
+> **Draft.** This section records how the module handles versions. It is a
+> proposal for discussion in the TF CU and has not been decided.
+
+#### Artifact versions follow the module version
+
+All conformance resources of this module — profiles, code systems, value sets,
+search parameters and the capability statement — carry **the same version as the
+module**, i.e. the KDS CalVer version from `sushi-config.yaml`. In release
+2027.0.0-ballot that is `2027.0.0-ballot` throughout.
+
+Before the move to the IG Publisher toolchain these versions diverged (individual
+artifacts carried 1.0.9, 1.6.0 or 1.1.0). Since the migration they are set
+centrally from `input/fsh/rulesets/version.fsh`, so a release bump covers every
+artifact at once.
+
+**Consequence for implementers:** the artifact version states *which module
+release* an artifact shipped with. It is not a statement about whether the
+artifact changed against its predecessor. What changed is recorded in the
+[changelog](changes.html).
+
+#### Relationship to the ART-DECOR versions
+
+The policy and answer terminologies are maintained in ART-DECOR and taken from
+there into this module. The point of adoption is encoded in the `id` of the
+affected code systems (for example `…24.5.3--20251211153003`) and in the
+resource's `effectivePeriod`. The ART-DECOR version is **not** additionally
+mirrored into `CodeSystem.version` — that carries the module version.
+
+#### `Coding.version` in instance data
+
+`Consent.provision.provision.code.coding.version` exists in the profile (`0..1`)
+and is **not** flagged Must Support. The module therefore does not currently
+require a version on the individual coding.
+
+The Broad Consent version a consent refers to is expressed in two other places
+instead, both of them mandatory:
+
+* `Consent.category:mii` — the version or supplementary module of the MII Broad Consent,
+* `Consent.policy.uri` — the version-specific policy.
+
+Anyone wishing to additionally carry the version on the individual provision may
+populate `coding.version`; evaluating systems must not rely on it being set.
