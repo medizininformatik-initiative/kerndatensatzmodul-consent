@@ -203,6 +203,20 @@
              <notes>
                <note id="n1">ImplementationGuide.definition.resource.name</note>
              </notes>
+        <source>MII Consent: Policy URI</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-consent" resname="ImplementationGuide.definition.resource.description">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.description</note>
+             </notes>
+        <source>Versionen und Zusatzmodule des MII Broad Consent, die als Consent.policy.uri verwendet werden.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-consent" resname="ImplementationGuide.definition.resource.name">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.resource.name</note>
+             </notes>
         <source>MII Consent: Policy ValueSet</source>
         <target></target>
       </trans-unit>

@@ -141,6 +141,16 @@ msgstr ""
 
 # ImplementationGuide.definition.resource.name
 #: ImplementationGuide.definition.resource.name
+msgid "MII Consent: Policy URI"
+msgstr ""
+
+# ImplementationGuide.definition.resource.description
+#: ImplementationGuide.definition.resource.description
+msgid "Versionen und Zusatzmodule des MII Broad Consent, die als Consent.policy.uri verwendet werden."
+msgstr ""
+
+# ImplementationGuide.definition.resource.name
+#: ImplementationGuide.definition.resource.name
 msgid "MII Consent: Policy ValueSet"
 msgstr ""
 

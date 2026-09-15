@@ -332,6 +332,14 @@
       },
       {
         "reference": {
+          "reference": "ValueSet/mii-vs-consent-policyuri"
+        },
+        "name": "MII Consent: Policy URI",
+        "description": "Versionen und Zusatzmodule des MII Broad Consent, die als Consent.policy.uri verwendet werden.",
+        "exampleBoolean": false
+      },
+      {
+        "reference": {
           "reference": "ValueSet/mii-vs-consent-policy"
         },
         "name": "MII Consent: Policy ValueSet",
