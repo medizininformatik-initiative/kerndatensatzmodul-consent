@@ -219,3 +219,49 @@ Dieses Code System `urn:oid:2.16.840.1.113883.3.1937.777.24.5.3` enthält die fo
 | 2   | Policy | IPSC Verbunddaten zusammenfuehren mit Dritten (DZPG)                             | 2.16.840.1.113883.3.1937.777.24.5.3.124     | 30         |            |
 
 
+
+### Versionierung der Terminologien
+
+> **Entwurf.** Dieser Abschnitt hält fest, wie das Modul mit Versionen umgeht.
+> Er ist ein Vorschlag zur Abstimmung in der TF CU und noch nicht beschlossen.
+
+#### Artefakt-Versionen folgen der Modulversion
+
+Alle Konformitäts-Ressourcen dieses Moduls — Profile, CodeSystems, ValueSets,
+Suchparameter und der CapabilityStatement — tragen **dieselbe Version wie das
+Modul**, also die KDS-CalVer-Version aus `sushi-config.yaml`. Im Release
+2027.0.0-ballot ist das durchgängig `2027.0.0-ballot`.
+
+Vor der Umstellung auf die IG-Publisher-Toolchain liefen diese Versionen
+auseinander (einzelne Artefakte trugen etwa 1.0.9, 1.6.0 oder 1.1.0). Seit der
+Migration werden sie zentral aus `input/fsh/rulesets/version.fsh` gesetzt, sodass
+ein Release-Bump alle Artefakte zugleich erfasst.
+
+**Konsequenz für Implementierende:** Die Artefakt-Version sagt aus, *mit welchem
+Modul-Release* ein Artefakt ausgeliefert wurde — sie ist keine inhaltliche
+Aussage darüber, ob sich das Artefakt gegenüber dem Vorgänger geändert hat. Was
+sich inhaltlich geändert hat, steht im [Changelog](changes.html).
+
+#### Verhältnis zu den ART-DECOR-Versionen
+
+Die Policy- und Answer-Terminologien werden fachlich in ART-DECOR gepflegt und
+von dort in dieses Modul übernommen. Der Zeitpunkt der Übernahme steckt in der
+`id` der betroffenen CodeSystems (z. B. `…24.5.3--20251211153003`) sowie im
+`effectivePeriod` der Ressource. Die ART-DECOR-Version wird **nicht** zusätzlich
+in `CodeSystem.version` gespiegelt — dort steht die Modulversion.
+
+#### `Coding.version` in Instanzdaten
+
+`Consent.provision.provision.code.coding.version` ist im Profil vorhanden
+(`0..1`) und **nicht** als Must-Support gekennzeichnet. Das Modul verlangt die
+Versionsangabe an der einzelnen Kodierung derzeit also nicht.
+
+Die Broad-Consent-Version, auf die sich eine Einwilligung bezieht, wird
+stattdessen an zwei anderen Stellen ausgedrückt, die beide verpflichtend sind:
+
+* `Consent.category:mii` — die Version bzw. das Zusatzmodul des MII Broad Consent,
+* `Consent.policy.uri` — die versionsspezifische Policy.
+
+Wer die Version zusätzlich an der einzelnen Provision führen möchte, kann
+`coding.version` befüllen; auswertende Systeme dürfen sich aber nicht darauf
+verlassen, dass sie gesetzt ist.
