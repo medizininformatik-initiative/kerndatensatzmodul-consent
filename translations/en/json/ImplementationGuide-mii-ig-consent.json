@@ -360,6 +360,12 @@
     {
       "id" : "ImplementationGuide.definition.page.title",
       "context" : "ImplementationGuide.definition.page.title",
+      "source" : "Enforcement",
+      "target" : "Enforcement"
+    },
+    {
+      "id" : "ImplementationGuide.definition.page.title",
+      "context" : "ImplementationGuide.definition.page.title",
       "source" : "UML-Diagramme",
       "target" : "UML Diagrams"
     },

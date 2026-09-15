@@ -446,6 +446,13 @@ Diese müssen im PDF-Format vorliegen.</source>
              <notes>
                <note id="n1">ImplementationGuide.definition.page.title</note>
              </notes>
+        <source>Enforcement</source>
+        <target>Enforcement</target>
+      </trans-unit>
+      <trans-unit id="ImplementationGuide-mii-ig-consent" resname="ImplementationGuide.definition.page.title">
+             <notes>
+               <note id="n1">ImplementationGuide.definition.page.title</note>
+             </notes>
         <source>UML-Diagramme</source>
         <target>UML Diagrams</target>
       </trans-unit>

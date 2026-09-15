@@ -309,6 +309,8 @@ pages:
     title: Anleitung
     implementer-guidance.md:
       title: Anleitung für Implementierende
+    enforcement.md:
+      title: Enforcement
     uml-diagrams.md:
       title: UML-Diagramme
     frageboegen.md:
