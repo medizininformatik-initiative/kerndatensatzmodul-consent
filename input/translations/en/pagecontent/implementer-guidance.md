@@ -92,3 +92,34 @@ machine-readable way — it would exist only in the prose of the consent documen
 levels: systems MUST be able to populate, store and correctly process it. It MUST
 be set whenever the underlying policy has a data usage period that differs from
 its validity period; otherwise it is omitted.
+
+#### Multiple consents and revocations for the same person
+
+> **Draft.** This section fixes an evaluation rule. It is a proposal for
+> discussion in the TF CU and has not been decided.
+
+Where **several** Consent resources exist for one person — a consent and a later
+partial revocation, or consents to different Broad Consent versions — **no single
+resource** answers on its own whether a processing step is permitted.
+
+**Recommendation.** The evaluating party derives the currently valid state by,
+across all of that person's Consent resources,
+
+1. merging the **permitted periods** per policy code
+   (`provision.provision.code`) from all `permit` provisions,
+2. subtracting the **denied periods** from all `deny` provisions — including
+   resources that contain revocations only,
+3. and then checking whether the point in time in question falls within the
+   remaining permitted period.
+
+A revocation document thereby takes effect across the whole record without the
+original consent having to be modified. Each Consent resource remains an
+**unaltered image of the signed document**; the "latest truth" emerges only at
+evaluation time.
+
+**Not recommended** is overwriting or deleting existing Consent resources to
+produce a consolidated state. That would destroy the traceability of which
+declaration the person made, and when.
+
+A reference implementation of this evaluation is described in the
+[TORCH documentation on consent processing](https://medizininformatik-initiative.github.io/torch/implementation/consent.html).
