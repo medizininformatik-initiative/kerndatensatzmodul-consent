@@ -2,7 +2,9 @@ CodeSystem: MII_CS_Consent_Policy
 Id: 2.16.840.1.113883.3.1937.777.24.5.3--20251211153003
 Title: "MII Consent: Policy CodeSystem"
 Description: "Codesystem mit Consent-Policy-Codes zur interoperablen Operationalisierung bzw. Durchsetzung (Enforcement) von Consent Informationen des MII Broad Consent"
-* ^name = "MII CS Consent Policy"
+// MII-Namenskonvention: `name` ist maschinenlesbar und in Upper_Snake_Case zu
+// halten (Leerzeichen sind nur im `title` zulaessig). Siehe Issue #97.
+* ^name = "MII_CS_Consent_Policy"
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
 * ^url = "urn:oid:2.16.840.1.113883.3.1937.777.24.5.3"
 * ^version = "2027.0.0-ballot"

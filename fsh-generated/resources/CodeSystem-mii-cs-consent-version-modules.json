@@ -2,7 +2,7 @@
   "resourceType": "CodeSystem",
   "status": "draft",
   "content": "complete",
-  "name": "MIIConsentVersionModuleCodeSystem",
+  "name": "MII_CS_Consent_Version_Modules",
   "id": "mii-cs-consent-version-modules",
   "title": "MII Consent Version and Modules CodeSystem",
   "description": "Dieses Code System enthält die OIDs der verschiedenen Versionen und Zusatzmodule des Broad Consent der Medizininformatik Initiative.",

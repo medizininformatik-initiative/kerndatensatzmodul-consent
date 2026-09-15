@@ -2,7 +2,7 @@
   "resourceType": "CodeSystem",
   "status": "active",
   "content": "complete",
-  "name": "MII CS Consent Policy",
+  "name": "MII_CS_Consent_Policy",
   "id": "2.16.840.1.113883.3.1937.777.24.5.3--20251211153003",
   "title": "MII Consent: Policy CodeSystem",
   "description": "Codesystem mit Consent-Policy-Codes zur interoperablen Operationalisierung bzw. Durchsetzung (Enforcement) von Consent Informationen des MII Broad Consent",
