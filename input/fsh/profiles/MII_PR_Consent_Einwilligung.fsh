@@ -32,10 +32,14 @@ Description: "Dieses Profil beschreibt eine Einwilligung in der Medizininformati
 * category ^slicing.discriminator.type = #pattern
 * category ^slicing.discriminator.path = "$this"
 * category ^slicing.rules = #open
+// Issue #115: resultType ist verpflichtend, damit maschinell eindeutig ist, um
+// welche Art von Consent-Ressource es sich handelt (document / consent-status).
+// Anwendungsfaelle wie die FDPG brauchen diese Unterscheidung. Die Mindest-
+// kardinalitaet von `category` ergibt sich daraus automatisch als 3.
 * category contains
     consentCategory 1..1 MS and
     mii 1..1 MS and
-    resultType 0..* MS and
+    resultType 1..1 MS and
     templateType 0..* MS
 * category[consentCategory] = $loinc#57016-8
 * category[consentCategory].coding 1..1 MS
