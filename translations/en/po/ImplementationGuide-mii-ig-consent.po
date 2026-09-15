@@ -322,6 +322,11 @@ msgstr "Guidance for Implementers"
 
 # ImplementationGuide.definition.page.title
 #: ImplementationGuide.definition.page.title
+msgid "Enforcement"
+msgstr "Enforcement"
+
+# ImplementationGuide.definition.page.title
+#: ImplementationGuide.definition.page.title
 msgid "UML-Diagramme"
 msgstr "UML Diagrams"
 
