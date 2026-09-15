@@ -1,0 +1,31 @@
+
+# ValueSet.name
+#: ValueSet.name
+msgid "MII_VS_Consent_PolicyUri"
+msgstr ""
+
+# ValueSet.title
+#: ValueSet.title
+msgid "MII Consent: Policy URI"
+msgstr ""
+
+# ValueSet.publisher
+#: ValueSet.publisher
+msgid "NUM-DIZ"
+msgstr "NUM-DIZ"
+
+# ContactDetail.name
+#: ContactDetail.name
+msgid "NUM-DIZ"
+msgstr ""
+
+# ValueSet.description
+#: ValueSet.description
+msgid "Versionen und Zusatzmodule des MII Broad Consent, die als Consent.policy.uri verwendet werden."
+msgstr ""
+
+# Coding.display
+#: Coding.display
+msgid "Germany"
+msgstr ""
+

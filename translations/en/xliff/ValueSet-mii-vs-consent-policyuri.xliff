@@ -1,0 +1,50 @@
+<?xml version="1.0" ?>
+
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0">
+  <file source-language="de" target-language="en" id="ValueSet-mii-vs-consent-policyuri" original="Resource ValueSet-mii-vs-consent-policyuri" datatype="KEYVALUEJSON">
+    <body>
+      <trans-unit id="ValueSet-mii-vs-consent-policyuri" resname="ValueSet.name">
+             <notes>
+               <note id="n1">ValueSet.name</note>
+             </notes>
+        <source>MII_VS_Consent_PolicyUri</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-mii-vs-consent-policyuri" resname="ValueSet.title">
+             <notes>
+               <note id="n1">ValueSet.title</note>
+             </notes>
+        <source>MII Consent: Policy URI</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-mii-vs-consent-policyuri" resname="ValueSet.publisher">
+             <notes>
+               <note id="n1">ValueSet.publisher</note>
+             </notes>
+        <source>NUM-DIZ</source>
+        <target>NUM-DIZ</target>
+      </trans-unit>
+      <trans-unit id="ValueSet-mii-vs-consent-policyuri" resname="ContactDetail.name">
+             <notes>
+               <note id="n1">ContactDetail.name</note>
+             </notes>
+        <source>NUM-DIZ</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-mii-vs-consent-policyuri" resname="ValueSet.description">
+             <notes>
+               <note id="n1">ValueSet.description</note>
+             </notes>
+        <source>Versionen und Zusatzmodule des MII Broad Consent, die als Consent.policy.uri verwendet werden.</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="ValueSet-mii-vs-consent-policyuri" resname="Coding.display">
+             <notes>
+               <note id="n1">Coding.display</note>
+             </notes>
+        <source>Germany</source>
+        <target></target>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

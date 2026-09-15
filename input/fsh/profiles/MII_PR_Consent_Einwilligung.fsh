@@ -92,6 +92,11 @@ Description: "Dieses Profil beschreibt eine Einwilligung in der Medizininformati
 * policy.uri 1.. MS N
 * policy.uri ^extension[1].url = "http://hl7.org/fhir/StructureDefinition/structuredefinition-normative-version"
 * policy.uri ^extension[=].valueCode = #4.0.0
+// Issue #114: ueberschreibt das vom Eltern-Paket geerbte extensible Binding auf
+// LegalBasisDataProcessing durch die MII-eigenen Broad-Consent-Versionen. Bleibt
+// EXTENSIBLE — andere URIs sind weiterhin zulaessig, wenn kein passender Code
+// existiert. Bewusste Abweichung vom Eltern-Profil, siehe PR-Beschreibung.
+* policy.uri from MII_VS_Consent_PolicyUri (extensible)
 * policyRule MS
 * policyRule.extension ^slicing.discriminator.type = #value
 * policyRule.extension ^slicing.discriminator.path = "url"
