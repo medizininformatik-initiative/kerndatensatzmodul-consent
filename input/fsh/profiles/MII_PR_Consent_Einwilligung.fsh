@@ -112,6 +112,13 @@ Description: "Dieses Profil beschreibt eine Einwilligung in der Medizininformati
 * provision.provision.period.start 1.. MS
 * provision.provision.period.end MS
 * provision.provision.period.end ^min = 0
+// Issue #99: `dataPeriod` grenzt den NUTZUNGSZEITRAUM der betroffenen Daten vom
+// Gueltigkeitszeitraum der Policy (`period`) ab. Fuer retrospektive Policies ist
+// das der einzige Weg, den rueckwirkenden Teil maschinell auszudruecken. Bleibt
+// optional (0..1), wird aber Must-Support: Systeme muessen es befuellen koennen,
+// speichern und korrekt verarbeiten, wenn die Policy einen solchen Zeitraum kennt.
+* provision.dataPeriod MS
+* provision.provision.dataPeriod MS
 * provision.provision.action ..0
 * provision.provision.code 1.. MS
 * provision.provision.code from MiiConsentPolicyValueSet (required)
