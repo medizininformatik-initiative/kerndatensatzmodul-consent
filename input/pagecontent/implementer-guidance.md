@@ -93,3 +93,35 @@ Must-Support**: Systeme MÜSSEN das Element befüllen, speichern und korrekt
 verarbeiten können. Es MUSS gesetzt werden, wenn die zugrunde liegende Policy
 einen vom Gültigkeitszeitraum abweichenden Nutzungszeitraum kennt; andernfalls
 wird es ausgelassen.
+
+#### Mehrere Einwilligungen und Widerrufe derselben Person
+
+> **Entwurf.** Dieser Abschnitt schreibt eine Auswertungsregel fest. Er ist ein
+> Vorschlag zur Abstimmung in der TF CU und noch nicht beschlossen.
+
+Liegen zu einer Person **mehrere** Consent-Ressourcen vor — etwa eine
+Einwilligung und ein späterer Teilwiderruf, oder Einwilligungen zu
+unterschiedlichen Broad-Consent-Versionen —, so beantwortet **keine einzelne
+Ressource** allein die Frage, ob eine Verarbeitung erlaubt ist.
+
+**Empfehlung.** Die auswertende Stelle bildet den aktuell gültigen Stand, indem
+sie über alle Consent-Ressourcen der Person hinweg
+
+1. die **erlaubten Zeiträume** je Policy-Code (`provision.provision.code`) aus
+   allen `permit`-Provisions zusammenführt,
+2. davon die **verweigerten Zeiträume** aus allen `deny`-Provisions abzieht —
+   auch aus Ressourcen, die ausschliesslich Widerrufe enthalten,
+3. und anschliessend prüft, ob der interessierende Zeitpunkt in den
+   verbleibenden erlaubten Zeitraum fällt.
+
+Ein Widerrufsdokument wirkt dadurch über den gesamten Bestand, ohne dass die
+ursprüngliche Einwilligung verändert werden müsste. Die Consent-Ressourcen
+bleiben jeweils **unveränderte Abbilder des unterschriebenen Dokuments**; die
+„letzte Wahrheit" entsteht erst bei der Auswertung.
+
+**Nicht empfohlen** ist es, bestehende Consent-Ressourcen zu überschreiben oder
+zu löschen, um einen konsolidierten Stand zu erzeugen. Damit ginge die
+Nachvollziehbarkeit verloren, welche Erklärung die Person wann abgegeben hat.
+
+Eine Referenzumsetzung dieser Auswertung beschreibt die
+[TORCH-Dokumentation zur Consent-Verarbeitung](https://medizininformatik-initiative.github.io/torch/implementation/consent.html).
