@@ -71,3 +71,24 @@ Ideally, the FHIR server should always hold only one Consent resource per patien
 The data integration centres provide the information required to determine core-data-set-specific metrics for the DIZ Dashboard. On the DIZ Dashboard side, the determination of the metrics is triggered by corresponding calls to the sites, including for the MII KDS Consent module.
 
 Sites using the [gICS consent management system](https://ths-greifswald.de/gics) should follow the precise [**vendor recommendations**](https://www.ths-greifswald.de/diz-dashboard-empfehlung-gics-kds-consent-status/) for **metrics determination** as well as when providing the Consent resources for the **FDPG**.
+
+#### Data usage period: `provision.dataPeriod` versus `provision.period`
+
+The two periods on a provision answer different questions and must not be
+conflated:
+
+| Element | Question | Example |
+| --- | --- | --- |
+| `provision.period` | How long is the consent valid? | 2026-01-01 – 2031-12-31 |
+| `provision.dataPeriod` | Which period do the data it covers come from? | 2021-01-01 – 2031-12-31 |
+
+For **retrospective policies** the two diverge. If a person consents on
+2026-01-01 to the use of their health insurance data from the past five years,
+the policy becomes valid on 2026-01-01, but the data usage period starts on
+2021-01-01. Without `dataPeriod` the retrospective part cannot be expressed in a
+machine-readable way — it would exist only in the prose of the consent document.
+
+`provision.dataPeriod` is **optional (0..1) and Must Support** on both nesting
+levels: systems MUST be able to populate, store and correctly process it. It MUST
+be set whenever the underlying policy has a data usage period that differs from
+its validity period; otherwise it is omitted.

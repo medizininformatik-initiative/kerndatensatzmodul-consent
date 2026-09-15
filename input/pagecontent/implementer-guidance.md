@@ -70,3 +70,26 @@ Idealerweise sollte der FHIR-Server je Patient stets nur eine Consent-Ressource 
 Die Datenintegrationzentren stellen die erforderlichen Informationen zur Ermittlung von Kerndatensatzspezifischen Kennzahlen für das DIZ-Dashboard bereit. Die Ermittlung der Kennzahlen wird auf Seiten des DIZ-Dashboard durch entsprechende Aufrufe an die Standorte auch für das MII KDS Consent Modul getriggert.
 
 Standorte, die das [Einwilligungsmanagement gICS](https://ths-greifswald.de/gics) verwenden, sollten bei der **Kennzahlen-Ermittlung** sowie bei der Bereitstellung der Consent-Ressourcen für das **FDPG** den präzisen [**Hersteller-Empfehlungen**](https://www.ths-greifswald.de/diz-dashboard-empfehlung-gics-kds-consent-status/) folgen.
+
+#### Nutzungszeitraum der Daten: `provision.dataPeriod` gegenüber `provision.period`
+
+Die beiden Zeiträume an einer Provision beantworten unterschiedliche Fragen und
+dürfen nicht gleichgesetzt werden:
+
+| Element | Frage | Beispiel |
+| --- | --- | --- |
+| `provision.period` | Wie lange gilt die Einwilligung? | 01.01.2026 – 31.12.2031 |
+| `provision.dataPeriod` | Auf Daten aus welchem Zeitraum bezieht sie sich? | 01.01.2021 – 31.12.2031 |
+
+Bei **retrospektiven Policies** fallen sie auseinander. Willigt eine Person am
+01.01.2026 in die Nutzung ihrer Krankenkassendaten der letzten fünf Jahre ein, so
+beginnt die Gültigkeit der Policy am 01.01.2026, der Nutzungszeitraum der Daten
+aber bereits am 01.01.2021. Ohne `dataPeriod` liesse sich der rückwirkende Anteil
+nicht maschinell ausdrücken — er stünde nur im Fliesstext des
+Einwilligungsdokuments.
+
+`provision.dataPeriod` ist auf beiden Verschachtelungsebenen **optional (0..1) und
+Must-Support**: Systeme MÜSSEN das Element befüllen, speichern und korrekt
+verarbeiten können. Es MUSS gesetzt werden, wenn die zugrunde liegende Policy
+einen vom Gültigkeitszeitraum abweichenden Nutzungszeitraum kennt; andernfalls
+wird es ausgelassen.
