@@ -3,7 +3,8 @@
   "id": "d7a65ce8-2810-401a-b0db-70782a7b19a6",
   "meta": {
     "profile": [
-      "http://fhir.de/ConsentManagement/StructureDefinition/Domain/ResearchStudy"
+      "http://fhir.de/ConsentManagement/StructureDefinition/Domain/ResearchStudy",
+      "https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-pr-studie-studie"
     ]
   },
   "extension": [
