@@ -154,6 +154,34 @@
       },
       {
         "id": "Consent.category:resultType",
+        "extension": [
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "SHALL:populate"
+              },
+              {
+                "url": "documentation",
+                "valueMarkdown": "Daten-erzeugende Systeme (z. B. die FHIR-API eines DIZ) MÜSSEN die Art der Consent-Ressource angeben."
+              }
+            ]
+          },
+          {
+            "url": "http://hl7.org/fhir/StructureDefinition/obligation",
+            "extension": [
+              {
+                "url": "code",
+                "valueCode": "SHALL:handle"
+              },
+              {
+                "url": "documentation",
+                "valueMarkdown": "Daten-verarbeitende Systeme MÜSSEN die Art der Consent-Ressource auswerten und dürfen document und consent-status nicht verwechseln."
+              }
+            ]
+          }
+        ],
         "path": "Consent.category",
         "sliceName": "resultType",
         "min": 1,

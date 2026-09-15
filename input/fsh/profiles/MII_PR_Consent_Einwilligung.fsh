@@ -54,6 +54,22 @@ Description: "Dieses Profil beschreibt eine Einwilligung in der Medizininformati
 // Binding (terminologieserver-abhaengig) — ein system-only Pattern macht den
 // Slice offline und deterministisch entscheidbar.
 * category[resultType] ^patternCodeableConcept.coding[0].system = "http://fhir.de/ConsentManagement/CodeSystem/ResultType"
+// Issue #72 — DEMONSTRATION von FHIR Obligations an EINEM Element.
+// Die MII-Conformance-Seite unterscheidet daten-ERZEUGENDE von
+// daten-VERARBEITENDEN Systemen; Must-Support kann diese Unterscheidung nicht
+// ausdruecken, Obligations koennen es. Hier bewusst nur an resultType, damit die
+// TF CU die Darstellung auf der Artefaktseite beurteilen kann, bevor das Muster
+// auf das ganze Profil ausgerollt wird.
+* category[resultType] ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* category[resultType] ^extension[=].extension[0].url = "code"
+* category[resultType] ^extension[=].extension[=].valueCode = #SHALL:populate
+* category[resultType] ^extension[=].extension[+].url = "documentation"
+* category[resultType] ^extension[=].extension[=].valueMarkdown = "Daten-erzeugende Systeme (z. B. die FHIR-API eines DIZ) MÜSSEN die Art der Consent-Ressource angeben."
+* category[resultType] ^extension[+].url = "http://hl7.org/fhir/StructureDefinition/obligation"
+* category[resultType] ^extension[=].extension[0].url = "code"
+* category[resultType] ^extension[=].extension[=].valueCode = #SHALL:handle
+* category[resultType] ^extension[=].extension[+].url = "documentation"
+* category[resultType] ^extension[=].extension[=].valueMarkdown = "Daten-verarbeitende Systeme MÜSSEN die Art der Consent-Ressource auswerten und dürfen document und consent-status nicht verwechseln."
 * category[resultType] from ConsentManagementResultType (required)
 * category[resultType].coding 1.. MS
 * category[resultType].coding.system 1.. MS
