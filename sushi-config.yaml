@@ -265,6 +265,10 @@ dependencies:
   # every build silently injects the LATEST THO release. TARGET-ONLY ADDITION
   # (anti-injection guard, recorded at Gate A; not a source pin).
   hl7.terminology.r4: 7.3.0
+  # KDS Modul Studie — liefert MII_PR_Studie_Studie. Gebraucht, damit die
+  # Beispiel-Einwilligungsdomäne ihre Konformität zum MII-ResearchStudy-Profil
+  # erklären kann (Issue #53). Gepinnt auf den `latest`-Release der Registry.
+  de.medizininformatikinitiative.kerndatensatz.studie: 2026.0.2
   # HL7 Extensions Pack — same rationale and same drift watch as
   # hl7.terminology.r4 above. TARGET-ONLY ADDITION (recorded at Gate A).
   hl7.fhir.uv.extensions.r4: 5.3.0

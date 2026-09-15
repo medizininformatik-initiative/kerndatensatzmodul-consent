@@ -1,7 +1,7 @@
 
 # CodeSystem.name
 #: CodeSystem.name
-msgid "MIIConsentVersionModuleCodeSystem"
+msgid "MII_CS_Consent_Version_Modules"
 msgstr ""
 
 # CodeSystem.title

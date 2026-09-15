@@ -6,7 +6,7 @@
     "entries" : [{
       "id" : "CodeSystem.name",
       "context" : "CodeSystem.name",
-      "source" : "MII CS Consent Policy",
+      "source" : "MII_CS_Consent_Policy",
       "target" : null
     },
     {
@@ -52,9 +52,21 @@
       "target" : null
     },
     {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Collect, store and use patient data",
+      "target" : null
+    },
+    {
       "id" : "CodeSystem.concept.display",
       "context" : "CodeSystem.concept.display",
       "source" : "IDAT erheben",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Collect IDAT",
       "target" : null
     },
     {
@@ -64,9 +76,21 @@
       "target" : null
     },
     {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Store and process IDAT",
+      "target" : null
+    },
+    {
       "id" : "CodeSystem.concept.display",
       "context" : "CodeSystem.concept.display",
       "source" : "IDAT zusammenfuehren Dritte",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Merge IDAT with third parties",
       "target" : null
     },
     {
@@ -76,9 +100,21 @@
       "target" : null
     },
     {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Provide IDAT",
+      "target" : null
+    },
+    {
       "id" : "CodeSystem.concept.display",
       "context" : "CodeSystem.concept.display",
       "source" : "MDAT erheben",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Collect MDAT",
       "target" : null
     },
     {
@@ -88,9 +124,21 @@
       "target" : null
     },
     {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Store and process MDAT",
+      "target" : null
+    },
+    {
       "id" : "CodeSystem.concept.display",
       "context" : "CodeSystem.concept.display",
       "source" : "MDAT wissenschaftlich nutzen",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Use MDAT for research",
       "target" : null
     },
     {
@@ -100,9 +148,21 @@
       "target" : null
     },
     {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Merge MDAT with third parties",
+      "target" : null
+    },
+    {
       "id" : "CodeSystem.concept.display",
       "context" : "CodeSystem.concept.display",
       "source" : "Rekontaktierung Ergebnisse erheblicher Bedeutung",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Re-contact regarding findings of significant importance",
       "target" : null
     },
     {
@@ -112,9 +172,21 @@
       "target" : null
     },
     {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Retrospectively process and use patient data",
+      "target" : null
+    },
+    {
       "id" : "CodeSystem.concept.display",
       "context" : "CodeSystem.concept.display",
       "source" : "MDAT retrospektiv speichern verarbeiten",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Retrospectively store and process MDAT",
       "target" : null
     },
     {
@@ -124,9 +196,21 @@
       "target" : null
     },
     {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Retrospectively use MDAT for research",
+      "target" : null
+    },
+    {
       "id" : "CodeSystem.concept.display",
       "context" : "CodeSystem.concept.display",
       "source" : "MDAT retrospektiv zusammenfuehren Dritte",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Retrospectively merge MDAT with third parties",
       "target" : null
     },
     {
@@ -136,9 +220,21 @@
       "target" : null
     },
     {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Disclose patient data without EU GDPR level of protection",
+      "target" : null
+    },
+    {
       "id" : "CodeSystem.concept.display",
       "context" : "CodeSystem.concept.display",
       "source" : "MDAT wissenschaftlich nutzen ohne EU DSGVO NIVEAU",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Use MDAT for research without EU GDPR level of protection",
       "target" : null
     },
     {
@@ -148,9 +244,21 @@
       "target" : null
     },
     {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Retrospectively transfer, store and use health insurance data",
+      "target" : null
+    },
+    {
       "id" : "CodeSystem.concept.display",
       "context" : "CodeSystem.concept.display",
       "source" : "KKDAT 5J retrospektiv uebertragen",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Transfer KKDAT retrospectively (5 years)",
       "target" : null
     },
     {
@@ -160,9 +268,21 @@
       "target" : null
     },
     {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Store and process KKDAT retrospectively (5 years)",
+      "target" : null
+    },
+    {
       "id" : "CodeSystem.concept.display",
       "context" : "CodeSystem.concept.display",
       "source" : "KKDAT 5J retrospektiv wissenschaftlich nutzen",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Use KKDAT for research retrospectively (5 years)",
       "target" : null
     },
     {
@@ -172,9 +292,21 @@
       "target" : null
     },
     {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Transfer KKDAT including KVNR retrospectively (5 years)",
+      "target" : null
+    },
+    {
       "id" : "CodeSystem.concept.display",
       "context" : "CodeSystem.concept.display",
       "source" : "KKDAT prospektiv uebertragen speichern nutzen",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Prospectively transfer, store and use health insurance data",
       "target" : null
     },
     {
@@ -184,9 +316,21 @@
       "target" : null
     },
     {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Transfer KKDAT prospectively (5 years)",
+      "target" : null
+    },
+    {
       "id" : "CodeSystem.concept.display",
       "context" : "CodeSystem.concept.display",
       "source" : "KKDAT 5J prospektiv speichern verarbeiten",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Store and process KKDAT prospectively (5 years)",
       "target" : null
     },
     {
@@ -196,9 +340,21 @@
       "target" : null
     },
     {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Use KKDAT for research prospectively (5 years)",
+      "target" : null
+    },
+    {
       "id" : "CodeSystem.concept.display",
       "context" : "CodeSystem.concept.display",
       "source" : "KKDAT 5J prospektiv uebertragen KVNR",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Transfer KKDAT including KVNR prospectively (5 years)",
       "target" : null
     },
     {
@@ -208,9 +364,21 @@
       "target" : null
     },
     {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Collect, store and use biomaterial",
+      "target" : null
+    },
+    {
       "id" : "CodeSystem.concept.display",
       "context" : "CodeSystem.concept.display",
       "source" : "BIOMAT erheben",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Collect BIOMAT",
       "target" : null
     },
     {
@@ -220,9 +388,21 @@
       "target" : null
     },
     {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Store and process BIOMAT",
+      "target" : null
+    },
+    {
       "id" : "CodeSystem.concept.display",
       "context" : "CodeSystem.concept.display",
       "source" : "BIOMAT Eigentum übertragen",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Transfer ownership of BIOMAT",
       "target" : null
     },
     {
@@ -232,9 +412,21 @@
       "target" : null
     },
     {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Use BIOMAT for research",
+      "target" : null
+    },
+    {
       "id" : "CodeSystem.concept.display",
       "context" : "CodeSystem.concept.display",
       "source" : "BIOMAT Analysedaten zusammenfuehren Dritte",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Merge BIOMAT analysis data with third parties",
       "target" : null
     },
     {
@@ -244,9 +436,21 @@
       "target" : null
     },
     {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Additional biomaterial collection",
+      "target" : null
+    },
+    {
       "id" : "CodeSystem.concept.display",
       "context" : "CodeSystem.concept.display",
       "source" : "BIOMAT Zusatzmengen entnehmen",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Collect additional quantities of BIOMAT",
       "target" : null
     },
     {
@@ -256,9 +460,21 @@
       "target" : null
     },
     {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Retrospectively store and use biomaterial",
+      "target" : null
+    },
+    {
       "id" : "CodeSystem.concept.display",
       "context" : "CodeSystem.concept.display",
       "source" : "BIOMAT retrospektiv lagern verarbeiten",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Retrospectively store and process BIOMAT",
       "target" : null
     },
     {
@@ -268,9 +484,21 @@
       "target" : null
     },
     {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Retrospectively use BIOMAT for research",
+      "target" : null
+    },
+    {
       "id" : "CodeSystem.concept.display",
       "context" : "CodeSystem.concept.display",
       "source" : "BIOMAT retrospektiv Analysedaten zusammenfuehren Dritte",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Retrospectively merge BIOMAT analysis data with third parties",
       "target" : null
     },
     {
@@ -280,9 +508,21 @@
       "target" : null
     },
     {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Disclose biomaterial without EU GDPR level of protection",
+      "target" : null
+    },
+    {
       "id" : "CodeSystem.concept.display",
       "context" : "CodeSystem.concept.display",
       "source" : "BIOMAT bereitstellen ohne EU DSGVO NIVEAU",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Provide BIOMAT without EU GDPR level of protection",
       "target" : null
     },
     {
@@ -292,9 +532,21 @@
       "target" : null
     },
     {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Re-contact for supplementary information",
+      "target" : null
+    },
+    {
       "id" : "CodeSystem.concept.display",
       "context" : "CodeSystem.concept.display",
       "source" : "Rekontaktierung Verknüpfung Datenbanken",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Re-contact regarding linkage with databases",
       "target" : null
     },
     {
@@ -304,9 +556,21 @@
       "target" : null
     },
     {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Re-contact for further data collection",
+      "target" : null
+    },
+    {
       "id" : "CodeSystem.concept.display",
       "context" : "CodeSystem.concept.display",
       "source" : "Rekontaktierung weitere Studien",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Re-contact regarding further studies",
       "target" : null
     },
     {
@@ -316,9 +580,21 @@
       "target" : null
     },
     {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Re-contact regarding incidental findings",
+      "target" : null
+    },
+    {
       "id" : "CodeSystem.concept.display",
       "context" : "CodeSystem.concept.display",
       "source" : "Z1 GECCO83 Nutzung NUM/CODEX",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Z1 GECCO83 use in NUM/CODEX",
       "target" : null
     },
     {
@@ -328,9 +604,21 @@
       "target" : null
     },
     {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Complete MDAT GECCO83 once",
+      "target" : null
+    },
+    {
       "id" : "CodeSystem.concept.display",
       "context" : "CodeSystem.concept.display",
       "source" : "MDAT GECCO83 erheben",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Collect MDAT GECCO83",
       "target" : null
     },
     {
@@ -340,9 +628,21 @@
       "target" : null
     },
     {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Provide MDAT GECCO83 to NUM/CODEX",
+      "target" : null
+    },
+    {
       "id" : "CodeSystem.concept.display",
       "context" : "CodeSystem.concept.display",
       "source" : "MDAT GECCO83 speichern verarbeiten NUM/CODEX",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Store and process MDAT GECCO83 in NUM/CODEX",
       "target" : null
     },
     {
@@ -352,9 +652,21 @@
       "target" : null
     },
     {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Use MDAT GECCO83 for COVID-19 research",
+      "target" : null
+    },
+    {
       "id" : "CodeSystem.concept.display",
       "context" : "CodeSystem.concept.display",
       "source" : "MDAT GECCO83 wissenschaftlich nutzen Pandemie Forschung",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Use MDAT GECCO83 for pandemic research",
       "target" : null
     },
     {
@@ -364,9 +676,21 @@
       "target" : null
     },
     {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Use MDAT GECCO83 for research in NUM/CODEX",
+      "target" : null
+    },
+    {
       "id" : "CodeSystem.concept.display",
       "context" : "CodeSystem.concept.display",
       "source" : "Z1 GECCO83 Weitergabe NUM/CODEX non EU DSGVO NIVEAU",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Z1 GECCO83 disclosure to NUM/CODEX without EU GDPR level of protection",
       "target" : null
     },
     {
@@ -376,9 +700,21 @@
       "target" : null
     },
     {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Provide MDAT GECCO83 to NUM/CODEX without EU GDPR level of protection",
+      "target" : null
+    },
+    {
       "id" : "CodeSystem.concept.display",
       "context" : "CodeSystem.concept.display",
       "source" : "Z2 PATDAT erheben nutzen kontakt (ACRIBIS)",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Z2 collect, use PATDAT and contact (ACRIBIS)",
       "target" : null
     },
     {
@@ -388,9 +724,21 @@
       "target" : null
     },
     {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Collect and use PATDAT, and contact (ACRIBIS)",
+      "target" : null
+    },
+    {
       "id" : "CodeSystem.concept.display",
       "context" : "CodeSystem.concept.display",
       "source" : "Z2 IDAT Melderegister abfragen speichern verarbeiten (ACRIBIS)",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Z2 query, store and process IDAT from the population register (ACRIBIS)",
       "target" : null
     },
     {
@@ -400,9 +748,21 @@
       "target" : null
     },
     {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Query, store and process IDAT from the population register (ACRIBIS)",
+      "target" : null
+    },
+    {
       "id" : "CodeSystem.concept.display",
       "context" : "CodeSystem.concept.display",
       "source" : "Z2 MDAT Hausarzt erheben speichern verarbeiten nutzen (ACRIBIS)",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Z2 collect, store, process and use MDAT from the general practitioner (ACRIBIS)",
       "target" : null
     },
     {
@@ -412,9 +772,21 @@
       "target" : null
     },
     {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Collect, store, process and use MDAT from the general practitioner (ACRIBIS)",
+      "target" : null
+    },
+    {
       "id" : "CodeSystem.concept.display",
       "context" : "CodeSystem.concept.display",
       "source" : "Z3 PROMDAT Patientenbefragung (PROM)",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Z3 PROMDAT patient survey (PROM)",
       "target" : null
     },
     {
@@ -424,9 +796,21 @@
       "target" : null
     },
     {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Collect PROMDAT from patient surveys (PROM)",
+      "target" : null
+    },
+    {
       "id" : "CodeSystem.concept.display",
       "context" : "CodeSystem.concept.display",
       "source" : "PROMDAT wissenschaftlich nutzen (PROM)",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Use PROMDAT for research (PROM)",
       "target" : null
     },
     {
@@ -436,9 +820,21 @@
       "target" : null
     },
     {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Re-contact regarding PROM studies (PROM)",
+      "target" : null
+    },
+    {
       "id" : "CodeSystem.concept.display",
       "context" : "CodeSystem.concept.display",
       "source" : "Z4 Datenschutzerklärung (SNID)",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Z4 privacy notice (SNID)",
       "target" : null
     },
     {
@@ -448,9 +844,21 @@
       "target" : null
     },
     {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Store and process IDAT (SNID)",
+      "target" : null
+    },
+    {
       "id" : "CodeSystem.concept.display",
       "context" : "CodeSystem.concept.display",
       "source" : "CONSENT speichern, verarbeiten (SNID)",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Store and process CONSENT (SNID)",
       "target" : null
     },
     {
@@ -460,9 +868,21 @@
       "target" : null
     },
     {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Monitoring access to IDAT (SNID)",
+      "target" : null
+    },
+    {
       "id" : "CodeSystem.concept.display",
       "context" : "CodeSystem.concept.display",
       "source" : "MDAT erheben (SNID)",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Collect MDAT (SNID)",
       "target" : null
     },
     {
@@ -472,9 +892,21 @@
       "target" : null
     },
     {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Store and process MDAT (SNID)",
+      "target" : null
+    },
+    {
       "id" : "CodeSystem.concept.display",
       "context" : "CodeSystem.concept.display",
       "source" : "MDAT bereitstellen (SNID)",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Provide MDAT (SNID)",
       "target" : null
     },
     {
@@ -484,9 +916,21 @@
       "target" : null
     },
     {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Monitoring access to MDAT (SNID)",
+      "target" : null
+    },
+    {
       "id" : "CodeSystem.concept.display",
       "context" : "CodeSystem.concept.display",
       "source" : "BIOMAT Eigentum übertragen NUM (SNID)",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Transfer ownership of BIOMAT to NUM (SNID)",
       "target" : null
     },
     {
@@ -496,9 +940,21 @@
       "target" : null
     },
     {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Provide CONSENT for the Broad Consent (SNID)",
+      "target" : null
+    },
+    {
       "id" : "CodeSystem.concept.display",
       "context" : "CodeSystem.concept.display",
       "source" : "CONSENT BC speichern, verarbeiten (SNID)",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Store and process CONSENT for the Broad Consent (SNID)",
       "target" : null
     },
     {
@@ -508,9 +964,21 @@
       "target" : null
     },
     {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Z4 access to the ePA (SNID)",
+      "target" : null
+    },
+    {
       "id" : "CodeSystem.concept.display",
       "context" : "CodeSystem.concept.display",
       "source" : "IDAT ePA bereitstellen (SNID)",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Provide IDAT to the ePA (SNID)",
       "target" : null
     },
     {
@@ -520,9 +988,21 @@
       "target" : null
     },
     {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Collect MDAT from the ePA (SNID)",
+      "target" : null
+    },
+    {
       "id" : "CodeSystem.concept.display",
       "context" : "CodeSystem.concept.display",
       "source" : "MDAT ePA speichern, verarbeiten (SNID)",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Store and process MDAT from the ePA (SNID)",
       "target" : null
     },
     {
@@ -532,9 +1012,21 @@
       "target" : null
     },
     {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Z4 cancer registry (SNID)",
+      "target" : null
+    },
+    {
       "id" : "CodeSystem.concept.display",
       "context" : "CodeSystem.concept.display",
       "source" : "MDAT KReg speichern, verarbeiten (SNID)",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Store and process MDAT from the cancer registry (SNID)",
       "target" : null
     },
     {
@@ -544,9 +1036,21 @@
       "target" : null
     },
     {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Store and process IDAT including KVNR from the cancer registry (SNID)",
+      "target" : null
+    },
+    {
       "id" : "CodeSystem.concept.display",
       "context" : "CodeSystem.concept.display",
       "source" : "Z4 KRegDAT retrospektiv (SNID)",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Z4 cancer registry data, retrospective (SNID)",
       "target" : null
     },
     {
@@ -556,9 +1060,21 @@
       "target" : null
     },
     {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Provide IDAT including KVNR to the cancer registry, retrospectively (SNID)",
+      "target" : null
+    },
+    {
       "id" : "CodeSystem.concept.display",
       "context" : "CodeSystem.concept.display",
       "source" : "MDAT KReg erheben retrospektiv (SNID)",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Collect MDAT from the cancer registry, retrospectively (SNID)",
       "target" : null
     },
     {
@@ -568,9 +1084,21 @@
       "target" : null
     },
     {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Z4 cancer registry data (SNID)",
+      "target" : null
+    },
+    {
       "id" : "CodeSystem.concept.display",
       "context" : "CodeSystem.concept.display",
       "source" : "IDAT KVNR KReg bereitstellen prospektiv (SNID)",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Provide IDAT including KVNR to the cancer registry, prospectively (SNID)",
       "target" : null
     },
     {
@@ -580,9 +1108,21 @@
       "target" : null
     },
     {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Collect MDAT from the cancer registry, prospectively (SNID)",
+      "target" : null
+    },
+    {
       "id" : "CodeSystem.concept.display",
       "context" : "CodeSystem.concept.display",
       "source" : "Z4 Weitergabe Dritte (SNID)",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Z4 disclosure to third parties (SNID)",
       "target" : null
     },
     {
@@ -592,9 +1132,21 @@
       "target" : null
     },
     {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Provide MDAT to third parties (SNID)",
+      "target" : null
+    },
+    {
       "id" : "CodeSystem.concept.display",
       "context" : "CodeSystem.concept.display",
       "source" : "BIOMAT SNID bereitstellen Dritte (SNID)",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Provide BIOMAT to third parties (SNID)",
       "target" : null
     },
     {
@@ -604,9 +1156,21 @@
       "target" : null
     },
     {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Z4 re-contact the patient for follow-up (SNID)",
+      "target" : null
+    },
+    {
       "id" : "CodeSystem.concept.display",
       "context" : "CodeSystem.concept.display",
       "source" : "Rekontaktierung Gesundheitszustand nach Studienabschluss (SNID)",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Re-contact regarding health status after study completion (SNID)",
       "target" : null
     },
     {
@@ -616,9 +1180,21 @@
       "target" : null
     },
     {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Z4 re-contact the patient regarding further studies (SNID)",
+      "target" : null
+    },
+    {
       "id" : "CodeSystem.concept.display",
       "context" : "CodeSystem.concept.display",
       "source" : "Rekontaktierung Patient weitere Studien (SNID)",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Re-contact the patient regarding further studies (SNID)",
       "target" : null
     },
     {
@@ -628,9 +1204,21 @@
       "target" : null
     },
     {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Provide IDAT to the organisational unit (SNID)",
+      "target" : null
+    },
+    {
       "id" : "CodeSystem.concept.display",
       "context" : "CodeSystem.concept.display",
       "source" : "Z4 Erhebung Hausarzt (SNID)",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Z4 data collection from the general practitioner (SNID)",
       "target" : null
     },
     {
@@ -640,9 +1228,21 @@
       "target" : null
     },
     {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Collect, store, process and use MDAT from the general practitioner (SNID)",
+      "target" : null
+    },
+    {
       "id" : "CodeSystem.concept.display",
       "context" : "CodeSystem.concept.display",
       "source" : "IDAT bereitstellen Hausarzt (SNID)",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Provide IDAT to the general practitioner (SNID)",
       "target" : null
     },
     {
@@ -652,9 +1252,21 @@
       "target" : null
     },
     {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Z5 collect, store, obtain, keep and additionally use PATDAT, BIOMAT and phenotype data (DZPG)",
+      "target" : null
+    },
+    {
       "id" : "CodeSystem.concept.display",
       "context" : "CodeSystem.concept.display",
       "source" : "MDAT Zusatzdaten PHAENO erheben (DZPG)",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Collect additional MDAT phenotype data (DZPG)",
       "target" : null
     },
     {
@@ -664,9 +1276,21 @@
       "target" : null
     },
     {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Store and process MDAT (DZPG)",
+      "target" : null
+    },
+    {
       "id" : "CodeSystem.concept.display",
       "context" : "CodeSystem.concept.display",
       "source" : "MDAT wissenschaftlich nutzen (DZPG)",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Use MDAT for research (DZPG)",
       "target" : null
     },
     {
@@ -676,9 +1300,21 @@
       "target" : null
     },
     {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Merge MDAT with third parties (DZPG)",
+      "target" : null
+    },
+    {
       "id" : "CodeSystem.concept.display",
       "context" : "CodeSystem.concept.display",
       "source" : "BIOMAT Zusatzmaterial entnehmen (DZPG)",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Collect additional BIOMAT (DZPG)",
       "target" : null
     },
     {
@@ -688,9 +1324,21 @@
       "target" : null
     },
     {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Store and process additional BIOMAT (DZPG)",
+      "target" : null
+    },
+    {
       "id" : "CodeSystem.concept.display",
       "context" : "CodeSystem.concept.display",
       "source" : "BIOMAT wissenschaftlich nutzen (DZPG)",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Use BIOMAT for research (DZPG)",
       "target" : null
     },
     {
@@ -700,9 +1348,21 @@
       "target" : null
     },
     {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Merge BIOMAT with third parties (DZPG)",
+      "target" : null
+    },
+    {
       "id" : "CodeSystem.concept.display",
       "context" : "CodeSystem.concept.display",
       "source" : "Z5 NEURODAT, IMGDAT erheben, speichern, zusätzlich nutzen (DZPG)",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Z5 collect, store and additionally use NEURODAT and IMGDAT (DZPG)",
       "target" : null
     },
     {
@@ -712,9 +1372,21 @@
       "target" : null
     },
     {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Collect IMGDAT (DZPG)",
+      "target" : null
+    },
+    {
       "id" : "CodeSystem.concept.display",
       "context" : "CodeSystem.concept.display",
       "source" : "IMGDAT speichern, verarbeiten (DZPG)",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Store and process IMGDAT (DZPG)",
       "target" : null
     },
     {
@@ -724,9 +1396,21 @@
       "target" : null
     },
     {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Use IMGDAT for research (DZPG)",
+      "target" : null
+    },
+    {
       "id" : "CodeSystem.concept.display",
       "context" : "CodeSystem.concept.display",
       "source" : "IMGDAT zusammenführen mit Dritten (DZPG)",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Merge IMGDAT with third parties (DZPG)",
       "target" : null
     },
     {
@@ -736,9 +1420,21 @@
       "target" : null
     },
     {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Collect NEURODAT (DZPG)",
+      "target" : null
+    },
+    {
       "id" : "CodeSystem.concept.display",
       "context" : "CodeSystem.concept.display",
       "source" : "NEURODAT speichern, verarbeiten (DZPG)",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Store and process NEURODAT (DZPG)",
       "target" : null
     },
     {
@@ -748,9 +1444,21 @@
       "target" : null
     },
     {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Use NEURODAT for research (DZPG)",
+      "target" : null
+    },
+    {
       "id" : "CodeSystem.concept.display",
       "context" : "CodeSystem.concept.display",
       "source" : "NEURODAT zusammenführen mit Dritten (DZPG)",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Merge NEURODAT with third parties (DZPG)",
       "target" : null
     },
     {
@@ -760,9 +1468,21 @@
       "target" : null
     },
     {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Z5 obtain, store and use IPSC composite data (DZPG)",
+      "target" : null
+    },
+    {
       "id" : "CodeSystem.concept.display",
       "context" : "CodeSystem.concept.display",
       "source" : "IPSC Verbunddaten gewinnen (DZPG)",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Obtain IPSC composite data (DZPG)",
       "target" : null
     },
     {
@@ -772,15 +1492,33 @@
       "target" : null
     },
     {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Store and process IPSC composite data (DZPG)",
+      "target" : null
+    },
+    {
       "id" : "CodeSystem.concept.display",
       "context" : "CodeSystem.concept.display",
       "source" : "IPSC Verbunddaten wissenschaftlich nutzen (DZPG)",
       "target" : null
     },
     {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Use IPSC composite data for research (DZPG)",
+      "target" : null
+    },
+    {
       "id" : "CodeSystem.concept.display",
       "context" : "CodeSystem.concept.display",
       "source" : "IPSC Verbunddaten zusammenführen mit Dritten (DZPG)",
+      "target" : null
+    },
+    {
+      "id" : "CodeSystem.concept.designation.value",
+      "context" : "CodeSystem.concept.designation.value",
+      "source" : "Merge IPSC composite data with third parties (DZPG)",
       "target" : null
     }]
   }]

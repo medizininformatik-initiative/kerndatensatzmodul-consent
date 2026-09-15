@@ -7,7 +7,7 @@
              <notes>
                <note id="n1">CodeSystem.name</note>
              </notes>
-        <source>MIIConsentVersionModuleCodeSystem</source>
+        <source>MII_CS_Consent_Version_Modules</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-mii-cs-consent-version-modules" resname="CodeSystem.title">

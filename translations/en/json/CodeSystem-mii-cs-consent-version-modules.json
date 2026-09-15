@@ -6,7 +6,7 @@
     "entries" : [{
       "id" : "CodeSystem.name",
       "context" : "CodeSystem.name",
-      "source" : "MIIConsentVersionModuleCodeSystem",
+      "source" : "MII_CS_Consent_Version_Modules",
       "target" : null
     },
     {

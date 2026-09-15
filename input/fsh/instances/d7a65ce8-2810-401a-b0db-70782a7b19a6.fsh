@@ -7,7 +7,12 @@ InstanceOf: ResearchStudy
 Usage: #example
 Title: "Beispiel Einwilligungsdomäne (synthetische Studie)"
 Description: "Synthetische Consent-Domäne (ResearchStudy) als Referenzziel der DomainReference-Extension der Quell-Beispiele."
-* meta.profile = "http://fhir.de/ConsentManagement/StructureDefinition/Domain/ResearchStudy"
+// Doppelte Konformität (Issue #53): Die Referenz aus der DomainReference-
+// Extension verlangt das HL7-DE-Profil; zusätzlich erklärt diese Instanz
+// Konformität zum ResearchStudy-Profil des KDS Moduls Studie. Das MII-Profil
+// hat keine Pflichtelemente, beide Profile sind daher gleichzeitig erfüllbar.
+* meta.profile[0] = "http://fhir.de/ConsentManagement/StructureDefinition/Domain/ResearchStudy"
+* meta.profile[+] = "https://www.medizininformatik-initiative.de/fhir/modul-studie/StructureDefinition/mii-pr-studie-studie"
 * extension[0].url = "http://fhir.de/ConsentManagement/StructureDefinition/ContextIdentifier"
 * extension[=].extension[0].url = "resourceType"
 * extension[=].extension[=].valueCoding = http://hl7.org/fhir/resource-types#Patient "Patient"

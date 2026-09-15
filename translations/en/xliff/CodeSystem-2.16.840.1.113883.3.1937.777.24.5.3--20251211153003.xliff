@@ -7,7 +7,7 @@
              <notes>
                <note id="n1">CodeSystem.name</note>
              </notes>
-        <source>MII CS Consent Policy</source>
+        <source>MII_CS_Consent_Policy</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.title">
@@ -59,11 +59,25 @@
         <source>Patientendaten erheben, speichern, nutzen</source>
         <target></target>
       </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Collect, store and use patient data</source>
+        <target></target>
+      </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
              <notes>
                <note id="n1">CodeSystem.concept.display</note>
              </notes>
         <source>IDAT erheben</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Collect IDAT</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
@@ -73,11 +87,25 @@
         <source>IDAT speichern, verarbeiten</source>
         <target></target>
       </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Store and process IDAT</source>
+        <target></target>
+      </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
              <notes>
                <note id="n1">CodeSystem.concept.display</note>
              </notes>
         <source>IDAT zusammenfuehren Dritte</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Merge IDAT with third parties</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
@@ -87,11 +115,25 @@
         <source>IDAT bereitstellen</source>
         <target></target>
       </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Provide IDAT</source>
+        <target></target>
+      </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
              <notes>
                <note id="n1">CodeSystem.concept.display</note>
              </notes>
         <source>MDAT erheben</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Collect MDAT</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
@@ -101,11 +143,25 @@
         <source>MDAT speichern, verarbeiten</source>
         <target></target>
       </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Store and process MDAT</source>
+        <target></target>
+      </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
              <notes>
                <note id="n1">CodeSystem.concept.display</note>
              </notes>
         <source>MDAT wissenschaftlich nutzen</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Use MDAT for research</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
@@ -115,11 +171,25 @@
         <source>MDAT zusammenfuehren Dritte</source>
         <target></target>
       </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Merge MDAT with third parties</source>
+        <target></target>
+      </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
              <notes>
                <note id="n1">CodeSystem.concept.display</note>
              </notes>
         <source>Rekontaktierung Ergebnisse erheblicher Bedeutung</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Re-contact regarding findings of significant importance</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
@@ -129,11 +199,25 @@
         <source>Patientendaten retrospektiv verarbeiten, nutzen</source>
         <target></target>
       </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Retrospectively process and use patient data</source>
+        <target></target>
+      </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
              <notes>
                <note id="n1">CodeSystem.concept.display</note>
              </notes>
         <source>MDAT retrospektiv speichern verarbeiten</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Retrospectively store and process MDAT</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
@@ -143,11 +227,25 @@
         <source>MDAT retrospektiv wissenschaftlich nutzen</source>
         <target></target>
       </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Retrospectively use MDAT for research</source>
+        <target></target>
+      </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
              <notes>
                <note id="n1">CodeSystem.concept.display</note>
              </notes>
         <source>MDAT retrospektiv zusammenfuehren Dritte</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Retrospectively merge MDAT with third parties</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
@@ -157,11 +255,25 @@
         <source>Patientendaten Weitergabe non DSGVO NIVEAU</source>
         <target></target>
       </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Disclose patient data without EU GDPR level of protection</source>
+        <target></target>
+      </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
              <notes>
                <note id="n1">CodeSystem.concept.display</note>
              </notes>
         <source>MDAT wissenschaftlich nutzen ohne EU DSGVO NIVEAU</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Use MDAT for research without EU GDPR level of protection</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
@@ -171,11 +283,25 @@
         <source>Krankenkassendaten retrospektiv uebertragen, speichern, nutzen</source>
         <target></target>
       </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Retrospectively transfer, store and use health insurance data</source>
+        <target></target>
+      </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
              <notes>
                <note id="n1">CodeSystem.concept.display</note>
              </notes>
         <source>KKDAT 5J retrospektiv uebertragen</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Transfer KKDAT retrospectively (5 years)</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
@@ -185,11 +311,25 @@
         <source>KKDAT 5J retrospektiv speichern verarbeiten</source>
         <target></target>
       </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Store and process KKDAT retrospectively (5 years)</source>
+        <target></target>
+      </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
              <notes>
                <note id="n1">CodeSystem.concept.display</note>
              </notes>
         <source>KKDAT 5J retrospektiv wissenschaftlich nutzen</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Use KKDAT for research retrospectively (5 years)</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
@@ -199,11 +339,25 @@
         <source>KKDAT 5J retrospektiv uebertragen KVNR</source>
         <target></target>
       </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Transfer KKDAT including KVNR retrospectively (5 years)</source>
+        <target></target>
+      </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
              <notes>
                <note id="n1">CodeSystem.concept.display</note>
              </notes>
         <source>KKDAT prospektiv uebertragen speichern nutzen</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Prospectively transfer, store and use health insurance data</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
@@ -213,11 +367,25 @@
         <source>KKDAT 5J prospektiv uebertragen</source>
         <target></target>
       </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Transfer KKDAT prospectively (5 years)</source>
+        <target></target>
+      </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
              <notes>
                <note id="n1">CodeSystem.concept.display</note>
              </notes>
         <source>KKDAT 5J prospektiv speichern verarbeiten</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Store and process KKDAT prospectively (5 years)</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
@@ -227,11 +395,25 @@
         <source>KKDAT 5J prospektiv wissenschaftlich nutzen</source>
         <target></target>
       </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Use KKDAT for research prospectively (5 years)</source>
+        <target></target>
+      </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
              <notes>
                <note id="n1">CodeSystem.concept.display</note>
              </notes>
         <source>KKDAT 5J prospektiv uebertragen KVNR</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Transfer KKDAT including KVNR prospectively (5 years)</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
@@ -241,11 +423,25 @@
         <source>Biomaterial erheben, lagern, nutzen</source>
         <target></target>
       </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Collect, store and use biomaterial</source>
+        <target></target>
+      </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
              <notes>
                <note id="n1">CodeSystem.concept.display</note>
              </notes>
         <source>BIOMAT erheben</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Collect BIOMAT</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
@@ -255,11 +451,25 @@
         <source>BIOMAT lagern verarbeiten</source>
         <target></target>
       </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Store and process BIOMAT</source>
+        <target></target>
+      </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
              <notes>
                <note id="n1">CodeSystem.concept.display</note>
              </notes>
         <source>BIOMAT Eigentum übertragen</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Transfer ownership of BIOMAT</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
@@ -269,11 +479,25 @@
         <source>BIOMAT wissenschaftlich nutzen</source>
         <target></target>
       </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Use BIOMAT for research</source>
+        <target></target>
+      </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
              <notes>
                <note id="n1">CodeSystem.concept.display</note>
              </notes>
         <source>BIOMAT Analysedaten zusammenfuehren Dritte</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Merge BIOMAT analysis data with third parties</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
@@ -283,11 +507,25 @@
         <source>Biomaterial Zusatzentnahme</source>
         <target></target>
       </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Additional biomaterial collection</source>
+        <target></target>
+      </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
              <notes>
                <note id="n1">CodeSystem.concept.display</note>
              </notes>
         <source>BIOMAT Zusatzmengen entnehmen</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Collect additional quantities of BIOMAT</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
@@ -297,11 +535,25 @@
         <source>Biomaterial retrospektiv speichern, nutzen</source>
         <target></target>
       </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Retrospectively store and use biomaterial</source>
+        <target></target>
+      </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
              <notes>
                <note id="n1">CodeSystem.concept.display</note>
              </notes>
         <source>BIOMAT retrospektiv lagern verarbeiten</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Retrospectively store and process BIOMAT</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
@@ -311,11 +563,25 @@
         <source>BIOMAT retrospektiv wissenschaftlich nutzen</source>
         <target></target>
       </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Retrospectively use BIOMAT for research</source>
+        <target></target>
+      </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
              <notes>
                <note id="n1">CodeSystem.concept.display</note>
              </notes>
         <source>BIOMAT retrospektiv Analysedaten zusammenfuehren Dritte</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Retrospectively merge BIOMAT analysis data with third parties</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
@@ -325,11 +591,25 @@
         <source>Biomaterial Weitergabe non EU DSGVO NIVEAU</source>
         <target></target>
       </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Disclose biomaterial without EU GDPR level of protection</source>
+        <target></target>
+      </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
              <notes>
                <note id="n1">CodeSystem.concept.display</note>
              </notes>
         <source>BIOMAT bereitstellen ohne EU DSGVO NIVEAU</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Provide BIOMAT without EU GDPR level of protection</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
@@ -339,11 +619,25 @@
         <source>Rekontaktierung Ergänzungen</source>
         <target></target>
       </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Re-contact for supplementary information</source>
+        <target></target>
+      </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
              <notes>
                <note id="n1">CodeSystem.concept.display</note>
              </notes>
         <source>Rekontaktierung Verknüpfung Datenbanken</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Re-contact regarding linkage with databases</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
@@ -353,11 +647,25 @@
         <source>Rekontaktierung weitere Erhebung</source>
         <target></target>
       </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Re-contact for further data collection</source>
+        <target></target>
+      </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
              <notes>
                <note id="n1">CodeSystem.concept.display</note>
              </notes>
         <source>Rekontaktierung weitere Studien</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Re-contact regarding further studies</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
@@ -367,11 +675,25 @@
         <source>Rekontaktierung Zusatzbefund</source>
         <target></target>
       </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Re-contact regarding incidental findings</source>
+        <target></target>
+      </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
              <notes>
                <note id="n1">CodeSystem.concept.display</note>
              </notes>
         <source>Z1 GECCO83 Nutzung NUM/CODEX</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Z1 GECCO83 use in NUM/CODEX</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
@@ -381,11 +703,25 @@
         <source>MDAT GECCO83 komplettieren einmalig</source>
         <target></target>
       </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Complete MDAT GECCO83 once</source>
+        <target></target>
+      </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
              <notes>
                <note id="n1">CodeSystem.concept.display</note>
              </notes>
         <source>MDAT GECCO83 erheben</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Collect MDAT GECCO83</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
@@ -395,11 +731,25 @@
         <source>MDAT GECCO83 bereitstellen NUM/CODEX</source>
         <target></target>
       </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Provide MDAT GECCO83 to NUM/CODEX</source>
+        <target></target>
+      </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
              <notes>
                <note id="n1">CodeSystem.concept.display</note>
              </notes>
         <source>MDAT GECCO83 speichern verarbeiten NUM/CODEX</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Store and process MDAT GECCO83 in NUM/CODEX</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
@@ -409,11 +759,25 @@
         <source>MDAT GECCO83 wissenschaftlich nutzen COVID 19 Forschung</source>
         <target></target>
       </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Use MDAT GECCO83 for COVID-19 research</source>
+        <target></target>
+      </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
              <notes>
                <note id="n1">CodeSystem.concept.display</note>
              </notes>
         <source>MDAT GECCO83 wissenschaftlich nutzen Pandemie Forschung</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Use MDAT GECCO83 for pandemic research</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
@@ -423,11 +787,25 @@
         <source>MDAT GECCO83 wissenschaftlich nutzen NUM/CODEX</source>
         <target></target>
       </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Use MDAT GECCO83 for research in NUM/CODEX</source>
+        <target></target>
+      </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
              <notes>
                <note id="n1">CodeSystem.concept.display</note>
              </notes>
         <source>Z1 GECCO83 Weitergabe NUM/CODEX non EU DSGVO NIVEAU</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Z1 GECCO83 disclosure to NUM/CODEX without EU GDPR level of protection</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
@@ -437,11 +815,25 @@
         <source>MDAT GECCO83 bereitstellen NUM/CODEX ohne EU DSGVO NIVEAU</source>
         <target></target>
       </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Provide MDAT GECCO83 to NUM/CODEX without EU GDPR level of protection</source>
+        <target></target>
+      </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
              <notes>
                <note id="n1">CodeSystem.concept.display</note>
              </notes>
         <source>Z2 PATDAT erheben nutzen kontakt (ACRIBIS)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Z2 collect, use PATDAT and contact (ACRIBIS)</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
@@ -451,11 +843,25 @@
         <source>PATDAT erheben nutzen kontakt (ACRIBIS)</source>
         <target></target>
       </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Collect and use PATDAT, and contact (ACRIBIS)</source>
+        <target></target>
+      </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
              <notes>
                <note id="n1">CodeSystem.concept.display</note>
              </notes>
         <source>Z2 IDAT Melderegister abfragen speichern verarbeiten (ACRIBIS)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Z2 query, store and process IDAT from the population register (ACRIBIS)</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
@@ -465,11 +871,25 @@
         <source>IDAT Melderegister abfragen speichern verarbeiten (ACRIBIS)</source>
         <target></target>
       </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Query, store and process IDAT from the population register (ACRIBIS)</source>
+        <target></target>
+      </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
              <notes>
                <note id="n1">CodeSystem.concept.display</note>
              </notes>
         <source>Z2 MDAT Hausarzt erheben speichern verarbeiten nutzen (ACRIBIS)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Z2 collect, store, process and use MDAT from the general practitioner (ACRIBIS)</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
@@ -479,11 +899,25 @@
         <source>MDAT Hausarzt erheben speichern verarbeiten nutzen (ACRIBIS)</source>
         <target></target>
       </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Collect, store, process and use MDAT from the general practitioner (ACRIBIS)</source>
+        <target></target>
+      </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
              <notes>
                <note id="n1">CodeSystem.concept.display</note>
              </notes>
         <source>Z3 PROMDAT Patientenbefragung (PROM)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Z3 PROMDAT patient survey (PROM)</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
@@ -493,11 +927,25 @@
         <source>PROMDAT Patientenbefragung erheben (PROM)</source>
         <target></target>
       </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Collect PROMDAT from patient surveys (PROM)</source>
+        <target></target>
+      </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
              <notes>
                <note id="n1">CodeSystem.concept.display</note>
              </notes>
         <source>PROMDAT wissenschaftlich nutzen (PROM)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Use PROMDAT for research (PROM)</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
@@ -507,11 +955,25 @@
         <source>Rekontaktierung PROM Studien (PROM)</source>
         <target></target>
       </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Re-contact regarding PROM studies (PROM)</source>
+        <target></target>
+      </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
              <notes>
                <note id="n1">CodeSystem.concept.display</note>
              </notes>
         <source>Z4 Datenschutzerklärung (SNID)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Z4 privacy notice (SNID)</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
@@ -521,11 +983,25 @@
         <source>IDAT speichern, verarbeiten (SNID)</source>
         <target></target>
       </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Store and process IDAT (SNID)</source>
+        <target></target>
+      </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
              <notes>
                <note id="n1">CodeSystem.concept.display</note>
              </notes>
         <source>CONSENT speichern, verarbeiten (SNID)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Store and process CONSENT (SNID)</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
@@ -535,11 +1011,25 @@
         <source>IDAT Einsicht Monitoring (SNID)</source>
         <target></target>
       </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Monitoring access to IDAT (SNID)</source>
+        <target></target>
+      </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
              <notes>
                <note id="n1">CodeSystem.concept.display</note>
              </notes>
         <source>MDAT erheben (SNID)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Collect MDAT (SNID)</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
@@ -549,11 +1039,25 @@
         <source>MDAT speichern, verarbeiten (SNID)</source>
         <target></target>
       </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Store and process MDAT (SNID)</source>
+        <target></target>
+      </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
              <notes>
                <note id="n1">CodeSystem.concept.display</note>
              </notes>
         <source>MDAT bereitstellen (SNID)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Provide MDAT (SNID)</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
@@ -563,11 +1067,25 @@
         <source>MDAT Einsicht Monitoring (SNID)</source>
         <target></target>
       </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Monitoring access to MDAT (SNID)</source>
+        <target></target>
+      </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
              <notes>
                <note id="n1">CodeSystem.concept.display</note>
              </notes>
         <source>BIOMAT Eigentum übertragen NUM (SNID)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Transfer ownership of BIOMAT to NUM (SNID)</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
@@ -577,11 +1095,25 @@
         <source>CONSENT BC bereitstellen (SNID)</source>
         <target></target>
       </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Provide CONSENT for the Broad Consent (SNID)</source>
+        <target></target>
+      </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
              <notes>
                <note id="n1">CodeSystem.concept.display</note>
              </notes>
         <source>CONSENT BC speichern, verarbeiten (SNID)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Store and process CONSENT for the Broad Consent (SNID)</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
@@ -591,11 +1123,25 @@
         <source>Z4 Einsicht ePa (SNID)</source>
         <target></target>
       </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Z4 access to the ePA (SNID)</source>
+        <target></target>
+      </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
              <notes>
                <note id="n1">CodeSystem.concept.display</note>
              </notes>
         <source>IDAT ePA bereitstellen (SNID)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Provide IDAT to the ePA (SNID)</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
@@ -605,11 +1151,25 @@
         <source>MDAT ePA erheben (SNID)</source>
         <target></target>
       </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Collect MDAT from the ePA (SNID)</source>
+        <target></target>
+      </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
              <notes>
                <note id="n1">CodeSystem.concept.display</note>
              </notes>
         <source>MDAT ePA speichern, verarbeiten (SNID)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Store and process MDAT from the ePA (SNID)</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
@@ -619,11 +1179,25 @@
         <source>Z4 Krebsregister (SNID)</source>
         <target></target>
       </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Z4 cancer registry (SNID)</source>
+        <target></target>
+      </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
              <notes>
                <note id="n1">CodeSystem.concept.display</note>
              </notes>
         <source>MDAT KReg speichern, verarbeiten (SNID)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Store and process MDAT from the cancer registry (SNID)</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
@@ -633,11 +1207,25 @@
         <source>IDAT KReg KVNR speichern, verarbeiten (SNID)</source>
         <target></target>
       </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Store and process IDAT including KVNR from the cancer registry (SNID)</source>
+        <target></target>
+      </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
              <notes>
                <note id="n1">CodeSystem.concept.display</note>
              </notes>
         <source>Z4 KRegDAT retrospektiv (SNID)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Z4 cancer registry data, retrospective (SNID)</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
@@ -647,11 +1235,25 @@
         <source>IDAT KVNR KReg bereitstellen retrospektiv (SNID)</source>
         <target></target>
       </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Provide IDAT including KVNR to the cancer registry, retrospectively (SNID)</source>
+        <target></target>
+      </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
              <notes>
                <note id="n1">CodeSystem.concept.display</note>
              </notes>
         <source>MDAT KReg erheben retrospektiv (SNID)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Collect MDAT from the cancer registry, retrospectively (SNID)</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
@@ -661,11 +1263,25 @@
         <source>Z4 KRegDAT (SNID)</source>
         <target></target>
       </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Z4 cancer registry data (SNID)</source>
+        <target></target>
+      </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
              <notes>
                <note id="n1">CodeSystem.concept.display</note>
              </notes>
         <source>IDAT KVNR KReg bereitstellen prospektiv (SNID)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Provide IDAT including KVNR to the cancer registry, prospectively (SNID)</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
@@ -675,11 +1291,25 @@
         <source>MDAT KReg erheben prospektiv (SNID)</source>
         <target></target>
       </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Collect MDAT from the cancer registry, prospectively (SNID)</source>
+        <target></target>
+      </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
              <notes>
                <note id="n1">CodeSystem.concept.display</note>
              </notes>
         <source>Z4 Weitergabe Dritte (SNID)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Z4 disclosure to third parties (SNID)</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
@@ -689,11 +1319,25 @@
         <source>MDAT SNID bereitstellen Dritte (SNID)</source>
         <target></target>
       </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Provide MDAT to third parties (SNID)</source>
+        <target></target>
+      </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
              <notes>
                <note id="n1">CodeSystem.concept.display</note>
              </notes>
         <source>BIOMAT SNID bereitstellen Dritte (SNID)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Provide BIOMAT to third parties (SNID)</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
@@ -703,11 +1347,25 @@
         <source>Z4 Rekontaktierung Patient NU (SNID)</source>
         <target></target>
       </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Z4 re-contact the patient for follow-up (SNID)</source>
+        <target></target>
+      </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
              <notes>
                <note id="n1">CodeSystem.concept.display</note>
              </notes>
         <source>Rekontaktierung Gesundheitszustand nach Studienabschluss (SNID)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Re-contact regarding health status after study completion (SNID)</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
@@ -717,11 +1375,25 @@
         <source>Z4 Rekontaktierung Patient weitere Studien (SNID)</source>
         <target></target>
       </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Z4 re-contact the patient regarding further studies (SNID)</source>
+        <target></target>
+      </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
              <notes>
                <note id="n1">CodeSystem.concept.display</note>
              </notes>
         <source>Rekontaktierung Patient weitere Studien (SNID)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Re-contact the patient regarding further studies (SNID)</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
@@ -731,11 +1403,25 @@
         <source>IDAT SNID bereitstellen OE (SNID)</source>
         <target></target>
       </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Provide IDAT to the organisational unit (SNID)</source>
+        <target></target>
+      </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
              <notes>
                <note id="n1">CodeSystem.concept.display</note>
              </notes>
         <source>Z4 Erhebung Hausarzt (SNID)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Z4 data collection from the general practitioner (SNID)</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
@@ -745,11 +1431,25 @@
         <source>MDAT Hausarzt erheben, speichern, verarbeiten, nutzen (SNID)</source>
         <target></target>
       </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Collect, store, process and use MDAT from the general practitioner (SNID)</source>
+        <target></target>
+      </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
              <notes>
                <note id="n1">CodeSystem.concept.display</note>
              </notes>
         <source>IDAT bereitstellen Hausarzt (SNID)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Provide IDAT to the general practitioner (SNID)</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
@@ -759,11 +1459,25 @@
         <source>Z5 PATDAT, BIOMAT, PHENO erheben, speichern, gewinnen, lagern, zusätzlich nutzen (DZPG)</source>
         <target></target>
       </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Z5 collect, store, obtain, keep and additionally use PATDAT, BIOMAT and phenotype data (DZPG)</source>
+        <target></target>
+      </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
              <notes>
                <note id="n1">CodeSystem.concept.display</note>
              </notes>
         <source>MDAT Zusatzdaten PHAENO erheben (DZPG)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Collect additional MDAT phenotype data (DZPG)</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
@@ -773,11 +1487,25 @@
         <source>MDAT speichern verarbeiten (DZPG)</source>
         <target></target>
       </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Store and process MDAT (DZPG)</source>
+        <target></target>
+      </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
              <notes>
                <note id="n1">CodeSystem.concept.display</note>
              </notes>
         <source>MDAT wissenschaftlich nutzen (DZPG)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Use MDAT for research (DZPG)</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
@@ -787,11 +1515,25 @@
         <source>MDAT zusammenführen mit Dritten (DZPG)</source>
         <target></target>
       </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Merge MDAT with third parties (DZPG)</source>
+        <target></target>
+      </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
              <notes>
                <note id="n1">CodeSystem.concept.display</note>
              </notes>
         <source>BIOMAT Zusatzmaterial entnehmen (DZPG)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Collect additional BIOMAT (DZPG)</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
@@ -801,11 +1543,25 @@
         <source>BIOMAT Zusatzmaterial lagern verarbeiten (DZPG)</source>
         <target></target>
       </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Store and process additional BIOMAT (DZPG)</source>
+        <target></target>
+      </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
              <notes>
                <note id="n1">CodeSystem.concept.display</note>
              </notes>
         <source>BIOMAT wissenschaftlich nutzen (DZPG)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Use BIOMAT for research (DZPG)</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
@@ -815,11 +1571,25 @@
         <source>BIOMAT zusammenführen mit Dritten (DZPG)</source>
         <target></target>
       </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Merge BIOMAT with third parties (DZPG)</source>
+        <target></target>
+      </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
              <notes>
                <note id="n1">CodeSystem.concept.display</note>
              </notes>
         <source>Z5 NEURODAT, IMGDAT erheben, speichern, zusätzlich nutzen (DZPG)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Z5 collect, store and additionally use NEURODAT and IMGDAT (DZPG)</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
@@ -829,11 +1599,25 @@
         <source>IMGDAT erheben (DZPG)</source>
         <target></target>
       </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Collect IMGDAT (DZPG)</source>
+        <target></target>
+      </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
              <notes>
                <note id="n1">CodeSystem.concept.display</note>
              </notes>
         <source>IMGDAT speichern, verarbeiten (DZPG)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Store and process IMGDAT (DZPG)</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
@@ -843,11 +1627,25 @@
         <source>IMGDAT wissenschaftlich nutzen (DZPG)</source>
         <target></target>
       </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Use IMGDAT for research (DZPG)</source>
+        <target></target>
+      </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
              <notes>
                <note id="n1">CodeSystem.concept.display</note>
              </notes>
         <source>IMGDAT zusammenführen mit Dritten (DZPG)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Merge IMGDAT with third parties (DZPG)</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
@@ -857,11 +1655,25 @@
         <source>NEURODAT erheben (DZPG)</source>
         <target></target>
       </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Collect NEURODAT (DZPG)</source>
+        <target></target>
+      </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
              <notes>
                <note id="n1">CodeSystem.concept.display</note>
              </notes>
         <source>NEURODAT speichern, verarbeiten (DZPG)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Store and process NEURODAT (DZPG)</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
@@ -871,11 +1683,25 @@
         <source>NEURODAT wissenschaftlich nutzen (DZPG)</source>
         <target></target>
       </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Use NEURODAT for research (DZPG)</source>
+        <target></target>
+      </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
              <notes>
                <note id="n1">CodeSystem.concept.display</note>
              </notes>
         <source>NEURODAT zusammenführen mit Dritten (DZPG)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Merge NEURODAT with third parties (DZPG)</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
@@ -885,11 +1711,25 @@
         <source>Z5 IPSC Verbunddaten gewinnen, speichern, nutzen (DZPG)</source>
         <target></target>
       </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Z5 obtain, store and use IPSC composite data (DZPG)</source>
+        <target></target>
+      </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
              <notes>
                <note id="n1">CodeSystem.concept.display</note>
              </notes>
         <source>IPSC Verbunddaten gewinnen (DZPG)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Obtain IPSC composite data (DZPG)</source>
         <target></target>
       </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
@@ -899,6 +1739,13 @@
         <source>IPSC Verbunddaten speichern, verarbeiten (DZPG)</source>
         <target></target>
       </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Store and process IPSC composite data (DZPG)</source>
+        <target></target>
+      </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
              <notes>
                <note id="n1">CodeSystem.concept.display</note>
@@ -906,11 +1753,25 @@
         <source>IPSC Verbunddaten wissenschaftlich nutzen (DZPG)</source>
         <target></target>
       </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Use IPSC composite data for research (DZPG)</source>
+        <target></target>
+      </trans-unit>
       <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.display">
              <notes>
                <note id="n1">CodeSystem.concept.display</note>
              </notes>
         <source>IPSC Verbunddaten zusammenführen mit Dritten (DZPG)</source>
+        <target></target>
+      </trans-unit>
+      <trans-unit id="CodeSystem-2.16.840.1.113883.3.1937.777.24.5.3--20251211153003" resname="CodeSystem.concept.designation.value">
+             <notes>
+               <note id="n1">CodeSystem.concept.designation.value</note>
+             </notes>
+        <source>Merge IPSC composite data with third parties (DZPG)</source>
         <target></target>
       </trans-unit>
     </body>
