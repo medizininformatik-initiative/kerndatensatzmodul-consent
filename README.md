@@ -1,5 +1,7 @@
 # MII KDS Modul Consent
 
+[![GitHub[+] Release](https://img.shields.io/github/v/release/medizininformatik-initiative/kerndatensatzmodul-consent?sort=date&display_name=tag&style=flat&logo=github&label=current)]() [![Docs](https://img.shields.io/badge/Docs-green.svg)](https://medizininformatik-initiative.github.io/kerndatensatzmodul-consent/)
+
 > **Release 2027.0.0-ballot.** Dieses Repository baut den Implementierungs-
 > leitfaden mit SUSHI + HL7 IG Publisher auf Basis des MII-KDS-Modul-Templates
 > v0.13.2. Die Migration von der Simplifier-Autorenumgebung ist mit diesem
