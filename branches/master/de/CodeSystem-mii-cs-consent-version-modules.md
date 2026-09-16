@@ -9,7 +9,7 @@
 | | |
 | :--- | :--- |
 | *Offizielle URL*:https://www.medizininformatik-initiative.de/fhir/modul-consent/CodeSystem/mii-cs-consent-version-modules | *Version*:2027.0.0-ballot |
-| Draft Stand: 2026-09-14 | *Maschinenlesbarer Name*:MIIConsentVersionModuleCodeSystem |
+| Draft Stand: 2026-09-16 | *Maschinenlesbarer Name*:MIIConsentVersionModuleCodeSystem |
 | *Weitere Identifikatoren:*OID:2.16.840.1.113883.3.1937.777.24.5.27 (use: official, ) | |
 | **Copyright/Rechtliches**: © 2019+ TMF e. V., Charlottenstraße 42, 10117 BerlinCC BY 4.0Diese Arbeit ist lizensiert unter der [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/). Zu den Nutzungsrechten der zugrunde liegenden FHIR-Technologie siehe die FHIR-Basis-Spezifikation. Einige verwendete Codesysteme werden von anderen Organisationen herausgegeben und gepflegt. Es gilt das Copyright der dort jeweils aufgeführten Herausgeber (Publisher). | |
 
@@ -53,7 +53,7 @@ Dieses CodeSystem wird in der Definition der folgenden ValueSets referenziert:
   "title" : "MII Consent Version and Modules CodeSystem",
   "status" : "draft",
   "experimental" : false,
-  "date" : "2026-09-14T21:14:48+00:00",
+  "date" : "2026-09-16T11:52:11+00:00",
   "publisher" : "NUM-DIZ",
   "_publisher" : {
     "extension" : [{
