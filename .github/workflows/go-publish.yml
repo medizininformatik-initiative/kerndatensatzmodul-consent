@@ -663,10 +663,59 @@ jobs:
             }' > site/publish-setup.json
           touch site/.nojekyll
 
+          # The Publisher REFUSES to start without a package registry:
+          #   "ERROR @ parameters: There is no package-registry.json file."
+          # Its own generator is the sanctioned way to create one; over an empty
+          # webroot that yields an empty package list, which is exactly right for
+          # a first publication. Fall back to the empty shape if the generator
+          # produces nothing, so bootstrap never depends on that detail.
+          java -Xmx2g -jar "${RUNNER_TEMP}/publisher.jar" \
+            -generate-package-registry "${GITHUB_WORKSPACE}/site" || true
+          if [[ ! -s site/package-registry.json ]]; then
+            echo '{"packages":[]}' | jq '.' > site/package-registry.json
+          fi
+
+          # The Publisher APPENDS to the two RSS feeds and never creates them:
+          #   "Attempt to copy .../package-feed.xml but it doesn't exist"
+          # Seed an empty channel for each. Shape mirrors the reference module
+          # kerndatensatz-basis (gh-pages package-feed.xml).
+          # Built with printf, not a heredoc: a heredoc terminator must sit at
+          # column 0, which would close this YAML literal block and silently
+          # leave the whole workflow without a trigger.
+          feed_date="$(date -u '+%a, %d %b %Y %H:%M:%S +0000')"
+          for feed in package publication; do
+            if [[ ! -s "site/${feed}-feed.xml" ]]; then
+              {
+                printf '%s' '<?xml version="1.0" encoding="UTF-8"?>'
+                printf '%s\n' '<rss xmlns:atom="http://www.w3.org/2005/Atom" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:fhir="http://hl7.org/fhir/feed" version="2.0">'
+                printf '  <channel>\n'
+                printf '    <title>%s %s feed</title>\n' "${EXPECTED_PACKAGE_ID}" "${feed}"
+                printf '    <description>FHIR %ss published by the Medical Informatics Initiative</description>\n' "${feed}"
+                printf '    <link>%s</link>\n' "${PUBLICATION_BASE}"
+                printf '    <generator>Medical Informatics Initiative (MII)</generator>\n'
+                printf '    <lastBuildDate>%s</lastBuildDate>\n' "${feed_date}"
+                printf '    <atom:link href="%s/%s-feed.xml" rel="self" type="application/rss+xml"/>\n' "${PUBLICATION_BASE}" "${feed}"
+                printf '    <pubDate>%s</pubDate>\n' "${feed_date}"
+                printf '    <language>en</language>\n'
+                printf '    <ttl>600</ttl>\n'
+                printf '  </channel>\n'
+                printf '</rss>\n'
+              } > "site/${feed}-feed.xml"
+              python3 -c "import sys,xml.dom.minidom as m; m.parse(sys.argv[1])" "site/${feed}-feed.xml"
+            fi
+          done
+
+          test -s site/publish-setup.json
+          test -s site/package-registry.json
+          test -s site/package-feed.xml
+          test -s site/publication-feed.xml
+
           {
             echo "### First-publication webroot seeded"
             echo
             echo "- Generated publish-setup.json for ${PUBLICATION_BASE}"
+            echo "- Generated package-registry.json ($(jq '.packages | length' site/package-registry.json) packages)"
+            echo "- Seeded empty package-feed.xml and publication-feed.xml"
           } >> "${GITHUB_STEP_SUMMARY}"
 
       - name: Prepare publication workspace
@@ -711,6 +760,7 @@ jobs:
             -zips "${RUNNER_TEMP}/publication-zips" \
             -date "${PUBLICATION_DATE}" \
             -tx "${TX_URL}" \
+            -fhir-settings "${GITHUB_WORKSPACE}/source/.github/fhir-settings.json" \
             2>&1 | tee "${RUNNER_TEMP}/go-publish.log"
 
       - name: Correct and validate FHIR IG registry entry
