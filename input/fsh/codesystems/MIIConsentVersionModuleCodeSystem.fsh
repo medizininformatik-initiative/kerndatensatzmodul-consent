@@ -2,6 +2,12 @@ CodeSystem: MIIConsentVersionModuleCodeSystem
 Id: mii-cs-consent-version-modules
 Title: "MII Consent Version and Modules CodeSystem"
 Description: "Dieses Code System enthält die OIDs der verschiedenen Versionen und Zusatzmodule des Broad Consent der Medizininformatik Initiative."
+// MII-Namenskonvention: `name` ist maschinenlesbar und in Upper_Snake_Case zu
+// halten. Ohne diese Zeile leitet SUSHI `name` aus dem FSH-Entitaetsnamen ab —
+// das waere `MIIConsentVersionModuleCodeSystem` (CamelCase). Der
+// Entitaetsname selbst bleibt unveraendert, weil Instanzen und Profile ihn als
+// Referenz verwenden. Siehe Issue #97.
+* ^name = "MII_CS_Consent_Version_Modules"
 * ^meta.profile = "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
 * ^language = #de-DE
 * ^extension.url = "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod"
