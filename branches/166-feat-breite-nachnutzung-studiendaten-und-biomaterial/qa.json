@@ -7,8 +7,8 @@
   "status" : "active",
   "package-id" : "de.medizininformatikinitiative.kerndatensatz.consent",
   "ig-ver" : "2027.0.0-ballot",
-  "date" : "Thu, 26 Nov, 2026 12:13:41 +0000",
-  "dateISO8601" : "2026-11-26T12:13:41+00:00",
+  "date" : "Thu, 26 Nov, 2026 12:26:38 +0000",
+  "dateISO8601" : "2026-11-26T12:26:38+00:00",
   "errs" : 76,
   "warnings" : 147,
   "hints" : 508,
@@ -16,5 +16,5 @@
   "suppressed-warnings" : 0,
   "version" : "4.0.1",
   "tool" : "5.0.0 (3)",
-  "maxMemory" : 2797289024
+  "maxMemory" : 2272734408
 }
