@@ -1,0 +1,636 @@
+{
+  "resourceType": "CodeSystem",
+  "id": "num-cs-consent-BnFdatBiomat",
+  "meta": {
+    "profile": [
+      "http://hl7.org/fhir/StructureDefinition/shareablecodesystem"
+    ]
+  },
+  "language": "de-DE",
+  "extension": [
+    {
+      "url": "http://hl7.org/fhir/StructureDefinition/resource-effectivePeriod",
+      "valuePeriod": {
+        "start": "2026-11-26T12:00:00+01:00"
+      }
+    }
+  ],
+  "url": "https://www.medizininformatik-initiative.de/fhir/modul-consent/CodeSystem/num-cs-consent-BnFdatBiomat",
+  "identifier": [
+    {
+      "use": "official",
+      "system": "urn:ietf:rfc:3986",
+      "value": "urn:oid:2.16.840.1.113883.3.1937.777.24.5.28"
+    }
+  ],
+  "version": "0.1.0",
+  "name": "NumBnFdatBiomatPolicyCodesystem",
+  "title": "NUM breite Nachnutzung von Forschungsdaten und Biomaterial Policy CodeSystem",
+  "status": "draft",
+  "experimental": false,
+  "publisher": "Medizininformatik-Initiative",
+  "contact": [
+    {
+      "name": "Medizininformatik-Initiative",
+      "telecom": [
+        {
+          "system": "url",
+          "value": "https://www.medizininformatik-initiative.de"
+        },
+        {
+          "system": "email",
+          "value": "office@medizininformatik-initiative.de"
+        }
+      ]
+    }
+  ],
+  "description": "Dieses Code System enthält die OIDs der Policies zur breiten Nachnutzung von Forschungsdaten (FDAT) und Biomaterial (BIOMAT) sowie der Rekontaktierungs-Ergänzungen des Netzwerks Universitätsmedizin (NUM).",
+  "copyright": "\n            © 2019+ TMF e. V., Charlottenstraße 42, 10117 Berlin \n            \n                \n                    CC BY 4.0\n                \n                 \n            \n            Diese Arbeit ist lizensiert unter der [Creative Commons Attribution 4.0 International License](https://creativecommons.org/licenses/by/4.0/). \n            Zu den Nutzungsrechten der zugrunde liegenden FHIR-Technologie siehe die FHIR-Basis-Spezifikation. \n            Einige verwendete Codesysteme werden von anderen Organisationen herausgegeben und gepflegt. Es gilt das Copyright der dort jeweils aufgeführten Herausgeber (Publisher). \n        ",
+  "caseSensitive": false,
+  "content": "complete",
+  "count": 19,
+  "property": [
+    {
+      "code": "status",
+      "uri": "http://hl7.org/fhir/concept-properties#status",
+      "description": "A code that indicates the status of the concept. Values found in this version of the code system are: draft",
+      "type": "code"
+    },
+    {
+      "code": "period-of-validity",
+      "description": "A property that indicates the duration of validity of a concept. The string is a duration as ISO 8601:2004 string, ref. to http://hl7.org/fhir/iso-8601-date.",
+      "type": "string"
+    },
+    {
+      "code": "parent",
+      "uri": "http://hl7.org/fhir/concept-properties#parent",
+      "description": "The concept identified in this property is a parent of the concept on which it is a property. The property type will be 'code'. The meaning of 'parent' is defined by the hierarchyMeaning attribute",
+      "type": "code"
+    },
+    {
+      "code": "child",
+      "uri": "http://hl7.org/fhir/concept-properties#child",
+      "description": "The concept identified in this property is a child of the concept on which it is a property. The property type will be 'code'. The meaning of 'child' is defined by the hierarchyMeaning attribute",
+      "type": "code"
+    }
+  ],
+  "concept": [
+    {
+      "code": "2.16.840.1.113883.3.1937.777.24.5.28.1",
+      "display": "Forschungsdaten verarbeiten, speichern, nutzen",
+      "definition": "Dieser Code (OID) kennzeichnet das Modul zur breiten Nachnutzung von Forschungsdaten (FDAT): Verarbeiten, Speichern und Nutzen.",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000003001",
+            "display": "Fully specified name"
+          },
+          "value": "Forschungsdaten verarbeiten, speichern, nutzen"
+        }
+      ],
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "draft"
+        },
+        {
+          "code": "child",
+          "valueCode": "2.16.840.1.113883.3.1937.777.24.5.28.2"
+        },
+        {
+          "code": "child",
+          "valueCode": "2.16.840.1.113883.3.1937.777.24.5.28.3"
+        },
+        {
+          "code": "child",
+          "valueCode": "2.16.840.1.113883.3.1937.777.24.5.28.4"
+        }
+      ]
+    },
+    {
+      "code": "2.16.840.1.113883.3.1937.777.24.5.28.2",
+      "display": "FDAT speichern, verarbeiten",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000003001",
+            "display": "Fully specified name"
+          },
+          "value": "FDAT speichern, verarbeiten"
+        }
+      ],
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "draft"
+        },
+        {
+          "code": "parent",
+          "valueCode": "2.16.840.1.113883.3.1937.777.24.5.28.1"
+        },
+        {
+          "code": "period-of-validity",
+          "valueString": "P30Y"
+        }
+      ]
+    },
+    {
+      "code": "2.16.840.1.113883.3.1937.777.24.5.28.3",
+      "display": "FDAT wissenschaftlich nutzen",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000003001",
+            "display": "Fully specified name"
+          },
+          "value": "FDAT wissenschaftlich nutzen"
+        }
+      ],
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "draft"
+        },
+        {
+          "code": "parent",
+          "valueCode": "2.16.840.1.113883.3.1937.777.24.5.28.1"
+        },
+        {
+          "code": "period-of-validity",
+          "valueString": "P30Y"
+        }
+      ]
+    },
+    {
+      "code": "2.16.840.1.113883.3.1937.777.24.5.28.4",
+      "display": "FDAT zusammenführen mit Dritten",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000003001",
+            "display": "Fully specified name"
+          },
+          "value": "FDAT zusammenführen mit Dritten"
+        }
+      ],
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "draft"
+        },
+        {
+          "code": "parent",
+          "valueCode": "2.16.840.1.113883.3.1937.777.24.5.28.1"
+        },
+        {
+          "code": "period-of-validity",
+          "valueString": "P30Y"
+        }
+      ]
+    },
+    {
+      "code": "2.16.840.1.113883.3.1937.777.24.5.28.5",
+      "display": "Forschungsdaten weitergeben ohne EU-DSGVO NIVEAU",
+      "definition": "Dieser Code (OID) kennzeichnet das Modul zur Weitergabe von Forschungsdaten (FDAT) ohne EU-DSGVO-Niveau.",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000003001",
+            "display": "Fully specified name"
+          },
+          "value": "Forschungsdaten weitergeben ohne EU-DSGVO NIVEAU"
+        }
+      ],
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "draft"
+        },
+        {
+          "code": "child",
+          "valueCode": "2.16.840.1.113883.3.1937.777.24.5.28.6"
+        }
+      ]
+    },
+    {
+      "code": "2.16.840.1.113883.3.1937.777.24.5.28.6",
+      "display": "FDAT wissenschaftlich nutzen ohne EU DSGVO NIVEAU",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000003001",
+            "display": "Fully specified name"
+          },
+          "value": "FDAT wissenschaftlich nutzen ohne EU DSGVO NIVEAU"
+        }
+      ],
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "draft"
+        },
+        {
+          "code": "parent",
+          "valueCode": "2.16.840.1.113883.3.1937.777.24.5.28.5"
+        },
+        {
+          "code": "period-of-validity",
+          "valueString": "P30Y"
+        }
+      ]
+    },
+    {
+      "code": "2.16.840.1.113883.3.1937.777.24.5.28.7",
+      "display": "Biomaterial lagern, nutzen",
+      "definition": "Dieser Code (OID) kennzeichnet das Modul zur breiten Nachnutzung von Biomaterial (BIOMAT): Lagern und Nutzen.",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000003001",
+            "display": "Fully specified name"
+          },
+          "value": "Biomaterial lagern, nutzen"
+        }
+      ],
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "draft"
+        },
+        {
+          "code": "child",
+          "valueCode": "2.16.840.1.113883.3.1937.777.24.5.28.8"
+        },
+        {
+          "code": "child",
+          "valueCode": "2.16.840.1.113883.3.1937.777.24.5.28.9"
+        },
+        {
+          "code": "child",
+          "valueCode": "2.16.840.1.113883.3.1937.777.24.5.28.10"
+        },
+        {
+          "code": "child",
+          "valueCode": "2.16.840.1.113883.3.1937.777.24.5.28.11"
+        }
+      ]
+    },
+    {
+      "code": "2.16.840.1.113883.3.1937.777.24.5.28.8",
+      "display": "BIOMAT lagern, verarbeiten",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000003001",
+            "display": "Fully specified name"
+          },
+          "value": "BIOMAT lagern, verarbeiten"
+        }
+      ],
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "draft"
+        },
+        {
+          "code": "parent",
+          "valueCode": "2.16.840.1.113883.3.1937.777.24.5.28.7"
+        },
+        {
+          "code": "period-of-validity",
+          "valueString": "P30Y"
+        }
+      ]
+    },
+    {
+      "code": "2.16.840.1.113883.3.1937.777.24.5.28.9",
+      "display": "(BIOMAT Eigentum übertragen)",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000003001",
+            "display": "Fully specified name"
+          },
+          "value": "(BIOMAT Eigentum übertragen)"
+        }
+      ],
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "draft"
+        },
+        {
+          "code": "parent",
+          "valueCode": "2.16.840.1.113883.3.1937.777.24.5.28.7"
+        }
+      ]
+    },
+    {
+      "code": "2.16.840.1.113883.3.1937.777.24.5.28.10",
+      "display": "BIOMAT wissenschaftlich nutzen",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000003001",
+            "display": "Fully specified name"
+          },
+          "value": "BIOMAT wissenschaftlich nutzen"
+        }
+      ],
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "draft"
+        },
+        {
+          "code": "parent",
+          "valueCode": "2.16.840.1.113883.3.1937.777.24.5.28.7"
+        },
+        {
+          "code": "period-of-validity",
+          "valueString": "P30Y"
+        }
+      ]
+    },
+    {
+      "code": "2.16.840.1.113883.3.1937.777.24.5.28.11",
+      "display": "BIOMAT Analysedaten zusammenführen Dritte",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000003001",
+            "display": "Fully specified name"
+          },
+          "value": "BIOMAT Analysedaten zusammenführen Dritte"
+        }
+      ],
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "draft"
+        },
+        {
+          "code": "parent",
+          "valueCode": "2.16.840.1.113883.3.1937.777.24.5.28.7"
+        },
+        {
+          "code": "period-of-validity",
+          "valueString": "P30Y"
+        }
+      ]
+    },
+    {
+      "code": "2.16.840.1.113883.3.1937.777.24.5.28.12",
+      "display": "Biomaterial weitergeben ohne EU-DSGVO NIVEAU",
+      "definition": "Dieser Code (OID) kennzeichnet das Modul zur Weitergabe von Biomaterial (BIOMAT) ohne EU-DSGVO-Niveau.",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000003001",
+            "display": "Fully specified name"
+          },
+          "value": "Biomaterial weitergeben ohne EU-DSGVO NIVEAU"
+        }
+      ],
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "draft"
+        },
+        {
+          "code": "child",
+          "valueCode": "2.16.840.1.113883.3.1937.777.24.5.28.13"
+        }
+      ]
+    },
+    {
+      "code": "2.16.840.1.113883.3.1937.777.24.5.28.13",
+      "display": "BIOMAT bereitstellen ohne EU DSGVO NIVEAU",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000003001",
+            "display": "Fully specified name"
+          },
+          "value": "BIOMAT bereitstellen ohne EU DSGVO NIVEAU"
+        }
+      ],
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "draft"
+        },
+        {
+          "code": "parent",
+          "valueCode": "2.16.840.1.113883.3.1937.777.24.5.28.12"
+        },
+        {
+          "code": "period-of-validity",
+          "valueString": "P30Y"
+        }
+      ]
+    },
+    {
+      "code": "2.16.840.1.113883.3.1937.777.24.5.28.14",
+      "display": "Rekontaktierung Ergänzungen",
+      "definition": "Dieser Code (OID) kennzeichnet das Modul zu Ergänzungen der Rekontaktierung.",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000003001",
+            "display": "Fully specified name"
+          },
+          "value": "Rekontaktierung Ergänzungen"
+        }
+      ],
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "draft"
+        },
+        {
+          "code": "child",
+          "valueCode": "2.16.840.1.113883.3.1937.777.24.5.28.15"
+        },
+        {
+          "code": "child",
+          "valueCode": "2.16.840.1.113883.3.1937.777.24.5.28.16"
+        },
+        {
+          "code": "child",
+          "valueCode": "2.16.840.1.113883.3.1937.777.24.5.28.17"
+        }
+      ]
+    },
+    {
+      "code": "2.16.840.1.113883.3.1937.777.24.5.28.15",
+      "display": "Rekontaktierung Verknüpfung mit anderen Datenbanken",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000003001",
+            "display": "Fully specified name"
+          },
+          "value": "Rekontaktierung Verknüpfung mit anderen Datenbanken"
+        }
+      ],
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "draft"
+        },
+        {
+          "code": "parent",
+          "valueCode": "2.16.840.1.113883.3.1937.777.24.5.28.14"
+        },
+        {
+          "code": "period-of-validity",
+          "valueString": "P30Y"
+        }
+      ]
+    },
+    {
+      "code": "2.16.840.1.113883.3.1937.777.24.5.28.16",
+      "display": "Rekontaktierung weitere Erhebung",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000003001",
+            "display": "Fully specified name"
+          },
+          "value": "Rekontaktierung weitere Erhebung"
+        }
+      ],
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "draft"
+        },
+        {
+          "code": "parent",
+          "valueCode": "2.16.840.1.113883.3.1937.777.24.5.28.14"
+        },
+        {
+          "code": "period-of-validity",
+          "valueString": "P30Y"
+        }
+      ]
+    },
+    {
+      "code": "2.16.840.1.113883.3.1937.777.24.5.28.17",
+      "display": "Rekontaktierung weitere Studien",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000003001",
+            "display": "Fully specified name"
+          },
+          "value": "Rekontaktierung weitere Studien"
+        }
+      ],
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "draft"
+        },
+        {
+          "code": "parent",
+          "valueCode": "2.16.840.1.113883.3.1937.777.24.5.28.14"
+        },
+        {
+          "code": "period-of-validity",
+          "valueString": "P30Y"
+        }
+      ]
+    },
+    {
+      "code": "2.16.840.1.113883.3.1937.777.24.5.28.18",
+      "display": "Rekontaktierung Zusatzbefund",
+      "definition": "Dieser Code (OID) kennzeichnet das Modul zum Zusatzbefund bei der Rekontaktierung.",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000003001",
+            "display": "Fully specified name"
+          },
+          "value": "Rekontaktierung Zusatzbefund"
+        }
+      ],
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "draft"
+        },
+        {
+          "code": "child",
+          "valueCode": "2.16.840.1.113883.3.1937.777.24.5.28.19"
+        }
+      ]
+    },
+    {
+      "code": "2.16.840.1.113883.3.1937.777.24.5.28.19",
+      "display": "Rekontaktierung Zusatzbefund",
+      "designation": [
+        {
+          "language": "de-DE",
+          "use": {
+            "system": "http://snomed.info/sct",
+            "code": "900000000000003001",
+            "display": "Fully specified name"
+          },
+          "value": "Rekontaktierung Zusatzbefund"
+        }
+      ],
+      "property": [
+        {
+          "code": "status",
+          "valueCode": "draft"
+        },
+        {
+          "code": "parent",
+          "valueCode": "2.16.840.1.113883.3.1937.777.24.5.28.18"
+        },
+        {
+          "code": "period-of-validity",
+          "valueString": "P30Y"
+        }
+      ]
+    }
+  ]
+}
